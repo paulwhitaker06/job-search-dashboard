@@ -12,51 +12,16 @@
   "ranked_opportunities": [
     {
       "rank": 1,
-      "company": "Planetary Technologies",
-      "role": "Director, Business Development",
-      "score": 75.0,
-      "proxy_score": null,
-      "effective_score": 75.0,
-      "fit": 8,
-      "has_deep_dive": true,
-      "date": "2026-04-14",
-      "scqa": "The GFW Parallel",
-      "verdict": "Ocean CDR startup (Halifax, ~40 people, Series A $11.35M Sept 2024) that delivered the world's first verified OAE credits (June 2025) and signed a $31.3M Frontier offtake for 115,000 tonnes 2026-2030. The BD Director role is the commercial program that does not yet exist. Paul built this exact transition twice -- KSAT monitoring from one contract, GFW licensing from Moore Foundation funding -- structurally close enough that the learning curve is short.",
-      "recommendation": "pursue",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://ph2.bamboohr.com/careers/67"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Planetary_Technologies_Deep_Dive.docx",
-      "doc_note": "Full deep dive completed -- Tier 1 on content fit. April 2026 Ottawa BD posting has Canada-residency requirement -- check for Halifax-based equivalents.",
-      "added": "2026-04-14",
-      "is_new": true,
-      "tier": "tier1",
-      "domain": "Ocean CDR / Carbon Removal / Climate Tech",
-      "location": "Ottawa, ON (Remote within Canada only)",
-      "hook": "World's first verified OAE credits + $31.3M Frontier offtake. Maps directly to Paul's GFW commercial-build pattern.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "April 2026 Ottawa posting requires 'You are based in Canada' with Ottawa preferred. No US remote option. Role is not actionable from Taos without Canadian work authorization.",
-          "severity": "hard"
-        }
-      ]
-    },
-    {
-      "rank": 2,
       "company": "Fugro",
       "role": "Product Commercialisation Manager, Climate & Nature",
-      "score": 66.5,
+      "score": 64.0,
       "proxy_score": null,
-      "effective_score": 66.5,
+      "effective_score": 64.0,
       "fit": 7,
       "has_deep_dive": true,
       "date": "2026-04-11",
-      "scqa": "EOMAP Integration Window",
-      "verdict": "Strongest domain match in this search. Marine data, offshore energy, satellite environmental monitoring \u2014 Paul's core world from KSAT and GFW. EOMAP acquisition (Feb 2025) created an exact parallel to the GFW/Planet Labs EO integration challenge. Key risk is geographic: role likely requires European presence. Pursue with caveats and investigate location flexibility first.",
+      "scqa": "Climate & Nature Commercial Build",
+      "verdict": "Re-scored 2026-04-14 against full JD. Strong content fit (IL 8, SPM 9): EO marine geo-data, consortia formation, Horizon Europe / ESA grant proposals, and public-sector procurement all map directly to Paul's KSAT/GFW commercial-build pattern. Real geographic blocker: Nootdorp NL on-site, no EU work auth. Master's in marine ecology preferred is a soft mismatch (Paul has Hydrology MS + MBA). Deep dive already exists from prior analysis.",
       "recommendation": "pursue_with_caveats",
       "status": "not_applied",
       "overdue": null,
@@ -65,46 +30,28 @@
       ],
       "resume_path": null,
       "doc_path": "~/Desktop/Claude Deep Dives/Fugro_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed \u2014 covers both Fugro roles",
-      "added": "2026-04-11",
-      "is_new": false,
+      "doc_note": "Re-scored 2026-04-14 with full JD. Deep dive doc exists from prior analysis.",
+      "added": "2026-04-14",
+      "is_new": true,
       "tier": "tier2",
       "domain": "Geodata / Marine / EO / Environmental Monitoring",
-      "location": "Netherlands / UK / Global (remote negotiable)",
-      "hook": "Fugro acquired EOMAP (EO satellite monitoring) Feb 2025. PCM role = build the commercial program for Climate & Nature products. Strongest domain match in this search.",
-      "blockers": []
+      "location": "Nootdorp, Netherlands (On Site)",
+      "hook": "Climate & Nature commercialisation: EO marine geo-data + Horizon Europe / ESA consortia + public-sector procurement. Direct match to Paul's market-shaping pattern. Hard geographic blocker: NL on-site, no EU work auth.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Nootdorp, Netherlands. Explicitly On Site. No US remote option. EU work auth required.",
+          "severity": "hard"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "Master's in marine ecology preferred (Paul has Hydrology MS coursework + MBA, business degree noted as a plus).",
+          "severity": "soft"
+        }
+      ]
     },
     {
-      "rank": 3,
-      "company": "Fugro",
-      "role": "Commercial Manager",
-      "score": 60.5,
-      "proxy_score": null,
-      "effective_score": 60.5,
-      "fit": 6,
-      "has_deep_dive": true,
-      "date": "2026-04-11",
-      "scqa": "EOMAP Integration Window",
-      "verdict": "Same company context as the PCM Climate & Nature role but less domain-specific. Comparable Fugro Commercial Manager postings are in specific service lines (USV operations in Aberdeen, or regional business lines). Worth investigating whether this role is in the Climate & Nature segment \u2014 if so, the fit improves. If it is in a legacy energy line, the domain advantage diminishes. Same deep dive document covers both.",
-      "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://www.fugro.com/careers/jobs/R0031035-commercial-manager"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Fugro_Deep_Dive_Analysis.docx",
-      "doc_note": "Covered in Fugro combined deep dive \u2014 investigate which service line before applying",
-      "added": "2026-04-11",
-      "is_new": false,
-      "tier": "tier2",
-      "domain": "Geodata / Marine / Offshore Services",
-      "location": "UK / Netherlands (likely)",
-      "hook": "Fugro Commercial Manager \u2014 possibly USV service line or regional BD. Investigate service line alignment before applying.",
-      "blockers": []
-    },
-    {
-      "rank": 4,
+      "rank": 2,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -139,7 +86,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 3,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -168,7 +115,7 @@
       "blockers": []
     },
     {
-      "rank": 6,
+      "rank": 4,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -195,7 +142,7 @@
       "blockers": []
     },
     {
-      "rank": 7,
+      "rank": 5,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -228,7 +175,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 6,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -257,7 +204,7 @@
       "blockers": []
     },
     {
-      "rank": 9,
+      "rank": 7,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -292,7 +239,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 8,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -327,7 +274,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 9,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -362,7 +309,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 10,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -391,7 +338,7 @@
       "blockers": []
     },
     {
-      "rank": 13,
+      "rank": 11,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -420,7 +367,7 @@
       "blockers": []
     },
     {
-      "rank": 14,
+      "rank": 12,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -449,7 +396,7 @@
       "blockers": []
     },
     {
-      "rank": 15,
+      "rank": 13,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -478,7 +425,7 @@
       "blockers": []
     },
     {
-      "rank": 16,
+      "rank": 14,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -507,7 +454,7 @@
       "blockers": []
     },
     {
-      "rank": 17,
+      "rank": 15,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -542,7 +489,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 16,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -577,7 +524,7 @@
       ]
     },
     {
-      "rank": 19,
+      "rank": 17,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -606,7 +553,7 @@
       "blockers": []
     },
     {
-      "rank": 20,
+      "rank": 18,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -635,7 +582,7 @@
       "blockers": []
     },
     {
-      "rank": 21,
+      "rank": 19,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -659,6 +606,35 @@
       "domain": "Ag Tech / Sustainability",
       "location": "Remote (Minneapolis HQ)",
       "hook": "Flagship Pioneering-backed ag data platform selling to agribusinesses and sustainability buyers. Interesting company but IC hunter role and no ag network.",
+      "blockers": []
+    },
+    {
+      "rank": 20,
+      "company": "Fugro",
+      "role": "Commercial Manager",
+      "score": 33.0,
+      "proxy_score": null,
+      "effective_score": 33.0,
+      "fit": 3,
+      "has_deep_dive": true,
+      "date": "2026-04-11",
+      "scqa": "EOMAP Integration Window",
+      "verdict": "Re-scored 2026-04-14 against full JD. Title \"Commercial Manager\" is misleading: this is a junior project commercial / discipline specialist role within Fugro USA Marine, requiring a Civil Engineering / Geosciences / Geotechnical degree and 2 years of marine soil mechanics experience. Not a market-builder BD role. Houston-based. Pass.",
+      "recommendation": "pass",
+      "status": "pass",
+      "overdue": null,
+      "job_urls": [
+        "https://www.fugro.com/careers/jobs/R0031035-commercial-manager"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Fugro_Deep_Dive_Analysis.docx",
+      "doc_note": "Covered in Fugro combined deep dive \u2014 investigate which service line before applying",
+      "added": "2026-04-11",
+      "is_new": false,
+      "tier": "tier2",
+      "domain": "Geodata / Marine / Offshore Services",
+      "location": "Houston, TX (2 days remote)",
+      "hook": "Title misleading. Actual role is junior project commercial / discipline specialist for marine geotechnical acquisition (soil mechanics). 2 years exp min. Houston-based.",
       "blockers": []
     }
   ],
@@ -1175,6 +1151,20 @@
       "location": "Barcelona or Harwell (applied)",
       "job_url": "https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe",
       "next_action": "Auto-ack received from Adam Stockley 2026-04-14. Hiring team review window: ~two weeks (response by ~2026-04-28).",
+      "status": "awaiting",
+      "urgent": false
+    },
+    {
+      "company": "Planetary Technologies",
+      "role": "Director of Business Development",
+      "applied": "2026-04-14",
+      "applied_score": 74.0,
+      "score": 74.0,
+      "comp": "$165K CAD (Paul's ask). Posted range $120-150K CAD.",
+      "domain": "Ocean CDR / Climate Tech",
+      "location": "Ottawa, ON (Paul would relocate from Taos; CA work auth pending)",
+      "job_url": "https://ph2.bamboohr.com/careers/67",
+      "next_action": "Auto-ack received 2026-04-14. Hiring team will reach out as they begin interviews if fit. Open question: Canadian work permit sponsorship and relocation to Ottawa.",
       "status": "awaiting",
       "urgent": false
     }
