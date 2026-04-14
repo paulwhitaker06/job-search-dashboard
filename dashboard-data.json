@@ -21,7 +21,7 @@
       "has_deep_dive": true,
       "date": "2026-04-14",
       "scqa": "The GFW Parallel",
-      "verdict": "Ocean CDR startup (Halifax, ~40 people, Series A $11.35M Sept 2024) that delivered the world's first verified OAE credits (June 2025) and signed a $31.3M Frontier offtake for 115,000 tonnes 2026-2030. The BD Director role is the commercial program that does not yet exist. Paul built this exact transition twice -- KSAT monitoring from one contract, GFW licensing from Moore Foundation funding -- and the structural parallel to Planetary is close enough the learning curve is short. Pursue aggressively.",
+      "verdict": "Ocean CDR startup (Halifax, ~40 people, Series A $11.35M Sept 2024) that delivered the world's first verified OAE credits (June 2025) and signed a $31.3M Frontier offtake for 115,000 tonnes 2026-2030. The BD Director role is the commercial program that does not yet exist. Paul built this exact transition twice -- KSAT monitoring from one contract, GFW licensing from Moore Foundation funding -- structurally close enough that the learning curve is short.",
       "recommendation": "pursue",
       "status": "not_applied",
       "overdue": null,
@@ -30,13 +30,20 @@
       ],
       "resume_path": null,
       "doc_path": "~/Desktop/Claude Deep Dives/Planetary_Technologies_Deep_Dive.docx",
-      "doc_note": "Full deep dive completed -- Tier 1",
+      "doc_note": "Full deep dive completed -- Tier 1 on content fit. April 2026 Ottawa BD posting has Canada-residency requirement -- check for Halifax-based equivalents.",
       "added": "2026-04-14",
       "is_new": true,
       "tier": "tier1",
       "domain": "Ocean CDR / Carbon Removal / Climate Tech",
-      "location": "Halifax, NS (BD remote-verify)",
-      "hook": "World's first verified OAE credits + $31.3M Frontier offtake starting 2026. Paul's GFW commercial program transition maps directly to the BD Director challenge here."
+      "location": "Ottawa, ON (Remote within Canada only)",
+      "hook": "World's first verified OAE credits + $31.3M Frontier offtake. Maps directly to Paul's GFW commercial-build pattern.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "April 2026 Ottawa posting requires 'You are based in Canada' with Ottawa preferred. No US remote option. Role is not actionable from Taos without Canadian work authorization.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 2,
@@ -49,7 +56,7 @@
       "has_deep_dive": true,
       "date": "2026-04-12",
       "scqa": "The DataCosmos Commercialization Gap",
-      "verdict": "UK-headquartered satellite company ($63M Series B, profitable 5+ years) at a genuine inflection point between mission services and data platform revenue. The Sales Lead EO Data role is a direct match to Paul's twice-proven pattern of building commercial programs on technical platforms (KSAT monitoring from one contract, GFW licensing on an open-data platform). Atlantic Constellation (8 microsatellites for ESA/AEE, 2027 delivery) creates a defined timeline for commercial readiness. Key constraints: 'Sales Lead' title is below Director/VP target, European location likely required despite remote flexibility, Glassdoor shows below-market compensation. Previously archived at 57.0; deep dive research significantly upgraded the score.",
+      "verdict": "UK-headquartered satellite company ($63M Series B, profitable 5+ years) at a genuine inflection point between mission services and data platform revenue. The Sales Lead EO Data role is a direct match to Paul's twice-proven pattern of building commercial programs on technical platforms (KSAT, GFW). Atlantic Constellation (8 microsatellites for ESA/AEE, 2027 delivery) creates a defined timeline for commercial readiness.",
       "recommendation": "pursue_with_caveats",
       "status": "not_applied",
       "overdue": null,
@@ -58,13 +65,20 @@
       ],
       "resume_path": null,
       "doc_path": "~/Desktop/Claude Deep Dives/Open_Cosmos_Deep_Dive.docx",
-      "doc_note": "Full deep dive completed. Previously archived at 57.0, upgraded after deep research.",
-      "added": "2026-04-12",
-      "is_new": false,
+      "doc_note": "Full deep dive completed. Previously archived at 57.0, upgraded after deep research. April 2026 review: posting requires residency in UK/Spain/Portugal/Greece -- verify before further pursuit.",
+      "added": "2026-04-14",
+      "is_new": true,
       "tier": "tier2",
       "domain": "EO Data / Satellite Missions / DataCosmos Platform",
-      "location": "UK/Europe (remote flexible)",
-      "hook": "EO data platform company at mission-to-data inflection. DataCosmos needs commercial engine built from scratch. Paul's exact pattern from KSAT and GFW."
+      "location": "UK | Spain | Portugal | Greece (no US option)",
+      "hook": "EO data platform at mission-to-data inflection. DataCosmos needs commercial engine built from scratch -- Paul's KSAT/GFW pattern.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Posting states 'this role you can be based in any of our locations: UK | Spain | Portugal | Greece.' No US remote option. Role requires EU/UK residency and work authorization.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 3,
@@ -92,7 +106,8 @@
       "tier": "tier2",
       "domain": "Geodata / Marine / EO / Environmental Monitoring",
       "location": "Netherlands / UK / Global (remote negotiable)",
-      "hook": "Fugro acquired EOMAP (EO satellite monitoring) Feb 2025. PCM role = build the commercial program for Climate & Nature products. Strongest domain match in this search."
+      "hook": "Fugro acquired EOMAP (EO satellite monitoring) Feb 2025. PCM role = build the commercial program for Climate & Nature products. Strongest domain match in this search.",
+      "blockers": []
     },
     {
       "rank": 4,
@@ -120,7 +135,8 @@
       "tier": "tier2",
       "domain": "Geodata / Marine / Offshore Services",
       "location": "UK / Netherlands (likely)",
-      "hook": "Fugro Commercial Manager \u2014 possibly USV service line or regional BD. Investigate service line alignment before applying."
+      "hook": "Fugro Commercial Manager \u2014 possibly USV service line or regional BD. Investigate service line alignment before applying.",
+      "blockers": []
     },
     {
       "rank": 5,
@@ -148,7 +164,14 @@
       "tier": "tier3",
       "domain": "EO Satellites / Environmental Monitoring",
       "location": "Spain",
-      "hook": "EO satellite startup building miniaturized sensors. Right domain, wrong seniority and location."
+      "hook": "EO satellite startup building miniaturized sensors. Right domain, wrong seniority and location.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Location listed as Spain. Likely requires Spanish/EU residency. Verify US-remote not available.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 6,
@@ -176,7 +199,8 @@
       "tier": "tier3",
       "domain": "Small Satellites / Space",
       "location": "UK / Sweden / NL",
-      "hook": "Listed smallsat manufacturer at hardware-to-data inflection. EUR 76.3M EPS-Sterna contract, INFLECION maritime constellation. Products BD role with ITAR-free international sales dimension."
+      "hook": "Listed smallsat manufacturer at hardware-to-data inflection. EUR 76.3M EPS-Sterna contract, INFLECION maritime constellation. Products BD role with ITAR-free international sales dimension.",
+      "blockers": []
     },
     {
       "rank": 7,
@@ -202,7 +226,8 @@
       "tier": "tier3",
       "domain": "Atmospheric Data",
       "location": "Remote",
-      "hook": "Atmospheric data company disrupting weather forecasting with smart balloons. Great company fit but posted roles are below your seniority band \u2014 cold outreach for Director-level."
+      "hook": "Atmospheric data company disrupting weather forecasting with smart balloons. Great company fit but posted roles are below your seniority band \u2014 cold outreach for Director-level.",
+      "blockers": []
     },
     {
       "rank": 8,
@@ -228,7 +253,14 @@
       "tier": "tier3",
       "domain": "Carbon Utilization / Cleantech",
       "location": "Paris (On-site)",
-      "hook": "Amazing stage alignment but Paris on-site and domain gap too wide."
+      "hook": "Amazing stage alignment but Paris on-site and domain gap too wide.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Paris (On-site). Hard block for US-based candidate.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 9,
@@ -256,7 +288,8 @@
       "tier": "tier3",
       "domain": "Geospatial Data / FME",
       "location": "Surrey BC / Remote",
-      "hook": "Right customers, wrong function. CS not BD."
+      "hook": "Right customers, wrong function. CS not BD.",
+      "blockers": []
     },
     {
       "rank": 10,
@@ -284,7 +317,14 @@
       "tier": "tier3",
       "domain": "Maritime AI / Data",
       "location": "London",
-      "hook": "Domain fit is real but title, comp, location, and culture all wrong."
+      "hook": "Domain fit is real but title, comp, location, and culture all wrong.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "London-based role. Likely requires UK residency. Verify US-remote not available.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 11,
@@ -312,7 +352,14 @@
       "tier": "tier3",
       "domain": "Space Situational Awareness / Analytics",
       "location": "APAC (likely in-region)",
-      "hook": "SSA analytics with APAC commercial growth role. Paul has APAC network but role likely requires in-region presence."
+      "hook": "SSA analytics with APAC commercial growth role. Paul has APAC network but role likely requires in-region presence.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "APAC in-region role. Requires APAC residency and work authorization.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 12,
@@ -340,7 +387,14 @@
       "tier": "tier3",
       "domain": "SAR / EO",
       "location": "Munich (Hybrid)",
-      "hook": "Great SAR domain match but requires Munich relocation."
+      "hook": "Great SAR domain match but requires Munich relocation.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Munich (Hybrid). Requires EU/DE residency and regular on-site presence.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 13,
@@ -368,7 +422,8 @@
       "tier": "tier3",
       "domain": "Geodata / Marine / Offshore Services",
       "location": "Regional (likely Houston/Perth/Europe)",
-      "hook": "Right seniority and strong domain overlap, but mature company and not a market-building role."
+      "hook": "Right seniority and strong domain overlap, but mature company and not a market-building role.",
+      "blockers": []
     },
     {
       "rank": 14,
@@ -396,7 +451,8 @@
       "tier": "tier3",
       "domain": "EO Data / Satellite Missions",
       "location": "UK/Europe (remote flexible)",
-      "hook": "Same company as Sales Lead role but CS function and manager level are wrong for Paul."
+      "hook": "Same company as Sales Lead role but CS function and manager level are wrong for Paul.",
+      "blockers": []
     },
     {
       "rank": 15,
@@ -424,7 +480,8 @@
       "tier": "tier3",
       "domain": "Green Steel / Industrial Manufacturing",
       "location": "US (likely)",
-      "hook": "Green steel company. Head of Sales is right level but wrong domain for Paul."
+      "hook": "Green steel company. Head of Sales is right level but wrong domain for Paul.",
+      "blockers": []
     },
     {
       "rank": 16,
@@ -452,7 +509,8 @@
       "tier": "tier3",
       "domain": "Carbon Credit Ratings / VCM Analytics",
       "location": "London / Remote",
-      "hook": "Carbon credit ratings company, strong domain overlap but CSM function and seniority are wrong for Paul."
+      "hook": "Carbon credit ratings company, strong domain overlap but CSM function and seniority are wrong for Paul.",
+      "blockers": []
     },
     {
       "rank": 17,
@@ -480,7 +538,8 @@
       "tier": "tier3",
       "domain": "Carbon Credits / Climate Tech",
       "location": "Remote (likely)",
-      "hook": "Carbon credit API platform. Climate-adjacent but AE role is wrong seniority and function for Paul."
+      "hook": "Carbon credit API platform. Climate-adjacent but AE role is wrong seniority and function for Paul.",
+      "blockers": []
     },
     {
       "rank": 18,
@@ -508,7 +567,14 @@
       "tier": "tier3",
       "domain": "Enterprise AI / IT Automation (Moveworks/ServiceNow)",
       "location": "APAC (likely in-region)",
-      "hook": "VP APAC partnerships at Moveworks. Right title level but mature enterprise AI company is wrong stage and domain for Paul."
+      "hook": "VP APAC partnerships at Moveworks. Right title level but mature enterprise AI company is wrong stage and domain for Paul.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "APAC in-region role. Requires APAC residency and work authorization.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 19,
@@ -536,7 +602,14 @@
       "tier": "tier3",
       "domain": "Enterprise AI / IT Automation (Moveworks/ServiceNow)",
       "location": "Canada",
-      "hook": "Director Partnerships Canada at Moveworks. Right title but mature enterprise AI company is wrong stage and domain."
+      "hook": "Director Partnerships Canada at Moveworks. Right title but mature enterprise AI company is wrong stage and domain.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Canada-based role. Requires Canadian residency and work authorization.",
+          "severity": "hard"
+        }
+      ]
     },
     {
       "rank": 20,
@@ -564,7 +637,8 @@
       "tier": "tier3",
       "domain": "Biodiversity Intelligence / eDNA",
       "location": "UK (likely)",
-      "hook": "Biodiversity eDNA + satellite data company. Domain is interesting but this is an interim marketing contract, not BD."
+      "hook": "Biodiversity eDNA + satellite data company. Domain is interesting but this is an interim marketing contract, not BD.",
+      "blockers": []
     },
     {
       "rank": 21,
@@ -592,7 +666,8 @@
       "tier": "tier3",
       "domain": "Healthcare / Clinical Trials Tech",
       "location": "US (likely remote)",
-      "hook": "Clinical trial technology BD. Right level, entirely wrong domain."
+      "hook": "Clinical trial technology BD. Right level, entirely wrong domain.",
+      "blockers": []
     },
     {
       "rank": 22,
@@ -618,7 +693,8 @@
       "tier": "tier3",
       "domain": "Ag Tech / Sustainability",
       "location": "Remote (Minneapolis HQ)",
-      "hook": "Flagship Pioneering-backed ag data platform selling to agribusinesses and sustainability buyers. Interesting company but IC hunter role and no ag network."
+      "hook": "Flagship Pioneering-backed ag data platform selling to agribusinesses and sustainability buyers. Interesting company but IC hunter role and no ag network.",
+      "blockers": []
     }
   ],
   "archived_deep_dives": [
@@ -1033,12 +1109,13 @@
       "domain": "EO Data Platform",
       "location": "Hybrid / Kitchener ON",
       "comp": "Undisclosed",
-      "status": "1st_interview",
-      "next_action": "Had 1st interview \u2014 awaiting decision on 2nd round",
+      "status": "references_provided",
+      "next_action": "References provided to April Clarke 4/14 (Marte Indregard/KSAT, Paul Woods/GFW, Rob Ayasse/KSAT). She is conducting additional interviews this week and will circle back with feedback.",
       "urgent": false,
       "applied_score": 72.5,
       "job_url": "https://skywatch.com/careers/?ashby_jid=cdf99855-9d51-4cbd-89c6-06c5b4cb5aa1#openroles",
-      "score": 69.0
+      "score": 69.0,
+      "last_contact": "2026-04-14"
     },
     {
       "company": "EarthDaily Analytics",

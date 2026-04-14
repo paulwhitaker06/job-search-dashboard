@@ -70,6 +70,10 @@
   .dd-card .score-row { display:flex; flex-wrap:wrap; gap:6px; font-size:11px; margin-bottom:8px; }
   .dd-card .score-row span { padding:2px 7px; border-radius:6px; background:var(--card-hover); }
   .dd-card .verdict { font-size:11px; margin-bottom:8px; padding:6px 10px; border-radius:8px; background:rgba(99,102,241,0.08); border-left:3px solid var(--accent); line-height:1.4; flex:1; }
+  .dd-card .blockers-row { display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px; }
+  .dd-card .blocker-tag { font-size:9px; font-weight:700; letter-spacing:0.5px; padding:3px 7px; border-radius:4px; cursor:help; text-transform:uppercase; line-height:1.2; }
+  .dd-card .blocker-tag-hard { background:rgba(239,68,68,0.15); color:#f87171; border:1px solid rgba(239,68,68,0.5); }
+  .dd-card .blocker-tag-soft { background:rgba(245,158,11,0.12); color:#fbbf24; border:1px solid rgba(245,158,11,0.4); }
   .dd-card .links { display:flex; gap:8px; font-size:11px; flex-wrap:wrap; }
   .dd-card .links a { padding:3px 8px; border-radius:6px; background:rgba(99,102,241,0.12); }
   .new-badge { position:absolute; bottom:14px; right:14px; background:var(--cyan); color:#000; font-size:10px; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:1px; animation:pulse 1.5s ease-in-out infinite; }
@@ -126,9 +130,9 @@
     <div class="tooltip"><div class="tt-item">Loft Orbital</div><div class="tt-item">Aclima</div><div class="tt-item">Kepler Communications</div><div class="tt-item">Climate Central</div><div class="tt-item">Floodbase</div><div class="tt-item">Seabound</div><div class="tt-item">RS Metrics</div><div class="tt-item">Impact Observatory</div><div class="tt-item">SkyWatch</div><div class="tt-item">EarthDaily Analytics</div><div class="tt-item">CarbonChain</div><div class="tt-item">Rainmaker Technology Corporation</div><div class="tt-item">Carbon Direct</div><div class="tt-item">Oklo</div><div class="tt-item">Phoenix Tailings</div></div>
   </div>
   <div class="stat-card">
-    <div class="number" style="color:var(--cyan)">2</div>
+    <div class="number" style="color:var(--cyan)">1</div>
     <div class="label">Active Interviews</div>
-    <div class="tooltip"><div class="tt-item">Climate Central</div><div class="tt-item">SkyWatch</div></div>
+    <div class="tooltip"><div class="tt-item">Climate Central</div></div>
   </div>
   <div class="stat-card">
     <div class="number" style="color:var(--blue)">10</div>
@@ -147,11 +151,11 @@
   <h2>What To Do Next</h2>
   <div class="action-item" data-company="Planetary Technologies">
     <div class="priority">1</div>
-    <div><strong>Planetary Technologies</strong> <span style="color:var(--green);font-weight:600">75/100</span> — World's first verified OAE credits + $31.3M Frontier offtake starting 2026. Paul's GFW commercial program transition maps directly to the BD Director challenge here. <span class="pill pill-cyan">New</span></div>
+    <div><strong>Planetary Technologies</strong> <span style="color:var(--green);font-weight:600">75/100</span> — World's first verified OAE credits + $31.3M Frontier offtake. Maps directly to Paul's GFW commercial-build pattern. <span class="pill pill-cyan">New</span></div>
   </div>
   <div class="action-item" data-company="Open Cosmos">
     <div class="priority">2</div>
-    <div><strong>Open Cosmos</strong> <span style="color:var(--amber);font-weight:600">72/100</span> — EO data platform company at mission-to-data inflection. DataCosmos needs commercial engine built from scratch. Paul's exact pattern from KSAT and GFW. <span class="pill pill-cyan">New</span></div>
+    <div><strong>Open Cosmos</strong> <span style="color:var(--amber);font-weight:600">72/100</span> — EO data platform at mission-to-data inflection. DataCosmos needs commercial engine built from scratch -- Paul's KSAT/GFW pattern. <span class="pill pill-cyan">New</span></div>
   </div>
   <div class="action-item" data-company="Fugro">
     <div class="priority">3</div>
@@ -174,13 +178,14 @@
     <button class="dismiss-btn" onclick="dismissCard(this, 'Planetary Technologies')" title="Remove from active list">&times;</button>
     <div class="company">Planetary Technologies</div>
     <div class="role">Director, Business Development</div>
-    <div class="meta-line">Ocean CDR / Carbon Removal / Climate Tech · Halifax, NS (BD remote-verify)</div>
+    <div class="meta-line">Ocean CDR / Carbon Removal / Climate Tech · Ottawa, ON (Remote within Canada only)</div>
+    <div class="blockers-row"><span class="blocker-tag blocker-tag-hard" title="April 2026 Ottawa posting requires 'You are based in Canada' with Ottawa preferred. No US remote option. Role is not actionable from Taos without Canadian work authorization.">&#9888; GEOGRAPHIC RESIDENCY</span></div>
     <div class="score-row">
       <span style="color:var(--green)">Score: 75.0/100</span>
       <span>Fit: 8/10</span>
       <span class="pill pill-purple">Deep Dive</span>
     </div>
-    <div class="verdict">Ocean CDR startup (Halifax, ~40 people, Series A $11.35M Sept 2024) that delivered the world's first verified OAE credits (June 2025) and signed a $31.3M Frontier offtake for 115,000 tonnes 2026-2030. The BD Director role is the commercial program that does not yet exist. Paul built this exact transition twice -- KSAT monitoring from one contract, GFW licensing from Moore Foundation funding -- and the structural parallel to Planetary is close enough the learning curve is short. Pursue aggressively.</div>
+    <div class="verdict">Ocean CDR startup (Halifax, ~40 people, Series A $11.35M Sept 2024) that delivered the world's first verified OAE credits (June 2025) and signed a $31.3M Frontier offtake for 115,000 tonnes 2026-2030. The BD Director role is the commercial program that does not yet exist. Paul built this exact transition twice -- KSAT monitoring from one contract, GFW licensing from Moore Foundation funding -- structurally close enough that the learning curve is short.</div>
     <div class="links"><a href="https://ph2.bamboohr.com/careers/67" target="_blank" rel="noopener">Job Posting</a> <a href="#" class="copy-path-link" onclick="copyFilePath(this, '/Users/paulwhitaker/Desktop/Claude Deep Dives/Planetary_Technologies_Deep_Dive.docx'); return false;">Deep Dive Doc</a> </div>
     <div style="margin-top:6px"><select class="status-select" onchange="changeStatus(this, 'Planetary Technologies')"><option value="not_applied" selected>Not Applied</option><option value="applied">Applied</option><option value="1st_interview">1st Interview</option><option value="2nd_interview">2nd Interview</option><option value="awaiting">Awaiting Response</option><option value="cold_outreach">Cold Outreach</option><option value="rejected">Rejected</option><option value="pass">Pass</option></select></div>
   </div>
@@ -191,13 +196,14 @@
     <button class="dismiss-btn" onclick="dismissCard(this, 'Open Cosmos')" title="Remove from active list">&times;</button>
     <div class="company">Open Cosmos</div>
     <div class="role">Sales Lead, Earth Observation Data (Europe)</div>
-    <div class="meta-line">EO Data / Satellite Missions / DataCosmos Platform · UK/Europe (remote flexible)</div>
+    <div class="meta-line">EO Data / Satellite Missions / DataCosmos Platform · UK | Spain | Portugal | Greece (no US option)</div>
+    <div class="blockers-row"><span class="blocker-tag blocker-tag-hard" title="Posting states 'this role you can be based in any of our locations: UK | Spain | Portugal | Greece.' No US remote option. Role requires EU/UK residency and work authorization.">&#9888; GEOGRAPHIC RESIDENCY</span></div>
     <div class="score-row">
       <span style="color:var(--amber)">Score: 72.5/100</span>
       <span>Fit: 8/10</span>
       <span class="pill pill-purple">Deep Dive</span>
     </div>
-    <div class="verdict">UK-headquartered satellite company ($63M Series B, profitable 5+ years) at a genuine inflection point between mission services and data platform revenue. The Sales Lead EO Data role is a direct match to Paul's twice-proven pattern of building commercial programs on technical platforms (KSAT monitoring from one contract, GFW licensing on an open-data platform). Atlantic Constellation (8 microsatellites for ESA/AEE, 2027 delivery) creates a defined timeline for commercial readiness. Key constraints: 'Sales Lead' title is below Director/VP target, European location likely required despite remote flexibility, Glassdoor shows below-market compensation. Previously archived at 57.0; deep dive research significantly upgraded the score.</div>
+    <div class="verdict">UK-headquartered satellite company ($63M Series B, profitable 5+ years) at a genuine inflection point between mission services and data platform revenue. The Sales Lead EO Data role is a direct match to Paul's twice-proven pattern of building commercial programs on technical platforms (KSAT, GFW). Atlantic Constellation (8 microsatellites for ESA/AEE, 2027 delivery) creates a defined timeline for commercial readiness.</div>
     <div class="links"><a href="https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe" target="_blank" rel="noopener">Job Posting</a> <a href="#" class="copy-path-link" onclick="copyFilePath(this, '/Users/paulwhitaker/Desktop/Claude Deep Dives/Open_Cosmos_Deep_Dive.docx'); return false;">Deep Dive Doc</a> </div>
     <div style="margin-top:6px"><select class="status-select" onchange="changeStatus(this, 'Open Cosmos')"><option value="not_applied" selected>Not Applied</option><option value="applied">Applied</option><option value="1st_interview">1st Interview</option><option value="2nd_interview">2nd Interview</option><option value="awaiting">Awaiting Response</option><option value="cold_outreach">Cold Outreach</option><option value="rejected">Rejected</option><option value="pass">Pass</option></select></div>
   </div>
@@ -209,6 +215,7 @@
     <div class="company">Fugro</div>
     <div class="role">Product Commercialisation Manager, Climate & Nature</div>
     <div class="meta-line">Geodata / Marine / EO / Environmental Monitoring · Netherlands / UK / Global (remote negotiable)</div>
+    
     <div class="score-row">
       <span style="color:var(--amber)">Score: 66.5/100</span>
       <span>Fit: 7/10</span>
@@ -226,6 +233,7 @@
     <div class="company">Fugro</div>
     <div class="role">Commercial Manager</div>
     <div class="meta-line">Geodata / Marine / Offshore Services · UK / Netherlands (likely)</div>
+    
     <div class="score-row">
       <span style="color:var(--amber)">Score: 60.5/100</span>
       <span>Fit: 6/10</span>
@@ -246,11 +254,6 @@
       <td class="company-name">Climate Central</td><td>VP, Business Development</td><td><span class="pill pill-green">78.0</span></td><td>2026-03-27</td>
       <td>Climate Data / Nonprofit</td><td>Princeton NJ / Remote</td><td>$185-195k</td>
       <td><span class="pill pill-cyan">1st Interview</span></td><td><a href="https://www.climatecentral.org/open-position-vice-president-for-business-development" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">1st Interview Tue Apr 21, 2:00-2:45 PM MDT — VP Finance + Chief of Staff Emily Silberstein — Zoom</td>
-    </tr>
-    <tr>
-      <td class="company-name">SkyWatch</td><td>Sr. Manager, Ecosystem & Platform Partners</td><td><span class="pill pill-amber">69.0</span></td><td>2026-03-01</td>
-      <td>EO Data Platform</td><td>Hybrid / Kitchener ON</td><td>Undisclosed</td>
-      <td><span class="pill pill-cyan">1st Interview</span></td><td><a href="https://skywatch.com/careers/?ashby_jid=cdf99855-9d51-4cbd-89c6-06c5b4cb5aa1#openroles" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">Had 1st interview — awaiting decision on 2nd round</td>
     </tr>
     <tr>
       <td class="company-name">Kepler Communications</td><td>Director of Sales, US Commercial Space</td><td><span class="pill pill-green">77.0</span></td><td>2026-04-10</td>
@@ -317,6 +320,11 @@
       <td>EO / Energy / Insurance</td><td>Remote US</td><td>$95-120k / $190-240k OTE</td>
       <td><span class="pill pill-muted">Rejected</span></td><td><a href="https://earthdaily.applytojob.com/apply/Ih6szCNTia/Account-Executive-United-States" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">Closed Apr 2</td>
     </tr>
+    <tr>
+      <td class="company-name">SkyWatch</td><td>Sr. Manager, Ecosystem & Platform Partners</td><td><span class="pill pill-amber">69.0</span></td><td>2026-03-01</td>
+      <td>EO Data Platform</td><td>Hybrid / Kitchener ON</td><td>Undisclosed</td>
+      <td><span class="pill pill-muted">—</span></td><td><a href="https://skywatch.com/careers/?ashby_jid=cdf99855-9d51-4cbd-89c6-06c5b4cb5aa1#openroles" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">References provided to April Clarke 4/14 (Marte Indregard/KSAT, Paul Woods/GFW, Rob Ayasse/KSAT). She is conducting additional interviews this week and will circle back with feedback.</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -330,7 +338,7 @@
 <table>
   <thead><tr><th>#</th><th>Company</th><th>Role</th><th>Fit</th><th>Score</th><th>Domain</th><th>Location</th><th>Link</th><th>Why</th></tr></thead>
   <tbody>
-    <tr><td>1</td><td class="company-name">Planetary Technologies</td><td>Director, Business Development</td><td><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:80%;background:var(--green)"></div></div> 8</div></td><td><span class="pill pill-green">75.0</span></td><td>Ocean CDR / Carbon Removal / Climate Tech</td><td>Halifax, NS (BD remote-verify)</td><td><a href="https://ph2.bamboohr.com/careers/67" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">World's first verified OAE credits + $31.3M Frontier offtake starting 2026. Paul</td></tr>
+    <tr><td>1</td><td class="company-name">Planetary Technologies</td><td>Director, Business Development</td><td><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:80%;background:var(--green)"></div></div> 8</div></td><td><span class="pill pill-green">75.0</span></td><td>Ocean CDR / Carbon Removal / Climate Tech</td><td>Ottawa, ON (Remote within Canada only)</td><td><a href="https://ph2.bamboohr.com/careers/67" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">World's first verified OAE credits + $31.3M Frontier offtake. Maps directly to P</td></tr>
   </tbody>
 </table>
 </div>
@@ -342,7 +350,7 @@
 <table>
   <thead><tr><th>#</th><th>Company</th><th>Role</th><th>Fit</th><th>Score</th><th>Domain</th><th>Location</th><th>Link</th><th>Why</th></tr></thead>
   <tbody>
-    <tr><td>1</td><td class="company-name">Open Cosmos</td><td>Sales Lead, Earth Observation Data (Europe)</td><td><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:80%;background:var(--green)"></div></div> 8</div></td><td><span class="pill pill-amber">72.5</span></td><td>EO Data / Satellite Missions / DataCosmos Platform</td><td>UK/Europe (remote flexible)</td><td><a href="https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">EO data platform company at mission-to-data inflection. DataCosmos needs commerc</td></tr>
+    <tr><td>1</td><td class="company-name">Open Cosmos</td><td>Sales Lead, Earth Observation Data (Europe)</td><td><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:80%;background:var(--green)"></div></div> 8</div></td><td><span class="pill pill-amber">72.5</span></td><td>EO Data / Satellite Missions / DataCosmos Platform</td><td>UK | Spain | Portugal | Greece (no US option)</td><td><a href="https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">EO data platform at mission-to-data inflection. DataCosmos needs commercial engi</td></tr>
     <tr><td>2</td><td class="company-name">Fugro</td><td>Product Commercialisation Manager, Climate & Nature</td><td><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:70%;background:var(--amber)"></div></div> 7</div></td><td><span class="pill pill-amber">66.5</span></td><td>Geodata / Marine / EO / Environmental Monitoring</td><td>Netherlands / UK / Global (remote negotiable)</td><td><a href="https://www.fugro.com/careers/jobs/R0031009-product-commercialisation-manager-climate-%26-nature" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">Fugro acquired EOMAP (EO satellite monitoring) Feb 2025. PCM role = build the co</td></tr>
     <tr><td>3</td><td class="company-name">Fugro</td><td>Commercial Manager</td><td><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:60%;background:var(--amber)"></div></div> 6</div></td><td><span class="pill pill-amber">60.5</span></td><td>Geodata / Marine / Offshore Services</td><td>UK / Netherlands (likely)</td><td><a href="https://www.fugro.com/careers/jobs/R0031035-commercial-manager" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">Fugro Commercial Manager — possibly USV service line or regional BD. Investigate</td></tr>
   </tbody>
