@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-15T16:01:25.429837",
   "stats": {
     "applications_sent": 18,
     "awaiting_response": 10,
@@ -13,6 +13,128 @@
   "ranked_opportunities": [
     {
       "rank": 1,
+      "company": "Technosylva",
+      "role": "Director of Business Development & Partnerships",
+      "score": 93.0,
+      "proxy_score": null,
+      "effective_score": 93.0,
+      "fit": 10,
+      "has_deep_dive": true,
+      "date": "2026-04-15",
+      "scqa": "The Pano AI Partnership Is the Template",
+      "verdict": "Wildfire and extreme weather risk mitigation SaaS, PE-backed scaling phase (TA Associates 2022 + General Atlantic 2024, ~175 employees, 10+ countries). Director-level BD & Partnerships reporting to CCO, fully remote, owns full partnership lifecycle including M&A assessment. Customer base spans electric utility, insurance, and government agencies \u2014 exactly the multi-stakeholder regulated-buyer pattern Paul has built around at GFW (AXA/British Marine), KSAT (Shell/ExxonMobil/ENI/NOPSEMA), and PA Consulting (water utilities). Most importantly, Paul personally authored KSAT's internal capability briefing on satellite-based fire detection (Sentinel-2 SWIR + Superview tipping-and-cueing) and built out the bushfire monitoring program from 2016-2020, giving direct hands-on wildfire EO domain credential that most commercial candidates will not have. Highest score in pipeline.",
+      "recommendation": "pursue",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://technosylva.bamboohr.com/careers/153"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Technosylva_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed \u2014 Top SCQA: Pano AI Partnership Template (94.5/100)",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Wildfire / Extreme Weather Risk Software (Climate Tech)",
+      "location": "United States, Remote (Chicago listed)",
+      "hook": "Highest-scoring role in pipeline. Wildfire SaaS Director BD&Partnerships, reports to CCO, fully remote. Paul's KSAT bushfire capability briefing is direct authored domain credential. PE-backed (TA Associates + General Atlantic) at perfect scaling inflection point.",
+      "blockers": []
+    },
+    {
+      "rank": 2,
+      "company": "Placer.ai",
+      "role": "Strategic Partnerships, Account Director",
+      "score": 82.0,
+      "proxy_score": null,
+      "effective_score": 82.0,
+      "fit": 9,
+      "has_deep_dive": true,
+      "date": "2026-04-15",
+      "scqa": "Two-Sided Partnership Architecture",
+      "verdict": "Location-intelligence unicorn ($100M ARR) hiring Director-level strategic partnerships role to build new public-sector channel (NASPO/OMNIA reseller mechanisms) and commercial workflow integrations (Snowflake, Databricks, Alteryx). The JD reads almost word-for-word like Paul's market-builder profile: build from inception, multi-stakeholder partnerships, public sector procurement, data licensing. Fully remote at $210-240K OTE. Only friction is mission alignment \u2014 Placer's customers are retail/CRE/finance/government, not climate/conservation, so this is a domain pivot toward the data-platform-builder framing of his identity rather than the environmental-mission framing.",
+      "recommendation": "pursue",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.placer.ai/company/we-are-hiring?gh_jid=7661310003"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Placer.ai_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Location Intelligence / Geospatial Data Licensing",
+      "location": "United States, Remote",
+      "hook": "JD almost literally written for Paul's market-builder profile \u2014 build new partnerships function from inception, public sector + commercial channels, fully remote, $210-240K OTE. Domain pivot from environmental but data-licensing pattern is identical.",
+      "blockers": []
+    },
+    {
+      "rank": 3,
+      "company": "Project Canary",
+      "role": "VP of Sales, Oil & Gas",
+      "score": 71.5,
+      "proxy_score": null,
+      "effective_score": 71.5,
+      "fit": 7,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored \u2014 no full deep dive yet",
+      "verdict": "Methane/emissions monitoring company hiring VP Sales for the O&G vertical (player-coach, 1 direct report). Domain fit is strong \u2014 Project Canary's buyer list (US shale operators and majors) overlaps directly with Paul's KSAT customers (Shell, ExxonMobil, ConocoPhillips, Total, ENI), and the methane-regulation-driven commercial argument is exactly the Shell stock chart pattern. Two real frictions: (1) JD has heavy 'own the number / forecast accuracy / attainment' framing that leans more toward quota-carrying head than market-builder, and (2) Denver hybrid 3 days/week requires relocation or split-time arrangement.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://projectcanary.pinpointhq.com/en/postings/75c09efb-c0d2-473a-a0e2-cc310af50cc2"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via /job-evaluate \u2014 run /company-deep-dive for full analysis. Geographic friction: Denver hybrid, not remote.",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Methane / Emissions Monitoring (Oil & Gas)",
+      "location": "Denver, CO (Hybrid)",
+      "hook": "Methane regulation is a perfect commercial inflection moment. Buyer list = Paul's KSAT customer list. Quota-heavy framing and Denver hybrid are the only frictions.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Denver HQ hybrid 3 days/week. Paul is in Taos, NM \u2014 would require relocation or split-time arrangement.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "company": "Treeswift",
+      "role": "Account Executive",
+      "score": 61.5,
+      "proxy_score": null,
+      "effective_score": 61.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored \u2014 no full deep dive yet",
+      "verdict": "LiDAR + AI sensors for utility vegetation management (wildfire-adjacent), Inspired Capital backed, already serving 3 of 5 largest US utilities. Stage and domain are excellent (SA 8, IL 8). But the role is structurally an Account Executive seat with quota, uncapped commissions, and 'live by ABC' framing \u2014 explicitly not Paul's market-builder profile (RF 4). 50-75% travel required. JD calls out US electric utility network as a big plus, which Paul does not have at depth. Probable pass: a 25-year market-builder taking a quota-carrying AE seat is a step sideways even at a great wildfire-tech company.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/treeswift"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via /job-evaluate \u2014 Tier 2 by math but role-fit mismatch is structural. Probable pass.",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Utility Vegetation Management / Wildfire (LiDAR + AI)",
+      "location": "Remote (NY HQ, 50-75% travel required)",
+      "hook": "Wildfire/utility domain is excellent and stage is at the inflection point Paul thrives on, but the role itself is quota-carrying AE \u2014 wrong title and structure for a market-builder. Score reflects Tier 2 math; verdict reflects profile mismatch.",
+      "blockers": []
+    },
+    {
+      "rank": 5,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -47,7 +169,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 6,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -87,7 +209,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 7,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -116,7 +238,7 @@
       "blockers": []
     },
     {
-      "rank": 4,
+      "rank": 8,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -143,7 +265,7 @@
       "blockers": []
     },
     {
-      "rank": 5,
+      "rank": 9,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -176,7 +298,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 10,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -205,7 +327,7 @@
       "blockers": []
     },
     {
-      "rank": 7,
+      "rank": 11,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -240,7 +362,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 12,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -275,7 +397,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 13,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -310,7 +432,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 14,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -345,7 +467,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 15,
       "company": "Rubicon Carbon",
       "role": "Director, Business Development",
       "score": 53.5,
@@ -380,7 +502,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 16,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -409,7 +531,7 @@
       "blockers": []
     },
     {
-      "rank": 13,
+      "rank": 17,
       "company": "Crusoe Energy",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -444,7 +566,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 18,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -473,7 +595,7 @@
       "blockers": []
     },
     {
-      "rank": 15,
+      "rank": 19,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -502,7 +624,7 @@
       "blockers": []
     },
     {
-      "rank": 16,
+      "rank": 20,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -537,7 +659,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 21,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -572,7 +694,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 22,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -601,7 +723,7 @@
       "blockers": []
     },
     {
-      "rank": 19,
+      "rank": 23,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -630,7 +752,7 @@
       "blockers": []
     },
     {
-      "rank": 20,
+      "rank": 24,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -665,7 +787,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 25,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -700,7 +822,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 26,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -729,7 +851,7 @@
       "blockers": []
     },
     {
-      "rank": 23,
+      "rank": 27,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -764,7 +886,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 28,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -799,7 +921,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 29,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -834,7 +956,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 30,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -863,7 +985,47 @@
       "blockers": []
     },
     {
-      "rank": 27,
+      "rank": 31,
+      "company": "Veritree",
+      "role": "Enterprise Business Development Representative",
+      "score": 45.0,
+      "proxy_score": null,
+      "effective_score": 45.0,
+      "fit": 2,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored \u2014 clear pass",
+      "verdict": "Vancouver-based reforestation verification startup. Mission and domain are genuinely aligned with Paul's interests (forest carbon / restoration verification). But the role is structurally a Business Development Representative seat: 2+ years experience requirement, reports to Manager BD, $100K CAD OTE (~$72K USD), outbound prospecting and discovery meeting booking. Two seniority levels below Paul's target and one-third of his comp range. The hybrid-in-Vancouver requirement adds a hard geographic blocker (Canadian work authorization). Worth tracking the company for future Director or VP Partnerships openings; this role is not actionable.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://apply.workable.com/veritree/j/2834EC58D9/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via /job-evaluate \u2014 pass on all three structural mismatches (title, comp, Canadian geographic blocker)",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Reforestation Impact Verification (Climate Tech)",
+      "location": "Vancouver, BC, Canada (Hybrid)",
+      "hook": "Mission and domain align well, but role is BDR (two levels below Paul's target) at $72K USD OTE and Canadian-hybrid (residency blocker). Track the company, pass on this role.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Hybrid in Vancouver, BC, Canada. Almost certainly requires Canadian work authorization. Same blocker pattern as Planetary Technologies (Ottawa).",
+          "severity": "hard"
+        },
+        {
+          "type": "seniority_mismatch",
+          "detail": "BDR title and structure is two levels below Paul's Director/VP target. Comp ($100K CAD OTE) is one-third of his range.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 32,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -892,7 +1054,7 @@
       "blockers": []
     },
     {
-      "rank": 28,
+      "rank": 33,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -919,7 +1081,7 @@
       "blockers": []
     },
     {
-      "rank": 29,
+      "rank": 34,
       "company": "Unknown (Climate Change Jobs)",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 42.0,
@@ -948,7 +1110,7 @@
       "blockers": []
     },
     {
-      "rank": 30,
+      "rank": 35,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -977,7 +1139,7 @@
       "blockers": []
     },
     {
-      "rank": 31,
+      "rank": 36,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
