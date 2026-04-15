@@ -1,17 +1,88 @@
 {
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-15",
   "stats": {
     "applications_sent": 15,
     "awaiting_response": 10,
     "active_interviews": 2,
-    "active_pipeline": 22,
-    "deep_dives_done": 14,
+    "active_pipeline": 32,
+    "deep_dives_done": 16,
     "resumes_built": 1,
-    "rejected_closed": 3
+    "rejected_closed": 3,
+    "last_updated": "2026-04-15"
   },
   "ranked_opportunities": [
     {
       "rank": 1,
+      "company": "Fleetzero",
+      "role": "Head of Strategic Partnerships",
+      "score": 71.0,
+      "proxy_score": null,
+      "effective_score": 71.0,
+      "fit": 7,
+      "has_deep_dive": true,
+      "date": "2026-04-15",
+      "scqa": "The Shipyard Triangle",
+      "verdict": "Electric maritime propulsion startup at post-Series A inflection ($43M Jan 2026, Maersk Growth investor). First commercial retrofit (AET Innovator/Glosten) starts construction mid-2026. Head of Strategic Partnerships is the founding commercial hire to build the shipyard/OEM/naval architect ecosystem from scratch. Maritime domain is Paul's deepest professional territory. Geographic verification required before applying.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/fleetzero/c825871f-39ed-4bec-ad0b-6626135efbb6"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Fleetzero_Deep_Dive_PW.docx",
+      "doc_note": "Full deep dive completed (morning brief 2026-04-15). Verify remote eligibility before applying.",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Maritime Propulsion / Electrification",
+      "location": "Houston, TX (remote TBC)",
+      "hook": "Electric shipping startup with Maersk Growth investor and first real retrofit project underway. Founding commercial hire. Maritime domain match is the strongest in current pipeline.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role listed as Houston, TX on all job aggregators. No explicit remote language found. 25-40% travel requirement suggests potential remote workability but not confirmed. Paul is in Taos, NM. Verify before applying.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "company": "Planetary Technologies",
+      "role": "Director of Business Development",
+      "score": 63.5,
+      "proxy_score": null,
+      "effective_score": 63.5,
+      "fit": 7,
+      "has_deep_dive": true,
+      "date": "2026-04-14",
+      "scqa": "The Sold Out Problem",
+      "verdict": "OAE carbon removal startup at post-PMF inflection: world's first verified OAE credits, $31.3M Frontier offtake, 2025 supply sold out. Director BD is a foundational commercial hire to diversify buyer base beyond Frontier. Content fit is the strongest in the current pipeline. Pursue with caveats pending geographic confirmation. Canada HQ is a potential hard blocker but company has US team members and global commercial mandate.",
+      "recommendation": "pursue_with_caveats",
+      "status": "applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ph2.bamboohr.com/careers/67"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Planetary_Technologies_Deep_Dive.docx",
+      "doc_note": "Full deep dive completed (morning brief 2026-04-14). NOTE: Paul already applied to this role today before morning brief ran. Deep dive doc still useful for interview prep.",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Ocean CDR / Carbon Removal",
+      "location": "Dartmouth, Canada (US team members present, remote TBC)",
+      "hook": "World's first verified OAE credits, sold-out 2025 supply, $31.3M Frontier offtake. Best content fit in pipeline. Geographic confirmation needed.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Planetary HQ is Dartmouth, Canada. BambooHR JD URL was inaccessible during research, so specific residency language could not be confirmed. Company has US and UK team members. US-remote may be feasible but must be verified before applying.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 3,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -46,7 +117,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 4,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -75,7 +146,7 @@
       "blockers": []
     },
     {
-      "rank": 3,
+      "rank": 5,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -102,7 +173,7 @@
       "blockers": []
     },
     {
-      "rank": 4,
+      "rank": 6,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -135,7 +206,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 7,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -164,7 +235,7 @@
       "blockers": []
     },
     {
-      "rank": 6,
+      "rank": 8,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -199,7 +270,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 9,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -234,7 +305,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 10,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -269,7 +340,77 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 11,
+      "company": "Copper",
+      "role": "Director of Business Development, East Coast",
+      "score": 55.0,
+      "proxy_score": null,
+      "effective_score": 55.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored -- building electrification BD, East Coast focus",
+      "verdict": "Berkeley CA startup making battery-equipped induction ranges for multifamily buildings ($28M Series A 2025, Voyager Ventures portfolio). Director BD East Coast is remote but East Coast-focused (NY multifamily real estate). Right stage for Paul but domain (home appliances, real estate BD) is a significant departure from EO/maritime/data background. East Coast geographic focus is a soft constraint from Taos.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://copperhome.com/pages/jobs?gh_jid=5095210007"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, domain mismatch + East Coast soft blocker",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "Building Electrification / Clean Hardware",
+      "location": "Remote (East Coast focused)",
+      "hook": "Home electrification startup turning multifamily buildings electric. Right stage, wrong domain. East Coast focus is a soft geographic constraint.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is explicitly East Coast focused (New York and other East Coast markets). Paul is in Taos, NM (Mountain Time). Not a hard blocker but reduces fit for this specific geographic mandate.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "company": "Rubicon Carbon",
+      "role": "Director, Business Development",
+      "score": 53.5,
+      "proxy_score": null,
+      "effective_score": 53.5,
+      "fit": 6,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- carbon credit platform, geo blocker",
+      "verdict": "TPG-backed carbon credit portfolio company (~45 employees, Marina del Rey CA). Director BD role is quota-carrying enterprise sales to Fortune 500 buyers. Carbon market domain is relevant but the motion is enterprise sales of a defined product, not market creation. Role requires candidates within 1hr of NYC, LA, or SF -- hard geo blocker from Taos. Content score reflects genuine carbon market fit; geo block makes it not actionable.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/rubiconcarbon/jobs/4676382005"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, geo blocker",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Carbon Credits / VCM Finance",
+      "location": "Remote (must be within 1hr NYC/LA/SF)",
+      "hook": "TPG-backed carbon credit platform. Director BD at $175-235K. Enterprise sales motion, not market building. Hard geo blocker from Taos.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role requires candidates to be based within one hour of New York City, Los Angeles, or San Francisco. Taos, NM does not meet this requirement.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 13,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -290,7 +431,7 @@
       "doc_path": null,
       "doc_note": "Scored via morning brief. Existing Fugro deep dive covers company context.",
       "added": "2026-04-13",
-      "is_new": true,
+      "is_new": false,
       "tier": "tier3",
       "domain": "Geodata / Marine / Offshore Services",
       "location": "Regional (likely Houston/Perth/Europe)",
@@ -298,7 +439,42 @@
       "blockers": []
     },
     {
-      "rank": 10,
+      "rank": 14,
+      "company": "Crusoe Energy",
+      "role": "EDG Commercial Development Director, Nuclear",
+      "score": 51.5,
+      "proxy_score": null,
+      "effective_score": 51.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- nuclear experience gap, Denver accessible",
+      "verdict": "AI infrastructure company (Crusoe) building nuclear power partnerships for data center supply. Denver-based role accessible from Taos. Compensation is strong ($190-230K + RSUs). However, role explicitly requires 10+ years in the nuclear industry, NRC licensing process knowledge, and existing nuclear ecosystem relationships -- all of which Paul lacks. Experience gap is disqualifying in practice.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/441266041-edg-commercial-development-director-nuclear"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, nuclear experience blocker",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "AI Infrastructure / Nuclear Power",
+      "location": "Denver, CO",
+      "hook": "AI data center company needing nuclear power partnerships. Good comp, wrong domain. 10+ yrs nuclear experience required.",
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "Requires 10+ years in the nuclear industry including NRC licensing processes and established nuclear ecosystem relationships. Paul has no nuclear industry experience.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 15,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -327,7 +503,7 @@
       "blockers": []
     },
     {
-      "rank": 11,
+      "rank": 16,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -356,7 +532,106 @@
       "blockers": []
     },
     {
-      "rank": 12,
+      "rank": 17,
+      "company": "Stripe (EU Climate)",
+      "role": "EU Market Development, Climate",
+      "score": 50.0,
+      "proxy_score": null,
+      "effective_score": 50.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- EU market dev climate, geo blocker",
+      "verdict": "Stripe is building EU climate market development. Market development for climate at a major fintech is interesting but the role is explicitly EU-focused, which implies EU residency. Stripe's climate products are payments/API based, different from Paul's data and monitoring domain. Hard geo blocker.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://stripe.com/jobs/listing/eu-market-development-climate/7722641"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, EU geo blocker",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Fintech / Climate Payments",
+      "location": "EU (remote likely required)",
+      "hook": "Stripe building EU climate market development. Interesting but EU-focused and payments/API domain differs from Paul's EO/data background.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is for EU Market Development implying EU residency/presence. Paul is based in Taos, NM.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "company": "Carbon Gap",
+      "role": "CDR Demand and Market Development Lead",
+      "score": 49.0,
+      "proxy_score": null,
+      "effective_score": 49.0,
+      "fit": 6,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- CDR market dev nonprofit, UK blocker",
+      "verdict": "London-based CDR advocacy nonprofit working on policy and demand-side development for carbon removal. Market development at a nonprofit is more advocacy/ecosystem building than commercial BD. Paul's market patterns partially apply but the nonprofit context and UK location are both constraints. Hard geo blocker.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://carbon-gap.jobs.personio.com/job/2593250"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, UK nonprofit, geo blocker",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "CDR / Carbon Removal Advocacy",
+      "location": "London, UK",
+      "hook": "CDR policy and market development nonprofit. Domain is highly relevant but UK-based and nonprofit context limits commercial BD fit.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Carbon Gap is headquartered in London, UK (registered at 71-75 Shelton Street, Covent Garden). UK residency or EU authorization likely required. Paul is based in Taos, NM.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "company": "UtilityAPI",
+      "role": "Strategic Sales Director",
+      "score": 49.0,
+      "proxy_score": null,
+      "effective_score": 49.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored -- utility data platform, IC sales director",
+      "verdict": "Oakland CA utility data exchange platform ($10.77M Series A total raised, 2014 founded). Strategic Sales Director at a company this size is likely a quota-carrying IC role rather than commercial leadership. Utility data access and grid software is climate-adjacent but not Paul's EO/maritime/carbon domain. Role seniority ambiguity is the primary concern.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.climatejobslist.com/jobs/strategic-sales-director-at-utilityapi-aug-23"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, likely IC quota-carrying at small Series A company",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": "tier3",
+      "domain": "Utility Data / Clean Energy Software",
+      "location": "Oakland, CA (likely remote)",
+      "hook": "Utility data exchange platform. Adjacent to climate grid data but likely IC quota-carrying at a small pre-scale company.",
+      "blockers": []
+    },
+    {
+      "rank": 20,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -377,7 +652,7 @@
       "doc_path": null,
       "doc_note": "Scored via morning brief -- Tier 3, wrong function",
       "added": "2026-04-14",
-      "is_new": true,
+      "is_new": false,
       "tier": "tier3",
       "domain": "Carbon Credit Ratings / VCM Analytics",
       "location": "London / Remote",
@@ -385,7 +660,77 @@
       "blockers": []
     },
     {
-      "rank": 13,
+      "rank": 21,
+      "company": "HKEX",
+      "role": "Vice President, Carbon and ESG Products",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- carbon exchange VP, Hong Kong hard blocker",
+      "verdict": "Hong Kong Exchanges and Clearing Limited building carbon and ESG products. VP level is appropriate seniority. Carbon market domain has overlap. However, Hong Kong location is a hard blocker and the exchange product management context differs substantially from Paul's commercial market-building background.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://hkex.wd3.myworkdayjobs.com/hkexcareerpage/job/hk-two-es-7f/vice-president---carbon---esg-products_r002984"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, Hong Kong hard blocker",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Carbon Markets / Financial Exchange",
+      "location": "Hong Kong",
+      "hook": "Major exchange VP Carbon/ESG. Right level wrong place. Hong Kong is a hard geo blocker.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is based in Hong Kong. HKEX (Hong Kong Exchanges and Clearing) requires Hong Kong presence and likely work authorization. Hard blocker for US-based candidate.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "company": "Alcumus (Planet Mark)",
+      "role": "Carbon Data Transformation Director / Consultant",
+      "score": 47.0,
+      "proxy_score": null,
+      "effective_score": 47.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored -- carbon data consulting, London hard blocker",
+      "verdict": "UK sustainability SaaS and risk management company (owns Planet Mark certification). Role is London-based, carbon data transformation director or consulting engagement. Hard geographic blocker. Content fit is moderate: carbon data is adjacent to Paul's domain but this appears to be more internal transformation/consulting work than commercial program building. Established company not at startup stage.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://alcumus.pinpointhq.com/en/postings/22f284c4-0b3d-4f03-90fc-ff1b0febd199?source=jobsincarbon"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, London hard geo blocker",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": "tier3",
+      "domain": "Sustainability SaaS / Carbon Reporting",
+      "location": "London, UK",
+      "hook": "UK sustainability platform. Carbon data director role is London-based. Hard geographic blocker. Content fit moderate.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is London, UK based. Alcumus is headquartered in UK. No US remote option found. Hard geographic blocker for Taos-based candidate.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 23,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -414,7 +759,7 @@
       "blockers": []
     },
     {
-      "rank": 14,
+      "rank": 24,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -435,7 +780,7 @@
       "doc_path": null,
       "doc_note": "Scored via morning brief -- Tier 3, domain mismatch + wrong stage",
       "added": "2026-04-14",
-      "is_new": true,
+      "is_new": false,
       "tier": "tier3",
       "domain": "Enterprise AI / IT Automation (Moveworks/ServiceNow)",
       "location": "APAC (likely in-region)",
@@ -449,7 +794,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 25,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -470,7 +815,7 @@
       "doc_path": null,
       "doc_note": "Scored via morning brief -- Tier 3, domain mismatch + wrong stage",
       "added": "2026-04-14",
-      "is_new": true,
+      "is_new": false,
       "tier": "tier3",
       "domain": "Enterprise AI / IT Automation (Moveworks/ServiceNow)",
       "location": "Canada",
@@ -484,7 +829,42 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 26,
+      "company": "Fugro",
+      "role": "GroundIQ Sales Lead",
+      "score": 45.5,
+      "proxy_score": null,
+      "effective_score": 45.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- Fugro GroundIQ, Netherlands geo blocker",
+      "verdict": "Third Fugro role seen in tracker. GroundIQ is Fugro's geotechnical ground investigation product (subsurface mapping using seismic/geophysical methods for civil/infrastructure projects), not maritime monitoring. The domain differs from Paul's EO/maritime/SAR background. Available research indicates role is Netherlands/Germany based. Hard geo blocker, plus domain mismatch from prior two Fugro roles.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.fugro.com/careers/jobs/R0031041-groundiq-sales-lead"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, domain mismatch + Netherlands geo blocker. Existing Fugro deep dive covers company context.",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Geodata / Geotechnical Surveying",
+      "location": "Netherlands (likely Nootdorp HQ)",
+      "hook": "Third Fugro posting. GroundIQ is geotechnical surveying, not maritime EO. Netherlands-based, domain mismatch.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Fugro GroundIQ roles are Netherlands/Germany-based per available job listings. Likely requires EU residency or work authorization.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 27,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -513,7 +893,7 @@
       "blockers": []
     },
     {
-      "rank": 17,
+      "rank": 28,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -542,7 +922,7 @@
       "blockers": []
     },
     {
-      "rank": 18,
+      "rank": 29,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -569,7 +949,65 @@
       "blockers": []
     },
     {
-      "rank": 19,
+      "rank": 30,
+      "company": "Unknown (Climate Change Jobs)",
+      "role": "Director, Energy Innovation and Commercialization",
+      "score": 42.0,
+      "proxy_score": null,
+      "effective_score": 42.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored title-only -- degraded blocker detection",
+      "verdict": "Company name not identified: URL aggregated through ClimateChangeJobs.com (domain blocked). Title suggests energy innovation commercialization at a lab, utility, or energy company. Director level is appropriate seniority. 'Commercialization' language is encouraging but without knowing the company or domain, reliable scoring is not possible. Blocker detection is degraded. Paul should check this posting directly.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/441266045-director-energy-innovation-and-commercialization"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored title-only -- aggregator URL blocked, company unknown. Degraded blocker detection. Verify manually.",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Energy / Unknown",
+      "location": "Unknown",
+      "hook": "Director Energy Innovation and Commercialization -- company unknown, aggregator URL blocked. Verify manually.",
+      "blockers": []
+    },
+    {
+      "rank": 31,
+      "company": "MineSense Technologies",
+      "role": "Key Accounts Director, North America",
+      "score": 42.0,
+      "proxy_score": null,
+      "effective_score": 42.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored -- mining sensing, account management",
+      "verdict": "Vancouver Canada mining technology company (Series E, $133M raised, Caterpillar Ventures-backed). Real-time ore grade sensing for large-scale mines. Key Accounts Director North America implies managing existing enterprise accounts, not building from scratch. Mining is entirely outside Paul's domain. Score reflects weak domain fit and account management function mismatch.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.preludeventures.com/companies/minesense-technologies-2/jobs/74270885-key-accounts-director-north-america"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, mining domain mismatch + account management function",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": "tier3",
+      "domain": "Mining Technology / Mineral Sensing",
+      "location": "Canada / North America remote",
+      "hook": "Mining sensing tech company. Key Accounts Director is account management not market-building. Mining domain is outside Paul's background.",
+      "blockers": []
+    },
+    {
+      "rank": 32,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
