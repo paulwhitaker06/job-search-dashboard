@@ -13,41 +13,6 @@
   "ranked_opportunities": [
     {
       "rank": 1,
-      "company": "Fleetzero",
-      "role": "Head of Strategic Partnerships",
-      "score": 71.0,
-      "proxy_score": null,
-      "effective_score": 71.0,
-      "fit": 7,
-      "has_deep_dive": true,
-      "date": "2026-04-15",
-      "scqa": "The Shipyard Triangle",
-      "verdict": "Electric maritime propulsion startup at post-Series A inflection ($43M Jan 2026, Maersk Growth investor). First commercial retrofit (AET Innovator/Glosten) starts construction mid-2026. Head of Strategic Partnerships is the founding commercial hire to build the shipyard/OEM/naval architect ecosystem from scratch. Maritime domain is Paul's deepest professional territory. Geographic verification required before applying.",
-      "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.lever.co/fleetzero/c825871f-39ed-4bec-ad0b-6626135efbb6"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Fleetzero_Deep_Dive_PW.docx",
-      "doc_note": "Full deep dive completed (morning brief 2026-04-15). Verify remote eligibility before applying.",
-      "added": "2026-04-15",
-      "is_new": true,
-      "tier": null,
-      "domain": "Maritime Propulsion / Electrification",
-      "location": "Houston, TX (remote TBC)",
-      "hook": "Electric shipping startup with Maersk Growth investor and first real retrofit project underway. Founding commercial hire. Maritime domain match is the strongest in current pipeline.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Role listed as Houston, TX on all job aggregators. No explicit remote language found. 25-40% travel requirement suggests potential remote workability but not confirmed. Paul is in Taos, NM. Verify before applying.",
-          "severity": "soft"
-        }
-      ]
-    },
-    {
-      "rank": 2,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -77,6 +42,46 @@
         {
           "type": "geographic_residency",
           "detail": "Location listed as Spain. Likely requires Spanish/EU residency. Verify US-remote not available.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "company": "Fleetzero",
+      "role": "Head of Strategic Partnerships",
+      "score": 59.0,
+      "proxy_score": null,
+      "effective_score": 59.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored \u2014 not pursued (Houston + narrow ecosystem gap)",
+      "verdict": "YC-backed Series A maritime decarbonization startup (battery-electric shipping). Strong pattern match on partnership architecture, but JD names 'Intimate knowledge of the integrator, shipyard, and vessel designer landscape' as Non-Negotiable Competency #1. Paul has maritime authority and oil major sales experience (KSAT) but not the shipbuilding commercial ecosystem specifically. Houston on-site, which Paul has explicitly ruled out. Pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/fleetzero/c825871f-39ed-4bec-ad0b-6626135efbb6"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via /job-evaluate 2026-04-14. Dismissed: Houston location Paul has ruled out, plus narrow shipbuilding ecosystem knowledge gap flagged non-negotiable by JD.",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Maritime Decarbonization / Battery-Electric Shipping",
+      "location": "Houston, TX (On-site)",
+      "hook": "YC-backed Series A maritime decarb. Pattern fits but shipbuilding ecosystem knowledge required per JD non-negotiable; Houston ruled out.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Houston, TX, On-site. Paul has explicitly stated he does not want to live in Houston.",
+          "severity": "hard"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "JD names 'Intimate knowledge of the integrator, shipyard, and vessel designer landscape' as Non-Negotiable Competency #1. Paul has KSAT maritime authority and oil major sales experience but not the shipbuilding commercial ecosystem specifically.",
           "severity": "hard"
         }
       ]
