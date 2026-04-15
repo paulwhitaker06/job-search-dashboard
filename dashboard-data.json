@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-15T16:01:25.429837",
+  "last_updated": "2026-04-15T17:34:16.838212",
   "stats": {
     "applications_sent": 18,
     "awaiting_response": 10,
@@ -13,35 +13,6 @@
   "ranked_opportunities": [
     {
       "rank": 1,
-      "company": "Technosylva",
-      "role": "Director of Business Development & Partnerships",
-      "score": 93.0,
-      "proxy_score": null,
-      "effective_score": 93.0,
-      "fit": 10,
-      "has_deep_dive": true,
-      "date": "2026-04-15",
-      "scqa": "The Pano AI Partnership Is the Template",
-      "verdict": "Wildfire and extreme weather risk mitigation SaaS, PE-backed scaling phase (TA Associates 2022 + General Atlantic 2024, ~175 employees, 10+ countries). Director-level BD & Partnerships reporting to CCO, fully remote, owns full partnership lifecycle including M&A assessment. Customer base spans electric utility, insurance, and government agencies \u2014 exactly the multi-stakeholder regulated-buyer pattern Paul has built around at GFW (AXA/British Marine), KSAT (Shell/ExxonMobil/ENI/NOPSEMA), and PA Consulting (water utilities). Most importantly, Paul personally authored KSAT's internal capability briefing on satellite-based fire detection (Sentinel-2 SWIR + Superview tipping-and-cueing) and built out the bushfire monitoring program from 2016-2020, giving direct hands-on wildfire EO domain credential that most commercial candidates will not have. Highest score in pipeline.",
-      "recommendation": "pursue",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://technosylva.bamboohr.com/careers/153"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Technosylva_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed \u2014 Top SCQA: Pano AI Partnership Template (94.5/100)",
-      "added": "2026-04-15",
-      "is_new": true,
-      "tier": null,
-      "domain": "Wildfire / Extreme Weather Risk Software (Climate Tech)",
-      "location": "United States, Remote (Chicago listed)",
-      "hook": "Highest-scoring role in pipeline. Wildfire SaaS Director BD&Partnerships, reports to CCO, fully remote. Paul's KSAT bushfire capability briefing is direct authored domain credential. PE-backed (TA Associates + General Atlantic) at perfect scaling inflection point.",
-      "blockers": []
-    },
-    {
-      "rank": 2,
       "company": "Placer.ai",
       "role": "Strategic Partnerships, Account Director",
       "score": 82.0,
@@ -70,7 +41,7 @@
       "blockers": []
     },
     {
-      "rank": 3,
+      "rank": 2,
       "company": "Project Canary",
       "role": "VP of Sales, Oil & Gas",
       "score": 71.5,
@@ -105,7 +76,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 3,
       "company": "Treeswift",
       "role": "Account Executive",
       "score": 61.5,
@@ -132,6 +103,46 @@
       "location": "Remote (NY HQ, 50-75% travel required)",
       "hook": "Wildfire/utility domain is excellent and stage is at the inflection point Paul thrives on, but the role itself is quota-carrying AE \u2014 wrong title and structure for a market-builder. Score reflects Tier 2 math; verdict reflects profile mismatch.",
       "blockers": []
+    },
+    {
+      "rank": 4,
+      "company": "AnySignal",
+      "role": "Director, Business Development - Commercial Space",
+      "score": 60.5,
+      "proxy_score": null,
+      "effective_score": 60.5,
+      "fit": 6,
+      "has_deep_dive": false,
+      "date": "2026-04-15",
+      "scqa": "Scored \u2014 defense overlay is the disqualifier",
+      "verdict": "RF/SDR platform startup serving 'the most demanding space and defense missions.' The role is titled Commercial Space specifically, but the company is dual-use defense+commercial and ITAR-regulated, meaning Paul would encounter defense-mission customer conversations regularly. Adjacent industry fit (commercial space, RF, ground services) and excellent comp ($300-400K OTE), but Paul's profile rule on defense exclusion is unambiguous. Geographic friction also real: LA or Denver hybrid plus 25% travel.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://anysignal.com/careers"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via /job-evaluate \u2014 defense overlay disqualifies under profile hard exclusion despite Commercial Space title.",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "RF / Space Communications (Dual-Use Defense+Commercial)",
+      "location": "LA or Denver, Hybrid (25% travel)",
+      "hook": "Adjacent industry and excellent comp, but company center of gravity is space+defense \u2014 defense conversations inevitable. Geographic also non-remote.",
+      "blockers": [
+        {
+          "type": "defense_exclusion",
+          "detail": "Company explicitly serves 'the most demanding space and defense missions.' ITAR-regulated. Paul's profile excludes defense/IC/national security roles without exception.",
+          "severity": "hard"
+        },
+        {
+          "type": "geographic_residency",
+          "detail": "LA or Denver hybrid required, plus 25% travel. Not remote-friendly for Taos.",
+          "severity": "soft"
+        }
+      ]
     },
     {
       "rank": 5,
@@ -1709,6 +1720,19 @@
       "location": "Nootdorp, Netherlands (Paul open to relocation; EU work auth pending)",
       "job_url": "https://fugro.wd3.myworkdayjobs.com/Careers/login?Job_Application_ID=7fc44fa7db1b90011ebe8aecaada0000",
       "next_action": "Auto-ack received 2026-04-14 from Fugro Talent Acquisition. Application under review; further contact to follow. Open conversations: EU work permit sponsorship and relocation to Netherlands.",
+      "status": "awaiting",
+      "urgent": false
+    },
+    {
+      "applied": "2026-04-15",
+      "comp": "Undisclosed",
+      "company": "Technosylva",
+      "domain": "Wildfire / Extreme Weather Risk Software (Climate Tech)",
+      "job_url": "https://technosylva.bamboohr.com/careers/153",
+      "location": "Remote (Chicago listed)",
+      "next_action": "Application acknowledged via auto-reply. No specific response window stated. Follow up in 2 weeks if no contact (Apr 29).",
+      "role": "Director of Business Development & Partnerships",
+      "score": 93.0,
       "status": "awaiting",
       "urgent": false
     }
