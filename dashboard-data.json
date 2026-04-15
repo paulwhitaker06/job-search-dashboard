@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-15T17:34:16.838212",
+  "last_updated": "2026-04-15T17:45:52.327565",
   "stats": {
     "applications_sent": 18,
     "awaiting_response": 10,
@@ -44,36 +44,30 @@
       "rank": 2,
       "company": "Project Canary",
       "role": "VP of Sales, Oil & Gas",
-      "score": 71.5,
+      "score": 76.5,
       "proxy_score": null,
-      "effective_score": 71.5,
+      "effective_score": 76.5,
       "fit": 7,
-      "has_deep_dive": false,
+      "has_deep_dive": true,
       "date": "2026-04-15",
-      "scqa": "Scored \u2014 no full deep dive yet",
-      "verdict": "Methane/emissions monitoring company hiring VP Sales for the O&G vertical (player-coach, 1 direct report). Domain fit is strong \u2014 Project Canary's buyer list (US shale operators and majors) overlaps directly with Paul's KSAT customers (Shell, ExxonMobil, ConocoPhillips, Total, ENI), and the methane-regulation-driven commercial argument is exactly the Shell stock chart pattern. Two real frictions: (1) JD has heavy 'own the number / forecast accuracy / attainment' framing that leans more toward quota-carrying head than market-builder, and (2) Denver hybrid 3 days/week requires relocation or split-time arrangement.",
-      "recommendation": "pursue_with_caveats",
+      "scqa": "The Methane Fee Inflection",
+      "verdict": "Series B methane emissions data platform, post-2023 strategic repositioning to enterprise platform from certification body, $111M Insight Partners-led growth round behind it. WEC fee escalation (Jan 2025 $900/ton to $1,500/ton by 2026) is the most important commercial event in this market in a decade and creates exactly the regulatory-pressure-into-commercial-demand pattern Paul has built around. KSAT customer list (Shell, ExxonMobil, ConocoPhillips, Total, ENI) overlaps directly with Project Canary's O&G buyer base. Paul has confirmed willingness to relocate from Taos to Denver, removing the prior geographic friction. Score upgraded from 71.5 to 76.5 (Tier 1).",
+      "recommendation": "pursue",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
         "https://projectcanary.pinpointhq.com/en/postings/75c09efb-c0d2-473a-a0e2-cc310af50cc2"
       ],
       "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 run /company-deep-dive for full analysis. Geographic friction: Denver hybrid, not remote.",
+      "doc_path": "~/Desktop/Claude Deep Dives/Project_Canary_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed. Top SCQA: The Methane Fee Inflection (89.0/100).",
       "added": "2026-04-15",
       "is_new": true,
       "tier": null,
       "domain": "Methane / Emissions Monitoring (Oil & Gas)",
-      "location": "Denver, CO (Hybrid)",
-      "hook": "Methane regulation is a perfect commercial inflection moment. Buyer list = Paul's KSAT customer list. Quota-heavy framing and Denver hybrid are the only frictions.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Denver HQ hybrid 3 days/week. Paul is in Taos, NM \u2014 would require relocation or split-time arrangement.",
-          "severity": "soft"
-        }
-      ]
+      "location": "Denver, CO (Hybrid; Paul open to relocation)",
+      "hook": "Methane fee escalation is the regulatory inflection that Paul's career pattern (Shell stock chart, ENI/NOPSEMA precedent play) is built to capture. Customer list overlaps directly. Denver relocation confirmed.",
+      "blockers": []
     },
     {
       "rank": 3,
