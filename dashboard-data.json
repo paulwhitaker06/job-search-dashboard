@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-15T18:07:06.501850",
+  "last_updated": "2026-04-15T18:27:32.782211",
   "stats": {
     "applications_sent": 18,
     "awaiting_response": 10,
@@ -29,16 +29,17 @@
       "job_urls": [
         "https://www.placer.ai/company/we-are-hiring?gh_jid=7661310003"
       ],
-      "resume_path": null,
+      "resume_path": "~/Desktop/Jobs/Placer.ai/Paul Whitaker Resume - Placer.ai.docx",
       "doc_path": "~/Desktop/Claude Deep Dives/Placer.ai_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed",
+      "doc_note": "Full deep dive completed. Top SCQA: Two-Sided Partnership Architecture (86.5/100). Resume + Cover Letter in ~/Desktop/Jobs/Placer.ai/",
       "added": "2026-04-15",
       "is_new": true,
       "tier": null,
       "domain": "Location Intelligence / Geospatial Data Licensing",
       "location": "United States, Remote",
       "hook": "JD almost literally written for Paul's market-builder profile \u2014 build new partnerships function from inception, public sector + commercial channels, fully remote, $210-240K OTE. Domain pivot from environmental but data-licensing pattern is identical.",
-      "blockers": []
+      "blockers": [],
+      "cover_letter_path": "~/Desktop/Jobs/Placer.ai/Paul Whitaker Cover Letter - Placer.ai.docx"
     },
     {
       "rank": 2,
@@ -71,6 +72,43 @@
     },
     {
       "rank": 3,
+      "company": "AnySignal",
+      "role": "Director, Business Development - Commercial Space",
+      "score": 76.0,
+      "proxy_score": null,
+      "effective_score": 76.0,
+      "fit": 7,
+      "has_deep_dive": true,
+      "date": "2026-04-15",
+      "scqa": "The Vast Reference as Wedge",
+      "verdict": "Series A ($38.6M raised) RF/SDR platform startup founded by ex-SpaceX engineer John Malsbury. Commercial-leaning VC base (Upfront, BlueYard, Balerion) signals genuine commercial focus rather than defense-primary. Vast Space confirmed as commercial reference for Haven-1 station. 4 missions in orbit, 12 planned 2026. ~40 employees scaling to 100+. Director title at this size is functionally founding commercial lead for US Commercial Space vertical. $300-400K OTE plus Series A equity is exceptional. Soft blocker: dual-use defense overlay is real and Paul would encounter defense conversations even in the explicitly Commercial Space role; worth a single discovery conversation to confirm role-day-to-day mix before deeper engagement. Paul has confirmed Denver willingness.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.ashbyhq.com/anysignal/ec58980b-e96b-47af-8ad0-20f3144f7d39"
+      ],
+      "resume_path": "~/Desktop/Jobs/AnySignal/Paul Whitaker Resume - AnySignal.docx",
+      "doc_path": "~/Desktop/Claude Deep Dives/AnySignal_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed. Top SCQA: The Vast Reference as Wedge (88.5/100). Resume + Cover Letter + Qualities Essay in ~/Desktop/Jobs/AnySignal/",
+      "added": "2026-04-15",
+      "is_new": true,
+      "tier": null,
+      "domain": "RF / Space Communications (Dual-Use Defense+Commercial)",
+      "location": "LA or Denver, Hybrid + 25% travel (Paul open to Denver)",
+      "hook": "Series A ex-SpaceX founder team, Vast Space anchor reference, $300-400K OTE, exactly Paul's stage. Defense overlay is the open question for the discovery call.",
+      "blockers": [
+        {
+          "type": "defense_overlay_soft",
+          "detail": "Company is genuinely dual-use (commercial space + government/national security). Role is titled Commercial Space and customer ecosystem listed (satellite OEMs, primes, integrators) is mixed. Paul's profile excludes defense roles but the role itself is not defense-primary. Soft blocker requiring discovery-call clarification.",
+          "severity": "soft"
+        }
+      ],
+      "cover_letter_path": "~/Desktop/Jobs/AnySignal/Paul Whitaker Cover Letter - AnySignal.docx",
+      "essay_path": "~/Desktop/Jobs/AnySignal/Paul Whitaker AnySignal - Qualities and Experience Essay.docx"
+    },
+    {
+      "rank": 4,
       "company": "Treeswift",
       "role": "Account Executive",
       "score": 68.5,
@@ -110,46 +148,6 @@
         {
           "type": "narrow_experience",
           "detail": "JD lists 'strong relevant professional networks within US electric utilities' as big plus. Paul's utility experience is water/wastewater at PA Consulting under federal frameworks, not electric.",
-          "severity": "soft"
-        }
-      ]
-    },
-    {
-      "rank": 4,
-      "company": "AnySignal",
-      "role": "Director, Business Development - Commercial Space",
-      "score": 60.5,
-      "proxy_score": null,
-      "effective_score": 60.5,
-      "fit": 6,
-      "has_deep_dive": false,
-      "date": "2026-04-15",
-      "scqa": "Scored \u2014 defense overlay is the disqualifier",
-      "verdict": "RF/SDR platform startup serving 'the most demanding space and defense missions.' The role is titled Commercial Space specifically, but the company is dual-use defense+commercial and ITAR-regulated, meaning Paul would encounter defense-mission customer conversations regularly. Adjacent industry fit (commercial space, RF, ground services) and excellent comp ($300-400K OTE), but Paul's profile rule on defense exclusion is unambiguous. Geographic friction also real: LA or Denver hybrid plus 25% travel.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://anysignal.com/careers"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 defense overlay disqualifies under profile hard exclusion despite Commercial Space title.",
-      "added": "2026-04-15",
-      "is_new": true,
-      "tier": null,
-      "domain": "RF / Space Communications (Dual-Use Defense+Commercial)",
-      "location": "LA or Denver, Hybrid (25% travel)",
-      "hook": "Adjacent industry and excellent comp, but company center of gravity is space+defense \u2014 defense conversations inevitable. Geographic also non-remote.",
-      "blockers": [
-        {
-          "type": "defense_exclusion",
-          "detail": "Company explicitly serves 'the most demanding space and defense missions.' ITAR-regulated. Paul's profile excludes defense/IC/national security roles without exception.",
-          "severity": "hard"
-        },
-        {
-          "type": "geographic_residency",
-          "detail": "LA or Denver hybrid required, plus 25% travel. Not remote-friendly for Taos.",
           "severity": "soft"
         }
       ]
