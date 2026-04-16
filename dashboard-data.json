@@ -1,48 +1,18 @@
 {
-  "last_updated": "2026-04-15T18:27:32.782211",
+  "last_updated": "2026-04-16T12:00:00.000000",
   "stats": {
     "applications_sent": 18,
     "awaiting_response": 10,
-    "active_interviews": 2,
-    "active_pipeline": 31,
+    "active_interviews": 3,
+    "active_pipeline": 44,
     "deep_dives_done": 16,
     "resumes_built": 1,
-    "rejected_closed": 3,
-    "last_updated": "2026-04-15"
+    "rejected_closed": 4,
+    "last_updated": "2026-04-16"
   },
   "ranked_opportunities": [
     {
       "rank": 1,
-      "company": "Placer.ai",
-      "role": "Strategic Partnerships, Account Director",
-      "score": 82.0,
-      "proxy_score": null,
-      "effective_score": 82.0,
-      "fit": 9,
-      "has_deep_dive": true,
-      "date": "2026-04-15",
-      "scqa": "Two-Sided Partnership Architecture",
-      "verdict": "Location-intelligence unicorn ($100M ARR) hiring Director-level strategic partnerships role to build new public-sector channel (NASPO/OMNIA reseller mechanisms) and commercial workflow integrations (Snowflake, Databricks, Alteryx). The JD reads almost word-for-word like Paul's market-builder profile: build from inception, multi-stakeholder partnerships, public sector procurement, data licensing. Fully remote at $210-240K OTE. Only friction is mission alignment \u2014 Placer's customers are retail/CRE/finance/government, not climate/conservation, so this is a domain pivot toward the data-platform-builder framing of his identity rather than the environmental-mission framing.",
-      "recommendation": "pursue",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://www.placer.ai/company/we-are-hiring?gh_jid=7661310003"
-      ],
-      "resume_path": "~/Desktop/Jobs/Placer.ai/Paul Whitaker Resume - Placer.ai.docx",
-      "doc_path": "~/Desktop/Claude Deep Dives/Placer.ai_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed. Top SCQA: Two-Sided Partnership Architecture (86.5/100). Resume + Cover Letter in ~/Desktop/Jobs/Placer.ai/",
-      "added": "2026-04-15",
-      "is_new": true,
-      "tier": null,
-      "domain": "Location Intelligence / Geospatial Data Licensing",
-      "location": "United States, Remote",
-      "hook": "JD almost literally written for Paul's market-builder profile \u2014 build new partnerships function from inception, public sector + commercial channels, fully remote, $210-240K OTE. Domain pivot from environmental but data-licensing pattern is identical.",
-      "blockers": [],
-      "cover_letter_path": "~/Desktop/Jobs/Placer.ai/Paul Whitaker Cover Letter - Placer.ai.docx"
-    },
-    {
-      "rank": 2,
       "company": "Project Canary",
       "role": "VP of Sales, Oil & Gas",
       "score": 76.5,
@@ -71,7 +41,7 @@
       "blockers": []
     },
     {
-      "rank": 3,
+      "rank": 2,
       "company": "AnySignal",
       "role": "Director, Business Development - Commercial Space",
       "score": 76.0,
@@ -106,6 +76,41 @@
       ],
       "cover_letter_path": "~/Desktop/Jobs/AnySignal/Paul Whitaker Cover Letter - AnySignal.docx",
       "essay_path": "~/Desktop/Jobs/AnySignal/Paul Whitaker AnySignal - Qualities and Experience Essay.docx"
+    },
+    {
+      "rank": 3,
+      "company": "Limelight Steel",
+      "role": "Director of Business Development & Strategy",
+      "score": 71.5,
+      "proxy_score": null,
+      "effective_score": 71.5,
+      "fit": 7,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Re-scored with full JD \u2014 71.5",
+      "verdict": "Role structure is nearly perfect: ground-up commercial pipeline, executive leadership team, complex industrial deal architecture (LOIs, offtake agreements, JVs). The honest gap is industry domain \u2014 Paul has no iron ore or steel relationships, but geology BA and the Phoenix Tailings structural parallel give more credibility here than most commercial hires. Stage alignment is excellent (first commercial plants = building demand in a new category from zero). GC flagged pending: JD is silent on remote policy.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.limelightsteel.com/careers/director-of-business-development-strategy"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Re-scored with full JD via /job-evaluate 2026-04-16. Tier 2. Run /company-deep-dive for full analysis + cover letter.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Green Steel / Industrial Decarbonization",
+      "location": "HQ (remote policy unconfirmed)",
+      "hook": "Ground-up commercial pipeline at first-commercial-plants stage. LOIs + offtake agreements = Paul deal pattern. Geology degree + Phoenix Tailings analog offset the mining domain gap.",
+      "blockers": [
+        {
+          "type": "location_unconfirmed",
+          "detail": "JD says Headquarters but does not specify location or remote policy. Verify before investing time.",
+          "severity": "soft"
+        }
+      ]
     },
     {
       "rank": 4,
@@ -522,6 +527,46 @@
     },
     {
       "rank": 16,
+      "company": "CarbonCure Technologies",
+      "role": "Senior Market Development Manager, North America",
+      "score": 52.5,
+      "proxy_score": null,
+      "effective_score": 52.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via /job-evaluate",
+      "verdict": "Go-to-market motion is structurally closest to Paul pattern seen in this search (regulatory enablement, spec influence, upstream demand creation) but domain is concrete/construction/DOTs with no credible entry point from Paul background. Senior Manager title below Director/VP target. No comp listed.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://carboncure.bamboohr.com/careers"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via /job-evaluate 2026-04-16. Tier 3. Interesting motion, wrong domain.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Carbon Utilization / Construction Materials",
+      "location": "Remote US (40% travel)",
+      "hook": "Regulatory enablement + specification influence motion matches ENI/NOPSEMA pattern. Domain gap (concrete, DOTs, construction) is the main obstacle.",
+      "blockers": [
+        {
+          "type": "seniority",
+          "detail": "Senior Manager title is below Director/VP target seniority.",
+          "severity": "soft"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "10+ years in infrastructure/construction materials with direct DOT experience required. Paul has no construction sector background.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 17,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -550,7 +595,7 @@
       "blockers": []
     },
     {
-      "rank": 17,
+      "rank": 18,
       "company": "Crusoe Energy",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -585,7 +630,36 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 19,
+      "company": "Ceres Imaging",
+      "role": "Enterprise Sales Lead - Agricultural Capital Markets",
+      "score": 51.5,
+      "proxy_score": null,
+      "effective_score": 51.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "Ceres AI (formerly Ceres Imaging) does precision agriculture analytics using aerial/satellite imagery. This role targets agricultural capital markets: lenders, insurers, and banks pricing crop risk. The AXA/British Marine work is structurally analogous (satellite data used to price insurance exposure) but this is an IC quota-carrying AE role, not commercial leadership. The ag capital markets vertical is early and genuinely needs someone to build the argument from scratch, which is closer to Paul's pattern. But the role structure is AE, not Director/VP. Worth monitoring if they post a Director-level BD role in this vertical.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ceresai.bamboohr.com/careers/26"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning digest 2026-04-16. Tier 3: IC AE role structure, not Director/VP. Domain relevant (ag insurance, satellite analytics). Watch for Director BD opening in this vertical.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Precision Agriculture / EO Analytics",
+      "location": "California (likely remote)",
+      "hook": "Ag capital markets (insurers, lenders) as satellite data buyers. AXA/British Marine structural analog. IC AE role at right-domain company -- watch for Director BD opening.",
+      "blockers": []
+    },
+    {
+      "rank": 20,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -595,7 +669,7 @@
       "has_deep_dive": false,
       "date": "2026-04-12",
       "scqa": "Scored - CSM role, right domain wrong function/level",
-      "verdict": "Same company, right EO data domain, but Customer Success Manager is wrong function (not sales/BD) and below Director/VP target seniority. Worth noting only because Open Cosmos is interesting as a company.",
+      "verdict": "Open Cosmos Data CSM role scored April 12 \u2014 wrong function and below Director/VP target seniority. Noted only because Open Cosmos is interesting as a company. Application submitted separately for Sales Lead EO Data role.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -604,7 +678,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief - Tier 3, wrong function/level",
+      "doc_note": "Scored via morning brief 2026-04-12. Tier 3: wrong function/level.",
       "added": "2026-04-12",
       "is_new": false,
       "tier": "tier3",
@@ -614,7 +688,7 @@
       "blockers": []
     },
     {
-      "rank": 19,
+      "rank": 21,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -643,7 +717,7 @@
       "blockers": []
     },
     {
-      "rank": 20,
+      "rank": 22,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -678,7 +752,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 23,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -713,7 +787,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 24,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -742,7 +816,36 @@
       "blockers": []
     },
     {
-      "rank": 23,
+      "rank": 25,
+      "company": "Conservation International",
+      "role": "Senior Manager, Carbon Projects Delivery",
+      "score": 49.0,
+      "proxy_score": null,
+      "effective_score": 49.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "Conservation International is a global NGO with ~$350M annual revenue, headquartered in Arlington VA. The role is Senior Manager, Carbon Projects Delivery -- project execution and delivery oversight for NCS carbon projects, not commercial BD or partnerships program building. Domain alignment is strong (carbon, conservation, nature-based solutions) but the function is project management and the seniority is below Paul's Director/VP target. Title-only scoring flagged: full JD was not retrievable (aggregator URL blocked). Blocker detection may be degraded.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewrequisition?org=conservation&cws=39&rid=2701"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning digest 2026-04-16. Title-only (aggregator URL blocked). Senior Manager level is below Director/VP target. Carbon projects delivery = execution not commercial. Degraded blocker detection.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Carbon Projects / Conservation (NGO)",
+      "location": "Arlington, VA (likely some remote)",
+      "hook": "Conservation International carbon projects delivery. Domain is right but function (project execution) and seniority (Senior Manager) are both off for Paul.",
+      "blockers": []
+    },
+    {
+      "rank": 26,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -771,7 +874,7 @@
       "blockers": []
     },
     {
-      "rank": 24,
+      "rank": 27,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -806,7 +909,71 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 28,
+      "company": "Planet Labs",
+      "role": "Customer Success Manager (D&I - South Korea & ANZ)",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "Planet Labs is exactly the kind of EO data company Paul should be targeting, but this CSM role has two structural problems. First, it is Customer Success (post-sale function, not commercial BD or market-building). Second, the South Korea and ANZ geographic scope of the role implies a regional presence expectation that is not workable from Taos, NM. Domain fit is exceptional (IL:9) -- Planet Labs is the core EO data platform Paul sold against and alongside for a decade. The company itself is worth watching for a commercial/BD or partnerships director role in the US.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/planetlabs/jobs/7772699"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning digest 2026-04-16. CSM (wrong function) + South Korea/ANZ regional scope (hard geographic). Watch Planet Labs for US commercial BD or partnerships director role.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Earth Observation / Satellite Data",
+      "location": "South Korea / ANZ (regional role, not US-based)",
+      "hook": "Planet Labs is exactly the right company -- CSM + South Korea/ANZ regional scope are the two blocks. Watch for US-based commercial BD director role.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is specifically for South Korea and ANZ (Australia/New Zealand) customer success coverage. Likely requires in-region presence or travel. Paul is based in Taos, NM.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 29,
+      "company": "Ceres Imaging",
+      "role": "Senior Enterprise Account Executive",
+      "score": 47.5,
+      "proxy_score": null,
+      "effective_score": 47.5,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "Ceres AI general enterprise AE role, less specific than the Agricultural Capital Markets seat but same company. Precision agriculture EO analytics: crop monitoring, irrigation optimization, yield prediction via aerial/satellite imagery. Enterprise AE is IC quota-carrying and below Director/VP target. Same domain watch note as the Ag Capital Markets role.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ceresai.bamboohr.com/careers/25"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning digest 2026-04-16. Tier 3: general AE role, IC quota-carrying. Domain adjacent (ag EO analytics). Watch for Director-level opening at this company.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Precision Agriculture / EO Analytics",
+      "location": "California (likely remote)",
+      "hook": "Ceres AI general enterprise AE. IC quota-carrying, below Director target. Same company watch as the Ag Capital Markets role above.",
+      "blockers": []
+    },
+    {
+      "rank": 30,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -841,7 +1008,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 31,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -870,7 +1037,7 @@
       "blockers": []
     },
     {
-      "rank": 27,
+      "rank": 32,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -905,7 +1072,7 @@
       ]
     },
     {
-      "rank": 28,
+      "rank": 33,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -940,7 +1107,42 @@
       ]
     },
     {
-      "rank": 29,
+      "rank": 34,
+      "company": "ZeroNorth",
+      "role": "Customer Success Manager",
+      "score": 46.0,
+      "proxy_score": null,
+      "effective_score": 46.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "ZeroNorth is a Copenhagen-based maritime shipping decarbonization platform (550+ employees, 38+ nationalities, IMO 2030/2050 regulatory tailwind). Domain is excellent -- precisely the maritime/decarbonization intersection where Paul's KSAT background is most relevant. But this is a Customer Success Manager role (post-sale, retention and expansion, not commercial BD or market-building) and the role is Copenhagen-based with no confirmed US remote option. Both the function and the geography miss.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://careers.zeronorth.com/jobs/7437213-customer-success-manager"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning digest 2026-04-16. CSM (wrong function) + Copenhagen HQ (no US remote confirmed). Watch ZeroNorth for US-based Director BD or Partnerships role.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Maritime Decarbonization / Shipping Analytics",
+      "location": "Copenhagen, Denmark (HQ, no US remote confirmed)",
+      "hook": "ZeroNorth: right domain (maritime decarbonization) but wrong function (CSM) and Copenhagen-based. Watch for US Director BD or commercial role.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "ZeroNorth headquarters in Copenhagen, Denmark. Role listing says Copenhagen hybrid. No confirmed US remote option. Paul would likely need to relocate to Denmark.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 35,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -975,7 +1177,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 36,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -1004,7 +1206,7 @@
       "blockers": []
     },
     {
-      "rank": 31,
+      "rank": 37,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -1044,7 +1246,7 @@
       ]
     },
     {
-      "rank": 32,
+      "rank": 38,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -1073,7 +1275,7 @@
       "blockers": []
     },
     {
-      "rank": 33,
+      "rank": 39,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -1100,7 +1302,42 @@
       "blockers": []
     },
     {
-      "rank": 34,
+      "rank": 40,
+      "company": "OCEANA UK",
+      "role": "Head of Campaigns",
+      "score": 43.0,
+      "proxy_score": null,
+      "effective_score": 43.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "OCEANA UK is the UK subsidiary of OCEANA, the global ocean advocacy NGO. Head of Campaigns is a public advocacy and communications leadership role -- organizing campaigns, influencing policy, public mobilization. This is not commercial BD or partnerships program building. Paul's GFW work has mission overlap (marine conservation, fishing accountability) but the advocacy function and London location are both wrong. Hard UK geographic blocker.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.theguardian.com/job/9979558/head-of-campaigns/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning digest 2026-04-16. Advocacy/campaigns function is wrong for Paul. London, UK hard geographic blocker.",
+      "added": "2026-04-16",
+      "is_new": true,
+      "tier": null,
+      "domain": "Marine Conservation / Ocean Advocacy",
+      "location": "London, UK or Cornwall, UK",
+      "hook": "OCEANA UK advocacy head. Marine conservation domain overlaps GFW work but advocacy function and UK location are both wrong.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role based in London (Paddington) or Cornwall (Newquay), UK. UK residency and work authorization required. Paul is based in Taos, NM.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 41,
       "company": "Unknown (Climate Change Jobs)",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 42.0,
@@ -1129,7 +1366,7 @@
       "blockers": []
     },
     {
-      "rank": 35,
+      "rank": 42,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -1158,7 +1395,7 @@
       "blockers": []
     },
     {
-      "rank": 36,
+      "rank": 43,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -1699,9 +1936,9 @@
       "domain": "EO Data Platform / DataCosmos",
       "location": "Barcelona or Harwell (applied)",
       "job_url": "https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe",
-      "next_action": "Auto-ack received from Adam Stockley 2026-04-14. Hiring team review window: ~two weeks (response by ~2026-04-28).",
-      "status": "awaiting",
-      "urgent": false
+      "next_action": "1st Interview Mon Apr 20, 9:30-10:00 AM MT \u2014 Marco Moreira, Talent Sourcer",
+      "status": "1st_interview",
+      "urgent": true
     },
     {
       "company": "Planetary Technologies",
@@ -1713,8 +1950,8 @@
       "domain": "Ocean CDR / Climate Tech",
       "location": "Ottawa, ON (Paul would relocate from Taos; CA work auth pending)",
       "job_url": "https://ph2.bamboohr.com/careers/67",
-      "next_action": "Auto-ack received 2026-04-14. Hiring team will reach out as they begin interviews if fit. Open question: Canadian work permit sponsorship and relocation to Ottawa.",
-      "status": "awaiting",
+      "next_action": "Rejected Apr 16 \u2014 Canada-only candidates. Kelsey Cuddihy.",
+      "status": "rejected",
       "urgent": false
     },
     {
@@ -1741,6 +1978,20 @@
       "next_action": "Application acknowledged via auto-reply. No specific response window stated. Follow up in 2 weeks if no contact (Apr 29).",
       "role": "Director of Business Development & Partnerships",
       "score": 93.0,
+      "status": "awaiting",
+      "urgent": false
+    },
+    {
+      "company": "Placer.ai",
+      "role": "Strategic Partnerships, Account Director",
+      "applied": "2026-04-16",
+      "applied_score": 82.0,
+      "score": 82.0,
+      "comp": "$210-240K OTE",
+      "domain": "Location Intelligence / Geospatial Data Licensing",
+      "location": "United States, Remote",
+      "job_url": "https://www.placer.ai/company/we-are-hiring?gh_jid=7661310003",
+      "next_action": "Auto-ack received April 16. Awaiting recruiter review. Fully remote, no geographic constraints.",
       "status": "awaiting",
       "urgent": false
     }
