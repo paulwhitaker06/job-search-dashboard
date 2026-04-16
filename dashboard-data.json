@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-15T17:45:52.327565",
+  "last_updated": "2026-04-15T18:07:06.501850",
   "stats": {
     "applications_sent": 18,
     "awaiting_response": 10,
@@ -58,9 +58,9 @@
       "job_urls": [
         "https://projectcanary.pinpointhq.com/en/postings/75c09efb-c0d2-473a-a0e2-cc310af50cc2"
       ],
-      "resume_path": null,
+      "resume_path": "~/Desktop/Jobs/Project Canary/Paul Whitaker Resume - Project Canary.docx",
       "doc_path": "~/Desktop/Claude Deep Dives/Project_Canary_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed. Top SCQA: The Methane Fee Inflection (89.0/100).",
+      "doc_note": "Full deep dive completed. Top SCQA: The Methane Fee Inflection (89.0/100). Resume + Why Now essay in ~/Desktop/Jobs/Project Canary/",
       "added": "2026-04-15",
       "is_new": true,
       "tier": null,
@@ -73,30 +73,46 @@
       "rank": 3,
       "company": "Treeswift",
       "role": "Account Executive",
-      "score": 61.5,
+      "score": 68.5,
       "proxy_score": null,
-      "effective_score": 61.5,
-      "fit": 4,
-      "has_deep_dive": false,
+      "effective_score": 68.5,
+      "fit": 5,
+      "has_deep_dive": true,
       "date": "2026-04-15",
-      "scqa": "Scored \u2014 no full deep dive yet",
-      "verdict": "LiDAR + AI sensors for utility vegetation management (wildfire-adjacent), Inspired Capital backed, already serving 3 of 5 largest US utilities. Stage and domain are excellent (SA 8, IL 8). But the role is structurally an Account Executive seat with quota, uncapped commissions, and 'live by ABC' framing \u2014 explicitly not Paul's market-builder profile (RF 4). 50-75% travel required. JD calls out US electric utility network as a big plus, which Paul does not have at depth. Probable pass: a 25-year market-builder taking a quota-carrying AE seat is a step sideways even at a great wildfire-tech company.",
-      "recommendation": "pass",
+      "scqa": "The Title Reframe Argument",
+      "verdict": "Penn-spinout robotics + AI startup with ground-based LiDAR sensors for utility vegetation management. Series A, $16.9M raised, three of five largest US utilities as anchor customers since June 2024, Inspired Capital (Pritzker/von Tobel) backing. The role is titled Account Executive but the actual JD content (multi-year enterprise procurement, pilot-to-deployment conversion, building business cases for utility CFOs and CROs) reads more like founding commercial lead with an AE title attached. Pursue only if Paul wants to negotiate a title and scope reframe in the first conversation; pass if not. The honest gap is electric utility relationships specifically (Paul's utility experience is water/wastewater under federal frameworks, not electric).",
+      "recommendation": "pursue_with_caveats",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
         "https://job-boards.greenhouse.io/treeswift"
       ],
       "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 Tier 2 by math but role-fit mismatch is structural. Probable pass.",
+      "doc_path": "~/Desktop/Claude Deep Dives/Treeswift_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed. Top SCQA: The Title Reframe Argument (87.5/100). Score upgraded from 61.5 to 68.5.",
       "added": "2026-04-15",
       "is_new": true,
       "tier": null,
       "domain": "Utility Vegetation Management / Wildfire (LiDAR + AI)",
       "location": "Remote (NY HQ, 50-75% travel required)",
-      "hook": "Wildfire/utility domain is excellent and stage is at the inflection point Paul thrives on, but the role itself is quota-carrying AE \u2014 wrong title and structure for a market-builder. Score reflects Tier 2 math; verdict reflects profile mismatch.",
-      "blockers": []
+      "hook": "Strong company at inflection moment, structurally junior role title. Cover letter argues the AE listing is actually founding commercial lead work.",
+      "blockers": [
+        {
+          "type": "title_mismatch",
+          "detail": "AE title is structurally below Paul's Director/VP target. Worth pursuing only if title-reframe conversation is on the table.",
+          "severity": "soft"
+        },
+        {
+          "type": "travel_load",
+          "detail": "50-75% US travel required, heavy for the AE title level.",
+          "severity": "soft"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "JD lists 'strong relevant professional networks within US electric utilities' as big plus. Paul's utility experience is water/wastewater at PA Consulting under federal frameworks, not electric.",
+          "severity": "soft"
+        }
+      ]
     },
     {
       "rank": 4,
