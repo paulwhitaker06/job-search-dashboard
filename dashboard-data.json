@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17T11:41:49",
+  "last_updated": "2026-04-17T11:47:15",
   "stats": {
     "applications_sent": 21,
     "awaiting_response": 12,
@@ -812,6 +812,101 @@
     },
     {
       "rank": 25,
+      "company": "Voltus",
+      "role": "Product Manager",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": true,
+      "fit": 2,
+      "score": 49.0,
+      "effective_score": 49.0,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Grid Flexibility / VPP",
+      "location": "Remote US",
+      "hook": "Product team PM on Market Platform pillar. Wrong function; Paul is not a PM.",
+      "verdict": "RF low: Product Manager is product-team function, not commercial. SA high: Prelude-backed DER/VPP platform, scaling. IL high: grid/DER/climate-tech energy transition, strong adjacency. SPM very low: PM is not a sales motion. CO moderate: PM comp. GC strong: remote.",
+      "scqa": "Missed-roles audit surfaced Voltus at score 64.5",
+      "blockers": [
+        {
+          "type": "wrong_function",
+          "detail": "Product Manager, not BD/commercial.",
+          "severity": "hard"
+        }
+      ],
+      "job_urls": [
+        "https://jobs.preludeventures.com/companies/voltus/jobs/74299196-product-manager"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 7,
+        "IL": 7,
+        "SPM": 2,
+        "CO": 5,
+        "GC": 8
+      }
+    },
+    {
+      "rank": 26,
+      "company": "Fleetzero",
+      "role": "Growth Manager",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": true,
+      "fit": 2,
+      "score": 49.0,
+      "effective_score": 49.0,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Maritime decarbonization",
+      "location": "Remote / Hybrid",
+      "hook": "Houston on-site + explicit IC sales rep. Same ship-owner ecosystem gap as the other Fleetzero role.",
+      "verdict": "RF low: JD explicitly says 'individual contributor sales professional.' SA high: YC Series A maritime decarb. IL very high: maritime + climate crossover is Paul's core. SPM moderate: enterprise consultative to ship owners, but ship-owner ecosystem knowledge Paul does not have. CO weak: IC comp. GC hard blocker: Houston TX on-site.",
+      "scqa": "Missed-roles audit surfaced Fleetzero at score 68.0",
+      "blockers": [
+        {
+          "type": "geographic_onsite",
+          "detail": "Houston, TX on-site. Paul is in Taos, NM.",
+          "severity": "hard"
+        },
+        {
+          "type": "wrong_seniority",
+          "detail": "JD says 'individual contributor sales professional.'",
+          "severity": "hard"
+        }
+      ],
+      "job_urls": [
+        "https://jobs.lever.co/fleetzero/87c1b7b3-870f-47fc-8966-21b1f0e6b3d4"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 7,
+        "IL": 8,
+        "SPM": 6,
+        "CO": 4,
+        "GC": 1
+      }
+    },
+    {
+      "rank": 27,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -840,7 +935,7 @@
       "blockers": []
     },
     {
-      "rank": 26,
+      "rank": 28,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -875,7 +970,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 29,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -910,7 +1005,7 @@
       ]
     },
     {
-      "rank": 28,
+      "rank": 30,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -939,7 +1034,7 @@
       "blockers": []
     },
     {
-      "rank": 29,
+      "rank": 31,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -974,7 +1069,57 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 32,
+      "company": "Gradient",
+      "role": "Strategic Sales Director, HVAC (West Coast)",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": true,
+      "fit": 2,
+      "score": 47.0,
+      "effective_score": 47.0,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Climate / Building Decarbonization / HVAC",
+      "location": "Remote, prefers CA/OR/WA",
+      "hook": "Right company stage, wrong seat. HVAC controls IC seat dressed as Director.",
+      "verdict": "RF low: title says Director but scope is IC technical sales, and Paul does not meet HVAC/BAS/BACnet/engineering-degree hard quals. SA high: post-PMF scaling under new CEO, Nexus software launched Feb 2026, clear commercial inflection. IL moderate: building decarbonization is climate-adjacent, not EO/maritime core. SPM low: HVAC channel/controls motion does not match Paul's enterprise consultative pattern. CO weak: $150-180K OTE is below Director expectation. GC moderate: West Coast preference from Taos, remote allowed.",
+      "scqa": "Multifamily pilots create policy precedent",
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "5+ years HVAC controls/BAS sales, BACnet/Modbus fluency, Mech/Elec Engineering degree all required. Paul has none.",
+          "severity": "soft"
+        },
+        {
+          "type": "geographic_preference",
+          "detail": "Prefers CA/OR/WA residency. Paul is in Taos, NM.",
+          "severity": "soft"
+        }
+      ],
+      "job_urls": [
+        "https://job-boards.greenhouse.io/gradientcomfort/jobs/5821981004"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Gradient_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed 2026-04-17",
+      "has_deep_dive": true,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 7,
+        "IL": 6,
+        "SPM": 4,
+        "CO": 4,
+        "GC": 6
+      }
+    },
+    {
+      "rank": 33,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -1003,7 +1148,7 @@
       "blockers": []
     },
     {
-      "rank": 31,
+      "rank": 34,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -1038,7 +1183,7 @@
       ]
     },
     {
-      "rank": 32,
+      "rank": 35,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -1073,7 +1218,7 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 36,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -1108,7 +1253,7 @@
       ]
     },
     {
-      "rank": 34,
+      "rank": 37,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -1143,7 +1288,7 @@
       ]
     },
     {
-      "rank": 35,
+      "rank": 38,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -1172,7 +1317,7 @@
       "blockers": []
     },
     {
-      "rank": 36,
+      "rank": 39,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -1212,7 +1357,7 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 40,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -1241,7 +1386,57 @@
       "blockers": []
     },
     {
-      "rank": 38,
+      "rank": 41,
+      "company": "Clean Air Task Force",
+      "role": "U.S. Director, Nuclear Energy",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": true,
+      "fit": 3,
+      "score": 44.5,
+      "effective_score": 44.5,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Climate Policy NGO",
+      "location": "Remote US",
+      "hook": "NGO nuclear policy director. Federal/state advocacy focus, not commercial.",
+      "verdict": "RF low: Director title but function is policy advocacy, requires deep nuclear policy SME depth and federal/state advocacy network. SA moderate: NGO, stable. IL moderate: nuclear energy policy is climate-adjacent. SPM very low: policy advocacy, not a sales motion. CO weak: nonprofit director comp likely below $165K floor. GC strong: remote US with DC preference.",
+      "scqa": "Missed-roles audit surfaced Clean Air Task Force at score 64.5",
+      "blockers": [
+        {
+          "type": "wrong_function",
+          "detail": "Policy advocacy role, not commercial/BD.",
+          "severity": "soft"
+        },
+        {
+          "type": "comp_below_floor",
+          "detail": "Nonprofit director comp likely below $165K.",
+          "severity": "soft"
+        }
+      ],
+      "job_urls": [
+        "https://www.catf.us/career/u-s-director-nuclear-energy/"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 6,
+        "IL": 6,
+        "SPM": 2,
+        "CO": 3,
+        "GC": 7
+      }
+    },
+    {
+      "rank": 42,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -1268,7 +1463,7 @@
       "blockers": []
     },
     {
-      "rank": 39,
+      "rank": 43,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -1303,49 +1498,7 @@
       ]
     },
     {
-      "rank": 40,
-      "company": "Clean Air Task Force",
-      "role": "U.S. Director, Nuclear Energy",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": true,
-      "fit": 4,
-      "score": 42.0,
-      "effective_score": 42.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Climate Policy NGO",
-      "location": "Remote US",
-      "hook": "NGO nuclear policy director. Federal/state advocacy focus, not commercial. Paul does not have the policy-advocate credentials.",
-      "verdict": "Policy advocacy director at NGO. Reports to Program Director, manages one senior policy manager. Requires nuclear policy SME depth, federal/state advocacy network, and regulatory ecosystem expertise. Paul has commercial nuclear interest via Oklo but does not have policy-advocate credentials. Wrong function; nonprofit comp likely below floor.",
-      "scqa": "Missed-roles audit surfaced Clean Air Task Force at score 64.5",
-      "blockers": [
-        {
-          "type": "wrong_function",
-          "detail": "Policy advocacy role, not commercial/BD. Requires federal/state nuclear policy network.",
-          "severity": "soft"
-        },
-        {
-          "type": "comp_below_floor",
-          "detail": "Nonprofit director comp likely below $165K floor; needs confirmation.",
-          "severity": "soft"
-        }
-      ],
-      "job_urls": [
-        "https://www.catf.us/career/u-s-director-nuclear-energy/"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
-    },
-    {
-      "rank": 41,
+      "rank": 44,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -1374,75 +1527,33 @@
       "blockers": []
     },
     {
-      "rank": 42,
-      "company": "Gradient",
-      "role": "Strategic Sales Director, HVAC (West Coast)",
+      "rank": 45,
+      "company": "Patch",
+      "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
       "added": "2026-04-17",
       "is_new": true,
       "fit": 2,
-      "score": 39.0,
-      "effective_score": 39.0,
+      "score": 41.0,
+      "effective_score": 41.0,
       "proxy_score": null,
       "tier": null,
       "status": "not_applied",
       "recommendation": "pass",
-      "domain": "Climate / Building Decarbonization / HVAC",
-      "location": "Remote, prefers CA/OR/WA",
-      "hook": "Window heat pump company with new Nexus software layer for multifamily retrofits. Right company stage, wrong seat as written.",
-      "verdict": "Strong mission and stage alignment (post-PMF scaling, new CEO Patrick Bischoff, Nexus software launched Feb 2026 with NYCHA and Boston/Detroit/DC beta). Role as written is weak fit: IC-scope regional technical sales requiring HVAC controls, BAS, BACnet, Modbus, and engineering degree. Worth pursuing only if reframed around institutional multifamily buyer development where ENI/NOPSEMA pattern applies.",
-      "scqa": "Multifamily pilots create policy precedent",
-      "blockers": [
-        {
-          "type": "narrow_experience",
-          "detail": "Requires 5+ years HVAC controls/BAS sales, BACnet/Modbus fluency, and Mechanical/Electrical Engineering degree. Paul has none.",
-          "severity": "soft"
-        },
-        {
-          "type": "geographic_preference",
-          "detail": "Posting prefers CA/OR/WA residency. Paul is in Taos, NM.",
-          "severity": "soft"
-        }
-      ],
-      "job_urls": [
-        "https://job-boards.greenhouse.io/gradientcomfort/jobs/5821981004"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Gradient_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed 2026-04-17",
-      "has_deep_dive": true,
-      "overdue": null,
-      "source_note": "Deep dive 2026-04-17 (superseded missed-roles audit score of 77)"
-    },
-    {
-      "rank": 43,
-      "company": "Voltus",
-      "role": "Product Manager",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": true,
-      "fit": 3,
-      "score": 36.0,
-      "effective_score": 36.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Grid Flexibility / VPP",
+      "domain": "Carbon Markets / SaaS",
       "location": "Remote US",
-      "hook": "Product Manager role on Market Platform pillar. Product team, not commercial. Wrong function.",
-      "verdict": "Product Manager on the 'Market Platform pillar' at Voltus. Product team role, not commercial/BD. Paul is a market-builder on the commercial side, not a PM. Wrong function.",
-      "scqa": "Missed-roles audit surfaced Voltus at score 64.5",
+      "hook": "'GTM Engineer' = Salesforce+Clay+Zapier admin IC. Title dressed up; seat is not Paul's.",
+      "verdict": "RF low: RevOps/SalesOps systems IC, not commercial leadership. Salesforce, Clay, HubSpot, Zapier, Gong admin. SA moderate: Patch has F500 traction and scaling. IL moderate: carbon markets/climate finance is strong-adjacent. SPM very low: RevOps engineering is not a sales motion. CO weak: IC base $150-185K. GC moderate: SF hybrid from Taos.",
+      "scqa": "Missed-roles audit surfaced Patch at score 70.0",
       "blockers": [
         {
           "type": "wrong_function",
-          "detail": "Product Manager is product team function, not commercial/BD.",
-          "severity": "soft"
+          "detail": "RevOps systems IC, not BD/commercial.",
+          "severity": "hard"
         }
       ],
       "job_urls": [
-        "https://jobs.preludeventures.com/companies/voltus/jobs/74299196-product-manager"
+        "https://jobs.ashbyhq.com/patch.io/ae35c3f9-f5b6-46b3-a6e3-2405b978f570"
       ],
       "resume_path": null,
       "cover_letter_path": null,
@@ -1450,41 +1561,49 @@
       "doc_note": "Surfaced via missed-roles audit 2026-04-17",
       "has_deep_dive": false,
       "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 6,
+        "IL": 6,
+        "SPM": 2,
+        "CO": 4,
+        "GC": 5
+      }
     },
     {
-      "rank": 44,
-      "company": "Fleetzero",
-      "role": "Growth Manager",
+      "rank": 46,
+      "company": "Clean Air Task Force",
+      "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
       "added": "2026-04-17",
       "is_new": true,
-      "fit": 3,
-      "score": 34.0,
-      "effective_score": 34.0,
+      "fit": 2,
+      "score": 41.0,
+      "effective_score": 41.0,
       "proxy_score": null,
       "tier": null,
       "status": "not_applied",
       "recommendation": "pass",
-      "domain": "Maritime decarbonization",
-      "location": "Remote / Hybrid",
-      "hook": "Houston on-site + explicit IC sales rep. Same ship-owner ecosystem narrowness as the other Fleetzero role.",
-      "verdict": "Houston TX on-site (hard geographic blocker from Taos). Explicitly an 'individual contributor sales professional' in the JD. Same ship-owner/operator ecosystem requirement as the other Fleetzero role.",
-      "scqa": "Missed-roles audit surfaced Fleetzero at score 68.0",
+      "domain": "Climate Policy NGO",
+      "location": "Remote US",
+      "hook": "Manager-level coal mine methane policy role. Below seniority target, wrong function.",
+      "verdict": "RF low: Manager-level, below Director target. Policy/technical advocacy role. SA moderate: NGO. IL moderate: methane/climate policy is climate-adjacent. SPM very low: policy work, not sales. CO weak: nonprofit manager comp. GC strong: remote US/EU.",
+      "scqa": "Missed-roles audit surfaced Clean Air Task Force at score 57.0",
       "blockers": [
         {
-          "type": "geographic_onsite",
-          "detail": "Houston, TX on-site. Paul is in Taos, NM.",
+          "type": "wrong_seniority",
+          "detail": "Manager-level, below Director/VP target.",
           "severity": "hard"
         },
         {
-          "type": "wrong_seniority",
-          "detail": "JD explicitly says 'individual contributor sales professional.' Below Director target.",
-          "severity": "hard"
+          "type": "wrong_function",
+          "detail": "Policy/technical advocacy, not commercial.",
+          "severity": "soft"
         }
       ],
       "job_urls": [
-        "https://jobs.lever.co/fleetzero/87c1b7b3-870f-47fc-8966-21b1f0e6b3d4"
+        "https://www.catf.us/career/manager-coal-mine-methane/"
       ],
       "resume_path": null,
       "cover_letter_path": null,
@@ -1492,10 +1611,113 @@
       "doc_note": "Surfaced via missed-roles audit 2026-04-17",
       "has_deep_dive": false,
       "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 6,
+        "IL": 5,
+        "SPM": 2,
+        "CO": 3,
+        "GC": 8
+      }
     },
     {
-      "rank": 45,
+      "rank": 47,
+      "company": "CropX",
+      "role": "Territory Sales Manager, US & Canada",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": true,
+      "fit": 2,
+      "score": 36.5,
+      "effective_score": 36.5,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "AgTech / Soil Sensors",
+      "location": "Remote US",
+      "hook": "IC territory rep managing ag dealer network. Wrong level, wrong motion.",
+      "verdict": "RF low: IC territory rep managing ag dealer network. SA moderate: established AgTech. IL low: AgTech is not Paul's core EO/maritime/climate domain. SPM low: channel/dealer network sales, transactional motion. CO weak: IC comp likely below floor. GC strong: remote US/Canada.",
+      "scqa": "Missed-roles audit surfaced CropX at score 58.5",
+      "blockers": [
+        {
+          "type": "wrong_seniority",
+          "detail": "IC Territory Sales Manager quota seat.",
+          "severity": "hard"
+        }
+      ],
+      "job_urls": [
+        "https://apply.workable.com/cropx/j/D47DA5116D"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 5,
+        "IL": 3,
+        "SPM": 3,
+        "CO": 3,
+        "GC": 8
+      }
+    },
+    {
+      "rank": 48,
+      "company": "Nimble Gravity",
+      "role": "Director of Delivery",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": true,
+      "fit": 2,
+      "score": 36.5,
+      "effective_score": 36.5,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Data / AI Consulting",
+      "location": "Remote US",
+      "hook": "Consulting delivery lead at data/AI shop. Wrong function, off-sector.",
+      "verdict": "RF low: consulting delivery/PMO leader, not BD/commercial. SA moderate: data/AI consultancy. IL very low: data/AI consulting is not climate/EO/maritime. SPM low: delivery leadership, not sales motion. CO moderate: consulting director comp. GC strong: remote US/LATAM.",
+      "scqa": "Missed-roles audit surfaced Nimble Gravity at score 57.0",
+      "blockers": [
+        {
+          "type": "wrong_function",
+          "detail": "Consulting delivery/PMO role, not BD/commercial.",
+          "severity": "hard"
+        },
+        {
+          "type": "off_sector",
+          "detail": "Data/AI consultancy, not climate.",
+          "severity": "soft"
+        }
+      ],
+      "job_urls": [
+        "https://job-boards.greenhouse.io/nimblegravity/jobs/4684585005"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 5,
+        "IL": 2,
+        "SPM": 3,
+        "CO": 5,
+        "GC": 8
+      }
+    },
+    {
+      "rank": 49,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -1522,164 +1744,6 @@
       "location": "Houston, TX (2 days remote)",
       "hook": "Title misleading. Actual role is junior project commercial / discipline specialist for marine geotechnical acquisition (soil mechanics). 2 years exp min. Houston-based.",
       "blockers": []
-    },
-    {
-      "rank": 46,
-      "company": "Patch",
-      "role": "Go-to-Market Engineer",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": true,
-      "fit": 3,
-      "score": 32.0,
-      "effective_score": 32.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Carbon Markets / SaaS",
-      "location": "Remote US",
-      "hook": "RevOps/SalesOps systems IC dressed as 'GTM Engineer.' Title sounds senior; scope is Salesforce+Clay+Zapier admin. Not Paul's seat.",
-      "verdict": "RevOps/SalesOps IC role (Salesforce, Clay, HubSpot, Zapier, Gong, Dust). SF hybrid, $150-185K base. 'Go-to-Market Engineer' is systems engineering for GTM tooling, not commercial leadership. Wrong seat.",
-      "scqa": "Missed-roles audit surfaced Patch at score 70.0",
-      "blockers": [
-        {
-          "type": "wrong_function",
-          "detail": "GTM Engineer is RevOps/systems IC, not BD/commercial leadership.",
-          "severity": "soft"
-        }
-      ],
-      "job_urls": [
-        "https://jobs.ashbyhq.com/patch.io/ae35c3f9-f5b6-46b3-a6e3-2405b978f570"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
-    },
-    {
-      "rank": 47,
-      "company": "CropX",
-      "role": "Territory Sales Manager, US & Canada",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": true,
-      "fit": 2,
-      "score": 30.0,
-      "effective_score": 30.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "AgTech / Soil Sensors",
-      "location": "Remote US",
-      "hook": "IC territory rep managing ag dealer network. Wrong level, wrong sales motion.",
-      "verdict": "IC quota-carrying territory rep managing ag dealer network in Upper Midwest + Canadian Prairie (MN, ND, SD, E Montana, E Nebraska, AB, SK). Reports to VP NA Sales. Classic IC channel sales, well below Director target.",
-      "scqa": "Missed-roles audit surfaced CropX at score 58.5",
-      "blockers": [
-        {
-          "type": "wrong_seniority",
-          "detail": "IC Territory Sales Manager, channel/dealer-network quota seat.",
-          "severity": "hard"
-        }
-      ],
-      "job_urls": [
-        "https://apply.workable.com/cropx/j/D47DA5116D"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
-    },
-    {
-      "rank": 48,
-      "company": "Clean Air Task Force",
-      "role": "Manager, Coal Mine Methane",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": true,
-      "fit": 2,
-      "score": 30.0,
-      "effective_score": 30.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Climate Policy NGO",
-      "location": "Remote US",
-      "hook": "Manager-level policy/technical role on coal mine methane. Below seniority target and wrong function.",
-      "verdict": "Manager-level (below Director target). Technical/policy role leading government engagement on coal mine methane mitigation. Requires methane SME expertise and NGO/government advocacy background. Not commercial.",
-      "scqa": "Missed-roles audit surfaced Clean Air Task Force at score 57.0",
-      "blockers": [
-        {
-          "type": "wrong_seniority",
-          "detail": "Manager-level, below Paul's Director/VP target.",
-          "severity": "hard"
-        },
-        {
-          "type": "wrong_function",
-          "detail": "Policy/technical role, not commercial.",
-          "severity": "soft"
-        }
-      ],
-      "job_urls": [
-        "https://www.catf.us/career/manager-coal-mine-methane/"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
-    },
-    {
-      "rank": 49,
-      "company": "Nimble Gravity",
-      "role": "Director of Delivery",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": true,
-      "fit": 2,
-      "score": 30.0,
-      "effective_score": 30.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Data / AI Consulting",
-      "location": "Remote US",
-      "hook": "Consulting delivery lead at data/AI consultancy. Not climate, not commercial. Original audit labeled as 'Vulcan EarthRanger' by mistake.",
-      "verdict": "Consulting delivery/PMO leader at a data/AI consultancy. 'Senior delivery leadership, technical partnership, and account stewardship' across client engagements. Not commercial/BD and not climate-focused.",
-      "scqa": "Missed-roles audit surfaced Nimble Gravity at score 57.0",
-      "blockers": [
-        {
-          "type": "wrong_function",
-          "detail": "Consulting delivery/PMO role, not BD/commercial.",
-          "severity": "hard"
-        },
-        {
-          "type": "off_sector",
-          "detail": "Data/AI consultancy, not climate/environmental.",
-          "severity": "soft"
-        }
-      ],
-      "job_urls": [
-        "https://job-boards.greenhouse.io/nimblegravity/jobs/4684585005"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Re-scored 2026-04-17 against real JD via Chrome MCP"
     }
   ],
   "archived_deep_dives": [
