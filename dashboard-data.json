@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-16T17:00:00.000000",
+  "last_updated": "2026-04-17",
   "stats": {
     "applications_sent": 21,
     "awaiting_response": 12,
     "active_interviews": 3,
-    "active_pipeline": 39,
-    "deep_dives_done": 16,
+    "active_pipeline": 47,
+    "deep_dives_done": 7,
     "resumes_built": 1,
     "rejected_closed": 4,
     "last_updated": "2026-04-16"
@@ -21,7 +21,7 @@
       "fit": 6,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 EO startup BD role",
+      "scqa": "Scored — EO startup BD role",
       "verdict": "Spanish satellite company building miniaturized EO sensors for urban and environmental monitoring. BD Manager role in the right domain (EO data commercialization) but 'Manager' title is below Director/VP target and Spain location is a constraint. Company is early-stage with limited public revenue data. Worth monitoring for a more senior role if one opens.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -31,7 +31,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via morning brief — Tier 3, tracking only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -56,7 +56,7 @@
       "fit": 4,
       "has_deep_dive": false,
       "date": "2026-04-14",
-      "scqa": "Scored \u2014 not pursued (Houston + narrow ecosystem gap)",
+      "scqa": "Scored — not pursued (Houston + narrow ecosystem gap)",
       "verdict": "YC-backed Series A maritime decarbonization startup (battery-electric shipping). Strong pattern match on partnership architecture, but JD names 'Intimate knowledge of the integrator, shipyard, and vessel designer landscape' as Non-Negotiable Competency #1. Paul has maritime authority and oil major sales experience (KSAT) but not the shipbuilding commercial ecosystem specifically. Houston on-site, which Paul has explicitly ruled out. Pass.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -139,7 +139,7 @@
       "tier": "tier3",
       "domain": "Atmospheric Data",
       "location": "Remote",
-      "hook": "Atmospheric data company disrupting weather forecasting with smart balloons. Great company fit but posted roles are below your seniority band \u2014 cold outreach for Director-level.",
+      "hook": "Atmospheric data company disrupting weather forecasting with smart balloons. Great company fit but posted roles are below your seniority band — cold outreach for Director-level.",
       "blockers": []
     },
     {
@@ -186,7 +186,7 @@
       "has_deep_dive": true,
       "date": "2026-04-08",
       "scqa": "Customer base alignment",
-      "verdict": "Customer base (gov, utilities, O&G) is Paul's buyer profile, but this is a CS role \u2014 wrong function entirely. Never led CS, never owned NRR.",
+      "verdict": "Customer base (gov, utilities, O&G) is Paul's buyer profile, but this is a CS role — wrong function entirely. Never led CS, never owned NRR.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -206,6 +206,43 @@
     },
     {
       "rank": 7,
+      "company": "Avidbots",
+      "role": "VP, Sales",
+      "score": 57.0,
+      "proxy_score": null,
+      "effective_score": 57.0,
+      "fit": 6,
+      "has_deep_dive": false,
+      "date": "2026-04-17",
+      "scqa": "Scored via morning run — no full deep dive (below 60 threshold)",
+      "verdict": "VP, Sales at a robotics scale-up (facility cleaning robots) is a plausible executive sales leadership shape with 15+ years B2B required and remote US/Canada eligibility. The domain is outside Paul's climate/EO/maritime core, and the mandate reads as 'lead existing sales org' rather than 'build new market,' which is Paul's strongest pattern. Worth tracking as Tier 3 but not a top target.",
+      "recommendation": "track",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://avidbots.bamboohr.com/careers/922"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning run — dimension_scores attached. Run /company-deep-dive if Paul wants full analysis.",
+      "added": "2026-04-17",
+      "is_new": true,
+      "tier": null,
+      "domain": "Robotics / Facility Automation",
+      "location": "Remote US or Canada (Illinois listed)",
+      "hook": "VP Sales role at a robotics scale-up — 15+ years B2B sales leadership required, remote US/CA eligible, but domain sits outside Paul's climate/EO/maritime core.",
+      "blockers": [],
+      "dimension_scores": {
+        "RF": 6,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 8
+      }
+    },
+    {
+      "rank": 8,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -240,7 +277,7 @@
       ]
     },
     {
-      "rank": 8,
+      "rank": 9,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -249,7 +286,7 @@
       "fit": 5,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 space situational awareness APAC",
+      "scqa": "Scored — space situational awareness APAC",
       "verdict": "Space situational awareness and analytics for commercial and government. Manager of Growth APAC is BD/commercial, and Paul has APAC network (Australia, SE Asia). But APAC focus likely requires in-region presence, 'Manager' title is below Director target, and the space domain has defense-adjacent elements that need vetting. Score reflects geographic mismatch (Taos NM vs. APAC).",
       "recommendation": "pass",
       "status": "not_applied",
@@ -259,7 +296,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via morning brief — Tier 3, tracking only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -275,7 +312,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -310,7 +347,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -345,7 +382,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "company": "Rubicon Carbon",
       "role": "Director, Business Development",
       "score": 53.5,
@@ -380,7 +417,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -420,7 +457,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -449,7 +486,7 @@
       "blockers": []
     },
     {
-      "rank": 14,
+      "rank": 15,
       "company": "Crusoe Energy",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -484,7 +521,7 @@
       ]
     },
     {
-      "rank": 15,
+      "rank": 16,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -513,7 +550,7 @@
       "blockers": []
     },
     {
-      "rank": 16,
+      "rank": 17,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -523,7 +560,7 @@
       "has_deep_dive": false,
       "date": "2026-04-12",
       "scqa": "Scored - CSM role, right domain wrong function/level",
-      "verdict": "Open Cosmos Data CSM role scored April 12 \u2014 wrong function and below Director/VP target seniority. Noted only because Open Cosmos is interesting as a company. Application submitted separately for Sales Lead EO Data role.",
+      "verdict": "Open Cosmos Data CSM role scored April 12 — wrong function and below Director/VP target seniority. Noted only because Open Cosmos is interesting as a company. Application submitted separately for Sales Lead EO Data role.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -542,7 +579,7 @@
       "blockers": []
     },
     {
-      "rank": 17,
+      "rank": 18,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -551,7 +588,7 @@
       "fit": 5,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 green steel Head of Sales",
+      "scqa": "Scored — green steel Head of Sales",
       "verdict": "S2G Ventures portfolio company in green steel (electric arc furnace / direct reduced iron). Head of Sales is right level but steel/industrial manufacturing is entirely outside Paul's domain. No existing buyer relationships in this space. Commercial patterns from EO/maritime do not transfer cleanly to industrial steel procurement.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -561,7 +598,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via morning brief — Tier 3, tracking only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -571,7 +608,7 @@
       "blockers": []
     },
     {
-      "rank": 18,
+      "rank": 19,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -606,7 +643,7 @@
       ]
     },
     {
-      "rank": 19,
+      "rank": 20,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -641,7 +678,7 @@
       ]
     },
     {
-      "rank": 20,
+      "rank": 21,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -667,35 +704,6 @@
       "domain": "Utility Data / Clean Energy Software",
       "location": "Oakland, CA (likely remote)",
       "hook": "Utility data exchange platform. Adjacent to climate grid data but likely IC quota-carrying at a small pre-scale company.",
-      "blockers": []
-    },
-    {
-      "rank": 21,
-      "company": "Conservation International",
-      "role": "Senior Manager, Carbon Projects Delivery",
-      "score": 49.0,
-      "proxy_score": null,
-      "effective_score": 49.0,
-      "fit": 3,
-      "has_deep_dive": false,
-      "date": "2026-04-16",
-      "scqa": "Scored via morning digest",
-      "verdict": "Conservation International is a global NGO with ~$350M annual revenue, headquartered in Arlington VA. The role is Senior Manager, Carbon Projects Delivery -- project execution and delivery oversight for NCS carbon projects, not commercial BD or partnerships program building. Domain alignment is strong (carbon, conservation, nature-based solutions) but the function is project management and the seniority is below Paul's Director/VP target. Title-only scoring flagged: full JD was not retrievable (aggregator URL blocked). Blocker detection may be degraded.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewrequisition?org=conservation&cws=39&rid=2701"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning digest 2026-04-16. Title-only (aggregator URL blocked). Senior Manager level is below Director/VP target. Carbon projects delivery = execution not commercial. Degraded blocker detection.",
-      "added": "2026-04-16",
-      "is_new": true,
-      "tier": null,
-      "domain": "Carbon Projects / Conservation (NGO)",
-      "location": "Arlington, VA (likely some remote)",
-      "hook": "Conservation International carbon projects delivery. Domain is right but function (project execution) and seniority (Senior Manager) are both off for Paul.",
       "blockers": []
     },
     {
@@ -1040,8 +1048,8 @@
       "fit": 3,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 wrong function, contract",
-      "verdict": "NatureMetrics is genuinely interesting (biodiversity intelligence using eDNA and satellite data \u2014 domain is real for Paul) but this is a marketing role, not BD or partnerships, and it is an interim contract. Wrong function, wrong engagement type. Company worth watching for a commercial/BD role if one opens.",
+      "scqa": "Scored — wrong function, contract",
+      "verdict": "NatureMetrics is genuinely interesting (biodiversity intelligence using eDNA and satellite data — domain is real for Paul) but this is a marketing role, not BD or partnerships, and it is an interim contract. Wrong function, wrong engagement type. Company worth watching for a commercial/BD role if one opens.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -1050,7 +1058,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 wrong function (marketing), contract only",
+      "doc_note": "Scored via morning brief — wrong function (marketing), contract only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -1069,7 +1077,7 @@
       "fit": 2,
       "has_deep_dive": false,
       "date": "2026-04-15",
-      "scqa": "Scored \u2014 clear pass",
+      "scqa": "Scored — clear pass",
       "verdict": "Vancouver-based reforestation verification startup. Mission and domain are genuinely aligned with Paul's interests (forest carbon / restoration verification). But the role is structurally a Business Development Representative seat: 2+ years experience requirement, reports to Manager BD, $100K CAD OTE (~$72K USD), outbound prospecting and discovery meeting booking. Two seniority levels below Paul's target and one-third of his comp range. The hybrid-in-Vancouver requirement adds a hard geographic blocker (Canadian work authorization). Worth tracking the company for future Director or VP Partnerships openings; this role is not actionable.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -1079,7 +1087,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 pass on all three structural mismatches (title, comp, Canadian geographic blocker)",
+      "doc_note": "Scored via /job-evaluate — pass on all three structural mismatches (title, comp, Canadian geographic blocker)",
       "added": "2026-04-15",
       "is_new": true,
       "tier": null,
@@ -1109,7 +1117,7 @@
       "fit": 4,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 clinical trials domain mismatch",
+      "scqa": "Scored — clinical trials domain mismatch",
       "verdict": "Decentralized clinical trial technology platform. Senior Director BD is right level but healthcare/clinical trials is entirely outside Paul's domain. No existing buyer relationships or regulatory knowledge in this space. Commercial pattern match is low. Pass.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -1119,7 +1127,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, wrong domain",
+      "doc_note": "Scored via morning brief — Tier 3, wrong domain",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -1138,15 +1146,15 @@
       "fit": 3,
       "has_deep_dive": false,
       "date": "2026-04-09",
-      "scqa": "Scored \u2014 ag domain gap",
-      "verdict": "Ag data platform at commercial growth stage \u2014 company pattern fits but IC AE hunter role and ag commodities domain are real gaps. Comp is fine ($125-180K + commission), remote works. Open questions: what 'sustainability sectors' actually means, and whether Paul can crack ag buyer universe without existing network.",
+      "scqa": "Scored — ag domain gap",
+      "verdict": "Ag data platform at commercial growth stage — company pattern fits but IC AE hunter role and ag commodities domain are real gaps. Comp is fine ($125-180K + commission), remote works. Open questions: what 'sustainability sectors' actually means, and whether Paul can crack ag buyer universe without existing network.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via /job-evaluate — Tier 3, tracking only",
       "added": "2026-04-06",
       "is_new": false,
       "tier": "tier3",
@@ -1192,35 +1200,6 @@
     },
     {
       "rank": 37,
-      "company": "Unknown (Climate Change Jobs)",
-      "role": "Director, Energy Innovation and Commercialization",
-      "score": 42.0,
-      "proxy_score": null,
-      "effective_score": 42.0,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-04-14",
-      "scqa": "Scored title-only -- degraded blocker detection",
-      "verdict": "Company name not identified: URL aggregated through ClimateChangeJobs.com (domain blocked). Title suggests energy innovation commercialization at a lab, utility, or energy company. Director level is appropriate seniority. 'Commercialization' language is encouraging but without knowing the company or domain, reliable scoring is not possible. Blocker detection is degraded. Paul should check this posting directly.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://climatechangejobs.com/jobs/441266045-director-energy-innovation-and-commercialization"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored title-only -- aggregator URL blocked, company unknown. Degraded blocker detection. Verify manually.",
-      "added": "2026-04-14",
-      "is_new": false,
-      "tier": null,
-      "domain": "Energy / Unknown",
-      "location": "Unknown",
-      "hook": "Director Energy Innovation and Commercialization -- company unknown, aggregator URL blocked. Verify manually.",
-      "blockers": []
-    },
-    {
-      "rank": 38,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -1249,7 +1228,7 @@
       "blockers": []
     },
     {
-      "rank": 39,
+      "rank": 38,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -1268,7 +1247,7 @@
       ],
       "resume_path": null,
       "doc_path": "~/Desktop/Claude Deep Dives/Fugro_Deep_Dive_Analysis.docx",
-      "doc_note": "Covered in Fugro combined deep dive \u2014 investigate which service line before applying",
+      "doc_note": "Covered in Fugro combined deep dive — investigate which service line before applying",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier2",
@@ -1348,7 +1327,7 @@
       "score": 54.0,
       "fit": 6,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Senior Manager Tenders & Proposals is procurement/bid management, not BD or partnerships. Title and function mismatch despite strong wildfire/EO domain overlap. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1367,7 +1346,7 @@
       "score": 51.0,
       "fit": 5,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Principal Customer Success role is post-sale, not BD or partnerships. Climate risk domain overlap exists but role function mismatch is fundamental. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1386,7 +1365,7 @@
       "score": 48.0,
       "fit": 3,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Account Executive for State & Local Gov is an IC quota-carrying AE role, well below Director/VP target. Planet relationship exists but role seniority is wrong. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1405,7 +1384,7 @@
       "score": 52.0,
       "fit": 5,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "BD Manager at maritime emissions compliance startup. Right domain but Manager title well below Director target, small team, Hamburg location, narrow MRV-only product scope. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1424,7 +1403,7 @@
       "score": 46.0,
       "fit": 3,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Enterprise AE at wildfire detection company is IC quota-carrying role. Utility & energy vertical has some KSAT overlap but AE title and function are wrong level. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1482,7 +1461,7 @@
       "fit": 7,
       "date": "2026-04-09",
       "scqa": "Removed by Paul",
-      "verdict": "Synthetic biology platform \u2014 not a domain match for Paul.",
+      "verdict": "Synthetic biology platform — not a domain match for Paul.",
       "recommendation": "pass",
       "status": "pass",
       "overdue": null,
@@ -1499,77 +1478,77 @@
       "company": "Descartes Underwriting",
       "role": "VP, Business Development + AVP, Business Development",
       "score": 83.5,
-      "reason": "Removed \u2014 Singapore + requires North American P&C market experience",
+      "reason": "Removed — Singapore + requires North American P&C market experience",
       "status": "pass"
     },
     {
       "company": "Greenly",
       "role": "Chief Revenue Officer",
       "score": 81.0,
-      "reason": "Removed \u2014 requires French + CRO/VP Sales in high-growth B2B SaaS",
+      "reason": "Removed — requires French + CRO/VP Sales in high-growth B2B SaaS",
       "status": "pass"
     },
     {
       "company": "Orca AI",
       "role": "Head of Maritime Certification & Regulatory Strategy",
       "score": 77.5,
-      "reason": "Removed \u2014 requires 8+ years Classification Society or maritime Bridge Systems/Navigation",
+      "reason": "Removed — requires 8+ years Classification Society or maritime Bridge Systems/Navigation",
       "status": "pass"
     },
     {
       "company": "Umbra Space",
       "role": "Director, Defense",
       "score": 75.5,
-      "reason": "Removed \u2014 Director Defense, Paul not interested in defense roles",
+      "reason": "Removed — Director Defense, Paul not interested in defense roles",
       "status": "pass"
     },
     {
       "company": "Tomorrow.io",
       "role": "VP Government Business Development (APAC/LATAM posted; US not active)",
       "score": 72.0,
-      "reason": "Removed \u2014 job no longer active",
+      "reason": "Removed — job no longer active",
       "status": "pass"
     },
     {
       "company": "Sea Machines",
       "role": "Director of Sales (EMEA)",
       "score": 68.0,
-      "reason": "Removed \u2014 requires 7-10 years selling to Navies/MoD/Defense Primes in EMEA",
+      "reason": "Removed — requires 7-10 years selling to Navies/MoD/Defense Primes in EMEA",
       "status": "pass"
     },
     {
       "company": "Carbonfuture",
       "role": "Senior BD Manager, B2B Carbon Markets",
       "score": 66.0,
-      "reason": "Removed \u2014 requires London-based + existing carbon removal network",
+      "reason": "Removed — requires London-based + existing carbon removal network",
       "status": "pass"
     },
     {
       "company": "Crusoe Energy Systems",
       "role": "Senior Director, Energy Partnerships",
       "score": 62.0,
-      "reason": "Removed \u2014 requires 12-15+ years IPP/renewable developer/electric utility experience",
+      "reason": "Removed — requires 12-15+ years IPP/renewable developer/electric utility experience",
       "status": "pass"
     },
     {
       "company": "Mitiga Solutions",
       "role": "Head of Sales",
       "score": 80.5,
-      "reason": "Removed \u2014 requires infrastructure sector experience (energy, utilities, data centers, telcos, construction) Paul does not have. Barcelona location.",
+      "reason": "Removed — requires infrastructure sector experience (energy, utilities, data centers, telcos, construction) Paul does not have. Barcelona location.",
       "status": "pass"
     },
     {
       "company": "Overstory",
       "role": "Director, Remote Sensing (Data Partnerships)",
       "score": 77.0,
-      "reason": "Removed \u2014 job posting no longer available",
+      "reason": "Removed — job posting no longer available",
       "status": "pass"
     },
     {
       "company": "LiveEO",
       "role": "Strategic Partnerships & BD Lead (AU/SG/JP) or AE North America",
       "score": 76.0,
-      "reason": "Removed \u2014 job posting no longer available",
+      "reason": "Removed — job posting no longer available",
       "status": "pass"
     }
   ],
@@ -1635,7 +1614,7 @@
       "location": "Denver, CO (Hybrid; Paul open to relocation)",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application received by People & Culture team \u2014 awaiting recruiter screen decision",
+      "next_action": "Application received by People & Culture team — awaiting recruiter screen decision",
       "urgent": false,
       "job_url": "https://projectcanary.pinpointhq.com/en/postings/75c09efb-c0d2-473a-a0e2-cc310af50cc2",
       "applied_score": 76.5
@@ -1649,7 +1628,7 @@
       "location": "Remote US / Golden CO",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application acknowledged \u2014 high volume, expect slower review timeline",
+      "next_action": "Application acknowledged — high volume, expect slower review timeline",
       "urgent": false,
       "job_url": "https://jobs.lever.co/loftorbital/6c07424a-607b-4970-9569-103abbfe4177"
     },
@@ -1662,7 +1641,7 @@
       "location": "Remote US",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application acknowledged by recruiting team \u2014 awaiting screening decision",
+      "next_action": "Application acknowledged by recruiting team — awaiting screening decision",
       "urgent": false,
       "job_url": "https://aclima.earth/careers?ashby_jid=e40e2ddd-5cd8-404b-8105-e58fbee4c6ff"
     },
@@ -1675,7 +1654,7 @@
       "location": "Sterling VA / Remote",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application acknowledged by Talent Acquisition \u2014 awaiting screening decision",
+      "next_action": "Application acknowledged by Talent Acquisition — awaiting screening decision",
       "urgent": false,
       "job_url": "https://jobs.lever.co/kepler/1c25d90c-4819-4052-852f-3523993829f2"
     },
@@ -1687,7 +1666,7 @@
       "location": "Princeton NJ / Remote",
       "comp": "$185-195k",
       "status": "1st_interview",
-      "next_action": "1st Interview Tue Apr 21, 2:00-2:45 PM MDT \u2014 VP Finance + Chief of Staff Emily Silberstein \u2014 Zoom",
+      "next_action": "1st Interview Tue Apr 21, 2:00-2:45 PM MDT — VP Finance + Chief of Staff Emily Silberstein — Zoom",
       "urgent": true,
       "applied_score": 81.5,
       "job_url": "https://www.climatecentral.org/open-position-vice-president-for-business-development",
@@ -1799,7 +1778,7 @@
       "location": "El Segundo CA / SLC UT",
       "comp": "$160-200k",
       "status": "awaiting",
-      "next_action": "Application confirmed received \u2014 awaiting response",
+      "next_action": "Application confirmed received — awaiting response",
       "urgent": false,
       "applied_score": 71.0,
       "job_url": "https://jobs.lever.co/make-rain/e3535955-fe34-423d-9e9f-8cc7c9e2da9f",
@@ -1813,7 +1792,7 @@
       "location": "NYC / Remote",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application received \u2014 no timeline given for review",
+      "next_action": "Application received — no timeline given for review",
       "urgent": false,
       "job_url": "https://job-boards.greenhouse.io/carbondirect/jobs/4117885007",
       "applied_score": 59.5,
@@ -1827,7 +1806,7 @@
       "location": "Santa Clara CA",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application received Mar 31 \u2014 will contact if good fit",
+      "next_action": "Application received Mar 31 — will contact if good fit",
       "urgent": false,
       "applied_score": 64.0,
       "job_url": "https://job-boards.greenhouse.io/oklo/jobs/5831538004",
@@ -1841,7 +1820,7 @@
       "location": "Unknown",
       "comp": "Undisclosed",
       "status": "rejected",
-      "next_action": "Rejected Mar 25 \u2014 encouraged to apply for future roles",
+      "next_action": "Rejected Mar 25 — encouraged to apply for future roles",
       "urgent": false,
       "applied_score": 66.0,
       "score": 72.0
@@ -1856,7 +1835,7 @@
       "domain": "EO Data Platform / DataCosmos",
       "location": "Barcelona or Harwell (applied)",
       "job_url": "https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe",
-      "next_action": "1st Interview Mon Apr 20, 9:30-10:00 AM MT \u2014 Marco Moreira, Talent Sourcer",
+      "next_action": "1st Interview Mon Apr 20, 9:30-10:00 AM MT — Marco Moreira, Talent Sourcer",
       "status": "1st_interview",
       "urgent": true
     },
@@ -1870,7 +1849,7 @@
       "domain": "Ocean CDR / Climate Tech",
       "location": "Ottawa, ON (Paul would relocate from Taos; CA work auth pending)",
       "job_url": "https://ph2.bamboohr.com/careers/67",
-      "next_action": "Rejected Apr 16 \u2014 Canada-only candidates. Kelsey Cuddihy.",
+      "next_action": "Rejected Apr 16 — Canada-only candidates. Kelsey Cuddihy.",
       "status": "rejected",
       "urgent": false
     },
@@ -2005,7 +1984,7 @@
       "jobs_processed": 35,
       "high_scores": 2,
       "deep_dives": 1,
-      "result": "Fugro PCM Climate & Nature (66.5) + Fugro Commercial Manager (60.5) \u2014 1 combined deep dive. 5 notables (Satlantis 59.5, Slingshot APAC 56.5, ElectraSteel Head of Sales 50.0, NatureMetrics Interim Marketing 45.0, Medable SD BD 44.5). 2 excluded (Maxar NRO Director, Maxar Technical Targeter \u2014 defense). Fugro is strongest domain match in this search."
+      "result": "Fugro PCM Climate & Nature (66.5) + Fugro Commercial Manager (60.5) — 1 combined deep dive. 5 notables (Satlantis 59.5, Slingshot APAC 56.5, ElectraSteel Head of Sales 50.0, NatureMetrics Interim Marketing 45.0, Medable SD BD 44.5). 2 excluded (Maxar NRO Director, Maxar Technical Targeter — defense). Fugro is strongest domain match in this search."
     },
     {
       "date": "2026-04-10",
