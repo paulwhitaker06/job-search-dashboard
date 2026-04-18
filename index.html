@@ -78,11 +78,23 @@
   .dd-card .links a { padding:3px 8px; border-radius:6px; background:rgba(99,102,241,0.12); }
   .new-badge { position:absolute; bottom:14px; right:14px; background:var(--cyan); color:#000; font-size:10px; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:1px; animation:pulse 1.5s ease-in-out infinite; }
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.7; } }
-  .watch-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:10px; margin-bottom:24px; }
-  .watch-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:12px 14px; }
-  .watch-card .name { font-weight:600; font-size:13px; margin-bottom:3px; }
-  .watch-card .cat { font-size:11px; color:var(--text-muted); margin-bottom:6px; }
-  .watch-card .why { font-size:11px; color:var(--text-muted); line-height:1.4; }
+  .cotd-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:20px 24px; margin-bottom:24px; position:relative; overflow:hidden; }
+  .cotd-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--cyan), var(--accent-light), var(--purple)); }
+  .cotd-company { font-size:20px; font-weight:700; margin-bottom:2px; }
+  .cotd-company a { color:var(--text); }
+  .cotd-company a:hover { color:var(--cyan); }
+  .cotd-category { font-size:12px; color:var(--cyan); font-weight:500; margin-bottom:10px; }
+  .cotd-why { font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:14px; }
+  .cotd-actions { display:flex; gap:10px; align-items:center; }
+  .cotd-actions a { display:inline-block; padding:6px 14px; border-radius:6px; font-size:12px; font-weight:600; }
+  .cotd-actions .btn-primary { background:var(--accent); color:white; }
+  .cotd-actions .btn-primary:hover { background:var(--accent-light); text-decoration:none; }
+  .cotd-actions .btn-secondary { background:rgba(99,102,241,0.12); color:var(--accent-light); }
+  .cotd-actions .btn-secondary:hover { text-decoration:none; background:rgba(99,102,241,0.2); }
+  .cotd-counter { position:absolute; top:16px; right:20px; font-size:11px; color:var(--text-muted); }
+  .cotd-nav { display:flex; gap:6px; align-items:center; }
+  .cotd-nav button { background:rgba(99,102,241,0.12); border:1px solid var(--border); color:var(--text-muted); width:28px; height:28px; border-radius:6px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .cotd-nav button:hover { background:var(--accent); color:white; border-color:var(--accent); }
   .footer { text-align:center; color:var(--text-muted); font-size:12px; padding:24px 0; border-top:1px solid var(--border); margin-top:24px; }
   .next-action { font-size:12px; color:var(--accent-light); font-style:italic; }
   .notes { font-size:12px; color:var(--text-muted); max-width:220px; }
@@ -375,24 +387,23 @@
 </div>
 </details>
 
-<div class="section-header">Company Watch List <span class="badge pill-muted">11 companies</span></div>
-<div class="watch-grid">
-  <div class="watch-card"><div class="name"><a href="https://www.astraea.earth/careers" target="_blank" rel="noopener">Astraea</a></div><div class="cat">EO Analytics / Climate</div><div class="why">EO analytics for climate + environment; Charlottesville; commercial data licensing; small team at inflection point.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://www.arlula.com/careers/" target="_blank" rel="noopener">Arlula</a></div><div class="cat">EO Marketplace</div><div class="why">EO data marketplace aggregating satellite tasking; commercial partnerships building distribution layer.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://verra.org/about/opportunities" target="_blank" rel="noopener">Verra</a></div><div class="cat">Carbon / Env MRV</div><div class="why">Leading carbon registry; digital MRV + satellite verification growing fast.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://www.cibotechnologies.com/careers" target="_blank" rel="noopener">CIBO Tech</a></div><div class="cat">EO / Ag / Carbon</div><div class="why">Satellite-based carbon + crop monitoring; EUDR compliance angle; commercial data programs.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://globhe.com/jobs" target="_blank" rel="noopener">Globhe</a></div><div class="cat">Drone / Aerial EO</div><div class="why">Drone data marketplace brokering aerial + EO data globally; commercial partnerships model.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://sateliot.space/people/" target="_blank" rel="noopener">Sateliot</a></div><div class="cat">IoT / AIS / LEO</div><div class="why">IoT + AIS data from LEO constellation; maritime tracking; growing commercial verticals.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://www.pixxel.space/careers" target="_blank" rel="noopener">Pixxel</a></div><div class="cat">Hyperspectral EO</div><div class="why">Hyperspectral satellite startup; commercial partnerships for precision agriculture.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://www.rezatec.com/about/working-for-rezatec/" target="_blank" rel="noopener">Rezatec</a></div><div class="cat">Geospatial AI / Infrastructure</div><div class="why">Satellite-based analytics for water utilities, dams, forests. Series A, UK-based. No BD roles open now but strong domain overlap.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://tiepoint.no/" target="_blank" rel="noopener">Tiepoint</a></div><div class="cat">Drones / EO / Emergency</div><div class="why">Norwegian drone + satellite company from Andoya Space ecosystem. ESA-funded. KSAT-adjacent. Very small, monitor for growth.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://urbansky.com/careers/" target="_blank" rel="noopener">Urban Sky</a></div><div class="cat">Stratospheric / Remote Sensing</div><div class="why">Stratospheric balloon remote sensing for wildfire and mapping. Denver-based. No BD roles now, mostly engineering.</div></div>
-  <div class="watch-card"><div class="name"><a href="https://earthdaily.applytojob.com/apply" target="_blank" rel="noopener">EarthDaily Analytics</a></div><div class="cat">EO Analytics / Satellite Data</div><div class="why">Paul would apply for the right role here. Watch for Director/VP of Commercial, Head of BD, VP of Sales, or revenue-leadership openings. PMM (2026-04 posting) is not the seat; rejected for AE 2026-03-31. Comp floor $165K.</div></div>
+<div class="section-header">Company of the Day <span class="badge pill-cyan">from 11 watched</span></div>
+<div id="cotd-spotlight" class="cotd-card">
+  <div class="cotd-loading" style="color:var(--text-muted);font-size:13px;padding:20px;">Loading...</div>
+</div>
 
+<div class="section-header">Cold Outreach <span class="badge pill-blue">0 sent</span></div>
+<div class="table-wrapper">
+<table>
+  <thead><tr><th>Company</th><th>Contact</th><th>Method</th><th>Date</th><th>Status</th><th>Notes</th></tr></thead>
+  <tbody>
+<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:20px;font-style:italic;">No cold outreach yet. Check Company of the Day for inspiration.</td></tr>
+  </tbody>
+</table>
 </div>
 
 <details>
-<summary class="section-header">Morning Brief Log</summary>
+<summary class="section-header">Morning Brief Log <span class="badge pill-muted" style="font-size:10px;">archived</span></summary>
 <div class="table-wrapper" style="margin-top:12px">
 <table>
   <thead><tr><th>Date</th><th>Jobs</th><th>7+ Scores</th><th>Deep Dives</th><th>Result</th></tr></thead>
@@ -421,6 +432,41 @@
 </div>
 
 <script>
+// --- Company of the Day ---
+(function() {
+  const watchList = [{"company": "Astraea", "category": "EO Analytics / Climate", "why": "EO analytics for climate + environment; Charlottesville; commercial data licensing; small team at inflection point.", "careers_url": "https://www.astraea.earth/careers"}, {"company": "Arlula", "category": "EO Marketplace", "why": "EO data marketplace aggregating satellite tasking; commercial partnerships building distribution layer.", "careers_url": "https://www.arlula.com/careers/"}, {"company": "Verra", "category": "Carbon / Env MRV", "why": "Leading carbon registry; digital MRV + satellite verification growing fast.", "careers_url": "https://verra.org/about/opportunities"}, {"company": "CIBO Tech", "category": "EO / Ag / Carbon", "why": "Satellite-based carbon + crop monitoring; EUDR compliance angle; commercial data programs.", "careers_url": "https://www.cibotechnologies.com/careers"}, {"company": "Globhe", "category": "Drone / Aerial EO", "why": "Drone data marketplace brokering aerial + EO data globally; commercial partnerships model.", "careers_url": "https://globhe.com/jobs"}, {"company": "Sateliot", "category": "IoT / AIS / LEO", "why": "IoT + AIS data from LEO constellation; maritime tracking; growing commercial verticals.", "careers_url": "https://sateliot.space/people/"}, {"company": "Pixxel", "category": "Hyperspectral EO", "why": "Hyperspectral satellite startup; commercial partnerships for precision agriculture.", "careers_url": "https://www.pixxel.space/careers"}, {"company": "Rezatec", "category": "Geospatial AI / Infrastructure", "why": "Satellite-based analytics for water utilities, dams, forests. Series A, UK-based. No BD roles open now but strong domain overlap.", "careers_url": "https://www.rezatec.com/about/working-for-rezatec/"}, {"company": "Tiepoint", "category": "Drones / EO / Emergency", "why": "Norwegian drone + satellite company from Andoya Space ecosystem. ESA-funded. KSAT-adjacent. Very small, monitor for growth.", "careers_url": "https://tiepoint.no/"}, {"company": "Urban Sky", "category": "Stratospheric / Remote Sensing", "why": "Stratospheric balloon remote sensing for wildfire and mapping. Denver-based. No BD roles now, mostly engineering.", "careers_url": "https://urbansky.com/careers/"}, {"company": "EarthDaily Analytics", "category": "EO Analytics / Satellite Data", "why": "Paul would apply for the right role here. Watch for Director/VP of Commercial, Head of BD, VP of Sales, or revenue-leadership openings. PMM (2026-04 posting) is not the seat; rejected for AE 2026-03-31. Comp floor $165K.", "careers_url": "https://earthdaily.applytojob.com/apply"}];
+  const spot = document.getElementById('cotd-spotlight');
+  if (!spot || watchList.length === 0) return;
+
+  // Day-based index so it rotates daily
+  const now = new Date();
+  const dayOfYear = Math.floor((now - new Date(now.getFullYear(),0,0)) / 86400000);
+  let idx = dayOfYear % watchList.length;
+
+  function render(i) {
+    const w = watchList[i];
+    const careersLink = w.careers_url ? `<a href="${w.careers_url}" target="_blank" class="btn-primary">View Careers Page</a>` : '';
+    const researchLink = `<a href="https://www.google.com/search?q=${encodeURIComponent(w.company + ' jobs careers')}" target="_blank" class="btn-secondary">Research</a>`;
+    spot.innerHTML = `
+      <div class="cotd-counter">${i+1} of ${watchList.length}</div>
+      <div class="cotd-company">${w.company}</div>
+      <div class="cotd-category">${w.category}</div>
+      <div class="cotd-why">${w.why}</div>
+      <div class="cotd-actions">
+        ${careersLink}
+        ${researchLink}
+        <div class="cotd-nav" style="margin-left:auto;">
+          <button onclick="window._cotdPrev()" title="Previous">&#9664;</button>
+          <button onclick="window._cotdNext()" title="Next">&#9654;</button>
+        </div>
+      </div>`;
+  }
+
+  window._cotdPrev = function() { idx = (idx - 1 + watchList.length) % watchList.length; render(idx); };
+  window._cotdNext = function() { idx = (idx + 1) % watchList.length; render(idx); };
+  render(idx);
+})();
+
 // --- Status changes ---
 function changeStatus(select, company) {
   const newStatus = select.value;
