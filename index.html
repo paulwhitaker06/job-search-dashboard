@@ -263,9 +263,9 @@
       <td><span class="pill pill-amber">Awaiting</span></td><td><a href="https://jobs.lever.co/make-rain/e3535955-fe34-423d-9e9f-8cc7c9e2da9f" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">Application confirmed received — awaiting response</td>
     </tr>
     <tr>
-      <td class="company-name">Carbon Direct</td><td>General Application (VP BD / Commercial)</td><td><span class="pill pill-amber">73.0</span></td><td>2026-03-21</td><td><span class="days-since" data-applied="2026-03-21" data-status="cold_outreach">—</span></td>
+      <td class="company-name">Carbon Direct</td><td>General Application (VP BD / Commercial)</td><td><span class="pill pill-amber">73.0</span></td><td>2026-03-21</td><td><span class="days-since" data-applied="2026-03-21" data-status="speculative">—</span></td>
       <td>Carbon Management / VCM</td><td>NYC / Remote</td><td>Undisclosed</td>
-      <td><span class="pill pill-blue">Cold Outreach</span></td><td><a href="https://job-boards.greenhouse.io/carbondirect/jobs/4117885007" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">General application on file since 3/21 via Greenhouse. Auto-response only. No specific role in play. No follow-up needed; await company-initiated outreach or a specific VP/Director commercial posting.</td>
+      <td><span class="pill pill-blue">Speculative</span></td><td><a href="https://job-boards.greenhouse.io/carbondirect/jobs/4117885007" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">General application on file since 3/21 via Greenhouse. Auto-response only. No specific role in play. No follow-up needed; await company-initiated outreach or a specific VP/Director commercial posting.</td>
     </tr>
   </tbody>
 </table>
@@ -364,12 +364,13 @@
   <div class="cotd-loading" style="color:var(--text-muted);font-size:13px;padding:20px;">Loading...</div>
 </div>
 
-<div class="section-header">Cold Outreach <span class="badge pill-blue">0 sent</span></div>
+<div class="section-header">Speculative Outreach <span class="badge pill-blue">0 sent</span></div>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Direct outbound emails tracked separately from form-submitted applications. Form-based speculative applications (no specific role posted) live at the bottom of Applications Sent with a "Speculative" status.</p>
 <div class="table-wrapper">
 <table>
   <thead><tr><th>Company</th><th>Contact</th><th>Method</th><th>Date</th><th>Status</th><th>Notes</th></tr></thead>
   <tbody>
-<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:20px;font-style:italic;">No cold outreach yet. Check Company of the Day for inspiration.</td></tr>
+<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:20px;font-style:italic;">No speculative outreach emails sent yet. Check Company of the Day for inspiration.</td></tr>
   </tbody>
 </table>
 </div>
@@ -497,7 +498,7 @@ function changeStatus(select, company) {
   localStorage.setItem('status_changes', JSON.stringify(changes));
 
   // Visual feedback toast
-  const labels = { not_applied: 'Not Applied', applied: 'Applied', '1st_interview': '1st Interview', '2nd_interview': '2nd Interview', awaiting: 'Awaiting Response', cold_outreach: 'Cold Outreach', rejected: 'Rejected', pass: 'Pass' };
+  const labels = { not_applied: 'Not Applied', applied: 'Applied', '1st_interview': '1st Interview', '2nd_interview': '2nd Interview', awaiting: 'Awaiting Response', cold_outreach: 'Speculative', speculative: 'Speculative', rejected: 'Rejected', pass: 'Pass' };
   showToast(`<strong>${company}</strong> → ${labels[newStatus] || newStatus}`);
 
   // Dim card if rejected/pass
