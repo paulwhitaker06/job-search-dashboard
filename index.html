@@ -263,9 +263,9 @@
       <td><span class="pill pill-amber">Awaiting</span></td><td><a href="https://jobs.lever.co/make-rain/e3535955-fe34-423d-9e9f-8cc7c9e2da9f" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">Application confirmed received — awaiting response</td>
     </tr>
     <tr>
-      <td class="company-name">Carbon Direct</td><td>General Application (VP BD / Commercial)</td><td><span class="pill pill-amber">73.0</span></td><td>2026-03-21</td><td><span class="days-since" data-applied="2026-03-21" data-status="speculative">—</span></td>
+      <td class="company-name">Carbon Direct</td><td>General Application (VP BD / Commercial)</td><td><span class="pill pill-amber">73.0</span></td><td>2026-03-21</td><td><span class="days-since" data-applied="2026-03-21" data-status="cold_outreach">—</span></td>
       <td>Carbon Management / VCM</td><td>NYC / Remote</td><td>Undisclosed</td>
-      <td><span class="pill pill-blue">Speculative</span></td><td><a href="https://job-boards.greenhouse.io/carbondirect/jobs/4117885007" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">General application on file since 3/21 via Greenhouse. Auto-response only. No specific role in play. No follow-up needed; await company-initiated outreach or a specific VP/Director commercial posting.</td>
+      <td><span class="pill pill-blue">Cold Outreach</span></td><td><a href="https://job-boards.greenhouse.io/carbondirect/jobs/4117885007" target="_blank" style="color:var(--cyan);text-decoration:none">View</a></td><td class="next-action">General application on file since 3/21 via Greenhouse. Auto-response only. No specific role in play. No follow-up needed; await company-initiated outreach or a specific VP/Director commercial posting.</td>
     </tr>
   </tbody>
 </table>
@@ -497,7 +497,7 @@ function changeStatus(select, company) {
   localStorage.setItem('status_changes', JSON.stringify(changes));
 
   // Visual feedback toast
-  const labels = { not_applied: 'Not Applied', applied: 'Applied', '1st_interview': '1st Interview', '2nd_interview': '2nd Interview', awaiting: 'Awaiting Response', cold_outreach: 'Cold Outreach', speculative: 'Speculative', rejected: 'Rejected', pass: 'Pass' };
+  const labels = { not_applied: 'Not Applied', applied: 'Applied', '1st_interview': '1st Interview', '2nd_interview': '2nd Interview', awaiting: 'Awaiting Response', cold_outreach: 'Cold Outreach', rejected: 'Rejected', pass: 'Pass' };
   showToast(`<strong>${company}</strong> → ${labels[newStatus] || newStatus}`);
 
   // Dim card if rejected/pass
