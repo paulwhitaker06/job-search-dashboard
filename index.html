@@ -117,7 +117,58 @@
   details summary::-webkit-details-marker { display:none; }
   details summary::before { content:'\25b8'; font-size:14px; transition:transform 0.2s; }
   details[open] summary::before { transform:rotate(90deg); }
-  @media (max-width:768px) { body { padding:12px; } .header { flex-direction:column; gap:8px; } .header .meta { text-align:left; } table { font-size:12px; } }
+
+  /* Interview countdown banner */
+  .interview-banner { display:flex; align-items:center; gap:20px; background:linear-gradient(135deg, rgba(6,182,212,0.18), rgba(99,102,241,0.12)); border:1px solid rgba(6,182,212,0.4); border-radius:10px; padding:14px 20px; margin-bottom:16px; }
+  .interview-banner .ib-left { flex:1; min-width:0; }
+  .interview-banner .ib-label { font-size:9px; letter-spacing:1.5px; color:var(--cyan); font-weight:700; margin-bottom:4px; }
+  .interview-banner .ib-company { font-size:16px; font-weight:700; color:var(--text); }
+  .interview-banner .ib-role { font-size:12px; color:var(--text-muted); }
+  .interview-banner .ib-mid { flex:1.4; text-align:center; min-width:0; }
+  .interview-banner .ib-countdown { font-size:22px; font-weight:700; color:var(--cyan); font-variant-numeric:tabular-nums; letter-spacing:-0.5px; }
+  .interview-banner .ib-countdown.ib-live { color:var(--red); animation:pulse 1s ease-in-out infinite; }
+  .interview-banner .ib-time { font-size:11px; color:var(--text-muted); margin-top:2px; }
+  .interview-banner .ib-people { font-size:10px; color:var(--text-muted); opacity:0.8; margin-top:2px; }
+  .interview-banner .ib-right { flex:0 0 auto; }
+  .interview-banner .ib-link { font-size:11px; color:var(--cyan); padding:6px 12px; border:1px solid rgba(6,182,212,0.4); border-radius:6px; text-decoration:none; font-weight:600; }
+  .interview-banner .ib-link:hover { background:rgba(6,182,212,0.15); }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+
+  /* Interview prep cards */
+  .ip-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:12px; margin-bottom:24px; }
+  .ip-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .ip-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px; gap:10px; }
+  .ip-company { font-size:14px; font-weight:700; }
+  .ip-stage { font-size:10px; color:var(--cyan); padding:2px 8px; border-radius:10px; background:var(--cyan-bg); white-space:nowrap; }
+  .ip-role { font-size:12px; color:var(--text-muted); margin-bottom:8px; }
+  .ip-date { margin:6px 0; font-size:12px; }
+  .ip-upcoming { color:var(--green); font-weight:600; }
+  .ip-past { color:var(--text-muted); }
+  .ip-tbd { color:var(--amber); font-style:italic; }
+  .ip-people-row { display:flex; flex-wrap:wrap; gap:4px; margin:6px 0; }
+  .ip-person { font-size:10px; padding:2px 7px; border-radius:10px; background:var(--card-hover); color:var(--text-muted); }
+  .ip-notes { font-size:11px; color:var(--text-muted); line-height:1.4; margin:8px 0; max-height:90px; overflow:auto; }
+  .ip-links { display:flex; gap:6px; font-size:11px; flex-wrap:wrap; }
+  .ip-links a { padding:3px 8px; border-radius:5px; background:rgba(99,102,241,0.12); color:var(--accent-light); text-decoration:none; }
+  .ip-links a:hover { background:rgba(99,102,241,0.22); }
+
+  /* Velocity strip */
+  .velocity-strip { display:flex; align-items:center; gap:12px; font-size:11px; color:var(--text-muted); margin:-12px 0 20px 2px; opacity:0.85; }
+  .velocity-strip .vl-label { letter-spacing:0.4px; text-transform:uppercase; font-size:9px; }
+  .velocity-strip .vl-total { color:var(--cyan); font-weight:600; }
+  .velocity-strip .vl-trend-climbing { color:var(--green); }
+  .velocity-strip .vl-trend-slowing { color:var(--amber); }
+  .velocity-strip .vl-trend-steady { color:var(--text-muted); }
+
+  /* Sports strip */
+  .sports-strip { display:flex; gap:8px; align-items:center; justify-content:flex-end; font-size:11px; flex-wrap:wrap; margin-top:4px; }
+  .sports-strip .sp-item { padding:3px 10px; border-radius:12px; background:var(--card); border:1px solid var(--border); text-decoration:none; color:var(--text-muted); transition:all 0.15s; }
+  .sports-strip .sp-item:hover { background:var(--card-hover); color:var(--text); border-color:var(--cyan); }
+
+  /* Seasonal badge */
+  .season-badge { display:inline-block; padding:2px 9px; border-radius:10px; font-size:10px; font-weight:600; letter-spacing:0.5px; color:var(--bg); }
+
+  @media (max-width:768px) { body { padding:12px; } .header { flex-direction:column; gap:8px; } .header .meta { text-align:left; } table { font-size:12px; } .interview-banner { flex-direction:column; text-align:center; gap:10px; } }
 </style>
 </head>
 <body>
@@ -128,8 +179,24 @@
     <div style="color:var(--text-muted);font-size:14px;margin-top:4px;">Maintained by Claude &middot; Updated automatically with each Morning Deep Dive</div>
   </div>
   <div class="meta">
-    <div class="updated">Last updated: April 20, 2026</div>
-    <div>Dashboard auto-generated from data</div>
+    <div class="updated">Last updated: April 20, 2026 &nbsp; <span class="season-badge" style="background:#c8a679">Mud Season</span></div>
+    <div class="sports-strip"><a href="https://www.espn.com/mlb/boxscore/_/gameId/401815018" target="_blank" class="sp-item">&#9918; Red Sox vs Tigers — Patriots' Day at Fenway</a> <a href="https://www.espn.com/nfl/draft2026/story/_/id/48423365/2026-nfl-draft-new-england-patriots-updates-buzz-intel-picks-positions" target="_blank" class="sp-item">&#127944; Patriots pick #31 — 2026 Draft Thu Apr 23</a></div>
+  </div>
+</div>
+
+<div class="interview-banner">
+  <div class="ib-left">
+    <div class="ib-label">NEXT INTERVIEW</div>
+    <div class="ib-company">Climate Central</div>
+    <div class="ib-role">VP, Business Development</div>
+  </div>
+  <div class="ib-mid">
+    <div class="ib-countdown" data-deadline="2026-04-21T14:00:00">calculating&hellip;</div>
+    <div class="ib-time">Tue Apr 21, 2:00 PM MDT</div>
+    <div class="ib-people">Interview Tue Apr &middot; Staff Emily Silberstein</div>
+  </div>
+  <div class="ib-right">
+    <a href="https://www.climatecentral.org/open-position-vice-president-for-business-development" target="_blank" class="ib-link">Job Post &rarr;</a>
   </div>
 </div>
 
@@ -161,10 +228,56 @@
   </div>
 
 </div>
+<div class="velocity-strip">
+  <span class="vl-label">8-week velocity</span>
+  <svg width="78" height="24" style="vertical-align:middle;"><rect x="0" y="16.0" width="8" height="8.0" rx="1" fill="var(--cyan)"/><rect x="10" y="21.333333333333332" width="8" height="2.6666666666666665" rx="1" fill="var(--cyan)"/><rect x="20" y="18.666666666666668" width="8" height="5.333333333333333" rx="1" fill="var(--cyan)"/><rect x="30" y="18.666666666666668" width="8" height="5.333333333333333" rx="1" fill="var(--cyan)"/><rect x="40" y="18.666666666666668" width="8" height="5.333333333333333" rx="1" fill="var(--cyan)"/><rect x="50" y="18.666666666666668" width="8" height="5.333333333333333" rx="1" fill="var(--cyan)"/><rect x="60" y="16.0" width="8" height="8.0" rx="1" fill="var(--cyan)"/><rect x="70" y="0.0" width="8" height="24.0" rx="1" fill="var(--cyan)"/></svg>
+  <span><span class="vl-total">24</span> sent &middot; <span class="vl-trend-climbing">&uarr; climbing</span></span>
+</div>
 
 <div class="action-banner">
   <h2>What To Do Next</h2>
 
+</div>
+
+<div class="section-header" style="margin-top:20px">Interview Prep <span class="badge pill-cyan">3 active</span></div><div class="ip-grid">  <div class="ip-card">
+    <div class="ip-head">
+      <div class="ip-company">Climate Central</div>
+      <div class="ip-stage">1st Round</div>
+    </div>
+    <div class="ip-role">VP, Business Development</div>
+    <div class="ip-date"><span class="ip-upcoming">Tue Apr 21, 2:00 PM &middot; in 18h 16m</span></div>
+    <div class="ip-people-row"><span class="ip-person">Interview Tue Apr</span><span class="ip-person">Staff Emily Silberstein</span></div>
+    <div class="ip-notes">1st Interview Tue Apr 21, 2:00-2:45 PM MDT — VP Finance + Chief of Staff Emily Silberstein — Zoom</div>
+    <div class="ip-links">
+      <a href="https://www.climatecentral.org/open-position-vice-president-for-business-development" target="_blank">Job post &rarr;</a>
+    </div>
+  </div>
+  <div class="ip-card">
+    <div class="ip-head">
+      <div class="ip-company">SkyWatch</div>
+      <div class="ip-stage">2nd Round</div>
+    </div>
+    <div class="ip-role">Sr. Manager, Ecosystem & Platform Partners</div>
+    <div class="ip-date"><span class="ip-tbd">awaiting scheduling</span></div>
+    <div class="ip-people-row"><span class="ip-person">April Clarke</span><span class="ip-person">Marte Indregard</span><span class="ip-person">Paul Woods</span><span class="ip-person">Rob Ayasse</span></div>
+    <div class="ip-notes">1st interview complete. SkyWatch has run the classic late-stage signal sequence: followed up on compensation, requested references (provided 4/14 to April Clarke: Marte Indregard/KSAT, Paul Woods/GFW, Rob Ayasse/KSAT), and proactively checked in to say they are completing the &hellip;</div>
+    <div class="ip-links">
+      <a href="https://skywatch.com/careers/?ashby_jid=cdf99855-9d51-4cbd-89c6-06c5b4cb5aa1#openroles" target="_blank">Job post &rarr;</a>
+    </div>
+  </div>
+  <div class="ip-card">
+    <div class="ip-head">
+      <div class="ip-company">Open Cosmos</div>
+      <div class="ip-stage">2nd Round</div>
+    </div>
+    <div class="ip-role">Sales Lead, Earth Observation Data (Europe)</div>
+    <div class="ip-date"><span class="ip-tbd">awaiting scheduling</span></div>
+    <div class="ip-people-row"><span class="ip-person">Marco Moreira</span><span class="ip-person">Talent Sourcer</span></div>
+    <div class="ip-notes">1st interview held Mon 4/20 with Marco Moreira (Talent Sourcer) went well. Marco indicated Director-level seniority, asked if Paul would consider remaining US-based (role broader than posted JD), and said team is "pretty sure" they want to move forward. Paul signaled willingne&hellip;</div>
+    <div class="ip-links">
+      <a href="https://careers.open-cosmos.com/jobs/7231054-sales-lead-earth-observation-data-europe" target="_blank">Job post &rarr;</a>
+    </div>
+  </div>
 </div>
 
 <div class="section-header">Ranked Opportunities <span class="badge pill-purple">0 Tier 1 &amp; 2 &middot; 11 deep-dived</span></div>
@@ -373,16 +486,7 @@
   <div class="cotd-loading" style="color:var(--text-muted);font-size:13px;padding:20px;">Loading...</div>
 </div>
 
-<div class="section-header">Speculative Outreach <span class="badge pill-blue">0 sent</span></div>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Direct outbound emails tracked separately from form-submitted applications. Form-based speculative applications (no specific role posted) live at the bottom of Applications Sent with a "Speculative" status.</p>
-<div class="table-wrapper">
-<table>
-  <thead><tr><th>Company</th><th>Contact</th><th>Method</th><th>Date</th><th>Status</th><th>Notes</th></tr></thead>
-  <tbody>
-<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:20px;font-style:italic;">No speculative outreach emails sent yet. Check Company of the Day for inspiration.</td></tr>
-  </tbody>
-</table>
-</div>
+
 
 <details>
 <summary class="section-header">Rejected / Closed <span class="badge pill-muted" style="font-size:10px;">6 closed</span></summary>
@@ -764,6 +868,25 @@ function updateStaleness() {
   }
 }
 updateStaleness();
+
+// --- Interview countdown live ticker ---
+(function() {
+  const el = document.querySelector('.ib-countdown');
+  if (!el) return;
+  const deadline = new Date(el.getAttribute('data-deadline')).getTime();
+  function tick() {
+    const now = Date.now();
+    let d = deadline - now;
+    if (d < 0) { el.textContent = 'LIVE NOW'; el.classList.add('ib-live'); return; }
+    const days = Math.floor(d / 86400000); d -= days * 86400000;
+    const hrs = Math.floor(d / 3600000); d -= hrs * 3600000;
+    const mins = Math.floor(d / 60000); d -= mins * 60000;
+    const secs = Math.floor(d / 1000);
+    el.textContent = (days > 0 ? days + 'd ' : '') + hrs + 'h ' + mins + 'm ' + secs + 's';
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
 
 // --- Haiku when Tier 1 & 2 are empty ---
 (function() {
