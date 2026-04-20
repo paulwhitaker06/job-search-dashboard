@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Paul Whitaker — Job Search Command Center</title>
 <style>
   :root {
@@ -167,6 +170,10 @@
 <div class="section-header">Ranked Opportunities <span class="badge pill-purple">0 Tier 1 &amp; 2 &middot; 11 deep-dived</span></div>
 <div id="haiku-slot" style="display:none;text-align:center;padding:24px 16px;margin-bottom:16px;">
   <div id="haiku-text" style="font-style:italic;color:var(--text-muted);font-size:14px;line-height:1.8;white-space:pre-line;"></div>
+  <div style="margin-top:14px;">
+    <button id="haiku-refresh" style="background:transparent;border:1px solid var(--border);color:var(--text-muted);font-size:11px;padding:4px 10px;border-radius:4px;cursor:pointer;font-family:inherit;">new haiku</button>
+    <span id="haiku-counter" style="margin-left:10px;color:var(--text-muted);font-size:10px;opacity:0.6;"></span>
+  </div>
 </div>
 <div class="dd-grid">
 
@@ -848,43 +855,71 @@ updateStaleness();
   const grid = document.querySelector('.dd-grid');
   const slot = document.getElementById('haiku-slot');
   const text = document.getElementById('haiku-text');
+  const counter = document.getElementById('haiku-counter');
+  const refreshBtn = document.getElementById('haiku-refresh');
+
+  // No-repeat cycle: pick from unseen pool tracked in localStorage.
+  // Pool-version key forces reset if pool contents change.
+  const POOL_KEY = 'dashHaikuSeen_v3';
+  const INTRO_KEY = 'dashIntroSeen_v3';
+  const POOL_SIG_KEY = 'dashHaikuSig_v3';
+  const INTRO_SIG_KEY = 'dashIntroSig_v3';
+  const poolSig = haiku.length + ':' + haiku[0].slice(0, 10);
+  const introSig = intros.length + ':' + intros[0].slice(0, 10);
+
+  // In-memory backup (across clicks within one page session) in case localStorage fails
+  let memSeenHaiku = null;
+  let memSeenIntro = null;
+
+  function pickUnseen(pool, seenKey, sigKey, currentSig, memRef) {
+    let seen = [];
+    let lsWorked = false;
+    try {
+      if (localStorage.getItem(sigKey) !== currentSig) {
+        localStorage.setItem(sigKey, currentSig);
+        localStorage.removeItem(seenKey);
+      }
+      const raw = localStorage.getItem(seenKey);
+      seen = raw ? JSON.parse(raw) : [];
+      lsWorked = true;
+    } catch(e) { lsWorked = false; }
+    if (!lsWorked) seen = memRef.value || [];
+
+    let unseen = [];
+    for (let i = 0; i < pool.length; i++) {
+      if (seen.indexOf(i) === -1) unseen.push(i);
+    }
+    if (unseen.length === 0) {
+      seen = [];
+      unseen = [];
+      for (let i = 0; i < pool.length; i++) unseen.push(i);
+    }
+    const idx = unseen[Math.floor(Math.random() * unseen.length)];
+    seen.push(idx);
+    if (lsWorked) {
+      try { localStorage.setItem(seenKey, JSON.stringify(seen)); } catch(e) {}
+    }
+    memRef.value = seen;
+    return { text: pool[idx], seenCount: seen.length, total: pool.length };
+  }
+
+  function renderHaiku() {
+    const hMem = { value: memSeenHaiku };
+    const iMem = { value: memSeenIntro };
+    const h = pickUnseen(haiku, POOL_KEY, POOL_SIG_KEY, poolSig, hMem);
+    const i = pickUnseen(intros, INTRO_KEY, INTRO_SIG_KEY, introSig, iMem);
+    memSeenHaiku = hMem.value;
+    memSeenIntro = iMem.value;
+    text.innerHTML = '<div style="color:var(--cyan);font-size:12px;margin-bottom:10px;font-style:normal;">' + i.text + '</div>' + h.text;
+    if (counter) counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
+  }
+
   if (slot && text && grid) {
     const cards = grid.querySelectorAll('.dd-card');
     if (cards.length === 0) {
-      // No-repeat cycle: pick from unseen pool tracked in localStorage.
-      // When pool exhausts, reset. Pool-version key forces reset if pool changes.
-      const POOL_KEY = 'dashHaikuSeen_v2';
-      const INTRO_KEY = 'dashIntroSeen_v2';
-      const POOL_SIG_KEY = 'dashHaikuSig';
-      const INTRO_SIG_KEY = 'dashIntroSig';
-      const poolSig = haiku.length + ':' + haiku[0].slice(0, 8);
-      const introSig = intros.length + ':' + intros[0].slice(0, 8);
-
-      function pickUnseen(pool, seenKey, sigKey, currentSig) {
-        let seen = [];
-        try {
-          if (localStorage.getItem(sigKey) !== currentSig) {
-            localStorage.setItem(sigKey, currentSig);
-            localStorage.removeItem(seenKey);
-          } else {
-            seen = JSON.parse(localStorage.getItem(seenKey) || '[]');
-          }
-        } catch(e) { seen = []; }
-        let unseen = [];
-        for (let i = 0; i < pool.length; i++) {
-          if (seen.indexOf(i) === -1) unseen.push(i);
-        }
-        if (unseen.length === 0) { unseen = []; for (let i = 0; i < pool.length; i++) unseen.push(i); seen = []; }
-        const idx = unseen[Math.floor(Math.random() * unseen.length)];
-        seen.push(idx);
-        try { localStorage.setItem(seenKey, JSON.stringify(seen)); } catch(e) {}
-        return pool[idx];
-      }
-
-      const hPick = pickUnseen(haiku, POOL_KEY, POOL_SIG_KEY, poolSig);
-      const iPick = pickUnseen(intros, INTRO_KEY, INTRO_SIG_KEY, introSig);
-      text.innerHTML = '<div style="color:var(--cyan);font-size:12px;margin-bottom:10px;font-style:normal;">' + iPick + '</div>' + hPick;
+      renderHaiku();
       slot.style.display = 'block';
+      if (refreshBtn) refreshBtn.addEventListener('click', renderHaiku);
     }
   }
 })();
