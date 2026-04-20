@@ -851,11 +851,38 @@ updateStaleness();
   if (slot && text && grid) {
     const cards = grid.querySelectorAll('.dd-card');
     if (cards.length === 0) {
-      // Never repeat: track seen haiku in sessionStorage-free way using the date as seed
-      const now = new Date();
-      const seed = now.getFullYear() * 1000000 + (now.getMonth()+1) * 10000 + now.getDate() * 100 + now.getHours() + now.getMinutes() + now.getSeconds() + Math.floor(Math.random() * 10000);
-      const hPick = haiku[seed % haiku.length];
-      const iPick = intros[Math.floor(Math.random() * intros.length)];
+      // No-repeat cycle: pick from unseen pool tracked in localStorage.
+      // When pool exhausts, reset. Pool-version key forces reset if pool changes.
+      const POOL_KEY = 'dashHaikuSeen_v2';
+      const INTRO_KEY = 'dashIntroSeen_v2';
+      const POOL_SIG_KEY = 'dashHaikuSig';
+      const INTRO_SIG_KEY = 'dashIntroSig';
+      const poolSig = haiku.length + ':' + haiku[0].slice(0, 8);
+      const introSig = intros.length + ':' + intros[0].slice(0, 8);
+
+      function pickUnseen(pool, seenKey, sigKey, currentSig) {
+        let seen = [];
+        try {
+          if (localStorage.getItem(sigKey) !== currentSig) {
+            localStorage.setItem(sigKey, currentSig);
+            localStorage.removeItem(seenKey);
+          } else {
+            seen = JSON.parse(localStorage.getItem(seenKey) || '[]');
+          }
+        } catch(e) { seen = []; }
+        let unseen = [];
+        for (let i = 0; i < pool.length; i++) {
+          if (seen.indexOf(i) === -1) unseen.push(i);
+        }
+        if (unseen.length === 0) { unseen = []; for (let i = 0; i < pool.length; i++) unseen.push(i); seen = []; }
+        const idx = unseen[Math.floor(Math.random() * unseen.length)];
+        seen.push(idx);
+        try { localStorage.setItem(seenKey, JSON.stringify(seen)); } catch(e) {}
+        return pool[idx];
+      }
+
+      const hPick = pickUnseen(haiku, POOL_KEY, POOL_SIG_KEY, poolSig);
+      const iPick = pickUnseen(intros, INTRO_KEY, INTRO_SIG_KEY, introSig);
       text.innerHTML = '<div style="color:var(--cyan);font-size:12px;margin-bottom:10px;font-style:normal;">' + iPick + '</div>' + hPick;
       slot.style.display = 'block';
     }
