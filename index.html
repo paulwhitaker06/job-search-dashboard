@@ -170,11 +170,12 @@
 <div class="section-header">Ranked Opportunities <span class="badge pill-purple">0 Tier 1 &amp; 2 &middot; 11 deep-dived</span></div>
 <div id="haiku-slot" style="display:none;text-align:center;padding:24px 16px;margin-bottom:16px;">
   <div id="haiku-text" style="font-style:italic;color:var(--text-muted);font-size:14px;line-height:1.8;white-space:pre-line;"></div>
+  <div id="haiku-source" style="margin-top:8px;font-size:10px;opacity:0.45;"></div>
   <div style="margin-top:14px;">
     <button id="haiku-refresh" style="background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:12px;padding:6px 14px;border-radius:6px;cursor:pointer;font-family:inherit;font-weight:600;">&#x21bb; new haiku</button>
     <span id="haiku-counter" style="margin-left:12px;color:var(--text-muted);font-size:10px;opacity:0.7;"></span>
   </div>
-  <div style="margin-top:8px;color:var(--text-muted);font-size:9px;opacity:0.4;">v3 &middot; 62-haiku no-repeat cycle</div>
+  <div style="margin-top:8px;color:var(--text-muted);font-size:9px;opacity:0.4;">v4 &middot; 62-haiku no-repeat cycle &middot; some riff on a source</div>
 </div>
 <div class="dd-grid">
 
@@ -808,24 +809,24 @@ updateStaleness();
     "Mud season settles\ntourists gone, locals exhale\nthis is our Taos",
     "Dashboard haiku drifts\nno Tier 1, no Tier 2 jobs\nwrite another verse",
     "Pecos trailhead sign\nlast snow drifts melt into streams\nthe season turns green",
-    "Tromsø to Munich\nOroraTech stacks the deck\nthermal empire builds",
-    "Radar from orbit\nICEYE fifty ships a year\nclouds cannot hide now",
+    {t: "Tromsø to Munich\nOroraTech stacks the deck\nthermal empire builds", u: "https://ororatech.com/company/careers/", s: "OroraTech careers"},
+    {t: "Radar from orbit\nICEYE fifty ships a year\nclouds cannot hide now", u: "https://www.iceye.com/careers", s: "ICEYE scales to 50/yr"},
     "Oil execs listen\nmethane plumes on public feeds\nthe lens does not blink",
     "Spring Arts in Taos\npainters claim the plaza grass\nbetter than email",
     "Mud season reigns here\nthe plaza empties for now\nlocals own the town",
     "Carbon credits trade\nsatellites watch every tree\nVerra holds its breath",
     "Mesa dust blows through\nsangre ridges half in haze\nspring running late here",
-    "Sonny Gray went down\nhamstring tight in third inning\nPatriots' Day cruel",
-    "Abreu drew the walk\nFenway at eleven-ten\nthe Sox score early",
-    "Pats pick thirty-one\nVrabel hunts a tight end now\nDelp visits the gym",
-    "Taos closed early\nseventy-six on the slopes\nthe drought wrote the script",
-    "Starcloud's in orbit\none-seven-oh from Benchmark\nthe cloud leaves the Earth",
-    "Xoople stacked the deck\none-thirty Series B lands\nL3 builds their eyes",
-    "Brussels drafts a bank\nto class the carbon credits\nsame trick, new suit on",
-    "Mud season peaks here\nNew Mex at half its snowpack\nthe land is thirsty",
-    "Thomas hit Brandeis\nnineteen-ten revived on Court\nthe judge picks his ghosts",
-    "Sanchez, Lula meet\nBarcelona holds the line\nwhile Trump rages west",
-    "Vantor builds two fleets\nhigh resolution and fast\nboth eyes on the Earth",
+    {t: "Sonny Gray went down\nhamstring tight in third inning\nPatriots' Day cruel", u: "https://sports.yahoo.com/articles/red-sox-vs-tigers-score-141002236.html", s: "Red Sox vs Tigers"},
+    {t: "Abreu drew the walk\nFenway at eleven-ten\nthe Sox score early", u: "https://sports.yahoo.com/articles/red-sox-vs-tigers-score-141002236.html", s: "Patriots' Day at Fenway"},
+    {t: "Pats pick thirty-one\nVrabel hunts a tight end now\nDelp visits the gym", u: "https://www.espn.com/nfl/draft2026/story/_/id/48423365/2026-nfl-draft-new-england-patriots-updates-buzz-intel-picks-positions", s: "ESPN: Patriots 2026 draft"},
+    {t: "Taos closed early\nseventy-six on the slopes\nthe drought wrote the script", u: "https://www.powder.com/news/taos-early-closing-date-2026", s: "Powder: TSV early close"},
+    {t: "Starcloud's in orbit\none-seven-oh from Benchmark\nthe cloud leaves the Earth", u: "https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/", s: "TechCrunch: Starcloud $170M"},
+    {t: "Xoople stacked the deck\none-thirty Series B lands\nL3 builds their eyes", u: "https://newsletter.terrawatchspace.com/earth-observation-essentials-april-13-2026/", s: "TerraWatch: Xoople raises $130M"},
+    {t: "Brussels drafts a bank\nto class the carbon credits\nsame trick, new suit on", u: "https://carbon-pulse.com/502017/", s: "Carbon Pulse: VCM classification"},
+    {t: "Mud season peaks here\nNew Mex at half its snowpack\nthe land is thirsty", u: "https://www.powder.com/news/taos-early-closing-date-2026", s: "NM snowpack at half"},
+    {t: "Thomas hit Brandeis\nnineteen-ten revived on Court\nthe judge picks his ghosts", u: "https://www.salon.com/2026/04/19/clarence-thomas-attack-on-progressivism-should-alarm-you/", s: "Salon: Thomas vs progressivism"},
+    {t: "Sanchez, Lula meet\nBarcelona holds the line\nwhile Trump rages west", u: "https://www.washingtonpost.com/world/2026/04/18/sanchez-lula-trump-sheinbaum-progressive-summit/65f069f0-3b0d-11f1-90c4-9772c7fabc03_story.html", s: "WaPo: Barcelona progressive summit"},
+    {t: "Vantor builds two fleets\nhigh resolution and fast\nboth eyes on the Earth", u: "https://newsletter.terrawatchspace.com/earth-observation-essentials-april-13-2026/", s: "TerraWatch: Vantor constellations"},
     "Seventy-one high\nTaos skies half clouded out\npartly, like this search",
     "Dust devil kicks up\non the mesa near Pilar\ngone by the next breath",
     "Plaza benches dry\nmud boots parked outside the bar\nApril holds its breath",
@@ -856,16 +857,22 @@ updateStaleness();
   const grid = document.querySelector('.dd-grid');
   const slot = document.getElementById('haiku-slot');
   const text = document.getElementById('haiku-text');
+  const sourceEl = document.getElementById('haiku-source');
   const counter = document.getElementById('haiku-counter');
   const refreshBtn = document.getElementById('haiku-refresh');
 
+  // Helpers: haiku entries are either plain strings or {t, u, s} objects with optional source link
+  function haikuText(item) { return (typeof item === 'string') ? item : item.t; }
+  function haikuUrl(item)  { return (typeof item === 'string') ? null : (item.u || null); }
+  function haikuSrc(item)  { return (typeof item === 'string') ? null : (item.s || null); }
+
   // No-repeat cycle: pick from unseen pool tracked in localStorage.
   // Pool-version key forces reset if pool contents change.
-  const POOL_KEY = 'dashHaikuSeen_v3';
-  const INTRO_KEY = 'dashIntroSeen_v3';
-  const POOL_SIG_KEY = 'dashHaikuSig_v3';
-  const INTRO_SIG_KEY = 'dashIntroSig_v3';
-  const poolSig = haiku.length + ':' + haiku[0].slice(0, 10);
+  const POOL_KEY = 'dashHaikuSeen_v4';
+  const INTRO_KEY = 'dashIntroSeen_v4';
+  const POOL_SIG_KEY = 'dashHaikuSig_v4';
+  const INTRO_SIG_KEY = 'dashIntroSig_v4';
+  const poolSig = haiku.length + ':' + haikuText(haiku[0]).slice(0, 10);
   const introSig = intros.length + ':' + intros[0].slice(0, 10);
 
   // In-memory backup (across clicks within one page session) in case localStorage fails
@@ -901,7 +908,7 @@ updateStaleness();
       try { localStorage.setItem(seenKey, JSON.stringify(seen)); } catch(e) {}
     }
     memRef.value = seen;
-    return { text: pool[idx], seenCount: seen.length, total: pool.length };
+    return { item: pool[idx], seenCount: seen.length, total: pool.length };
   }
 
   function renderHaiku() {
@@ -911,7 +918,20 @@ updateStaleness();
     const i = pickUnseen(intros, INTRO_KEY, INTRO_SIG_KEY, introSig, iMem);
     memSeenHaiku = hMem.value;
     memSeenIntro = iMem.value;
-    text.innerHTML = '<div style="color:var(--cyan);font-size:12px;margin-bottom:10px;font-style:normal;">' + i.text + '</div>' + h.text;
+    const introText = haikuText(i.item);
+    const bodyText = haikuText(h.item);
+    const url = haikuUrl(h.item);
+    const srcName = haikuSrc(h.item) || 'source';
+    text.innerHTML = '<div style="color:var(--cyan);font-size:12px;margin-bottom:10px;font-style:normal;">' + introText + '</div>' + bodyText;
+    if (sourceEl) {
+      if (url) {
+        sourceEl.innerHTML = '<a href="' + url + '" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none;border-bottom:1px dotted var(--border);">→ ' + srcName + '</a>';
+        sourceEl.style.display = 'block';
+      } else {
+        sourceEl.innerHTML = '';
+        sourceEl.style.display = 'none';
+      }
+    }
     if (counter) counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
   }
 
