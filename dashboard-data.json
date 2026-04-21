@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20",
+  "last_updated": "2026-04-21",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers — Patriots' Day at Fenway",
@@ -15,15 +15,52 @@
     "applications_sent": 21,
     "awaiting_response": 12,
     "active_interviews": 3,
-    "active_pipeline": 51,
-    "deep_dives_done": 8,
+    "active_pipeline": 54,
+    "deep_dives_done": 9,
     "resumes_built": 1,
     "rejected_closed": 4,
-    "last_updated": "2026-04-20"
+    "last_updated": "2026-04-21"
   },
   "ranked_opportunities": [
     {
       "rank": 1,
+      "company": "Bentley Systems",
+      "role": "Market Development Director, North America Transportation",
+      "score": 69.0,
+      "proxy_score": null,
+      "effective_score": 69.0,
+      "fit": 8,
+      "has_deep_dive": true,
+      "date": "2026-04-21",
+      "scqa": "Infrastructure Super-Cycle Window",
+      "verdict": "Bentley is hiring a senior IC Market Development Director for North America Transportation (Rail/Transit, Ports, Utilities, Airports) with 18-36 month strategic pursuit horizons. The JD uses market-maker language that is unusually aligned with Paul's 25-year pattern, and the role reports to the VP of Market Development. Pursue with caveats: the posting requires deep domain depth in two of Rail/Transit, Ports, Utilities, or Airports, and Paul's defensible verticals are Ports (via KSAT maritime and GFW coastal coverage) and Utilities-water (via PA Consulting VSAT), not canonical Rail or Airports.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.bentley.com/job/Remote-Market-Development-Director%2C-North-America-Transportation-CA/1383677300/"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Bentley_Systems_Deep_Dive.docx",
+      "doc_note": "Full deep dive completed",
+      "added": "2026-04-21",
+      "is_new": true,
+      "tier": null,
+      "domain": "Infrastructure Engineering Software / Digital Twin",
+      "location": "Remote, US (home-based)",
+      "hook": "JD explicitly calls for a market-maker running 18-36 month strategic pursuits with C-level infrastructure owner-operators. Language is unusually aligned with Paul's pattern; rail/airports domain gap is the one real screen.",
+      "dimension_scores": {
+        "RF": 8,
+        "SA": 5,
+        "IL": 6,
+        "SPM": 8,
+        "CO": 6,
+        "GC": 9
+      },
+      "blockers": []
+    },
+    {
+      "rank": 2,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -32,7 +69,7 @@
       "fit": 6,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 EO startup BD role",
+      "scqa": "Scored — EO startup BD role",
       "verdict": "Spanish satellite company building miniaturized EO sensors for urban and environmental monitoring. BD Manager role in the right domain (EO data commercialization) but 'Manager' title is below Director/VP target and Spain location is a constraint. Company is early-stage with limited public revenue data. Worth monitoring for a more senior role if one opens.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -42,7 +79,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via morning brief — Tier 3, tracking only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -58,7 +95,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -67,7 +104,7 @@
       "fit": 4,
       "has_deep_dive": false,
       "date": "2026-04-14",
-      "scqa": "Scored \u2014 not pursued (Houston + narrow ecosystem gap)",
+      "scqa": "Scored — not pursued (Houston + narrow ecosystem gap)",
       "verdict": "YC-backed Series A maritime decarbonization startup (battery-electric shipping). Strong pattern match on partnership architecture, but JD names 'Intimate knowledge of the integrator, shipyard, and vessel designer landscape' as Non-Negotiable Competency #1. Paul has maritime authority and oil major sales experience (KSAT) but not the shipbuilding commercial ecosystem specifically. Houston on-site, which Paul has explicitly ruled out. Pass.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -98,7 +135,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -124,33 +161,6 @@
       "domain": "Small Satellites / Space",
       "location": "UK / Sweden / NL",
       "hook": "Listed smallsat manufacturer at hardware-to-data inflection. EUR 76.3M EPS-Sterna contract, INFLECION maritime constellation. Products BD role with ITAR-free international sales dimension.",
-      "blockers": []
-    },
-    {
-      "rank": 4,
-      "company": "WindBorne Systems",
-      "role": "Cold outreach (posted BD roles too junior)",
-      "score": 58.0,
-      "proxy_score": null,
-      "effective_score": 58.0,
-      "fit": 7,
-      "has_deep_dive": true,
-      "date": "2026-04-02",
-      "scqa": "The NOAA Vacuum",
-      "verdict": "Company is a strong match but posted roles at $75-120K are below seniority/comp band. Cold outreach for Director-level role recommended.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/WindBorne_Systems_Deep_Dive.docx",
-      "doc_note": "Deep dive document available",
-      "added": "2026-04-02",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Atmospheric Data",
-      "location": "Remote",
-      "hook": "Atmospheric data company disrupting weather forecasting with smart balloons. Great company fit but posted roles are below your seniority band \u2014 cold outreach for Director-level.",
       "blockers": []
     },
     {
@@ -197,7 +207,7 @@
       "has_deep_dive": true,
       "date": "2026-04-08",
       "scqa": "Customer base alignment",
-      "verdict": "Customer base (gov, utilities, O&G) is Paul's buyer profile, but this is a CS role \u2014 wrong function entirely. Never led CS, never owned NRR.",
+      "verdict": "Customer base (gov, utilities, O&G) is Paul's buyer profile, but this is a CS role — wrong function entirely. Never led CS, never owned NRR.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -217,6 +227,33 @@
     },
     {
       "rank": 7,
+      "company": "WindBorne Systems",
+      "role": "Cold outreach (posted BD roles too junior)",
+      "score": 58.0,
+      "proxy_score": null,
+      "effective_score": 58.0,
+      "fit": 7,
+      "has_deep_dive": true,
+      "date": "2026-04-02",
+      "scqa": "The NOAA Vacuum",
+      "verdict": "Company is a strong match but posted roles at $75-120K are below seniority/comp band. Cold outreach for Director-level role recommended.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/WindBorne_Systems_Deep_Dive.docx",
+      "doc_note": "Deep dive document available",
+      "added": "2026-04-02",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Atmospheric Data",
+      "location": "Remote",
+      "hook": "Atmospheric data company disrupting weather forecasting with smart balloons. Great company fit but posted roles are below your seniority band — cold outreach for Director-level.",
+      "blockers": []
+    },
+    {
+      "rank": 8,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -225,7 +262,7 @@
       "fit": 6,
       "has_deep_dive": false,
       "date": "2026-04-17",
-      "scqa": "Scored via morning run \u2014 no full deep dive (below 60 threshold)",
+      "scqa": "Scored via morning run — no full deep dive (below 60 threshold)",
       "verdict": "VP, Sales at a robotics scale-up (facility cleaning robots) is a plausible executive sales leadership shape with 15+ years B2B required and remote US/Canada eligibility. The domain is outside Paul's climate/EO/maritime core, and the mandate reads as 'lead existing sales org' rather than 'build new market,' which is Paul's strongest pattern. Worth tracking as Tier 3 but not a top target.",
       "recommendation": "track",
       "status": "not_applied",
@@ -235,13 +272,13 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning run \u2014 dimension_scores attached. Run /company-deep-dive if Paul wants full analysis.",
+      "doc_note": "Scored via morning run — dimension_scores attached. Run /company-deep-dive if Paul wants full analysis.",
       "added": "2026-04-17",
       "is_new": false,
       "tier": null,
       "domain": "Robotics / Facility Automation",
       "location": "Remote US or Canada (Illinois listed)",
-      "hook": "VP Sales role at a robotics scale-up \u2014 15+ years B2B sales leadership required, remote US/CA eligible, but domain sits outside Paul's climate/EO/maritime core.",
+      "hook": "VP Sales role at a robotics scale-up — 15+ years B2B sales leadership required, remote US/CA eligible, but domain sits outside Paul's climate/EO/maritime core.",
       "blockers": [],
       "dimension_scores": {
         "RF": 6,
@@ -253,7 +290,42 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
+      "company": "Slingshot Aerospace",
+      "role": "Manager of Growth, APAC",
+      "score": 56.5,
+      "proxy_score": null,
+      "effective_score": 56.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-11",
+      "scqa": "Scored — space situational awareness APAC",
+      "verdict": "Space situational awareness and analytics for commercial and government. Manager of Growth APAC is BD/commercial, and Paul has APAC network (Australia, SE Asia). But APAC focus likely requires in-region presence, 'Manager' title is below Director target, and the space domain has defense-adjacent elements that need vetting. Score reflects geographic mismatch (Taos NM vs. APAC).",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/slingshotaerospace/jobs/5848537004"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief — Tier 3, tracking only",
+      "added": "2026-04-11",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Space Situational Awareness / Analytics",
+      "location": "APAC (likely in-region)",
+      "hook": "SSA analytics with APAC commercial growth role. Paul has APAC network but role likely requires in-region presence.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "APAC in-region role. Requires APAC residency and work authorization.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 10,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -288,42 +360,7 @@
       ]
     },
     {
-      "rank": 9,
-      "company": "Slingshot Aerospace",
-      "role": "Manager of Growth, APAC",
-      "score": 56.5,
-      "proxy_score": null,
-      "effective_score": 56.5,
-      "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-04-11",
-      "scqa": "Scored \u2014 space situational awareness APAC",
-      "verdict": "Space situational awareness and analytics for commercial and government. Manager of Growth APAC is BD/commercial, and Paul has APAC network (Australia, SE Asia). But APAC focus likely requires in-region presence, 'Manager' title is below Director target, and the space domain has defense-adjacent elements that need vetting. Score reflects geographic mismatch (Taos NM vs. APAC).",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://job-boards.greenhouse.io/slingshotaerospace/jobs/5848537004"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, tracking only",
-      "added": "2026-04-11",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Space Situational Awareness / Analytics",
-      "location": "APAC (likely in-region)",
-      "hook": "SSA analytics with APAC commercial growth role. Paul has APAC network but role likely requires in-region presence.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "APAC in-region role. Requires APAC residency and work authorization.",
-          "severity": "hard"
-        }
-      ]
-    },
-    {
-      "rank": 10,
+      "rank": 11,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -358,7 +395,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 55.5,
@@ -379,7 +416,7 @@
       "doc_path": null,
       "doc_note": "Tier 3, tracking only. Hard geo blocker (Chicago/Decatur on-site); domain adjacent but not mission-driven.",
       "added": "2026-04-20",
-      "is_new": true,
+      "is_new": false,
       "tier": "tier3",
       "domain": "Agribusiness / Carbon Markets / CCUS",
       "location": "Chicago, IL or Decatur, IL (On-site)",
@@ -406,7 +443,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -437,41 +474,6 @@
           "type": "geographic_residency",
           "detail": "Role is explicitly East Coast focused (New York and other East Coast markets). Paul is in Taos, NM (Mountain Time). Not a hard blocker but reduces fit for this specific geographic mandate.",
           "severity": "soft"
-        }
-      ]
-    },
-    {
-      "rank": 13,
-      "company": "Rubicon Carbon",
-      "role": "Director, Business Development",
-      "score": 53.5,
-      "proxy_score": null,
-      "effective_score": 53.5,
-      "fit": 6,
-      "has_deep_dive": false,
-      "date": "2026-04-14",
-      "scqa": "Scored -- carbon credit platform, geo blocker",
-      "verdict": "TPG-backed carbon credit portfolio company (~45 employees, Marina del Rey CA). Director BD role is quota-carrying enterprise sales to Fortune 500 buyers. Carbon market domain is relevant but the motion is enterprise sales of a defined product, not market creation. Role requires candidates within 1hr of NYC, LA, or SF -- hard geo blocker from Taos. Content score reflects genuine carbon market fit; geo block makes it not actionable.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://job-boards.greenhouse.io/rubiconcarbon/jobs/4676382005"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief -- Tier 3, geo blocker",
-      "added": "2026-04-14",
-      "is_new": false,
-      "tier": null,
-      "domain": "Carbon Credits / VCM Finance",
-      "location": "Remote (must be within 1hr NYC/LA/SF)",
-      "hook": "TPG-backed carbon credit platform. Director BD at $175-235K. Enterprise sales motion, not market building. Hard geo blocker from Taos.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Role requires candidates to be based within one hour of New York City, Los Angeles, or San Francisco. Taos, NM does not meet this requirement.",
-          "severity": "hard"
         }
       ]
     },
@@ -508,6 +510,41 @@
     },
     {
       "rank": 15,
+      "company": "Rubicon Carbon",
+      "role": "Director, Business Development",
+      "score": 53.5,
+      "proxy_score": null,
+      "effective_score": 53.5,
+      "fit": 6,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- carbon credit platform, geo blocker",
+      "verdict": "TPG-backed carbon credit portfolio company (~45 employees, Marina del Rey CA). Director BD role is quota-carrying enterprise sales to Fortune 500 buyers. Carbon market domain is relevant but the motion is enterprise sales of a defined product, not market creation. Role requires candidates within 1hr of NYC, LA, or SF -- hard geo blocker from Taos. Content score reflects genuine carbon market fit; geo block makes it not actionable.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/rubiconcarbon/jobs/4676382005"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, geo blocker",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": null,
+      "domain": "Carbon Credits / VCM Finance",
+      "location": "Remote (must be within 1hr NYC/LA/SF)",
+      "hook": "TPG-backed carbon credit platform. Director BD at $175-235K. Enterprise sales motion, not market building. Hard geo blocker from Taos.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role requires candidates to be based within one hour of New York City, Los Angeles, or San Francisco. Taos, NM does not meet this requirement.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 16,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -547,7 +584,7 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 17,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -562,8 +599,8 @@
       "recommendation": "pursue_with_caveats",
       "domain": "Robotics-as-a-Service",
       "location": "Hybrid Chicago / Remote",
-      "hook": "Robotics-as-a-service \u2014 off climate/ocean. CoS scope + CEO proximity match Paul's strengths.",
-      "verdict": "Robotics-as-a-service \u2014 off climate/ocean. CoS scope + CEO proximity match Paul's strengths.",
+      "hook": "Robotics-as-a-service — off climate/ocean. CoS scope + CEO proximity match Paul's strengths.",
+      "verdict": "Robotics-as-a-service — off climate/ocean. CoS scope + CEO proximity match Paul's strengths.",
       "scqa": "Missed-roles audit surfaced Formic at score 52.0",
       "blockers": [],
       "job_urls": [
@@ -578,7 +615,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -620,36 +657,36 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 18,
-      "company": "Fugro",
-      "role": "Regional Director, Strategic Sales",
+      "rank": 19,
+      "company": "Ceres Imaging",
+      "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
       "proxy_score": null,
       "effective_score": 51.5,
-      "fit": 6,
+      "fit": 4,
       "has_deep_dive": false,
-      "date": "2026-04-13",
-      "scqa": "Scored - mature company, domain match only",
-      "verdict": "Third Fugro role in tracker. Regional Director, Strategic Sales is right seniority and the geo-data/marine/offshore domain is highly relevant from KSAT days. However, Fugro is a mature publicly traded company (~10K employees, ~EUR 2B revenue), the strategic sales function is well-established, and the role likely requires proximity to a regional office (Houston, Perth, or similar). Not a market-building role. Domain fit is real but stage, function, and geographic alignment are weak. Existing Fugro deep dive covers company context.",
+      "date": "2026-04-16",
+      "scqa": "Scored via morning digest",
+      "verdict": "Ceres AI (formerly Ceres Imaging) does precision agriculture analytics using aerial/satellite imagery. This role targets agricultural capital markets: lenders, insurers, and banks pricing crop risk. The AXA/British Marine work is structurally analogous (satellite data used to price insurance exposure) but this is an IC quota-carrying AE role, not commercial leadership. The ag capital markets vertical is early and genuinely needs someone to build the argument from scratch, which is closer to Paul's pattern. But the role structure is AE, not Director/VP. Worth monitoring if they post a Director-level BD role in this vertical.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
-        "https://www.fugro.com/careers/jobs/R0031060-regional-director-strategic-sales"
+        "https://ceresai.bamboohr.com/careers/26"
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief. Existing Fugro deep dive covers company context.",
-      "added": "2026-04-13",
+      "doc_note": "Scored via morning digest 2026-04-16. Tier 3: IC AE role structure, not Director/VP. Domain relevant (ag insurance, satellite analytics). Watch for Director BD opening in this vertical.",
+      "added": "2026-04-16",
       "is_new": false,
-      "tier": "tier3",
-      "domain": "Geodata / Marine / Offshore Services",
-      "location": "Regional (likely Houston/Perth/Europe)",
-      "hook": "Right seniority and strong domain overlap, but mature company and not a market-building role.",
+      "tier": null,
+      "domain": "Precision Agriculture / EO Analytics",
+      "location": "California (likely remote)",
+      "hook": "Ag capital markets (insurers, lenders) as satellite data buyers. AXA/British Marine structural analog. IC AE role at right-domain company -- watch for Director BD opening.",
       "blockers": []
     },
     {
-      "rank": 19,
+      "rank": 20,
       "company": "Crusoe Energy",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -684,36 +721,36 @@
       ]
     },
     {
-      "rank": 20,
-      "company": "Ceres Imaging",
-      "role": "Enterprise Sales Lead - Agricultural Capital Markets",
+      "rank": 21,
+      "company": "Fugro",
+      "role": "Regional Director, Strategic Sales",
       "score": 51.5,
       "proxy_score": null,
       "effective_score": 51.5,
-      "fit": 4,
+      "fit": 6,
       "has_deep_dive": false,
-      "date": "2026-04-16",
-      "scqa": "Scored via morning digest",
-      "verdict": "Ceres AI (formerly Ceres Imaging) does precision agriculture analytics using aerial/satellite imagery. This role targets agricultural capital markets: lenders, insurers, and banks pricing crop risk. The AXA/British Marine work is structurally analogous (satellite data used to price insurance exposure) but this is an IC quota-carrying AE role, not commercial leadership. The ag capital markets vertical is early and genuinely needs someone to build the argument from scratch, which is closer to Paul's pattern. But the role structure is AE, not Director/VP. Worth monitoring if they post a Director-level BD role in this vertical.",
+      "date": "2026-04-13",
+      "scqa": "Scored - mature company, domain match only",
+      "verdict": "Third Fugro role in tracker. Regional Director, Strategic Sales is right seniority and the geo-data/marine/offshore domain is highly relevant from KSAT days. However, Fugro is a mature publicly traded company (~10K employees, ~EUR 2B revenue), the strategic sales function is well-established, and the role likely requires proximity to a regional office (Houston, Perth, or similar). Not a market-building role. Domain fit is real but stage, function, and geographic alignment are weak. Existing Fugro deep dive covers company context.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
-        "https://ceresai.bamboohr.com/careers/26"
+        "https://www.fugro.com/careers/jobs/R0031060-regional-director-strategic-sales"
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning digest 2026-04-16. Tier 3: IC AE role structure, not Director/VP. Domain relevant (ag insurance, satellite analytics). Watch for Director BD opening in this vertical.",
-      "added": "2026-04-16",
+      "doc_note": "Scored via morning brief. Existing Fugro deep dive covers company context.",
+      "added": "2026-04-13",
       "is_new": false,
-      "tier": null,
-      "domain": "Precision Agriculture / EO Analytics",
-      "location": "California (likely remote)",
-      "hook": "Ag capital markets (insurers, lenders) as satellite data buyers. AXA/British Marine structural analog. IC AE role at right-domain company -- watch for Director BD opening.",
+      "tier": "tier3",
+      "domain": "Geodata / Marine / Offshore Services",
+      "location": "Regional (likely Houston/Perth/Europe)",
+      "hook": "Right seniority and strong domain overlap, but mature company and not a market-building role.",
       "blockers": []
     },
     {
-      "rank": 21,
+      "rank": 22,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -723,7 +760,7 @@
       "has_deep_dive": false,
       "date": "2026-04-12",
       "scqa": "Scored - CSM role, right domain wrong function/level",
-      "verdict": "Open Cosmos Data CSM role scored April 12 \u2014 wrong function and below Director/VP target seniority. Noted only because Open Cosmos is interesting as a company. Application submitted separately for Sales Lead EO Data role.",
+      "verdict": "Open Cosmos Data CSM role scored April 12 — wrong function and below Director/VP target seniority. Noted only because Open Cosmos is interesting as a company. Application submitted separately for Sales Lead EO Data role.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -742,7 +779,7 @@
       "blockers": []
     },
     {
-      "rank": 22,
+      "rank": 23,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -751,7 +788,7 @@
       "fit": 5,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 green steel Head of Sales",
+      "scqa": "Scored — green steel Head of Sales",
       "verdict": "S2G Ventures portfolio company in green steel (electric arc furnace / direct reduced iron). Head of Sales is right level but steel/industrial manufacturing is entirely outside Paul's domain. No existing buyer relationships in this space. Commercial patterns from EO/maritime do not transfer cleanly to industrial steel procurement.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -761,7 +798,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via morning brief — Tier 3, tracking only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -771,7 +808,7 @@
       "blockers": []
     },
     {
-      "rank": 23,
+      "rank": 24,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -806,7 +843,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 25,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -841,81 +878,7 @@
       ]
     },
     {
-      "rank": 25,
-      "company": "UtilityAPI",
-      "role": "Strategic Sales Director",
-      "score": 49.0,
-      "proxy_score": null,
-      "effective_score": 49.0,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-04-15",
-      "scqa": "Scored -- utility data platform, IC sales director",
-      "verdict": "Oakland CA utility data exchange platform ($10.77M Series A total raised, 2014 founded). Strategic Sales Director at a company this size is likely a quota-carrying IC role rather than commercial leadership. Utility data access and grid software is climate-adjacent but not Paul's EO/maritime/carbon domain. Role seniority ambiguity is the primary concern.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://www.climatejobslist.com/jobs/strategic-sales-director-at-utilityapi-aug-23"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief -- Tier 3, likely IC quota-carrying at small Series A company",
-      "added": "2026-04-15",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Utility Data / Clean Energy Software",
-      "location": "Oakland, CA (likely remote)",
-      "hook": "Utility data exchange platform. Adjacent to climate grid data but likely IC quota-carrying at a small pre-scale company.",
-      "blockers": []
-    },
-    {
       "rank": 26,
-      "company": "Voltus",
-      "role": "Product Manager",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": false,
-      "fit": 2,
-      "score": 49.0,
-      "effective_score": 49.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Grid Flexibility / VPP",
-      "location": "Remote US",
-      "hook": "Product team PM on Market Platform pillar. Wrong function; Paul is not a PM.",
-      "verdict": "RF low: Product Manager is product-team function, not commercial. SA high: Prelude-backed DER/VPP platform, scaling. IL high: grid/DER/climate-tech energy transition, strong adjacency. SPM very low: PM is not a sales motion. CO moderate: PM comp. GC strong: remote.",
-      "scqa": "Missed-roles audit surfaced Voltus at score 64.5",
-      "blockers": [
-        {
-          "type": "wrong_function",
-          "detail": "Product Manager, not BD/commercial.",
-          "severity": "hard"
-        }
-      ],
-      "job_urls": [
-        "https://jobs.preludeventures.com/companies/voltus/jobs/74299196-product-manager"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
-      "dimension_scores": {
-        "RF": 2,
-        "SA": 7,
-        "IL": 7,
-        "SPM": 2,
-        "CO": 5,
-        "GC": 8
-      }
-    },
-    {
-      "rank": 27,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -965,33 +928,78 @@
       }
     },
     {
-      "rank": 28,
-      "company": "Sylvera",
-      "role": "Customer Success Manager",
-      "score": 48.0,
+      "rank": 27,
+      "company": "UtilityAPI",
+      "role": "Strategic Sales Director",
+      "score": 49.0,
       "proxy_score": null,
-      "effective_score": 48.0,
-      "fit": 3,
+      "effective_score": 49.0,
+      "fit": 4,
       "has_deep_dive": false,
-      "date": "2026-04-14",
-      "scqa": "Scored -- wrong function, carbon markets domain",
-      "verdict": "Sylvera is a carbon credit ratings and analytics company with genuine domain overlap (voluntary carbon markets, corporate buyers) and likely remote-friendly. The CSM role is fundamentally the wrong function and below Director/VP target seniority. The company itself is worth watching for a commercial BD or partnerships role.",
+      "date": "2026-04-15",
+      "scqa": "Scored -- utility data platform, IC sales director",
+      "verdict": "Oakland CA utility data exchange platform ($10.77M Series A total raised, 2014 founded). Strategic Sales Director at a company this size is likely a quota-carrying IC role rather than commercial leadership. Utility data access and grid software is climate-adjacent but not Paul's EO/maritime/carbon domain. Role seniority ambiguity is the primary concern.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
-        "https://jobs.ashbyhq.com/sylvera/6b91670a-c86c-4954-b927-edfb7d4fff89"
+        "https://www.climatejobslist.com/jobs/strategic-sales-director-at-utilityapi-aug-23"
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief -- Tier 3, wrong function",
-      "added": "2026-04-14",
+      "doc_note": "Scored via morning brief -- Tier 3, likely IC quota-carrying at small Series A company",
+      "added": "2026-04-15",
       "is_new": false,
       "tier": "tier3",
-      "domain": "Carbon Credit Ratings / VCM Analytics",
-      "location": "London / Remote",
-      "hook": "Carbon credit ratings company, strong domain overlap but CSM function and seniority are wrong for Paul.",
+      "domain": "Utility Data / Clean Energy Software",
+      "location": "Oakland, CA (likely remote)",
+      "hook": "Utility data exchange platform. Adjacent to climate grid data but likely IC quota-carrying at a small pre-scale company.",
       "blockers": []
+    },
+    {
+      "rank": 28,
+      "company": "Voltus",
+      "role": "Product Manager",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": false,
+      "fit": 2,
+      "score": 49.0,
+      "effective_score": 49.0,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Grid Flexibility / VPP",
+      "location": "Remote US",
+      "hook": "Product team PM on Market Platform pillar. Wrong function; Paul is not a PM.",
+      "verdict": "RF low: Product Manager is product-team function, not commercial. SA high: Prelude-backed DER/VPP platform, scaling. IL high: grid/DER/climate-tech energy transition, strong adjacency. SPM very low: PM is not a sales motion. CO moderate: PM comp. GC strong: remote.",
+      "scqa": "Missed-roles audit surfaced Voltus at score 64.5",
+      "blockers": [
+        {
+          "type": "wrong_function",
+          "detail": "Product Manager, not BD/commercial.",
+          "severity": "hard"
+        }
+      ],
+      "job_urls": [
+        "https://jobs.preludeventures.com/companies/voltus/jobs/74299196-product-manager"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 7,
+        "IL": 7,
+        "SPM": 2,
+        "CO": 5,
+        "GC": 8
+      }
     },
     {
       "rank": 29,
@@ -1065,6 +1073,35 @@
     },
     {
       "rank": 31,
+      "company": "Sylvera",
+      "role": "Customer Success Manager",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-14",
+      "scqa": "Scored -- wrong function, carbon markets domain",
+      "verdict": "Sylvera is a carbon credit ratings and analytics company with genuine domain overlap (voluntary carbon markets, corporate buyers) and likely remote-friendly. The CSM role is fundamentally the wrong function and below Director/VP target seniority. The company itself is worth watching for a commercial BD or partnerships role.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.ashbyhq.com/sylvera/6b91670a-c86c-4954-b927-edfb7d4fff89"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief -- Tier 3, wrong function",
+      "added": "2026-04-14",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Carbon Credit Ratings / VCM Analytics",
+      "location": "London / Remote",
+      "hook": "Carbon credit ratings company, strong domain overlap but CSM function and seniority are wrong for Paul.",
+      "blockers": []
+    },
+    {
+      "rank": 32,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -1093,7 +1130,7 @@
       "blockers": []
     },
     {
-      "rank": 32,
+      "rank": 33,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -1128,7 +1165,7 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 34,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -1178,36 +1215,60 @@
       }
     },
     {
-      "rank": 34,
-      "company": "Patch",
-      "role": "Enterprise Account Executive",
+      "rank": 35,
+      "company": "Fugro",
+      "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
       "proxy_score": null,
       "effective_score": 46.5,
-      "fit": 4,
+      "fit": 5,
       "has_deep_dive": false,
-      "date": "2026-04-10",
-      "scqa": "Scored - AE role, carbon platform",
-      "verdict": "Carbon credit API platform in climate-adjacent space. AE role is below Director/VP target seniority and is a quota-carrying IC position, which does not match Paul's market-builder profile. Carbon domain has some overlap with GFW climate work but the sales motion (transactional API sales) differs from Paul's consultative, multi-stakeholder approach.",
+      "date": "2026-04-21",
+      "scqa": "Scored. Not pursued (Germany residency + TSO network gap).",
+      "verdict": "Fugro GroundIQ is hiring multiple Sales Managers across Europe to accelerate an early-market-maturity subsurface mapping product. This specific role is Germany-based (Berlin/Hamburg/Bremen), not US remote. The JD names 'extensive knowledge and contact base from [TSO/government] sector' as essential, which is a network Paul does not have in Europe. Market-builder pattern match at product level exists, but geographic and network gaps make it not actionable.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
-        "https://jobs.ashbyhq.com/patch.io/e4ea582d-5a71-42ac-9af0-a268c00cc3cb/application"
+        "https://www.fugro.com/careers/jobs/R0031142-groundiq-sales-manager-germany"
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief - Tier 3, tracking only",
-      "added": "2026-04-10",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Carbon Credits / Climate Tech",
-      "location": "Remote (likely)",
-      "hook": "Carbon credit API platform. Climate-adjacent but AE role is wrong seniority and function for Paul.",
-      "blockers": []
+      "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: Germany-based + likely EU work authorization required. Soft blocker: European TSO network explicitly called out as essential, which Paul does not have.",
+      "added": "2026-04-21",
+      "is_new": true,
+      "tier": null,
+      "domain": "Geotechnical / Subsurface Mapping",
+      "location": "Germany (Berlin, Hamburg, Bremen)",
+      "hook": "Early-market-maturity subsurface intelligence product at scale, Germany region. Geo + European TSO network blockers.",
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 7,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 4,
+        "GC": 1
+      },
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is based in Berlin, Hamburg, or Bremen with 30-50% regional travel. Not a US-remote posting.",
+          "severity": "hard"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Germany-based Fugro entity; EU work authorization is effectively required. Sponsorship not indicated.",
+          "severity": "hard"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "JD states 'extensive knowledge and contact base from [TSO/government] sector is essential'. Paul has US utility regulator relationships but not a European TSO network.",
+          "severity": "soft"
+        }
+      ]
     },
     {
-      "rank": 35,
+      "rank": 36,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -1242,7 +1303,7 @@
       ]
     },
     {
-      "rank": 36,
+      "rank": 37,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -1277,7 +1338,36 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 38,
+      "company": "Patch",
+      "role": "Enterprise Account Executive",
+      "score": 46.5,
+      "proxy_score": null,
+      "effective_score": 46.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-10",
+      "scqa": "Scored - AE role, carbon platform",
+      "verdict": "Carbon credit API platform in climate-adjacent space. AE role is below Director/VP target seniority and is a quota-carrying IC position, which does not match Paul's market-builder profile. Carbon domain has some overlap with GFW climate work but the sales motion (transactional API sales) differs from Paul's consultative, multi-stakeholder approach.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.ashbyhq.com/patch.io/e4ea582d-5a71-42ac-9af0-a268c00cc3cb/application"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief - Tier 3, tracking only",
+      "added": "2026-04-10",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Carbon Credits / Climate Tech",
+      "location": "Remote (likely)",
+      "hook": "Carbon credit API platform. Climate-adjacent but AE role is wrong seniority and function for Paul.",
+      "blockers": []
+    },
+    {
+      "rank": 39,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -1312,7 +1402,7 @@
       ]
     },
     {
-      "rank": 38,
+      "rank": 40,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -1347,7 +1437,7 @@
       ]
     },
     {
-      "rank": 39,
+      "rank": 41,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -1356,8 +1446,8 @@
       "fit": 3,
       "has_deep_dive": false,
       "date": "2026-04-11",
-      "scqa": "Scored \u2014 wrong function, contract",
-      "verdict": "NatureMetrics is genuinely interesting (biodiversity intelligence using eDNA and satellite data \u2014 domain is real for Paul) but this is a marketing role, not BD or partnerships, and it is an interim contract. Wrong function, wrong engagement type. Company worth watching for a commercial/BD role if one opens.",
+      "scqa": "Scored — wrong function, contract",
+      "verdict": "NatureMetrics is genuinely interesting (biodiversity intelligence using eDNA and satellite data — domain is real for Paul) but this is a marketing role, not BD or partnerships, and it is an interim contract. Wrong function, wrong engagement type. Company worth watching for a commercial/BD role if one opens.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -1366,7 +1456,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 wrong function (marketing), contract only",
+      "doc_note": "Scored via morning brief — wrong function (marketing), contract only",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier3",
@@ -1376,7 +1466,7 @@
       "blockers": []
     },
     {
-      "rank": 40,
+      "rank": 42,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -1385,7 +1475,7 @@
       "fit": 2,
       "has_deep_dive": false,
       "date": "2026-04-15",
-      "scqa": "Scored \u2014 clear pass",
+      "scqa": "Scored — clear pass",
       "verdict": "Vancouver-based reforestation verification startup. Mission and domain are genuinely aligned with Paul's interests (forest carbon / restoration verification). But the role is structurally a Business Development Representative seat: 2+ years experience requirement, reports to Manager BD, $100K CAD OTE (~$72K USD), outbound prospecting and discovery meeting booking. Two seniority levels below Paul's target and one-third of his comp range. The hybrid-in-Vancouver requirement adds a hard geographic blocker (Canadian work authorization). Worth tracking the company for future Director or VP Partnerships openings; this role is not actionable.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -1395,7 +1485,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 pass on all three structural mismatches (title, comp, Canadian geographic blocker)",
+      "doc_note": "Scored via /job-evaluate — pass on all three structural mismatches (title, comp, Canadian geographic blocker)",
       "added": "2026-04-15",
       "is_new": false,
       "tier": null,
@@ -1416,36 +1506,7 @@
       ]
     },
     {
-      "rank": 41,
-      "company": "Medable",
-      "role": "Senior Director, Business Development (CRO Focus)",
-      "score": 44.5,
-      "proxy_score": null,
-      "effective_score": 44.5,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-04-11",
-      "scqa": "Scored \u2014 clinical trials domain mismatch",
-      "verdict": "Decentralized clinical trial technology platform. Senior Director BD is right level but healthcare/clinical trials is entirely outside Paul's domain. No existing buyer relationships or regulatory knowledge in this space. Commercial pattern match is low. Pass.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.obvious.com/companies/medable/jobs/73959244-senior-director-business-development-cro-focus"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief \u2014 Tier 3, wrong domain",
-      "added": "2026-04-11",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Healthcare / Clinical Trials Tech",
-      "location": "US (likely remote)",
-      "hook": "Clinical trial technology BD. Right level, entirely wrong domain.",
-      "blockers": []
-    },
-    {
-      "rank": 42,
+      "rank": 43,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -1495,7 +1556,84 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 44,
+      "company": "Exotrail",
+      "role": "Business Development & Sales Manager (In-Orbit Services)",
+      "score": 44.5,
+      "proxy_score": null,
+      "effective_score": 44.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-21",
+      "scqa": "Scored. Not pursued (France + French fluency + sub-Director title).",
+      "verdict": "Exotrail is a French space scale-up (founded 2017) hiring a BD & Sales Manager for its In-Orbit Services product line. Role is Toulouse/Massy hybrid, requires fluent French and English, and is a BD Manager rather than Director. Space domain is adjacent to Paul's EO background but the title seniority is below his target and two hard blockers (geographic + language) make this not actionable.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://careers.exotrail.com/jobs/7606512-business-development-sales-manager-h-f"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: France-based, requires fluent French. Also below Paul's Director/VP seniority target.",
+      "added": "2026-04-21",
+      "is_new": true,
+      "tier": null,
+      "domain": "In-Orbit Services / Space Mobility",
+      "location": "Toulouse, Massy, France (Hybrid)",
+      "hook": "French space scale-up, In-Orbit Services BD role. France-based + French required.",
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 7,
+        "IL": 4,
+        "SPM": 4,
+        "CO": 3,
+        "GC": 1
+      },
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Role is based in Toulouse or Massy, France, hybrid. Not a US-remote posting.",
+          "severity": "hard"
+        },
+        {
+          "type": "language",
+          "detail": "JD requires 'excellente communication en francais et en anglais'. Paul is English-only.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 45,
+      "company": "Medable",
+      "role": "Senior Director, Business Development (CRO Focus)",
+      "score": 44.5,
+      "proxy_score": null,
+      "effective_score": 44.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-11",
+      "scqa": "Scored — clinical trials domain mismatch",
+      "verdict": "Decentralized clinical trial technology platform. Senior Director BD is right level but healthcare/clinical trials is entirely outside Paul's domain. No existing buyer relationships or regulatory knowledge in this space. Commercial pattern match is low. Pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.obvious.com/companies/medable/jobs/73959244-senior-director-business-development-cro-focus"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief — Tier 3, wrong domain",
+      "added": "2026-04-11",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Healthcare / Clinical Trials Tech",
+      "location": "US (likely remote)",
+      "hook": "Clinical trial technology BD. Right level, entirely wrong domain.",
+      "blockers": []
+    },
+    {
+      "rank": 46,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -1504,15 +1642,15 @@
       "fit": 3,
       "has_deep_dive": false,
       "date": "2026-04-09",
-      "scqa": "Scored \u2014 ag domain gap",
-      "verdict": "Ag data platform at commercial growth stage \u2014 company pattern fits but IC AE hunter role and ag commodities domain are real gaps. Comp is fine ($125-180K + commission), remote works. Open questions: what 'sustainability sectors' actually means, and whether Paul can crack ag buyer universe without existing network.",
+      "scqa": "Scored — ag domain gap",
+      "verdict": "Ag data platform at commercial growth stage — company pattern fits but IC AE hunter role and ag commodities domain are real gaps. Comp is fine ($125-180K + commission), remote works. Open questions: what 'sustainability sectors' actually means, and whether Paul can crack ag buyer universe without existing network.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 Tier 3, tracking only",
+      "doc_note": "Scored via /job-evaluate — Tier 3, tracking only",
       "added": "2026-04-06",
       "is_new": false,
       "tier": "tier3",
@@ -1522,7 +1660,7 @@
       "blockers": []
     },
     {
-      "rank": 44,
+      "rank": 47,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -1531,7 +1669,7 @@
       "fit": 4,
       "has_deep_dive": false,
       "date": "2026-04-18",
-      "scqa": "Scored \u2014 carbon advisory role with SF hybrid blocker",
+      "scqa": "Scored — carbon advisory role with SF hybrid blocker",
       "verdict": "Patch's Embedded Climate Strategist is a subject-matter advisor who partners with AEs to guide corporate buyers on carbon market strategy, SBTi/VCMI/CSRD disclosures, and carbon budgeting. Stage alignment is good (Patch is a growth-stage carbon market infrastructure company), but the role requires a carbon-markets subject-matter expert, not a market-builder. Paul's climate credentials are EO/conservation/maritime, not voluntary carbon market expertise. SF hybrid (3-5 days in office) is a hard blocker. Pass.",
       "recommendation": "pass",
       "status": "not_applied",
@@ -1541,9 +1679,9 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": "Scored via morning brief 2026-04-18 \u2014 SF hybrid hard blocker, plus carbon-markets subject-matter expertise not Paul's background. Tracking only.",
+      "doc_note": "Scored via morning brief 2026-04-18 — SF hybrid hard blocker, plus carbon-markets subject-matter expertise not Paul's background. Tracking only.",
       "added": "2026-04-18",
-      "is_new": true,
+      "is_new": false,
       "tier": "tier3",
       "domain": "Carbon Markets / Climate Advisory",
       "location": "San Francisco (Hybrid 3-5 days/week)",
@@ -1570,7 +1708,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 48,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -1605,7 +1743,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 49,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -1634,52 +1772,7 @@
       "blockers": []
     },
     {
-      "rank": 47,
-      "company": "Patch",
-      "role": "Go-to-Market Engineer",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": false,
-      "fit": 2,
-      "score": 41.0,
-      "effective_score": 41.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Carbon Markets / SaaS",
-      "location": "Remote US",
-      "hook": "'GTM Engineer' = Salesforce+Clay+Zapier admin IC. Title dressed up; seat is not Paul's.",
-      "verdict": "RF low: RevOps/SalesOps systems IC, not commercial leadership. Salesforce, Clay, HubSpot, Zapier, Gong admin. SA moderate: Patch has F500 traction and scaling. IL moderate: carbon markets/climate finance is strong-adjacent. SPM very low: RevOps engineering is not a sales motion. CO weak: IC base $150-185K. GC moderate: SF hybrid from Taos.",
-      "scqa": "Missed-roles audit surfaced Patch at score 70.0",
-      "blockers": [
-        {
-          "type": "wrong_function",
-          "detail": "RevOps systems IC, not BD/commercial.",
-          "severity": "hard"
-        }
-      ],
-      "job_urls": [
-        "https://jobs.ashbyhq.com/patch.io/ae35c3f9-f5b6-46b3-a6e3-2405b978f570"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
-      "dimension_scores": {
-        "RF": 2,
-        "SA": 6,
-        "IL": 6,
-        "SPM": 2,
-        "CO": 4,
-        "GC": 5
-      }
-    },
-    {
-      "rank": 48,
+      "rank": 50,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -1729,7 +1822,52 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 51,
+      "company": "Patch",
+      "role": "Go-to-Market Engineer",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": false,
+      "fit": 2,
+      "score": 41.0,
+      "effective_score": 41.0,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Carbon Markets / SaaS",
+      "location": "Remote US",
+      "hook": "'GTM Engineer' = Salesforce+Clay+Zapier admin IC. Title dressed up; seat is not Paul's.",
+      "verdict": "RF low: RevOps/SalesOps systems IC, not commercial leadership. Salesforce, Clay, HubSpot, Zapier, Gong admin. SA moderate: Patch has F500 traction and scaling. IL moderate: carbon markets/climate finance is strong-adjacent. SPM very low: RevOps engineering is not a sales motion. CO weak: IC base $150-185K. GC moderate: SF hybrid from Taos.",
+      "scqa": "Missed-roles audit surfaced Patch at score 70.0",
+      "blockers": [
+        {
+          "type": "wrong_function",
+          "detail": "RevOps systems IC, not BD/commercial.",
+          "severity": "hard"
+        }
+      ],
+      "job_urls": [
+        "https://jobs.ashbyhq.com/patch.io/ae35c3f9-f5b6-46b3-a6e3-2405b978f570"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 6,
+        "IL": 6,
+        "SPM": 2,
+        "CO": 4,
+        "GC": 5
+      }
+    },
+    {
+      "rank": 52,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -1774,7 +1912,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 53,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -1824,7 +1962,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 54,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -1843,7 +1981,7 @@
       ],
       "resume_path": null,
       "doc_path": "~/Desktop/Claude Deep Dives/Fugro_Deep_Dive_Analysis.docx",
-      "doc_note": "Covered in Fugro combined deep dive \u2014 investigate which service line before applying",
+      "doc_note": "Covered in Fugro combined deep dive — investigate which service line before applying",
       "added": "2026-04-11",
       "is_new": false,
       "tier": "tier2",
@@ -1923,7 +2061,7 @@
       "score": 54.0,
       "fit": 6,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Senior Manager Tenders & Proposals is procurement/bid management, not BD or partnerships. Title and function mismatch despite strong wildfire/EO domain overlap. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1942,7 +2080,7 @@
       "score": 51.0,
       "fit": 5,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Principal Customer Success role is post-sale, not BD or partnerships. Climate risk domain overlap exists but role function mismatch is fundamental. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1961,7 +2099,7 @@
       "score": 48.0,
       "fit": 3,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Account Executive for State & Local Gov is an IC quota-carrying AE role, well below Director/VP target. Planet relationship exists but role seniority is wrong. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1980,7 +2118,7 @@
       "score": 52.0,
       "fit": 5,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "BD Manager at maritime emissions compliance startup. Right domain but Manager title well below Director target, small team, Hamburg location, narrow MRV-only product scope. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -1999,7 +2137,7 @@
       "score": 46.0,
       "fit": 3,
       "date": "2026-04-08",
-      "scqa": "Pass \u2014 scored below threshold",
+      "scqa": "Pass — scored below threshold",
       "verdict": "Enterprise AE at wildfire detection company is IC quota-carrying role. Utility & energy vertical has some KSAT overlap but AE title and function are wrong level. Pass.",
       "recommendation": "pass",
       "status": "pass",
@@ -2057,7 +2195,7 @@
       "fit": 7,
       "date": "2026-04-09",
       "scqa": "Removed by Paul",
-      "verdict": "Synthetic biology platform \u2014 not a domain match for Paul.",
+      "verdict": "Synthetic biology platform — not a domain match for Paul.",
       "recommendation": "pass",
       "status": "pass",
       "overdue": null,
@@ -2074,77 +2212,77 @@
       "company": "Descartes Underwriting",
       "role": "VP, Business Development + AVP, Business Development",
       "score": 83.5,
-      "reason": "Removed \u2014 Singapore + requires North American P&C market experience",
+      "reason": "Removed — Singapore + requires North American P&C market experience",
       "status": "pass"
     },
     {
       "company": "Greenly",
       "role": "Chief Revenue Officer",
       "score": 81.0,
-      "reason": "Removed \u2014 requires French + CRO/VP Sales in high-growth B2B SaaS",
+      "reason": "Removed — requires French + CRO/VP Sales in high-growth B2B SaaS",
       "status": "pass"
     },
     {
       "company": "Orca AI",
       "role": "Head of Maritime Certification & Regulatory Strategy",
       "score": 77.5,
-      "reason": "Removed \u2014 requires 8+ years Classification Society or maritime Bridge Systems/Navigation",
+      "reason": "Removed — requires 8+ years Classification Society or maritime Bridge Systems/Navigation",
       "status": "pass"
     },
     {
       "company": "Umbra Space",
       "role": "Director, Defense",
       "score": 75.5,
-      "reason": "Removed \u2014 Director Defense, Paul not interested in defense roles",
+      "reason": "Removed — Director Defense, Paul not interested in defense roles",
       "status": "pass"
     },
     {
       "company": "Tomorrow.io",
       "role": "VP Government Business Development (APAC/LATAM posted; US not active)",
       "score": 72.0,
-      "reason": "Removed \u2014 job no longer active",
+      "reason": "Removed — job no longer active",
       "status": "pass"
     },
     {
       "company": "Sea Machines",
       "role": "Director of Sales (EMEA)",
       "score": 68.0,
-      "reason": "Removed \u2014 requires 7-10 years selling to Navies/MoD/Defense Primes in EMEA",
+      "reason": "Removed — requires 7-10 years selling to Navies/MoD/Defense Primes in EMEA",
       "status": "pass"
     },
     {
       "company": "Carbonfuture",
       "role": "Senior BD Manager, B2B Carbon Markets",
       "score": 66.0,
-      "reason": "Removed \u2014 requires London-based + existing carbon removal network",
+      "reason": "Removed — requires London-based + existing carbon removal network",
       "status": "pass"
     },
     {
       "company": "Crusoe Energy Systems",
       "role": "Senior Director, Energy Partnerships",
       "score": 62.0,
-      "reason": "Removed \u2014 requires 12-15+ years IPP/renewable developer/electric utility experience",
+      "reason": "Removed — requires 12-15+ years IPP/renewable developer/electric utility experience",
       "status": "pass"
     },
     {
       "company": "Mitiga Solutions",
       "role": "Head of Sales",
       "score": 80.5,
-      "reason": "Removed \u2014 requires infrastructure sector experience (energy, utilities, data centers, telcos, construction) Paul does not have. Barcelona location.",
+      "reason": "Removed — requires infrastructure sector experience (energy, utilities, data centers, telcos, construction) Paul does not have. Barcelona location.",
       "status": "pass"
     },
     {
       "company": "Overstory",
       "role": "Director, Remote Sensing (Data Partnerships)",
       "score": 77.0,
-      "reason": "Removed \u2014 job posting no longer available",
+      "reason": "Removed — job posting no longer available",
       "status": "pass"
     },
     {
       "company": "LiveEO",
       "role": "Strategic Partnerships & BD Lead (AU/SG/JP) or AE North America",
       "score": 76.0,
-      "reason": "Removed \u2014 job posting no longer available",
+      "reason": "Removed — job posting no longer available",
       "status": "pass"
     }
   ],
@@ -2210,7 +2348,7 @@
       "location": "Denver, CO (Hybrid; Paul open to relocation)",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application received by People & Culture team \u2014 awaiting recruiter screen decision",
+      "next_action": "Application received by People & Culture team — awaiting recruiter screen decision",
       "urgent": false,
       "job_url": "https://projectcanary.pinpointhq.com/en/postings/75c09efb-c0d2-473a-a0e2-cc310af50cc2",
       "applied_score": 76.5
@@ -2224,7 +2362,7 @@
       "location": "Remote US / Golden CO",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application acknowledged \u2014 high volume, expect slower review timeline",
+      "next_action": "Application acknowledged — high volume, expect slower review timeline",
       "urgent": false,
       "job_url": "https://jobs.lever.co/loftorbital/6c07424a-607b-4970-9569-103abbfe4177"
     },
@@ -2237,7 +2375,7 @@
       "location": "Remote US",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application acknowledged by recruiting team \u2014 awaiting screening decision",
+      "next_action": "Application acknowledged by recruiting team — awaiting screening decision",
       "urgent": false,
       "job_url": "https://aclima.earth/careers?ashby_jid=e40e2ddd-5cd8-404b-8105-e58fbee4c6ff"
     },
@@ -2250,7 +2388,7 @@
       "location": "Sterling VA / Remote",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application acknowledged by Talent Acquisition \u2014 awaiting screening decision",
+      "next_action": "Application acknowledged by Talent Acquisition — awaiting screening decision",
       "urgent": false,
       "job_url": "https://jobs.lever.co/kepler/1c25d90c-4819-4052-852f-3523993829f2"
     },
@@ -2262,7 +2400,7 @@
       "location": "Princeton NJ / Remote",
       "comp": "$185-195k",
       "status": "1st_interview",
-      "next_action": "1st Interview Tue Apr 21, 2:00-2:45 PM MDT \u2014 VP Finance + Chief of Staff Emily Silberstein \u2014 Zoom",
+      "next_action": "1st Interview Tue Apr 21, 2:00-2:45 PM MDT — VP Finance + Chief of Staff Emily Silberstein — Zoom",
       "urgent": true,
       "applied_score": 81.5,
       "job_url": "https://www.climatecentral.org/open-position-vice-president-for-business-development",
@@ -2276,7 +2414,7 @@
       "location": "Brooklyn NY / Hybrid",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Follow-up sent Apr 17 to Annbj\u00f8rg Medhaug (CPSO) via email + LinkedIn \u2014 if no response by May 1, retire",
+      "next_action": "Follow-up sent Apr 17 to Annbjørg Medhaug (CPSO) via email + LinkedIn — if no response by May 1, retire",
       "urgent": false,
       "job_url": "https://job-boards.greenhouse.io/floodbase/jobs/5611057004",
       "applied_score": 67.0,
@@ -2306,7 +2444,7 @@
       "location": "Remote US",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Follow-up sent Apr 17 \u2014 if no response by May 1, retire",
+      "next_action": "Follow-up sent Apr 17 — if no response by May 1, retire",
       "urgent": false,
       "job_url": "https://rsmetrics.com/careers/",
       "applied_score": 71.5,
@@ -2322,7 +2460,7 @@
       "location": "Remote US / DC",
       "comp": "$139-200k",
       "status": "awaiting",
-      "next_action": "Follow-up sent Apr 17 \u2014 if no response by May 1, retire",
+      "next_action": "Follow-up sent Apr 17 — if no response by May 1, retire",
       "urgent": false,
       "job_url": "https://www.impactobservatory.com/careers/head-of-sales",
       "applied_score": 73.5,
@@ -2379,7 +2517,7 @@
       "location": "El Segundo CA / SLC UT",
       "comp": "$160-200k",
       "status": "awaiting",
-      "next_action": "Application confirmed received \u2014 awaiting response",
+      "next_action": "Application confirmed received — awaiting response",
       "urgent": false,
       "applied_score": 71.0,
       "job_url": "https://jobs.lever.co/make-rain/e3535955-fe34-423d-9e9f-8cc7c9e2da9f",
@@ -2393,7 +2531,7 @@
       "location": "Santa Clara CA",
       "comp": "Undisclosed",
       "status": "awaiting",
-      "next_action": "Application received Mar 31 \u2014 will contact if good fit",
+      "next_action": "Application received Mar 31 — will contact if good fit",
       "urgent": false,
       "applied_score": 64.0,
       "job_url": "https://job-boards.greenhouse.io/oklo/jobs/5831538004",
@@ -2407,7 +2545,7 @@
       "location": "Unknown",
       "comp": "Undisclosed",
       "status": "rejected",
-      "next_action": "Rejected Mar 25 \u2014 encouraged to apply for future roles",
+      "next_action": "Rejected Mar 25 — encouraged to apply for future roles",
       "urgent": false,
       "applied_score": 66.0,
       "score": 72.0
@@ -2446,7 +2584,7 @@
       "domain": "Ocean CDR / Climate Tech",
       "location": "Ottawa, ON (Paul would relocate from Taos; CA work auth pending)",
       "job_url": "https://ph2.bamboohr.com/careers/67",
-      "next_action": "Rejected Apr 16 \u2014 Canada-only candidates. Kelsey Cuddihy.",
+      "next_action": "Rejected Apr 16 — Canada-only candidates. Kelsey Cuddihy.",
       "status": "rejected",
       "urgent": false
     },
@@ -2533,35 +2671,35 @@
       "category": "EO Marketplace",
       "why": "EO data marketplace aggregating satellite tasking; commercial partnerships building distribution layer.",
       "careers_url": "https://www.arlula.com/careers/",
-      "roast": "Australian EO marketplace aggregating everyone else's pixels and clipping the ticket on the way through. Think Ticketmaster for satellite data: hated by customers, tolerated by vendors, profitable because nobody wants to manage fourteen separate vendor contracts themselves. The thesis is getting harder in 2026 \u2014 Xoople just closed $130M to sell its own birds direct, Vantor announced two new constellations this month, and every EO operator suddenly wants to own the customer relationship. The job is to explain to a procurement VP why one invoice through Arlula beats five through everyone else. You've closed three-party deals in four languages across two continents. Pitching consolidation to a CFO who already hates vendor management is Tuesday before lunch."
+      "roast": "Australian EO marketplace aggregating everyone else's pixels and clipping the ticket on the way through. Think Ticketmaster for satellite data: hated by customers, tolerated by vendors, profitable because nobody wants to manage fourteen separate vendor contracts themselves. The thesis is getting harder in 2026 — Xoople just closed $130M to sell its own birds direct, Vantor announced two new constellations this month, and every EO operator suddenly wants to own the customer relationship. The job is to explain to a procurement VP why one invoice through Arlula beats five through everyone else. You've closed three-party deals in four languages across two continents. Pitching consolidation to a CFO who already hates vendor management is Tuesday before lunch."
     },
     {
       "company": "Verra",
       "category": "Carbon / Env MRV",
       "why": "Leading carbon registry; digital MRV + satellite verification growing fast.",
       "careers_url": "https://verra.org/about/opportunities",
-      "roast": "The Vatican of carbon credits \u2014 everyone genuflects, nobody fully believes. After years of journalists catching 'offsets' that were just untouched forests they were never going to cut anyway, they're pivoting hard to satellite-based MRV because their old 'trust us, the trees are still there' system stopped working when Bloomberg started flying drones. You literally wrote carbon regulations before most of these people finished grad school. Walking in there would be like a seminarian showing up at Sunday school \u2014 overqualified, overexperienced, and exactly the adult supervision they're desperately missing. If they hire outside your resume, it's malpractice."
+      "roast": "The Vatican of carbon credits — everyone genuflects, nobody fully believes. After years of journalists catching 'offsets' that were just untouched forests they were never going to cut anyway, they're pivoting hard to satellite-based MRV because their old 'trust us, the trees are still there' system stopped working when Bloomberg started flying drones. You literally wrote carbon regulations before most of these people finished grad school. Walking in there would be like a seminarian showing up at Sunday school — overqualified, overexperienced, and exactly the adult supervision they're desperately missing. If they hire outside your resume, it's malpractice."
     },
     {
       "company": "CIBO Tech",
       "category": "EO / Ag / Carbon",
       "why": "Satellite-based carbon + crop monitoring; EUDR compliance angle; commercial data programs.",
       "careers_url": "https://www.cibotechnologies.com/careers",
-      "roast": "They convinced Wall Street that staring at cornfields from space is a financial product. Carbon credits from agriculture, EUDR compliance, crop monitoring \u2014 it's the unholy trinity of 'things that sound boring but generate enormous invoices.' Based in the Midwest, which means your Taos zip code is either a dealbreaker or proof you understand remote work. Their ideal hire is someone who can talk soil carbon sequestration at a farm bureau meeting and not get punched. You ski telemark. You can handle farmers."
+      "roast": "They convinced Wall Street that staring at cornfields from space is a financial product. Carbon credits from agriculture, EUDR compliance, crop monitoring — it's the unholy trinity of 'things that sound boring but generate enormous invoices.' Based in the Midwest, which means your Taos zip code is either a dealbreaker or proof you understand remote work. Their ideal hire is someone who can talk soil carbon sequestration at a farm bureau meeting and not get punched. You ski telemark. You can handle farmers."
     },
     {
       "company": "Globhe",
       "category": "Drone / Aerial EO",
       "why": "Drone data marketplace brokering aerial + EO data globally; commercial partnerships model.",
       "careers_url": "https://globhe.com/jobs",
-      "roast": "Stockholm marketplace that turned 'hire a drone pilot' into a global SaaS play, which sounds dumb until you realize an enterprise customer needing aerial data across 150 countries doesn't want 150 contractor invoices \u2014 they want one login and one receivable. That's the whole business. Uber for flying cameras, but with actual commercial gravity. The hard part is the sales pitch: explaining to a Fortune 500 procurement VP why Globhe beats buying drones in-house when everyone and their cousin now owns a DJI. Your KSAT years were the same song in a bigger airframe \u2014 sell the data, abstract away the hardware, collect the PO. The Swedish CEO will serve you better fika than most Series B boards have budget for, and your 'hei' lands softer than whatever McKinsey kid they're currently interviewing. Go send the note."
+      "roast": "Stockholm marketplace that turned 'hire a drone pilot' into a global SaaS play, which sounds dumb until you realize an enterprise customer needing aerial data across 150 countries doesn't want 150 contractor invoices — they want one login and one receivable. That's the whole business. Uber for flying cameras, but with actual commercial gravity. The hard part is the sales pitch: explaining to a Fortune 500 procurement VP why Globhe beats buying drones in-house when everyone and their cousin now owns a DJI. Your KSAT years were the same song in a bigger airframe — sell the data, abstract away the hardware, collect the PO. The Swedish CEO will serve you better fika than most Series B boards have budget for, and your 'hei' lands softer than whatever McKinsey kid they're currently interviewing. Go send the note."
     },
     {
       "company": "Sateliot",
       "category": "IoT / AIS / LEO",
       "why": "IoT + AIS data from LEO constellation; maritime tracking; growing commercial verticals.",
       "careers_url": "https://sateliot.space/people/",
-      "roast": "Spanish company putting LoRa gateways in orbit so shipping companies can track cargo in the one place cell networks go to die \u2014 the middle of the Atlantic. Their pitch is 'cell towers, but orbiting,' which is either the dumbest or smartest thing you'll hear this quarter depending on whether you've ever tried to find a signal off Tromso in January. Maritime IoT is so underserved that even a modest constellation prints real revenue, and the customers (shipping, fishing, cold-chain asset tracking) would rather pay a subscription than explain dead cargo to their insurer. Your KSAT background speaks both 'maritime' and 'satellite' fluently, and there are maybe five humans on Earth who can say that without lying. Go be one of them."
+      "roast": "Spanish company putting LoRa gateways in orbit so shipping companies can track cargo in the one place cell networks go to die — the middle of the Atlantic. Their pitch is 'cell towers, but orbiting,' which is either the dumbest or smartest thing you'll hear this quarter depending on whether you've ever tried to find a signal off Tromso in January. Maritime IoT is so underserved that even a modest constellation prints real revenue, and the customers (shipping, fishing, cold-chain asset tracking) would rather pay a subscription than explain dead cargo to their insurer. Your KSAT background speaks both 'maritime' and 'satellite' fluently, and there are maybe five humans on Earth who can say that without lying. Go be one of them."
     },
     {
       "company": "Pixxel",
@@ -2582,21 +2720,21 @@
       "category": "Drones / EO / Emergency",
       "why": "Norwegian drone + satellite company from Andoya Space ecosystem. ESA-funded. KSAT-adjacent. Very small, monitor for growth.",
       "careers_url": "https://tiepoint.no/",
-      "roast": "Your Norwegian ex-colleagues started a drone company in And\u00f8ya without telling you. ESA-funded, KSAT-adjacent, and they probably still use the same coffee machine you used to curse at. Emergency response and mapping applications, which means they're the people who show up after a landslide with expensive equipment and good intentions. You could run their commercial side in your sleep, and the fact that you haven't applied yet is either strategic restraint or spite. Both are valid. Go send a 'hei' already."
+      "roast": "Your Norwegian ex-colleagues started a drone company in Andøya without telling you. ESA-funded, KSAT-adjacent, and they probably still use the same coffee machine you used to curse at. Emergency response and mapping applications, which means they're the people who show up after a landslide with expensive equipment and good intentions. You could run their commercial side in your sleep, and the fact that you haven't applied yet is either strategic restraint or spite. Both are valid. Go send a 'hei' already."
     },
     {
       "company": "Urban Sky",
       "category": "Stratospheric / Remote Sensing",
       "why": "Stratospheric balloon remote sensing for wildfire and mapping. Denver-based. No BD roles now, mostly engineering.",
       "careers_url": "https://urbansky.com/careers/",
-      "roast": "Denver stratospheric balloon company that maps wildfires from 65,000 feet because apparently drones gave them altitude issues. The product is weirdly great \u2014 resolution that sits right between drones and satellites, loitering capacity that eats an aircraft's lunch, and a price point that makes insurance adjusters pay cash on the first call. Colorado fire seasons keep rewriting their own records, which means the commercial team will expand whether Urban Sky wants it to or not. You're in the same time zone, they probably know half your ski crew already, and introducing yourself at parties as 'the balloon intelligence guy' is the kind of origin story Cormac would respect. Watch this one and pounce the moment a BD req goes up."
+      "roast": "Denver stratospheric balloon company that maps wildfires from 65,000 feet because apparently drones gave them altitude issues. The product is weirdly great — resolution that sits right between drones and satellites, loitering capacity that eats an aircraft's lunch, and a price point that makes insurance adjusters pay cash on the first call. Colorado fire seasons keep rewriting their own records, which means the commercial team will expand whether Urban Sky wants it to or not. You're in the same time zone, they probably know half your ski crew already, and introducing yourself at parties as 'the balloon intelligence guy' is the kind of origin story Cormac would respect. Watch this one and pounce the moment a BD req goes up."
     },
     {
       "company": "EarthDaily Analytics",
       "category": "EO Analytics / Satellite Data",
       "why": "Paul would apply for the right role here. Watch for Director/VP of Commercial, Head of BD, VP of Sales, or revenue-leadership openings. PMM (2026-04 posting) is not the seat; rejected for AE 2026-03-31. Comp floor $165K.",
       "careers_url": "https://earthdaily.applytojob.com/apply",
-      "roast": "They bought UrtheCast's leftovers at a discount and are trying to build a daily global imagery empire from the wreckage. It's like buying a foreclosed house and telling everyone you're a real estate developer. BUT \u2014 they actually have a constellation, actual data, and actual customers, which puts them ahead of 90% of NewSpace companies that only have a pitch deck and a dream. They need someone to figure out who wants to buy pictures of the entire planet taken every single day. Spoiler: it's everyone. They just don't know it yet. That's your job."
+      "roast": "They bought UrtheCast's leftovers at a discount and are trying to build a daily global imagery empire from the wreckage. It's like buying a foreclosed house and telling everyone you're a real estate developer. BUT — they actually have a constellation, actual data, and actual customers, which puts them ahead of 90% of NewSpace companies that only have a pitch deck and a dream. They need someone to figure out who wants to buy pictures of the entire planet taken every single day. Spoiler: it's everyone. They just don't know it yet. That's your job."
     },
     {
       "company": "Gradient",
@@ -2609,7 +2747,7 @@
       "company": "Fleetzero",
       "category": "Maritime Decarbonization",
       "why": "Swappable battery containers for cargo ships. Ocean + climate crossover. Growth Manager role spotted.",
-      "roast": "They want to electrify cargo ships using swappable battery containers. It's the most 'what if we just... made the ship electric?' idea since someone tried to put sails back on tankers. Maritime decarbonization is your ocean-adjacent KSAT world colliding with climate tech's wildest ambitions. Their 'Growth Manager' title is just 'BD person who owns a hoodie.' You owned hoodies in Troms\u00f8 before it was a tech uniform.",
+      "roast": "They want to electrify cargo ships using swappable battery containers. It's the most 'what if we just... made the ship electric?' idea since someone tried to put sails back on tankers. Maritime decarbonization is your ocean-adjacent KSAT world colliding with climate tech's wildest ambitions. Their 'Growth Manager' title is just 'BD person who owns a hoodie.' You owned hoodies in Tromsø before it was a tech uniform.",
       "careers_url": "https://fleetzero.com/careers"
     },
     {
@@ -2651,14 +2789,14 @@
       "company": "Isometric",
       "category": "Carbon Removal Verification",
       "why": "Science-based carbon removal verification. Like Verra but for permanent removal, not offsets.",
-      "roast": "Verra's angry younger sibling who thinks everyone else is too soft on carbon credits. They verify permanent carbon removal \u2014 the 'literally buried it underground for a thousand years' kind, not the 'we planted a sapling and called it a day' kind. Stripe and Frontier money keeps the lights on, and their methodology team has more PhDs per square foot than most MIT labs. Your regulatory background \u2014 writing actual carbon laws before most of them had an undergrad thesis \u2014 makes you the adult in every room they put you in. They desperately need someone commercial who speaks 'science' without flinching. You do.",
+      "roast": "Verra's angry younger sibling who thinks everyone else is too soft on carbon credits. They verify permanent carbon removal — the 'literally buried it underground for a thousand years' kind, not the 'we planted a sapling and called it a day' kind. Stripe and Frontier money keeps the lights on, and their methodology team has more PhDs per square foot than most MIT labs. Your regulatory background — writing actual carbon laws before most of them had an undergrad thesis — makes you the adult in every room they put you in. They desperately need someone commercial who speaks 'science' without flinching. You do.",
       "careers_url": "https://www.isometric.com/careers"
     },
     {
       "company": "Planet Labs",
       "category": "Earth Observation / Satellite Constellation",
       "why": "The OG daily imagery company. Always hiring. You probably know people there already.",
-      "roast": "The Golden State Warriors of EO \u2014 been around forever, won some championships, and every quarterly earnings call features the same analyst asking 'but when will you be profitable?' Stock's been hacking out of a multi-year base while stock-based comp keeps chewing through cash. They still photograph the entire Earth every day and still haven't fully figured out who wants to buy all those pictures \u2014 which is exactly the problem a BD leader solves. You've met half their go-to-market team at conferences and pretended to like their booth. Time to stop pretending. They need someone who can actually sell the data, not just rebrand it every eighteen months.",
+      "roast": "The Golden State Warriors of EO — been around forever, won some championships, and every quarterly earnings call features the same analyst asking 'but when will you be profitable?' Stock's been hacking out of a multi-year base while stock-based comp keeps chewing through cash. They still photograph the entire Earth every day and still haven't fully figured out who wants to buy all those pictures — which is exactly the problem a BD leader solves. You've met half their go-to-market team at conferences and pretended to like their booth. Time to stop pretending. They need someone who can actually sell the data, not just rebrand it every eighteen months.",
       "careers_url": "https://www.planet.com/careers/"
     },
     {
@@ -2672,14 +2810,14 @@
       "company": "Cervest",
       "category": "Climate Intelligence / Risk",
       "why": "Climate risk analytics for assets and supply chains. EO-adjacent, enterprise SaaS.",
-      "roast": "They tell companies which of their buildings will be underwater in 20 years, then charge them for the existential crisis. Climate risk analytics for the 'oh god SEC disclosure requirements are real' crowd. Long sales cycles, fat contracts, and clients who are legally obligated to care about what you're selling. If you can handle a CFO asking 'but how accurate is your flood model, really?' without laughing, crying, or both, you're their person. You've had worse conversations. You lived in Troms\u00f8.",
+      "roast": "They tell companies which of their buildings will be underwater in 20 years, then charge them for the existential crisis. Climate risk analytics for the 'oh god SEC disclosure requirements are real' crowd. Long sales cycles, fat contracts, and clients who are legally obligated to care about what you're selling. If you can handle a CFO asking 'but how accurate is your flood model, really?' without laughing, crying, or both, you're their person. You've had worse conversations. You lived in Tromsø.",
       "careers_url": "https://cervest.earth/careers"
     },
     {
       "company": "Windborne Systems",
       "category": "Weather / Atmospheric Data",
       "why": "Constellation of weather balloons collecting atmospheric data. Paul's NewSpace + climate crossover.",
-      "roast": "Khosla-backed startup that launches weather balloons into the stratosphere by the hundreds, like meteorological confetti, while Starcloud just took $170M at a $1.1B valuation to put data centers in orbit and Vantor is minting two new EO constellations in the same quarter. In a year when atmospheric real estate is getting crowded fast, Windborne is quietly printing balloons AND customers \u2014 national weather services, defense agencies, reinsurance funds, anyone who needs temperature and pressure where satellites can't see and airplanes won't fly. Not sexy. Not on a magazine cover. Neither is Taos in April mud season when the drought left only seventy-six inches on the slopes and TSV closed a month early. The unglamorous business is often the one still standing in five years. Go see if they need a commercial adult before the Bay Area hires three more ex-McKinsey associates who've never talked to a reinsurance underwriter in their life.",
+      "roast": "Khosla-backed startup that launches weather balloons into the stratosphere by the hundreds, like meteorological confetti, while Starcloud just took $170M at a $1.1B valuation to put data centers in orbit and Vantor is minting two new EO constellations in the same quarter. In a year when atmospheric real estate is getting crowded fast, Windborne is quietly printing balloons AND customers — national weather services, defense agencies, reinsurance funds, anyone who needs temperature and pressure where satellites can't see and airplanes won't fly. Not sexy. Not on a magazine cover. Neither is Taos in April mud season when the drought left only seventy-six inches on the slopes and TSV closed a month early. The unglamorous business is often the one still standing in five years. Go see if they need a commercial adult before the Bay Area hires three more ex-McKinsey associates who've never talked to a reinsurance underwriter in their life.",
       "careers_url": "https://windbornesystems.com/careers"
     },
     {
@@ -2700,7 +2838,7 @@
       "company": "Regrow Ag",
       "category": "Ag / Carbon / MRV",
       "why": "Satellite-based ag MRV platform. Soil carbon, sustainability reporting, EUDR. Direct domain overlap.",
-      "roast": "They measure dirt from space and sell the results to food companies who need proof they're not destroying civilization. Soil carbon, sustainability reporting, EUDR compliance \u2014 it's the full European bureaucracy bingo card, and every square is a revenue stream. Your carbon market plus satellite background is such a comically perfect fit that their ATS might flag your application as 'too good to be real, probably a bot.' Apply anyway. Make the robot question its algorithms.",
+      "roast": "They measure dirt from space and sell the results to food companies who need proof they're not destroying civilization. Soil carbon, sustainability reporting, EUDR compliance — it's the full European bureaucracy bingo card, and every square is a revenue stream. Your carbon market plus satellite background is such a comically perfect fit that their ATS might flag your application as 'too good to be real, probably a bot.' Apply anyway. Make the robot question its algorithms.",
       "careers_url": "https://www.regrow.ag/careers"
     },
     {
@@ -2714,14 +2852,14 @@
       "company": "Kayrros",
       "category": "EO / Methane / Energy Intelligence",
       "why": "Paris-based EO analytics for energy, methane, and climate markets. Sells to hedge funds, oil majors, governments. ENI-era Paul speaks this customer's language fluently.",
-      "roast": "Paris-based satellite data company that got famous catching Russian methane leaks from space and selling the footage to hedge funds. Their product pitch is 'environmental intelligence,' which is the business equivalent of being the DJ at a very expensive party where oil majors, sovereign wealth funds, and climate activists all pretend not to know each other. Your ENI days were basically the same room \u2014 European regulatory sophistication, corporate energy executives, satellite vendor in the corner closing the deal. You were that vendor. You speak their language, you survived French bureaucracy once, and you know which side of the methane ledger actually pays. Send a 'bonjour.'",
+      "roast": "Paris-based satellite data company that got famous catching Russian methane leaks from space and selling the footage to hedge funds. Their product pitch is 'environmental intelligence,' which is the business equivalent of being the DJ at a very expensive party where oil majors, sovereign wealth funds, and climate activists all pretend not to know each other. Your ENI days were basically the same room — European regulatory sophistication, corporate energy executives, satellite vendor in the corner closing the deal. You were that vendor. You speak their language, you survived French bureaucracy once, and you know which side of the methane ledger actually pays. Send a 'bonjour.'",
       "careers_url": "https://www.kayrros.com/careers/"
     },
     {
       "company": "Orbital Sidekick",
       "category": "Hyperspectral / Infrastructure Monitoring",
       "why": "SF-based hyperspectral EO constellation for pipeline and infrastructure monitoring. Defense + commercial energy customers. BD role overlap with Paul's dual-use commercial experience.",
-      "roast": "California hyperspectral startup that stares at pipelines for a living. They detect methane leaks and pipeline corrosion from orbit, which is somehow less creepy than the Russian surveillance states but equally commercial. Backed by real DoD contracts and commercial energy majors, with a tech stack that reads like a Transformer's cousin. They need BD help to navigate between defense work and oil & gas deals without either customer flinching \u2014 which is exactly the split you learned to handle at KSAT when your Arctic ground stations served NOAA in the morning and the Norwegian military by afternoon. You can already talk 'monitoring' to an ExxonMobil VP without breaking eye contact. Go do it.",
+      "roast": "California hyperspectral startup that stares at pipelines for a living. They detect methane leaks and pipeline corrosion from orbit, which is somehow less creepy than the Russian surveillance states but equally commercial. Backed by real DoD contracts and commercial energy majors, with a tech stack that reads like a Transformer's cousin. They need BD help to navigate between defense work and oil & gas deals without either customer flinching — which is exactly the split you learned to handle at KSAT when your Arctic ground stations served NOAA in the morning and the Norwegian military by afternoon. You can already talk 'monitoring' to an ExxonMobil VP without breaking eye contact. Go do it.",
       "careers_url": "https://www.orbitalsidekick.com/careers"
     },
     {
@@ -2729,38 +2867,45 @@
       "category": "Thermal IR / Wildfire Intelligence",
       "why": "Munich-based thermal infrared satellite constellation; 180+ employees; wildfire detection + climate intelligence; actively hiring commercial roles. Promoted distributed-sat pioneer Ignacio Zuleta to CTPO in Feb 2026. Direct KSAT-adjacent culture; European climate-tech customers.",
       "careers_url": "https://ororatech.com/company/careers/",
-      "roast": "German thermal intelligence company with 180 engineers staring at the Earth's temperature from space, which sounds like a niche hobby until you remember wildfires are a thirty-billion-dollar insurance problem and they spot ignitions before the fire department's coffee gets cold. They just elevated a distributed-satellite pioneer to CTPO in February, which is Silicon Valley code for 'grown-ups are in the product meetings now and the commercial side is next.' Munich is close enough to Troms\u00f8 that your Norwegian LinkedIn graph overlaps theirs by three degrees and a shared appreciation for dark beer. Thermal IR is the one EO niche where the customer \u2014 insurers, utilities, emergency managers \u2014 literally cannot say 'no' when their asset is on fire. Selling to people whose alternative is 'watch it burn' is the easiest commercial pitch of your career. Pronounce it Oh-ROH-rah-Tek and skip the line."
+      "roast": "German thermal intelligence company with 180 engineers staring at the Earth's temperature from space, which sounds like a niche hobby until you remember wildfires are a thirty-billion-dollar insurance problem and they spot ignitions before the fire department's coffee gets cold. They just elevated a distributed-satellite pioneer to CTPO in February, which is Silicon Valley code for 'grown-ups are in the product meetings now and the commercial side is next.' Munich is close enough to Tromsø that your Norwegian LinkedIn graph overlaps theirs by three degrees and a shared appreciation for dark beer. Thermal IR is the one EO niche where the customer — insurers, utilities, emergency managers — literally cannot say 'no' when their asset is on fire. Selling to people whose alternative is 'watch it burn' is the easiest commercial pitch of your career. Pronounce it Oh-ROH-rah-Tek and skip the line."
     },
     {
       "company": "ICEYE",
       "category": "SAR / Dual-Use Radar",
       "why": "Finnish SAR empire scaling to 50 sats/year by end-2026. NGA + NRO contracts, insurance + maritime + flood commercial side. Dual-use muscle Paul built at KSAT directly applies. Helsinki HQ, US BD in Virginia.",
       "careers_url": "https://www.iceye.com/careers",
-      "roast": "Finnish SAR empire that got rich selling radar pictures to the NRO, NGA, and every European intelligence agency with a checkbook. They're scaling to fifty satellites a year by end of 2026, which is the NewSpace equivalent of Henry Ford opening River Rouge \u2014 except the Model Ts see through clouds and cost forty million apiece. The commercial side is the part still looking for a BD adult: selling the same constellation to insurance giants, hedge funds, and flood-mapping customers who don't want to be in the same PowerPoint as a defense contract. That dual-use-without-freaking-out-civilians muscle is exactly what you built at KSAT, where NOAA scientists and Norwegian intelligence analysts shared a ground station and politely pretended not to see each other in the cafeteria. Helsinki is a short flight from Troms\u00f8 and they probably still have your old coffee order memorized."
+      "roast": "Finnish SAR empire that got rich selling radar pictures to the NRO, NGA, and every European intelligence agency with a checkbook. They're scaling to fifty satellites a year by end of 2026, which is the NewSpace equivalent of Henry Ford opening River Rouge — except the Model Ts see through clouds and cost forty million apiece. The commercial side is the part still looking for a BD adult: selling the same constellation to insurance giants, hedge funds, and flood-mapping customers who don't want to be in the same PowerPoint as a defense contract. That dual-use-without-freaking-out-civilians muscle is exactly what you built at KSAT, where NOAA scientists and Norwegian intelligence analysts shared a ground station and politely pretended not to see each other in the cafeteria. Helsinki is a short flight from Tromsø and they probably still have your old coffee order memorized."
     },
     {
       "company": "Aerospacelab",
       "category": "Vertically Integrated EO / Satellite Manufacturing",
       "why": "Belgian EO satellite manufacturer opening Megafactory (world's 3rd largest) in 2026 with new US manufacturing facility. Vertically integrated: builds constellation + sells imagery. US expansion means a US commercial leadership org is inevitable. Early-mover window for BD leadership.",
       "careers_url": "https://www.aerospacelab.com/jobs",
-      "roast": "Belgian satellite manufacturer opening a Megafactory in the US because Europe apparently couldn't contain their ambition. They build their own birds and sell the imagery, which makes them a rare vertically integrated player in a market otherwise crowded with 'we rent pixels from someone else' middlemen. Brussels bureaucracy forged them, which means they survived the same kind of byzantine EU procurement you endured at ENI \u2014 you two will have a lot to share over the sad conference coffee. The US expansion guarantees a US commercial org is coming, and whoever lands that seat gets to define the go-to-market for a constellation that isn't fully online yet. First-mover energy. Apply before some McKinsey alum with a French MBA and zero satellite data experience convinces the board otherwise."
+      "roast": "Belgian satellite manufacturer opening a Megafactory in the US because Europe apparently couldn't contain their ambition. They build their own birds and sell the imagery, which makes them a rare vertically integrated player in a market otherwise crowded with 'we rent pixels from someone else' middlemen. Brussels bureaucracy forged them, which means they survived the same kind of byzantine EU procurement you endured at ENI — you two will have a lot to share over the sad conference coffee. The US expansion guarantees a US commercial org is coming, and whoever lands that seat gets to define the go-to-market for a constellation that isn't fully online yet. First-mover energy. Apply before some McKinsey alum with a French MBA and zero satellite data experience convinces the board otherwise."
     },
     {
       "company": "Kuva Space",
       "category": "Hyperspectral EO / Defense + Ag",
       "why": "Finnish hyperspectral EO constellation; dual-use commercial + defense customers; ESA-aligned; KSAT-ecosystem adjacent. Commercial BD leadership window as constellation scales and CHIME-era European hyperspectral market comes online.",
       "careers_url": "https://kuva.space/careers",
-      "roast": "Finnish hyperspectral startup doing the thing hyperspectral startups do \u2014 selling 150 colors of Earth to whoever will listen, which turns out to be defense agencies, precision ag analytics firms, and the occasional hedge fund that wants to short soybeans three quarters early. The advantage of being Finnish is that the team ships actual product in temperatures that would make a Palo Alto founder write a Medium post about burnout, and they survived European commercial procurement without developing the learned helplessness most EU SaaS companies fall into. Your Troms\u00f8-KSAT years speak fluent Nordic commercial, and there are maybe eight humans alive who can explain spectral unmixing to a mining executive without either party falling asleep. You're one of them. ESA's CHIME mission is about to blow open the European hyperspectral TAM, and Kuva is positioning as the commercial backbone. Watch for the US BD lead req when they expand this side of the Atlantic."
+      "roast": "Finnish hyperspectral startup doing the thing hyperspectral startups do — selling 150 colors of Earth to whoever will listen, which turns out to be defense agencies, precision ag analytics firms, and the occasional hedge fund that wants to short soybeans three quarters early. The advantage of being Finnish is that the team ships actual product in temperatures that would make a Palo Alto founder write a Medium post about burnout, and they survived European commercial procurement without developing the learned helplessness most EU SaaS companies fall into. Your Tromsø-KSAT years speak fluent Nordic commercial, and there are maybe eight humans alive who can explain spectral unmixing to a mining executive without either party falling asleep. You're one of them. ESA's CHIME mission is about to blow open the European hyperspectral TAM, and Kuva is positioning as the commercial backbone. Watch for the US BD lead req when they expand this side of the Atlantic."
     },
     {
       "company": "Spire Global",
       "category": "Weather / Maritime / Aviation Data",
       "why": "Public NYSE:SPIR. 100+ sat constellation collecting weather, maritime (AIS), aviation (ADS-B). Global commercial org across Virginia/SF/Glasgow/Singapore. BD turnover is steady; KSAT-adjacent multi-vertical commercial muscle directly applies.",
       "careers_url": "https://spire.com/careers/",
-      "roast": "Public company with a stock chart that looks like a telemark wipeout on a sheet-ice day, except underneath the broken IPO and the Yahoo Finance comments section is an actual working global constellation of 100+ birds pulling weather, AIS, and ADS-B data that airlines, insurers, and navies keep paying for despite the equity narrative. Headquarters are in Virginia AND San Francisco AND Glasgow AND Singapore, which is code for 'we're somehow both a US defense contractor and a European climate shop,' which is the exact KSAT duality you spent a decade running. They're always hiring BD \u2014 turnover is Silicon Valley standard, the data is Brussels-class, and somebody has to sell forecasts to Delta while the engineers keep launching cubesats. Your satellite + enterprise background plus the fact that you'll actually take a 6am Oslo call makes you an unusually clean fit. The stock might still go to zero. The business might not. Those are two separate questions and you only need to care about the second one."
+      "roast": "Public company with a stock chart that looks like a telemark wipeout on a sheet-ice day, except underneath the broken IPO and the Yahoo Finance comments section is an actual working global constellation of 100+ birds pulling weather, AIS, and ADS-B data that airlines, insurers, and navies keep paying for despite the equity narrative. Headquarters are in Virginia AND San Francisco AND Glasgow AND Singapore, which is code for 'we're somehow both a US defense contractor and a European climate shop,' which is the exact KSAT duality you spent a decade running. They're always hiring BD — turnover is Silicon Valley standard, the data is Brussels-class, and somebody has to sell forecasts to Delta while the engineers keep launching cubesats. Your satellite + enterprise background plus the fact that you'll actually take a 6am Oslo call makes you an unusually clean fit. The stock might still go to zero. The business might not. Those are two separate questions and you only need to care about the second one."
     }
   ],
   "morning_briefs": [
+    {
+      "date": "2026-04-21",
+      "jobs_processed": 88,
+      "high_scores": 1,
+      "deep_dives": 1,
+      "result": "88 digest entries; 6 individual JDs fetched via Chrome MCP; 1 Tier 2 (Bentley 69.0, deep dive); 2 Tier 3 added with hard blockers (Fugro GroundIQ Germany 46.5, Exotrail France 44.5); 3 under 40 skipped (Kingsborough CUNY, Spire Boulder Growth Marketing, C40/GCoM Brussels). Bulk of digest was Climatebase homepage URLs (non-fetchable), location-browse category pages, defense/IC roles (Chainalysis NatSec, Maxar USG), Nigeria-based roles (Arnergy), or technical/engineering/associate-level roles outside Paul's profile."
+    },
     {
       "date": "2026-04-20",
       "jobs_processed": 27,
@@ -2794,7 +2939,7 @@
       "jobs_processed": 35,
       "high_scores": 2,
       "deep_dives": 1,
-      "result": "Fugro PCM Climate & Nature (66.5) + Fugro Commercial Manager (60.5) \u2014 1 combined deep dive. 5 notables (Satlantis 59.5, Slingshot APAC 56.5, ElectraSteel Head of Sales 50.0, NatureMetrics Interim Marketing 45.0, Medable SD BD 44.5). 2 excluded (Maxar NRO Director, Maxar Technical Targeter \u2014 defense). Fugro is strongest domain match in this search."
+      "result": "Fugro PCM Climate & Nature (66.5) + Fugro Commercial Manager (60.5) — 1 combined deep dive. 5 notables (Satlantis 59.5, Slingshot APAC 56.5, ElectraSteel Head of Sales 50.0, NatureMetrics Interim Marketing 45.0, Medable SD BD 44.5). 2 excluded (Maxar NRO Director, Maxar Technical Targeter — defense). Fugro is strongest domain match in this search."
     },
     {
       "date": "2026-04-10",
