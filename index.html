@@ -1338,12 +1338,12 @@ updateStaleness();
         + (url ? '<div class="ne-link"><a href="' + url + '" target="_blank" rel="noopener">' + escapeHtml(source) + ' &rarr;</a></div>' : '');
     }
     paint();
-    // Rotate headlines every ~10s so the card feels constantly alive; pause on hover.
+    // Rotate headlines every ~20s so the card feels alive without being jittery; pause on hover.
     // Also track the active interval id on the element so we can clear it when FEED changes.
     if ($el._neTimer) clearInterval($el._neTimer);
-    $el._neTimer = setInterval(paint, 10000);
+    $el._neTimer = setInterval(paint, 20000);
     $el.addEventListener('mouseenter', () => { if ($el._neTimer) clearInterval($el._neTimer); $el._neTimer = null; });
-    $el.addEventListener('mouseleave', () => { if (!$el._neTimer) $el._neTimer = setInterval(paint, 10000); });
+    $el.addEventListener('mouseleave', () => { if (!$el._neTimer) $el._neTimer = setInterval(paint, 20000); });
   }
 
   async function refresh() {
