@@ -160,10 +160,37 @@
   .velocity-strip .vl-trend-slowing { color:var(--amber); }
   .velocity-strip .vl-trend-steady { color:var(--text-muted); }
 
-  /* Sports strip */
+  /* Sports strip (legacy fallback) */
   .sports-strip { display:flex; gap:8px; align-items:center; justify-content:flex-end; font-size:11px; flex-wrap:wrap; margin-top:4px; }
   .sports-strip .sp-item { padding:3px 10px; border-radius:12px; background:var(--card); border:1px solid var(--border); text-decoration:none; color:var(--text-muted); transition:all 0.15s; }
   .sports-strip .sp-item:hover { background:var(--card-hover); color:var(--text); border-color:var(--cyan); }
+
+  /* New England Sportsball — live widget (auto-fetches ESPN on load) */
+  .ne-sports { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 0 20px 0; }
+  @media (max-width:900px) { .ne-sports { grid-template-columns:1fr; } }
+  .ne-team { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 16px 14px 20px; position:relative; overflow:hidden; min-height:88px; transition:border-color 0.2s; }
+  .ne-team:hover { border-color:#3a3d4a; }
+  .ne-team::before { content:''; position:absolute; top:0; left:0; width:4px; height:100%; }
+  .ne-team.ne-sox::before { background:#BD3039; }
+  .ne-team.ne-pats::before { background:#002244; }
+  .ne-row1 { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:5px; }
+  .ne-team-name { font-size:12px; font-weight:700; letter-spacing:0.3px; color:var(--text); }
+  .ne-state { font-size:9px; letter-spacing:1.2px; text-transform:uppercase; padding:2px 8px; border-radius:4px; font-weight:800; display:inline-flex; align-items:center; gap:5px; }
+  .ne-state-live { background:rgba(239,68,68,0.16); color:#f87171; animation:pulse 1.2s ease-in-out infinite; }
+  .ne-state-final { background:rgba(156,163,175,0.14); color:var(--text-muted); }
+  .ne-state-scheduled { background:rgba(6,182,212,0.15); color:var(--cyan); }
+  .ne-state-news { background:rgba(99,102,241,0.14); color:var(--accent-light); }
+  .ne-state-quiet { background:rgba(156,163,175,0.1); color:var(--text-muted); opacity:0.8; }
+  .ne-state-loading { background:rgba(99,102,241,0.12); color:var(--accent-light); }
+  .ne-game { font-size:14px; font-weight:600; color:var(--text); line-height:1.3; margin-bottom:4px; }
+  .ne-snark { font-size:12px; color:var(--text-muted); font-style:italic; line-height:1.45; opacity:0.92; }
+  .ne-link { margin-top:7px; font-size:10px; opacity:0.55; }
+  .ne-link a { color:var(--text-muted); text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px; }
+  .ne-link a:hover { color:var(--cyan); }
+  .ne-spinner { display:inline-block; width:9px; height:9px; border:2px solid var(--border); border-top-color:var(--accent-light); border-radius:50%; animation:ne-spin 0.9s linear infinite; }
+  @keyframes ne-spin { to { transform:rotate(360deg); } }
+  .ne-fade { animation:ne-fade 0.35s ease-out; }
+  @keyframes ne-fade { from { opacity:0.35; transform:translateY(2px); } to { opacity:1; transform:translateY(0); } }
 
   /* Seasonal badge */
   .season-badge { display:inline-block; padding:3px 11px; border-radius:12px; font-size:11px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase; color:#0f1117; box-shadow:0 1px 8px rgba(0,0,0,0.25); }
@@ -186,9 +213,10 @@
   </div>
   <div class="meta">
     <div class="updated">Last updated: April 22, 2026 &nbsp; <span class="season-badge" style="background:#c8a679;color:#0f1117">Mud Season</span></div>
-    <div class="sports-strip"><a href="https://www.espn.com/mlb/boxscore/_/gameId/401815018" target="_blank" class="sp-item">&#9918; Red Sox vs Tigers — Patriots' Day at Fenway</a> <a href="https://www.espn.com/nfl/draft2026/story/_/id/48423365/2026-nfl-draft-new-england-patriots-updates-buzz-intel-picks-positions" target="_blank" class="sp-item">&#127944; Patriots pick #31 — 2026 Draft Thu Apr 23</a></div>
   </div>
 </div>
+
+<div id="ne-sports" class="ne-sports"><div class="ne-team ne-sox" id="ne-sox" data-fallback="Red Sox vs Tigers — Patriots&#x27; Day at Fenway"><div class="ne-row1"><span class="ne-team-name">&#9918; Red Sox</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling live ESPN data&hellip;</div><div class="ne-snark">If this never updates, check your wifi — or ESPN.</div></div><div class="ne-team ne-pats" id="ne-pats" data-fallback="Patriots pick #31 — 2026 Draft Thu Apr 23"><div class="ne-row1"><span class="ne-team-name">&#127944; Patriots</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling live ESPN data&hellip;</div><div class="ne-snark">If this never updates, check your wifi — or ESPN.</div></div></div>
 
 
 
@@ -1072,6 +1100,295 @@ updateStaleness();
       if (refreshBtn) refreshBtn.addEventListener('click', renderHaiku);
     }
   }
+})();
+</script>
+
+<script>
+// --- New England Sportsball (live widget) ---
+// Two data sources:
+//   1. ESPN public JSON — used ONLY for live game state (in-progress score, final, upcoming).
+//      Browser-side fetch (ESPN returns CORS headers). If ESPN is unreachable we just skip.
+//   2. An embedded `sports_feed` block from dashboard-data.json, refreshed by the
+//      `refresh-sports-feed` scheduled task. Each item has a source outlet, a headline,
+//      a URL, and a Claude-written snarky take. This is where the diversity of voice lives
+//      (Over the Monster, Pats Pulpit, MassLive, WEEI, BSJ, The Ringer, Globe, NESN, etc.).
+//      A sibling sports-feed.json is re-polled every 3 min so fresh items land without a reload.
+(async function() {
+  const $sox  = document.getElementById('ne-sox');
+  const $pats = document.getElementById('ne-pats');
+  if (!$sox || !$pats) return;
+
+  // FEED is the baked-in snapshot of sports-feed data at build time.
+  // We also poll ./sports-feed.json every 3 minutes so fresh items land without a reload.
+  let FEED = {"updated": "2026-04-22", "_note": "Refreshed by the refresh-sports-feed scheduled task. Each item is {headline, url, source, published (ISO8601), snark}. Snark voice: Barstool-adjacent guy-at-the-bar, crass, horny, cocky, zero filler. One sentence. No slurs, no punching down at specific real people in a harmful way. Punch sideways (at media, front offices, rival fanbases) and up (at ownership). Keep it Boston.", "sox": {"items": [{"headline": "Sox bats go quiet again in shutout loss to Yankees", "url": "https://www.overthemonster.com/", "source": "Over the Monster", "published": "2026-04-22T03:00:00Z", "snark": "Four-nil at home. The lineup is hitting like it just found out its girlfriend follows a CrossFit guy on IG."}, {"headline": "Bullpen questions grow louder after another late-inning meltdown", "url": "https://www.masslive.com/redsox/", "source": "MassLive", "published": "2026-04-22T01:30:00Z", "snark": "This bullpen couldn't find the plate with two hands, a flashlight, and a lap dance."}, {"headline": "Who the Red Sox should trade for before it gets ugly", "url": "https://www.bostonsportsjournal.com/", "source": "BSJ", "published": "2026-04-21T18:45:00Z", "snark": "Trade targets: a bat, an arm, and a front office that drinks less at the deadline."}, {"headline": "Mazz: This team still doesn't know who it is", "url": "https://www.weei.com/", "source": "WEEI", "published": "2026-04-21T14:20:00Z", "snark": "Mazz diagnosed an identity crisis. The cure is a trade. The cure is always a trade. Mazz also needs a cigarette."}, {"headline": "What the advanced metrics say about Boston's slow start", "url": "https://sonsofsamhorn.net/", "source": "Sons of Sam Horn", "published": "2026-04-21T12:00:00Z", "snark": "xwOBA, xBA, xFIP, and x-my-ex all agree \u2014 this lineup is bad in three decimal places."}, {"headline": "The Ringer's MLB Power Rankings: Where Boston landed", "url": "https://www.theringer.com/mlb", "source": "The Ringer", "published": "2026-04-21T15:30:00Z", "snark": "Ranked below the Rays and a mid-tier OnlyFans account. One of those is making more money."}, {"headline": "Dan Shaughnessy column: 'They're breaking my heart again'", "url": "https://www.bostonglobe.com/sports/", "source": "Boston Globe", "published": "2026-04-21T09:10:00Z", "snark": "CHB has been having this same heart attack since '86. EMTs stopped coming. His wife stopped caring. We all stopped reading."}, {"headline": "NESN: Extended highlights from Fenway, if you can bear it", "url": "https://nesn.com/", "source": "NESN", "published": "2026-04-20T22:15:00Z", "snark": "Nine minutes of highlights \u2014 five of them the grounds crew, two of them a beer vendor, two of them a foul ball hitting a guy in the nuts."}, {"headline": "Fenway Faithful Podcast: Fire somebody, fire anybody", "url": "https://www.overthemonster.com/podcasts", "source": "OTM Pod", "published": "2026-04-22T10:30:00Z", "snark": "Hot take from the pod: fire the manager. Alt hot take: fire the GM. Real hot take: fire John Henry into the sun."}]}, "pats": {"items": [{"headline": "Final mock draft: Why the Patriots could still go tight end at 31", "url": "https://www.patspulpit.com/", "source": "Pats Pulpit", "published": "2026-04-22T13:00:00Z", "snark": "Fourth straight year somebody mocks a tight end here. We get it \u2014 you want Gronk again. So does every single woman in a Foxborough parking lot."}, {"headline": "Patriots Wire: 7 prospects Vrabel could target Thursday night", "url": "https://patriotswire.usatoday.com/", "source": "Patriots Wire", "published": "2026-04-22T11:30:00Z", "snark": "Seven names. Six will be gone by pick 20. The seventh will be a long snapper Vrabel saw in a dream."}, {"headline": "Volin: The Patriots can't afford another wasted first-round pick", "url": "https://www.bostonglobe.com/sports/patriots/", "source": "Boston Globe", "published": "2026-04-22T07:45:00Z", "snark": "Volin correctly identifies the biggest threat to the Patriots' draft: the Patriots. Bold. Brave. Eight hundred words deep."}, {"headline": "Reiss: What Maye needs from this draft class", "url": "https://www.espn.com/nfl/team/_/name/ne", "source": "ESPN", "published": "2026-04-22T05:00:00Z", "snark": "Maye needs a left tackle, a #1 receiver, and one offseason without a Krafts family presser. Santa didn't read the letter."}, {"headline": "Bleacher Report: Grading every AFC East offseason", "url": "https://bleacherreport.com/nfl", "source": "B/R", "published": "2026-04-21T20:20:00Z", "snark": "Pats got a C+. Bills got an A-. Jets got an 'incomplete with concerning rash.' Seems fair."}, {"headline": "The Athletic: Vrabel's war room philosophy, per insiders", "url": "https://theathletic.com/nfl/team/patriots/", "source": "The Athletic", "published": "2026-04-21T16:00:00Z", "snark": "Sources confirm Vrabel runs the war room 'intensely.' Groundbreaking. A 6'4\" linebacker is intense. Someone give this reporter a Pulitzer and a Xanax."}, {"headline": "Pats Pulpit podcast: Draft eve predictions and grievances", "url": "https://www.patspulpit.com/podcasts", "source": "Pats Pulpit", "published": "2026-04-21T19:30:00Z", "snark": "45 min of BPA, 10 min of 'unless we trade up,' 5 min of unhinged yelling about the Patriot Place parking situation. Perfect podcast."}, {"headline": "MassLive: Everything Vrabel said at his pre-draft presser", "url": "https://www.masslive.com/patriots/", "source": "MassLive", "published": "2026-04-21T14:00:00Z", "snark": "Vrabel translation key: 'We like the player' = we like the player. 'We'll see' = we're trading back. 'No comment' = buckle the f up."}, {"headline": "WEEI: Callers want the Patriots to draft the best available insult", "url": "https://www.weei.com/", "source": "WEEI", "published": "2026-04-22T12:00:00Z", "snark": "Nine callers, nine variations of 'my daughter's Little League coach could run this front office better.' Three of them were Rob from Gloucester."}, {"headline": "Jets fans already celebrating their draft win, per rumor", "url": "https://bleacherreport.com/nfl", "source": "B/R", "published": "2026-04-22T09:00:00Z", "snark": "Jets fans doing touchdown dances before the draft. Like a guy finishing before his date takes her coat off."}]}};
+
+  // ---- Snark templates for live game state (per-team) — Barstool-adjacent bar-stool-podcast voice.
+  const TPL = {
+    sox: {
+      liveWin:  ["Up {margin}. Don't get too hard yet, the bullpen's warming.",
+                 "Leading {margin} — cardiologists and divorce lawyers on standby.",
+                 "{margin}-run lead. Enjoy the 20 minutes before we throw it all away.",
+                 "Cruising at {margin}. Don't look directly at the bullpen or you'll jinx it.",
+                 "Sox ahead {margin}. Actual baseball is occurring at Fenway. Call your mother.",
+                 "Up {margin}. This is the part where we pretend we've been calm the whole time."],
+      liveLose: ["Down {margin}. Rotation's cooked, bullpen's cooked, my chicken wings are cooked.",
+                 "Trailing {margin}. These guys couldn't hit water from a boat.",
+                 "Losing {margin}. Somebody in the dugout forgot the bats are supposed to make contact.",
+                 "Behind {margin}. Would someone — anyone — explain 'hitting' to this lineup?",
+                 "Down {margin}. This team is softer than a Tinder bio.",
+                 "Trailing {margin}. The Monster is still green. Everything else is on fire."],
+      liveTied: ["Tied {score}. A drawn-out form of suffering, available on NESN.",
+                 "Knotted at {score}. Nothing matters until the 8th. Pour another one.",
+                 "Even at {score}. The stomach lining is the real underdog tonight."],
+      finalW:   ["Won {score}. Mark the calendar and text your ex.",
+                 "{score} W. Hot take: hitting is a skill — somebody finally told them.",
+                 "Sox {score}. Enjoy the 14 hours before something breaks.",
+                 "Took it {score}. Standings briefly make sense. Do not trust it.",
+                 "{score} W. Write it down. Frame it. Show the grandkids."],
+      finalL:   ["Lost {score}. Papi is not walking through that door. Neither is the rotation.",
+                 "Dropped {score}. The bullpen owes Fenway a refund and a formal apology.",
+                 "{score} loss. Who scripted this rotation — a ransom note written by a drunk?",
+                 "Fell {score}. Baseball is a mystery. This loss is not. This loss is obvious.",
+                 "Lost {score}. Fire everyone. Start with accounting, work down."],
+      sched:    ["{home} · first pitch {time}. Try not to pre-grieve. It's only April.",
+                 "{home} at {time}. Manage expectations like a professional drinker.",
+                 "Gametime {time} {home}. Buckle in. Lightly. No sudden moves.",
+                 "{home} · {time}. Bring a beer, bring a sedative, bring both."],
+      off:      ["Quiet day at Fenway. Bullpen is resting. Metaphorically.",
+                 "Dark day. Small mercies.",
+                 "Off day. Use the time to update your grievance list.",
+                 "No game. The bats couldn't find it anyway."]
+    },
+    pats: {
+      liveWin:  ["Up {margin}. Vrabel permits himself half a smile. Terrifying.",
+                 "Leading {margin}. Maye is doing Maye things. Jets fans are crying.",
+                 "Ahead {margin}. The Belichick clouds briefly part. Clouds return Thursday.",
+                 "Up {margin}. Somewhere a 'Tommy from Quincy' is yelling into a phone.",
+                 "{margin}-point lead. Brand is back. Briefly."],
+      liveLose: ["Down {margin}. This is why we moved to New Mexico.",
+                 "Trailing {margin}. Bench somebody. Anybody. Bench the equipment manager.",
+                 "Behind {margin}. The secondary could not cover a picnic blanket in a hurricane.",
+                 "Down {margin}. The offensive line is blocking like it's a group project.",
+                 "Losing {margin}. Burn the tape. Keep the draft picks. Burn the tape again."],
+      liveTied: ["Tied {score}. Football is doing its thing.",
+                 "Knotted at {score}. Coin-flip football. Pour a second one.",
+                 "Even at {score}. This will end badly. Or excellently. Probably badly."],
+      finalW:   ["Won {score}. The brand is back, briefly. Buy merch now.",
+                 "{score} W. Everyone calm down. Nobody will.",
+                 "Took it {score}. Jets fans are already blaming their GM. Again."],
+      finalL:   ["Lost {score}. Same old story, new uniforms, same bad defense.",
+                 "Dropped {score}. Burn the tape. Keep the Krafts. Kidding.",
+                 "{score} loss. Somebody tell Maye to lawyer up before the next offensive coordinator arrives."],
+      sched:    ["{home} on {day}. Hopes managed, beverages stockpiled, Sundays cleared.",
+                 "{home} — {day}. Low expectations, high fiber, bigger beer.",
+                 "{home} · {day}. Bet the under on Patriots words spoken in the presser."],
+      off:      ["No football. Vrabel's in the film room muttering about leverage and bench press.",
+                 "Offseason. Enjoy the calm before Maye's cap chart lands.",
+                 "Dark Sunday. Someone in Foxborough is already angry. Always angry.",
+                 "Offseason. The Krafts are counting something, somewhere, slowly.",
+                 "No game. OTA leaks are the real content. They are also fake."]
+    }
+  };
+
+  function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+  function fmt(s, v) { return s.replace(/\{(\w+)\}/g, (_,k) => (v[k] ?? '')); }
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+  }
+  function humanAgo(d) {
+    const s = (Date.now() - d.getTime()) / 1000;
+    if (s < 60)    return Math.floor(s) + 's ago';
+    if (s < 3600)  return Math.floor(s/60) + 'm ago';
+    if (s < 86400) return Math.floor(s/3600) + 'h ago';
+    return Math.floor(s/86400) + 'd ago';
+  }
+
+  async function fetchJSON(url, timeoutMs) {
+    try {
+      const ctl = new AbortController();
+      const t = setTimeout(() => ctl.abort(), timeoutMs || 5000);
+      const r = await fetch(url, { cache: 'no-store', signal: ctl.signal });
+      clearTimeout(t);
+      if (!r.ok) return null;
+      return await r.json();
+    } catch(e) { return null; }
+  }
+
+  function findRelevantEvent(schedule) {
+    const events = schedule?.events || schedule?.team?.events || [];
+    if (!events.length) return null;
+    const now = Date.now();
+    // in-progress wins
+    for (const ev of events) {
+      const st = ev.competitions?.[0]?.status?.type?.state;
+      if (st === 'in') return ev;
+    }
+    // upcoming within 30h
+    const upcoming = events
+      .filter(ev => { const t = new Date(ev.date).getTime(); return t > now && t - now < 30*3600*1000; })
+      .sort((a,b) => new Date(a.date) - new Date(b.date));
+    if (upcoming.length) return upcoming[0];
+    // recent final within 20h
+    const recent = events
+      .filter(ev => { const t = new Date(ev.date).getTime();
+        return ev.competitions?.[0]?.status?.type?.state === 'post' && now - t < 20*3600*1000; })
+      .sort((a,b) => new Date(b.date) - new Date(a.date));
+    if (recent.length) return recent[0];
+    // next scheduled (any future) — for the scheduled fallback
+    const future = events
+      .filter(ev => new Date(ev.date).getTime() > now)
+      .sort((a,b) => new Date(a.date) - new Date(b.date));
+    if (future.length) return future[0];
+    return null;
+  }
+
+  function gameInfo(ev, teamId) {
+    if (!ev) return null;
+    const comp = ev.competitions?.[0]; if (!comp) return null;
+    const status = comp.status?.type || {};
+    const state  = status.state || 'pre';
+    const comps  = comp.competitors || [];
+    const us   = comps.find(c => c.team?.id === String(teamId));
+    const them = comps.find(c => c.team?.id !== String(teamId));
+    if (!us || !them) return null;
+    const usScore   = parseInt(us.score ?? '0', 10);
+    const themScore = parseInt(them.score ?? '0', 10);
+    const homeAway  = us.homeAway || 'home';
+    return {
+      state,
+      usScore, themScore,
+      usWin: us.winner === true,
+      homeAway,
+      opp: them.team?.displayName || them.team?.abbreviation || '',
+      oppAbbrev: them.team?.abbreviation || them.team?.displayName || '',
+      date: new Date(ev.date),
+      link: ev.links?.[0]?.href || comp.links?.[0]?.href || '',
+      detail: status.shortDetail || status.detail || ''
+    };
+  }
+
+  function renderGameCard($el, teamKey, g, teamLabel) {
+    const tpl = TPL[teamKey];
+    const vsAt = g.homeAway === 'home' ? 'vs ' + g.oppAbbrev : '@ ' + g.oppAbbrev;
+    let state, line, snark;
+    if (g.state === 'in') {
+      const margin = Math.abs(g.usScore - g.themScore);
+      const score  = g.usScore + '-' + g.themScore;
+      const pool = g.usScore > g.themScore ? tpl.liveWin
+                 : g.usScore < g.themScore ? tpl.liveLose
+                 : tpl.liveTied;
+      state = 'LIVE'; line = teamLabel + ' ' + score + ' ' + vsAt + ' · ' + g.detail;
+      snark = fmt(pick(pool), {margin, score, opp: g.opp});
+    } else if (g.state === 'post') {
+      const score = g.usScore + '-' + g.themScore;
+      const won = g.usWin || g.usScore > g.themScore;
+      state = 'FINAL'; line = teamLabel + ' ' + (won?'W':'L') + ' ' + score + ' ' + vsAt;
+      snark = fmt(pick(won ? tpl.finalW : tpl.finalL), {score, opp: g.opp});
+    } else if (g.state === 'pre') {
+      const now = Date.now(); const ms = g.date.getTime() - now;
+      if (ms > 30*3600*1000) return false; // too far out, defer to news rotation
+      const time = g.date.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+      const day  = g.date.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+      state = 'NEXT UP'; line = vsAt + ' · ' + day + ' ' + time;
+      snark = fmt(pick(tpl.sched), {time, day, home: vsAt, opp: g.opp});
+    } else {
+      return false;
+    }
+    const cls = state === 'LIVE' ? 'live' : state === 'FINAL' ? 'final' : 'scheduled';
+    $el.innerHTML =
+      '<div class="ne-row1">'
+      + '<span class="ne-team-name">' + escapeHtml(teamLabel) + '</span>'
+      + '<span class="ne-state ne-state-' + cls + '">' + state + '</span>'
+      + '</div>'
+      + '<div class="ne-game ne-fade">' + escapeHtml(line) + '</div>'
+      + '<div class="ne-snark ne-fade">' + escapeHtml(snark) + '</div>'
+      + (g.link ? '<div class="ne-link"><a href="' + g.link + '" target="_blank" rel="noopener">ESPN box &rarr;</a></div>' : '');
+    return true;
+  }
+
+  function renderFeedCard($el, teamKey, items, teamLabel) {
+    const tpl = TPL[teamKey];
+    if (!items || items.length === 0) {
+      $el.innerHTML =
+        '<div class="ne-row1">'
+        + '<span class="ne-team-name">' + escapeHtml(teamLabel) + '</span>'
+        + '<span class="ne-state ne-state-quiet">QUIET</span>'
+        + '</div>'
+        + '<div class="ne-game">No fresh takes on the wire.</div>'
+        + '<div class="ne-snark">' + escapeHtml(pick(tpl.off)) + '</div>';
+      return;
+    }
+    let idx = Math.floor(Math.random() * items.length);
+    function paint() {
+      const a = items[idx % items.length];
+      idx++;
+      const hl     = a.headline || a.title || '';
+      const source = a.source || 'wire';
+      const snark  = a.snark || '';
+      const url    = a.url || '';
+      const pub    = a.published ? new Date(a.published) : null;
+      const ago    = pub && !isNaN(pub) ? ' · ' + humanAgo(pub) : '';
+      $el.innerHTML =
+        '<div class="ne-row1">'
+        + '<span class="ne-team-name">' + escapeHtml(teamLabel) + '</span>'
+        + '<span class="ne-state ne-state-news">' + escapeHtml(source.toUpperCase()) + escapeHtml(ago) + '</span>'
+        + '</div>'
+        + '<div class="ne-game ne-fade">' + escapeHtml(hl) + '</div>'
+        + '<div class="ne-snark ne-fade">' + escapeHtml(snark) + '</div>'
+        + (url ? '<div class="ne-link"><a href="' + url + '" target="_blank" rel="noopener">' + escapeHtml(source) + ' &rarr;</a></div>' : '');
+    }
+    paint();
+    // Rotate headlines every ~10s so the card feels constantly alive; pause on hover.
+    // Also track the active interval id on the element so we can clear it when FEED changes.
+    if ($el._neTimer) clearInterval($el._neTimer);
+    $el._neTimer = setInterval(paint, 10000);
+    $el.addEventListener('mouseenter', () => { if ($el._neTimer) clearInterval($el._neTimer); $el._neTimer = null; });
+    $el.addEventListener('mouseleave', () => { if (!$el._neTimer) $el._neTimer = setInterval(paint, 10000); });
+  }
+
+  async function refresh() {
+    // Fire both ESPN fetches in parallel; slow ones will just be skipped.
+    const [soxSched, patsSched] = await Promise.all([
+      fetchJSON('https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/2/schedule'),
+      fetchJSON('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/schedule'),
+    ]);
+    const soxG  = gameInfo(findRelevantEvent(soxSched),  2);
+    const patsG = gameInfo(findRelevantEvent(patsSched), 17);
+
+    // Try to render live game state; if no relevant game, fall back to curated news feed.
+    const soxItems  = (FEED.sox  && FEED.sox.items)  || [];
+    const patsItems = (FEED.pats && FEED.pats.items) || [];
+    if (!soxG  || !renderGameCard($sox,  'sox',  soxG,  'Red Sox'))  renderFeedCard($sox,  'sox',  soxItems,  'Red Sox');
+    if (!patsG || !renderGameCard($pats, 'pats', patsG, 'Patriots')) renderFeedCard($pats, 'pats', patsItems, 'Patriots');
+  }
+
+  // Poll the separately-published sports-feed.json (same origin on GitHub Pages) so a
+  // scheduled task running every ~30 min can surface fresh items into an already-open dashboard.
+  async function pollFeed() {
+    try {
+      const cacheBuster = '?t=' + Date.now();
+      const resp = await fetch('./sports-feed.json' + cacheBuster, { cache: 'no-store' });
+      if (!resp.ok) return false;
+      const fresh = await resp.json();
+      if (!fresh || !fresh.sox || !fresh.pats) return false;
+      // Only repaint if content has actually changed (cheap identity check on updated timestamp or item count).
+      const sameStamp = (FEED.updated && fresh.updated && FEED.updated === fresh.updated);
+      const sameCount = ((FEED.sox?.items?.length || 0) === (fresh.sox?.items?.length || 0))
+                     && ((FEED.pats?.items?.length || 0) === (fresh.pats?.items?.length || 0));
+      if (sameStamp && sameCount) return false;
+      FEED = fresh;
+      return true;
+    } catch(e) { return false; }
+  }
+
+  await refresh();
+  // Every 60 seconds: re-fetch ESPN for live game state (cheap, ESPN is CDN-cached).
+  setInterval(refresh, 60000);
+  // Every 3 minutes: poll the curated sports-feed.json — if it changed, repaint the news cards.
+  setInterval(async () => {
+    const changed = await pollFeed();
+    if (changed) await refresh();
+  }, 180000);
 })();
 </script>
 
