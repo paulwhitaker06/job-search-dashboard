@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21",
+  "last_updated": "2026-04-22",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers \u2014 Patriots' Day at Fenway",
@@ -15,11 +15,11 @@
     "applications_sent": 21,
     "awaiting_response": 12,
     "active_interviews": 3,
-    "active_pipeline": 54,
-    "deep_dives_done": 9,
+    "active_pipeline": 57,
+    "deep_dives_done": 10,
     "resumes_built": 1,
     "rejected_closed": 4,
-    "last_updated": "2026-04-21"
+    "last_updated": "2026-04-22"
   },
   "ranked_opportunities": [
     {
@@ -44,7 +44,7 @@
       "doc_path": "~/Desktop/Claude Deep Dives/Bentley_Systems_Deep_Dive.docx",
       "doc_note": "Full deep dive completed",
       "added": "2026-04-21",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "Infrastructure Engineering Software / Digital Twin",
       "location": "Remote, US (home-based)",
@@ -61,6 +61,49 @@
     },
     {
       "rank": 2,
+      "company": "Crusoe",
+      "role": "Director, Energy Innovation and Commercialization",
+      "score": 60.0,
+      "proxy_score": null,
+      "effective_score": 60.0,
+      "fit": 6,
+      "has_deep_dive": true,
+      "date": "2026-04-22",
+      "scqa": "Interconnection Queue is the Real Moat",
+      "verdict": "Crusoe's Director, Energy Innovation is a strategic IC role reporting to the CSO, chartered to de-risk Crusoe's energy roadmap through commercial deals with utilities, OEMs, and IPPs. The role translates cleanly to Paul's 25-year pattern of running multi-stakeholder commercial negotiations for complex infrastructure (ENI/NOPSEMA, Planet federal, ASN cable, KSAT maritime). Domain gap: Paul is not a power markets or interconnection queue expert, so the CSO will need to trust him to learn that layer fast. Pursue with caveats \u2014 comp range ($204-255K) is aligned and the role reports to a C-suite title Paul has earned.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/444643534-director-energy-innovation-and-commercialization"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Crusoe_Energy_Innovation_Deep_Dive.docx",
+      "doc_note": "Full deep dive completed 2026-04-22",
+      "added": "2026-04-22",
+      "is_new": true,
+      "tier": null,
+      "domain": "Data Center Energy / AI Infrastructure",
+      "location": "Remote, US",
+      "hook": "Strategic IC reporting to the CSO of a hyperscale AI data center platform with an interconnection-queue moat; translates Paul's ENI/NOPSEMA + Planet federal commercial pattern into a high-voltage energy context.",
+      "dimension_scores": {
+        "RF": 6,
+        "SA": 7,
+        "IL": 6,
+        "SPM": 7,
+        "CO": 6,
+        "GC": 8
+      },
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "JD implies depth in power markets, interconnection queues, and energy regulatory frameworks; Paul's energy exposure is adjacent (oil & gas via ENI, EV via Plug-N-Drive) rather than direct power-market.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 3,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -95,7 +138,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -135,7 +178,50 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "company": "LVT (LiveView Technologies)",
+      "role": "Area Vice President, Business and Market Development \u2014 Mission Critical Infrastructure",
+      "score": 59.0,
+      "proxy_score": null,
+      "effective_score": 59.0,
+      "fit": 6,
+      "has_deep_dive": false,
+      "date": "2026-04-22",
+      "scqa": "Mission-Critical BD for Data Centers and Utilities",
+      "verdict": "LVT is hiring an Area VP to open the Mission Critical Infrastructure segment (data centers, utilities, critical industrial) for their deployable surveillance/security platform. The 'market development' language and AVP title fit Paul's pattern well, but the vertical is data center physical security \u2014 a domain Paul has no direct history in. One point shy of Tier 2 on the rubric; worth a second look if Paul wants to pursue.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/444630880-area-vice-president-business-and-market-development-mission-critical-infrastructure"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Tier 3, no deep dive yet (one point shy of Tier 2; data center physical security domain gap)",
+      "added": "2026-04-22",
+      "is_new": true,
+      "tier": null,
+      "domain": "Physical Security / Data Center Infrastructure",
+      "location": "Remote, US (likely)",
+      "hook": "AVP title + 'market development' + mission-critical vertical \u2014 title and motion line up with Paul's pattern; the gap is the data center security domain itself.",
+      "dimension_scores": {
+        "RF": 6,
+        "SA": 6,
+        "IL": 5,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 8
+      },
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "Role requires credibility in data center physical security / mission critical surveillance sales; Paul has no direct experience in this vertical.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 6,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -164,7 +250,7 @@
       "blockers": []
     },
     {
-      "rank": 5,
+      "rank": 7,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -197,7 +283,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 8,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -226,7 +312,7 @@
       "blockers": []
     },
     {
-      "rank": 7,
+      "rank": 9,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -253,7 +339,7 @@
       "blockers": []
     },
     {
-      "rank": 8,
+      "rank": 10,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -290,7 +376,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 11,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -325,7 +411,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 12,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -360,7 +446,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 13,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -395,7 +481,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 14,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 55.5,
@@ -443,7 +529,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 15,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -478,7 +564,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 16,
       "company": "David Energy",
       "role": "Customer Success Manager",
       "date": "2026-04-17",
@@ -509,7 +595,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "company": "Rubicon Carbon",
       "role": "Director, Business Development",
       "score": 53.5,
@@ -544,7 +630,50 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 18,
+      "company": "Systemiq",
+      "role": "Strategy Director \u2014 Low Carbon Energy",
+      "score": 53.0,
+      "proxy_score": null,
+      "effective_score": 53.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-22",
+      "scqa": "Climate Strategy Consulting at Mission-Driven Firm",
+      "verdict": "Systemiq is a mission-driven sustainability consultancy (B-Corp, backed by system-change investors) hiring a Strategy Director for their Low Carbon Energy practice. Role is strong on altitude and mission fit, but requires UK or Netherlands residency \u2014 a hard GC blocker for Paul. Tier 3; not actionable without relocation.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/444628986-strategy-director-low-carbon-energy"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Tier 3, UK/NL residency blocker makes this non-actionable",
+      "added": "2026-04-22",
+      "is_new": true,
+      "tier": null,
+      "domain": "Climate Strategy Consulting",
+      "location": "London or Amsterdam",
+      "hook": "Mission-driven climate consultancy, Director-level strategy role in low carbon energy; blocked by UK/NL residency requirement.",
+      "dimension_scores": {
+        "RF": 7,
+        "SA": 8,
+        "IL": 6,
+        "SPM": 6,
+        "CO": 5,
+        "GC": 1
+      },
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Posting requires UK or Netherlands residency; no US remote option.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 19,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -584,7 +713,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 20,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -615,7 +744,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 18,
+      "rank": 21,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -657,7 +786,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 19,
+      "rank": 22,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -686,7 +815,7 @@
       "blockers": []
     },
     {
-      "rank": 20,
+      "rank": 23,
       "company": "Crusoe Energy",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -721,7 +850,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 24,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -750,7 +879,7 @@
       "blockers": []
     },
     {
-      "rank": 22,
+      "rank": 25,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -779,7 +908,7 @@
       "blockers": []
     },
     {
-      "rank": 23,
+      "rank": 26,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -808,7 +937,7 @@
       "blockers": []
     },
     {
-      "rank": 24,
+      "rank": 27,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -843,7 +972,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 28,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -878,7 +1007,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 29,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -928,7 +1057,7 @@
       }
     },
     {
-      "rank": 27,
+      "rank": 30,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -957,7 +1086,7 @@
       "blockers": []
     },
     {
-      "rank": 28,
+      "rank": 31,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -1002,7 +1131,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 32,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -1037,7 +1166,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 33,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -1072,7 +1201,7 @@
       ]
     },
     {
-      "rank": 31,
+      "rank": 34,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -1101,7 +1230,7 @@
       "blockers": []
     },
     {
-      "rank": 32,
+      "rank": 35,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -1130,7 +1259,7 @@
       "blockers": []
     },
     {
-      "rank": 33,
+      "rank": 36,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -1165,7 +1294,7 @@
       ]
     },
     {
-      "rank": 34,
+      "rank": 37,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -1215,7 +1344,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 38,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -1236,7 +1365,7 @@
       "doc_path": null,
       "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: Germany-based + likely EU work authorization required. Soft blocker: European TSO network explicitly called out as essential, which Paul does not have.",
       "added": "2026-04-21",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "Geotechnical / Subsurface Mapping",
       "location": "Germany (Berlin, Hamburg, Bremen)",
@@ -1268,7 +1397,50 @@
       ]
     },
     {
-      "rank": 36,
+      "rank": 39,
+      "company": "Hanwha Qcells (inferred)",
+      "role": "Associate Director, Power Marketing & Origination",
+      "score": 46.5,
+      "proxy_score": null,
+      "effective_score": 46.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-22",
+      "scqa": "Wholesale Power Origination Specialist Role",
+      "verdict": "Associate Director for Power Marketing & Origination \u2014 this is a specialist role in wholesale power markets, PPA origination, and ISO/RTO trading. Requires deep direct experience in wholesale power contracts (merchant + corporate PPA) that Paul does not have. Tier 3 narrow-experience hard blocker.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/444630399-associate-director-power-marketing-origination"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Tier 3, narrow-experience blocker (wholesale power markets specialist)",
+      "added": "2026-04-22",
+      "is_new": true,
+      "tier": null,
+      "domain": "Wholesale Power / PPA Origination",
+      "location": "US",
+      "hook": "Renewable power origination role with comp likely aligned; requires wholesale power market / PPA origination depth Paul does not have.",
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 5,
+        "IL": 5,
+        "SPM": 5,
+        "CO": 6,
+        "GC": 8
+      },
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "Role requires specialist experience in wholesale power markets, PPA origination, and ISO/RTO trading \u2014 outside Paul's commercial BD background.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 40,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -1303,7 +1475,7 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 41,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -1338,7 +1510,7 @@
       ]
     },
     {
-      "rank": 38,
+      "rank": 42,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -1367,7 +1539,7 @@
       "blockers": []
     },
     {
-      "rank": 39,
+      "rank": 43,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -1402,7 +1574,7 @@
       ]
     },
     {
-      "rank": 40,
+      "rank": 44,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -1437,7 +1609,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 45,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -1466,7 +1638,7 @@
       "blockers": []
     },
     {
-      "rank": 42,
+      "rank": 46,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -1506,7 +1678,7 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 47,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -1556,7 +1728,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 48,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -1577,7 +1749,7 @@
       "doc_path": null,
       "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: France-based, requires fluent French. Also below Paul's Director/VP seniority target.",
       "added": "2026-04-21",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "In-Orbit Services / Space Mobility",
       "location": "Toulouse, Massy, France (Hybrid)",
@@ -1604,7 +1776,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 49,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -1633,7 +1805,7 @@
       "blockers": []
     },
     {
-      "rank": 46,
+      "rank": 50,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -1660,7 +1832,7 @@
       "blockers": []
     },
     {
-      "rank": 47,
+      "rank": 51,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -1708,7 +1880,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 52,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -1743,7 +1915,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 53,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -1772,7 +1944,7 @@
       "blockers": []
     },
     {
-      "rank": 50,
+      "rank": 54,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -1822,7 +1994,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 55,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -1867,7 +2039,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 56,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -1912,7 +2084,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 57,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -1962,7 +2134,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 58,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -2909,6 +3081,13 @@
     }
   ],
   "morning_briefs": [
+    {
+      "date": "2026-04-22",
+      "jobs_processed": 133,
+      "high_scores": 1,
+      "deep_dives": 1,
+      "result": "133 digest entries; 11 individual JDs fetched via Chrome MCP to verify before scoring (Crusoe Controls, Crusoe Director Energy Innovation, LVT AVP, Systemiq, Hanwha, Arable Partnerships, Planet Americas Marketing, Reframe Ops, Solar Energy Solutions VP, RES BDM PV&BESS, Meda/Stardust BDM). 1 Tier 2 (Crusoe Director Energy Innovation 60.0, deep dive). 3 Tier 3 added (LVT AVP 59, Systemiq 53 UK/NL blocker, Hanwha 46.5 narrow-experience blocker). 7 PASS verified by JD read (Crusoe Controls ~32 engineering-degree required, Arable ~38 partner success role, Planet Marketing ~38 demand-gen marketing, Reframe Head of Ops manufacturing, Solar Energy Solutions Kentucky small-market, RES BDM Americas-junior, Meda/Stardust BDM $60-75K junior sales). Bulk of remaining digest was Climatebase homepage URLs (non-fetchable), Loom Solar India roles, GEO-browse category pages, L3Harris defense, Nonprofit philanthropy director roles, Trimble careers aggregator, and technical/engineering/associate-level roles."
+    },
     {
       "date": "2026-04-21",
       "jobs_processed": 88,
