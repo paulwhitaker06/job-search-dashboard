@@ -16,7 +16,7 @@
     "awaiting_response": 12,
     "active_interviews": 3,
     "active_pipeline": 73,
-    "deep_dives_done": 10,
+    "deep_dives_done": 11,
     "resumes_built": 1,
     "rejected_closed": 4,
     "last_updated": "2026-04-22"
@@ -26,14 +26,14 @@
       "rank": 1,
       "company": "Loft Orbital",
       "role": "Senior Director, Business Development (Americas)",
-      "score": 75.0,
+      "score": 77.0,
       "proxy_score": null,
-      "effective_score": 75.0,
+      "effective_score": 77.0,
       "fit": 8,
-      "has_deep_dive": false,
+      "has_deep_dive": true,
       "date": "2026-04-22",
-      "scqa": "Scored \u2014 no full deep dive yet",
-      "verdict": "Loft Orbital is hiring a Senior Director of BD to drive commercial customer acquisition across the Americas for their space-infrastructure-as-a-service platform. The must-haves map cleanly to Paul's profile: 10+ years in commercial space BD (he has 15+ via KSAT and GFW), complex technical selling, proposals and contract negotiations, and established commercial network in EO. Main caveats: Loft is LinkedIn-categorized as defense/space manufacturing and does have DoD customers (Space Force tactical missions), though this specific role is explicitly commercial; location is posted as Golden, CO with no explicit remote confirmation; and the customer set (payload developers, tech-demo buyers, IoT/edge-compute) skews upstream from Paul's downstream-EO-services wheelhouse.",
+      "scqa": "Commercial Emergence, Not Expansion",
+      "verdict": "Loft Orbital is post-PMF at a commercial inflection point most space-as-a-service companies never reach: $500M+ bookings across 30 sold satellites, fresh $170M Series C (Jan 2025), and an AI for Space business unit stood up Feb 2026 to commercialize on-orbit compute. The Senior Director BD role is a function-build (not pipeline-harvest) reporting to the CMPO, one of three BD leadership reqs open in parallel. Content fit is strong; the pattern of building commercial from zero on top of a technical platform is the sentence that describes Paul's last fifteen years.",
       "recommendation": "pursue",
       "status": "not_applied",
       "overdue": null,
@@ -41,23 +41,29 @@
         "https://www.linkedin.com/jobs/view/loft-orbital-senior-director-business-development"
       ],
       "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via /job-evaluate \u2014 run /company-deep-dive for full analysis",
+      "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_Deep_Dive.docx",
+      "doc_note": "Full deep dive completed",
       "added": "2026-04-22",
       "is_new": true,
       "tier": null,
       "domain": "Space Infrastructure-as-a-Service / Satellite Platforms",
       "location": "Golden, CO (remote status unconfirmed)",
-      "hook": "Rare commercial-space BD leadership seat that doesn't require a clearance \u2014 space-as-a-service platform at a clear commercial inflection point, BD hiring up 60% YoY. The defense-adjacency and location questions are worth clarifying early.",
+      "hook": "Rare commercial-space BD leadership seat without clearance. Space-as-a-service at clear commercial inflection (AI for Space BU + Helsing template). Americas BD being rebuilt from near-zero.",
       "dimension_scores": {
         "RF": 8,
-        "SA": 8,
+        "SA": 9,
         "IL": 7,
         "SPM": 8,
         "CO": 7,
         "GC": 6
       },
-      "blockers": []
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Posting lists Golden, CO; Lever listings elsewhere show 'Remote'. Taos to Golden is a five-hour drive, not commutable. Clarify with recruiter before investing in full application.",
+          "severity": "soft"
+        }
+      ]
     },
     {
       "rank": 2,
