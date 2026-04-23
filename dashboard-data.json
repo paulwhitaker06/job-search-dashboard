@@ -232,49 +232,6 @@
   "ranked_opportunities": [
     {
       "rank": 1,
-      "company": "Crusoe",
-      "role": "Director, Energy Innovation and Commercialization",
-      "score": 60.0,
-      "proxy_score": null,
-      "effective_score": 60.0,
-      "fit": 6,
-      "has_deep_dive": true,
-      "date": "2026-04-22",
-      "scqa": "Interconnection Queue is the Real Moat",
-      "verdict": "Crusoe's Director, Energy Innovation is a strategic IC role reporting to the CSO, chartered to de-risk Crusoe's energy roadmap through commercial deals with utilities, OEMs, and IPPs. The role translates cleanly to Paul's 25-year pattern of running multi-stakeholder commercial negotiations for complex infrastructure (ENI/NOPSEMA, Planet federal, ASN cable, KSAT maritime). Domain gap: Paul is not a power markets or interconnection queue expert, so the CSO will need to trust him to learn that layer fast. Pursue with caveats \u2014 comp range ($204-255K) is aligned and the role reports to a C-suite title Paul has earned.",
-      "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://climatechangejobs.com/jobs/444643534-director-energy-innovation-and-commercialization"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Crusoe_Energy_Innovation_Deep_Dive.docx",
-      "doc_note": "Full deep dive completed 2026-04-22",
-      "added": "2026-04-22",
-      "is_new": true,
-      "tier": null,
-      "domain": "Data Center Energy / AI Infrastructure",
-      "location": "Remote, US",
-      "hook": "Strategic IC reporting to the CSO of a hyperscale AI data center platform with an interconnection-queue moat; translates Paul's ENI/NOPSEMA + Planet federal commercial pattern into a high-voltage energy context.",
-      "dimension_scores": {
-        "RF": 6,
-        "SA": 7,
-        "IL": 6,
-        "SPM": 7,
-        "CO": 6,
-        "GC": 8
-      },
-      "blockers": [
-        {
-          "type": "narrow_experience",
-          "detail": "JD implies depth in power markets, interconnection queues, and energy regulatory frameworks; Paul's energy exposure is adjacent (oil & gas via ENI, EV via Plug-N-Drive) rather than direct power-market.",
-          "severity": "soft"
-        }
-      ]
-    },
-    {
-      "rank": 2,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -309,7 +266,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 2,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -349,7 +306,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 3,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development \u2014 Mission Critical Infrastructure",
       "score": 59.0,
@@ -392,7 +349,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 4,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -421,7 +378,7 @@
       "blockers": []
     },
     {
-      "rank": 6,
+      "rank": 5,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -454,7 +411,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 6,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -483,7 +440,7 @@
       "blockers": []
     },
     {
-      "rank": 8,
+      "rank": 7,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -510,7 +467,7 @@
       "blockers": []
     },
     {
-      "rank": 9,
+      "rank": 8,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -547,7 +504,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 9,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -582,7 +539,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 10,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -617,7 +574,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 11,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -652,7 +609,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 12,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 55.5,
@@ -700,7 +657,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 13,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -731,6 +688,49 @@
           "type": "geographic_residency",
           "detail": "Role is explicitly East Coast focused (New York and other East Coast markets). Paul is in Taos, NM (Mountain Time). Not a hard blocker but reduces fit for this specific geographic mandate.",
           "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "company": "Crusoe",
+      "role": "Director, Energy Innovation and Commercialization",
+      "score": 54.5,
+      "proxy_score": null,
+      "effective_score": 54.5,
+      "fit": 4,
+      "has_deep_dive": true,
+      "date": "2026-04-22",
+      "scqa": "Interconnection Queue is the Real Moat",
+      "verdict": "Rescored 2026-04-22 after Bentley-style inflation caught. JD explicitly requires '12+ years in energy development, power markets, energy-tech commercialization, or infrastructure strategy.' Paul has none of the four in the way Crusoe means them, which caps RF at 4 and IL at 3 under the Hard Requirement Cap rule. The role language sounds like Paul's pattern (pilot-to-precedent, multi-stakeholder deal architecture) but Crusoe's work is selling to ISOs, RTOs, IPPs, and financiers in power-market tariff land, which is a different profession. SPM stays high (7) because the pattern IS real, but per the firewall rule it does not rescue RF. Recommendation: pass. Deep dive remains in Desktop folder for reference but should not be used for application.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://climatechangejobs.com/jobs/444643534-director-energy-innovation-and-commercialization"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Crusoe_Energy_Innovation_Deep_Dive.docx",
+      "doc_note": "Deep dive exists but was produced before the v0.1.7 rubric caught the hard-requirement miss. Kept for reference; do not use as application basis.",
+      "added": "2026-04-22",
+      "is_new": true,
+      "tier": null,
+      "domain": "Data Center Energy / AI Infrastructure",
+      "location": "Remote, US",
+      "hook": "Role language sounds like Paul but requires direct energy-sector experience (12+ years in power markets or adjacents) Paul does not have. Pattern match without domain is not enough.",
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 7,
+        "IL": 3,
+        "SPM": 7,
+        "CO": 6,
+        "GC": 8
+      },
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "JD requires '12+ years in energy development, power markets, energy-tech commercialization, or infrastructure strategy.' Paul's commercialization experience is in satellite data/EO services, not power. No RTO/ISO/utility buyer network. No advanced technical degree.",
+          "severity": "hard"
         }
       ]
     },
