@@ -12,10 +12,38 @@
     "updated": "2026-04-20"
   },
   "sports_feed": {
-    "updated": "2026-04-22T18:00:00Z",
+    "updated": "2026-04-22T19:00:00Z",
     "_note": "Refreshed by the refresh-sports-feed scheduled task. Each item is {headline, url, source, published (ISO8601), snark}. Snark voice: Barstool-adjacent guy-at-the-bar, crass, horny, cocky, zero filler. One sentence. No slurs, no punching down at specific real people in a harmful way. Punch sideways (at media, front offices, rival fanbases) and up (at ownership). Keep it Boston.",
     "sox": {
       "items": [
+        {
+          "headline": "Globe: Red Sox call up lefty Eduardo Rivera, has never pitched above Double-A",
+          "url": "https://www.bostonglobe.com/2026/04/22/sports/red-sox-lefthander-eduardo-rivera/",
+          "source": "Boston Globe",
+          "published": "2026-04-22T17:00:00Z",
+          "snark": "Answering a rotation crisis with a 22-year-old and two Portland starts \u2014 Breslow drafting from the back booth at last call."
+        },
+        {
+          "headline": "BSJ: Rivera promoted in surprise call-up, Kutter Crawford still shut down",
+          "url": "https://www.bostonsportsjournal.com/2026/04/22/red-sox-roster-moves-boston-promotes-lefty-eduardo-rivera-in-surprise-call-up-kutter-crawford-remains-shut-down",
+          "source": "BSJ",
+          "published": "2026-04-22T17:30:00Z",
+          "snark": "'Crawford remains shut down' is right up there with 'structural decline' on the Sox-Speak Mount Rushmore."
+        },
+        {
+          "headline": "MLBTR: Red Sox select Rivera, option Anderson, Casas to 60-day IL",
+          "url": "https://www.mlbtraderumors.com/2026/04/red-sox-to-select-eduardo-rivera.html",
+          "source": "MLB Trade Rumors",
+          "published": "2026-04-22T16:00:00Z",
+          "snark": "Skipped Triple-A entirely, meaning either the kid is that good or Worcester is that bad. Not mutually exclusive."
+        },
+        {
+          "headline": "NESN insider: Here's Rivera's potential role after the shocking call-up",
+          "url": "https://nesn.com/boston-red-sox/news/red-sox-insider-reveals-potential-role-new-call/7d0ffa6edbc2c1f96383abe3",
+          "source": "NESN",
+          "published": "2026-04-22T18:00:00Z",
+          "snark": "Sox insiders projecting a role for a kid with ten big-league-adjacent innings \u2014 same energy as the guy at the bar calling the bachelor party."
+        },
         {
           "headline": "Yankees 4, Red Sox 0: Lifeless lineup limps to lackluster loss",
           "url": "https://www.overthemonster.com/red-sox-game-information/99332/yankees-4-red-sox-0-lifeless-lineup-limps-its-way-to-another-lackluster-loss",
@@ -45,32 +73,11 @@
           "snark": "This lineup couldn't hit a beach ball if you rolled it down the first-base line and offered $5 venmo."
         },
         {
-          "headline": "Boston Globe: Su\u00e1rez vs Fried tonight as Sox try to avoid the sweep",
+          "headline": "Globe: Su\u00e1rez vs Fried tonight, Roman Anthony out with sore back",
           "url": "https://www.bostonglobe.com/2026/04/22/sports/red-sox-yankees-lineups-april-22-2026/",
           "source": "Boston Globe",
-          "published": "2026-04-22T16:00:00Z",
-          "snark": "Fried's 2.97 ERA vs. a Red Sox lineup with the runs-per-game pulse of a convenience-store taquito. Vegas slept on this one."
-        },
-        {
-          "headline": "BSJ: Tolle in limbo as Red Sox weigh call-up to replace Gray",
-          "url": "https://www.bostonsportsjournal.com/",
-          "source": "BSJ",
-          "published": "2026-04-22T11:00:00Z",
-          "snark": "Nothing says 'competent front office' like a 23-year-old lefty finding out his promotion on Twitter somewhere between flights."
-        },
-        {
-          "headline": "OTM: Who should replace Sonny Gray in the Red Sox rotation?",
-          "url": "https://www.overthemonster.com/red-sox-discussion/99260/who-should-replace-sonny-gray-in-the-red-sox-rotation",
-          "source": "Over the Monster",
-          "published": "2026-04-22T14:00:00Z",
-          "snark": "Cycling through fifth starters like a guy at a free wings buffet \u2014 hungry, desperate, and zero dignity."
-        },
-        {
-          "headline": "MLBTR: Red Sox place Sonny Gray on 15-day IL, recall Samaniego",
-          "url": "https://www.mlbtraderumors.com/2026/04/red-sox-to-place-sonny-gray-on-injured-list.html",
-          "source": "MLB Trade Rumors",
-          "published": "2026-04-22T00:30:00Z",
-          "snark": "Eligible to return May 6, which in Red Sox hamstring math means late June, Memorial Day flowers optional."
+          "published": "2026-04-22T18:00:00Z",
+          "snark": "Anthony goes down with a bad back, the rotation's getting stitched up with a Double-A kid, and here comes Fried. Vegas isn't even picking up the phone."
         },
         {
           "headline": "Last Word: Gray, Slaten, Dobbins \u2014 a pitcher injury report getting dense",
@@ -99,13 +106,6 @@
           "source": "Boston Globe",
           "published": "2026-04-22T10:00:00Z",
           "snark": "$90M DH sitting three of every four games like he's the guy at the bar you politely avoid making eye contact with."
-        },
-        {
-          "headline": "WEEI Mazz: This team still doesn't know who it is",
-          "url": "https://www.weei.com/",
-          "source": "WEEI",
-          "published": "2026-04-22T09:00:00Z",
-          "snark": "Mazz diagnosing identity crises like he's not the one on sports radio doing the same routine for 27 straight years."
         },
         {
           "headline": "Shaughnessy: 'They're breaking my heart again'",
@@ -154,18 +154,32 @@
           "snark": "Fourth 'final' mock in six days \u2014 at some point Lazar's just going to draft the guy himself and save us the trouble."
         },
         {
-          "headline": "Barth Mock 3.0: Patriots trade out of first, take Malachi Lawrence at 34",
-          "url": "https://www.patspulpit.com/new-england-patriots-draft/126217/2026-mock-first-round-trade-emmanuel-pregnon",
-          "source": "Pats Pulpit",
-          "published": "2026-04-22T12:30:00Z",
-          "snark": "Trading out of 31 to take an edge at 34 \u2014 the NFL equivalent of ordering Bud Light to save three bucks on a first date."
+          "headline": "Lazar's Final Draft Rankings: Patriots.com's last call before the clock starts",
+          "url": "https://www.patriots.com/news/lazar-s-final-draft-rankings-for-the-2026-nfl-draft",
+          "source": "Patriots.com",
+          "published": "2026-04-22T18:00:00Z",
+          "snark": "Lazar pushing rankings after the 'final' mock like he's clearing his camera roll before his wife grabs the phone."
         },
         {
-          "headline": "Pats Pulpit: Oregon TE Kenyon Sadiq could be Maye's Gronk",
-          "url": "https://www.patspulpit.com/",
-          "source": "Pats Pulpit",
-          "published": "2026-04-22T10:30:00Z",
-          "snark": "Every April Pats bloggers find this year's Gronk like a guy convinced the new bartender is into him. Spoiler: no."
+          "headline": "NBCS Boston Mock 6.0: Patriots trade down, grab Vandy TE Eli Stowers",
+          "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/2026-nfl-mock-draft-first-round-predictions-trade-eli-stowers/783466/",
+          "source": "NBCS Boston",
+          "published": "2026-04-22T18:00:00Z",
+          "snark": "Six mocks deep and NBCS still thinks the Pats are patient enough to trade back and take a tight end. Gronk wept."
+        },
+        {
+          "headline": "Yahoo: Vrabel sends a clear message on trading the first-round pick",
+          "url": "https://sports.yahoo.com/articles/patriots-mike-vrabel-sends-message-162322219.html",
+          "source": "Yahoo Sports",
+          "published": "2026-04-22T16:23:00Z",
+          "snark": "Vrabel 'sending a message' two days before the draft is the NFL version of the guy at the bar announcing his big move fifteen minutes before closing."
+        },
+        {
+          "headline": "SI: Mapping every realistic Patriots trade-down scenario",
+          "url": "https://www.si.com/nfl/patriots/onsi/what-happens-if-patriots-trade-down-mapping-every-realistic-scenario",
+          "source": "SI",
+          "published": "2026-04-22T14:00:00Z",
+          "snark": "Every realistic scenario mapped, the least realistic being 'the Pats stay put and take the best guy left.' Vrabel's the GM version of a guy who has to touch every menu item."
         },
         {
           "headline": "Pats Pulpit: Draft prospects the Patriots showed particular interest in",
@@ -173,13 +187,6 @@
           "source": "Pats Pulpit",
           "published": "2026-04-22T16:00:00Z",
           "snark": "Top-30 visit list longer than the line outside Tasty Burger at 2 AM and twice as greasy."
-        },
-        {
-          "headline": "Pats Pulpit: 6 NFL Draft prospects 'we absolutely love'",
-          "url": "https://www.patspulpit.com/new-england-patriots-draft/126430/prospects-we-absolutely-love-our-guys-gennings-dunker-oscar-delp",
-          "source": "Pats Pulpit",
-          "published": "2026-04-22T15:30:00Z",
-          "snark": "Bloggers in love with their guys two days before a draft hit worse than a college Tinder match at 1 AM."
         },
         {
           "headline": "Schefter: Patriots have 'interest' in ASU OT Max Iheanachor at 31",
@@ -201,13 +208,6 @@
           "source": "Boston.com",
           "published": "2026-04-22T10:00:00Z",
           "snark": "Getting shopped one week, partying on South Beach the next. The man is living."
-        },
-        {
-          "headline": "Vrabel on trading the 1st: 'Different landscape at 31 than at 4'",
-          "url": "https://heavy.com/sports/nfl/new-england-patriots/vrabel-potential-first-round-pick-trade/",
-          "source": "Heavy",
-          "published": "2026-04-22T17:30:00Z",
-          "snark": "Vrabel casually noting 31 isn't 4 like the rest of us didn't watch this team go 4-13 to get there."
         },
         {
           "headline": "Patriots enter draft with 11 picks, tied for 2nd-most in the league",
