@@ -36,6 +36,10 @@
   .stat-card .tooltip .tt-item { padding:3px 0; color:var(--text); }
   .stat-card .tooltip .tt-empty { color:var(--text-muted); font-style:italic; }
   .section-header { display:flex; align-items:center; gap:10px; margin:28px 0 12px; font-size:16px; font-weight:600; }
+  details.collapsible-section > summary.section-header { cursor:pointer; list-style:none; }
+  details.collapsible-section > summary.section-header::before { content:"▼"; display:inline-block; font-size:10px; opacity:0.55; transition:transform 0.15s; width:10px; }
+  details.collapsible-section:not([open]) > summary.section-header::before { transform:rotate(-90deg); }
+  details.collapsible-section > summary.section-header::-webkit-details-marker { display:none; }
   .section-header .badge { font-size:11px; padding:3px 9px; border-radius:20px; font-weight:500; }
   .action-banner { background:linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.1)); border:1px solid rgba(99,102,241,0.3); border-radius:10px; padding:16px 20px; margin-bottom:24px; }
   .action-banner h2 { font-size:15px; font-weight:600; margin-bottom:10px; color:var(--accent-light); }
@@ -263,7 +267,8 @@
 
 
 
-<div class="section-header">Ranked Opportunities <span class="badge pill-purple">0 Tier 1 &amp; 2</span></div>
+<details open class="collapsible-section">
+<summary class="section-header">Ranked Opportunities <span class="badge pill-purple">0 Tier 1 &amp; 2</span></summary>
 <div id="haiku-slot" style="display:none;text-align:center;padding:24px 16px;margin-bottom:16px;">
   <div id="haiku-text" style="font-style:italic;color:var(--text-muted);font-size:14px;line-height:1.8;white-space:pre-line;"></div>
   <div id="haiku-source" style="margin-top:8px;font-size:10px;opacity:0.45;"></div>
@@ -277,7 +282,10 @@
 
 </div>
 
-<div class="section-header">Applications Sent <span class="badge pill-green">14 active</span> <span class="badge pill-muted" style="font-size:10px;">6 closed below</span></div>
+</details>
+
+<details open class="collapsible-section">
+<summary class="section-header">Applications Sent <span class="badge pill-green">14 active</span> <span class="badge pill-muted" style="font-size:10px;">6 closed below</span></summary>
 <div class="table-wrapper">
 <table>
   <thead><tr><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Score</th><th data-type="date">Applied</th><th data-type="num">Days</th><th data-type="text">Domain</th><th data-type="text">Location</th><th data-type="text">Comp</th><th data-type="text">Status</th><th>Link</th><th>Next Action</th></tr></thead>
@@ -375,6 +383,8 @@
   </tbody>
 </table>
 </div>
+
+</details>
 
 <div class="section-header">Active Pipeline <span class="badge pill-blue">57 actionable</span></div>
 <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Derived from scored opportunities. Tier 1 = score 75+, Tier 2 = 60-74, Tier 3 = under 60.</p>
