@@ -190,6 +190,7 @@
   /* The two body lines get fixed line counts via -webkit-line-clamp so a long headline or snark can't push the card taller. */
   .ne-game { font-size:14px; font-weight:600; color:var(--text); line-height:1.3; margin-bottom:4px; flex:0 0 auto; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
   .ne-snark { font-size:12px; color:var(--text-muted); font-style:italic; line-height:1.4; opacity:0.92; flex:1 1 auto; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+    .ne-pitchers { font-size:10px; color:var(--text-muted); opacity:0.75; margin-top:4px; letter-spacing:0.02em; }
   .ne-link { margin-top:6px; font-size:10px; opacity:0.55; flex:0 0 auto; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .ne-link a { color:var(--text-muted); text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px; }
   .ne-link a:hover { color:var(--cyan); }
@@ -1256,6 +1257,12 @@ updateStaleness();
     const usScore   = extractScore(us.score) ?? 0;
     const themScore = extractScore(them.score) ?? 0;
     const homeAway  = us.homeAway || 'home';
+    // Probable pitchers (if ESPN has posted them). Each competitor may have probables.
+    const probName = (c) => {
+      const p = (c.probables || [])[0];
+      if (!p) return null;
+      return p.athlete?.shortName || p.athlete?.displayName || p.shortName || p.name || null;
+    };
     return {
       state,
       usScore, themScore,
@@ -1265,7 +1272,10 @@ updateStaleness();
       oppAbbrev: them.team?.abbreviation || them.team?.displayName || '',
       date: new Date(ev.date),
       link: ev.links?.[0]?.href || comp.links?.[0]?.href || '',
-      detail: status.shortDetail || status.detail || ''
+      detail: status.shortDetail || status.detail || '',
+      usPitcher: probName(us),
+      themPitcher: probName(them),
+      usAbbrev: us.team?.abbreviation || ''
     };
   }
 
@@ -1297,6 +1307,20 @@ updateStaleness();
       return false;
     }
     const cls = state === 'LIVE' ? 'live' : state === 'FINAL' ? 'final' : 'scheduled';
+    // Small secondary pitcher line: "BOS TBD vs NYY C. Schlittler" when probables are known
+    let pitcherLine = '';
+    if (g.state === 'in' || g.state === 'pre') {
+      const usName   = g.usPitcher   || 'TBD';
+      const themName = g.themPitcher || 'TBD';
+      if (g.usPitcher || g.themPitcher) {
+        // home/away ordering: show away pitcher on left, home on right (matches convention)
+        const awayAbbrev = g.homeAway === 'home' ? g.oppAbbrev : g.usAbbrev;
+        const awayName   = g.homeAway === 'home' ? themName : usName;
+        const homeAbbrev = g.homeAway === 'home' ? g.usAbbrev : g.oppAbbrev;
+        const homeName   = g.homeAway === 'home' ? usName : themName;
+        pitcherLine = '<div class="ne-pitchers">' + escapeHtml(awayAbbrev + ' ' + awayName + ' @ ' + homeAbbrev + ' ' + homeName) + '</div>';
+      }
+    }
     $el.innerHTML =
       '<div class="ne-row1">'
       + '<span class="ne-team-name">' + escapeHtml(teamLabel) + '</span>'
@@ -1304,6 +1328,7 @@ updateStaleness();
       + '</div>'
       + '<div class="ne-game ne-fade">' + escapeHtml(line) + '</div>'
       + '<div class="ne-snark ne-fade">' + escapeHtml(snark) + '</div>'
+      + pitcherLine
       + (g.link ? '<div class="ne-link"><a href="' + g.link + '" target="_blank" rel="noopener">ESPN box &rarr;</a></div>' : '');
     return true;
   }
