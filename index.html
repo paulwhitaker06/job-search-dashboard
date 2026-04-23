@@ -1364,22 +1364,31 @@ updateStaleness();
       return awayAbbrev + ' ' + awayName + ' @ ' + homeAbbrev + ' ' + homeName;
     };
 
+    const gameLine = (g) => {
+      const vsAt = g.homeAway === 'home' ? 'vs ' + g.oppAbbrev : '@ ' + g.oppAbbrev;
+      return 'Next: ' + vsAt + ' ' + fmtDay(g.date) + ' ' + fmtTime(g.date);
+    };
     const parts = [];
     if (current && current.state === 'post') {
+      // Post-game: show Final line, THEN the next game if we have one
       const vsAt = current.homeAway === 'home' ? 'vs ' + current.oppAbbrev : '@ ' + current.oppAbbrev;
       const score = current.usScore + '-' + current.themScore;
       const won = current.usWin || current.usScore > current.themScore;
       parts.push('Final: ' + (won?'W':'L') + ' ' + score + ' ' + vsAt);
-    }
-    if (next) {
-      const vsAt = next.homeAway === 'home' ? 'vs ' + next.oppAbbrev : '@ ' + next.oppAbbrev;
-      parts.push('Next: ' + vsAt + ' ' + fmtDay(next.date) + ' ' + fmtTime(next.date));
-      const prob = probStr(next);
-      if (prob) parts.push(prob);
+      if (next) {
+        parts.push(gameLine(next));
+        const prob = probStr(next);
+        if (prob) parts.push(prob);
+      }
     } else if (current && current.state === 'pre') {
-      const vsAt = current.homeAway === 'home' ? 'vs ' + current.oppAbbrev : '@ ' + current.oppAbbrev;
-      parts.push('Next: ' + vsAt + ' ' + fmtDay(current.date) + ' ' + fmtTime(current.date));
+      // Upcoming: current IS the next game. Do not skip it for a later one.
+      parts.push(gameLine(current));
       const prob = probStr(current);
+      if (prob) parts.push(prob);
+    } else if (next) {
+      // No relevant current event; fall back to whatever is next
+      parts.push(gameLine(next));
+      const prob = probStr(next);
       if (prob) parts.push(prob);
     }
     return parts.join(' · ');
