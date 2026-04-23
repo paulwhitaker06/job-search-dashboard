@@ -1213,6 +1213,17 @@ updateStaleness();
     return null;
   }
 
+  // Find the next upcoming event regardless of time window. Used for the small
+  // "next game" footer line so the widget can show pitcher matchups days in advance.
+  function findNextUpcoming(schedule, excludeId) {
+    const events = schedule?.events || schedule?.team?.events || [];
+    const now = Date.now();
+    const future = events
+      .filter(ev => new Date(ev.date).getTime() > now && ev.id !== excludeId)
+      .sort((a,b) => new Date(a.date) - new Date(b.date));
+    return future[0] || null;
+  }
+
   // ESPN score field shape varies by endpoint:
   //   missing (live game on /teams/<id>/schedule)
   //   string "4" or number 4 (summary endpoint / some scoreboards)
@@ -1333,7 +1344,48 @@ updateStaleness();
     return true;
   }
 
-  function renderFeedCard($el, teamKey, items, teamLabel) {
+  // Build the small footer line that rides below the news card.
+  // Shows the most useful game context given what's happening:
+  //   - Just ended (final < 20h ago): "Final: L 0-4 vs NYY · Next: vs NYY Thu 6:10pm · NYY Schlittler @ BOS TBD"
+  //   - Upcoming (pre): "Next: vs NYY Thu 6:10pm · NYY Schlittler @ BOS TBD"
+  //   - Nothing near: empty string (no footer)
+  function buildGameFooter(current, next) {
+    const fmtDay  = (d) => d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+    const fmtTime = (d) => d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+    const probStr = (g) => {
+      if (!g) return '';
+      const usName   = g.usPitcher   || 'TBD';
+      const themName = g.themPitcher || 'TBD';
+      if (!g.usPitcher && !g.themPitcher) return '';
+      const awayAbbrev = g.homeAway === 'home' ? g.oppAbbrev : g.usAbbrev;
+      const awayName   = g.homeAway === 'home' ? themName : usName;
+      const homeAbbrev = g.homeAway === 'home' ? g.usAbbrev : g.oppAbbrev;
+      const homeName   = g.homeAway === 'home' ? usName : themName;
+      return awayAbbrev + ' ' + awayName + ' @ ' + homeAbbrev + ' ' + homeName;
+    };
+
+    const parts = [];
+    if (current && current.state === 'post') {
+      const vsAt = current.homeAway === 'home' ? 'vs ' + current.oppAbbrev : '@ ' + current.oppAbbrev;
+      const score = current.usScore + '-' + current.themScore;
+      const won = current.usWin || current.usScore > current.themScore;
+      parts.push('Final: ' + (won?'W':'L') + ' ' + score + ' ' + vsAt);
+    }
+    if (next) {
+      const vsAt = next.homeAway === 'home' ? 'vs ' + next.oppAbbrev : '@ ' + next.oppAbbrev;
+      parts.push('Next: ' + vsAt + ' ' + fmtDay(next.date) + ' ' + fmtTime(next.date));
+      const prob = probStr(next);
+      if (prob) parts.push(prob);
+    } else if (current && current.state === 'pre') {
+      const vsAt = current.homeAway === 'home' ? 'vs ' + current.oppAbbrev : '@ ' + current.oppAbbrev;
+      parts.push('Next: ' + vsAt + ' ' + fmtDay(current.date) + ' ' + fmtTime(current.date));
+      const prob = probStr(current);
+      if (prob) parts.push(prob);
+    }
+    return parts.join(' · ');
+  }
+
+  function renderFeedCard($el, teamKey, items, teamLabel, footerText) {
     const tpl = TPL[teamKey];
     if (!items || items.length === 0) {
       $el.innerHTML =
@@ -1362,7 +1414,8 @@ updateStaleness();
         + '</div>'
         + '<div class="ne-game ne-fade">' + escapeHtml(hl) + '</div>'
         + '<div class="ne-snark ne-fade">' + escapeHtml(snark) + '</div>'
-        + (url ? '<div class="ne-link"><a href="' + url + '" target="_blank" rel="noopener">' + escapeHtml(source) + ' &rarr;</a></div>' : '');
+        + (url ? '<div class="ne-link"><a href="' + url + '" target="_blank" rel="noopener">' + escapeHtml(source) + ' &rarr;</a></div>' : '')
+        + (footerText ? '<div class="ne-pitchers">' + escapeHtml(footerText) + '</div>' : '');
     }
     paint();
     // Rotate headlines every ~20s so the card feels alive without being jittery; pause on hover.
@@ -1389,11 +1442,28 @@ updateStaleness();
     const soxG  = gameInfo(soxEv,  2);
     const patsG = gameInfo(patsEv, 17);
 
-    // Try to render live game state; if no relevant game, fall back to curated news feed.
+    // For non-live states, we prefer the news feed as the main card and park
+    // the game context in a small footer line. The MLB season has 162 games, so
+    // "NEXT UP" as the whole card between days leaves the widget wilting.
+    const soxNext  = gameInfo(findNextUpcoming(soxSched,  soxEv && soxEv.id),  2);
+    const patsNext = gameInfo(findNextUpcoming(patsSched, patsEv && patsEv.id), 17);
+    const soxFooter  = buildGameFooter(soxG,  soxNext);
+    const patsFooter = buildGameFooter(patsG, patsNext);
+
     const soxItems  = (FEED.sox  && FEED.sox.items)  || [];
     const patsItems = (FEED.pats && FEED.pats.items) || [];
-    if (!soxG  || !renderGameCard($sox,  'sox',  soxG,  'Red Sox'))  renderFeedCard($sox,  'sox',  soxItems,  'Red Sox');
-    if (!patsG || !renderGameCard($pats, 'pats', patsG, 'Patriots')) renderFeedCard($pats, 'pats', patsItems, 'Patriots');
+
+    // LIVE: show score card (full treatment). Otherwise: news feed + small game footer.
+    if (soxG && soxG.state === 'in') {
+      if (!renderGameCard($sox, 'sox', soxG, 'Red Sox')) renderFeedCard($sox, 'sox', soxItems, 'Red Sox', soxFooter);
+    } else {
+      renderFeedCard($sox, 'sox', soxItems, 'Red Sox', soxFooter);
+    }
+    if (patsG && patsG.state === 'in') {
+      if (!renderGameCard($pats, 'pats', patsG, 'Patriots')) renderFeedCard($pats, 'pats', patsItems, 'Patriots', patsFooter);
+    } else {
+      renderFeedCard($pats, 'pats', patsItems, 'Patriots', patsFooter);
+    }
   }
 
   // Poll the separately-published sports-feed.json (same origin on GitHub Pages) so a
