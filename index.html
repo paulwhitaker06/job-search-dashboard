@@ -1222,6 +1222,38 @@ updateStaleness();
     return null;
   }
 
+  // ESPN score field shape varies by endpoint:
+  //   missing (live game on /teams/<id>/schedule)
+  //   string "4" or number 4 (summary endpoint / some scoreboards)
+  //   {value: 4, displayValue: "4"} object (completed games on schedule endpoint)
+  function extractScore(s) {
+    if (s == null) return null;
+    if (typeof s === 'number') return s;
+    if (typeof s === 'string') { const n = parseInt(s, 10); return Number.isNaN(n) ? null : n; }
+    if (typeof s === 'object') {
+      if (typeof s.value === 'number') return s.value;
+      if (s.displayValue != null) { const n = parseInt(s.displayValue, 10); return Number.isNaN(n) ? null : n; }
+    }
+    return null;
+  }
+
+  // /teams/<id>/schedule does not include scores for live games. Patch in the
+  // running score from /summary?event=<id>. Ignores completed/scheduled games.
+  async function enrichLiveScore(ev, sportPath) {
+    if (!ev || ev.competitions?.[0]?.status?.type?.state !== 'in') return ev;
+    try {
+      const url = 'https://site.api.espn.com/apis/site/v2/sports/' + sportPath + '/summary?event=' + ev.id;
+      const data = await fetchJSON(url);
+      const sumComps = data?.header?.competitions?.[0]?.competitors || [];
+      const evComps = ev.competitions?.[0]?.competitors || [];
+      for (const ec of evComps) {
+        const match = sumComps.find(sc => sc.id === ec.id || sc.team?.id === ec.team?.id);
+        if (match && match.score != null) ec.score = match.score;
+      }
+    } catch(e) { /* network/parse error, fall back to 0-0 */ }
+    return ev;
+  }
+
   function gameInfo(ev, teamId) {
     if (!ev) return null;
     const comp = ev.competitions?.[0]; if (!comp) return null;
@@ -1231,8 +1263,8 @@ updateStaleness();
     const us   = comps.find(c => c.team?.id === String(teamId));
     const them = comps.find(c => c.team?.id !== String(teamId));
     if (!us || !them) return null;
-    const usScore   = parseInt(us.score ?? '0', 10);
-    const themScore = parseInt(them.score ?? '0', 10);
+    const usScore   = extractScore(us.score) ?? 0;
+    const themScore = extractScore(them.score) ?? 0;
     const homeAway  = us.homeAway || 'home';
     return {
       state,
@@ -1332,8 +1364,15 @@ updateStaleness();
       fetchJSON('https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/2/schedule'),
       fetchJSON('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/schedule'),
     ]);
-    const soxG  = gameInfo(findRelevantEvent(soxSched),  2);
-    const patsG = gameInfo(findRelevantEvent(patsSched), 17);
+    const soxEv  = findRelevantEvent(soxSched);
+    const patsEv = findRelevantEvent(patsSched);
+    // For live games the schedule endpoint omits scores; patch them in from /summary.
+    await Promise.all([
+      enrichLiveScore(soxEv,  'baseball/mlb'),
+      enrichLiveScore(patsEv, 'football/nfl'),
+    ]);
+    const soxG  = gameInfo(soxEv,  2);
+    const patsG = gameInfo(patsEv, 17);
 
     // Try to render live game state; if no relevant game, fall back to curated news feed.
     const soxItems  = (FEED.sox  && FEED.sox.items)  || [];
