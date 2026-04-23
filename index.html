@@ -170,7 +170,9 @@
   .sports-strip .sp-item:hover { background:var(--card-hover); color:var(--text); border-color:var(--cyan); }
 
   /* New England Sportsball — live widget (auto-fetches ESPN on load) */
-  .ne-sports { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:0 0 20px 0; }
+  .ne-sports { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:14px 0 8px 0; }
+  .ne-team.ne-industry::before { background:#06b6d4; }
+  .ne-team.ne-nyt::before { background:#f5f5f0; }
   @media (max-width:900px) { .ne-sports { grid-template-columns:1fr; } }
   /* Locked-size cards so the rotation never reflows layout. Fixed height + truncation. */
   .ne-team { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 16px 12px 20px; position:relative; overflow:hidden; height:128px; box-sizing:border-box; display:flex; flex-direction:column; transition:border-color 0.2s; }
@@ -222,8 +224,6 @@
     <div class="updated">Last updated: April 23, 2026 &nbsp; <span class="season-badge" style="background:#c8a679;color:#0f1117">Mud Season</span></div>
   </div>
 </div>
-
-<div id="ne-sports" class="ne-sports"><div class="ne-team ne-sox" id="ne-sox" data-fallback="Red Sox vs Tigers — Patriots&#x27; Day at Fenway"><div class="ne-row1"><span class="ne-team-name">&#9918; Red Sox</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling live ESPN data&hellip;</div><div class="ne-snark">If this never updates, check your wifi — or ESPN.</div></div><div class="ne-team ne-pats" id="ne-pats" data-fallback="Patriots pick #31 — 2026 Draft Thu Apr 23"><div class="ne-row1"><span class="ne-team-name">&#127944; Patriots</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling live ESPN data&hellip;</div><div class="ne-snark">If this never updates, check your wifi — or ESPN.</div></div></div>
 
 
 
@@ -284,6 +284,8 @@
 </div>
 
 </details>
+
+<details open class="collapsible-section"><summary class="section-header">Personal <span class="badge pill-cyan" style="font-size:11px;">Sports + News</span></summary><div id="ne-sports" class="ne-sports"><div class="ne-team ne-sox" id="ne-sox" data-fallback="Red Sox vs Tigers — Patriots&#x27; Day at Fenway"><div class="ne-row1"><span class="ne-team-name">&#9918; Red Sox</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-pats" id="ne-pats" data-fallback="Patriots pick #31 — 2026 Draft Thu Apr 23"><div class="ne-row1"><span class="ne-team-name">&#127944; Patriots</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-industry" id="ne-industry" data-fallback="Loading industry feed..."><div class="ne-row1"><span class="ne-team-name">&#128752; Industry</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-nyt" id="ne-nyt" data-fallback="Loading NYT feed..."><div class="ne-row1"><span class="ne-team-name">&#128240; NYT</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div></div></details>
 
 <details open class="collapsible-section">
 <summary class="section-header">Applications Sent <span class="badge pill-green">14 active</span> <span class="badge pill-muted" style="font-size:10px;">6 closed below</span></summary>
@@ -1159,7 +1161,17 @@ updateStaleness();
                  "Offseason. The Krafts are counting something, somewhere, slowly.",
                  "No game. OTA leaks are the real content. They are also fake."]
     }
-  };
+  ,
+    industry: {
+      off: ["Industry feed quiet. Constellations still in orbit, ocean still getting fished.",
+            "No fresh takes on the wire. Somewhere a regulator is still drafting a comment.",
+            "Space industry inbox: empty. Paul's former colleagues: still employed (probably)."]
+    },
+    nyt: {
+      off: ["NYT feed catching its breath.",
+            "Paper of record, still in proofreading.",
+            "Times is Times-ing. Check back in a bit."]
+    }};
 
   function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
   function fmt(s, v) { return s.replace(/\{(\w+)\}/g, (_,k) => (v[k] ?? '')); }
@@ -1473,24 +1485,49 @@ updateStaleness();
     } else {
       renderFeedCard($pats, 'pats', patsItems, 'Patriots', patsFooter);
     }
+
+    // Industry and NYT tiles: pure news-feed cards, no game state
+    const $industry = document.getElementById('ne-industry');
+    const $nyt      = document.getElementById('ne-nyt');
+    const indItems = (FEED.industry && FEED.industry.items) || [];
+    const nytItems = (FEED.nyt      && FEED.nyt.items)      || [];
+    if ($industry) renderFeedCard($industry, 'industry', indItems, 'Industry', '');
+    if ($nyt)      renderFeedCard($nyt,      'nyt',      nytItems, 'NYT',      '');
   }
 
   // Poll the separately-published sports-feed.json (same origin on GitHub Pages) so a
   // scheduled task running every ~30 min can surface fresh items into an already-open dashboard.
   async function pollFeed() {
     try {
-      const cacheBuster = '?t=' + Date.now();
-      const resp = await fetch('./sports-feed.json' + cacheBuster, { cache: 'no-store' });
-      if (!resp.ok) return false;
-      const fresh = await resp.json();
-      if (!fresh || !fresh.sox || !fresh.pats) return false;
-      // Only repaint if content has actually changed (cheap identity check on updated timestamp or item count).
-      const sameStamp = (FEED.updated && fresh.updated && FEED.updated === fresh.updated);
-      const sameCount = ((FEED.sox?.items?.length || 0) === (fresh.sox?.items?.length || 0))
-                     && ((FEED.pats?.items?.length || 0) === (fresh.pats?.items?.length || 0));
-      if (sameStamp && sameCount) return false;
-      FEED = fresh;
-      return true;
+      const cb = '?t=' + Date.now();
+      const [sportsR, industryR, nytR] = await Promise.all([
+        fetch('./sports-feed.json'   + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('./industry-feed.json' + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('./nyt-feed.json'      + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
+      ]);
+      let changed = false;
+      if (sportsR && sportsR.sox && sportsR.pats) {
+        const sameStamp = (FEED.updated && sportsR.updated && FEED.updated === sportsR.updated);
+        const sameCount = ((FEED.sox?.items?.length || 0) === (sportsR.sox?.items?.length || 0))
+                       && ((FEED.pats?.items?.length || 0) === (sportsR.pats?.items?.length || 0));
+        if (!sameStamp || !sameCount) {
+          FEED.updated = sportsR.updated;
+          FEED.sox     = sportsR.sox;
+          FEED.pats    = sportsR.pats;
+          changed = true;
+        }
+      }
+      if (industryR && industryR.items) {
+        const sameCount = (FEED.industry?.items?.length || 0) === (industryR.items.length || 0);
+        const sameStamp = (FEED.industry?.updated === industryR.updated);
+        if (!sameStamp || !sameCount) { FEED.industry = industryR; changed = true; }
+      }
+      if (nytR && nytR.items) {
+        const sameCount = (FEED.nyt?.items?.length || 0) === (nytR.items.length || 0);
+        const sameStamp = (FEED.nyt?.updated === nytR.updated);
+        if (!sameStamp || !sameCount) { FEED.nyt = nytR; changed = true; }
+      }
+      return changed;
     } catch(e) { return false; }
   }
 
