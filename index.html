@@ -208,6 +208,48 @@
   .season-badge { display:inline-block; padding:3px 11px; border-radius:12px; font-size:11px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase; color:#0f1117; box-shadow:0 1px 8px rgba(0,0,0,0.25); }
 
   @media (max-width:768px) { body { padding:12px; } .header { flex-direction:column; gap:8px; } .header .meta { text-align:left; } table { font-size:12px; } .interview-banner { flex-direction:column; text-align:center; gap:10px; } }
+  /* Tighter mobile layout and touch affordances */
+  @media (max-width:640px) {
+    body { padding:10px 8px; max-width:100%; line-height:1.45; }
+    .header h1 { font-size:20px; }
+    .header h1 span { font-size:14px; }
+    .season-badge { display:none; }
+    .stats { grid-template-columns:repeat(2, 1fr); gap:8px; margin-bottom:16px; }
+    .stat-card { padding:10px 8px; }
+    .stat-card .number { font-size:22px; }
+    .stat-card .label { font-size:9px; }
+    .stat-card .tooltip { display:none !important; }
+    .section-header { font-size:14px; margin:20px 0 10px; gap:6px; flex-wrap:wrap; }
+    .section-header .badge { font-size:10px; padding:2px 7px; }
+    table { font-size:11px; }
+    table th, table td { padding:6px 5px; }
+    .table-wrapper { margin-bottom:16px; }
+    .action-banner { padding:12px; margin:16px 0; }
+    .action-banner h2 { font-size:15px; }
+    .action-item { padding:8px; gap:8px; }
+    .action-item .priority { font-size:16px; min-width:24px; }
+    .dd-grid { gap:10px; }
+    .ip-grid { grid-template-columns:1fr; }
+    .velocity-strip { flex-direction:column; align-items:flex-start; gap:6px; padding:10px; }
+    /* Buttons and interactive elements get proper tap targets */
+    button, .pill, .action-item { min-height:32px; }
+    /* Pipeline / applications tables: keep horizontal scroll but hint at it */
+    .table-wrapper { position:relative; }
+    .table-wrapper::after { content:"← scroll →"; position:absolute; bottom:4px; right:8px; font-size:9px; color:var(--text-muted); opacity:0.5; pointer-events:none; }
+    /* Personal tiles single-column on phone */
+    .ne-sports { grid-template-columns:1fr !important; }
+    .ne-team { padding:10px; }
+    .ne-game { font-size:13px; }
+    .ne-snark { font-size:11px; }
+    /* Interview prep + applications: cap long verdict/next-action text */
+    .next-action { max-width:220px; }
+  }
+  @media (max-width:400px) {
+    body { padding:8px 6px; }
+    .stats { grid-template-columns:1fr 1fr; }
+    .stat-card .number { font-size:20px; }
+    .action-banner h2 { font-size:14px; }
+  }
 </style>
 <style>
   :root { --accent-light: #c8a679; --season: #c8a679; }
@@ -1680,6 +1722,22 @@ table thead th[data-type].sort-desc::after { content: "↓"; opacity: 0.95; colo
     th.classList.add(dir === 'asc' ? 'sort-asc' : 'sort-desc');
     sortTable(table, colIndex, type, dir);
   }, false);
+})();
+</script>
+
+<script>
+// On narrow viewports, default-collapse the heavy tables so the page doesn't
+// land the user in a forest of 10-column scroll zones.
+(function() {
+  if (!window.matchMedia('(max-width: 700px)').matches) return;
+  document.querySelectorAll('details.collapsible-section, details').forEach(d => {
+    const summary = d.querySelector('summary');
+    if (!summary) return;
+    const text = (summary.textContent || '').trim();
+    if (/Applications Sent|Active Pipeline|Rejected|Morning Brief Log|Speculative Outreach/i.test(text)) {
+      d.removeAttribute('open');
+    }
+  });
 })();
 </script>
 </body>
