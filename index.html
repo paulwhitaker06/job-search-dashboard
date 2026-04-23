@@ -170,9 +170,12 @@
   .sports-strip .sp-item:hover { background:var(--card-hover); color:var(--text); border-color:var(--cyan); }
 
   /* New England Sportsball — live widget (auto-fetches ESPN on load) */
-  .ne-sports { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:14px 0 8px 0; }
+  .ne-sports { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin:14px 0 8px 0; }
+  @media (max-width:1100px) { .ne-sports { grid-template-columns:1fr 1fr; } }
   .ne-team.ne-industry::before { background:#06b6d4; }
   .ne-team.ne-nyt::before { background:#f5f5f0; }
+  .ne-team.ne-outdoor::before { background:#10b981; }
+  .ne-team.ne-recipe::before { background:#f59e0b; }
   @media (max-width:900px) { .ne-sports { grid-template-columns:1fr; } }
   /* Locked-size cards so the rotation never reflows layout. Fixed height + truncation. */
   .ne-team { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 16px 12px 20px; position:relative; overflow:hidden; height:128px; box-sizing:border-box; display:flex; flex-direction:column; transition:border-color 0.2s; }
@@ -285,7 +288,7 @@
 
 </details>
 
-<details open class="collapsible-section"><summary class="section-header">Personal <span class="badge pill-cyan" style="font-size:11px;">Sports + News</span></summary><div id="ne-sports" class="ne-sports"><div class="ne-team ne-sox" id="ne-sox" data-fallback="Red Sox vs Tigers — Patriots&#x27; Day at Fenway"><div class="ne-row1"><span class="ne-team-name">&#9918; Red Sox</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-pats" id="ne-pats" data-fallback="Patriots pick #31 — 2026 Draft Thu Apr 23"><div class="ne-row1"><span class="ne-team-name">&#127944; Patriots</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-industry" id="ne-industry" data-fallback="Loading industry feed..."><div class="ne-row1"><span class="ne-team-name">&#128752; Industry</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-nyt" id="ne-nyt" data-fallback="Loading NYT feed..."><div class="ne-row1"><span class="ne-team-name">&#128240; NYT</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div></div></details>
+<details open class="collapsible-section"><summary class="section-header">Personal <span class="badge pill-cyan" style="font-size:11px;">Sports + News</span></summary><div id="ne-sports" class="ne-sports"><div class="ne-team ne-sox" id="ne-sox" data-fallback="Red Sox vs Tigers — Patriots&#x27; Day at Fenway"><div class="ne-row1"><span class="ne-team-name">&#9918; Red Sox</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-pats" id="ne-pats" data-fallback="Patriots pick #31 — 2026 Draft Thu Apr 23"><div class="ne-row1"><span class="ne-team-name">&#127944; Patriots</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-industry" id="ne-industry" data-fallback="Loading industry feed..."><div class="ne-row1"><span class="ne-team-name">&#128752; Industry</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-nyt" id="ne-nyt" data-fallback="Loading NYT feed..."><div class="ne-row1"><span class="ne-team-name">&#128240; NYT</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-outdoor" id="ne-outdoor" data-fallback="Loading outdoor feed..."><div class="ne-row1"><span class="ne-team-name">&#127956; Outdoors</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling feed&hellip;</div><div class="ne-snark">If this never updates, check your wifi.</div></div><div class="ne-team ne-recipe" id="ne-recipe" data-fallback="Loading recipes..."><div class="ne-row1"><span class="ne-team-name">&#127869; Recipe</span><span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div><div class="ne-game">Pulling recipes&hellip;</div><div class="ne-snark">Tonight's candidate will appear here.</div><div class="ne-recipe-controls" style="margin-top:8px;display:flex;gap:8px;align-items:center;"><button id="ne-recipe-prev" style="background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:10px;padding:3px 9px;border-radius:4px;cursor:pointer;font-family:inherit;">&laquo; prev</button><button id="ne-recipe-next" style="background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:10px;padding:3px 9px;border-radius:4px;cursor:pointer;font-family:inherit;">next &raquo;</button><span id="ne-recipe-counter" style="margin-left:4px;color:var(--text-muted);font-size:10px;opacity:0.7;"></span></div></div></div></details>
 
 <details open class="collapsible-section">
 <summary class="section-header">Applications Sent <span class="badge pill-green">14 active</span> <span class="badge pill-muted" style="font-size:10px;">6 closed below</span></summary>
@@ -1486,13 +1489,72 @@ updateStaleness();
       renderFeedCard($pats, 'pats', patsItems, 'Patriots', patsFooter);
     }
 
-    // Industry and NYT tiles: pure news-feed cards, no game state
+    // Industry, NYT, and Outdoor tiles: pure news-feed cards, no game state
     const $industry = document.getElementById('ne-industry');
     const $nyt      = document.getElementById('ne-nyt');
+    const $outdoor  = document.getElementById('ne-outdoor');
     const indItems = (FEED.industry && FEED.industry.items) || [];
     const nytItems = (FEED.nyt      && FEED.nyt.items)      || [];
+    const outItems = (FEED.outdoor  && FEED.outdoor.items)  || [];
     if ($industry) renderFeedCard($industry, 'industry', indItems, 'Industry', '');
     if ($nyt)      renderFeedCard($nyt,      'nyt',      nytItems, 'NYT',      '');
+    if ($outdoor)  renderFeedCard($outdoor,  'outdoor',  outItems, 'Outdoors', '');
+
+    // Recipe tile: NOT auto-rotating. Paul cycles with prev/next buttons, haiku-style.
+    const $recipe = document.getElementById('ne-recipe');
+    const recItems = (FEED.recipe && FEED.recipe.items) || [];
+    if ($recipe) renderRecipeTile($recipe, recItems);
+  }
+
+  // Recipe tile: haiku-style cycle through a cached array, no auto-rotate.
+  let recipeIdx = 0;
+  function renderRecipeTile($el, items) {
+    if ($el._recipeWired) {
+      // Already wired; just repaint with the current index or reset if feed changed
+      if (recipeIdx >= items.length) recipeIdx = 0;
+    } else {
+      $el._recipeWired = true;
+      const prevBtn = $el.querySelector('#ne-recipe-prev');
+      const nextBtn = $el.querySelector('#ne-recipe-next');
+      if (prevBtn) prevBtn.addEventListener('click', () => { recipeIdx = (recipeIdx - 1 + (FEED.recipe?.items?.length || 1)) % (FEED.recipe?.items?.length || 1); paintRecipe($el); });
+      if (nextBtn) nextBtn.addEventListener('click', () => { recipeIdx = (recipeIdx + 1) % (FEED.recipe?.items?.length || 1); paintRecipe($el); });
+    }
+    paintRecipe($el);
+  }
+  function paintRecipe($el) {
+    const items = (FEED.recipe && FEED.recipe.items) || [];
+    if (!items.length) {
+      // Preserve the controls row; just update the text blocks
+      const gameEl  = $el.querySelector('.ne-game');  if (gameEl)  gameEl.textContent  = 'No recipes loaded yet.';
+      const snarkEl = $el.querySelector('.ne-snark'); if (snarkEl) snarkEl.textContent = pick(TPL.recipe.off);
+      const ctr = $el.querySelector('#ne-recipe-counter'); if (ctr) ctr.textContent = '';
+      return;
+    }
+    const r = items[recipeIdx % items.length];
+    const stateEl = $el.querySelector('.ne-state');
+    if (stateEl) {
+      stateEl.className = 'ne-state ne-state-news';
+      stateEl.textContent = (r.source || 'RECIPE').toUpperCase();
+    }
+    const gameEl = $el.querySelector('.ne-game');
+    if (gameEl) gameEl.textContent = r.title || r.headline || '';
+    const snarkEl = $el.querySelector('.ne-snark');
+    if (snarkEl) snarkEl.textContent = r.note || r.snark || '';
+    // Ensure a link exists after the snark if we have a URL
+    let linkEl = $el.querySelector('.ne-link');
+    if (r.url) {
+      if (!linkEl) {
+        linkEl = document.createElement('div');
+        linkEl.className = 'ne-link';
+        const controls = $el.querySelector('.ne-recipe-controls');
+        $el.insertBefore(linkEl, controls);
+      }
+      linkEl.innerHTML = '<a href="' + r.url + '" target="_blank" rel="noopener">' + escapeHtml(r.source || 'recipe') + ' &rarr;</a>';
+    } else if (linkEl) {
+      linkEl.remove();
+    }
+    const ctr = $el.querySelector('#ne-recipe-counter');
+    if (ctr) ctr.textContent = (recipeIdx + 1) + ' of ' + items.length;
   }
 
   // Poll the separately-published sports-feed.json (same origin on GitHub Pages) so a
@@ -1500,10 +1562,12 @@ updateStaleness();
   async function pollFeed() {
     try {
       const cb = '?t=' + Date.now();
-      const [sportsR, industryR, nytR] = await Promise.all([
+      const [sportsR, industryR, nytR, outdoorR, recipeR] = await Promise.all([
         fetch('./sports-feed.json'   + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('./industry-feed.json' + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('./nyt-feed.json'      + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('./outdoor-feed.json'  + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('./recipe-feed.json'   + cb, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
       ]);
       let changed = false;
       if (sportsR && sportsR.sox && sportsR.pats) {
@@ -1526,6 +1590,16 @@ updateStaleness();
         const sameCount = (FEED.nyt?.items?.length || 0) === (nytR.items.length || 0);
         const sameStamp = (FEED.nyt?.updated === nytR.updated);
         if (!sameStamp || !sameCount) { FEED.nyt = nytR; changed = true; }
+      }
+      if (outdoorR && outdoorR.items) {
+        const sameCount = (FEED.outdoor?.items?.length || 0) === (outdoorR.items.length || 0);
+        const sameStamp = (FEED.outdoor?.updated === outdoorR.updated);
+        if (!sameStamp || !sameCount) { FEED.outdoor = outdoorR; changed = true; }
+      }
+      if (recipeR && recipeR.items) {
+        const sameCount = (FEED.recipe?.items?.length || 0) === (recipeR.items.length || 0);
+        const sameStamp = (FEED.recipe?.updated === recipeR.updated);
+        if (!sameStamp || !sameCount) { FEED.recipe = recipeR; changed = true; }
       }
       return changed;
     } catch(e) { return false; }
