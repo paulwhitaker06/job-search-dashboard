@@ -208,6 +208,8 @@
   .season-badge { display:inline-block; padding:3px 11px; border-radius:12px; font-size:11px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase; color:#0f1117; box-shadow:0 1px 8px rgba(0,0,0,0.25); }
 
   @media (max-width:768px) { body { padding:12px; } .header { flex-direction:column; gap:8px; } .header .meta { text-align:left; } table { font-size:12px; } .interview-banner { flex-direction:column; text-align:center; gap:10px; } }
+  /* Tap-to-toggle stat-card tooltips (mobile-friendly fallback for hover) */
+  .stat-card.touched .tooltip { display:block !important; }
   /* Tighter mobile layout and touch affordances */
   @media (max-width:640px) {
     body { padding:10px 8px; max-width:100%; line-height:1.45; }
@@ -215,10 +217,14 @@
     .header h1 span { font-size:14px; }
     .season-badge { display:none; }
     .stats { grid-template-columns:repeat(2, 1fr); gap:8px; margin-bottom:16px; }
-    .stat-card { padding:10px 8px; }
+    .stat-card { padding:10px 8px; cursor:pointer; }
     .stat-card .number { font-size:22px; }
     .stat-card .label { font-size:9px; }
-    .stat-card .tooltip { display:none !important; }
+    /* Mobile tooltip: tap-to-toggle, positioned in-card so it doesn't overflow */
+    .stat-card .tooltip { position:fixed; left:8px; right:8px; top:auto; bottom:16px; transform:none; margin-top:0; min-width:0; max-width:none; white-space:normal; box-shadow:0 -4px 24px rgba(0,0,0,0.5); z-index:200; }
+    .stat-card .tooltip::before { display:none; }
+    .stat-card:hover .tooltip { display:none; }
+    .stat-card.touched .tooltip { display:block !important; }
     .section-header { font-size:14px; margin:20px 0 10px; gap:6px; flex-wrap:wrap; }
     .section-header .badge { font-size:10px; padding:2px 7px; }
     table { font-size:11px; }
@@ -231,8 +237,10 @@
     .dd-grid { gap:10px; }
     .ip-grid { grid-template-columns:1fr; }
     .velocity-strip { flex-direction:column; align-items:flex-start; gap:6px; padding:10px; }
-    /* Buttons and interactive elements get proper tap targets */
-    button, .pill, .action-item { min-height:32px; }
+    /* Buttons and pills get proper tap targets per Apple HIG (min ~44px) */
+    button, .action-item { min-height:36px; }
+    .pill { min-height:24px; padding:6px 12px !important; font-size:12px !important; display:inline-flex; align-items:center; }
+    .badge.pill { padding:4px 10px !important; font-size:11px !important; }
     /* Pipeline / applications tables: keep horizontal scroll but hint at it */
     .table-wrapper { position:relative; }
     .table-wrapper::after { content:"← scroll →"; position:absolute; bottom:4px; right:8px; font-size:9px; color:var(--text-muted); opacity:0.5; pointer-events:none; }
@@ -241,8 +249,38 @@
     .ne-team { padding:10px; }
     .ne-game { font-size:13px; }
     .ne-snark { font-size:11px; }
-    /* Interview prep + applications: cap long verdict/next-action text */
-    .next-action { max-width:220px; }
+    /* Hide noise columns on mobile so most-useful columns fit visible */
+    /* Applications Sent: 11 cols. Hide Applied(4), Days(5), Domain(6), Comp(8), Link(10). Keep Company, Role, Score, Location, Status, Next Action. */
+    .applications-table th:nth-child(4),
+    .applications-table td:nth-child(4),
+    .applications-table th:nth-child(5),
+    .applications-table td:nth-child(5),
+    .applications-table th:nth-child(6),
+    .applications-table td:nth-child(6),
+    .applications-table th:nth-child(8),
+    .applications-table td:nth-child(8),
+    .applications-table th:nth-child(10),
+    .applications-table td:nth-child(10) { display:none; }
+    /* Pipeline (Tier 1/2/3): 10 cols. Hide #(1), Fit(4), Added(6), Domain(7), Location(8), Link(9). Keep Company, Role, Score, Why. */
+    .pipeline-table th:nth-child(1),
+    .pipeline-table td:nth-child(1),
+    .pipeline-table th:nth-child(4),
+    .pipeline-table td:nth-child(4),
+    .pipeline-table th:nth-child(6),
+    .pipeline-table td:nth-child(6),
+    .pipeline-table th:nth-child(7),
+    .pipeline-table td:nth-child(7),
+    .pipeline-table th:nth-child(8),
+    .pipeline-table td:nth-child(8),
+    .pipeline-table th:nth-child(9),
+    .pipeline-table td:nth-child(9) { display:none; }
+    /* Verdict and notes columns: take full width on mobile, wrap freely */
+    .next-action { max-width:none; white-space:normal; }
+    .notes { max-width:none; white-space:normal; }
+  }
+  @media (max-width:480px) {
+    .header h1 { font-size:18px; }
+    .header h1 span { font-size:11px; display:block; margin-top:2px; }
   }
   @media (max-width:400px) {
     body { padding:8px 6px; }
@@ -356,7 +394,7 @@
 <details open class="collapsible-section">
 <summary class="section-header">Applications Sent <span class="badge pill-green">14 active</span> <span class="badge pill-muted" style="font-size:10px;">6 closed below</span></summary>
 <div class="table-wrapper">
-<table>
+<table class="applications-table">
   <thead><tr><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Score</th><th data-type="date">Applied</th><th data-type="num">Days</th><th data-type="text">Domain</th><th data-type="text">Location</th><th data-type="text">Comp</th><th data-type="text">Status</th><th>Link</th><th>Next Action</th></tr></thead>
   <tbody>
     <tr>
@@ -461,7 +499,7 @@
 <details open>
 <summary class="section-header" style="margin-top:12px"><span style="color:var(--green);font-weight:600;">Tier 1 — Top Targets (75+)</span> <span class="badge pill-green">0 roles</span></summary>
 <div class="table-wrapper" style="margin-top:12px">
-<table>
+<table class="pipeline-table">
   <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Fit</th><th data-type="num">Score</th><th data-type="date">Added</th><th data-type="text">Domain</th><th data-type="text">Location</th><th>Link</th><th>Why</th></tr></thead>
   <tbody>
 
@@ -473,7 +511,7 @@
 <details open>
 <summary class="section-header" style="margin-top:12px"><span style="color:var(--amber);font-weight:600;">Tier 2 — Strong Fits (60-74)</span> <span class="badge pill-amber">1 roles</span></summary>
 <div class="table-wrapper" style="margin-top:12px">
-<table>
+<table class="pipeline-table">
   <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Fit</th><th data-type="num">Score</th><th data-type="date">Added</th><th data-type="text">Domain</th><th data-type="text">Location</th><th>Link</th><th>Why</th></tr></thead>
   <tbody>
     <tr><td data-sort="1">1</td><td class="company-name" data-sort="deep bv (skilltrade)">Deep BV (Skilltrade)</td><td data-sort="managing director, skilltrade">Managing Director, Skilltrade</td><td data-sort="7"><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:70%;background:var(--amber)"></div></div> 7</div></td><td data-sort="62.0"><span class="pill pill-amber">62.0</span></td><td data-sort="2026-04-25">2026-04-25</td><td data-sort="maritime / hydrographic survey training">Maritime / Hydrographic Survey Training</td><td data-sort="netherlands (hq)">Netherlands (HQ)</td><td><a href="https://jobs.schmidtmarine.org/companies/deep-bv-hydrography-geophysics/jobs/76181660-managing-director-skilltrade" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">Maritime hydrography training MD; pure commercial-build mandate but NL-based.</td></tr>
@@ -485,7 +523,7 @@
 <details>
 <summary class="section-header" style="margin-top:12px"><span style="color:var(--text-muted);font-weight:600;">Tier 3 — Worth a Look (under 60)</span> <span class="badge pill-muted">70 roles</span></summary>
 <div class="table-wrapper" style="margin-top:12px">
-<table>
+<table class="pipeline-table">
   <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Fit</th><th data-type="num">Score</th><th data-type="date">Added</th><th data-type="text">Domain</th><th data-type="text">Location</th><th>Link</th><th>Why</th></tr></thead>
   <tbody>
     <tr><td data-sort="1">1</td><td class="company-name" data-sort="satlantis">Satlantis</td><td data-sort="corporate & business development manager">Corporate & Business Development Manager</td><td data-sort="6"><div class="fit-bar"><div class="bar"><div class="bar-fill" style="width:60%;background:var(--amber)"></div></div> 6</div></td><td data-sort="59.5"><span class="pill pill-muted">59.5</span></td><td data-sort="2026-04-11">2026-04-11</td><td data-sort="eo satellites / environmental monitoring">EO Satellites / Environmental Monitoring</td><td data-sort="spain">Spain</td><td><a href="https://www.satlantis.com/job/corporate-business-development-manager-vacancy/" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a></td><td class="next-action">EO satellite startup building miniaturized sensors. Right domain, wrong seniorit</td></tr>
@@ -573,7 +611,7 @@
 <details>
 <summary class="section-header">Rejected / Closed <span class="badge pill-muted" style="font-size:10px;">6 closed</span></summary>
 <div class="table-wrapper" style="margin-top:12px">
-<table>
+<table class="applications-table">
   <thead><tr><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Score</th><th data-type="date">Applied</th><th data-type="num">Days</th><th data-type="text">Domain</th><th data-type="text">Location</th><th data-type="text">Comp</th><th data-type="text">Status</th><th>Link</th><th>Next Action</th></tr></thead>
   <tbody>
     <tr style="opacity:0.5">
@@ -983,7 +1021,6 @@ updateStaleness();
     "Rio Grande cuts deep\nholding more than any job\npatience, cold, and time",
     "Taos sun at noon\nadobe walls drink the heat\nthe inbox can wait",
     "Piñon smoke at dusk\npinyon jays call from the sage\nnothing closes tonight",
-    "Kachina holds snow\nlate April on the north face\nno rush, the line stays",
     "Full moon on the gorge\nthe river keeps its schedule\noffers come in time",
     "Wheeler holds the dawn\nfirst light before the inbox\nwalk before the wire",
     "Empty pipeline day\nsometimes the wire just stays quiet\ntrust the craft, not noise",
@@ -1024,21 +1061,22 @@ updateStaleness();
     "Tromsø in April\npolar light returns to sea\nthe dark was a friend",
     "Forty-eight no thanks\nforty-ninth still has a pulse\nkeep the net in play",
     "Fire ban in the sage\nstatewide, all the fuel too dry\nspring came in thirsty",
-    "Burn ban back in town\nthirty percent normal rain\nthe sage waits for spark",
-    "Sangres in the red\nfuel gauges off the chart\nlanguage runs out short",
     "EPA repeals\nendangerment finding gone\nthe lawsuits begin",
     "By decree it goes\ndeep-sea mining by April\nthe seabed gets sold",
-    "Hayduke would not laugh\ndeep-sea mining by decree\nmonkey wrench it now",
-    "Rutschman hits two long\nfive home runs off Bello's arm\nSox lose ten to three",
-    "Yankees swept the place\nOrioles piled on Friday\nBoston's bad week ends",
     "Tanager finds plumes\nten methane leaks in the field\nCalifornia knocks",
-    "Pakistan's new bird\nLong March six lifts to the sky\nApril twenty-five",
-    "Pats take seven men\nDay three rolls to round seven\ndepth before the storm",
-    "Acequia hush\nseventeen percent snowpack\nwater rules the year",
-    "Adobe holds heat\nthe burn ban runs through May Day\nno spark for the sage",
-    "Wheeler holds late snow\nfourteen thousand still goes white\nskin track if you dare",
-    "EPA cut by half\ntwelve thousand staff hold the line\nlowest count in years",
-    "Mud season rolls in\nthe truck rumbles up the rim\nApril hands off May",
+    "Cora packs his box\nten and seventeen broke him\nTracy gets the keys",
+    "Tracy in the chair\nfive to three on debut night\nContreras hits one",
+    "Lomu in round one\nUtah tackle plugs the line\nthe trench gets adult",
+    "One percent snowpack\nSangres east drained out by March\nthe river runs thin",
+    "Palo Flechado\nfour percent of average\nthe ditches still wait",
+    "Acequias dry\nrationing in Talpa now\nfire damage still rules",
+    "Artemis returns\nfour around the moon and home\nfifty years between",
+    "Ten deals took the cake\ntwenty-eight percent of all\nlate-stage eats the rest",
+    "Brussels punts again\nEUDR slides a year\npilots get their breath",
+    "Mud splatters the truck\nApril rolls into a May\nthat looks like July",
+    "Cast wider, he said\nthe net pulls in stranger fish\nbreadth before the bite",
+    "Corn snow at sunrise\nspring lines hold above tree line\ndawn patrol still pays",
+    "Viasat goes up\nFalcon Heavy on the Cape\ntwenty-seventh dusk",
   ];
 
   const intros = [
@@ -1063,9 +1101,11 @@ updateStaleness();
     "Brussels punted EUDR another year. The pipeline did not blink. Haiku holds.",
     "Tanager-1 caught ten methane leaks for California's air board. Microsoft buys ninety percent of the carbon market by itself now. Pipeline quiet. Haiku stretches.",
     "Virginia redrew four House seats in a single referendum. Pipeline did not flinch. Haiku keeps count.",
-    "Orioles piled ten on three Friday after the Yankees swept Fenway. Boston's bad week ends in Baltimore. Pipeline quiet. Haiku does the work.",
-    "Burn ban back in Taos County. Sangres past the red on every chart the foresters use. Dashboard mostly empty. Haiku does the work today.",
-    "EPA repealed the endangerment finding. The lawsuits started before the press release cleared. Pipeline quiet. Haiku holds the line.",
+    "Cora got fired Saturday night, ten and seventeen out of the gate. Tracy ran the bench Sunday and won five to three behind a Contreras homer. Pipeline ran quiet. Haiku showed up.",
+    "Sangres east at one percent of normal snowpack. Palo Flechado at four. Acequias rationing in Talpa already. The water year is the story now. Pipeline quiet. Haiku holds.",
+    "EDF and fifteen co-petitioners filed against the EPA endangerment repeal April sixteenth. The litigation calendar is the work now. Pipeline quiet. Haiku on the wall.",
+    "Patriots took Caleb Lomu in the first round. Trench got an adult. Pipeline did not. Haiku covers the gap.",
+    "Artemis 2 came back from the moon April first, four humans, fifty years between. Pipeline quiet that week too. Haiku still here.",
   ];
 
   const grid = document.querySelector('.dd-grid');
@@ -1782,6 +1822,27 @@ table thead th[data-type].sort-desc::after { content: "↓"; opacity: 0.95; colo
     if (/Applications Sent|Active Pipeline|Rejected|Morning Brief Log|Speculative Outreach/i.test(text)) {
       d.removeAttribute('open');
     }
+  });
+})();
+</script>
+<script>
+// Stat-card tooltips: hover-shown on desktop, tap-to-toggle on mobile (no hover).
+// Tap a card to open its tooltip; tap again or tap another card to close/swap.
+(function() {
+  const cards = document.querySelectorAll('.stat-card');
+  cards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      // Only act as tap-toggle on mobile width
+      if (!window.matchMedia('(max-width: 640px)').matches) return;
+      const wasOpen = card.classList.contains('touched');
+      cards.forEach(c => c.classList.remove('touched'));
+      if (!wasOpen) card.classList.add('touched');
+      e.stopPropagation();
+    });
+  });
+  // Tap outside any stat card closes the tooltip
+  document.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('touched'));
   });
 })();
 </script>
