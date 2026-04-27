@@ -1064,7 +1064,8 @@ def build_html(data):
 
 </details>
 
-<div class="section-header">Active Pipeline <span class="badge pill-blue">{len(active_ranked)} actionable</span></div>
+<details open class="collapsible-section">
+<summary class="section-header">Active Pipeline <span class="badge pill-blue">{len(active_ranked)} actionable</span></summary>
 <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Derived from scored opportunities. Tier 1 = score 75+, Tier 2 = 60-74, Tier 3 = under 60.</p>
 
 <details open>
@@ -1104,6 +1105,7 @@ def build_html(data):
   </tbody>
 </table>
 </div>
+</details>
 </details>
 
 <details open class="collapsible-section">
