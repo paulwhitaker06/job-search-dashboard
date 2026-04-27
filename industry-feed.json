@@ -1,90 +1,90 @@
 {
-  "updated": "2026-04-22T22:00:00Z",
-  "_note": "Refreshed by the refresh-industry-feed scheduled task. Space, EO, maritime, climate, environment headlines with industry-insider snark. Rotate sources; do not oversample one outlet.",
+  "updated": "2026-04-27T00:17:42Z",
+  "_note": "Industry feed: Space / EO / climate / maritime news in dry insider voice. Refreshed every ~3 weeks by GHA cron.",
   "items": [
     {
-      "headline": "NordSpace nets Canadian defense funding for VLEO satellite development",
-      "url": "https://spacenews.com/nordspace-nets-canadian-defense-funding-for-vleo-satellite-development/",
-      "source": "SpaceNews",
-      "published": "2026-04-21T12:00:00Z",
-      "snark": "A $183,000 study contract is not a constellation foundation, it's a reimbursable, and the press release knows it."
+      "headline": "Spanish EO startup Xoople raises $130M Series B to map Earth for AI, signs sensor contract with L3Harris",
+      "url": "https://newsletter.terrawatchspace.com/earth-observation-essentials-april-13-2026/",
+      "source": "TerraWatch Space",
+      "published": "2026-04-13T00:00:00Z",
+      "snark": "Another promise of AI-ready constellations, this time with actual hardware orders attached instead of just slide decks."
     },
     {
-      "headline": "Earth observation operators push to deliver satellite images within minutes",
+      "headline": "Vantor announces dual EO constellations: 20cm high-fidelity and 40cm rapid-revisit smallsats",
+      "url": "https://newsletter.terrawatchspace.com/earth-observation-essentials-april-13-2026/",
+      "source": "TerraWatch Space",
+      "published": "2026-04-13T00:00:00Z",
+      "snark": "Even the resolution champion is accepting that the market wants both high-res and high-frequency, finally."
+    },
+    {
+      "headline": "EO operators push to deliver satellite images within minutes as government customers compress decision cycles",
       "url": "https://spacenews.com/earth-observation-operators-push-to-deliver-satellite-images-within-minutes/",
       "source": "SpaceNews",
-      "published": "2026-04-14T12:00:00Z",
-      "snark": "The 90-minutes-to-minutes story keeps getting reheated because the real bottleneck is the human in a SCIF, and nobody has figured out how to compress that."
+      "published": "2026-04-01T00:00:00Z",
+      "snark": "Two years ago they wanted 90 minutes, now they want minutes, and nobody is asking whether faster always equals better decisions."
     },
     {
-      "headline": "OMB suggests NOAA scale back plans for geostationary satellites",
-      "url": "https://spacenews.com/omb-suggests-noaa-scale-back-plans-for-geostationary-satellites/",
-      "source": "SpaceNews",
-      "published": "2026-04-17T12:00:00Z",
-      "snark": "Killing the GeoXO instrument contracts after a decade of NOAA building the customer base is the most expensive way an agency can try to save money this year."
+      "headline": "Vantor partners with Windward for automated maritime tracking using high-resolution satellite imagery",
+      "url": "https://newsletter.terrawatchspace.com/earth-observation-weekly-briefing-april-20-2026/",
+      "source": "TerraWatch Space",
+      "published": "2026-04-20T00:00:00Z",
+      "snark": "Product partnerships are the new distribution partnerships, at least when you can define the trigger and automate the payout."
     },
     {
-      "headline": "Boeing and Millennium Space Systems add mid-class Resolute satellite bus",
-      "url": "https://www.satellitetoday.com/manufacturing/2026/04/16/boeing-and-millennium-space-systems-add-mid-class-resolute-satellite-bus/",
-      "source": "Via Satellite",
-      "published": "2026-04-16T12:00:00Z",
-      "snark": "The 2-to-4 kW class is the missing rung Boeing has needed for a decade; whether they can actually price it against Lockheed and Airbus is the part the press release skips."
+      "headline": "Starcloud raises $170M Series A at $1.1B valuation for space data centers, near-term revenue from EO edge computing",
+      "url": "https://newsletter.terrawatchspace.com/earth-observation-essentials-april-13-2026/",
+      "source": "TerraWatch Space",
+      "published": "2026-04-13T00:00:00Z",
+      "snark": "They say orbital compute but the fine print says EO workloads are paying the rent, just like government contracts built the first constellations."
     },
     {
-      "headline": "New Glenn grounded and AST SpaceMobile satellite lost after launch anomaly",
-      "url": "https://www.satellitetoday.com/launch/2026/04/20/new-glenn-grounded-and-ast-spacemobile-satellite-lost-after-launch-anomaly/",
-      "source": "Via Satellite",
-      "published": "2026-04-20T12:00:00Z",
-      "snark": "Insurance claims are the only commercial product New Glenn has shipped this quarter, and AST will spend the next twelve months pretending the unit economics still work."
+      "headline": "Viasat confirms ViaSat-3 F3 launch for April 27 on Falcon Heavy to complete Asia-Pacific constellation",
+      "url": "https://www.viasat.com/news/latest-news/corporate/2026/viasat-confirms-viasat-3-f3-satellite-to-launch-april-27--2026/",
+      "source": "Viasat",
+      "published": "2026-04-20T00:00:00Z",
+      "snark": "Final bird in a constellation that was supposed to change everything before the first one failed, now just trying to catch up."
     },
     {
-      "headline": "At high seas treaty summit, a dispute over fisheries managers' role in conservation",
+      "headline": "Blue Origin launches third New Glenn with first booster reuse, but payload ends up in wrong orbit",
+      "url": "https://spaceflightnow.com/",
+      "source": "Spaceflight Now",
+      "published": "2026-04-20T00:00:00Z",
+      "snark": "Recovery worked beautifully but the satellite is in the wrong place, which is the expensive part of the mission."
+    },
+    {
+      "headline": "Global Fishing Watch receives $60M to map one million vessels and all fixed ocean infrastructure using AI over five years",
+      "url": "https://www.seafoodsource.com/news/environment-sustainability/global-fishing-watch-gets-usd-60-million-to-apply-ai-towards-ending-iuu",
+      "source": "SeafoodSource",
+      "published": "2026-01-15T00:00:00Z",
+      "snark": "The funding is real and the ambition is clear, but comprehensive coverage still depends on countries deciding to share VMS feeds."
+    },
+    {
+      "headline": "High seas treaty summit ends with dispute over fisheries managers' role in new marine protected areas",
       "url": "https://news.mongabay.com/2026/04/at-high-seas-treaty-summit-a-dispute-over-fisheries-managers-role-in-conservation/",
       "source": "Mongabay",
-      "published": "2026-04-04T12:00:00Z",
-      "snark": "RFMOs writing themselves into the BBNJ implementation rules is the move anyone who has watched WCPFC for two decades would have called from the airport."
+      "published": "2026-04-02T00:00:00Z",
+      "snark": "RFMOs want consultation rights on MPAs they've spent decades not protecting, and conservationists are unimpressed with the power grab."
     },
     {
-      "headline": "Talks to reduce funding for overfishing remain stalled at WTO meeting",
-      "url": "https://news.mongabay.com/2026/04/talks-to-reduce-funding-for-overfishing-remain-stalled-at-wto-meeting/",
+      "headline": "24 new deep-sea species found in Clarion-Clipperton Zone as U.S. streamlines seabed mining permits",
+      "url": "https://news.mongabay.com/2026/04/24-new-species-found-in-ocean-zone-eyed-for-battery-metals-mining/",
       "source": "Mongabay",
-      "published": "2026-04-15T12:00:00Z",
-      "snark": "Three countries blocking a subsidies deal everyone else wants is the WTO running on schedule, not malfunctioning."
+      "published": "2026-04-25T00:00:00Z",
+      "snark": "NOAA's new rule lets companies apply for exploration and recovery permits simultaneously, because discovering biodiversity shouldn't slow extraction."
     },
     {
-      "headline": "How the US rebuilt a collapsed fishery",
-      "url": "https://news.mongabay.com/short-article/2026/04/how-the-us-rebuilt-a-collapsed-fishery/",
+      "headline": "Inside Climate News: Next El Ni\u00f1o could lock Earth into hotter climate, pushing past 1.5\u00b0C threshold permanently",
+      "url": "https://insideclimatenews.org/news/25042026/el-nino-earth-warming/",
+      "source": "Inside Climate News",
+      "published": "2026-04-25T00:00:00Z",
+      "snark": "Climate scientists watching the Pacific like it's a cauldron about to boil over, and the forecast is we don't cool back down afterward."
+    },
+    {
+      "headline": "Ghana declares first marine protected area covering 703 sq km at Cape Three Points spawning grounds",
+      "url": "https://news.mongabay.com/short-article/2026/04/ghana-declares-its-first-marine-protected-area/",
       "source": "Mongabay",
-      "published": "2026-04-09T12:00:00Z",
-      "snark": "Twenty-five years from disaster declaration to recovered stocks is the real timescale of US fisheries management, and the current NOAA budget posture suggests nobody wants to run that experiment again."
-    },
-    {
-      "headline": "Cropped 22 April 2026: Global food 'catastrophe', BECCS emissions, UK solar farm controversy",
-      "url": "https://www.carbonbrief.org/cropped-22-april-2026-global-food-catastrophe-beccs-emissions-uk-solar-farm-controversy/",
-      "source": "Carbon Brief",
-      "published": "2026-04-22T12:00:00Z",
-      "snark": "BECCS booked as removals in the same week Hormuz volatility threatens 20 to 45 percent of global agrifood inputs is why the food and climate communities have stopped reading each other's papers."
-    },
-    {
-      "headline": "DeBriefed 10 April 2026: Worst energy crisis 'ever', India withdraws COP33 bid, drag artists and climate change",
-      "url": "https://www.carbonbrief.org/debriefed-10-april-2026-worst-energy-crisis-ever-india-withdraws-cop33-bid-drag-artists-and-climate-change/",
-      "source": "Carbon Brief",
-      "published": "2026-04-10T12:00:00Z",
-      "snark": "India pulling its COP33 bid will turn out to be the most consequential climate-diplomacy story of the quarter, and the energy-crisis headlines will continue to bury it."
-    },
-    {
-      "headline": "Indigenous health can't be separated from environmental health, leaders tell UN",
-      "url": "https://grist.org/indigenous/indigenous-health-cant-be-separated-from-environmental-health-leaders-tell-un/",
-      "source": "Grist",
-      "published": "2026-04-22T12:00:00Z",
-      "snark": "Indigenous health and environmental health being inseparable is obvious right up until donors and health ministries are asked to fund the work that way."
-    },
-    {
-      "headline": "Climate adaptation funding is scarce. Private investors could help.",
-      "url": "https://grist.org/economics/climate-adaptation-funding-is-scarce-private-investors-could-help/",
-      "source": "Grist",
-      "published": "2026-04-17T12:00:00Z",
-      "snark": "The 'private capital will close the adaptation gap' pitch keeps getting recycled because the only honest alternative, public balance sheets that size, is politically dead."
+      "published": "2026-04-14T00:00:00Z",
+      "snark": "A no-take core zone surrounded by regulated multiple-use areas, which is the design everyone wants and few governments actually enforce."
     }
   ]
 }
