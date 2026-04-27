@@ -591,10 +591,10 @@ def build_html(data):
     box-shadow: 0 4px 24px {season["color"]}22;
   }}
 
-  /* H1 span: large glow, brighter color */
+  /* H1 span: tinted, very subtle glow (the big seasonal feel comes from the bar/wash/band, not the title) */
   .header h1 span {{
     color: {season["color"]};
-    text-shadow: 0 0 32px {season["color"]}88, 0 0 4px {season["color"]}aa;
+    text-shadow: 0 0 12px {season["color"]}22;
   }}
 
   /* Every section header gets a season-color accent bar on the left */
