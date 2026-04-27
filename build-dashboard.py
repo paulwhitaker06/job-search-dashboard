@@ -7,7 +7,57 @@ Defaults: ./dashboard-data.json -> ./job-search-command-center.html
 """
 import json, sys, os, subprocess, shutil
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
+
+def _next_cron_fire(now: datetime, day_pattern, hour: int, minute: int = 0) -> datetime:
+    """Return the next datetime after `now` matching the given cron pattern.
+
+    day_pattern: list of valid day-of-month values (1-31), or None for daily.
+    hour, minute: UTC hour/minute the cron fires.
+
+    Doesn't try to be a full cron parser. Handles the patterns we actually use:
+      - daily (day_pattern=None) for sports/morning brief
+      - day_pattern=[1, 22] for `*/21 * *` (personal feeds, ~3-week cadence)
+      - day_pattern=list(range(1,32,3)) for `*/3 * *` (haiku, every 3 days)
+    """
+    candidates = []
+    for offset in range(0, 90):
+        d = now + timedelta(days=offset)
+        try:
+            candidate = d.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        except ValueError:
+            continue
+        if candidate <= now:
+            continue
+        if day_pattern is None or candidate.day in day_pattern:
+            return candidate
+    raise ValueError("no candidate found within 90 days")
+
+
+def _format_next_fire(dt: datetime) -> str:
+    """Format a UTC datetime as a short human-readable date for the dashboard tag."""
+    return dt.strftime("%b %-d") if hasattr(dt, "strftime") else str(dt)
+
+
+def compute_next_refresh_strings(now=None) -> dict:
+    """Pre-compute the 'next refresh' display string for each feed cadence.
+
+    Returns dict keyed by feed name. Values are strings like 'May 1'.
+    Used by the build to inject into JS / HTML so users see when fresh content
+    arrives, without anyone needing to look up cron expressions.
+    """
+    if now is None:
+        now = datetime.now(timezone.utc)
+    haiku = _next_cron_fire(now, list(range(1, 32, 3)), hour=18, minute=0)
+    personal = _next_cron_fire(now, [1, 22], hour=19, minute=0)
+    return {
+        "haiku":    _format_next_fire(haiku),
+        "industry": _format_next_fire(personal),
+        "outdoor":  _format_next_fire(personal),
+        "recipe":   _format_next_fire(personal),
+    }
+
 
 def resolve_path(p):
     """Convert ~/... paths to file:// URLs for browser linking."""
@@ -467,10 +517,26 @@ def build_personal_section(data):
         '</div>'
     )
 
+    next_refresh = compute_next_refresh_strings()
+    refresh_tag = lambda label: (
+        f'<div class="ne-refresh-tag" style="margin-top:6px;font-size:9px;'
+        f'color:var(--text-muted);opacity:0.55;letter-spacing:0.04em;">'
+        f'next refresh: {label}</div>'
+    )
+    tile_with_tag = lambda cls, tid, label, fallback, refresh_label: (
+        f'<div class="ne-team {cls}" id="{tid}" data-fallback="{fallback}">'
+        f'<div class="ne-row1"><span class="ne-team-name">{label}</span>'
+        '<span class="ne-state ne-state-loading"><span class="ne-spinner"></span>loading</span></div>'
+        '<div class="ne-game">Pulling feed&hellip;</div>'
+        '<div class="ne-snark">If this never updates, check your wifi.</div>'
+        + refresh_tag(refresh_label) +
+        '</div>'
+    )
+
     sox_tile  = tile("ne-sox", "ne-sox", "&#9918; Red Sox", mlb_fallback)
     pats_tile = tile("ne-pats", "ne-pats", "&#127944; Patriots", nfl_fallback)
-    ind_tile  = tile("ne-industry", "ne-industry", "&#128752; Industry", "Loading industry feed...")
-    out_tile  = tile("ne-outdoor", "ne-outdoor", "&#127956; Outdoors", "Loading outdoor feed...")
+    ind_tile  = tile_with_tag("ne-industry", "ne-industry", "&#128752; Industry", "Loading industry feed...", next_refresh["industry"])
+    out_tile  = tile_with_tag("ne-outdoor", "ne-outdoor", "&#127956; Outdoors", "Loading outdoor feed...", next_refresh["outdoor"])
 
     # Recipe tile is different: it has a scroll button (like the haiku) so Paul
     # can cycle through candidate recipes rather than autorotate. Shell it explicitly.
@@ -485,6 +551,7 @@ def build_personal_section(data):
         '<button id="ne-recipe-next" style="background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:10px;padding:3px 9px;border-radius:4px;cursor:pointer;font-family:inherit;">next &raquo;</button>'
         '<span id="ne-recipe-counter" style="margin-left:4px;color:var(--text-muted);font-size:10px;opacity:0.7;"></span>'
         '</div>'
+        + refresh_tag(next_refresh["recipe"]) +
         '</div>'
     )
 
@@ -641,6 +708,11 @@ def build_html(data):
         "recipe":   _read_feed("recipe-feed.json",   {"items": []}),
     }
     sports_feed_json = _json.dumps(_initial_feed)
+
+    # Pre-computed "next refresh" date strings, injected into JS for the
+    # haiku exhausted message and the personal-feed footer tags.
+    _next_refresh = compute_next_refresh_strings()
+    haiku_next_refresh_js = _json.dumps(_next_refresh["haiku"])
 
     # Speculative outreach section (hidden when empty)
     cold_outreach_list = data.get("cold_outreach", [])
@@ -1399,6 +1471,7 @@ updateStaleness();
 
 // --- Haiku when Tier 1 & 2 are empty ---
 (function() {{
+  const HAIKU_NEXT_REFRESH = {haiku_next_refresh_js};
   const haiku = [
     "Dust on the mesa\\nravens cross the Sangre line\\nspring returns, so will",
     "Rio Grande cuts deep\\nholding more than any job\\npatience, cold, and time",
@@ -1582,7 +1655,7 @@ updateStaleness();
     // Show a quiet "all caught up" message instead. The refresh button is
     // disabled until the next pipeline run adds new haiku.
     if (h.exhausted) {{
-      text.innerHTML = '<div style="color:var(--text-muted);font-size:13px;font-style:normal;opacity:0.7;">all ' + h.total + ' seen \u00b7 next batch arrives with the daily refresh</div>';
+      text.innerHTML = '<div style="color:var(--text-muted);font-size:13px;font-style:normal;opacity:0.7;">all ' + h.total + ' seen \u00b7 next batch arrives ' + HAIKU_NEXT_REFRESH + '</div>';
       if (sourceEl) {{ sourceEl.innerHTML = ''; sourceEl.style.display = 'none'; }}
       if (counter) {{ counter.textContent = ''; }}
       if (refreshBtn) {{ refreshBtn.disabled = true; refreshBtn.style.opacity = '0.4'; refreshBtn.style.cursor = 'not-allowed'; }}
