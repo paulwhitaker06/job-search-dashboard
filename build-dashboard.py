@@ -582,10 +582,10 @@ def build_html(data):
     z-index:-1;
   }}
 
-  /* Header band: bolder background tint, thicker more visible border */
+  /* Header band: dark base so the tinted H1 actually contrasts; subtle border + glow */
   .header {{
     border-bottom: 3px solid {season["color"]}aa;
-    background: linear-gradient(180deg, {season["color"]}33, {season["color"]}11 80%, transparent);
+    background: linear-gradient(180deg, {season["color"]}0a, transparent 60%);
     border-radius: 8px 8px 0 0;
     padding: 16px 16px 14px 16px;
     box-shadow: 0 4px 24px {season["color"]}22;
@@ -905,30 +905,18 @@ def build_html(data):
     .ne-game {{ font-size:13px; }}
     .ne-snark {{ font-size:11px; }}
     /* Hide noise columns on mobile so most-useful columns fit visible */
-    /* Applications Sent: 11 cols. Hide Applied(4), Days(5), Domain(6), Comp(8), Link(10). Keep Company, Role, Score, Location, Status, Next Action. */
+    /* Applications Sent: 11 cols. Hide only Applied(4). Days, Domain, Comp, Link all kept per Paul's request 2026-04-26 (table will scroll horizontally on phone, that's fine). */
     .applications-table th:nth-child(4),
-    .applications-table td:nth-child(4),
-    .applications-table th:nth-child(5),
-    .applications-table td:nth-child(5),
-    .applications-table th:nth-child(6),
-    .applications-table td:nth-child(6),
-    .applications-table th:nth-child(8),
-    .applications-table td:nth-child(8),
-    .applications-table th:nth-child(10),
-    .applications-table td:nth-child(10) {{ display:none; }}
-    /* Pipeline (Tier 1/2/3): 10 cols. Hide #(1), Fit(4), Added(6), Domain(7), Location(8), Link(9). Keep Company, Role, Score, Why. */
+    .applications-table td:nth-child(4) {{ display:none; }}
+    /* Pipeline (Tier 1/2/3): 10 cols. Hide #(1), Fit(4), Added(6), Location(8). Keep Domain(7) and Link(9) per Paul's request 2026-04-26. */
     .pipeline-table th:nth-child(1),
     .pipeline-table td:nth-child(1),
     .pipeline-table th:nth-child(4),
     .pipeline-table td:nth-child(4),
     .pipeline-table th:nth-child(6),
     .pipeline-table td:nth-child(6),
-    .pipeline-table th:nth-child(7),
-    .pipeline-table td:nth-child(7),
     .pipeline-table th:nth-child(8),
-    .pipeline-table td:nth-child(8),
-    .pipeline-table th:nth-child(9),
-    .pipeline-table td:nth-child(9) {{ display:none; }}
+    .pipeline-table td:nth-child(8) {{ display:none; }}
     /* Verdict and notes columns: take full width on mobile, wrap freely */
     .next-action {{ max-width:none; white-space:normal; }}
     .notes {{ max-width:none; white-space:normal; }}
