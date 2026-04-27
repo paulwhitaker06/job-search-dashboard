@@ -54,3 +54,60 @@ These live in `paul-job-search` plugin's `references/scoring-rubric.md`. Quick-r
 - If the fix is "make something Paul can actually edit and own," do that instead of an override layer.
 - Don't be precious. Paul would rather hear "I fucked this up" than "I apologize for the inconsistent framing."
 - Run the em-dash gate. Always.
+
+## Job-search pipeline architecture
+
+Read this before doing anything that touches the dashboard, the morning brief, the haiku/sports/personal-feed refreshes, or the bootstrap directories. Today (2026-04-27) Paul and I lost an afternoon rediscovering most of it.
+
+### Two repos, distinct ownership
+
+- **paulwhitaker06/job-search-dashboard** — the public-facing dashboard. Owns `dashboard-data.json`, `index.html`, `job-search-command-center.html`, the various `*-feed.json` files, plus all the `phaseN-bootstrap/` staging directories and the bootstrap-style READMEs. Local clone at `~/Documents/Claude/Projects/Improving the dashboard`. Live at https://paulwhitaker06.github.io/job-search-dashboard/.
+- **paulwhitaker06/paul-job-pipeline** — the headless orchestrator. Owns the `pipeline/` Python package and the `.github/workflows/` GHA workflow files that actually run on cron. Local clone at `~/Documents/Claude/Projects/paul-job-pipeline`. Drafted 2026-04-26.
+
+### Phase deploy pattern (canonical)
+
+Phases are drafted as `phaseN-bootstrap/` subdirs in the dashboard repo, then promoted into paul-job-pipeline via straight cp-R. Three lines from a terminal:
+
+```
+cd ~/Documents/Claude/Projects/paul-job-pipeline
+cp -R "$HOME/Documents/Claude/Projects/Improving the dashboard/phaseN-bootstrap/." .
+git add . && git commit -m "Phase N: ..." && git push
+```
+
+Each `phaseN-bootstrap/` mirrors the target structure: `pipeline/` for Python modules, `.github/workflows/` for the cron, plus a `README.html` (which becomes the new top-level README on deploy). The bootstrap dirs in the dashboard repo are NOT live workflows. They're staging only. Don't conflate them with what's actually running.
+
+### What's actually deployed in paul-job-pipeline (as of 2026-04-27)
+
+`.github/workflows/` contains:
+- `morning-brief.yml` — daily 13:00 UTC (7am MDT)
+- `refresh-haiku.yml` — every 3 days at 18:00 UTC (noon MDT)
+- `refresh-personal-feeds.yml` — every 21 days at 19:00 UTC (1pm MDT)
+- `refresh-sports.yml` — daily 14:00 UTC (8am MDT) [deployed 2026-04-27 from phase11b-bootstrap]
+- A bunch of `phaseN-checkpoint.yml` per-phase manual-trigger validators
+
+If a refresh isn't appearing, first check whether the workflow file actually exists in paul-job-pipeline, not whether a draft exists in the dashboard repo's bootstrap dir.
+
+### Auth model — read carefully before reaching for a new PAT
+
+There is exactly one PAT in normal use, named `paul-job-pipeline-dashboard-push`, scoped to `paulwhitaker06/job-search-dashboard` only with contents:write. It exists so paul-job-pipeline's GHA workflows can push to the dashboard repo (via the `DASHBOARD_REPO_TOKEN` secret in GHA, AND via `~/.claude/dashboard-push-token` for sandbox-side pushes). Same token, two consumers.
+
+This PAT does NOT have write access to paul-job-pipeline itself, by design. paul-job-pipeline's own GHA workflows self-push using the auto-provided `GITHUB_TOKEN`. Sandbox-side writes to paul-job-pipeline are NOT a supported flow — Paul does those via cp-R from his local clone. Don't try to invent a Claude-to-paul-job-pipeline auth path. The clean answer is "ask Paul to run the cp-R."
+
+Token file: `~/.claude/dashboard-push-token` (chmod 600).
+
+### Sandbox-side dashboard pushes
+
+The `dashboard-push` skill (in `~/.claude/skills/dashboard-push/`) wraps the API path: clone fresh into `/tmp/dashboard-push`, run a modifier callback, build HTML, commit, push. Use it whenever Paul says "update the dashboard," "log this on the dashboard," "push that change," or anything where a dashboard edit is the obvious next step. The helper module lives at `pipeline/dashboard_push/` in the dashboard repo and is committed to origin.
+
+Do NOT touch Paul's local working tree of the dashboard repo when making sandbox-driven dashboard updates. The launchd auto-push agent races with manual-tree edits and produced today's divergence storm. The dashboard-push skill never touches the local tree, which is the correct pattern.
+
+### Cowork desktop scheduled tasks
+
+All Cowork (Claude desktop) scheduled tasks for the job search pipeline are disabled as of 2026-04-27. Paul wants no leash to his laptop. If a refresh seems missing, the answer is never "is the Mac awake?" The answer is "is the GHA workflow deployed and is its cron correct?"
+
+### Common pitfalls
+
+1. The bootstrap dir's `refresh-X.yml` is NOT the deployed workflow. The deployed one is in paul-job-pipeline.
+2. The dashboard PAT is intentionally narrow. Don't ask Paul to widen it; deploy via cp-R instead.
+3. The dashboard's `Push Dashboard.command` does not pull-rebase before pushing, so it'll fail on divergence. The `dashboard-push` skill is the better path; if Push Dashboard fails, the recovery is `git stash && git pull --rebase origin main && git stash pop && Push Dashboard.command`.
+4. The cron schedules are in the workflow files in paul-job-pipeline, not in the bootstrap dirs. If you want to confirm or change a schedule, look at paul-job-pipeline's `.github/workflows/`.
