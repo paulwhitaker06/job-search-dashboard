@@ -240,8 +240,8 @@
     }
   },
   "stats": {
-    "applications_sent": 24,
-    "awaiting_response": 14,
+    "applications_sent": 25,
+    "awaiting_response": 15,
     "active_interviews": 3,
     "active_pipeline": 72,
     "deep_dives_done": 15,
@@ -253,50 +253,52 @@
     {
       "company": "Deep BV (Skilltrade)",
       "role": "Managing Director, Skilltrade",
-      "score": 62.0,
+      "score": 70.0,
       "proxy_score": null,
-      "effective_score": 62.0,
-      "fit": 7,
-      "has_deep_dive": false,
+      "effective_score": 70.0,
+      "fit": 8,
+      "has_deep_dive": true,
       "date": "2026-04-25",
-      "scqa": "Building a maritime training business as commercial-build pattern",
-      "verdict": "Direct match on the work itself: JD says MD is 'ultimately responsible for the commercial success and strategic direction of Skilltrade, with a clear emphasis on sales, market development and client relationships' and seeks 'a commercially driven leader with a strong entrepreneurial mindset and a passion for building businesses' \u2014 that maps to Paul's new-commercial-function pattern in maritime hydrography. NL-headquartered subsidiary, foreign residency expected, GC capped at 2. Tier 2 by score, but actionability gated on Paul's relocation willingness; deep dive deferred pending his call.",
+      "scqa": "Acquisition Cross-Sell",
+      "verdict": "Strong content fit for Paul's commercial-build pattern (KSAT 2011-2021 arc): the MD is a CEO-of-subsidiary mandate with explicit sales-led emphasis, post-acquisition (March 2025) inflection. Cross-sell thesis between Deep's fleet and Skilltrade's IHO Cat B credential is the strategic question, and Paul's multi-stakeholder deal architecture (Planet Labs three-way, ASN) maps directly. Pursue only after confirming Deep is open to NL work-authorization sponsorship.",
       "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
+      "status": "applied",
       "overdue": null,
       "job_urls": [
         "https://jobs.schmidtmarine.org/companies/deep-bv-hydrography-geophysics/jobs/76181660-managing-director-skilltrade"
       ],
       "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Deep_BV_Skilltrade_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed",
       "added": "2026-04-25",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "Maritime / Hydrographic Survey Training",
-      "location": "Netherlands (HQ)",
-      "hook": "Maritime hydrography training MD; pure commercial-build mandate but NL-based.",
+      "location": "Amsterdam, Netherlands (hybrid)",
+      "hook": "Post-acquisition cross-sell mandate; CEO-of-subsidiary commercial build with fleet-plus-credential moat.",
       "blockers": [
         {
-          "type": "geographic_residency",
-          "detail": "NL-headquartered Skilltrade subsidiary; role requires presence in Netherlands. Paul is in Taos, NM.",
+          "type": "work_authorization",
+          "detail": "Paul has no EU work authorization. Surfaced in the cover letter; sponsorship conversation gates the role.",
           "severity": "hard"
         },
         {
           "type": "narrow_experience",
-          "detail": "Hydrographic training/certification is adjacent to Paul's maritime/EO commercial work but not a direct match to running a training academy.",
+          "detail": "No prior training-academy leadership; commercial-build pattern transfers, academic governance does not.",
           "severity": "soft"
         }
       ],
       "dimension_scores": {
-        "RF": 7,
+        "RF": 8,
         "SA": 7,
         "IL": 6,
-        "SPM": 7,
+        "SPM": 8,
         "CO": 6,
-        "GC": 2
+        "GC": 6
       },
-      "rank": 1
+      "rank": 1,
+      "applied_date": "2026-04-27",
+      "follow_up_trigger": "2026-05-04"
     },
     {
       "rank": 2,
@@ -3772,6 +3774,27 @@
       "next_action": "General application on file since 3/21 via Greenhouse. Auto-response only. No specific role in play. No follow-up needed; await company-initiated outreach or a specific VP/Director commercial posting.",
       "status": "speculative",
       "urgent": false
+    },
+    {
+      "company": "Deep BV (Skilltrade)",
+      "role": "Managing Director, Skilltrade",
+      "applied": "2026-04-27",
+      "score": 70.0,
+      "domain": "Maritime / Hydrographic Survey Training",
+      "location": "Amsterdam, Netherlands (hybrid; IJmuiden practical site)",
+      "comp": "Not disclosed; senior executive role",
+      "status": "awaiting",
+      "next_action": "Acknowledgement from Daphne 4/27. Response promised within one week. Follow up 5/4 if no reply.",
+      "urgent": false,
+      "job_url": "https://careers.deepbv.nl/jobs/7137817-managing-director-skilltrade",
+      "applied_score": 70.0,
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Paul has no EU work authorization. Surfaced in cover letter; sponsorship gates the role.",
+          "severity": "hard"
+        }
+      ]
     }
   ],
   "watch_list": [
