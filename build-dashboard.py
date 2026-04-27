@@ -713,6 +713,7 @@ def build_html(data):
     # haiku exhausted message and the personal-feed footer tags.
     _next_refresh = compute_next_refresh_strings()
     haiku_next_refresh_js = _json.dumps(_next_refresh["haiku"])
+    personal_next_refresh_js = _json.dumps(_next_refresh["industry"])  # industry/outdoor/recipe share the cron
 
     # Speculative outreach section (hidden when empty)
     cold_outreach_list = data.get("cold_outreach", [])
@@ -1712,6 +1713,11 @@ updateStaleness();
   // We also poll ./sports-feed.json every 3 minutes so fresh items land without a reload.
   let FEED = {sports_feed_json};
 
+  // Pre-computed at build time from the personal-feeds cron schedule. Used as
+  // the footer tag on Industry/Outdoors tiles since renderFeedCard rewrites
+  // their innerHTML on every paint and would wipe out a static tag.
+  const PERSONAL_NEXT_REFRESH = {personal_next_refresh_js};
+
   // ---- Snark templates for live game state (per-team) — Barstool-adjacent bar-stool-podcast voice.
   const TPL = {{
     sox: {{
@@ -2038,7 +2044,8 @@ updateStaleness();
         + '<span class="ne-state ne-state-quiet">QUIET</span>'
         + '</div>'
         + '<div class="ne-game">No fresh takes on the wire.</div>'
-        + '<div class="ne-snark">' + escapeHtml(pick(tpl.off)) + '</div>';
+        + '<div class="ne-snark">' + escapeHtml(pick(tpl.off)) + '</div>'
+        + (footerText ? '<div class="ne-pitchers">' + escapeHtml(footerText) + '</div>' : '');
       return;
     }}
     let idx = Math.floor(Math.random() * items.length);
@@ -2114,8 +2121,9 @@ updateStaleness();
     const $outdoor  = document.getElementById('ne-outdoor');
     const indItems = (FEED.industry && FEED.industry.items) || [];
     const outItems = (FEED.outdoor  && FEED.outdoor.items)  || [];
-    if ($industry) renderFeedCard($industry, 'industry', indItems, 'Industry', '');
-    if ($outdoor)  renderFeedCard($outdoor,  'outdoor',  outItems, 'Outdoors', '');
+    const personalFeedFooter = 'next refresh: ' + PERSONAL_NEXT_REFRESH;
+    if ($industry) renderFeedCard($industry, 'industry', indItems, 'Industry', personalFeedFooter);
+    if ($outdoor)  renderFeedCard($outdoor,  'outdoor',  outItems, 'Outdoors', personalFeedFooter);
 
     // Recipe tile: haiku-style manual scroll, NOT auto-rotating
     const $recipe = document.getElementById('ne-recipe');
