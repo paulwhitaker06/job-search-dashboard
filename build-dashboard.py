@@ -563,39 +563,53 @@ def build_html(data):
     seasonal_override_html = f'''<style>
   :root {{ --accent-light: {season["color"]}; --season: {season["color"]}; }}
 
-  /* Top bar: thick, glowing, unmissable */
+  /* Top bar: 8px, fully saturated, big glow, unmissable */
   body::before {{
     content:"";
     position:fixed; top:0; left:0; right:0;
-    height:6px;
-    background: linear-gradient(90deg, {season["color"]}55, {season["color"]}, {season["color"]}, {season["color"]}55);
-    box-shadow: 0 0 24px {season["color"]}66;
+    height:8px;
+    background: linear-gradient(90deg, {season["color"]}88, {season["color"]}, {season["color"]}, {season["color"]}88);
+    box-shadow: 0 2px 32px {season["color"]}aa, 0 0 8px {season["color"]};
     z-index:999;
   }}
 
-  /* Page-wide tint: subtle warm wash from the top, like ambient sunset light */
+  /* Page-wide tint: stronger warm wash, deeper drop */
   body::after {{
     content:"";
     position:fixed; top:0; left:0; right:0; bottom:0;
-    background: radial-gradient(ellipse 130% 55% at 50% 0%, {season["color"]}22, transparent 70%);
+    background: radial-gradient(ellipse 140% 70% at 50% 0%, {season["color"]}3a, transparent 75%);
     pointer-events:none;
     z-index:-1;
   }}
 
-  /* Header band: tinted background and thicker accent border */
+  /* Header band: bolder background tint, thicker more visible border */
   .header {{
-    border-bottom: 2px solid {season["color"]}55;
-    background: linear-gradient(180deg, {season["color"]}14, transparent 90%);
-    border-radius: 6px 6px 0 0;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 14px;
+    border-bottom: 3px solid {season["color"]}aa;
+    background: linear-gradient(180deg, {season["color"]}33, {season["color"]}11 80%, transparent);
+    border-radius: 8px 8px 0 0;
+    padding: 16px 16px 14px 16px;
+    box-shadow: 0 4px 24px {season["color"]}22;
   }}
 
-  /* H1 span: stronger glow */
+  /* H1 span: large glow, brighter color */
   .header h1 span {{
     color: {season["color"]};
-    text-shadow: 0 0 24px {season["color"]}44;
+    text-shadow: 0 0 32px {season["color"]}88, 0 0 4px {season["color"]}aa;
+  }}
+
+  /* Every section header gets a season-color accent bar on the left */
+  .section-header {{
+    border-left: 3px solid {season["color"]}cc;
+    padding-left: 12px;
+    background: linear-gradient(90deg, {season["color"]}14, transparent 30%);
+    border-radius: 0 4px 4px 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }}
+
+  /* Stat cards get a thin season-color top bar */
+  .stat-card {{
+    border-top: 2px solid {season["color"]}66;
   }}
 </style>'''
 
