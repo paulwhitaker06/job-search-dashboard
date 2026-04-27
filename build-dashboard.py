@@ -1577,6 +1577,19 @@ updateStaleness();
     const i = pickUnseen(intros, INTRO_KEY, INTRO_SIG_KEY, introSig, iMem);
     memSeenHaiku = hMem.value;
     memSeenIntro = iMem.value;
+
+    // Pool exhausted: do NOT render an old haiku. Paul's rule is no repeats.
+    // Show a quiet "all caught up" message instead. The refresh button is
+    // disabled until the next pipeline run adds new haiku.
+    if (h.exhausted) {{
+      text.innerHTML = '<div style="color:var(--text-muted);font-size:13px;font-style:normal;opacity:0.7;">all ' + h.total + ' seen \u00b7 next batch arrives with the daily refresh</div>';
+      if (sourceEl) {{ sourceEl.innerHTML = ''; sourceEl.style.display = 'none'; }}
+      if (counter) {{ counter.textContent = ''; }}
+      if (refreshBtn) {{ refreshBtn.disabled = true; refreshBtn.style.opacity = '0.4'; refreshBtn.style.cursor = 'not-allowed'; }}
+      return;
+    }}
+
+    if (refreshBtn) {{ refreshBtn.disabled = false; refreshBtn.style.opacity = ''; refreshBtn.style.cursor = ''; }}
     const introText = haikuText(i.item);
     const bodyText = haikuText(h.item);
     const url = haikuUrl(h.item);
@@ -1592,11 +1605,7 @@ updateStaleness();
       }}
     }}
     if (counter) {{
-      if (h.exhausted) {{
-        counter.textContent = 'all ' + h.total + ' seen \u00b7 fresh batch coming';
-      }} else {{
-        counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
-      }}
+      counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
     }}
   }}
 
