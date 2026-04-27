@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26",
+  "last_updated": "2026-04-27",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers \u2014 Patriots' Day at Fenway",
@@ -243,11 +243,11 @@
     "applications_sent": 24,
     "awaiting_response": 14,
     "active_interviews": 3,
-    "active_pipeline": 71,
+    "active_pipeline": 72,
     "deep_dives_done": 15,
     "resumes_built": 1,
     "rejected_closed": 6,
-    "last_updated": "2026-04-26"
+    "last_updated": "2026-04-27"
   },
   "ranked_opportunities": [
     {
@@ -1528,7 +1528,7 @@
       "doc_path": null,
       "doc_note": "Tier 3, right company and stage, wrong role (science-ops / registry management, not market-building).",
       "added": "2026-04-24",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "Carbon Removal / Enhanced Rock Weathering",
       "location": "Remote-first (hubs Sao Paulo, Rio de Janeiro, New York, London; HQ Germany/Brazil)",
@@ -1641,7 +1641,60 @@
       "blockers": []
     },
     {
-      "rank": 39,
+      "company": "",
+      "role": "Carbon Credits Market Development Lead",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-27",
+      "scqa": "",
+      "verdict": "This role requires '10 years of related market development or client facing experience, including 2+ years in carbon markets' and 'deep understanding of the voluntary carbon market (VCM) including methodologies and high-quality criteria.' Paul has zero carbon market experience. The cap fires hard: RF=4 because Paul does not meet the named sector-depth requirement, IL=3 because he lacks the named network ('existing relationships with CDR buyers and broader ecosystem'). SPM=6 reflects generic multi-stakeholder coordination language but no specific match to Paul's three patterns. The geographic constraint (Spring, TX, campus-based role with no remote mention) and total lack of carbon credit domain experience make this a clear pass despite the ExxonMobil relationship from KSAT days.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.exxonmobil.com/job/spring-carbon-credits-market-development-lead-tx-77389/1379601300/?feedid=223600&utm_source=linkedinjobpostings&utm_campaign=eom_linkedin"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-27",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Spring, TX, US, 77389",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Hard experience requirement",
+          "detail": "JD requires 'A minimum of 10 years of related market development or client facing experience, including 2+ years in carbon markets.' Paul has zero years in carbon markets specifically. His EO/maritime monitoring background does not translate to carbon credit methodologies, VCM registries, or CDR pathways.",
+          "severity": "hard"
+        },
+        {
+          "type": "Domain expertise gap",
+          "detail": "Role requires 'deep understanding of the voluntary carbon market (VCM) including methodologies and high-quality criteria' and 'existing relationships with CDR buyers and broader ecosystem.' Paul has no carbon market experience, no VCM methodology knowledge, and no relationships in the carbon credit buyer ecosystem.",
+          "severity": "hard"
+        },
+        {
+          "type": "Geographic constraint",
+          "detail": "Role is based in Spring, TX (Houston metro) with no indication of remote work flexibility. Paul is in Taos, NM and would need to relocate or face a difficult commute. ExxonMobil campus culture suggests in-person expectation.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 8,
+        "GC": 3
+      },
+      "rank": 39
+    },
+    {
+      "rank": 40,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -1670,7 +1723,7 @@
       "blockers": []
     },
     {
-      "rank": 40,
+      "rank": 41,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -1705,7 +1758,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 42,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -1755,7 +1808,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 43,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -1808,7 +1861,7 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 44,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -1851,7 +1904,7 @@
       ]
     },
     {
-      "rank": 44,
+      "rank": 45,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -1886,7 +1939,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 46,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -1921,7 +1974,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 47,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -1995,10 +2048,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 47
+      "rank": 48
     },
     {
-      "rank": 48,
+      "rank": 49,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -2033,7 +2086,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 50,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -2113,10 +2166,10 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 50
+      "rank": 51
     },
     {
-      "rank": 51,
+      "rank": 52,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -2145,7 +2198,7 @@
       "blockers": []
     },
     {
-      "rank": 52,
+      "rank": 53,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -2185,7 +2238,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 54,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -2235,7 +2288,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 55,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -2283,7 +2336,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 56,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -2312,7 +2365,7 @@
       "blockers": []
     },
     {
-      "rank": 56,
+      "rank": 57,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -2384,7 +2437,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 57
+      "rank": 58
     },
     {
       "company": "Arable",
@@ -2432,10 +2485,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 58
+      "rank": 59
     },
     {
-      "rank": 59,
+      "rank": 60,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -2483,7 +2536,7 @@
       }
     },
     {
-      "rank": 60,
+      "rank": 61,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -2518,7 +2571,7 @@
       ]
     },
     {
-      "rank": 61,
+      "rank": 62,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -2547,7 +2600,7 @@
       "blockers": []
     },
     {
-      "rank": 62,
+      "rank": 63,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -2568,7 +2621,7 @@
       "doc_path": null,
       "doc_note": "Tier 3 pass \u2014 wrong sector, wrong network, wrong country.",
       "added": "2026-04-24",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "Ad Tech / Transit App Monetization",
       "location": "London, UK (hybrid, Chancery Lane office)",
@@ -2627,7 +2680,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 63
+      "rank": 64
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -2680,10 +2733,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 64
+      "rank": 65
     },
     {
-      "rank": 65,
+      "rank": 66,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -2704,7 +2757,7 @@
       "doc_path": null,
       "doc_note": "Tier 3 pass \u2014 wrong role shape, wrong geography.",
       "added": "2026-04-24",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "Climate Advocacy / Mayoral Network",
       "location": "Brussels, Johannesburg, or London",
@@ -2763,10 +2816,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 66
+      "rank": 67
     },
     {
-      "rank": 67,
+      "rank": 68,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -2816,7 +2869,7 @@
       }
     },
     {
-      "rank": 68,
+      "rank": 69,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -2906,10 +2959,10 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 69
+      "rank": 70
     },
     {
-      "rank": 70,
+      "rank": 71,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -2954,7 +3007,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -3004,7 +3057,7 @@
       }
     },
     {
-      "rank": 72,
+      "rank": 73,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -4218,6 +4271,247 @@
       "high_scores": 1,
       "deep_dives": 1,
       "result": "Asimov 56/100"
+    },
+    {
+      "date": "2026-04-27",
+      "digest_count": 32,
+      "scored_count": 2,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "",
+          "role": "Carbon Credits Market Development Lead",
+          "score": 48.0
+        }
+      ],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "harbourenergy",
+          "role": "Carbon Compliance Adviser",
+          "score": 37.0,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Associated Director",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Service Commercial Manager",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Carbon Farming Advisor (Business Development)",
+          "url": "https://www.seek.com.au/job/91582979?type=standard&ref=search-standalone&origin=cardtitle#sol=1fc21edff5b9b69086dc60edf44891460f1f0ed3",
+          "reason": "fetch_unreadable:http_403"
+        },
+        {
+          "company": "careers",
+          "role": "Chief Operating Officer",
+          "url": "https://carbonlimits.zohorecruit.eu/jobs/careers/44618000004968001/chief-operating-officer---climate-consultancy-business?source=linkedin-basic&embedsource=linkedin%2blimited%2blistings",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "32 digest entries. 2 scored. 0 Tier 1, 0 Tier 2, 1 Tier 3 added. 0 skipped (dedup), 0 excluded, 0 flagged for review, 4 unscored/error.",
+      "jobs_processed": 32,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "32 digest entries. 2 scored. 0 Tier 1, 0 Tier 2, 1 Tier 3 added. 0 skipped (dedup), 0 excluded, 0 flagged for review, 4 unscored/error. 26 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Senior Manager, Supply Chain",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Crusoe/259de8c2-9b8a-4400-b50d-798bf05e769c",
+          "reason": "Senior Manager, Supply Chain is an operations role outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Carbon & Sustainability Data Specialist",
+          "source": "Jobs in Carbon",
+          "url": "https://hiringnow.dei.gr/adsutilities/login.jsp",
+          "reason": "URL is a Greek utilities login page (dei.gr/adsutilities/login.jsp), not a job posting or company career page, cannot fetch JD.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Manager - Carbon Accounting & SBTi Commitment (Randers SV, DK, 8940)",
+          "source": "Jobs in Carbon",
+          "url": "https://jobs.danishcrown.com/job/randers-sv-sustainability-manager-carbon-accounting-&-sbti-commitment-8940/1386035633/",
+          "reason": "Sustainability Manager carbon accounting role is a climate/sustainability function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "INTERN - Geodesy and Geospatial Research Support",
+          "source": "GEO Careers",
+          "url": "https://www.geo-careers.com/",
+          "reason": "INTERN role is wrong seniority; Paul targets VP/Director-level commercial leadership positions.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Analyst (Journeyman)",
+          "source": "GEO Careers",
+          "url": "https://www.geo-careers.com/",
+          "reason": "Geospatial Analyst (Journeyman) is an IC technical analysis role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Data Scientist / Research Data Analyst",
+          "source": "GEO Careers",
+          "url": "https://www.geo-careers.com/",
+          "reason": "Title is 'Geospatial Data Scientist / Research Data Analyst' which is a research/data science IC role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director, AI Model LifeCycle",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Crusoe/0c663a15-3cb1-4022-8d01-5f7317167816",
+          "reason": "Senior Director AI Model Lifecycle is a product/engineering leadership role building ML infrastructure, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "PE Associate Director/Director, Electrical - \u201cHigh-Rise & Complex Buildings\u201d",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "PE (Professional Engineer) Associate Director/Director Electrical for high-rise buildings is an engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "PE Associate Director/Director, Mechanical - \u201cHigh-Rise & Complex Buildings\u201d",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "PE Associate Director/Director Mechanical role is a Professional Engineer position in building mechanical systems, wrong function (engineering).",
+          "confidence": "high"
+        },
+        {
+          "title": "VP of Accounting",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "VP of Accounting is a finance/accounting function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Major Gifts",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Director of Major Gifts is a fundraising/development role, wrong function (not commercial/BD/partnerships).",
+          "confidence": "high"
+        },
+        {
+          "title": "Youth and Family Services Director",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/nwifc/jobs/76305749-youth-and-family-services-director",
+          "reason": "Youth and Family Services Director is an HR/social services function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President, Global Development",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/oceana/jobs/76317682-vice-president-global-development",
+          "reason": "Vice President, Global Development at Oceana is a fundraising/development role (nonprofit donor relations), not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Public Relations Director",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/454475230-public-relations-director",
+          "reason": "Public Relations Director is a marketing/communications function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, OSP/ISP Construction",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/454491414-director-osp-isp-construction",
+          "reason": "OSP/ISP Construction Director is outside-plant/inside-plant telecom infrastructure construction, wrong function and off-domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Auditor, Carbon Offsets (Energy & Industry)",
+          "source": "Jobs in Carbon",
+          "url": "https://scs.clearcompany.com/careers/jobs/57fe54e5-774e-b5a4-6097-f006d227e707/apply?source=3627093-jb-1018",
+          "reason": "Auditor role is a technical compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Officer, Global Voluntary Carbon Market (GVCM) Unit",
+          "source": "Jobs in Carbon",
+          "url": "https://careers.gggi.org/vacancy/officer-global-voluntary-carbon-market-gvcm-unit-609729.html",
+          "reason": "Officer-level title signals junior IC role below Paul's Director/VP target seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Early Career Consultant",
+          "source": "Jobs in Carbon",
+          "url": "https://erm.wd3.myworkdayjobs.com/erm_careers/job/sydney-australia/early-career-consultant---carbon-markets_r00030095-2",
+          "reason": "Early Career Consultant is wrong-seniority junior IC role, not director-level commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Carbon Analyst",
+          "source": "Jobs in Carbon",
+          "url": "https://sjp.csod.com/ux/ats/careersite/4/requisition/4286/application?c=sjp&source=linkedin&jobboardid=0#1",
+          "reason": "Carbon Analyst is an analyst-level role, wrong seniority for Paul's VP/Director-level commercial leadership target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Commodities Trader: EAC & Voluntary Carbon Markets)",
+          "source": "Jobs in Carbon",
+          "url": "https://careers.southpole.com/jobs/7613605-environmental-commodities-tradereac-voluntary-carbon-markets",
+          "reason": "Environmental Commodities Trader is a trading desk role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Development and Communications",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52171/director-of-development-and-communications/?LinkSource=PremiumListing",
+          "reason": "Director of Development and Communications is a fundraising and marketing role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Mechanical Engineer",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Principal Mechanical Engineer is an engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Water Design Manager",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Principal Water Design Manager is an engineering/design role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "6.6. Chief Financial Officer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/454442610-6-6-chief-financial-officer",
+          "reason": "Chief Financial Officer is a Finance function role, clearly outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "1.1. Chief Financial Officer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/454442610/apply",
+          "reason": "Chief Financial Officer is a finance function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Systems Software Engineer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/454491412-principal-systems-software-engineer",
+          "reason": "Principal Systems Software Engineer is a pure engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        }
+      ]
     }
   ],
   "cold_outreach": [],
