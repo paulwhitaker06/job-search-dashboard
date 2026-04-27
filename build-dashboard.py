@@ -1106,10 +1106,12 @@ def build_html(data):
 </div>
 </details>
 
-<div class="section-header">Company of the Day <span class="badge pill-cyan">from {len(data.get("watch_list",[]))} watched</span></div>
+<details open class="collapsible-section">
+<summary class="section-header">Company of the Day <span class="badge pill-cyan">from {len(data.get("watch_list",[]))} watched</span></summary>
 <div id="cotd-spotlight" class="cotd-card">
   <div class="cotd-loading" style="color:var(--text-muted);font-size:13px;padding:20px;">Loading...</div>
 </div>
+</details>
 
 {speculative_outreach_html}
 
