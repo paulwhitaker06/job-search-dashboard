@@ -1276,6 +1276,11 @@ updateStaleness();
   // their innerHTML on every paint and would wipe out a static tag.
   const PERSONAL_NEXT_REFRESH = "May 1";
 
+  // Pre-computed at build time from the personal-feeds cron schedule. Used as
+  // the footer tag on Industry/Outdoors tiles since renderFeedCard rewrites
+  // their innerHTML on every paint and would wipe out a static tag.
+  const PERSONAL_NEXT_REFRESH = "May 1";
+
   // ---- Snark templates for live game state (per-team) — Barstool-adjacent bar-stool-podcast voice.
   const TPL = {
     sox: {
