@@ -1504,23 +1504,31 @@ updateStaleness();
   function haikuSrc(item)  {{ return (typeof item === 'string') ? null : (item.s || null); }}
 
   // No-repeat cycle: pick from unseen pool tracked in localStorage.
-  // Pool-version key forces reset if pool contents change.
-  const POOL_KEY = 'dashHaikuSeen_v4';
-  const INTRO_KEY = 'dashIntroSeen_v4';
-  const POOL_SIG_KEY = 'dashHaikuSig_v4';
-  const INTRO_SIG_KEY = 'dashIntroSig_v4';
-  // Stable pool signature: only resets when HAIKU_POOL_VERSION is manually bumped.
-  // Previously this was derived from haiku count + first haiku content, which reset
-  // the seen-set every time the refresh-dashboard-haiku task rewrote the list
-  // (daily). That defeated the whole no-repeat cycle.
-  const HAIKU_POOL_VERSION = 'v5-stable';
-  const INTRO_POOL_VERSION = 'v5-stable';
+  // v6 (2026-04-27): tracks seen by content hash, not array index. Index-based
+  // tracking broke whenever the daily refresh added/removed haikus, because the
+  // same index pointed to different content the next day. Hash tracking survives
+  // pool churn: a haiku you've seen stays "seen" even after it shifts position
+  // or disappears and reappears.
+  const POOL_KEY = 'dashHaikuSeen_v6';
+  const INTRO_KEY = 'dashIntroSeen_v6';
+  const POOL_SIG_KEY = 'dashHaikuSig_v6';
+  const INTRO_SIG_KEY = 'dashIntroSig_v6';
+  const HAIKU_POOL_VERSION = 'v6-hash';
+  const INTRO_POOL_VERSION = 'v6-hash';
   const poolSig = HAIKU_POOL_VERSION;
   const introSig = INTRO_POOL_VERSION;
 
   // In-memory backup (across clicks within one page session) in case localStorage fails
   let memSeenHaiku = null;
   let memSeenIntro = null;
+
+  // djb2 hash, deterministic, base36 short string. Used as the seen-set key for each item.
+  function poolItemKey(item) {{
+    const s = (typeof item === 'string') ? item : (item.t || JSON.stringify(item));
+    let h = 5381;
+    for (let i = 0; i < s.length; i++) {{ h = ((h << 5) + h + s.charCodeAt(i)) | 0; }}
+    return (h >>> 0).toString(36);
+  }}
 
   function pickUnseen(pool, seenKey, sigKey, currentSig, memRef) {{
     let seen = [];
@@ -1532,26 +1540,34 @@ updateStaleness();
       }}
       const raw = localStorage.getItem(seenKey);
       seen = raw ? JSON.parse(raw) : [];
+      // Defense: if old index-based entries leaked in, drop them.
+      seen = seen.filter(x => typeof x === 'string');
       lsWorked = true;
     }} catch(e) {{ lsWorked = false; }}
     if (!lsWorked) seen = memRef.value || [];
 
-    let unseen = [];
+    const seenSet = new Set(seen);
+    let unseenIdx = [];
     for (let i = 0; i < pool.length; i++) {{
-      if (seen.indexOf(i) === -1) unseen.push(i);
+      if (!seenSet.has(poolItemKey(pool[i]))) unseenIdx.push(i);
     }}
-    if (unseen.length === 0) {{
-      seen = [];
-      unseen = [];
-      for (let i = 0; i < pool.length; i++) unseen.push(i);
+
+    // Pool exhausted: every current haiku has been seen. Don't reset (Paul's rule:
+    // never see the same one twice). Show a random one without adding it to seen,
+    // and flag the state so the caller can render an "all caught up" hint.
+    if (unseenIdx.length === 0) {{
+      const idx = Math.floor(Math.random() * pool.length);
+      memRef.value = seen;
+      return {{ item: pool[idx], seenCount: seen.length, total: pool.length, exhausted: true }};
     }}
-    const idx = unseen[Math.floor(Math.random() * unseen.length)];
-    seen.push(idx);
+
+    const idx = unseenIdx[Math.floor(Math.random() * unseenIdx.length)];
+    seen.push(poolItemKey(pool[idx]));
     if (lsWorked) {{
       try {{ localStorage.setItem(seenKey, JSON.stringify(seen)); }} catch(e) {{}}
     }}
     memRef.value = seen;
-    return {{ item: pool[idx], seenCount: seen.length, total: pool.length }};
+    return {{ item: pool[idx], seenCount: seen.length, total: pool.length, exhausted: false }};
   }}
 
   function renderHaiku() {{
@@ -1575,7 +1591,13 @@ updateStaleness();
         sourceEl.style.display = 'none';
       }}
     }}
-    if (counter) counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
+    if (counter) {{
+      if (h.exhausted) {{
+        counter.textContent = 'all ' + h.total + ' seen \u00b7 fresh batch coming';
+      }} else {{
+        counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
+      }}
+    }}
   }}
 
   if (slot && text && grid) {{
