@@ -165,9 +165,16 @@ def build_ranked_cards(opportunities):
         status_options = [
             ("not_applied", "Not Applied"),
             ("applied", "Applied"),
-            ("1st_interview", "1st Interview"),
-            ("2nd_interview", "2nd Interview"),
             ("awaiting", "Awaiting Response"),
+            ("1st_interview_scheduled", "1st Interview Scheduled"),
+            ("1st_interview_held", "1st Interview Held"),
+            ("2nd_interview_scheduled", "2nd Interview Scheduled"),
+            ("2nd_interview_held", "2nd Interview Held"),
+            ("3rd_interview_scheduled", "3rd Interview Scheduled"),
+            ("3rd_interview_held", "3rd Interview Held"),
+            ("final_round_scheduled", "Final Round Scheduled"),
+            ("final_round_held", "Final Round Held"),
+            ("offer", "Offer"),
             ("cold_outreach", "Cold Outreach"),
             ("rejected", "Rejected"),
             ("pass", "Pass"),
@@ -202,7 +209,25 @@ def build_app_rows(apps, include=None):
         apps = [a for a in apps if a.get('status') not in ('rejected', 'filled')]
     elif include == 'closed':
         apps = [a for a in apps if a.get('status') in ('rejected', 'filled')]
-    status_order = {"2nd_interview": 0, "1st_interview": 1, "awaiting": 2, "rejected": 3, "filled": 4}
+    status_order = {
+        "offer": 0,
+        "final_round_held": 1,
+        "final_round_scheduled": 2,
+        "3rd_interview_held": 3,
+        "3rd_interview_scheduled": 4,
+        "2nd_interview_held": 5,
+        "2nd_interview_scheduled": 6,
+        "1st_interview_held": 7,
+        "1st_interview_scheduled": 8,
+        # Legacy aliases (treated as held for sort purposes)
+        "2nd_interview": 5,
+        "1st_interview": 7,
+        "awaiting": 9,
+        "applied": 10,
+        "rejected": 11,
+        "filled": 12,
+        "pass": 13,
+    }
     if include == 'closed':
         # For the closed table, sort by most recent applied date first (most recent rejection at top)
         apps = sorted(apps, key=lambda a: a.get("applied", ""), reverse=True)
@@ -213,14 +238,25 @@ def build_app_rows(apps, include=None):
     for a in apps:
         opacity = ' style="opacity:0.5"' if a["status"] in ("rejected","filled") else ""
         status_map = {
+            "offer": ("Offer", "green"),
+            "final_round_held": ("Final Round Held", "green"),
+            "final_round_scheduled": ("Final Round Scheduled", "green"),
+            "3rd_interview_held": ("3rd Interview Held", "cyan"),
+            "3rd_interview_scheduled": ("3rd Interview Scheduled", "cyan"),
+            "2nd_interview_held": ("2nd Interview Held", "cyan"),
+            "2nd_interview_scheduled": ("2nd Interview Scheduled", "cyan"),
+            "1st_interview_held": ("1st Interview Held", "cyan"),
+            "1st_interview_scheduled": ("1st Interview Scheduled", "cyan"),
             "awaiting": ("Awaiting", "amber"),
+            "applied": ("Applied", "amber"),
             "rejected": ("Rejected", "muted"),
             "filled": ("Filled", "muted"),
-            "1st_interview": ("1st Interview", "cyan"),
-            "2nd_interview": ("2nd Interview", "green"),
+            "pass": ("Pass", "muted"),
             "speculative": ("Speculative", "blue"),
-            # Legacy alias: treat any cold_outreach entries as speculative for display
             "cold_outreach": ("Speculative", "blue"),
+            # Legacy aliases
+            "1st_interview": ("1st Interview", "cyan"),
+            "2nd_interview": ("2nd Interview", "cyan"),
         }
         st_text, st_cls = status_map.get(a["status"], ("—","muted"))
         # Score column: the score the opportunity had when Paul applied
@@ -285,7 +321,7 @@ def compute_stat_cards(data):
     # Sent: applications with any status (total sent)
     sent = [a for a in apps if a.get("applied")]
     # Active Interviews
-    active_interviews = [a for a in apps if a.get("status") in ("1st_interview", "2nd_interview")]
+    active_interviews = [a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")]
     # Awaiting Response
     awaiting = [a for a in apps if a.get("status") == "awaiting"]
     # Rejected / Closed
@@ -321,7 +357,7 @@ def compute_stats(data):
 
     applications_sent = len(apps)
     awaiting_response = len([a for a in apps if a.get("status") == "awaiting"])
-    active_interviews = len([a for a in apps if a.get("status") in ("1st_interview", "2nd_interview")])
+    active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
     rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled")])
     active_pipeline = len(ranked)
     deep_dives_done = len([r for r in ranked if r.get("doc_path")]) + len([a for a in archived if a.get("doc_path")])
@@ -389,7 +425,7 @@ def get_interviews(apps):
     """Apps in interview status, enriched with parsed dt + interviewers, sorted by imminence."""
     ivs = []
     for a in apps:
-        if a.get('status') not in ('1st_interview','2nd_interview'):
+        if a.get('status') not in ('1st_interview_scheduled','1st_interview_held','2nd_interview_scheduled','2nd_interview_held','3rd_interview_scheduled','3rd_interview_held','final_round_scheduled','final_round_held','1st_interview','2nd_interview'):
             continue
         dt = parse_interview_datetime(a.get('next_action'))
         ivs.append({**a, '_parsed_dt': dt, '_interviewers': extract_interviewers(a.get('next_action',''))})
@@ -444,7 +480,17 @@ def build_interview_prep_cards(interviews):
         days = delta.days; hrs = delta.seconds // 3600
         in_str = f'in {days}d {hrs}h' if days > 0 else f'in {hrs}h {(delta.seconds % 3600)//60}m'
         date_str = f'<span class="ip-upcoming">{dt.strftime("%a %b %-d, %-I:%M %p")} &middot; {in_str}</span>'
-        stage = '1st Round' if iv.get('status') == '1st_interview' else '2nd Round'
+        s = iv.get('status', '')
+        if s.startswith('1st_interview'):
+            stage = '1st Round'
+        elif s.startswith('2nd_interview'):
+            stage = '2nd Round'
+        elif s.startswith('3rd_interview'):
+            stage = '3rd Round'
+        elif s.startswith('final_round'):
+            stage = 'Final Round'
+        else:
+            stage = 'Interview'
         people_html = ''.join(f'<span class="ip-person">{n}</span>' for n in iv['_interviewers']) if iv['_interviewers'] else '<span class="ip-tbd">TBD</span>'
         next_action = (iv.get('next_action','') or '')
         if len(next_action) > 280:
@@ -1197,7 +1243,7 @@ function changeStatus(select, company) {{
   localStorage.setItem('status_changes', JSON.stringify(changes));
 
   // Visual feedback toast
-  const labels = {{ not_applied: 'Not Applied', applied: 'Applied', '1st_interview': '1st Interview', '2nd_interview': '2nd Interview', awaiting: 'Awaiting Response', cold_outreach: 'Speculative', speculative: 'Speculative', rejected: 'Rejected', pass: 'Pass' }};
+  const labels = {{ not_applied: 'Not Applied', applied: 'Applied', awaiting: 'Awaiting Response', '1st_interview_scheduled': '1st Interview Scheduled', '1st_interview_held': '1st Interview Held', '2nd_interview_scheduled': '2nd Interview Scheduled', '2nd_interview_held': '2nd Interview Held', '3rd_interview_scheduled': '3rd Interview Scheduled', '3rd_interview_held': '3rd Interview Held', 'final_round_scheduled': 'Final Round Scheduled', 'final_round_held': 'Final Round Held', offer: 'Offer', cold_outreach: 'Speculative', speculative: 'Speculative', rejected: 'Rejected', pass: 'Pass', '1st_interview': '1st Interview', '2nd_interview': '2nd Interview' }};
   showToast(`<strong>${{company}}</strong> → ${{labels[newStatus] || newStatus}}`);
 
   // Dim card if rejected/pass
