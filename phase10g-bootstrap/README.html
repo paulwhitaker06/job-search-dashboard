@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 10g Bootstrap, Cost Dashboard Panel</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --border: #e3e6ea;
+    --text: #1f2328; --text-soft: #3b4047; --muted: #6e7781;
+    --link: #0969da; --link-bg: #e7f0fb;
+    --green-bg: #e7f5ee; --green-fg: #0d6e40;
+    --code-bg: #f5f6f8; --panel-info: #eef3fa;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text); line-height: 1.6; font-size: 15px; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 40px 24px 80px 24px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  h1 { font-size: 30px; line-height: 1.15; font-weight: 600; margin: 0 0 8px 0; }
+  .subtitle { color: var(--muted); margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 600; margin: 32px 0 8px 0; }
+  p, li { color: var(--text-soft); margin: 6px 0; }
+  ul { padding-left: 22px; }
+  code { background: var(--code-bg); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: var(--text); }
+  pre { background: #161b22; color: #c9d1d9; border-radius: 8px; padding: 14px 18px; overflow-x: auto; font-family: ui-monospace, Menlo, monospace; font-size: 12.5px; line-height: 1.5; margin: 12px 0; }
+  pre code { background: transparent; border: none; padding: 0; color: inherit; }
+  .panel { border-radius: 8px; padding: 12px 16px; margin: 14px 0; font-size: 14px; line-height: 1.55; }
+  .panel.info { background: var(--panel-info); color: #0a3866; }
+  .checklist { background: var(--green-bg); border-radius: 10px; padding: 18px 22px; margin: 24px 0; }
+  .checklist h3 { color: var(--green-fg); margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 0.06em; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">Phase 10g Bootstrap</div>
+<h1>Cost dashboard panel</h1>
+<div class="subtitle">Renders <code>cost-feed.json</code> as a Pipeline Cost section on the live dashboard. Closes out the cost monitoring story.</div>
+
+<div class="panel info">
+<strong>What it shows:</strong>
+<ul style="margin:6px 0 0 0;">
+<li><strong>This week:</strong> total USD spend, call count, in/out token totals.</li>
+<li><strong>12-week trend:</strong> inline SVG sparkline of weekly USD totals.</li>
+<li><strong>4-week per-workflow breakdown:</strong> small table, sorted by spend.</li>
+<li><strong>Empty-state aware:</strong> if cost-feed.json is missing or empty, shows "monitoring active" with a brief explainer instead of broken numbers.</li>
+</ul>
+</div>
+
+<h2>Deploy</h2>
+<p>Phase 10g lives entirely in the dashboard repo. No paul-job-pipeline changes. The dashboard-push helper does the work: clones fresh, runs the patcher, rebuilds index.html with the new cost section, commits and pushes.</p>
+<p>I (Claude) am running the deploy directly from the sandbox via the same path used by the morning-brief cron. You don't need to touch your local dashboard tree for this phase, but the cost section will appear in the next dashboard build.</p>
+
+<div class="checklist">
+<h3>Done when</h3>
+<p style="color:#07452a;margin:0;">The live dashboard at <a href="https://paulwhitaker06.github.io/job-search-dashboard/">paulwhitaker06.github.io/job-search-dashboard</a> shows a "Pipeline Cost" section near the bottom (between Speculative Outreach and Morning Brief Log). After tomorrow's morning brief and Sunday's first real rollup, the panel populates with real numbers.</p>
+</div>
+
+<h2>What this does NOT touch</h2>
+<ul>
+<li>Cost monitoring logic (logger, rollup workflow). Those are phase 10c, already running.</li>
+<li>Stat cards in the top row. The cost panel is a separate section, not a new stat card.</li>
+<li>Mobile layout. The 1fr/2fr grid collapses naturally on narrow screens.</li>
+</ul>
+
+<h2>Files</h2>
+<ul>
+<li><code>patcher.py</code>, the Python script that adds <code>compute_cost_summary</code> and <code>build_cost_section_html</code> functions to <code>build-dashboard.py</code>, plus the call site and the template slot. Idempotent, safe to re-run.</li>
+</ul>
+
+<p style="color:var(--muted);font-size:12px;margin-top:36px;text-align:center;">Drafted Apr 29, 2026 · job-search-dashboard Phase 10g</p>
+
+</div>
+</body>
+</html>
