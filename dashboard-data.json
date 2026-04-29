@@ -195,7 +195,7 @@
     "applications_sent": 25,
     "awaiting_response": 15,
     "active_interviews": 3,
-    "active_pipeline": 79,
+    "active_pipeline": 80,
     "deep_dives_done": 15,
     "resumes_built": 1,
     "rejected_closed": 6,
@@ -982,7 +982,55 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 22,
+      "company": "loftorbital",
+      "role": "Loft Orbital Solutions - Sr. Director, Business Development - US",
+      "score": 52.0,
+      "proxy_score": null,
+      "effective_score": 52.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-29",
+      "scqa": "",
+      "verdict": "RF capped at 4: the JD requires \"10+ years of sales, business development, or strategic partnerships experience in the commercial space sector, with a strong track record selling to commercial customers\" and \"strong knowledge of space systems\u2014satellite subsystems, launch, mission design.\" Paul sold satellite imagery and monitoring services (SAR, vessel detection, oil spill monitoring) to end-use customers, not space infrastructure or payload hosting to spacecraft operators. IL capped at 3: Paul lacks the spacecraft systems credibility this role demands. SA scores 6 because Loft is post-PMF and scaling a proven business model, not greenfield demand creation. SPM scores 6 because the role involves complex multi-stakeholder partnerships but the JD does not describe Paul's specific patterns (pilot-to-precedent or asset-architecture deals). This is a domain-shift role requiring spacecraft platform sales experience Paul does not have.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/loftorbital/6c07424a-607b-4970-9569-103abbfe4177"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-29",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Remote US /Golden, CO",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Experience requirement",
+          "detail": "JD requires '10+ years of sales, business development, or strategic partnerships experience in the commercial space sector' \u2014 Paul has 10+ years in EO/satellite services but not in spacecraft/payload integration or space-as-a-service infrastructure sales",
+          "severity": "hard"
+        },
+        {
+          "type": "Domain credibility gap",
+          "detail": "JD requires 'strong knowledge of space systems\u2014satellite subsystems, launch, mission design\u2014sufficient to earn the trust of technical buyers' \u2014 Paul sold SAR imagery and monitoring services, not spacecraft platforms or payload hosting",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 8
+      },
+      "rank": 22
+    },
+    {
+      "rank": 23,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -1011,7 +1059,7 @@
       "blockers": []
     },
     {
-      "rank": 23,
+      "rank": 24,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -1046,7 +1094,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 25,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -1075,7 +1123,7 @@
       "blockers": []
     },
     {
-      "rank": 25,
+      "rank": 26,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -1116,7 +1164,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 27,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development \u2014 Mission Critical Infrastructure",
       "score": 51.0,
@@ -1159,7 +1207,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 28,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -1188,7 +1236,7 @@
       "blockers": []
     },
     {
-      "rank": 28,
+      "rank": 29,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -1217,7 +1265,7 @@
       "blockers": []
     },
     {
-      "rank": 29,
+      "rank": 30,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -1252,7 +1300,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 31,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -1287,7 +1335,7 @@
       ]
     },
     {
-      "rank": 31,
+      "rank": 32,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -1337,7 +1385,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 33,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -1366,7 +1414,7 @@
       "blockers": []
     },
     {
-      "rank": 33,
+      "rank": 34,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -1411,7 +1459,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 35,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -1496,10 +1544,10 @@
         "CO": 8,
         "GC": 4
       },
-      "rank": 35
+      "rank": 36
     },
     {
-      "rank": 36,
+      "rank": 37,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -1534,7 +1582,7 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 38,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -1569,7 +1617,7 @@
       ]
     },
     {
-      "rank": 38,
+      "rank": 39,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -1648,10 +1696,10 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 39
+      "rank": 40
     },
     {
-      "rank": 40,
+      "rank": 41,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -1730,7 +1778,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 41
+      "rank": 42
     },
     {
       "company": "",
@@ -1778,7 +1826,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 42
+      "rank": 43
     },
     {
       "company": "",
@@ -1826,10 +1874,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 43
+      "rank": 44
     },
     {
-      "rank": 44,
+      "rank": 45,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -1864,7 +1912,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 46,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -1959,7 +2007,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 46
+      "rank": 47
     },
     {
       "company": "rubiconcarbon",
@@ -2007,10 +2055,10 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 47
+      "rank": 48
     },
     {
-      "rank": 48,
+      "rank": 49,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -2063,7 +2111,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 50,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -2106,7 +2154,7 @@
       ]
     },
     {
-      "rank": 50,
+      "rank": 51,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -2141,7 +2189,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 52,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -2176,7 +2224,7 @@
       ]
     },
     {
-      "rank": 52,
+      "rank": 53,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -2250,7 +2298,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 53
+      "rank": 54
     },
     {
       "company": "rubiconcarbon",
@@ -2308,10 +2356,10 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 54
+      "rank": 55
     },
     {
-      "rank": 55,
+      "rank": 56,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -2346,7 +2394,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 57,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -2426,10 +2474,10 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 57
+      "rank": 58
     },
     {
-      "rank": 58,
+      "rank": 59,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -2458,7 +2506,7 @@
       "blockers": []
     },
     {
-      "rank": 59,
+      "rank": 60,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -2498,7 +2546,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 61,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -2548,7 +2596,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 62,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -2596,7 +2644,7 @@
       ]
     },
     {
-      "rank": 62,
+      "rank": 63,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -2625,7 +2673,7 @@
       "blockers": []
     },
     {
-      "rank": 63,
+      "rank": 64,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -2697,7 +2745,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 64
+      "rank": 65
     },
     {
       "company": "Arable",
@@ -2745,10 +2793,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 65
+      "rank": 66
     },
     {
-      "rank": 66,
+      "rank": 67,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -2836,10 +2884,10 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 67
+      "rank": 68
     },
     {
-      "rank": 68,
+      "rank": 69,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -2874,7 +2922,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 70,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -2903,7 +2951,7 @@
       "blockers": []
     },
     {
-      "rank": 70,
+      "rank": 71,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -2983,7 +3031,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 71
+      "rank": 72
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -3036,10 +3084,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 72
+      "rank": 73
     },
     {
-      "rank": 73,
+      "rank": 74,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -3119,10 +3167,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 74
+      "rank": 75
     },
     {
-      "rank": 75,
+      "rank": 76,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -3172,7 +3220,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -3262,10 +3310,10 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 77
+      "rank": 78
     },
     {
-      "rank": 78,
+      "rank": 79,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -3310,7 +3358,7 @@
       }
     },
     {
-      "rank": 79,
+      "rank": 80,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -3360,7 +3408,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 81,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
