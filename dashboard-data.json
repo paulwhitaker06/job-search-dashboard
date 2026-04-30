@@ -195,7 +195,7 @@
     "applications_sent": 25,
     "awaiting_response": 15,
     "active_interviews": 3,
-    "active_pipeline": 79,
+    "active_pipeline": 80,
     "deep_dives_done": 15,
     "resumes_built": 1,
     "rejected_closed": 6,
@@ -3265,7 +3265,55 @@
       "rank": 77
     },
     {
-      "rank": 78,
+      "company": "gable",
+      "role": "Account Executive @ Gable | Techstars Job Board",
+      "score": 41.0,
+      "proxy_score": null,
+      "effective_score": 41.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-30",
+      "scqa": "",
+      "verdict": "This is a traditional quota-carrying Account Executive role with territory assignment and quarterly sales targets. The JD explicitly states responsibilities: \"Own and exceed quarterly and annual sales targets within an assigned territory,\" \"Hunt for new logos,\" \"Collaborate with SDRs to develop territory strategies,\" and \"Maintain accurate pipeline management, forecasting, and activity tracking in HubSpot.\" Paul's profile explicitly states he is a \"market builder, NOT market inheritor\" and \"NOT a quota-carrying hunter.\" There is no evidence in the JD of the regulatory precedent work, multi-stakeholder deal architecture, or demand creation that characterizes Paul's career patterns. The role is about executing a sales process in an established category (workplace/flex office management software) to established buyer personas, not building the market itself. This is a clear mismatch on role fit and candidacy, despite the company potentially being at an interesting stage.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.techstars.com/companies/gable/jobs/76696099-account-executive"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-30",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Role mismatch",
+          "detail": "This is a quota-carrying Account Executive role owning full sales cycle with assigned territory and quarterly targets. Paul's core identity is 'market builder, NOT market inheritor' \u2014 he creates commercial demand where none exists, not manages existing pipeline in established territories.",
+          "severity": "hard"
+        },
+        {
+          "type": "Lack of market-building component",
+          "detail": "JD describes hunting for new logos and expanding existing accounts within a defined territory, collaborating with SDRs on pipeline generation. No indication of building regulatory precedent, shaping new markets, or creating demand infrastructure \u2014 the work is selling into existing buyer categories (workplace, real estate, facilities, HR, operations).",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 5,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 4,
+        "GC": 6
+      },
+      "rank": 78
+    },
+    {
+      "rank": 79,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -3310,7 +3358,7 @@
       }
     },
     {
-      "rank": 79,
+      "rank": 80,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -3360,7 +3408,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 81,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -6991,6 +7039,371 @@
           "source": "Techstars Jobs",
           "url": "https://jobs.techstars.com/companies/datacamp/jobs/76675406-sales-development-representative",
           "reason": "Sales Development Representative is a junior IC quota-carrier role, wrong seniority for Paul's VP/Director-level target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Product",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/praxispro-ai/jobs/76729755-director-of-product",
+          "reason": "Director of Product is a product management role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "digest_count": 149,
+      "scored_count": 4,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "gable",
+          "role": "Account Executive @ Gable | Techstars Job Board",
+          "score": 41.0
+        }
+      ],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "",
+          "role": "Sales Representative- North Los Angeles, CA/Santa Barbara, CA - Sustainability Solutions at Stryker - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Sustainability Risk and Traceability Manager at the LEGO Group - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Technical Services & Sustainability Operation (TSSO) Sales Executive at JLL - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Technical Services &amp; Sustainability Operation (TSSO) Sales Executive",
+          "url": "https://climatechangejobs.com/jobs/461170412/apply",
+          "reason": "fetch_unreadable:aggregator_apply_only_url"
+        },
+        {
+          "company": "",
+          "role": "GIS & Monitoring Manager",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Environmental & Sustainability Manager (ACTS, GHG & ESG)",
+          "url": "https://climatechangejobs.com/jobs/461170405-environmental-sustainability-manager-acts-ghg-esg",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "",
+          "role": "Sales Executive - West at EnergyHub - Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/460779352-sales-executive-west",
+          "reason": "score_exception:RateLimitError"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "149 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 4 unscored.",
+      "jobs_processed": 149,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "149 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 4 unscored. 42 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Job opportunity: Business Development Director",
+          "source": "Orca AI",
+          "url": "https://www.orca-ai.io/careers/co/washington-dc/63.A6E/business-development-director-defense/all",
+          "reason": "Defense-focused Business Development Director role at Orca AI, Paul's hard exclusion on defense/IC/national security roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lead Engineer, Strategic Partnerships",
+          "source": "Commonwealth Fusion Systems",
+          "url": "https://jobs.lever.co/cfsenergy/15ef1e15-5ad1-49f2-bf49-970b5d82f243",
+          "reason": "Title is 'Lead Engineer, Strategic Partnerships' which is an engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lead Engineer, Strategic Partnerships",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461193485-lead-engineer-strategic-partnerships",
+          "reason": "Title is 'Lead Engineer, Strategic Partnerships' which is clearly an engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Enterprise Account Executive",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/datacamp/jobs/76675410-senior-enterprise-account-executive",
+          "reason": "DataCamp is an ed-tech platform for data science and analytics training, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Working Student Business Development & Global Sustainability (job for all genders)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170420-working-student-business-development-global-sustainability-job-for-all-genders",
+          "reason": "Working Student role is a European student internship position, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Working Student Business Development &amp; Global Sustainability (job for all genders)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170420/apply",
+          "reason": "\"Working Student\" indicates student internship or part-time student role, wrong seniority level.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Manager, Government Affairs & Political Strategy",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/cruxclimate/a6788dc5-3b66-4522-8793-f356213dfbf4?embed=js&customCssUrl=https%3A%2F%2Fmagenta-melania-20.tiiny.site%2Fjobs14.css",
+          "reason": "Government Affairs & Political Strategy is a government relations/policy function, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Consultancy - Evaluating the Sustainability of Oxfam\u2019s Disaster Risk Reduction Programs in the Pacific and the Philippines",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170401-consultancy-evaluating-the-sustainability-of-oxfam-s-disaster-risk-reduction-programs-in-the-pacific-and-the-philippines",
+          "reason": "Consultancy role evaluating existing programs is wrong-function, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability and Climate Reporting",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170432-sustainability-and-climate-reporting-|-manager",
+          "reason": "Title 'Sustainability and Climate Reporting | Manager' indicates a compliance/reporting/disclosure function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director Financial Sustainability Programs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170436-director-financial-sustainability-programs",
+          "reason": "Title 'Director Financial Sustainability Programs' indicates finance/program management function, not commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "M26196 Research Associate in Corporate Sustainability, Regenerative Agriculture",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170447-m26196-research-associate-in-corporate-sustainability-regenerative-agriculture",
+          "reason": "Research Associate is an academic/research IC role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager of Sales Training",
+          "source": "SOSV Portfolio",
+          "url": "https://ecisolutions.hrmdirect.com/employment/job-opening.php?req=3699578&req_loc=1303674&&#job",
+          "reason": "Senior Manager of Sales Training is a training/enablement function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Partnerships Lead (m/f/x)",
+          "source": "UP42",
+          "url": "https://up42.com/company/careers",
+          "reason": "UP42 is a standing exclusion due to Saudi ownership (Neo Space Group / PIF), which creates a sales conversation Paul does not want to have.",
+          "confidence": "high"
+        },
+        {
+          "title": "Junior Operations Manager Supply Chain (m/w/d)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Junior Operations Manager is wrong seniority and wrong function; Paul targets VP/Director-level commercial/BD roles, not junior ops.",
+          "confidence": "high"
+        },
+        {
+          "title": "Intern Supply Chain Management / Inventory and Logistics",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Intern role is wrong seniority for VP/Director-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Business Development Associate",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "URL is a job board landing page (climatebase.org/jobs), not a specific posting, cannot evaluate role details.",
+          "confidence": "high"
+        },
+        {
+          "title": "Clean Energy Specialist, Business Development Representative, Electric Vehicles",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170395-clean-energy-specialist-business-development-representative-electric-vehicles",
+          "reason": "Business Development Representative is a junior IC quota-carrier role, wrong seniority for Paul's director/VP-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Praktikum im Bereich Material Compliance & Sustainability (m/w/d)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170430-praktikum-im-bereich-material-compliance-sustainability-m-w-d",
+          "reason": "German-language internship role (Praktikum = internship), wrong seniority level for VP/Director commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Praktikum im Bereich Material Compliance &amp; Sustainability (m/w/d)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/461170430/apply",
+          "reason": "Praktikum is German for internship, wrong seniority level for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Specialist, Business Development",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/cincinnati/senior-specialist-business-development/4832/94454496080",
+          "reason": "L3Harris is a defense and national security contractor requiring clearance, which Paul explicitly excludes.",
+          "confidence": "high"
+        },
+        {
+          "title": "Technoeconomic & Supply Chain Analysis Intern",
+          "source": "Voyager Ventures Portfolio",
+          "url": "https://jobs.ashbyhq.com/limelight-steel/9880ac40-f3c0-49c4-b994-a0a5f27671bf?utm_source=careers.voyagervc.com",
+          "reason": "Intern role is wrong seniority; Paul targets VP/Director-level commercial leadership positions.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product marketing manager",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Watershed/8803b6a9-35d4-498e-8cbf-ece0dc7588c6",
+          "reason": "Product Marketing Manager is a marketing-only role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Finance",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Crusoe/1934c796-d415-4453-94ac-14cacc353bfd",
+          "reason": "Director, Finance is a finance function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Hospitality",
+          "source": "Varda Space Industries",
+          "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7720056003",
+          "reason": "Director of Hospitality is a facilities/operations/workplace experience role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Sales Recruiter Job",
+          "source": "Esri",
+          "url": "https://www.esri.com/careers/5012806007",
+          "reason": "Sr. Sales Recruiter is a recruiting function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Global Head of Procurement",
+          "source": "Fugro",
+          "url": "https://www.fugro.com/careers/jobs/R0031119-global-head-of-procurement",
+          "reason": "Global Head of Procurement is a pure procurement/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "GIS Portal Database Engineer/Admin",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/en-US/Vantor/job/Reston-VA/GIS-Portal-Database-Engineer-Admin_R23838",
+          "reason": "GIS Portal Database Engineer/Admin is an engineering role, not a commercial or BD function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Software Development, Form",
+          "source": "Safe Software",
+          "url": "https://jobs.ashbyhq.com/safe/95b57d11-c477-412a-b210-07478c2bfc9c",
+          "reason": "Director, Software Development is an engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative (SDR) \u2013 Public Sector",
+          "source": "Windward",
+          "url": "https://windward.ai/company/careers/co/tlv-israel/72.A6D/sales-development-representative-sdr-public-sector/all",
+          "reason": "SDR is a junior IC quota-carrier role, wrong seniority for Paul's director/VP-level commercial leadership target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of AIT In-Orbit Service (F/M)",
+          "source": "Exotrail",
+          "url": "https://careers.exotrail.com/jobs/7663096-head-of-ait-in-orbit-service-f-m",
+          "reason": "AIT (Assembly, Integration, and Test) is a technical engineering function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://boards.greenhouse.io/formic/jobs/4676784006",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role, wrong seniority for Paul's VP/Director-level target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Legal Counsel, Corporate & Securities",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Director, Legal Counsel, Corporate & Securities is a legal function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP, Operations (Jakarta, Indonesia - On-site)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "VP Operations is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Asset Management",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Director, Asset Management is a finance/investment operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Consultant",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "URL is a generic Climatebase jobs landing page, not a specific posting - cannot evaluate company or role.",
+          "confidence": "high"
+        },
+        {
+          "title": "SeaSim Biosecurity Project Officer",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/australian-institute-of-marine-science/jobs/76646548-seasim-biosecurity-project-officer",
+          "reason": "Biosecurity Project Officer is an operations/science role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Field Operations Officer",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/australian-institute-of-marine-science/jobs/76646551-field-operations-officer",
+          "reason": "Field Operations Officer is an operations/logistics role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Data Steward, Research Data Management - Closes May 11",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/ocean-networks-canada/jobs/76756607-data-steward-research-data-management-closes-may-11",
+          "reason": "Data Steward is a data management/curation role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Software Engineer",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/sofar-ocean-2-fe482cc0-c955-4612-ae5b-eb10e24fad22/jobs/76670097-software-engineer",
+          "reason": "Software Engineer is a wrong-function role clearly outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Werkstudent Sales Development / Vertrieb (m/w/d)",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/cerpro/jobs/76741097-werkstudent-sales-development-vertrieb-m-w-d",
+          "reason": "Werkstudent is a German student intern position, wrong seniority level for VP/Director commercial leadership role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/datacamp/jobs/76675406-sales-development-representative",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role, wrong seniority for Paul's VP/Director-level commercial leadership search.",
           "confidence": "high"
         },
         {
