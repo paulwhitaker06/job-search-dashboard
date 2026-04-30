@@ -195,7 +195,7 @@
     "applications_sent": 25,
     "awaiting_response": 15,
     "active_interviews": 3,
-    "active_pipeline": 80,
+    "active_pipeline": 84,
     "deep_dives_done": 15,
     "resumes_built": 1,
     "rejected_closed": 6,
@@ -778,7 +778,60 @@
       ]
     },
     {
-      "rank": 17,
+      "company": "rubiconcarbon",
+      "role": "VP, Carbon Project Investment",
+      "score": 53.5,
+      "proxy_score": null,
+      "effective_score": 53.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-30",
+      "scqa": "",
+      "verdict": "This role fails on three hard constraints. First, geographic: Singapore-based with strong preference for local candidates; Paul is in Taos and Singapore relocation is a substantial ask. Second, the JD explicitly requires \"10\u201315+ years of relevant client-facing deal making experience with 5-7 years+ in carbon markets, climate finance, project investing\" \u2014 Paul has 5 years total in the climate/carbon space (GFW 2021-2026), not 5-7+ in carbon markets specifically. Third, the role demands \"deep expertise in carbon markets, including project pathways, quality guardrails, offtake structures, supply and demand dynamics\" and \"significant experience originating, structuring, negotiating, and executing complex multi-million dollar commercial transactions, with a focus on environmental commodity transactions.\" Paul built a commercial licensing program at GFW; he did not invest in carbon projects, structure offtakes, or negotiate carbon credit purchase agreements. RF capped at 5 (role involves deal-making and multi-stakeholder coordination but in a domain Paul lacks depth), IL capped at 4 (experience gap is explicit and quantified), GC capped at 2 (Singapore residency preference is explicit). SPM scores 8 because the multi-stakeholder deal architecture, portfolio construction, and market-building patterns are strongly present, but that does not overcome the hard blockers.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/rubiconcarbon/jobs/4676383005"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-30",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Singapore",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Geographic",
+          "detail": "Role based in Singapore with strong preference for Singapore-based candidates. Paul is based in Taos, NM and while open to relocation, Singapore represents a significant geographic and cultural distance.",
+          "severity": "hard"
+        },
+        {
+          "type": "Experience Requirement",
+          "detail": "Requires 10-15+ years relevant client-facing deal making experience with 5-7 years+ specifically in carbon markets, climate finance, project investing, infrastructure, commodities, or structured finance. Paul has 5 years at GFW (2021-2026) in carbon/climate but lacks the requisite depth in carbon project investment, carbon credit offtakes, or carbon market structuring.",
+          "severity": "hard"
+        },
+        {
+          "type": "Domain Expertise",
+          "detail": "Requires deep expertise in carbon markets including project pathways, quality guardrails, offtake structures, supply and demand dynamics, delivery and issuance risk. Paul's carbon market experience is limited to building GFW's commercial licensing program, not investing in or structuring carbon credit projects.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 6,
+        "IL": 4,
+        "SPM": 8,
+        "CO": 7,
+        "GC": 2
+      },
+      "rank": 17
+    },
+    {
+      "rank": 18,
       "company": "Bentley Systems",
       "role": "Market Development Director, North America Transportation",
       "score": 53.0,
@@ -826,7 +879,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 19,
       "company": "Systemiq",
       "role": "Strategy Director \u2014 Low Carbon Energy",
       "score": 53.0,
@@ -869,7 +922,7 @@
       ]
     },
     {
-      "rank": 19,
+      "rank": 20,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -909,7 +962,7 @@
       ]
     },
     {
-      "rank": 20,
+      "rank": 21,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -940,7 +993,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 21,
+      "rank": 22,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -982,7 +1035,55 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 22,
+      "company": "rubiconcarbon",
+      "role": "Director, Business Development",
+      "score": 52.0,
+      "proxy_score": null,
+      "effective_score": 52.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-30",
+      "scqa": "",
+      "verdict": "This role is enterprise carbon credit sales in Asia\u2014a market Paul has never sold in, from a geography where he is not based. The **hard requirement cap fires on RF and IL**: the JD states \"At least 7-10 years of experience in enterprise sales, business development, strategic account management, or commercial origination, preferably involving complex solutions for large corporate customers\" and \"Carbon market sales experience strongly preferred.\" Paul meets the enterprise sales structure and complexity, but he has zero carbon market sales experience and zero Asia commercial network. The \"strong preference for candidates based in Singapore\" is not a residency requirement, but it signals a strong soft blocker. **RF = 5**: Paul has deep consultative enterprise sales experience (KSAT, GFW), C-level engagement, and complex solution sales, but this is carbon credits\u2014a market he has never sold in. **IL = 4**: Paul's network is EO/maritime/IUU fishing, not carbon or Asia enterprise buyers. **SA = 6**: Rubicon is described as \"fast-evolving,\" \"newly added due to business expansion,\" but it is NOT a greenfield commercial function\u2014it's scaling an existing carbon sales engine. **SPM = 7**: Multi-stakeholder coordination, consultative selling to corporates with sustainability mandates, and building markets in emerging regulatory environments all pattern-match Paul's career, but this is sales execution in an existing market, not market creation. **GC = 3**: Singapore preference is a major friction point. Total weighted = 50.5, rounded to 51. This is pursue_with_caveats: the strategic patterns fit, but the domain and geography gaps are material.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/rubiconcarbon/jobs/4676382005"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-30",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Singapore",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Geographic/location",
+          "detail": "Role strongly prefers Singapore-based candidates. Paul is US-based in Taos, NM. While the JD says 'location is flexible,' the strong preference for Singapore creates friction for a US-based candidate.",
+          "severity": "soft"
+        },
+        {
+          "type": "Experience requirement",
+          "detail": "JD requires 'Carbon market sales experience strongly preferred.' Paul has deep EO/satellite market-building experience but no direct carbon credit sales experience.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 6,
+        "IL": 4,
+        "SPM": 7,
+        "CO": 6,
+        "GC": 3
+      },
+      "rank": 23
+    },
+    {
+      "rank": 24,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -1011,7 +1112,7 @@
       "blockers": []
     },
     {
-      "rank": 23,
+      "rank": 25,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -1046,7 +1147,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 26,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -1075,7 +1176,7 @@
       "blockers": []
     },
     {
-      "rank": 25,
+      "rank": 27,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -1116,7 +1217,7 @@
       ]
     },
     {
-      "rank": 26,
+      "rank": 28,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development \u2014 Mission Critical Infrastructure",
       "score": 51.0,
@@ -1159,7 +1260,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 29,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -1188,7 +1289,7 @@
       "blockers": []
     },
     {
-      "rank": 28,
+      "rank": 30,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -1217,7 +1318,7 @@
       "blockers": []
     },
     {
-      "rank": 29,
+      "rank": 31,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -1252,7 +1353,60 @@
       ]
     },
     {
-      "rank": 30,
+      "company": "",
+      "role": "Carbon Mapper, Inc.Regional Engagement Manager- LATAM, Methane MitigationRemote\n              \u00b7\n\n            Full timeApply for Regional Engagement Manager- LATAM, Methane Mitigation",
+      "score": 50.0,
+      "proxy_score": null,
+      "effective_score": 50.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-30",
+      "scqa": "",
+      "verdict": "This is a non-profit program management and stakeholder engagement role requiring deep climate policy experience and established Latin America government/civil society networks. The JD explicitly requires \"6+ years of professional experience in international climate, environmental, or energy policy, with experience in Latin America\" and \"Established professional networks in Latin America across government, civil society, and/or energy or waste sectors.\" Paul has commercial satellite sales experience touching O&G operators and some fisheries enforcement agencies, but NOT climate policy practice or LATAM government climate networks. The role focuses on capacity building, training delivery, MOU drafting, and grant program coordination \u2014 not commercial revenue generation. RF capped at 4 due to experience requirement mismatch; IL capped at 3 due to network gap. SPM scores 6 for multi-stakeholder coordination elements but no evidence of Paul's three specific patterns in the JD. Strong mission alignment and compensation, but fundamentally wrong role shape and domain.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.gusto.com/postings/carbon-mapper-inc-regional-engagement-manager-latam-methane-mitigation-881de52c-0143-43d4-85bc-dac8c5131a22"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-30",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Carbon Mapper is headquartered in Pasadena, California, and operates as a virtual-first organization. While we are prima",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Domain experience gap",
+          "detail": "JD requires '6+ years of professional experience in international climate, environmental, or energy policy, with experience in Latin America.' Paul has 15 years in commercial EO/satellite services but NOT in climate policy, environmental policy practice, or Latin America regional work. His O&G monitoring work was commercial sales to operators, not policy engagement with governments on climate frameworks.",
+          "severity": "hard"
+        },
+        {
+          "type": "Network gap",
+          "detail": "JD requires 'Established professional networks in Latin America across government, civil society, and/or energy or waste sectors.' Paul's LATAM exposure is limited to Peru fisheries (Navy/PRODUCE) and scattered O&G proposals (Brazil, Colombia, Argentina) \u2014 not established networks across government climate/environmental ministries or civil society.",
+          "severity": "hard"
+        },
+        {
+          "type": "Role shape mismatch",
+          "detail": "Role is stakeholder engagement, capacity building, training delivery, and grant program implementation for a non-profit. Paul's career has been commercial revenue generation (selling satellite services), not non-profit program management or training/capacity building.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 5,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 8
+      },
+      "rank": 32
+    },
+    {
+      "rank": 33,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -1287,7 +1441,7 @@
       ]
     },
     {
-      "rank": 31,
+      "rank": 34,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -1337,7 +1491,7 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 35,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -1366,7 +1520,7 @@
       "blockers": []
     },
     {
-      "rank": 33,
+      "rank": 36,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -1411,7 +1565,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 37,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -1496,10 +1650,10 @@
         "CO": 8,
         "GC": 4
       },
-      "rank": 35
+      "rank": 38
     },
     {
-      "rank": 36,
+      "rank": 39,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -1534,7 +1688,7 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 40,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -1569,7 +1723,7 @@
       ]
     },
     {
-      "rank": 38,
+      "rank": 41,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -1648,10 +1802,10 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 39
+      "rank": 42
     },
     {
-      "rank": 40,
+      "rank": 43,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -1730,7 +1884,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 41
+      "rank": 44
     },
     {
       "company": "",
@@ -1778,7 +1932,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 42
+      "rank": 45
     },
     {
       "company": "",
@@ -1826,10 +1980,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 43
+      "rank": 46
     },
     {
-      "rank": 44,
+      "rank": 47,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -1864,7 +2018,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 48,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -1959,7 +2113,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 46
+      "rank": 49
     },
     {
       "company": "rubiconcarbon",
@@ -2007,10 +2161,10 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 47
+      "rank": 50
     },
     {
-      "rank": 48,
+      "rank": 51,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -2063,7 +2217,7 @@
       ]
     },
     {
-      "rank": 49,
+      "rank": 52,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -2106,7 +2260,7 @@
       ]
     },
     {
-      "rank": 50,
+      "rank": 53,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -2141,7 +2295,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 54,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -2176,7 +2330,7 @@
       ]
     },
     {
-      "rank": 52,
+      "rank": 55,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -2250,7 +2404,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 53
+      "rank": 56
     },
     {
       "company": "rubiconcarbon",
@@ -2308,10 +2462,58 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 54
+      "rank": 57
     },
     {
-      "rank": 55,
+      "company": "",
+      "role": "Carbon Mapper, Inc.Deputy Director, Impact OperationsRemote\n              \u00b7\n\n            Full timeApply for Deputy Director, Impact Operations",
+      "score": 46.5,
+      "proxy_score": null,
+      "effective_score": 46.5,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-04-30",
+      "scqa": "",
+      "verdict": "This is a hard pass due to fundamental role-type mismatch. The JD explicitly states the role is \"internally focused\" and responsible for \"translating organizational priorities into effective execution, strengthening systems and processes.\" Core responsibilities include CRM administration, vendor management, onboarding coordination, budget tracking, and \"operational execution of in-person meetings and workshops.\" Paul's entire career has been externally focused: building markets, closing deals, negotiating multi-stakeholder partnerships, and generating revenue. The JD requires \"5+ years of experience in operations, program management, or related roles\"\u2014Paul has none. This is a Chief-of-Staff / program manager role for someone who builds internal systems; Paul builds external markets. RF capped at 3 because the role does not match his market-builder profile and he lacks the named hard requirement of operations/program-management experience. IL capped at 4 because his r\u00e9sum\u00e9 will not present as a strong operations candidate.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.gusto.com/postings/carbon-mapper-inc-deputy-director-impact-operations-5e5946e4-f192-4e70-a6f9-bc40f6c86b2e"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-04-30",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Carbon Mapper is headquartered in Pasadena, California, but we embrace the virtual office and are continuing to grow our",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Role Fit Mismatch",
+          "detail": "This is an internal operations and program management role focused on process execution, systems administration, CRM management, and administrative coordination. The JD explicitly describes it as 'internally focused' with responsibilities like 'day-to-day coordination,' 'budget tracking,' 'onboarding,' 'vendor relationships,' and 'operational execution of in-person meetings.' Paul's career is built on externally focused market-building, stakeholder engagement, and revenue generation\u2014none of which this role requires or involves.",
+          "severity": "hard"
+        },
+        {
+          "type": "Experience Profile Gap",
+          "detail": "The JD requires '5+ years of experience in operations, program management, or related roles with increasing responsibility' and 'experience developing and improving operational processes, systems, and workflows.' Paul has zero documented experience in internal operations management, process design, or administrative program coordination. His KSAT and GFW roles were commercial/partnerships roles, not operations roles.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 4,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 8
+      },
+      "rank": 58
+    },
+    {
+      "rank": 59,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -2346,7 +2548,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 60,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -2426,10 +2628,10 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 57
+      "rank": 61
     },
     {
-      "rank": 58,
+      "rank": 62,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -2458,7 +2660,7 @@
       "blockers": []
     },
     {
-      "rank": 59,
+      "rank": 63,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -2498,7 +2700,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 64,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -2548,7 +2750,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 65,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -2596,7 +2798,7 @@
       ]
     },
     {
-      "rank": 62,
+      "rank": 66,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -2625,7 +2827,7 @@
       "blockers": []
     },
     {
-      "rank": 63,
+      "rank": 67,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -2697,7 +2899,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 64
+      "rank": 68
     },
     {
       "company": "Arable",
@@ -2745,10 +2947,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 65
+      "rank": 69
     },
     {
-      "rank": 66,
+      "rank": 70,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -2836,10 +3038,10 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 67
+      "rank": 71
     },
     {
-      "rank": 68,
+      "rank": 72,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -2874,7 +3076,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 73,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -2903,7 +3105,7 @@
       "blockers": []
     },
     {
-      "rank": 70,
+      "rank": 74,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -2983,7 +3185,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 71
+      "rank": 75
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -3036,10 +3238,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 72
+      "rank": 76
     },
     {
-      "rank": 73,
+      "rank": 77,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -3119,10 +3321,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 74
+      "rank": 78
     },
     {
-      "rank": 75,
+      "rank": 79,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -3172,7 +3374,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 80,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -3262,7 +3464,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 77
+      "rank": 81
     },
     {
       "company": "gable",
@@ -3310,10 +3512,10 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 78
+      "rank": 82
     },
     {
-      "rank": 79,
+      "rank": 83,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -3358,7 +3560,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 84,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -3408,7 +3610,7 @@
       }
     },
     {
-      "rank": 81,
+      "rank": 85,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -7411,6 +7613,363 @@
           "source": "Techstars Jobs",
           "url": "https://jobs.techstars.com/companies/praxispro-ai/jobs/76729755-director-of-product",
           "reason": "Director of Product is a product management role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "digest_count": 254,
+      "scored_count": 12,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "rubiconcarbon",
+          "role": "Director, Business Development",
+          "score": 52.0
+        },
+        {
+          "company": "",
+          "role": "Carbon Mapper, Inc.Regional Engagement Manager- LATAM, Methane MitigationRemote\n              \u00b7\n\n            Full timeApply for Regional Engagement Manager- LATAM, Methane Mitigation",
+          "score": 50.0
+        },
+        {
+          "company": "",
+          "role": "Carbon Mapper, Inc.Deputy Director, Impact OperationsRemote\n              \u00b7\n\n            Full timeApply for Deputy Director, Impact Operations",
+          "score": 46.5
+        },
+        {
+          "company": "rubiconcarbon",
+          "role": "VP, Carbon Project Investment",
+          "score": 53.5
+        }
+      ],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "",
+          "role": "Discover your dream job in climate",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Enterprise Account Executive at Crusoe - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Discover your dream job in climate",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Discover your dream job in climate",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Discover your dream job in climate",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Discover your dream job in climate",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "",
+          "role": "Senior Manager, Watersheds Partnerships at Bonneville Environmental Foundation - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "national-marine-sanctuary-foundation",
+          "role": "Policy Director @ National Marine Sanctuary Foundation | Schmidt Marine Job Board",
+          "score": 35.5,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "crusoe",
+          "role": "Director, Commercial Operations",
+          "url": "https://jobs.ashbyhq.com/Crusoe/1877a89a-6948-43d4-b23b-5561a72fc2e3",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "254 entries. No Tier 1-2; 4 Tier 3 added. T3 4. 1 unscored.",
+      "jobs_processed": 254,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "254 entries. No Tier 1-2; 4 Tier 3 added. T3 4. 1 unscored. 37 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Group Account Director , Environmental Advocacy and Marketing",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Group Account Director at an agency is a client-facing marketing/communications role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Spotter Market Development & Partnerships Intern",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://jobs.ashbyhq.com/sofarocean/a96d7870-31e6-43be-9c00-4fb43471de5b",
+          "reason": "Title clearly indicates intern role, wrong seniority for VP/Director-level commercial leadership target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Associate Manager, ESG Compliance and Reporting",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "ESG Compliance and Reporting is a corporate sustainability/compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director Sustainability- Calhoun, GA",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Director Sustainability is a corporate sustainability function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Alternance Partnerships & Indirect Sales",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "'Alternance' is a French work-study program indicating junior/student role, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Atkinson Postdoctoral Science Fellow, Methane",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Atkinson Postdoctoral Science Fellow is an academic research position, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Strategic Nonprofit CFO \u2014 Growth & Sustainability",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "CFO is a finance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Scientific and Regulatory Affairs Specialist - Packaging Sustainability Compliance",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Sr. Scientific and Regulatory Affairs Specialist is a regulatory compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Analytics Intern",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Sustainability Analytics Intern is wrong-seniority quota carrier, Paul targets VP/Director-level roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Compliance & Sustainability Intern (Sustainability Focus)",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Intern role is wrong seniority level for VP/Director-level candidate with 25 years experience.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Geospatial Technology & AI / CTO",
+          "source": "Jobs in Carbon",
+          "url": "https://jobsincarbon.niceboard.co/",
+          "reason": "URL is a job board homepage (jobsincarbon.niceboard.co), not a specific posting, cannot evaluate role details.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Quality",
+          "source": "Carbon Mapper",
+          "url": "https://jobs.gusto.com/postings/carbon-mapper-inc-director-of-quality-65788564-ad2b-4610-9cdc-3fd6e64c3d4a",
+          "reason": "Director of Quality is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Carbon Mapper, Inc. Machine Learning Scientist (Climate and Earth Sciences) Remote",
+          "source": "Carbon Mapper",
+          "url": "https://jobs.gusto.com/postings/carbon-mapper-inc-machine-learning-scientist-climate-and-earth-sciences-4d8421e9-c057-4258-98d8-d6b128c7c866",
+          "reason": "Machine Learning Scientist is a research/engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Carbon Science",
+          "source": "Rubicon Carbon",
+          "url": "https://job-boards.greenhouse.io/rubiconcarbon/jobs/4676390005",
+          "reason": "Director, Carbon Science is a science/research role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Transportation for Massachusetts (T4MA) Associate Director for Special Projects",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Transportation for Massachusetts is a state-level transportation policy advocacy role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Modeling the surface emissions of natural and anthropogenic trace gases important for atmospheric composition and climate",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Title describes a research scientist or modeling engineer role focused on atmospheric composition and trace gas emissions, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Chesapeake Biological Laboratory",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Director, Chesapeake Biological Laboratory is an academic/research institution leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Assistant Director Environmental Health And Safety",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Assistant Director Environmental Health And Safety is an EHS/compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Representative - $1,000 - $2,000/Week",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Sales Representative with weekly comp structure ($1,000-$2,000/week) signals junior IC transactional sales role, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Climate Campaigns",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Director of Climate Campaigns is a marketing/advocacy role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Environmental Health",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Director of Environmental Health is a wrong-function role outside Paul's commercial/BD/partnerships profile, likely an EHS or public health function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales & Marketing Manager (Bilingual \u2013 Korean)",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "URL points to generic Terra.do job board landing page, not a specific posting, making it impossible to assess company or role details.",
+          "confidence": "high"
+        },
+        {
+          "title": "Wildfire Recovery Environmental Techs",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Wildfire Recovery Environmental Techs is field technician role, not commercial/BD/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP Business Operations, Strategy & People",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/veho/jobs/76613397-vp-business-operations-strategy-people",
+          "reason": "VP Business Operations, Strategy & People is a cross-functional ops/HR leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Business Development",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/montreal/senior-manager-business-development/4832/94513174000",
+          "reason": "L3Harris is a defense and national security contractor, matches Paul's hard exclusion for defense/IC/clearance-required roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Maritime Analyst",
+          "source": "Windward",
+          "url": "https://windward.ai/company/careers/co/washington-dc-area/D4.765/maritime-analyst/all",
+          "reason": "Maritime Analyst is an analyst role, not a commercial/BD/partnerships leadership position, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Manager, Government Affairs & Political Strategy",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Government Affairs & Political Strategy is a government relations/lobbying function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Co-Op, Global Sustainability (July - Dec 2026)",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Co-Op is an intern-level role, far below Paul's VP/Director target seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability, Health and Safety Program Manager",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Role is Sustainability/Health/Safety Program Manager, which is an EHS/compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Compliance Analyst",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Compliance Analyst is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Adjunct Faculty \u2013 Change Leadership and Sustainability for M.S. in Climate Change Leadership Program",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Adjunct Faculty teaching role for an academic M.S. program is wrong-function, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Financial Analyst \u2013 Corporate Analytics & Credit",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Financial Analyst \u2013 Corporate Analytics & Credit is a finance function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Project Engineer -- Sustainability",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Sr. Project Engineer is an engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Analyst 2",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Sustainability Analyst 2 is a junior IC role in analytics/reporting function, wrong seniority and function for Paul's VP/Director commercial leadership target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Specialist",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "URL is a job board landing page, not a specific posting; cannot evaluate without a direct job link.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Sustainability Manager \u2013 Hard Surface",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Product Sustainability Manager is a product management role focused on sustainability attributes of physical products (hard surface materials), not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Manager/Coordinator, Environmental Health, Safety and Sustainability (2700)",
+          "source": "Terra.do Job Board",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "reason": "Sustainability Manager/Coordinator role is an internal EHS/sustainability function, not a commercial/BD/partnerships role.",
           "confidence": "high"
         }
       ]
