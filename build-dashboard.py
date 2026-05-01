@@ -326,10 +326,10 @@ def compute_stat_cards(data):
     sent = [a for a in apps if a.get("applied")]
     # Active Interviews
     active_interviews = [a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")]
-    # Awaiting Response
-    awaiting = [a for a in apps if a.get("status") == "awaiting"]
-    # Rejected / Closed
-    rejected = [a for a in apps if a.get("status") in ("rejected", "filled")]
+    # Awaiting Response, includes speculative until it goes stale and gets retired
+    awaiting = [a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach")]
+    # Rejected / Closed, includes retired (separate visual section, same bucket for math)
+    rejected = [a for a in apps if a.get("status") in ("rejected", "filled", "retired")]
 
     def names(items, key="company"):
         return [item.get(key, "?") for item in items]
@@ -462,9 +462,12 @@ def compute_stats(data):
     archived = data.get("archived_deep_dives", [])
 
     applications_sent = len(apps)
-    awaiting_response = len([a for a in apps if a.get("status") == "awaiting"])
+    # Bucket math: Active Interviews + Awaiting Response + Rejected / Closed = Sent.
+    # Speculative rolls up into Awaiting until it goes stale and gets retired.
+    # Retired rolls up into Rejected / Closed for the stat-card count.
+    awaiting_response = len([a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach")])
     active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
-    rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled")])
+    rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled", "retired")])
     retired = len([a for a in apps if a.get("status") == "retired"])
     active_pipeline = len(ranked)
     deep_dives_done = len([r for r in ranked if r.get("doc_path")]) + len([a for a in archived if a.get("doc_path")])
