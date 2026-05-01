@@ -203,12 +203,14 @@ def build_ranked_cards(opportunities):
     return "\n".join(cards)
 
 def build_app_rows(apps, include=None):
-    """Render application rows. include=None shows all; 'active' excludes rejected/filled;
-    'closed' shows only rejected/filled."""
+    """Render application rows. include=None shows all; 'active' excludes rejected/filled/retired;
+    'closed' shows only rejected/filled; 'retired' shows only retired."""
     if include == 'active':
-        apps = [a for a in apps if a.get('status') not in ('rejected', 'filled')]
+        apps = [a for a in apps if a.get('status') not in ('rejected', 'filled', 'retired')]
     elif include == 'closed':
         apps = [a for a in apps if a.get('status') in ('rejected', 'filled')]
+    elif include == 'retired':
+        apps = [a for a in apps if a.get('status') == 'retired']
     status_order = {
         "offer": 0,
         "final_round_held": 1,
@@ -226,6 +228,7 @@ def build_app_rows(apps, include=None):
         "applied": 10,
         "rejected": 11,
         "filled": 12,
+        "retired": 12,
         "pass": 13,
     }
     if include == 'closed':
@@ -251,6 +254,7 @@ def build_app_rows(apps, include=None):
             "applied": ("Applied", "amber"),
             "rejected": ("Rejected", "muted"),
             "filled": ("Filled", "muted"),
+            "retired": ("Retired", "muted"),
             "pass": ("Pass", "muted"),
             "speculative": ("Speculative", "blue"),
             "cold_outreach": ("Speculative", "blue"),
@@ -461,6 +465,7 @@ def compute_stats(data):
     awaiting_response = len([a for a in apps if a.get("status") == "awaiting"])
     active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
     rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled")])
+    retired = len([a for a in apps if a.get("status") == "retired"])
     active_pipeline = len(ranked)
     deep_dives_done = len([r for r in ranked if r.get("doc_path")]) + len([a for a in archived if a.get("doc_path")])
     resumes_built = len(set(r.get("company") for r in ranked if r.get("resume_path")))
@@ -470,6 +475,7 @@ def compute_stats(data):
         "awaiting_response": awaiting_response,
         "active_interviews": active_interviews,
         "rejected_closed": rejected_closed,
+        "retired": retired,
         "active_pipeline": active_pipeline,
         "deep_dives_done": deep_dives_done,
         "resumes_built": resumes_built,
@@ -1265,6 +1271,20 @@ def build_html(data):
 </details>
 
 {speculative_outreach_html}
+
+<details>
+<summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Applications where the proactive process has run its course, follow-ups sent, no response. Kept here for record so the same role does not get re-prioritized.</p>
+<input class="table-filter" type="search" placeholder="Filter retired..." aria-label="Filter retired" />
+<div class="table-wrapper" style="margin-top:12px">
+<table class="applications-table">
+  <thead><tr><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Score</th><th data-type="date">Applied</th><th data-type="num">Days</th><th data-type="text">Domain</th><th data-type="text">Location</th><th data-type="text">Comp</th><th data-type="text">Status</th><th>Link</th><th>Next Action</th></tr></thead>
+  <tbody>
+{build_app_rows(data["applications"], include='retired')}
+  </tbody>
+</table>
+</div>
+</details>
 
 <details>
 <summary class="section-header">Rejected / Closed <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed</span></summary>
