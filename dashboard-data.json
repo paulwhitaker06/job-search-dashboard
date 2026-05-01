@@ -99,7 +99,7 @@
     "applications_sent": 25,
     "awaiting_response": 15,
     "active_interviews": 3,
-    "active_pipeline": 90,
+    "active_pipeline": 93,
     "deep_dives_done": 15,
     "resumes_built": 1,
     "rejected_closed": 6,
@@ -107,7 +107,55 @@
   },
   "ranked_opportunities": [
     {
-      "rank": 1,
+      "company": "phoenixtailings",
+      "role": "Phoenix Tailings - 6.1. Vice President of Partnerships",
+      "score": 76.5,
+      "proxy_score": null,
+      "effective_score": 76.5,
+      "fit": 8,
+      "has_deep_dive": false,
+      "date": "2026-05-01",
+      "scqa": "",
+      "verdict": "Phoenix Tailings VP Partnerships is a strong fit for Paul. The role is precisely architected around his core strength: building commercial demand in markets where buyers don't yet have established procurement habits for a new product category (clean-mined critical metals). The JD explicitly asks for someone who can \"generate pipeline from the ground up,\" \"turn early conversations into contracted revenue,\" and \"operate in ambiguous, fast-moving environments\" \u2014 language that maps directly to Paul's decade at KSAT building SAR monitoring markets and his GFW commercial licensing program. RF scores 8: the responsibility set (originate partnerships, structure complex agreements, navigate multi-layered supply chains, translate technical capabilities into commercial value) is Paul's exact career playbook. SA scores 8: Phoenix is post-PMF (they have a technology that works) but pre-scale in commercial revenue \u2014 the classic inflection Paul targets. SPM scores 9: all three of Paul's patterns apply cleanly (pilot-to-precedent via defense/OEM early adopters, multi-stakeholder deal architecture across supply chains, shaping procurement standards before they formalize). IL scores 6 due to sector gap: Paul has zero direct experience in mining, metals, materials science, or defense contracting, and the JD explicitly asks for \"experience selling into Tier 1 suppliers, OEMs, or defense contractors.\" His oil & gas and maritime surveillance experience demonstrates analogous skills (complex industrial buyers, long sales cycles, technical products) but he cannot claim the named networks. The 10+ years threshold is met (15 years commercial experience across PA/KSAT/GFW), so no RF cap fires. CO scores 8: $200-250K total cash is at the lower boundary of Paul's likely expectations for a VP role, but equity in a venture-backed cleantech startup with mission alignment compensates. GC scores 7: on-site Burlington MA requirement creates friction given Paul's Taos location, but he has explicitly stated openness to relocation and the role's strategic weight justifies it. No hard blockers fire. Recommend pursue with caveats: sector gap and relocation friction are real but surmountable for a role this well-fitted to Paul's market-builder identity.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/PhoenixTailings/6cb910a6-0e7b-4e67-9a36-f3c5fd1719b3?lever-source%5B%5D=jobs.greentownlabs.com"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-05-01",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Burlington, MA",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Years of Experience",
+          "detail": "JD requires '10+ years of experience in business development, strategic partnerships, or commercial roles' - Paul has 15 years total in commercial roles across PA Consulting, KSAT, and GFW, clearly meeting this threshold.",
+          "severity": "soft"
+        },
+        {
+          "type": "Location",
+          "detail": "Role is on-site in Burlington, MA. Paul is currently in Taos, NM but explicitly states he is 'open to relocation for the right role.' This creates friction but is not a hard blocker.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 8,
+        "SA": 8,
+        "IL": 6,
+        "SPM": 9,
+        "CO": 8,
+        "GC": 7
+      },
+      "rank": 1
+    },
+    {
+      "rank": 2,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -142,7 +190,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -182,7 +230,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -211,7 +259,7 @@
       "blockers": []
     },
     {
-      "rank": 4,
+      "rank": 5,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -244,7 +292,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -273,7 +321,7 @@
       "blockers": []
     },
     {
-      "rank": 6,
+      "rank": 7,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -300,7 +348,7 @@
       "blockers": []
     },
     {
-      "rank": 7,
+      "rank": 8,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -337,7 +385,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -372,7 +420,7 @@
       ]
     },
     {
-      "rank": 9,
+      "rank": 10,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -407,7 +455,7 @@
       ]
     },
     {
-      "rank": 10,
+      "rank": 11,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -442,7 +490,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 55.5,
@@ -490,7 +538,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -570,10 +618,10 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 13
+      "rank": 14
     },
     {
-      "rank": 14,
+      "rank": 15,
       "company": "Crusoe",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 54.5,
@@ -661,10 +709,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 15
+      "rank": 16
     },
     {
-      "rank": 16,
+      "rank": 17,
       "company": "David Energy",
       "role": "Customer Success Manager",
       "date": "2026-04-17",
@@ -695,7 +743,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "company": "Rubicon Carbon",
       "role": "Director, Business Development",
       "score": 53.5,
@@ -780,7 +828,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 18
+      "rank": 19
     },
     {
       "company": "rubiconcarbon",
@@ -833,10 +881,10 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 19
+      "rank": 20
     },
     {
-      "rank": 20,
+      "rank": 21,
       "company": "Bentley Systems",
       "role": "Market Development Director, North America Transportation",
       "score": 53.0,
@@ -884,7 +932,7 @@
       ]
     },
     {
-      "rank": 21,
+      "rank": 22,
       "company": "Systemiq",
       "role": "Strategy Director \u2014 Low Carbon Energy",
       "score": 53.0,
@@ -927,7 +975,7 @@
       ]
     },
     {
-      "rank": 22,
+      "rank": 23,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -967,7 +1015,7 @@
       ]
     },
     {
-      "rank": 23,
+      "rank": 24,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -998,7 +1046,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 24,
+      "rank": 25,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -1085,10 +1133,10 @@
         "CO": 6,
         "GC": 3
       },
-      "rank": 25
+      "rank": 26
     },
     {
-      "rank": 26,
+      "rank": 27,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -1117,7 +1165,7 @@
       "blockers": []
     },
     {
-      "rank": 27,
+      "rank": 28,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -1152,7 +1200,7 @@
       ]
     },
     {
-      "rank": 28,
+      "rank": 29,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -1181,7 +1229,7 @@
       "blockers": []
     },
     {
-      "rank": 29,
+      "rank": 30,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -1222,7 +1270,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 31,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development \u2014 Mission Critical Infrastructure",
       "score": 51.0,
@@ -1265,7 +1313,7 @@
       ]
     },
     {
-      "rank": 31,
+      "rank": 32,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -1294,7 +1342,55 @@
       "blockers": []
     },
     {
-      "rank": 32,
+      "company": "",
+      "role": "Business Development Manager",
+      "score": 51.0,
+      "proxy_score": null,
+      "effective_score": 51.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-05-01",
+      "scqa": "",
+      "verdict": "This Fugro Business Development Manager role scores 50.5/100 (Tier 3). The role shows strong strategic pattern alignment \u2014 market-building in nascent climate/nature sectors, shaping Geo-data value propositions for new markets, pilot-to-precedent language around environmental impact assessments \u2014 but suffers from two significant constraints. First, geographic: the on-site Malaysia/Singapore requirement creates substantial relocation friction for Paul in Taos. GC capped at 3 due to the foreign-country on-site constraint combined with \"offered under local terms.\" Second, sector fit: while Paul has deep Geo-data/EO experience, the JD's focus on \"coastal flood risk, nature-based solutions, ecosystem conservation and restoration, marine spatial planning\" and tailoring propositions for the EIA market represents a pivot from his core maritime surveillance/energy monitoring background. RF scored 5 (not capped to 4) because the commercial motion matches Paul's strengths, but the environmental science domain is adjacent rather than core. IL scored 4 because Paul meets the years requirement but lacks the named \"related field\" technical depth in climate/nature/EIA sectors. SPM scores 7 legitimately: the market-building motion in nascent sectors with cross-regional teams and stakeholder coordination fits Paul's patterns well. Recommendation: track but don't pursue actively given geographic and sector friction.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.fugro.com/careers/jobs/R0031192-business-development-manager"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-05-01",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "You can indicate your preferred working location in your motivation letter or in the next stage of the recruitment proce",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Geographic constraint",
+          "detail": "Role is explicitly placed in Malaysia (Kuala Lumpur) or Singapore with on-site requirement. JD states 'This position is placed in Malaysia and will be offered under local terms' and 'Place: On Site'. While not a foreign-country residency blocker (Paul could theoretically relocate), this creates significant friction given Paul's current location in Taos, NM and represents a substantial relocation requirement to Southeast Asia.",
+          "severity": "soft"
+        },
+        {
+          "type": "Experience requirement mismatch",
+          "detail": "JD requires 'Minimum 5 years' proven technical sales / business development expertise with an related field' \u2014 Paul exceeds this quantitatively but the role's focus on environmental science, nature-based solutions, ecosystem conservation, coastal flood risk, and EIA (Environmental Impact Assessment) markets represents a sector pivot from Paul's core maritime/energy/fishing surveillance background. While adjacent, this is not his proven domain.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 6,
+        "IL": 4,
+        "SPM": 7,
+        "CO": 5,
+        "GC": 3
+      },
+      "rank": 33
+    },
+    {
+      "rank": 34,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -1323,7 +1419,7 @@
       "blockers": []
     },
     {
-      "rank": 33,
+      "rank": 35,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -1408,7 +1504,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 34
+      "rank": 36
     },
     {
       "company": "",
@@ -1461,10 +1557,58 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 35
+      "rank": 37
     },
     {
-      "rank": 36,
+      "company": "",
+      "role": "Senior Director, Business Development and Investor Relations",
+      "score": 50.0,
+      "proxy_score": null,
+      "effective_score": 50.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-05-01",
+      "scqa": "",
+      "verdict": "This role requires 10+ years of fundraising experience securing $10M+ commitments from HNWIs, foundations, and DFIs, with demonstrated success in impact investing or private credit capital raising. Paul has 15 years of commercial BD experience selling monitoring services and data products, not raising philanthropic grants or impact investment capital. The JD explicitly requires 'a minimum of 10 years of relevant experience...preferably within impact investing, ESG, private credit or international development' and 'demonstrated success securing seven figures to $10M+ investments, gifts, and/or contracts from High-Net-Worth Individuals.' Paul's GFW commercial licensing work was revenue generation (selling data access), not capital formation. This is a fundraising role, not a commercial market-building role.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.philanthropy.com/job/52219/senior-director-business-development-and-investor-relations/?LinkSource=PromotedJob"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-05-01",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "Washington D.C.",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Experience requirement",
+          "detail": "JD requires 'a minimum of 10 years of relevant experience...preferably within impact investing, ESG, private credit or international development' and 'demonstrated success securing seven figures to $10M+ investments, gifts, and/or contracts from High-Net-Worth Individuals, foundations, impact investors, and development finance institutions.' Paul has 15 years in commercial space/EO but his direct fundraising experience is limited to building commercial licensing at GFW (revenue, not fundraising) and multi-stakeholder deal architecture at KSAT (sales, not capital raising). His track record is in building commercial demand and closing contracts, not raising philanthropic grants or impact investment capital from HNWIs and DFIs.",
+          "severity": "hard"
+        },
+        {
+          "type": "Role type mismatch",
+          "detail": "This is a fundraising and investor relations role focused on securing philanthropic grants and impact investments ($20M raise for Fund II, $75M for Fund III). The job is about capital raising from donors and institutional investors, not building commercial markets or selling products/services. Paul's career has been in commercial business development (selling monitoring services, licensing data products), not fundraising or capital formation.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 5,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 8
+      },
+      "rank": 38
+    },
+    {
+      "rank": 39,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -1499,7 +1643,7 @@
       ]
     },
     {
-      "rank": 37,
+      "rank": 40,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -1549,7 +1693,7 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 41,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -1578,7 +1722,7 @@
       "blockers": []
     },
     {
-      "rank": 39,
+      "rank": 42,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -1623,7 +1767,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 43,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -1708,10 +1852,10 @@
         "CO": 8,
         "GC": 4
       },
-      "rank": 41
+      "rank": 44
     },
     {
-      "rank": 42,
+      "rank": 45,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -1746,7 +1890,7 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 46,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -1781,7 +1925,7 @@
       ]
     },
     {
-      "rank": 44,
+      "rank": 47,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -1860,10 +2004,10 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 45
+      "rank": 48
     },
     {
-      "rank": 46,
+      "rank": 49,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -1942,7 +2086,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 47
+      "rank": 50
     },
     {
       "company": "",
@@ -1990,7 +2134,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 48
+      "rank": 51
     },
     {
       "company": "",
@@ -2038,10 +2182,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 49
+      "rank": 52
     },
     {
-      "rank": 50,
+      "rank": 53,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -2076,7 +2220,7 @@
       ]
     },
     {
-      "rank": 51,
+      "rank": 54,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -2171,7 +2315,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 52
+      "rank": 55
     },
     {
       "company": "rubiconcarbon",
@@ -2219,7 +2363,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 53
+      "rank": 56
     },
     {
       "company": "",
@@ -2267,10 +2411,10 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 54
+      "rank": 57
     },
     {
-      "rank": 55,
+      "rank": 58,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -2323,7 +2467,7 @@
       ]
     },
     {
-      "rank": 56,
+      "rank": 59,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -2366,7 +2510,7 @@
       ]
     },
     {
-      "rank": 57,
+      "rank": 60,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -2401,7 +2545,7 @@
       ]
     },
     {
-      "rank": 58,
+      "rank": 61,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -2436,7 +2580,7 @@
       ]
     },
     {
-      "rank": 59,
+      "rank": 62,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -2510,7 +2654,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 60
+      "rank": 63
     },
     {
       "company": "rubiconcarbon",
@@ -2568,7 +2712,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 61
+      "rank": 64
     },
     {
       "company": "",
@@ -2616,10 +2760,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 62
+      "rank": 65
     },
     {
-      "rank": 63,
+      "rank": 66,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -2654,7 +2798,7 @@
       ]
     },
     {
-      "rank": 64,
+      "rank": 67,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -2734,7 +2878,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 65
+      "rank": 68
     },
     {
       "company": "",
@@ -2787,10 +2931,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 66
+      "rank": 69
     },
     {
-      "rank": 67,
+      "rank": 70,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -2819,7 +2963,7 @@
       "blockers": []
     },
     {
-      "rank": 68,
+      "rank": 71,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -2859,7 +3003,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 72,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -2909,7 +3053,7 @@
       }
     },
     {
-      "rank": 70,
+      "rank": 73,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -2957,7 +3101,7 @@
       ]
     },
     {
-      "rank": 71,
+      "rank": 74,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -3031,10 +3175,10 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 72
+      "rank": 75
     },
     {
-      "rank": 73,
+      "rank": 76,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -3106,7 +3250,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 74
+      "rank": 77
     },
     {
       "company": "Arable",
@@ -3154,10 +3298,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 75
+      "rank": 78
     },
     {
-      "rank": 76,
+      "rank": 79,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -3245,10 +3389,10 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 77
+      "rank": 80
     },
     {
-      "rank": 78,
+      "rank": 81,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -3283,7 +3427,7 @@
       ]
     },
     {
-      "rank": 79,
+      "rank": 82,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -3312,7 +3456,7 @@
       "blockers": []
     },
     {
-      "rank": 80,
+      "rank": 83,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -3392,7 +3536,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 81
+      "rank": 84
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -3445,10 +3589,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 82
+      "rank": 85
     },
     {
-      "rank": 83,
+      "rank": 86,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -3528,10 +3672,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 84
+      "rank": 87
     },
     {
-      "rank": 85,
+      "rank": 88,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -3581,7 +3725,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 89,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -3671,7 +3815,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 87
+      "rank": 90
     },
     {
       "company": "gable",
@@ -3719,10 +3863,10 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 88
+      "rank": 91
     },
     {
-      "rank": 89,
+      "rank": 92,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -3767,7 +3911,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 93,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -3817,7 +3961,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 94,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -8897,6 +9041,367 @@
           "source": "Climate Change Jobs",
           "url": "https://climatechangejobs.com/jobs/in-arcadia-california-united-states",
           "reason": "URL is a geographic aggregator page listing all climate jobs in Arcadia, California, not a specific job posting.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "digest_count": 106,
+      "scored_count": 4,
+      "tier_1": [
+        {
+          "company": "phoenixtailings",
+          "role": "Phoenix Tailings - 6.1. Vice President of Partnerships",
+          "score": 76.5
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "",
+          "role": "Business Development Manager",
+          "score": 51.0
+        },
+        {
+          "company": "",
+          "role": "Senior Director, Business Development and Investor Relations",
+          "score": 50.0
+        }
+      ],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "",
+          "role": "Strategy and Operations Principal, Partner Operations at Via - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Business Development Manager",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Head of Sales",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Strategic Transactions Manager, Software GTM",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Client Relationship Manager, Institutional Partnerships",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Business Development Manager (f/m/d) B2B Food Ingredients",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Teamlead Supply Chain and Export",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        },
+        {
+          "company": "",
+          "role": "Financial and Commercial Analyst",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "106 entries. Tier 1 hit: phoenixtailings at 76.5. T1 1 / T3 2. 7 unscored.",
+      "jobs_processed": 106,
+      "high_scores": 1,
+      "deep_dives": 0,
+      "result": "106 entries. Tier 1 hit: phoenixtailings at 76.5. T1 1 / T3 2. 7 unscored. 39 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Senior Researcher (GIS and Remote Sensing, and Environmental Management) (5-year Contract) (Job ID: 6441)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462204880-senior-researcher-gis-and-remote-sensing-and-environmental-management-5-year-contract-job-id-6441",
+          "reason": "Senior Researcher is an academic/research role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "(Senior) Sales GTM Transformation Manager",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "URL is generic Climatebase job board landing page, not a specific posting, cannot evaluate company or role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Graduate Program - Business Development & Sales",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Graduate Program indicates entry-level rotational training role, wrong seniority for VP/Director-level commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Schmidt Marine",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/corpower-ocean/jobs/76897400-electrical-technician-wave-energy",
+          "reason": "Electrical Technician is a hands-on engineering/technical role, wrong function for Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director, Product Marketing",
+          "source": "SOSV Portfolio",
+          "url": "https://hisenseusacorporation.bamboohr.com/careers/284",
+          "reason": "Hisense is a consumer electronics manufacturer (TVs, appliances, phones) with no climate or EO/maritime domain overlap, and the role is product marketing not commercial/BD.",
+          "confidence": "high"
+        },
+        {
+          "title": "Strategy and sustainability consultant",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/166120598-strategy-and-sustainability-consultant-internship",
+          "reason": "Title includes 'internship' which indicates wrong seniority level for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Optimal sensor placement for environmental monitoring of air pollution H/F",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462204834-optimal-sensor-placement-for-environmental-monitoring-of-air-pollution-h-f",
+          "reason": "Title indicates research/engineering role focused on sensor placement optimization, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Port-Harcourt, Rivers, Nigeria Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-port-harcourt-rivers-nigeria",
+          "reason": "URL is a location-based job board aggregation page, not a specific posting with a defined role or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Applied Geospatial ML Engineer",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/en-US/Vantor/job/Herndon-VA/Applied-Geospatial-ML-Engineer_R23846",
+          "reason": "Applied Geospatial ML Engineer is an engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Electrical Integration Associate - RF (Fall 2026)",
+          "source": "Astranis",
+          "url": "https://job-boards.greenhouse.io/astranis/jobs/4677812006",
+          "reason": "Electrical Integration Associate - RF is an engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Electrical Integration Intern - RF (Fall 2026)",
+          "source": "Astranis",
+          "url": "https://job-boards.greenhouse.io/astranis/jobs/4677813006",
+          "reason": "Electrical Integration Intern is an engineering internship role, wrong function and wrong seniority for Paul's director-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Operations Coordinator",
+          "source": "Commonwealth Fusion Systems",
+          "url": "https://jobs.lever.co/cfsenergy/5fc44be3-071d-4695-aa90-e1d902c4f208",
+          "reason": "Supply Chain Operations Coordinator is an ops/logistics IC role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Operations Coordinator - Weekend, First Shift",
+          "source": "Commonwealth Fusion Systems",
+          "url": "https://jobs.lever.co/cfsenergy/745ed742-b6b4-4d72-84ec-757aa150139d",
+          "reason": "Supply Chain Operations Coordinator is an operational IC role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Operations Coordinator - Weekend, Second Shift",
+          "source": "Commonwealth Fusion Systems",
+          "url": "https://jobs.lever.co/cfsenergy/8f4dc402-ea97-4b39-b4c7-7890f573592b",
+          "reason": "Supply Chain Operations Coordinator is an ops/logistics IC role, not commercial/BD/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Werkstudent Supply Chain (m/w/d)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Werkstudent is a German student intern role, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Partnerships Development Manager (FTC)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "URL is climatebase.org/jobs (generic job board landing page), not a specific posting - cannot evaluate company or role details.",
+          "confidence": "high"
+        },
+        {
+          "title": "INTERN - Digital Design, Data Visualization and Geospatial Communications",
+          "source": "GEO Careers",
+          "url": "https://www.geo-careers.com/",
+          "reason": "INTERN title indicates wrong seniority level for VP/Director-level commercial leader role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Associate, Citymapper Ads",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462242177-business-development-associate-citymapper-ads",
+          "reason": "Citymapper is a consumer transit app with ads business, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Stage Business Development & Innovation",
+          "source": "Jobs in Carbon",
+          "url": "https://www.welcometothejungle.com/en/companies/removall/jobs/stagiaire-business-development-innovation_paris?fromapply=true&igbtracker=906900290&referrer=vonq_opn",
+          "reason": "Title 'Stage' indicates internship/trainee role in French system, wrong seniority for director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Legal Counsel, Corporate & Securities",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Crusoe/6976a20d-acce-441a-b25c-9f59ff3b1f2e",
+          "reason": "Director, Legal Counsel is a legal function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "9.2. Vice President of Manufacturing Operations",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://jobs.lever.co/PhoenixTailings/bb771719-d09c-49ef-9e4b-8d0856418bca?lever-source%5B%5D=jobs.greentownlabs.com",
+          "reason": "VP of Manufacturing Operations is a production/operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "9.1. Vice President of Manufacturing Engineering",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://jobs.lever.co/PhoenixTailings/d71720d2-e715-4c9c-89b1-216ad8aae2fb?lever-source%5B%5D=jobs.greentownlabs.com",
+          "reason": "Vice President of Manufacturing Engineering is an engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Quality Control",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Director of Quality Control is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales development representative (German speaking)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role, wrong seniority for Paul's VP/Director-level target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Finance Director",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Finance Director is a finance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role, wrong seniority for Paul's Director/VP-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Global Head of Talent Acquisition",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Global Head of Talent Acquisition is a recruiting function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Finance (m/f/x)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Head of Finance is a finance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Manager (m/w/d) f\u00fcr intelligente Energiesysteme - 1KOMMA5\u00b0 D\u00fcsseldorf",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "German-language role (m/w/d designation) at 1KOMMA5\u00b0 targeting German market for residential energy systems, wrong geography and language requirements.",
+          "confidence": "high"
+        },
+        {
+          "title": "THRIVE Downtown Attleboro",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/water-foundation-2/jobs/76909690-thrive-downtown-attleboro-executive-director",
+          "reason": "THRIVE Downtown Attleboro is a local downtown business development organization, off-domain from climate/EO/maritime.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Health, Safety and Environment (Internal)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462202460-head-of-health-safety-and-environment-internal",
+          "reason": "Head of Health, Safety and Environment is an HSE/EHS function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Agriculture and Environment Extension Agent",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462204753-agriculture-and-environment-extension-agent",
+          "reason": "Agriculture and Environment Extension Agent is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "BLUE OCEAN CORPORATION - HSE Trainer (Health, Safety & Environment) in Abu Dhabi",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462204919/apply",
+          "reason": "HSE Trainer is a wrong-function role (health/safety/environment training, not commercial/BD/partnerships).",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Validation Engineer for Cold Chain Shipping Environment (Atlanta, Georgia, US)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462204997-senior-validation-engineer-for-cold-chain-shipping-environment-atlanta-georgia-us",
+          "reason": "Senior Validation Engineer is a wrong-function engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainable Agriculture Agent",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462206071-sustainable-agriculture-agent",
+          "reason": "Sustainable Agriculture Agent is an agricultural extension or field agent role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Inside Sales Representative",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462229208-inside-sales-representative",
+          "reason": "Inside Sales Representative is a junior IC quota-carrier role, wrong seniority for Paul's VP/Director-level target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Legal Policy Analyst or Director",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/462231471/apply",
+          "reason": "Legal Policy Analyst or Director is a legal/policy function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Abu Dhabi, Abu Dhabi, United Arab Emirates Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-abu-dhabi-abu-dhabi-united-arab-emirates",
+          "reason": "URL is a location-filtered job board index page (Abu Dhabi, UAE), not a specific posting with evaluable title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Arcadia, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-arcadia-california-united-states",
+          "reason": "URL is a location-based aggregator page for all climate jobs in Arcadia, CA, not a specific posting.",
           "confidence": "high"
         }
       ]
