@@ -127,7 +127,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Burlington, MA",
@@ -164,7 +164,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Burlington, MA",
@@ -192,7 +192,55 @@
       "rank": 2
     },
     {
-      "rank": 3,
+      "company": "Phoenix Tailings",
+      "role": "VP of Partnerships",
+      "score": 68.0,
+      "proxy_score": null,
+      "effective_score": 68.0,
+      "fit": 7,
+      "has_deep_dive": true,
+      "date": "2026-05-01",
+      "scqa": "100-Day Plan opens with 30 days listening, 30 days dissecting Traxys, 30 days appointing vertical owners, 10 days starting next large offtake (defense-prime).",
+      "verdict": "VP-level role at a Series B critical-minerals scale-up (Phoenix Tailings, Burlington MA, $116M raised, BMW/Yamaha/Eni/Traxys backed). Excellent SPM (post-PMF commercial scaling, multi-year strategic offtake architecture, C-suite partnership work) and excellent SA (Series B with real revenue + strategic investor alignment). RF is 6 because rare-earth metallurgy is not Paul's domain, but the JD weights commercial pattern over domain depth at this level. Two specific frictions: (a) Paul applied for Director of BD on Mar 25 and was rejected same day with note encouraging future applications, (b) Burlington on-site requirement vs Taos. Both addressable; the rejection actually argues FOR this role being a better shape than the Director one was.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.phoenixtailings.com/careers"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Phoenix_Tailings_VP_Partnerships_Deep_Dive.docx",
+      "doc_note": "Full strategic deep dive generated 2026-05-01. PESTLE/VRIO/SWOT/TOWS/NOISE/SOAR + role analysis + 5 SCQAs + cover letter draft (410 words). Anchor SCQA: '100-Day Plan' (20/20).",
+      "added": "2026-05-01",
+      "is_new": true,
+      "tier": "tier2",
+      "domain": "Critical Minerals / Rare Earth Refining",
+      "location": "Burlington, MA (on-site, relocation required)",
+      "hook": "Series B critical-minerals refiner ($116M raised, BMW/Yamaha/Eni/Traxys backed). VP role weights commercial pattern (post-PMF scaling, multi-year offtake architecture) over domain depth. Paul was rejected for the Director role 5 weeks ago, encouraged to apply for future roles, this is the future role.",
+      "blockers": [
+        {
+          "type": "geographic_residency",
+          "detail": "Burlington, MA on-site role. Paul is in Taos, NM. Relocation required. Paul has indicated openness to relocation for the right role.",
+          "severity": "soft"
+        },
+        {
+          "type": "prior_rejection",
+          "detail": "Paul applied to Director of Business Development at Phoenix Tailings on 2026-03-25 and was rejected same day. Note from company encouraged applying for future roles. The VP of Partnerships posting is a more senior, structurally different role; the cover letter must address the prior rejection directly.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 6,
+        "SA": 9,
+        "IL": 5,
+        "SPM": 9,
+        "CO": 7,
+        "GC": 5
+      },
+      "rank": 3
+    },
+    {
+      "rank": 4,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
       "score": 59.5,
@@ -227,7 +275,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -267,7 +315,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -296,7 +344,7 @@
       "blockers": []
     },
     {
-      "rank": 6,
+      "rank": 7,
       "company": "Dioxycle",
       "role": "Head of Business Development",
       "score": 58.0,
@@ -329,7 +377,7 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -358,7 +406,7 @@
       "blockers": []
     },
     {
-      "rank": 8,
+      "rank": 9,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -385,7 +433,7 @@
       "blockers": []
     },
     {
-      "rank": 9,
+      "rank": 10,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -422,7 +470,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -457,7 +505,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 56.5,
@@ -492,7 +540,7 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 13,
       "company": "Synspective",
       "role": "Senior Manager, Partnerships & Key Accounts EMEA",
       "score": 56.0,
@@ -527,7 +575,7 @@
       ]
     },
     {
-      "rank": 13,
+      "rank": 14,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 55.5,
@@ -575,7 +623,7 @@
       ]
     },
     {
-      "rank": 14,
+      "rank": 15,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -630,7 +678,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -655,10 +703,10 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 15
+      "rank": 16
     },
     {
-      "rank": 16,
+      "rank": 17,
       "company": "Crusoe",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 54.5,
@@ -746,10 +794,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 17
+      "rank": 18
     },
     {
-      "rank": 18,
+      "rank": 19,
       "company": "David Energy",
       "role": "Customer Success Manager",
       "date": "2026-04-17",
@@ -780,7 +828,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "company": "Rubicon Carbon",
       "role": "Director, Business Development",
       "score": 53.5,
@@ -835,7 +883,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -865,7 +913,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 20
+      "rank": 21
     },
     {
       "company": "rubiconcarbon",
@@ -888,7 +936,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -918,10 +966,10 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 21
+      "rank": 22
     },
     {
-      "rank": 22,
+      "rank": 23,
       "company": "Bentley Systems",
       "role": "Market Development Director, North America Transportation",
       "score": 53.0,
@@ -969,7 +1017,7 @@
       ]
     },
     {
-      "rank": 23,
+      "rank": 24,
       "company": "Systemiq",
       "role": "Strategy Director \u2014 Low Carbon Energy",
       "score": 53.0,
@@ -1012,7 +1060,7 @@
       ]
     },
     {
-      "rank": 24,
+      "rank": 25,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -1052,7 +1100,7 @@
       ]
     },
     {
-      "rank": 25,
+      "rank": 26,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -1083,7 +1131,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -1145,7 +1193,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -1170,10 +1218,10 @@
         "CO": 6,
         "GC": 3
       },
-      "rank": 27
+      "rank": 28
     },
     {
-      "rank": 28,
+      "rank": 29,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -1202,7 +1250,7 @@
       "blockers": []
     },
     {
-      "rank": 29,
+      "rank": 30,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -1237,7 +1285,7 @@
       ]
     },
     {
-      "rank": 30,
+      "rank": 31,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -1266,7 +1314,7 @@
       "blockers": []
     },
     {
-      "rank": 31,
+      "rank": 32,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -1307,7 +1355,7 @@
       ]
     },
     {
-      "rank": 32,
+      "rank": 33,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development \u2014 Mission Critical Infrastructure",
       "score": 51.0,
@@ -1350,7 +1398,7 @@
       ]
     },
     {
-      "rank": 33,
+      "rank": 34,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -1399,7 +1447,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "You can indicate your preferred working location in your motivation letter or in the next stage of the recruitment proce",
@@ -1424,10 +1472,10 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 34
+      "rank": 35
     },
     {
-      "rank": 35,
+      "rank": 36,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -1456,7 +1504,7 @@
       "blockers": []
     },
     {
-      "rank": 36,
+      "rank": 37,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -1511,7 +1559,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, and operates as a virtual-first organization. While we are prima",
@@ -1541,7 +1589,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 37
+      "rank": 38
     },
     {
       "company": "",
@@ -1564,7 +1612,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, and operates as a virtual-first organization. While we are prima",
@@ -1594,7 +1642,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 38
+      "rank": 39
     },
     {
       "company": "",
@@ -1617,7 +1665,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Washington D.C.",
@@ -1642,10 +1690,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 39
+      "rank": 40
     },
     {
-      "rank": 40,
+      "rank": 41,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -1680,7 +1728,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 42,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -1730,7 +1778,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 43,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -1759,7 +1807,7 @@
       "blockers": []
     },
     {
-      "rank": 43,
+      "rank": 44,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -1804,7 +1852,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 45,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -1859,7 +1907,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -1889,10 +1937,10 @@
         "CO": 8,
         "GC": 4
       },
-      "rank": 45
+      "rank": 46
     },
     {
-      "rank": 46,
+      "rank": 47,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -1927,7 +1975,7 @@
       ]
     },
     {
-      "rank": 47,
+      "rank": 48,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -1962,7 +2010,7 @@
       ]
     },
     {
-      "rank": 48,
+      "rank": 49,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -2041,10 +2089,10 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 49
+      "rank": 50
     },
     {
-      "rank": 50,
+      "rank": 51,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -2093,7 +2141,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, and operates as a virtual-first organization. While we are prima",
@@ -2123,7 +2171,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 51
+      "rank": 52
     },
     {
       "company": "",
@@ -2146,7 +2194,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, but we embrace the virtual office and are continuing to grow our",
@@ -2171,7 +2219,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 52
+      "rank": 53
     },
     {
       "company": "",
@@ -2194,7 +2242,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, and operates as a virtual-first organization. While we are prima",
@@ -2219,10 +2267,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 53
+      "rank": 54
     },
     {
-      "rank": 54,
+      "rank": 55,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -2257,7 +2305,7 @@
       ]
     },
     {
-      "rank": 55,
+      "rank": 56,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -2327,7 +2375,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -2352,7 +2400,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 56
+      "rank": 57
     },
     {
       "company": "rubiconcarbon",
@@ -2375,7 +2423,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -2400,7 +2448,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 57
+      "rank": 58
     },
     {
       "company": "",
@@ -2423,7 +2471,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "You can indicate your preferred working location in your motivation letter or in the next stage of the recruitment proce",
@@ -2448,10 +2496,10 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 58
+      "rank": 59
     },
     {
-      "rank": 59,
+      "rank": 60,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -2504,7 +2552,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 61,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -2547,7 +2595,7 @@
       ]
     },
     {
-      "rank": 61,
+      "rank": 62,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -2582,7 +2630,7 @@
       ]
     },
     {
-      "rank": 62,
+      "rank": 63,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -2617,7 +2665,7 @@
       ]
     },
     {
-      "rank": 63,
+      "rank": 64,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -2691,7 +2739,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 64
+      "rank": 65
     },
     {
       "company": "rubiconcarbon",
@@ -2714,7 +2762,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Singapore",
@@ -2749,7 +2797,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 65
+      "rank": 66
     },
     {
       "company": "",
@@ -2772,7 +2820,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, but we embrace the virtual office and are continuing to grow our",
@@ -2797,7 +2845,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 66
+      "rank": 67
     },
     {
       "company": "",
@@ -2820,7 +2868,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "You can indicate your preferred working location in your motivation letter or in the next stage of the recruitment proce",
@@ -2845,10 +2893,10 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 67
+      "rank": 68
     },
     {
-      "rank": 68,
+      "rank": 69,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -2883,7 +2931,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 70,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -2963,7 +3011,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 70
+      "rank": 71
     },
     {
       "company": "",
@@ -2986,7 +3034,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Washington D.C.",
@@ -3016,7 +3064,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 71
+      "rank": 72
     },
     {
       "company": "",
@@ -3039,7 +3087,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-01",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Washington D.C.",
@@ -3069,10 +3117,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 72
+      "rank": 73
     },
     {
-      "rank": 73,
+      "rank": 74,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -3101,7 +3149,7 @@
       "blockers": []
     },
     {
-      "rank": 74,
+      "rank": 75,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -3141,7 +3189,7 @@
       ]
     },
     {
-      "rank": 75,
+      "rank": 76,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -3191,7 +3239,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -3239,7 +3287,7 @@
       ]
     },
     {
-      "rank": 77,
+      "rank": 78,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -3288,7 +3336,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, but we embrace the virtual office and are continuing to grow our",
@@ -3313,10 +3361,10 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 78
+      "rank": 79
     },
     {
-      "rank": 79,
+      "rank": 80,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -3388,7 +3436,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 80
+      "rank": 81
     },
     {
       "company": "Arable",
@@ -3436,10 +3484,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 81
+      "rank": 82
     },
     {
-      "rank": 82,
+      "rank": 83,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -3507,7 +3555,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-29",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Carbon Mapper is headquartered in Pasadena, California, but we embrace the virtual office and are continuing to grow our",
@@ -3527,10 +3575,10 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 83
+      "rank": 84
     },
     {
-      "rank": 84,
+      "rank": 85,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -3565,7 +3613,7 @@
       ]
     },
     {
-      "rank": 85,
+      "rank": 86,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -3594,7 +3642,7 @@
       "blockers": []
     },
     {
-      "rank": 86,
+      "rank": 87,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -3674,7 +3722,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 87
+      "rank": 88
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -3727,10 +3775,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 88
+      "rank": 89
     },
     {
-      "rank": 89,
+      "rank": 90,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -3810,10 +3858,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 90
+      "rank": 91
     },
     {
-      "rank": 91,
+      "rank": 92,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -3863,7 +3911,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 93,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -3953,7 +4001,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 93
+      "rank": 94
     },
     {
       "company": "gable",
@@ -3976,7 +4024,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-04-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "",
@@ -4001,10 +4049,10 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 94
+      "rank": 95
     },
     {
-      "rank": 95,
+      "rank": 96,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -4049,7 +4097,7 @@
       }
     },
     {
-      "rank": 96,
+      "rank": 97,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -4099,7 +4147,7 @@
       }
     },
     {
-      "rank": 97,
+      "rank": 98,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
