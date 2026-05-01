@@ -1208,7 +1208,7 @@ def build_html(data):
 <details open class="collapsible-section">
 <summary class="section-header">Ranked Opportunities <span class="badge pill-purple">{len(ranked_t12)} Tier 1 &amp; 2</span></summary>
 <div id="haiku-slot" style="display:none;text-align:center;padding:24px 16px;margin-bottom:16px;">
-  <div id="haiku-text" style="font-style:italic;color:var(--text-muted);font-size:14px;line-height:1.8;white-space:pre-line;min-height:80px;display:flex;align-items:center;justify-content:center;"></div>
+  <div id="haiku-text" style="font-style:italic;color:var(--text-muted);font-size:14px;line-height:1.8;white-space:pre-line;min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;"></div>
   <div id="haiku-source" style="margin-top:8px;font-size:10px;opacity:0.45;min-height:14px;"></div>
   <div style="margin-top:14px;">
     <button id="haiku-refresh" style="background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:12px;padding:6px 14px;border-radius:6px;cursor:pointer;font-family:inherit;font-weight:600;">&#x21bb; new haiku</button>
