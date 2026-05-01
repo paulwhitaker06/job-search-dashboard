@@ -873,6 +873,22 @@ def build_html(data):
     haiku_next_refresh_js = _json.dumps(_next_refresh["haiku"])
     personal_next_refresh_js = _json.dumps(_next_refresh["industry"])  # industry/outdoor/recipe share the cron
 
+    # Phase 11f: read haiku and intros from dashboard-data.json so cron writes
+    # actually reach the rendered UI. Falls back to a tiny embedded set if the
+    # data file is empty or missing the keys (panel never crashes).
+    HAIKU_FALLBACK = [
+        "Dashboard quiet now,\nthe data file ran empty,\nfallback haiku stands.",
+        "Pipeline holds the line,\nthe cron will write more later,\nthis haiku waits here.",
+        "Cron skipped a beat,\nthree haiku in the fallback,\nrefresh will arrive.",
+    ]
+    INTROS_FALLBACK = [
+        "Pipeline quiet. A haiku for the wait.",
+        "Empty top tiers. Haiku takes the shift.",
+        "The fallback tile reads.",
+    ]
+    haiku_pool_js = _json.dumps((data.get("haiku") or HAIKU_FALLBACK))
+    intros_pool_js = _json.dumps((data.get("intros") or INTROS_FALLBACK))
+
     # Speculative outreach section (hidden when empty)
     cold_outreach_list = data.get("cold_outreach", [])
     if cold_outreach_list:
@@ -1651,97 +1667,9 @@ updateStaleness();
 // --- Haiku when Tier 1 & 2 are empty ---
 (function() {{
   const HAIKU_NEXT_REFRESH = {haiku_next_refresh_js};
-  const haiku = [
-    "Dust on the mesa\\nravens cross the Sangre line\\nspring returns, so will",
-    "Rio Grande cuts deep\\nholding more than any job\\npatience, cold, and time",
-    "Taos sun at noon\\nadobe walls drink the heat\\nthe inbox can wait",
-    "Piñon smoke at dusk\\npinyon jays call from the sage\\nnothing closes tonight",
-    "Full moon on the gorge\\nthe river keeps its schedule\\noffers come in time",
-    "Wheeler holds the dawn\\nfirst light before the inbox\\nwalk before the wire",
-    "Empty pipeline day\\nsometimes the wire just stays quiet\\ntrust the craft, not noise",
-    "ATS ate them all\\nthe haiku survived the sweep\\na small victory",
-    "Applied fourteen days\\nthe waiting room is empty\\nsit down, pour water",
-    "Sixty yes became\\nthe one that actually stuck\\nkeep throwing the net",
-    "The right role is rare\\nthe wrong ones arrive in waves\\nfilter, do not chase",
-    "Rejection is data\\nnot personal, not verdict\\nlog it, move along",
-    "KSAT to GFW\\nTromsø cold to Taos sun\\nsame hustle, new light",
-    "Satellite sees all\\nbut cannot read a resume\\nhumans ghost better",
-    "Pilot to precedent\\nENI moved the regulator\\nthe pattern still works",
-    "Fishing vessels ghost\\nthe dark fleet at the equator\\nsomeone sees them all",
-    "SAR at Tromsø\\noil spills under Arctic cloud\\nbuilt the whole business",
-    "Commercial from zero\\nthree times now, at three shops\\nthe map is the man",
-    "Shell, ENI, Exxon\\nclosed the first five the hard way\\nthe sixth was simpler",
-    "Twenty-five years in\\nstill building something from scratch\\nstill the best version",
-    "Telemark turns through\\nlate-spring corn on the south face\\nworth the dawn patrol",
-    "Backpack on the trail\\nno cell signal for three days\\nbest interview prep",
-    "Pecos in June\\nthunder at three, camp by five\\nsummer's honest deal",
-    "A-Basin holds on\\nJune skiing at ten thousand\\nstubborn like the search",
-    "Weminuche calls\\na week without a phone or pitch\\nthe answer gets clear",
-    "Tuckerman Ravine\\nthe last of April's big bowls\\nworth a redeye flight",
-    "The CDT moves\\nthru-hikers through Cumbres today\\nsummer is coming",
-    "Wind River high route\\nten days, one sat phone, no signal\\ngood for the soul math",
-    "The dashboard refreshes\\ntwelve o eight, twelve o eight daily\\nrhythm holds the work",
-    "Morning brief arrives\\nscores, blockers, one-line verdicts\\nopen, read, decide",
-    "An em dash appears\\nthe gate catches it and yells loud\\nrewrite at the source",
-    "A hard requirement\\ncaps the score at forty-two points\\nthe rubric holds firm",
-    "CBAM price drops in\\nseventy-five per the ton\\nthe steel mill writes checks",
-    "MethaneSAT is dark\\nthe billion-dollar eye died\\nghost in the pipeline",
-    "Taos under wind\\nfire gate closes on the sage\\nforty-five-mile gusts",
-    "Kachina is closed\\nthe snow left in early March\\nmud season arrives",
-    "Merlin remaps Earth\\ndaily pass at one meter\\norbit holds the plan",
-    "Cormac stays in print\\nBlood Meridian rereads\\njudge in the desert",
-    "Abbey's ghost still haunts\\nmonkey wrench in the glovebox\\nHayduke would not file",
-    "Sangre de Cristo\\nthe peaks hold April's last white\\nsnow line creeps upward",
-    "Gorge bridge at high noon\\nhawks ride wind above the scour\\nsix hundred feet down",
-    "Tromsø in April\\npolar light returns to sea\\nthe dark was a friend",
-    "Forty-eight no thanks\\nforty-ninth still has a pulse\\nkeep the net in play",
-    "Fire ban in the sage\\nstatewide, all the fuel too dry\\nspring came in thirsty",
-    "EPA repeals\\nendangerment finding gone\\nthe lawsuits begin",
-    "By decree it goes\\ndeep-sea mining by April\\nthe seabed gets sold",
-    "Tanager finds plumes\\nten methane leaks in the field\\nCalifornia knocks",
-    "Cora packs his box\\nten and seventeen broke him\\nTracy gets the keys",
-    "Tracy in the chair\\nfive to three on debut night\\nContreras hits one",
-    "Lomu in round one\\nUtah tackle plugs the line\\nthe trench gets adult",
-    "One percent snowpack\\nSangres east drained out by March\\nthe river runs thin",
-    "Palo Flechado\\nfour percent of average\\nthe ditches still wait",
-    "Acequias dry\\nrationing in Talpa now\\nfire damage still rules",
-    "Artemis returns\\nfour around the moon and home\\nfifty years between",
-    "Ten deals took the cake\\ntwenty-eight percent of all\\nlate-stage eats the rest",
-    "Brussels punts again\\nEUDR slides a year\\npilots get their breath",
-    "Mud splatters the truck\\nApril rolls into a May\\nthat looks like July",
-    "Cast wider, he said\\nthe net pulls in stranger fish\\nbreadth before the bite",
-    "Corn snow at sunrise\\nspring lines hold above tree line\\ndawn patrol still pays",
-    "Viasat goes up\\nFalcon Heavy on the Cape\\ntwenty-seventh dusk",
-  ];
+  const haiku = {haiku_pool_js};
 
-  const intros = [
-    "Empty top tiers. Haiku took the shift.",
-    "Pipeline's clean. Have a haiku.",
-    "April mud, April quiet. A haiku holds the line.",
-    "Tier 1 and 2 are empty. The land provides a haiku.",
-    "No opportunities worth chasing right now. Haiku break.",
-    "The pipeline will refill. Until then:",
-    "Zero ranked. Maximum haiku.",
-    "No offers to chew on. A haiku to sit with.",
-    "All quiet on the pipeline front. Haiku dispatch:",
-    "Tier 1: empty. Tier 2: empty. Tier haiku: full.",
-    "The dashboard rests. The poet does not.",
-    "Scoreboard's blank today. Let the poem fill the hole.",
-    "Your pipeline called in sick today. Haiku showed up instead.",
-    "Between waves. A haiku to hold the space.",
-    "The mesa wind ran the screener today. Nothing made the cut except this.",
-    "The ATS ate them all. The haiku survived.",
-    "Trump signed the deep-sea mining order Friday. ISA gets bypassed, the seabed gets sold by decree. Pipeline ran quiet anyway. Haiku held.",
-    "MethaneSAT went dark in orbit. CBAM hit seventy-five a ton. Your old world keeps shifting. Pipeline quiet. Haiku shows up.",
-    "Brussels punted EUDR another year. The pipeline did not blink. Haiku holds.",
-    "Tanager-1 caught ten methane leaks for California's air board. Microsoft buys ninety percent of the carbon market by itself now. Pipeline quiet. Haiku stretches.",
-    "Virginia redrew four House seats in a single referendum. Pipeline did not flinch. Haiku keeps count.",
-    "Cora got fired Saturday night, ten and seventeen out of the gate. Tracy ran the bench Sunday and won five to three behind a Contreras homer. Pipeline ran quiet. Haiku showed up.",
-    "Sangres east at one percent of normal snowpack. Palo Flechado at four. Acequias rationing in Talpa already. The water year is the story now. Pipeline quiet. Haiku holds.",
-    "EDF and fifteen co-petitioners filed against the EPA endangerment repeal April sixteenth. The litigation calendar is the work now. Pipeline quiet. Haiku on the wall.",
-    "Patriots took Caleb Lomu in the first round. Trench got an adult. Pipeline did not. Haiku covers the gap.",
-    "Artemis 2 came back from the moon April first, four humans, fifty years between. Pipeline quiet that week too. Haiku still here.",
-  ];
+  const intros = {intros_pool_js};
 
   const grid = document.querySelector('.dd-grid');
   const slot = document.getElementById('haiku-slot');
