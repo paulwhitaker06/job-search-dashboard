@@ -2,6 +2,40 @@
 
 Read this before doing scoring, deep-dive, plugin, or dashboard work in this folder. It is not long and every item on it is a pattern that cost Paul real frustration at least once.
 
+## Lessons from 2026-05-01 / 2026-05-02
+
+A long two-day session that shipped a lot and surfaced a lot. Most painful learnings:
+
+### 1. Read source files for facts about Paul's career, not the conversation summary
+
+I wrote a Phoenix Tailings cover letter that asserted Paul "architected multi-year ground-station service agreements with NASA, NOAA, the Air Force, and a spread of defense and commercial space customers" and "ran ENI Lebanon's offshore-block due diligence." All of that was fabricated. The conversation summary at the top of the session carried forward MY OWN earlier fabrications as if they were facts, and I trusted them. Paul caught it. He was right to.
+
+The fix: when writing anything that asserts a specific deal, customer, or year, READ from `PW_Career_Intelligence.docx`, `PW_Claude_Startup_Context_v5.docx`, or the resume library. Never trust the summary. Never guess. Real KSAT customers: Shell, ExxonMobil, ConocoPhillips, BP, Chevron, ENI Australia (decommissioned wells, 2012-2016), Woodside, AMSA, EMSA, NOPSEMA (Australian regulator, NOT a customer, an influence target). Real GFW work: Planet Labs 1.2B hectare deal, Alcatel Submarine Networks, AXA, British Marine/QBE, SwissRe, Spire AIS renegotiation. NOT Air Force, NOT NASA, NOT defense customers, NOT Lebanon.
+
+### 2. Phase 11g: there was a duplicate build_dashboard.py and it caused chaos
+
+`paul-job-pipeline/pipeline/build_dashboard.py` was a stale older copy of `dashboard-repo/build-dashboard.py`. Every morning the cron used the stale copy and silently overwrote my dashboard work. Status pills disappeared, haiku panel reverted to hardcoded 60, Retired section vanished, stat math fell apart.
+
+Phase 11g fixed it by pointing `_run_build_script` at `repo / "build-dashboard.py"` (the canonical one in the cloned dashboard repo) instead of `Path(__file__).parent / "build_dashboard.py"`. The duplicate file was deleted in commit `db63887`. Single source of truth now. Going forward: the build script lives ONLY in the dashboard repo. Don't recreate `pipeline/build_dashboard.py` in paul-job-pipeline. If you find yourself wanting to update build_dashboard logic, go to the dashboard repo's `build-dashboard.py`.
+
+### 3. Em-dash gates that check json.dumps output are silently broken
+
+`json.dumps` with default `ensure_ascii=True` escapes em-dashes to `—`. So `if "—" in raw` against the serialized string never matches. My em-dash gate had been silently passing on every push for the entire session. 196 em-dashes accumulated in dashboard-data.json before I caught it.
+
+Phase 11e + 11f fixed this. The new gate walks dict values pre-serialization (recursive `_find_banned_dashes`). It lives in BOTH `pipeline/dashboard_push/push.py` (dashboard repo, sandbox pushes) AND `pipeline/commit_and_push.py` (paul-job-pipeline, morning brief writes). Every write path is gated. Hyphen-minus is NOT banned, only em-dash, en-dash, figure-dash. If a future morning brief tries to write an em-dash, the gate raises a `RuntimeError` with the offending field path.
+
+### 4. Sloppy shortcut habit, called out twice in one session
+
+Paul called this out hard mid-session ("fix your shit," "you are also having a technical conversation with yourself," "I ABSOLUTELY HAVE THIS"). The pattern: I trust hearsay/summary, write declaratively, get caught, apologize, repeat. The fix is mechanical, not behavioral. Before asserting any specific fact about Paul's career, deals, or work history, point to the source paragraph or ASK. If I can't, I'm guessing. Treat fabrication scans the same way as em-dash scans — they're a gate, not a vibe.
+
+### 5. Inline shell comments break zsh paste
+
+`zsh` without `INTERACTIVE_COMMENTS` set treats `#` as a literal arg. Multiple times in the session, I gave Paul `cmd # comment` blocks to paste, and zsh choked with `command not found: #`. NEVER include inline `#` comments in shell command blocks I expect Paul to paste. Put the explanation BEFORE the code block, not inside it.
+
+### 6. The .pyc trap in cp-R deploys
+
+When I tell Paul to run `cp -R ... .` to deploy a phase, if the source dir has `__pycache__` from a recent test run, those .pyc files get committed by accident. Phase 11e had this happen. Fix: every deploy README starts with `find . -name __pycache__ -type d -exec rm -rf {} +` BEFORE the cp. Plus `.gitignore` now has `__pycache__/` (commit `b3bc25a`).
+
 ## Lessons from 2026-04-22
 
 Specific failure modes Paul called out. Here because he asked me to remember, not to wallow.
@@ -76,16 +110,34 @@ git add . && git commit -m "Phase N: ..." && git push
 
 Each `phaseN-bootstrap/` mirrors the target structure: `pipeline/` for Python modules, `.github/workflows/` for the cron, plus a `README.html` (which becomes the new top-level README on deploy). The bootstrap dirs in the dashboard repo are NOT live workflows. They're staging only. Don't conflate them with what's actually running.
 
-### What's actually deployed in paul-job-pipeline (as of 2026-04-27)
+### What's actually deployed in paul-job-pipeline (as of 2026-05-02)
 
 `.github/workflows/` contains:
-- `morning-brief.yml` — daily 13:00 UTC (7am MDT)
-- `refresh-haiku.yml` — every 3 days at 18:00 UTC (noon MDT)
-- `refresh-personal-feeds.yml` — every 21 days at 19:00 UTC (1pm MDT)
-- `refresh-sports.yml` — daily 14:00 UTC (8am MDT) [deployed 2026-04-27 from phase11b-bootstrap]
+- `cron-daily-morning-brief.yml` — daily 12:30 UTC (6:30am MDT) [moved from 13:00 on 2026-05-02]
+- `cron-daily-sports.yml` — daily 14:00 UTC (8am MDT)
+- `cron-tridaily-haiku.yml` — daily 18:00 UTC (note: name says "tridaily" but cron fires daily at `0 18 * * *`)
+- `cron-triweekly-personal-feeds.yml` — every 21 days at 19:00 UTC (1pm MDT)
+- `cron-weekly-cost-rollup.yml` — Sunday 23:00 UTC
+- `manual-job-evaluate.yml`, `manual-resume-build.yml` — workflow_dispatch only
 - A bunch of `phaseN-checkpoint.yml` per-phase manual-trigger validators
 
 If a refresh isn't appearing, first check whether the workflow file actually exists in paul-job-pipeline, not whether a draft exists in the dashboard repo's bootstrap dir.
+
+### Build script lives in ONE place (post phase 11g)
+
+`build-dashboard.py` lives in the dashboard repo at the top level. That is the canonical, only copy. Both the morning brief in paul-job-pipeline AND sandbox-side dashboard-push helpers run that exact file. The morning brief clones the dashboard repo (it has to, to write `dashboard-data.json`), then invokes `repo / "build-dashboard.py"` from the clone. There is no longer a `pipeline/build_dashboard.py` in paul-job-pipeline; it was deleted in commit `db63887` (2026-05-02) after phase 11g made it dead code.
+
+If you want to change rendering, edit `dashboard-repo/build-dashboard.py`. Future cron runs and sandbox pushes both pick it up. Do NOT recreate `pipeline/build_dashboard.py` in paul-job-pipeline.
+
+### Em-dash gates (post phase 11e + 11f)
+
+Two gates, same logic:
+- `dashboard-repo/pipeline/dashboard_push/push.py` — runs on every sandbox push via `push_dashboard_edits`. Walks `dashboard-data.json`'s dict values pre-serialization, raises `RuntimeError` with field paths if any em / en / figure dash is found.
+- `paul-job-pipeline/pipeline/commit_and_push.py` — same gate, runs on every paul-job-pipeline commit (morning brief, feed refreshes). Same `_enforce_em_dash_gate` function.
+
+Both gates live in checked-in code. The dict-walk approach matters: the older check-the-json-string approach silently passes because `json.dumps` escapes non-ASCII by default. Don't regress this. If you write a new gate, walk dict values, never the serialized string.
+
+Hyphen-minus (`-`) is NOT banned. Em-dash (`—`), en-dash (`–`), figure-dash (`‒`) are banned.
 
 ### Auth model — read carefully before reaching for a new PAT
 
@@ -111,3 +163,46 @@ All Cowork (Claude desktop) scheduled tasks for the job search pipeline are disa
 2. The dashboard PAT is intentionally narrow. Don't ask Paul to widen it; deploy via cp-R instead.
 3. The dashboard's `Push Dashboard.command` does not pull-rebase before pushing, so it'll fail on divergence. The `dashboard-push` skill is the better path; if Push Dashboard fails, the recovery is `git stash && git pull --rebase origin main && git stash pop && Push Dashboard.command`.
 4. The cron schedules are in the workflow files in paul-job-pipeline, not in the bootstrap dirs. If you want to confirm or change a schedule, look at paul-job-pipeline's `.github/workflows/`.
+5. There is NO `pipeline/build_dashboard.py` in paul-job-pipeline. It was removed in `db63887` (2026-05-02). The canonical lives at `dashboard-repo/build-dashboard.py`. If you instinctively reach for the pjp copy, you're about to recreate the bug phase 11g fixed.
+6. The conversation summary at the top of a long session is NOT a source of truth about Paul's career. Read `PW_Career_Intelligence.docx`, `PW_Claude_Startup_Context_v5.docx`, the resume library, or ASK. Anything I "remember" from earlier sessions about specific deals, customers, or years is suspect by default.
+7. Inline `#` comments inside shell command blocks break Paul's zsh paste flow. Always put the explanation BEFORE the code block, never inline.
+8. Before any `cp -R` deploy, clean stale `__pycache__` directories or they get committed by accident. `.gitignore` covers it now but the habit matters.
+
+## Application status nomenclature (post phase 11g)
+
+For dashboard-data.json's `applications[].status`:
+- Active interview ladder: `1st_interview_scheduled` → `1st_interview_held` → `2nd_interview_scheduled` → `2nd_interview_held` → `3rd_interview_*` → `final_round_*` → `offer`
+- Pre-interview: `awaiting` (default after applying), `applied` (legacy alias)
+- Speculative outreach (no specific role posted): `speculative`, `cold_outreach` (legacy alias)
+- Closed: `rejected` (any explicit no), `filled` (filled by another candidate), `retired` (no response after follow-up, proactive process complete)
+- Pass: `pass` (decided not to apply)
+
+For stat-card math, the buckets partition cleanly:
+- Active Interviews = anything in the interview ladder
+- Awaiting Response = `awaiting` + `speculative` + `cold_outreach`
+- Rejected / Closed = `rejected` + `filled` + `retired`
+- Sent total = sum of the three buckets
+
+Retired applications still get their own collapsible section in the UI for visual organization, but for stat-card counting they roll up into Rejected / Closed. Same for Speculative rolling up into Awaiting.
+
+## Today's history (2026-05-01 / 2026-05-02)
+
+Phases shipped, in order:
+- 11d: JD parser + morning-brief dedup hardening (paul-job-pipeline `bae4c09`)
+- 11e: em-dash gate in dashboard-push helper (dashboard repo `06212c2`)
+- 11f: em-dash gate ported to paul-job-pipeline + haiku/intros wiring fix (pjp `49511b5`, dashboard `5b34976`)
+- 11g: eliminate build_dashboard.py duplication, point pjp at canonical (pjp `49511b5`, cleanup `db63887`)
+
+Dashboard side, also shipped:
+- Universal em-dash scrub of 196 dashes that had accumulated (dashboard `a1bf35a`)
+- Retired collapsible section, IO/RS Metrics/Floodbase moved (`08991b4`)
+- Stat-card math fix so buckets partition Sent (`f5ccc4e`)
+- Haiku flex layout (`2db570b`)
+- Haiku/intros wired to dashboard-data.json (part of 11f, `5b34976`)
+- Phoenix Tailings VP of Partnerships scored 71.5, deep dive shipped, application sent, logged
+- Rainmaker Technology follow-up sent to Harry Thomas (Chief of Staff) at harry@makerain.com
+- Oklo Strategic Partnerships flipped to rejected (position closed)
+- `.gitignore` added for `__pycache__/` (`b3bc25a`)
+
+Cron schedule changes:
+- Morning brief: 13:00 UTC → 12:30 UTC (7am → 6:30am MDT)
