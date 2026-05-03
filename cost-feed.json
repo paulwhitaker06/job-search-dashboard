@@ -1,14 +1,52 @@
 {
-  "updated": "2026-04-29T20:01:26Z",
+  "updated": "2026-05-03T23:40:48Z",
   "this_week": {
     "start": "2026-04-27",
     "end": "2026-05-03",
-    "total_usd": 0.0,
-    "calls": 0,
-    "tokens_in": 0,
-    "tokens_out": 0,
-    "by_workflow": {}
+    "total_usd": 24.6678,
+    "calls": 576,
+    "tokens_in": 7515845,
+    "tokens_out": 141354,
+    "by_workflow": {
+      "Daily / Morning Brief": {
+        "usd": 21.0838,
+        "calls": 566,
+        "tokens_in": 6467471,
+        "tokens_out": 112094
+      },
+      "Daily / Sports Refresh": {
+        "usd": 1.1793,
+        "calls": 4,
+        "tokens_in": 321475,
+        "tokens_out": 14322
+      },
+      "Tri-daily / Haiku Refresh": {
+        "usd": 1.3718,
+        "calls": 3,
+        "tokens_in": 409283,
+        "tokens_out": 9596
+      },
+      "Tri-weekly / Personal Feeds Refresh": {
+        "usd": 1.033,
+        "calls": 3,
+        "tokens_in": 317616,
+        "tokens_out": 5342
+      }
+    }
   },
-  "weekly": [],
-  "by_workflow_4w": {}
+  "weekly": [
+    {
+      "week_start": "2026-04-27",
+      "total_usd": 24.6678,
+      "calls": 576,
+      "tokens_in": 7515845,
+      "tokens_out": 141354
+    }
+  ],
+  "by_workflow_4w": {
+    "Daily / Morning Brief": 21.0838,
+    "Daily / Sports Refresh": 1.1793,
+    "Tri-daily / Haiku Refresh": 1.3718,
+    "Tri-weekly / Personal Feeds Refresh": 1.033
+  }
 }
