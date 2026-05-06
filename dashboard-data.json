@@ -6081,20 +6081,6 @@
   ],
   "watch_list": [
     {
-      "company": "Planet Labs",
-      "category": "Earth Observation / Satellite Constellation",
-      "why": "The OG daily imagery company. Always hiring. You probably know people there already.",
-      "roast": "You negotiated the 1.2 billion hectare coastal coverage deal with Planet in 2023, three parties, five months, 95% discount off commercial rates, and now Planet is restricting imagery access over Iran and the Middle East and the entire maritime intelligence sector is scrambling for alternatives. Bloomberg documented who is affected, commodity traders, energy firms, OSINT researchers, humanitarian organizations, and every one of them is now looking at European and Chinese EO providers because a single US government decision just made Planet unreliable for any use case that touches a conflict zone. Planet's commercial revenue share dropped from 45% to 18% over four years and now the same government relationships that dominate the revenue base are actively degrading the commercial business that remains. You know this pattern, you lived it at KSAT when Norwegian export controls meant you could not sell to certain customers and the customer went to MDA instead, and the lesson is that when your biggest customer can turn your product off for reasons you do not control your commercial business is not a business it is a subsidy with terms and conditions. Planet is hiring, they always are, but the question is whether you want to build a commercial function for a company whose product availability is a political decision, or whether you want to build it for someone whose product is actually theirs to sell. The deal you built with them is still running, the imagery is still processing, and Blue Planet III is still going to feature it, but that deal worked because you structured it as non-commercial with high latency and you knew the competitive harm objection was resolvable because the use cases were structurally different. That clarity does not exist anymore, and if you are Planet's VP of Partnerships in 2026 you are spending half your time explaining to customers why they cannot have the thing they are paying for. That is not a job, that is a hostage negotiation, and you are too old for that.",
-      "careers_url": "https://www.planet.com/careers/"
-    },
-    {
-      "company": "Windborne Systems",
-      "category": "Weather / Atmospheric Data",
-      "why": "Constellation of weather balloons collecting atmospheric data. Paul's NewSpace + climate crossover.",
-      "roast": "Windborne launched 150 weather balloons in 2025 and they want to fly a thousand by 2027. The pitch is simple. Satellites see the top of the atmosphere but they miss what is happening at altitude where the weather actually forms. Radiosondes are sparse and expensive. Windborne's balloons are cheaper, fly longer, and sample the atmosphere continuously as they drift. The data goes to NOAA, ECMWF, and a handful of reinsurers and energy traders who pay for better forecasts. The company raised a Series B in 2024 and they are hiring a Head of BD, which means someone finally realized that atmospheric data has commercial value beyond government contracts. Paul sold KSAT's environmental monitoring into EMSA and AMSA when no one believed governments would pay for proactive surveillance. Windborne is earlier in that curve but the pattern is identical. The buyers are there. They just do not know they are buyers yet. The role is building the commercial function from scratch at a company with real satellites, real customers, and a clear path to revenue. The risk is Windborne's balloons are consumable hardware with per-unit economics that matter, and Paul has never sold a product with a cost-of-goods problem. The opportunity is he has spent twenty years explaining why organizations should pay for data they can technically live without, and Windborne's entire business model depends on that argument working at scale. If he can explain to Exxon why weekly monitoring of the Kara Sea is worth the contract, he can explain to a reinsurer why better hurricane track forecasts three days earlier are worth paying Windborne instead of just waiting for NOAA.",
-      "careers_url": "https://windbornesystems.com/careers"
-    },
-    {
       "company": "Tomorrow.io",
       "category": "Weather Intelligence / Satellite",
       "why": "Weather intelligence platform with own radar satellites. Commercial BD team is substantial.",
@@ -6141,7 +6127,7 @@
       "category": "SAR / Dual-Use Radar",
       "why": "Finnish SAR empire scaling to 50 sats/year by end-2026. NGA + NRO contracts, insurance + maritime + flood commercial side. Dual-use muscle Paul built at KSAT directly applies. Helsinki HQ, US BD in Virginia.",
       "careers_url": "https://www.iceye.com/careers",
-      "roast": "Finnish SAR empire that got rich selling radar pictures to the NRO, NGA, and every European intelligence agency with a checkbook. They're scaling to fifty satellites a year by end of 2026, which is the NewSpace equivalent of Henry Ford opening River Rouge ,  except the Model Ts see through clouds and cost forty million apiece. The commercial side is the part still looking for a BD adult: selling the same constellation to insurance giants, hedge funds, and flood-mapping customers who don't want to be in the same PowerPoint as a defense contract. That dual-use-without-freaking-out-civilians muscle is exactly what you built at KSAT, where NOAA scientists and Norwegian intelligence analysts shared a ground station and politely pretended not to see each other in the cafeteria. Helsinki is a short flight from Troms\u00f8 and they probably still have your old coffee order memorized."
+      "roast": "ICEYE builds and operates the world's largest SAR constellation, which means they can image the Earth in any weather, day or night, with enough resolution to count shipping containers and detect oil slicks in the dark. This is legitimately hard technology and the customer list includes governments, insurers, and maritime intelligence buyers who need data when optical satellites are worthless. The company has raised over 300 million, has revenue, has government contracts, and just launched two more satellites on the May 3rd SpaceX rideshare that also carried the South Korean CAS500 that connected through KSAT Svalbard. Paul sold SAR monitoring to Shell and ExxonMobil when MDA had the market locked and KSAT was the underdog with better coverage and worse marketing. He knows exactly how this sale works, how long it takes, and how much of the contract value lives in the relationship versus the product. ICEYE is at the stage where they have the tech, they have the constellation, and they need to convert the pipeline into multi year agreements with enterprise and sovereign customers who buy slowly and expand rarely. The US subsidiary exists to navigate ITAR and federal procurement, which means it is also the entity that has to explain to a contracting officer why SAR is worth five times the price of optical when the contract officer has never heard of synthetic aperture radar and thinks satellites just take pictures. If Paul wants to sell radar to people who do not know they need radar yet, this is the room. If he wants to avoid the complexity of selling a product that requires a 20 minute explainer before you get to pricing, he should look elsewhere."
     },
     {
       "company": "Aerospacelab",
@@ -6324,6 +6310,20 @@
       "why": "Synthetic satellite data generation for EO AI training. \u20ac3.5M raise March 2026, Brazil and Sub-Saharan Africa focus, addresses labeled training data scarcity.",
       "roast": "European synthetic data play that makes fake satellite imagery so you can train AI models without paying Planet or Maxar for the real stuff. Raised three and a half million euro in March to generate labeled training datasets for deforestation monitoring and biodiversity applications in Brazil and Africa, which is a polite way of saying the actual imagery is too expensive or does not exist. The thesis is correct, the bottleneck in EO AI is labeled training data, every computer vision startup dies on the annotation cost curve, and if you can synthesize realistic SAR or multispectral chips at scale you just became the picks and shovels vendor for an entire sector. The problem is you spent two decades on the other side, selling real imagery with real ground truth to buyers who paid because the pixels were verified and the liability sat with the data provider. Synthetic data is an infrastructure bet, not a sales job. You would be the commercial officer at a company whose product is literally not real, pitching enterprises and governments on training models with simulations while their competitors use actual satellite feeds. It is the right market and the wrong operator profile. If they pivot to a licensing model where the synthetics augment real EO feeds and you are packaging the bundle, that is your lane. If they stay pure synthetic and sell to AI labs, you will spend eighteen months explaining to prospects why fake is better and your Tromso story will not land.",
       "careers_url": "https://another.earth/careers"
+    },
+    {
+      "company": "Beehive",
+      "category": "Climate Adaptation / Disaster AI",
+      "why": "Climate risk AI platform for natural disaster response, fits insurance vertical Paul built at GFW with AXA Climate and British Marine",
+      "roast": "Beehive builds an AI platform that helps companies prepare for and respond to natural disasters and automate climate risk reporting. If you squint hard enough, this is what GFW was doing for illegal fishing except the fish are hurricanes and the clients are Fortune 500 risk managers who discovered in 2023 that their entire supply chain lives in a floodplain. Paul spent two years at GFW explaining to insurance companies why paying for satellite data before the disaster is cheaper than paying claims after, and he closed AXA Climate and British Marine under a Moore Foundation pilot framework that was basically venture debt for do gooders. Beehive is selling the same value proposition except they get to say AI every third sentence and charge accordingly. The brutal truth is that climate adaptation just got a 64 percent funding bump to five and a half billion in 2025 because everyone finally figured out that you cannot retrofit your way out of a Category 5. The optimistic truth is that this is one of the few climate verticals where the buyer has a literal fiduciary duty to care, which means the sales cycle is faster than carbon markets and slower than ransomware recovery. If Paul wants to sell disaster preparedness to people who will actually pay because their CFO told them to, this is the spot. They are early, they are funded by Trellis, and they are pitching at the 2026 climate tech finals in San Francisco in June. Apply now or wait until they hire the wrong VP of Partnerships and spend a year trying to figure out why enterprise pilots die in procurement.",
+      "careers_url": "https://www.beehive.ai/careers"
+    },
+    {
+      "company": "Antora Energy",
+      "category": "Industrial Heat / Thermal Storage",
+      "why": "Decarbonizing industrial process heat with thermal batteries, adjacent to Paul's offshore energy and GFW data commercialization experience",
+      "roast": "Antora builds thermal batteries that store electricity as heat in carbon blocks and discharge it as industrial process heat or power. Industrial heat accounts for about a fifth of global energy demand and roughly nobody outside of three venture funds and two steel executives is paying attention. That is the opportunity. Paul sold oil spill monitoring to ExxonMobil in 2013 when ExxonMobil did not know they needed it yet, and he spent 2012 to 2016 convincing ENI that proactive monitoring was cheaper than explaining spills to NOPSEMA after the fact. Antora is the same bet, different molecule. The pitch is: pay us now to avoid paying the grid later when carbon costs make your furnace uninsurable. The customer is an industrial plant manager in heavy manufacturing who has been told decarbonization is coming but has no idea how to heat steel to 1,200 Celsius without natural gas. Antora is the answer they will find in 18 months after trying everything else. Paul knows how to sell the thing the buyer does not know they need yet, and he knows how to do it in sectors where the decision cycle is two years and the deal closes because a regulation changed or an executive read the IPCC summary for policymakers on a flight. This is not a consumer play, this is not SaaS, this is heavy industrial capex with three year contracts and project finance tranches that smell like his KSAT days. If Paul wants to build a commercial function from scratch in a category that is too early for most people and too late for Antora to wing it, this is the kitchen. Bourdain would say the menu is small, the margins are real, and the chef is not pretending this is easy.",
+      "careers_url": "https://antoraenergy.com/careers"
     }
   ],
   "morning_briefs": [
@@ -15786,18 +15786,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Sox won on Patriots Day\neight runs, zero homers, grit\nCora shrugs, moves on",
-    "Svalbard ten days warm\nabove zero in April\nKSAT saw it first",
-    "Planet shuts the feed\ngovernment asks, image stops\nopen data dies",
-    "G7 in Paris\nclimate left off the agenda\nto keep Trump at table",
-    "Red Willow Park trail\nclosed one day this week for work\nthe gorge never closes",
-    "Correspondents fled\nbulletproof vest held the line\nhaiku holds the shift",
-    "Food systems at brink\nUN warns, heat redefines yield\nmesa dust agrees",
-    "ATS black hole swallows\nfive tailored cover letters\nhaiku make it through",
-    "The wire stays quiet\nApril mud, April waiting\nWheeler holds the snow",
-    "Redhead at the bar\nasked what I do for living\nsatellite silence",
-    "Sox fewest homers\nAmerican League basement\nstill beat the Tigers",
-    "Strait of Hormuz closed\noil at ninety, Sox at nine\neach leak costs something",
     "Trump scrapped Pakistan\nIran talks move to the phone\ntoo much time wasted",
     "Gas four eleven\nfifth straight day climbing the wire\nfossils still have teeth",
     "Sub twenty minutes\nthe new tactical standard\nBlackSky Gen Three lives",
@@ -15850,11 +15838,23 @@
     "West Texas crude jumps\none-oh-four per barrel\nconflict premiums",
     "Redhead at the bar\nCinco in a Taos dive\nthe tequila wins",
     "ATS rejections\nfive hundred unseen resumes\nthe algorithm shrugs",
-    "Oskar graduates\nOslo high school cap in May\nAurlandsdalen waits"
+    "Oskar graduates\nOslo high school cap in May\nAurlandsdalen waits",
+    "Cora fired, Sox tank\nBreslow swings the axe himself\nqueue clean, haiku holds",
+    "Hormuz deal paused, Trump\nsays progress, complete, final\nthe gorge never signs",
+    "EPA reversed\nthe endangerment withdrawn\nPlanet waits for buyers",
+    "Eta Aquarids peak\nTaos mesa catches light\nfive to six, gone quick",
+    "Alex Cora gone\ntwelve and nineteen, six coaches\nhaiku still working",
+    "Indiana purged\nfive primaries, Trump redraws\nthe map, the leverage",
+    "mortgage rate at six\npoint three seven, thirty year\ngorge will outlast debt",
+    "Sox eight on contact\nzero homers, Patriots Day\nCora shrugs... then fired",
+    "Apple Siri pays\ntwo fifty million, settles\ntracking lawsuit ends",
+    "redhead at the bar\nTaos mid May monsoon holds\ndating apps stay closed",
+    "Mother's Day race\nRio Grande whitewater roar\nDennis Hopper week",
+    "Starlink drops four Kay\nfrom five fifty down to four\neighty, altitude shift"
   ],
   "intros": [
-    "No buyers today. Haiku hold the line.",
-    "Quiet wire. Here's a haiku.",
+    "Cora out, Sox last, queue clear. Haiku hold.",
+    "Wire cold. Starlink drops altitude. Haiku.",
     "Hormuz mines mapped, Ohio votes, Bitcoin over eighty. Queue empty.",
     "GameStop buys eBay for fifty-six billion. The inbox laughs.",
     "Wind beats fossil fuel in EU for first time. Inbox empty.",
