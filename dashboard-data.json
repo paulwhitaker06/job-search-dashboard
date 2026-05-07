@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-07",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -2221,7 +2221,7 @@
       "has_deep_dive": false,
       "date": "2026-05-07",
       "scqa": "Scored, canonical Hard Requirement Cap case (Bentley pattern)",
-      "verdict": "Repeat appearance of the Bentley Principal Consultant role family that produced the canonical 2026-04-21 inflation case (was scored 69, corrected to 53 after audit). The JD pattern names 'deep domain expertise in at least two of Rail & Transit, Ports, Utilities, or Airports' plus 'active leadership in APTA or Cities Today Institute.' Paul has none of these — PA Consulting utility experience was water/wastewater, not electric utility. RF capped at 4 on sector-depth gap, IL capped at 3 on named-network gap. SA/SPM cap rule fires (RF<=4 AND IL<=3); no role-specific JD sentence justifies higher SA/SPM, so SA=5 and SPM=5 on merits (mature company, established consulting practice, generic infrastructure stakeholder coordination). Total 47.5, Tier 3.",
+      "verdict": "Repeat appearance of the Bentley Principal Consultant role family that produced the canonical 2026-04-21 inflation case (was scored 69, corrected to 53 after audit). The JD pattern names 'deep domain expertise in at least two of Rail & Transit, Ports, Utilities, or Airports' plus 'active leadership in APTA or Cities Today Institute.' Paul has none of these, PA Consulting utility experience was water/wastewater, not electric utility. RF capped at 4 on sector-depth gap, IL capped at 3 on named-network gap. SA/SPM cap rule fires (RF<=4 AND IL<=3); no role-specific JD sentence justifies higher SA/SPM, so SA=5 and SPM=5 on merits (mature company, established consulting practice, generic infrastructure stakeholder coordination). Total 47.5, Tier 3.",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -2240,7 +2240,7 @@
       "blockers": [
         {
           "type": "narrow_experience",
-          "detail": "JD requires 'deep domain expertise in at least two of Rail & Transit, Ports, Utilities, or Airports.' Paul has none — PA Consulting utility work was water/wastewater, not electric utility.",
+          "detail": "JD requires 'deep domain expertise in at least two of Rail & Transit, Ports, Utilities, or Airports.' Paul has none, PA Consulting utility work was water/wastewater, not electric utility.",
           "severity": "hard"
         },
         {
@@ -10154,11 +10154,11 @@
           "company": "Project Angel Food",
           "role": "Chief Operating Officer",
           "url": "https://jobs.philanthropy.com/job/52260/",
-          "reason": "Scored sub-40 (36.0) in main context after fetch — operations COO at LA meal-delivery nonprofit, no mission/function fit. Not added to dashboard per sub-40 rule."
+          "reason": "Scored sub-40 (36.0) in main context after fetch, operations COO at LA meal-delivery nonprofit, no mission/function fit. Not added to dashboard per sub-40 rule."
         }
       ],
       "failed_em_dash_gate": [],
-      "notes": "Daily / Morning Brief cron commit landed at 12:30 UTC but no morning_briefs entry was appended to dashboard-data.json (existing pipeline bug — last appended entry was 2026-05-01). This run filled the gap. Digest had 276 postings of which ~225 were aggregator-board URLs (Terra.do, Climatebase, Climate Change Jobs by city, Schmidt Marine listings, Esri portfolio, etc.) that link to listing pages rather than specific JDs and are unscoreable per rubric. After applying applications-dedup, watch_list checks, hard exclusions, title-level filtering for engineering/analyst/IC-SDR/recruiter roles, and the recently-ranked window, 8 specific JDs were dispatched to scoring subagents. Subagents could not fetch JDs from their sandboxed environment (WebFetch denied), so fetching was retried in main context. Sierra Club returned 403 (unreadable). 5 successful fetches plus 2 hard-exclusion title-checks plus 1 already-known-pattern (Bentley) produced 4 new Tier 3 dashboard entries: Bees & Bears Head of Risk Berlin (44.5), Bentley Principal Consultant Remote/GA (47.5), SF Estuary Institute Executive Director Richmond CA (52.0), Active Site Chief of Staff Cambridge MA (43.5). No Tier 1 or Tier 2 entries today — no deep dives triggered.",
+      "notes": "Daily / Morning Brief cron commit landed at 12:30 UTC but no morning_briefs entry was appended to dashboard-data.json (existing pipeline bug, last appended entry was 2026-05-01). This run filled the gap. Digest had 276 postings of which ~225 were aggregator-board URLs (Terra.do, Climatebase, Climate Change Jobs by city, Schmidt Marine listings, Esri portfolio, etc.) that link to listing pages rather than specific JDs and are unscoreable per rubric. After applying applications-dedup, watch_list checks, hard exclusions, title-level filtering for engineering/analyst/IC-SDR/recruiter roles, and the recently-ranked window, 8 specific JDs were dispatched to scoring subagents. Subagents could not fetch JDs from their sandboxed environment (WebFetch denied), so fetching was retried in main context. Sierra Club returned 403 (unreadable). 5 successful fetches plus 2 hard-exclusion title-checks plus 1 already-known-pattern (Bentley) produced 4 new Tier 3 dashboard entries: Bees & Bears Head of Risk Berlin (44.5), Bentley Principal Consultant Remote/GA (47.5), SF Estuary Institute Executive Director Richmond CA (52.0), Active Site Chief of Staff Cambridge MA (43.5). No Tier 1 or Tier 2 entries today, no deep dives triggered.",
       "jobs_processed": 276,
       "high_scores": 0,
       "deep_dives": 0,
