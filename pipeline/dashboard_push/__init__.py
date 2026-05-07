@@ -1,4 +1,4 @@
-"""Headless dashboard push helper. Phase 11e adds the em-dash gate."""
+"""Headless dashboard push helper with em-dash gate."""
 from .push import (
     BANNED_DASHES,
     DASHBOARD_REPO,
