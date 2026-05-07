@@ -147,11 +147,35 @@ This PAT does NOT have write access to paul-job-pipeline itself, by design. paul
 
 Token file: `~/.claude/dashboard-push-token` (chmod 600).
 
-### Sandbox-side dashboard pushes
+### Sandbox-side dashboard pushes (CANONICAL FLOW)
 
-The `dashboard-push` skill (in `~/.claude/skills/dashboard-push/`) wraps the API path: clone fresh into `/tmp/dashboard-push`, run a modifier callback, build HTML, commit, push. Use it whenever Paul says "update the dashboard," "log this on the dashboard," "push that change," or anything where a dashboard edit is the obvious next step. The helper module lives at `pipeline/dashboard_push/` in the dashboard repo and is committed to origin.
+The `dashboard-push` skill (in `~/.claude/skills/dashboard-push/`) wraps the API path: clone fresh into `/tmp/dashboard-push`, run a modifier callback, walk the dict for em-dashes, run `build-dashboard.py`, commit, push (with retry on launchd race). Use it whenever Paul says "update the dashboard," "log this on the dashboard," "push that change," or anything where a dashboard edit is the obvious next step. The helper module lives at `pipeline/dashboard_push/` in the dashboard repo and is committed to origin.
 
-Do NOT touch Paul's local working tree of the dashboard repo when making sandbox-driven dashboard updates. The launchd auto-push agent races with manual-tree edits and produced today's divergence storm. The dashboard-push skill never touches the local tree, which is the correct pattern.
+**DO NOT** `git push` to the dashboard repo by any other path. Direct git pushes from a temporary clone bypass the em-dash gate and have leaked banned dashes into `dashboard-data.json` more than once. The 2026-05-07 push.py refactor (commit 5390647) added retry-on-rejection, glob-based token discovery (no more hardcoded session IDs), and a `mutate_json(repo, path, fn)` helper for atomic JSON edits. The full canonical flow:
+
+```python
+from pipeline.dashboard_push import push_dashboard_edits, mutate_json
+
+def edit(repo):
+    def fn(d): d["applications"][i]["status"] = "1st_interview_scheduled"
+    mutate_json(repo, "dashboard-data.json", fn)
+
+commit_url = push_dashboard_edits(edit, message="Kepler interview scheduled May 12")
+```
+
+That's it. No clone-checkout-edit-commit-push dance. No lockfile. The retry handles the launchd race.
+
+DO NOT touch Paul's local working tree of the dashboard repo when making sandbox-driven dashboard updates. The launchd auto-push agent races with manual-tree edits and produced multiple divergence storms before the helper was the canonical path.
+
+### Token discovery (no hardcoded session IDs)
+
+`push.py:_token_file_candidates` searches in order:
+1. `$REAL_HOME/.claude/dashboard-push-token` and `$REAL_HOME/.config/dashboard-push-token` (if env var set)
+2. `~/.claude/dashboard-push-token` and `~/.config/dashboard-push-token`
+3. `~/mnt/.claude/dashboard-push-token` (sandbox-mount-under-home pattern)
+4. **Glob** over `/sessions/*/mnt/.claude/dashboard-push-token`, `/mnt/*/.claude/dashboard-push-token`, `/Users/*/.claude/dashboard-push-token` — this is what makes the helper work in Cowork sandboxes regardless of session ID. Old code hardcoded a single session ID; that broke every time a new Cowork session started.
+
+Stable env var fallback: `DASHBOARD_REPO_TOKEN` takes precedence over all file paths.
 
 ### Cowork desktop scheduled tasks
 
