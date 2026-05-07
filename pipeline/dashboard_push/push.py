@@ -53,17 +53,34 @@ BANNED_DASHES = ("—", "–", "‒")
 
 
 def _token_file_candidates() -> list[Path]:
-    """Build the search list for the PAT file."""
+    """Build the search list for the PAT file. Stable paths first, glob fallbacks
+    second. Critically: NO hardcoded session IDs. Any sandbox-session-specific
+    path is discovered via glob, so a new Cowork session never breaks because
+    a previous session ID went stale."""
+    import glob
     candidates: list[Path] = []
+
+    # 1. Stable paths (work on native macOS and any sandbox that sets REAL_HOME).
     real_home = os.environ.get("REAL_HOME", "").strip()
     if real_home:
         candidates.append(Path(real_home) / ".claude" / "dashboard-push-token")
         candidates.append(Path(real_home) / ".config" / "dashboard-push-token")
     candidates.append(Path.home() / ".claude" / "dashboard-push-token")
     candidates.append(Path.home() / ".config" / "dashboard-push-token")
-    sandbox_mount = Path.home() / "mnt" / ".claude" / "dashboard-push-token"
-    candidates.append(sandbox_mount)
-    candidates.append(Path("/sessions/lucid-funny-wright/mnt/.claude/dashboard-push-token"))
+
+    # 2. Sandbox-style mount under home.
+    candidates.append(Path.home() / "mnt" / ".claude" / "dashboard-push-token")
+
+    # 3. Cowork session mount glob — never hardcode a session ID.
+    for p in glob.glob("/sessions/*/mnt/.claude/dashboard-push-token"):
+        candidates.append(Path(p))
+    # Other sandbox conventions seen in the wild.
+    for p in glob.glob("/mnt/*/.claude/dashboard-push-token"):
+        candidates.append(Path(p))
+    for p in glob.glob("/Users/*/.claude/dashboard-push-token"):
+        candidates.append(Path(p))
+
+    # De-dup while preserving order.
     seen: set[Path] = set()
     out: list[Path] = []
     for p in candidates:
@@ -172,15 +189,75 @@ def _clone_fresh(token: str, target: Path, branch: str) -> Path:
     return target
 
 
-def _commit_and_push(token: str, repo_dir: Path, message: str, branch: str) -> Optional[str]:
+def _commit_and_push(token: str, repo_dir: Path, message: str, branch: str,
+                     max_retries: int = 3) -> Optional[str]:
+    """Stage, commit, push. If the push is rejected (the launchd auto-push
+    agent raced us, or a morning-brief commit landed mid-flight), fetch +
+    rebase + retry up to max_retries times. Returns the new commit SHA on
+    success or None if there was nothing to commit."""
     _run(["git", "add", "-A"], cwd=repo_dir)
     diff = _run(["git", "diff", "--cached", "--quiet"], cwd=repo_dir, check=False)
     if diff.returncode == 0:
         return None
     _run(["git", "commit", "-m", message], cwd=repo_dir)
-    _run(["git", "push", _authenticated_url(token), f"HEAD:{branch}"], cwd=repo_dir)
-    sha = _run(["git", "rev-parse", "HEAD"], cwd=repo_dir).stdout.strip()
-    return sha
+
+    push_url = _authenticated_url(token)
+    last_err: Optional[str] = None
+    for attempt in range(1, max_retries + 1):
+        push = subprocess.run(
+            ["git", "push", push_url, f"HEAD:{branch}"],
+            cwd=str(repo_dir), capture_output=True, text=True,
+        )
+        if push.returncode == 0:
+            sha = _run(["git", "rev-parse", "HEAD"], cwd=repo_dir).stdout.strip()
+            return sha
+
+        stderr = push.stderr or ""
+        last_err = stderr
+        # Detect non-fast-forward / fetch-first / rejection from concurrent push.
+        racey = (
+            "[rejected]" in stderr
+            or "fetch first" in stderr
+            or "non-fast-forward" in stderr
+            or "Updates were rejected" in stderr
+        )
+        if not racey or attempt == max_retries:
+            break
+
+        # Race detected: fetch latest, rebase our commit on top, retry.
+        print(f"[dashboard-push] push attempt {attempt} rejected (likely launchd race); rebasing and retrying...")
+        _run(["git", "fetch", push_url, branch], cwd=repo_dir)
+        _run(["git", "rebase", f"FETCH_HEAD"], cwd=repo_dir)
+
+    raise RuntimeError(
+        f"git push failed after {max_retries} attempts. Last stderr:\n{last_err}"
+    )
+
+
+# ---------------------------------------------------------------------------
+# Convenience helpers for modifier callbacks
+# ---------------------------------------------------------------------------
+
+def mutate_json(repo: Path, relative_path: str, fn: Callable[[dict], None]) -> None:
+    """Read a JSON file inside the cloned repo, run `fn(data)` to mutate it
+    in place, and write it back atomically. Use this from inside a modifier
+    callback to avoid hand-rolling read/parse/mutate/write logic.
+
+    Example:
+        def edit(repo: Path) -> None:
+            def flip_status(d: dict) -> None:
+                for a in d["applications"]:
+                    if a["company"] == "Kepler Communications":
+                        a["status"] = "1st_interview_scheduled"
+                d["stats"]["last_updated"] = "2026-05-07"
+            mutate_json(repo, "dashboard-data.json", flip_status)
+    """
+    target = repo / relative_path
+    data = json.loads(target.read_text())
+    fn(data)
+    tmp = target.with_suffix(target.suffix + ".tmp")
+    tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False))
+    os.replace(tmp, target)
 
 
 # ---------------------------------------------------------------------------

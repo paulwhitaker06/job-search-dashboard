@@ -6,6 +6,7 @@ from .push import (
     _enforce_em_dash_gate,
     _find_banned_dashes,
     load_token,
+    mutate_json,
     push_dashboard_edits,
 )
 
@@ -14,5 +15,6 @@ __all__ = [
     "DASHBOARD_REPO",
     "DEFAULT_BRANCH",
     "load_token",
+    "mutate_json",
     "push_dashboard_edits",
 ]
