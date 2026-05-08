@@ -170,12 +170,29 @@ DO NOT touch Paul's local working tree of the dashboard repo when making sandbox
 ### Token discovery (no hardcoded session IDs)
 
 `push.py:_token_file_candidates` searches in order:
-1. `$REAL_HOME/.claude/dashboard-push-token` and `$REAL_HOME/.config/dashboard-push-token` (if env var set)
-2. `~/.claude/dashboard-push-token` and `~/.config/dashboard-push-token`
-3. `~/mnt/.claude/dashboard-push-token` (sandbox-mount-under-home pattern)
-4. **Glob** over `/sessions/*/mnt/.claude/dashboard-push-token`, `/mnt/*/.claude/dashboard-push-token`, `/Users/*/.claude/dashboard-push-token` — this is what makes the helper work in Cowork sandboxes regardless of session ID. Old code hardcoded a single session ID; that broke every time a new Cowork session started.
+1. **`<repo-root>/.dashboard-push-token`** — in-repo mirror, gitignored. **This is the path that works inside Cowork's sandbox** because Cowork mounts the dashboard repo as a project directory but does NOT mount `~/.claude/`. The launchd push agent on the host never reads this copy; it's purely for Cowork's sandbox.
+2. `$REAL_HOME/.claude/dashboard-push-token` and `$REAL_HOME/.config/dashboard-push-token` (if env var set)
+3. `~/.claude/dashboard-push-token` and `~/.config/dashboard-push-token` — the canonical host path, used by the launchd push agent and by main-context (non-sandbox) Bash sessions.
+4. `~/mnt/.claude/dashboard-push-token` (sandbox-mount-under-home pattern)
+5. **Glob** over `/sessions/*/mnt/.claude/dashboard-push-token`, `/sessions/*/mnt/*/.dashboard-push-token`, `/mnt/*/.claude/dashboard-push-token`, `/mnt/*/.dashboard-push-token`, `/Users/*/.claude/dashboard-push-token` — fallbacks for sandbox conventions seen in the wild. Old code hardcoded a single session ID; that broke every time a new Cowork session started.
 
 Stable env var fallback: `DASHBOARD_REPO_TOKEN` takes precedence over all file paths.
+
+### Setup: token mirroring (one-time)
+
+The token MUST exist at BOTH:
+- `~/.claude/dashboard-push-token` (host canonical, read by the launchd agent and main-context Bash)
+- `~/Documents/Claude/Projects/Improving the dashboard/.dashboard-push-token` (in-repo mirror, gitignored, read by Cowork's sandbox)
+
+If you rotate the GitHub PAT, update BOTH copies:
+```bash
+# After updating ~/.claude/dashboard-push-token with the new PAT:
+cp ~/.claude/dashboard-push-token \
+   "$HOME/Documents/Claude/Projects/Improving the dashboard/.dashboard-push-token"
+chmod 600 "$HOME/Documents/Claude/Projects/Improving the dashboard/.dashboard-push-token"
+```
+
+The `.gitignore` covers `.dashboard-push-token` so it won't get committed. Verify with `git check-ignore -v .dashboard-push-token` if in doubt.
 
 ### Cowork desktop scheduled tasks
 
