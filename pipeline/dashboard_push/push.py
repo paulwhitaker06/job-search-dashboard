@@ -56,11 +56,23 @@ def _token_file_candidates() -> list[Path]:
     """Build the search list for the PAT file. Stable paths first, glob fallbacks
     second. Critically: NO hardcoded session IDs. Any sandbox-session-specific
     path is discovered via glob, so a new Cowork session never breaks because
-    a previous session ID went stale."""
+    a previous session ID went stale.
+
+    Includes a sandbox-readable copy at ./.dashboard-push-token (alongside this
+    repo's .gitignore'd) because Cowork's sandbox does NOT mount ~/.claude/ as
+    a project directory, so the canonical token at ~/.claude/dashboard-push-token
+    is unreachable from inside Cowork. Paul mirrors the token to the repo root
+    and the launchd push agent never touches that copy.
+    """
     import glob
     candidates: list[Path] = []
 
-    # 1. Stable paths (work on native macOS and any sandbox that sets REAL_HOME).
+    # 1. In-repo mirror (works inside Cowork sandbox; mounted via project dir).
+    # Walk up from this file: pipeline/dashboard_push/push.py -> repo root.
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    candidates.append(repo_root / ".dashboard-push-token")
+
+    # 2. Stable host paths (work on native macOS and any sandbox that sets REAL_HOME).
     real_home = os.environ.get("REAL_HOME", "").strip()
     if real_home:
         candidates.append(Path(real_home) / ".claude" / "dashboard-push-token")
@@ -68,14 +80,19 @@ def _token_file_candidates() -> list[Path]:
     candidates.append(Path.home() / ".claude" / "dashboard-push-token")
     candidates.append(Path.home() / ".config" / "dashboard-push-token")
 
-    # 2. Sandbox-style mount under home.
+    # 3. Sandbox-style mount under home.
     candidates.append(Path.home() / "mnt" / ".claude" / "dashboard-push-token")
 
-    # 3. Cowork session mount glob — never hardcode a session ID.
+    # 4. Cowork session mount glob — never hardcode a session ID.
     for p in glob.glob("/sessions/*/mnt/.claude/dashboard-push-token"):
+        candidates.append(Path(p))
+    # In-repo mirror via session mount glob (covers any project-name variation).
+    for p in glob.glob("/sessions/*/mnt/*/.dashboard-push-token"):
         candidates.append(Path(p))
     # Other sandbox conventions seen in the wild.
     for p in glob.glob("/mnt/*/.claude/dashboard-push-token"):
+        candidates.append(Path(p))
+    for p in glob.glob("/mnt/*/.dashboard-push-token"):
         candidates.append(Path(p))
     for p in glob.glob("/Users/*/.claude/dashboard-push-token"):
         candidates.append(Path(p))
