@@ -1,40 +1,47 @@
 {
-  "updated": "2026-05-03T23:40:48Z",
+  "updated": "2026-05-10T23:48:43Z",
   "this_week": {
-    "start": "2026-04-27",
-    "end": "2026-05-03",
-    "total_usd": 24.6678,
-    "calls": 576,
-    "tokens_in": 7515845,
-    "tokens_out": 141354,
+    "start": "2026-05-04",
+    "end": "2026-05-10",
+    "total_usd": 44.2692,
+    "calls": 1052,
+    "tokens_in": 13536528,
+    "tokens_out": 243975,
     "by_workflow": {
-      "Daily / Morning Brief": {
-        "usd": 21.0838,
-        "calls": 566,
-        "tokens_in": 6467471,
-        "tokens_out": 112094
-      },
       "Daily / Sports Refresh": {
-        "usd": 1.1793,
-        "calls": 4,
-        "tokens_in": 321475,
-        "tokens_out": 14322
+        "usd": 1.7738,
+        "calls": 6,
+        "tokens_in": 488942,
+        "tokens_out": 20468
       },
       "Tri-daily / Haiku Refresh": {
-        "usd": 1.3718,
-        "calls": 3,
-        "tokens_in": 409283,
-        "tokens_out": 9596
+        "usd": 1.7359,
+        "calls": 4,
+        "tokens_in": 522208,
+        "tokens_out": 11286
       },
-      "Tri-weekly / Personal Feeds Refresh": {
-        "usd": 1.033,
-        "calls": 3,
-        "tokens_in": 317616,
-        "tokens_out": 5342
+      "Daily / Morning Brief": {
+        "usd": 39.01,
+        "calls": 1038,
+        "tokens_in": 11999943,
+        "tokens_out": 200680
+      },
+      "Daily Haiku Refresh": {
+        "usd": 1.7494,
+        "calls": 4,
+        "tokens_in": 525435,
+        "tokens_out": 11541
       }
     }
   },
   "weekly": [
+    {
+      "week_start": "2026-05-04",
+      "total_usd": 44.2692,
+      "calls": 1052,
+      "tokens_in": 13536528,
+      "tokens_out": 243975
+    },
     {
       "week_start": "2026-04-27",
       "total_usd": 24.6678,
@@ -44,9 +51,10 @@
     }
   ],
   "by_workflow_4w": {
-    "Daily / Morning Brief": 21.0838,
-    "Daily / Sports Refresh": 1.1793,
-    "Tri-daily / Haiku Refresh": 1.3718,
-    "Tri-weekly / Personal Feeds Refresh": 1.033
+    "Daily / Morning Brief": 60.0939,
+    "Daily / Sports Refresh": 2.9531,
+    "Tri-daily / Haiku Refresh": 3.1077,
+    "Tri-weekly / Personal Feeds Refresh": 1.033,
+    "Daily Haiku Refresh": 1.7494
   }
 }
