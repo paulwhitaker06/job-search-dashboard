@@ -2,6 +2,34 @@
 
 Read this before doing scoring, deep-dive, plugin, or dashboard work in this folder. It is not long and every item on it is a pattern that cost Paul real frustration at least once.
 
+
+> ## STOP. Read this before touching anything dashboard-related.
+>
+> **The ONLY way to land a change on the live dashboard is the `dashboard-push` skill** (or directly importing `pipeline.dashboard_push.push_dashboard_edits` from this repo). The helper clones fresh from origin, applies a callback, runs the em-dash gate, runs `build-dashboard.py`, and pushes via the GitHub API.
+>
+> **DO NOT** edit `dashboard-data.json`, `index.html`, or `job-search-command-center.html` directly in this working tree. The launchd push agent that used to mirror local edits to GitHub has been failing since 2026-04-27. Anything you edit here goes nowhere. Paul has told me this multiple times.
+>
+> **DO NOT** run `build-dashboard.py` locally and assume launchd will push. It will not.
+>
+> Single canonical flow:
+>
+> ```python
+> import sys, json
+> from pathlib import Path
+> sys.path.insert(0, "<mounted-dashboard-repo-path>")
+> from pipeline.dashboard_push import push_dashboard_edits, mutate_json
+>
+> def edit(repo: Path) -> None:
+>     def fn(d):
+>         d["applications"][i]["status"] = "1st_interview_scheduled"
+>     mutate_json(repo, "dashboard-data.json", fn)
+>
+> commit_url = push_dashboard_edits(edit, message="<one-line description>")
+> ```
+>
+> The em-dash gate walks dict values pre-serialization and will reject pushes containing em-dash, en-dash, or figure-dash anywhere in the JSON. Scrub before you push.
+
+
 ## Lessons from 2026-05-01 / 2026-05-02
 
 A long two-day session that shipped a lot and surfaced a lot. Most painful learnings:

@@ -2472,7 +2472,7 @@ def publish_to_github(html_path):
 
     try:
         shutil.copy2(html_path, index_path)
-        print("index.html updated. launchd agent will commit and push to GitHub Pages.")
+        print("index.html updated locally. Note: the launchd push agent has been broken since 2026-04-27. To land changes on the live dashboard, use the dashboard-push skill / pipeline.dashboard_push.push_dashboard_edits helper, not direct edits to this working tree.")
         return True
     except Exception as e:
         print(f"Failed to copy index.html: {e}")
