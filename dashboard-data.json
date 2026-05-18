@@ -5770,27 +5770,6 @@
   ],
   "watch_list": [
     {
-      "company": "Charm Industrial",
-      "category": "Carbon Removal / Biomass",
-      "why": "Converts biomass into carbon-rich liquid, injects it underground for permanent removal. Durability-focused, scaling commercially, direct climate impact with verifiable MRV. Paul's GFW commercial-mission framing applies cleanly.",
-      "roast": "Charm Industrial takes agricultural waste, turns it into bio-oil, and pumps it underground where it stays for thousands of years. It is one of the few carbon removal pathways that does not require you to pretend enhanced weathering is ready for prime time or that direct air capture pencils out without a hyperscaler writing the check. They have actual removal credits sold, actual injection sites operating, and actual customers who care whether the carbon stays buried or leaks back out in fifteen years. You built the Planet deal at GFW by knowing which buyers pay for verified outcomes instead of aspirational offsets. Charm is the same bet in a different market. The carbon credit world is a wasteland of consultants, registries, and startups that cannot explain their methodology without a whiteboard and twenty minutes. Charm is one of the few that can say we put it in the ground, here is the well, here is the monitoring, here is the third party attestation. The commercial challenge is not the science. It is whether enterprises actually allocate budget to durable removal or whether they keep buying cheap forestry credits and calling it net zero. If Paul can help them frame the value proposition so the CFO and the chief sustainability officer both nod, they win. If not, it is another breakthrough technology waiting for the market to catch up.",
-      "careers_url": "https://charmindustrial.com/careers"
-    },
-    {
-      "company": "Climavision",
-      "category": "Weather Intelligence / Satellite & Radar",
-      "why": "Building satellite and radar-based extreme weather forecasting systems for agriculture, logistics, energy. High-frequency EO + AI, enterprise customers, operational decision-making use case. Adjacent to Paul's GFW real-time data experience.",
-      "roast": "Climavision is trying to make weather forecasting fast enough and accurate enough that someone will actually change their logistics route, delay a harvest, or shut down a transmission line before the storm hits instead of after. The company runs its own weather radars, ingests satellite data, wraps it in AI-driven prediction models, and sells subscriptions to industries that lose money every time they guess wrong about a thunderstorm. The pitch is solid. The technical execution is real. The business model is recurring revenue from enterprises that already budget for weather intelligence. The problem is the same problem every high-frequency EO company eventually hits. Buyers believe the data matters right up until they have to integrate it into an actual operational workflow, at which point someone in the organization says we already have NOAA for free and this costs how much per seat. You sold KSAT oil spill monitoring into a market that had no category and no budget line. Climavision is selling into a market that has both but assumes the free version is good enough. If Paul can help them articulate why sub-hour forecasting is worth enterprise budget and how to structure a pilot that proves ROI in the first 90 days, they have a shot. If not, it is another weather company with better models and no path to the decision maker who actually signs.",
-      "careers_url": "https://www.climavision.com/careers"
-    },
-    {
-      "company": "VanderSat",
-      "category": "Agriculture / Soil Moisture EO",
-      "why": "Dutch EO startup using passive microwave sensing for soil moisture, vegetation, and weather insights. Agriculture, insurance, banking, commodities verticals. Established European player, commercially mature buyer base. Paul's GFW insurance work (AXA Climate, British Marine/QBE) is directly adjacent, and the multi-sector licensing model echoes KSAT's multi-vertical services.",
-      "roast": "VanderSat sells microwave-derived soil moisture and vegetation data to agriculture, insurance, banking, and commodities buyers, which is a polite way of saying they sell the same dataset to four different industries and call it four different products depending on who is asking. They have been at this since 2014, so they are not a moonshot, they are a functioning commercial operation with actual recurring customers, which in the EO world makes them a statistical anomaly. The microwave angle is clever because it works through cloud cover, which means they can monitor crops in the Netherlands in February, which is otherwise impossible and also depressing. The challenge is that they are in the most competitive segment of EO. Every agtech platform, every precision agriculture startup, and half the insurance industry has a satellite data partnership. VanderSat has survived a decade, so they clearly have something defensible, but Paul would need to understand what it is. Is it the microwave sensor advantage? Is it the algorithm? Or is it just that they were early and the customers have no reason to switch? If it is the third one, that is fine, but it means the growth story is about adding new verticals, not expanding within existing ones. Paul has done that. GFW's insurance vertical was net-new, built from a use case the buyers did not know they had. If VanderSat wants to find the fifth vertical, he has run that play.",
-      "careers_url": "https://www.vandersat.com/careers/"
-    },
-    {
       "company": "Map Impact",
       "category": "Climate Risk Reporting / ESG Analytics",
       "why": "UK startup building climate risk reporting tools using satellite EO data for biodiversity, drought, heat stress, wildfire. Targets businesses, legislators, environmentalists. Aligns with evolving environmental laws. Paul's GFW conservation mission, open-access commercial tension, and Planet partnership (monitoring use case creation) are all relevant. UK-based, small team, mission-commercial balance.",
@@ -6013,6 +5992,27 @@
       "why": "Farmer-first soil carbon MRV, practice-based + satellite verification, pragmatic middle ground between measurement cost and credibility",
       "roast": "Danish agtech trying to solve the problem child of carbon markets, which is soil carbon, because you cannot see it, measuring it costs more than the credit is worth, and pure practice-based estimates have zero credibility with anyone holding a compliance budget. Agreena built a hybrid model that tracks regenerative practices, verifies implementation through satellite imagery, and quantifies carbon benefits through modeling that splits the difference between perfect measurement and faith-based accounting. They monetize farmer behavior change instead of waiting for soil samples that take six months and cost $80 each, which is the only way soil carbon scales past boutique projects in Iowa. The model works because institutional buyers will pay for credible-enough if the methodology is transparent and the monitoring is continuous, which is exactly the trade GFW made when Paul sold the ASN and Planet deals, you are not selling perfection, you are selling structured verification that stands behind the number. Agreena has traction with European agribusinesses who face EUDR and CSRD reporting, and the US farm belt is starting to care because regen ag subsidies and crop insurance discounts are starting to price in carbon. Remote-first, Copenhagen-based, Series B-ish stage, probably needs a partnerships lead who understands how to build the commercial licensing program on top of the MRV platform and structure deals with food companies and insurers who have never bought a carbon credit before. Paul has done this twice.",
       "careers_url": "https://agreena.com/careers"
+    },
+    {
+      "company": "GalaxEye",
+      "category": "Hyperspectral / SAR EO",
+      "why": "First commercial OptoSAR satellite. India private space. All-weather imaging domain fit.",
+      "roast": "Bengaluru startup just launched Mission Drishti, their 190kg OptoSAR bird that fuses electro-optical and synthetic aperture radar on a single platform. First in the world, they say. Launched May 3 on a Falcon 9 rideshare out of Vandenberg, right alongside the South Korean government payload and 43 other hitchhikers. You spent a decade at KSAT selling the value proposition of SAR to oil majors who did not want to hear it in month six of a two-year sales cycle. GalaxEye's pitch is the same fight but faster: all-weather, day-night, cloud-penetrating imagery for buyers who are tired of optical satellites going dark every time the monsoon rolls in. Raised $18.8M from Infosys and others. Partnered with NewSpace India Limited for global distribution, which means they understood the government-as-channel play before they had revenue. The technology is legitimately novel. The market is every vertical you already know. The problem is GalaxEye is targeting a gap in Earth observation you have lived in since Tromso, and they are doing it in a geography where your KSAT rolodex does not translate but your product-market-fit instinct absolutely does. They need someone who has sat across the table from ExxonMobil and Shell and knows that the people who buy SAR are not the people who buy optical, and the contract structures reflect that reality. If they grow past seed stage, this is the exact commercial build you have done twice.",
+      "careers_url": "https://www.galaxeye.space/careers"
+    },
+    {
+      "company": "RIFFAI",
+      "category": "Hyperspectral EO / Climate Adaptation",
+      "why": "Singapore-based. AI-driven hyperspectral flood/wildfire detection. Adaptation vertical heating up.",
+      "roast": "Singapore startup doing AI-powered Earth observation with hyperspectral imaging and satellite data to detect floods, wildfires, and ecosystem shifts. The category is climate adaptation, which grew 64% to $5.5 billion in 2025 according to people who track that sort of thing. RIFFAI is small, early, probably six to twelve people, and almost certainly selling the same value proposition you walked into every ENI and NOPSEMA meeting with: the cost of not knowing is higher than the cost of the sensor. The difference is they are doing it in a regulatory environment that has already moved. Asia-Pacific governments buy climate adaptation intelligence because cyclones and fires are no longer theoretical. You built the KSAT monitoring business by identifying where pressure was accumulating and waiting for the explosion. RIFFAI is standing in the blast radius and calling it product-market fit. The hard part about joining an early-stage adaptation intelligence company is that the tech is genuinely difficult but the customers do not care about the tech. They care about the alert arriving before the flood does. If RIFFAI has figured out how to package hyperspectral detection as an insurance product or a compliance shortcut, that is the signal. If they are still explaining spectral bands to prospects, you will spend a year building the same pitch deck you built at KSAT in 2013. Either way, they are in a part of the market where mission and margin actually overlap, and Singapore as a hub means access to the entire Southeast Asian government and corporate buyer base without the friction of operating inside it.",
+      "careers_url": "https://www.riffai.com/careers"
+    },
+    {
+      "company": "Overstory",
+      "category": "Vegetation Intelligence / Wildfire Risk",
+      "why": "Satellite ML for powerline vegetation monitoring. Utility buyers. Proven traction.",
+      "roast": "Overstory uses machine learning to interpret satellite imagery and monitor vegetation near power lines, reducing wildfire risk and outages while cutting costs for utilities. The product works. The traction is real. PG&E, Xcel, and a dozen other grid operators are already paying them. It is one of the few climate adaptation plays where the buyer has an obvious budget line, a regulatory requirement, and a lawsuit-prevention motive all pointing at the same vendor. The problem for you is the buyer is electric utilities, and your PA Consulting credential is water and wastewater infrastructure, not grid operators. You assessed this gap in March when you looked at the Enterprise AE role and decided the fit was weaker than the job description suggested. That has not changed. What has changed is Overstory's commercial maturity. They are past the stage where they need someone to create the market. They need someone to scale an inside sales motion and close renewal cycles with utility procurement teams who think in three-year RFPs and rate case approvals. You sold oil spill monitoring to energy majors and fisheries surveillance to governments. The distance between your deal muscle and Overstory's current go-to-market is not skills, it is domain vocabulary, and that gap closes faster than people think. If they ever open a senior partnerships role focused on expanding outside North American utilities into international energy infrastructure or climate risk underwriters, that is a different conversation. Until then, this is a company to watch, not a company to join.",
+      "careers_url": "https://www.overstory.com/careers"
     }
   ],
   "morning_briefs": [
@@ -18321,17 +18321,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Prescribed fires out\nCarson managers declare\nfall smoke finally done",
-    "Microplastics warm\ndarker bits absorb the heat\nNature Climate says",
-    "Antarctic spiral\ntriple whammy downward pull\nocean turns from friend",
-    "Colorado snow\nsmallest pack on record\nLake Powell runs dry",
-    "Kansas wheat dying\nforty four percent gone poor\nheat took the whole crop",
-    "Psyche flyby Mars\nfour thousand five hundred k's\nMay fifteenth at speed",
-    "Artemis splashed down\nIntegrity in the sea\nApril eleventh won",
-    "Mother's Day Races\nwhitewater May eight through ten\nsixty eighth year running",
-    "Spring in Taos quiet\nsage blooms, gorge holds light all day\nthe wire is clean now",
-    "Iran ceasefire\non massive life support, Trump says\ngas hits four fifty",
-    "Mexican gray wolf\ncrossed south for first time in years\nCarson fires all out",
     "Sox host Phillies\nsix forty-five at Fenway\nRafaela still bunts",
     "Marty Makary out\nFDA chief resigns today\nmass layoffs, no trust",
     "War costs twenty-nine\nbillion so far, Pentagon says\nI don't think about you",
@@ -18385,14 +18374,25 @@
     "Tromso midnight sun\nKSAT dishes in winter\nNorway never left",
     "Ranked list sits empty\nhaiku keep the wire warm\ntime for telemark turns",
     "Sea temps at record\nArtemis II flew farthest\nthe dashboard refreshes",
-    "Dennis Hopper Day\nTaos Pueblo feast day near\nMay in the high desert"
+    "Dennis Hopper Day\nTaos Pueblo feast day near\nMay in the high desert",
+    "Two jets crash mid show\nIdaho crew ejects clean\nGunfighter Skies down",
+    "LIRR strike grinds New York\nmedian wage one thirty one\ntrains stop, city chokes",
+    "Iran clock ticking\nTrump warns Sunday oil jumps high\npeace talks stagger on",
+    "Rio Grande runs clear\nnot muddy brown like May should\nhistoric drought starves",
+    "Taos new Dem chair\nAnnette won eighty percent\nturmoil finally done",
+    "Psyche Mars flyby\nforty five hundred klicks close\nMay fifteen at speed",
+    "GalaxEye launched May third\nOptoSAR sees through clouds\nIndia space sprints",
+    "Starship V3 debuts\nMay nineteen Launch Pad Two\nShip thirty nine climbs",
+    "Planet three meter proof\nDavid Attenborough films\nBlue Planet segment",
+    "Sox need a redhead\nin the bleachers, in his bed\nwire stays quiet",
+    "Dashboard refresh twelve\nhaiku hold the zero line\nno buyers today"
   ],
   "intros": [
     "No buyers today. Haiku hold the line.",
     "Quiet wire. Here's a haiku.",
-    "Sox play Atlanta today. Wildfires doubled 2024. Iran war meeting Tuesday.",
-    "Dennis Hopper Day in Taos. El Ni\u00f1o arriving early. Methane monitoring gets teeth.",
-    "El Ni\u00f1o developing. 2026 may beat all heat records. Taos went solar independent.",
+    "Two Navy jets down. Rio Grande runs clear. Sox batting .235.",
+    "Taos elects new chair. Starship V3 Monday. Hantavirus cruise kills three.",
+    "Iran clock ticking. LIRR strike grinds NYC. GalaxEye OptoSAR orbits.",
     "The pipeline will refill. Until then:",
     "Zero ranked. Maximum haiku.",
     "No offers to chew on. A haiku to sit with.",
