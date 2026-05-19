@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18",
+  "last_updated": "2026-05-19",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -67,11 +67,11 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 115,
+    "active_pipeline": 116,
     "deep_dives_done": 18,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-05-18"
+    "last_updated": "2026-05-19"
   },
   "ranked_opportunities": [
     {
@@ -2121,7 +2121,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-16",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Remote: United States | Canada",
@@ -2149,7 +2149,55 @@
       "rank": 52
     },
     {
-      "rank": 53,
+      "company": "Environmental Defense Fund",
+      "role": "Senior Manager, Texas Clean Affordable Power",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-05-19",
+      "scqa": "",
+      "verdict": "This is a regulatory advocacy role requiring deep procedural expertise in Texas electric utility regulation (ERCOT and PUCT), which Paul does not possess. The JD explicitly requires \"at least 4 years of ERCOT and/or PUCT practice\" and \"Proficiency with ERCOT and PUCT procedural rules and conventions.\" Paul's utility work at PA Consulting was in water/wastewater security risk assessment, not electric power commission advocacy. His subsequent career (KSAT, GFW) was entirely in commercial satellite services and data licensing. While the role involves multi-stakeholder coalition work (SPM 6 \u2014 generic coordination, not Paul's specific three patterns), Paul cannot credibly compete against candidates with 4+ years of actual ERCOT/PUCT docket experience. RF capped at 4 due to sector mismatch; IL capped at 3 due to missing named credential.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.edf.org/jobs/senior-manager-texas-clean-affordable-power"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-05-19",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "This position may be based remotely or hybrid out of one of EDF's U.S. offices with a strong preference for candidates b",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Hard experience requirement",
+          "detail": "JD requires '8+ years of relevant professional experience, including at least 4 years of ERCOT and/or PUCT practice' \u2014 Paul has zero ERCOT/PUCT regulatory practice experience. His utility regulatory work was water/wastewater (PA Consulting 2001-2010), not electric power, and his commercial work (KSAT, GFW) was satellite services and data licensing, not utility commission advocacy.",
+          "severity": "hard"
+        },
+        {
+          "type": "Domain experience gap",
+          "detail": "JD requires 'Proficiency with ERCOT and PUCT procedural rules and conventions' \u2014 Paul has no documented experience with Texas electric utility regulatory proceedings, ERCOT stakeholder processes, or PUCT docket management.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 5,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 7
+      },
+      "rank": 53
+    },
+    {
+      "rank": 54,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -2228,7 +2276,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 54
+      "rank": 55
     },
     {
       "company": "",
@@ -2276,7 +2324,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 55
+      "rank": 56
     },
     {
       "company": "",
@@ -2324,7 +2372,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 56
+      "rank": 57
     },
     {
       "company": "Bentley Systems",
@@ -2364,7 +2412,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "company": "",
@@ -2412,10 +2460,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 58
+      "rank": 59
     },
     {
-      "rank": 59,
+      "rank": 60,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -2450,7 +2498,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 61,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -2545,7 +2593,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 61
+      "rank": 62
     },
     {
       "company": "rubiconcarbon",
@@ -2593,7 +2641,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 62
+      "rank": 63
     },
     {
       "company": "",
@@ -2641,10 +2689,10 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 63
+      "rank": 64
     },
     {
-      "rank": 64,
+      "rank": 65,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -2697,7 +2745,7 @@
       ]
     },
     {
-      "rank": 65,
+      "rank": 66,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -2740,7 +2788,7 @@
       ]
     },
     {
-      "rank": 66,
+      "rank": 67,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -2775,7 +2823,7 @@
       ]
     },
     {
-      "rank": 67,
+      "rank": 68,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -2810,7 +2858,7 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 69,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -2884,7 +2932,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 69
+      "rank": 70
     },
     {
       "company": "rubiconcarbon",
@@ -2942,7 +2990,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 70
+      "rank": 71
     },
     {
       "company": "",
@@ -2990,7 +3038,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 71
+      "rank": 72
     },
     {
       "company": "",
@@ -3038,10 +3086,10 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 72
+      "rank": 73
     },
     {
-      "rank": 73,
+      "rank": 74,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -3121,10 +3169,10 @@
         "CO": 9,
         "GC": 8
       },
-      "rank": 74
+      "rank": 75
     },
     {
-      "rank": 75,
+      "rank": 76,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -3204,7 +3252,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 76
+      "rank": 77
     },
     {
       "company": "",
@@ -3257,7 +3305,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 77
+      "rank": 78
     },
     {
       "company": "",
@@ -3310,7 +3358,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 78
+      "rank": 79
     },
     {
       "company": "Product Manager- Embodied Carbon for Products",
@@ -3358,10 +3406,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 79
+      "rank": 80
     },
     {
-      "rank": 80,
+      "rank": 81,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -3390,7 +3438,7 @@
       "blockers": []
     },
     {
-      "rank": 81,
+      "rank": 82,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -3430,7 +3478,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 83,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -3480,7 +3528,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 84,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -3528,7 +3576,7 @@
       ]
     },
     {
-      "rank": 84,
+      "rank": 85,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -3602,7 +3650,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 85
+      "rank": 86
     },
     {
       "company": "Bees & Bears",
@@ -3642,7 +3690,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 86
+      "rank": 87
     },
     {
       "company": "Acre",
@@ -3690,7 +3738,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 87
+      "rank": 88
     },
     {
       "company": "",
@@ -3733,10 +3781,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 88
+      "rank": 89
     },
     {
-      "rank": 89,
+      "rank": 90,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -3808,7 +3856,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 90
+      "rank": 91
     },
     {
       "company": "Arable",
@@ -3856,10 +3904,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 91
+      "rank": 92
     },
     {
-      "rank": 92,
+      "rank": 93,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -3947,7 +3995,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 93
+      "rank": 94
     },
     {
       "company": "Active Site",
@@ -3982,7 +4030,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 94
+      "rank": 95
     },
     {
       "company": "Watershed Careers",
@@ -4030,10 +4078,10 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 95
+      "rank": 96
     },
     {
-      "rank": 96,
+      "rank": 97,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -4113,7 +4161,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 97
+      "rank": 98
     },
     {
       "company": "SWARM Engineering",
@@ -4161,10 +4209,10 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 98
+      "rank": 99
     },
     {
-      "rank": 99,
+      "rank": 100,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -4193,7 +4241,7 @@
       "blockers": []
     },
     {
-      "rank": 100,
+      "rank": 101,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -4273,7 +4321,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 101
+      "rank": 102
     },
     {
       "company": "",
@@ -4321,7 +4369,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 102
+      "rank": 103
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -4374,10 +4422,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 103
+      "rank": 104
     },
     {
-      "rank": 104,
+      "rank": 105,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -4457,7 +4505,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 105
+      "rank": 106
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -4510,10 +4558,10 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 106
+      "rank": 107
     },
     {
-      "rank": 107,
+      "rank": 108,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -4563,7 +4611,7 @@
       }
     },
     {
-      "rank": 108,
+      "rank": 109,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -4653,7 +4701,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 109
+      "rank": 110
     },
     {
       "company": "gable",
@@ -4701,7 +4749,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 110
+      "rank": 111
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -4749,7 +4797,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 111
+      "rank": 112
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -4797,7 +4845,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 112
+      "rank": 113
     },
     {
       "company": "Planet",
@@ -4865,10 +4913,10 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 113
+      "rank": 114
     },
     {
-      "rank": 114,
+      "rank": 115,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -4913,7 +4961,7 @@
       }
     },
     {
-      "rank": 115,
+      "rank": 116,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -4963,7 +5011,7 @@
       }
     },
     {
-      "rank": 116,
+      "rank": 117,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -18314,6 +18362,1766 @@
           "source": "Climate Change Jobs",
           "url": "https://climatechangejobs.com/jobs/472938519-principal-power-system-studies-engineer",
           "reason": "Principal Power System Studies Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "digest_count": 313,
+      "scored_count": 6,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Environmental Defense Fund",
+          "role": "Senior Manager, Texas Clean Affordable Power",
+          "score": 48.0
+        }
+      ],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Terra.do at 58,300+ companies",
+          "role": "Discover your dream job in climate",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Mallinckrodt Pharmaceuticals - Climate Change",
+          "role": "Environmental Monitoring Supervisor at Mallinckrodt Pharmaceuticals - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "SpectronRx - Climate Change",
+          "role": "Environmental Monitoring Specialist at SpectronRx - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Habitat for Humanity - Climate Change",
+          "role": "Director, Resource Development & Sustainability at Habitat for Humanity - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "MastarRec - Climate Change",
+          "role": "Sustainability Program Manager at MastarRec - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "Elite Employment - Climate Change",
+          "role": "Head of Environment and Sustainability",
+          "url": "https://climatechangejobs.com/jobs/473085884-head-of-environment-and-sustainability",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "",
+          "role": "MastarRec - Sustainability Program Manager in London",
+          "url": "https://climatechangejobs.com/jobs/473087832/apply",
+          "reason": "fetch_unreadable:aggregator_apply_only_url"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "313 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 2 unscored.",
+      "jobs_processed": 313,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "313 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 2 unscored. 81 skipped by prefilter (off-domain / wrong-function).",
+      "intra_digest_duplicates": [
+        {
+          "title": "Solar Sales Rep (Residential and Commercial)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Manager, Alliances & Innovation (Engineering & Construction)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Deputy Director, Planning & Sustainability",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Environmental Licensing Specialist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Deputy Director, Office of Sustainability and Resilience",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Analyst, Finance Compliance - ESG [Los Angeles]",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Sustainability Strategy Manager, Studios Strategy and Operations [Los Angeles]",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Product Manager- Embodied Carbon Products",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Global Head of Sustainability & Impact",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Head of Corporate Sustainability",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "EMIS & Sustainability Solutions Consultant",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Data Analyst \u2013 Commercial Agronomy",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Director of Water Resources",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Development Director",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Corporate Director of Energy, Utilities & Refrigeration",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "BESS Commissioning Engineer (Commercial & Industrial)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Temporary Marine Science Educator",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Director Environmental, Social, and Governance",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Program Director, Water/Wastewater",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Vice President, Renewable Energy Tax Equity Relationship Banker",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Electrician - Commercial & Industrial (",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Assistant Director Environmental Services",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Technical Services Specialist - LCA/Carbon",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Community Solar Sales Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "B2B Sales Exec \u2013 Sustainable Paper Packaging",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Climate Policy & Emissions Data Specialist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Account Executive",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "ESG & Sustainable Finance Associate Attorney",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Associate Director, SET",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Director and General Manager, LA Sanitation & Environment",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Director / Program Leader \u2013 Water Quality & NPDES Permitting (California)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Director Environmental Health Safety EHS",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Getty Conservation Institute Director",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Project Analyst III (Wildfire Resilience Coordinator) - 108096-1",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Wildfire Resilience Project Lead",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Risk Management - Environmental Credit Risk Senior Officer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sales Segment Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Marine Conservation Associate, Ke Kai Ola",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Carbon Accounting Manager 16",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Commercial Lead-Food & Beverage 12",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Carbon Accounting Manager 12",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Administrative Assistant Forestry & Land Stewardship",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Commercial Lead-Food & Beverage 9",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Carbon Accounting Manager 9",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Executive Director of Housing Affordability and Climate Resilience",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Field Outreach Director \u2014 Lead Environmental Campaigns Team",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Carbon Accounting Manager 19",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Regenerative Agriculture Specialist 13",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Risk Management and Compliance Analyst",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Organics Waste Compliance Manager Jobs",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Principal- New Ventures",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Principal Consultant, Renewable Energy/Power",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Principal Consultant, Planning Engineer / Transportation",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sustainability Intern (part time)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Energy Controller \u2013 Lead Finance & Compliance",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Housing Sustainability Specialist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sustainability Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sustainability Internal Audit Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Principal Planner",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Greening America\u2019s Cities Government and Network Support",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Contract Auditor \u2013 Furniture Manufacturing, Materials & Sustainability (FEMB)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sustainability Analyst",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Staff Environmental Scientist - Environmental Compliance (Los Angeles)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Office Chief of Community, Climate and Modal Planning",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Account Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Lead Project Manager - Sustainability & Waste Solutions",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Principal Development Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Analyst, Sustainability 16",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Analyst, Sustainability 45",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Programs Manager \u2013 Compliance & Policy",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Communications Intern: Corporate & Sustainability",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Junior Project Manager (m/w/d) Zentrales Logistiknetzwerk / Supply Chain (full remote)",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Supply Chain Coordinator",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Regional Sales Team Manager (m/w/d)",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "CARBON FUND MANAGER, CARBON FINANCE DEPARTMENT",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Director",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Biology and Environmental Science, Adjunct",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Assistant Professor of Meteorology",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "2026 Green Iowa Environmental Summer Steward Positions",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Financial Analyst, Regulatory Reporting",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Water Resources Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Drinking Water Engineer, Water/Wastewater",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "General Help",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Production Worker (Bldg. 62)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Finance Partner for Wind Projects",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Dir IS Technology",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Construction Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Scientist P2 Program",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Investment Officer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Market Analyst \u2013 Renewable Fuels",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Engineer II - Stormwater Management and Environmental Resilience",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Team Manager, Recr Svc",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Manager Environmental Services",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Product Developer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Mid-level Environmental Planner",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Representative \u2013 LRL HSE",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Natural Resources and Environmental Management",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Consultant",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Enterprise Environmental Success Lead",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Custodian, Early Shift, Environmental Operations",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Managing Consultant, Health & Safety (Biosafety Focus)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "EHS Consultant",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Climate Research Analyst",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Project Manager (Illinois)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Data Scientist: Statistical Analysis",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Construction Safety Oversight Specialists (Field Based)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Wastewater Treatment Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Portfolio Lead",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Installer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Appointment Setter \u2014 High-Earning in Renewable Energy",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Renewable Energy Contracts Manager (Procurement)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Mobile Heavy Equipment Mechanic",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Renewable Energy Contracts Lead",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Clean Transportation Analyst",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Transportation Ambassador",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "One-Year Project Attorney, Mid-Pacific Regional Office",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Water/Wastewater Treatment Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Assistant Professor (American, Indigenous, Environmental Politics and/or Media) (00086450)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Fire Data Scientist \u2013 Oahu",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Program Manager - Water/Wastewater Construction",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Project Manager - 8 years minimum experience",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Taiwan Disaster Management Liaison Jobs",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Renewable Energy",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Asbestos Supervisor",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Conservation Ecology and Sustainable Development",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "General Ledger Accountant",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Consultant",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Development Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Managing Consultant-Energy Markets",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Part-time and Limited Term Faculty Positions in Construction Management",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Renewable Energy Development Lead",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Project Manager, Resource Planning",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Program Mgr Sr, Renewable",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Electrical Engineering Jobs in Renewable Energy",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Field Environmental Scientist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Individual Placement- Restoration Management at Sapelo Island National Estuarine Research Reserve",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Deployment Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Project Engineer - Power & Renewables",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr, Renewable Gas Analyst",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "PHYSICAL SCIENTIST (ENVIRONMENTAL)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Automatic Test Equipment Engineer Contractor",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "CONSTRUCTION MANAGER I",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Services",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Field Ecologist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Energy Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "QUALITY CONTROL OFFICER",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "FACILITIES & TRANSPORTATION PROJECT MANAGER",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "4-H Environmental Educator \u2013 Wahsega",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Microplastics Research Scientist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Energy Innovation Projects Team Lead",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environment Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environment, Health and Safety Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Entry Level Structural Engineering",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "W&P Global Packaging Leader",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Program Manager III (SC: Stormwater & Drainage Programs) PG 30 AFSCME Local 1607",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Laboratory Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Service EHS Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Adjunct Instructor of Urban Planning",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Energy Consultant Entry Level",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Lead EPC Project Manager, Renewable Energy",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Construction Project Manager II",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "PROGRAM MANAGER II (Environmental Initiatives) - (Emergency Appointment)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Construction Administrator Perkins Eastman Human by Design",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Analyst - Global Strategic & Sustainable Investments",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Health & Safety (EH&S) Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "SAFETY, HEALTH, ENVIRONMENTAL Mgr",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Deputy, Environmental Justice (Supervisor\\\u2019s Deputy III)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Project Manager I",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Fall 2026 Legal Externship",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Support Professional for Water and Waste Programs",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Natural Resources Leader",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Corporate Environmental Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Environmental Approvals Lead \u2013 WA (Remote/Flexible)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "As-Needed Environmental Field Scientist",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Environmental Scientist: Natural Resources",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Wastewater Engineer, Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Eng II, Environmental Eng",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Staff Project Manager (Scientist / Engineer / Geologist)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Civil/Environmental Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "ENVIRONMENTAL HEALTH SERVICES MANAGER",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Geoscience Teacher \u2013 Research",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Earth & Atmospheric Sciences Teacher \u2013 AI Research",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Science Senior I - (Natural Resource Management / Biology)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Eastside Youth Organizer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Mechanical Project Manager \u2013 Hydropower",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "FIELD RESEARCHER 3 RP",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Institutional Giving Officer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Chemical Process Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Abogado/a Senior - Proyectos, Infraestructura y Finanzas",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Mid-level Climate Action Project Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Climate Action Mitigation Planner",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Abogado/a Senior",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Renewable Energy Contracts Lead for Clean Power Projects",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Services Department Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Target Reverse Logistics Truck Driver",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Career Opportunities: Environmental Designer (94114)",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Production Team Member",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Regional Safety, Environmental and Health Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Renewables Electrical Commissioning Manager - REMOTE 16",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Renewables Networks Engineer - REMOTE 16",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "CLIMATE-RESILIENT SCHOOL CONSTRUCTION AND RETROFITTING ENGINEER 16",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Interpretive gardens, growing food",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Solar Senior Project Manager 12",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sr. Renewables Networks Engineer - REMOTE 12",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "BESS Engineering Lead 12",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Field Engineer I, II, or III Solar/BESS/Renewables - Nationwide Opportunities 12",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Conservation Field Team Lead \u2013 Field Operations",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Navy ERP Data Analyst: Migration & Support",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "SCADA Engineer: Substations & Renewables Grid",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "CLIMATE-RESILIENT SCHOOL CONSTRUCTION AND RETROFITTING ENGINEER 11",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Electrical Engineer- Renewable Energy ( Solar PV & BESS",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Renewables Electrical Commissioning Manager - REMOTE 11",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Georgia Conservation Voters: Social & Digital Media Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Assistant Waste Water and Environmental Manager",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Field Engineer I, II, or III Solar/BESS/Renewables - Nationwide Opportunities 9",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "CLIMATE-RESILIENT SCHOOL CONSTRUCTION AND RETROFITTING ENGINEER 9",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Offshore Toolpusher: Well Ops & Safety Leader",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Environmental Scientist IV",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Planner II - Climate Change Policy Planner Limited Term",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Senior Energy Consultant",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Ecological Restoration Design Engineer",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Sustainable Operations Manager 16",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        },
+        {
+          "title": "Maintenance Electrician - Night Shift - Starting at $34.10/hr.",
+          "url": "https://www.terra.do/climate-jobs/job-board/",
+          "kept_url": "https://www.terra.do/climate-jobs/job-board/"
+        }
+      ],
+      "prefilter_skipped": [
+        {
+          "title": "Founding / Scientist / Engineer \u2014 Climate & Agriculture Tech (Part-Time or Full-Time, Short Term)",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Title indicates technical engineering or scientist role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal, Business Development",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/england/principal-business-development-western-europe/4832/94520863472",
+          "reason": "L3Harris is a major defense and national security contractor, matching Paul's hard exclusion for defense/IC/clearance-required roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Funding and Sustainability",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473085961/apply",
+          "reason": "Title indicates nonprofit fundraising/development role rather than commercial BD or partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director, Global Structural Design and Packaging Sustainability",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086093-senior-director-global-structural-design-and-packaging-sustainability",
+          "reason": "Senior Director, Global Structural Design and Packaging Sustainability is a product/industrial design and supply chain role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Director \u2013 Mining",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086305-sustainability-director-mining-|-expat",
+          "reason": "Mining industry sustainability role is off-domain; Paul's market is climate-adjacent EO/maritime/geospatial, not extractive industries.",
+          "confidence": "high"
+        },
+        {
+          "title": "Copper Quail - Sustainability Director \u2013 Mining",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086305/apply",
+          "reason": "Copper Quail is mining industry sustainability consulting, and the role is Sustainability Director which is not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Stage Sustainability analyse en due diligence",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086308-stage-sustainability-analyse-en-due-diligence",
+          "reason": "Title is in French ('Stage') indicating internship/trainee role, which is wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "College Intern \u2013 Maritime Environmental Finance",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087442-college-intern-maritime-environmental-finance",
+          "reason": "Title explicitly indicates college intern role, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Sustainability",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087701-head-of-sustainability",
+          "reason": "Head of Sustainability is a wrong-function role outside Paul's commercial/BD/partnerships profile, typically focused on internal ESG/compliance rather than revenue-generating commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Apply for Head of Sustainability with Rework Recruitment",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087701/apply",
+          "reason": "Head of Sustainability is a corporate sustainability/ESG function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager, Analytics",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/livelike/jobs/79093546-product-manager-analytics",
+          "reason": "Product Manager IC role without commercial leadership component, not a Director/VP-level title.",
+          "confidence": "high"
+        },
+        {
+          "title": "Full Stack Software Engineer",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/schmidt-ocean-institute/jobs/79115690-full-stack-software-engineer",
+          "reason": "Full Stack Software Engineer is a pure technical engineering role, not a commercial or BD position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Adjunct Agriculture Environmental Horticulture Instructor",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086026-adjunct-agriculture-environmental-horticulture-instructor",
+          "reason": "Adjunct instructor role is an academic teaching position, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environment and Business Advisor (Regulation of Industrial Emissions) - 34693",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086105-environment-and-business-advisor-regulation-of-industrial-emissions-34693",
+          "reason": "Environment and Business Advisor role at what appears to be a government regulatory agency (industrial emissions regulation), wrong function and likely wrong org type for Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Facilities & Environmental, Health & Safety - Pleasanton, CA",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086127-director-facilities-environmental-health-safety-pleasanton-ca",
+          "reason": "Director of Facilities & EHS is a wrong-function role: facilities management and environmental health & safety compliance, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Research Fellow in Antarctic Biodiversity and Environmental Change",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087728-research-fellow-in-antarctic-biodiversity-and-environmental-change",
+          "reason": "Research Fellow is an academic research role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Angers, Maine-et-Loire, France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-angers-maine-et-loire-france",
+          "reason": "URL is a geographic job board listing page for Angers, France, not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Appleton, Wisconsin, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-appleton-wisconsin-united-states",
+          "reason": "URL is a location-based job board aggregation page, not a specific posting with a title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Atyrau Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-atyrau",
+          "reason": "URL points to a geographic location search page ('jobs in Atyrau') rather than a specific job posting, cannot evaluate a single role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Bedford, Bedford, England, United Kingdom Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-bedford-bedford-england-united-kingdom",
+          "reason": "URL is a location-based job aggregator page (Bedford, England) not a specific posting, cannot evaluate function or seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Billerica, Massachusetts, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-billerica-massachusetts-united-states",
+          "reason": "URL is a geographic location aggregator page (all jobs in Billerica, MA), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Bi\u00f1an, Laguna, Philippines Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-binan-laguna-philippines",
+          "reason": "URL is a geographic location filter page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Bloemfontein, Free, South Africa Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-bloemfontein-free-south-africa",
+          "reason": "Generic geographic job board landing page for Bloemfontein, South Africa, not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Clifton Park, New York, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-clifton-park-new-york-united-states",
+          "reason": "URL is a geographic job board landing page aggregating all climate jobs in Clifton Park NY, not a single posting with a specific role title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Columbia, Missouri, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-columbia-missouri-united-states",
+          "reason": "URL is a geographic job listing page for Columbia, Missouri, not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Columbia, South Carolina, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-columbia-south-carolina-united-states",
+          "reason": "URL is a location-based job board aggregation page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Columbus, Indiana, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-columbus-indiana-united-states",
+          "reason": "URL is a location-based aggregation page (Columbus, Indiana climate jobs), not a specific job posting with a defined title and company.",
+          "confidence": "high"
+        },
+        {
+          "title": "De Pere, Wisconsin, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-de-pere-wisconsin-united-states",
+          "reason": "URL is a geographic location page aggregating multiple jobs in De Pere, Wisconsin, not a single posting with retrievable JD.",
+          "confidence": "high"
+        },
+        {
+          "title": "Dearborn, Michigan, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-dearborn-michigan-united-states",
+          "reason": "URL is a geographic job board search page for Dearborn MI, not a specific posting with a title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Decatur, Arkansas, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-decatur-arkansas-united-states",
+          "reason": "URL is a geographic location page aggregating all climate jobs in Decatur, Arkansas, not a single specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Doha, Qatar Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-doha-qatar",
+          "reason": "Doha, Qatar location creates ownership conversation Paul explicitly wants to avoid, similar to UP42/Saudi PIF exclusion.",
+          "confidence": "high"
+        },
+        {
+          "title": "Dorval, Quebec, Canada Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-dorval-quebec-canada",
+          "reason": "URL is a location-based job board aggregator page for Dorval, Quebec, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Eindhoven, North Brabant, Netherlands Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-eindhoven-north-brabant-netherlands",
+          "reason": "URL is a geographic job board listing page for all climate jobs in Eindhoven, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Eureka, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-eureka-california-united-states",
+          "reason": "URL is a geographic job aggregator page (all jobs in Eureka, CA), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Franklin, Virginia, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-franklin-virginia-united-states",
+          "reason": "URL is a location-based job board aggregator page (Franklin, Virginia geo-filtered listings), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Glendale, Arizona, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-glendale-arizona-united-states",
+          "reason": "URL is a geographic location search page aggregating all climate jobs in Glendale, Arizona, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Hauts-de-France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-hauts-de-france",
+          "reason": "URL is a location-based job board aggregator page (Hauts-de-France region) rather than a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Illinois Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-illinois",
+          "reason": "URL is a geographic job board listing page (all Illinois climate jobs), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Knoxville, Tennessee, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-knoxville-tennessee-united-states",
+          "reason": "URL is a geographic job board aggregator page (all Knoxville jobs), not a specific posting with a defined role title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lewiston, Maine, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-lewiston-maine-united-states",
+          "reason": "URL is a location-based aggregator page (all Lewiston, Maine climate jobs), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lisle, Illinois, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-lisle-illinois-united-states",
+          "reason": "URL is a geographic location aggregator page ('jobs/in-lisle-illinois-united-states'), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Marseille, Bouches-du-Rh\u00f4ne, France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-marseille-bouches-du-rhone-france",
+          "reason": "URL is a location-based aggregator page (Marseille, France) not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Newmarket, Ontario, Canada Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-newmarket-ontario-canada",
+          "reason": "URL is a location-aggregator page (jobs IN Newmarket), not a single job posting with a specific title and company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Oakville, Ontario, Canada Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-oakville-ontario-canada",
+          "reason": "URL is a geographic job board landing page for Oakville, Ontario, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Oslo Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-oslo",
+          "reason": "URL is a city-wide job aggregator page (Oslo), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Pleasanton, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-pleasanton-california-united-states",
+          "reason": "URL is a geographic job listing page aggregating all climate jobs in Pleasanton, CA, not a specific single job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Puurs, Antwerp, Belgium Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-puurs-antwerp-belgium",
+          "reason": "URL is a location-based job board aggregation page (all jobs in Puurs, Antwerp, Belgium), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Rennes, Ille-et-Vilaine, France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-rennes-ille-et-vilaine-france",
+          "reason": "URL is a geographic location aggregator page (Rennes, France climate jobs), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Riverside, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-riverside-california-united-states",
+          "reason": "URL is a location aggregation page ('jobs/in-riverside-california-united-states'), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Rosemont, Illinois, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-rosemont-illinois-united-states",
+          "reason": "Geographic aggregation page listing all climate jobs in Rosemont, IL rather than a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Rotterdam, South Holland, Netherlands Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-rotterdam-south-holland-netherlands",
+          "reason": "URL is a location-based job board aggregation page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sibiu Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-sibiu",
+          "reason": "URL is a location-based job board aggregator page (all jobs in Sibiu, Romania), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Syracuse, New York, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-syracuse-new-york-united-states",
+          "reason": "URL is a geographic location aggregation page (Syracuse, NY jobs listing), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Toledo, Ohio, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-toledo-ohio-united-states",
+          "reason": "URL is a geographic location aggregator page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Union, New Jersey, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-union-new-jersey-united-states",
+          "reason": "URL is a geographic location aggregation page (Union, New Jersey climate jobs), not a specific job posting with title or company information.",
+          "confidence": "high"
+        },
+        {
+          "title": "Utrecht Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-utrecht",
+          "reason": "URL is a location-based aggregator page (jobs in Utrecht), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "West Chester, Pennsylvania, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-west-chester-pennsylvania-united-states",
+          "reason": "URL is a geographic location aggregator page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Windhoek, Khomas, Namibia Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-windhoek-khomas-namibia",
+          "reason": "URL is a geographic job board listing page for Windhoek, Namibia, not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Yuba City, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-yuba-city-california-united-states",
+          "reason": "URL is a geographic aggregator page for all climate jobs in Yuba City, not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Job Openings - Spire : Global Data and Analytics",
+          "source": "Spire Global",
+          "url": "https://spire.com/careers/job-openings/job/?gh_jid=7898534",
+          "reason": "Title is generic \"Job Openings\" page, not a specific role posting, and URL appears to be a broken or malformed link.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Software Engineer (Retail/Partner)",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/flashfood/jobs/79093622-principal-software-engineer-retail-partner",
+          "reason": "Principal Software Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Field Compliance Project Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086122-environmental-field-compliance-project-manager",
+          "reason": "Environmental Field Compliance Project Manager is an environmental compliance/permitting role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance Inspector",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086222-environmental-compliance-inspector",
+          "reason": "Environmental Compliance Inspector is a regulatory compliance/enforcement role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager Environmental, Health, Safety, and Security",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086262-senior-manager-environmental-health-safety-and-security",
+          "reason": "Senior Manager EHS&S is environmental health and safety compliance function, not commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Bridger Photonics, Inc. - Senior Manager Environmental, Health, Safety, and Security in Bozeman",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086262/apply",
+          "reason": "Senior Manager EHS role is wrong-function (health and safety compliance, not commercial/BD/partnerships).",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Manager (m/w/d)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086317-sustainability-manager-m-w-d",
+          "reason": "Title is \"Sustainability Manager\" which is a corporate sustainability/ESG function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Jetzt Bewerben als Sustainability Manager (m/w/d) mit Alexander Graham",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473086317/apply",
+          "reason": "Job posting is in German (title: 'Jetzt Bewerben als Sustainability Manager (m/w/d)'), indicating role is likely German-language required and Germany-based, geographic and language mismatch for Paul in Taos, NM.",
+          "confidence": "high"
+        },
+        {
+          "title": "Project Manager Sustainability",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087384-project-manager-sustainability",
+          "reason": "Project Manager Sustainability is a project management role, not a commercial/BD/partnerships leadership role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Project Manager Sustainability - G\u00fcntner",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087384/apply",
+          "reason": "Project Manager Sustainability is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Engineer - Safety & Environmental Engineering",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087385-principal-engineer-safety-environmental-engineering",
+          "reason": "Principal Engineer is a pure technical engineering role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Engineer - Safety %26 Environmental Engineering",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087385/apply",
+          "reason": "Principal Engineer - Safety & Environmental Engineering is a pure technical engineering role outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Principal Engineer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087393-environmental-principal-engineer",
+          "reason": "Environmental Principal Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lean & Sustainability Graduate",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087405-lean-sustainability-graduate",
+          "reason": "Title clearly indicates a graduate-level entry role, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lean & Sustainability Graduate in Naas",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087405/apply",
+          "reason": "Graduate-level role is wrong seniority for Paul's VP/Director-level commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087497-environmental-compliance",
+          "reason": "Environmental Compliance is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "EHS and Sustainability Regulatory Consultant",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087631-ehs-and-sustainability-regulatory-consultant",
+          "reason": "EHS and Sustainability Regulatory Consultant is a compliance/regulatory function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Environmental Consultant",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087634-principal-environmental-consultant",
+          "reason": "Principal Environmental Consultant is a professional services consulting role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Lab Testing and Compliance Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087707-environmental-lab-testing-and-compliance-manager",
+          "reason": "Environmental Lab Testing and Compliance Manager is a lab operations and regulatory compliance role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Stagiair(e) Sustainability Communicatie van Duvel Moortgat",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087781/apply",
+          "reason": "Stagiair(e) is Dutch/Flemish for intern or trainee, indicating wrong seniority; Duvel Moortgat is a Belgian brewery (beer/beverage production), off-domain from Paul's climate-adjacent EO/maritime profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance Project Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087831-environmental-compliance-project-manager",
+          "reason": "Environmental Compliance Project Manager is a compliance/regulatory function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Supervisor (Fixed Term, Job Share)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/473087874-sustainability-supervisor-fixed-term-job-share",
+          "reason": "Title 'Sustainability Supervisor' indicates mid-level IC role without commercial/BD/partnerships function, wrong seniority and function for Paul's VP/Director commercial leadership profile.",
           "confidence": "high"
         }
       ]
