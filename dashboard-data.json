@@ -5809,20 +5809,6 @@
   ],
   "watch_list": [
     {
-      "company": "Wyvern",
-      "category": "Hyperspectral EO",
-      "why": "Hyperspectral imaging from space. Unique dataset, hard to replicate. EO industry exec mentioned them in Payload 2026 State of EO. Small team, early traction.",
-      "roast": "Canadian hyperspectral EO startup that launched its third satellite in the last year and just closed a Series A that nobody will tell you the size of, which is either stealth mode discipline or a sign the number wasn't impressive enough to PR. They're selling hyperspectral data to ag, mining, and forestry customers who want to see things multispectral can't resolve, which is a real use case until you price out the tasking cost and realize you're selling to the 2% of buyers who have both the budget and the in-house expertise to turn 500 spectral bands into a decision. The technology is legitimately differentiated, the market is legitimately narrow, and the commercial challenge is figuring out whether you build the analytics layer yourself or wait for someone else to make hyperspectral consumable for normal humans. For a guy who spent 2011-2021 at KSAT building a multi-mission value-added services business on top of polar-orbiting satellites, you know exactly how this story plays out. The data is never the product. The product is the answer the customer didn't know they needed, packaged in a way that doesn't require a PhD to interpret. Wyvern has the hard part built. The question is whether they'll build the easy part or sell the hard part to someone who already has distribution.",
-      "careers_url": "https://wyvern.space/careers"
-    },
-    {
-      "company": "Kanop",
-      "category": "Satellite MRV / Forest Carbon",
-      "why": "AI-driven satellite MRV for forest carbon. CEEZER integration. Direct Paul domain.",
-      "roast": "Kanop uses machine learning to interpret satellite imagery for forest carbon monitoring. Which means you would spend your time explaining to corporate buyers why their ML model sees what their consultant on the ground does not, which is exactly the kind of asymmetric-information arbitrage you lived at GFW. They just integrated with CEEZER, the carbon marketplace aggregator, so there is a live commercial channel with actual credit issuance volume behind it. The voluntary carbon market has more scar tissue than a telemark knee, but the MRV infrastructure play is different. You are not selling credits, you are selling the verification layer that makes credits credible, and that puts you one step closer to the regulator than the project developer. The company is young enough that you would be building the GTM motion, not inheriting someone else's debris field. Kanop has the satellite remote sensing skill set you know, the carbon market context you have lived, and the MRV credibility problem you spent five years at GFW trying to solve. If they have hired a VP of sales already, you are too late. If they have not, you are exactly on time.",
-      "careers_url": "https://kanop.earth/careers"
-    },
-    {
       "company": "Wyvern Space",
       "category": "Hyperspectral EO",
       "why": "Hyperspectral imaging for methane, agriculture, mining. Mentioned in Payload EO 2026 state-of-industry. Edmonton-based.",
@@ -6052,6 +6038,20 @@
       "why": "Satellite imagery and ML to verify forest carbon projects. Nature-based carbon market infrastructure. YC-backed, major customers (Amazon, Airbnb, Netflix). Direct overlap with GFW Planet deal skillset and carbon market framing.",
       "roast": "San Francisco forest carbon verification play that uses satellite imagery and machine learning to tell buyers whether the trees they paid for are actually standing or whether someone cut them down and planted corn. The entire nature-based carbon market only works if the credits are real, and Pachama has decided to be the referee, which is a terrible job with exceptional leverage. They have Amazon, Airbnb, and Netflix as customers, which means they have figured out how to sell to corporate sustainability teams with real budgets, and they are backed by Bill Gates and Chris Sacca, which means the cap table has more climate cred than most climate conferences. You built the Planet three-party deal and you spent two years explaining to insurance buyers and conservation funders why GFW-derived data products are not the same as the open-access platform. Pachama is the same structural tension packaged differently. The free satellite data is everywhere, the value is in the methodology, the validation, and the willingness to stake your reputation on the outputs. You know this pattern. You also know the carbon market is a minefield of credibility problems, which means Pachama spends half its time defending its methodology and the other half explaining why it is not just Verra with better marketing. If you go in, you will spend the first month learning why every objection you expect is wrong and the second month realizing some of them are not.",
       "careers_url": "https://pachama.com/careers"
+    },
+    {
+      "company": "CarbonFarm",
+      "category": "Digital MRV / Agriculture Carbon",
+      "why": "Satellite-based dMRV for rice methane projects, Gold Standard pilot, ag carbon space aligns with Planet/GFW EO background",
+      "roast": "Paris-based outfit running the Gold Standard's first satellite-verified rice carbon project, which sounds impressive until you remember that rice paddies have been flooding and draining for five thousand years without anyone needing a Sentinel-2 feed and a machine learning model to confirm it happened. They're pitching digital MRV as the solution to scaling farmer-led climate finance, which is consultant for 'we will sell you software so you can spend less time arguing with auditors and more time explaining to a Bengali smallholder why this year's carbon credit payment is three months late because the cloud cover was bad in July.' The tech works. The pilot makes sense. The Gold Standard partnership is real. But you have seen this movie before at GFW, where the distance between a functioning MRV platform and a functioning revenue model is the length of the Tromso winter, and somebody still has to convince the buyer that the credit is worth more than the trouble. If they can make the unit economics work at paddy scale, they have built something no one else has. If they cannot, they have built a very expensive dashboard for an NGO that runs out of grant money in 2027. You would spend the first six months finding out which one it is, and you are extremely good at that.",
+      "careers_url": "https://carbonfarm.tech/careers"
+    },
+    {
+      "company": "Yard Stick",
+      "category": "Soil Carbon MRV / Hardware",
+      "why": "Boston-based, field spectroscopy for soil carbon, bridges EO/ground truth gap, solves expensive lab analysis problem in carbon markets",
+      "roast": "Boston outfit that decided the way to fix soil carbon MRV was to stop pretending you can do it all from space and just build a better shovel. Their proprietary probe uses spectroscopy to measure soil carbon content instantly in the field, no lab, no six-week turnaround, no $50 per sample cost structure that makes soil carbon projects uneconomical at any scale a farmer would recognize. It is a hardware play in a software-obsessed market, which means they either have something genuinely defensible or they have a very expensive field instrument that breaks when you drop it in Iowa mud. The thesis is sound: soil carbon is the problem child of carbon markets because measurement is brutal and satellite-based proxies are just fancy guesses with error bars nobody wants to admit in the methodology. If Yard Stick can cut MRV costs by two-thirds and make the data credible enough that Verra and Gold Standard accept it without a fight, they have removed the primary constraint on a multi-billion-dollar market that currently does not function. If they cannot, they have built a science project. You would spend the first three months figuring out whether their spectroscopy actually works across soil types or whether it only works in the test plots they show investors, and that is a question you are mean enough to ask in month one instead of month eighteen when the enterprise customer realizes the data does not match the lab and the contract goes sideways. They need someone who has sold technical credibility to skeptical buyers with sharp pencils, and you sold Shell a polar monitoring service they did not think they needed until you made the alternative feel riskier than writing the check.",
+      "careers_url": "https://www.yard-stick.com/careers"
     }
   ],
   "morning_briefs": [
@@ -20120,19 +20120,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Taos elects new chair\nAnnette Arellano, eighty\npercent of the vote",
-    "ESA Plato prepped\nrocks in the habitable zone\nwe hunt planets now",
-    "Land carbon sink fails\ntwenty-three was the bad year\npermafrost thaws north",
-    "Planet German deal\ntwo eighty-three million sold\nbacklog up two fifteen",
-    "Mangione notebook in\njudge rules gun admissible\nthe manifesto stands",
-    "Gorge in May, bone dry\nacequieros watch the dust\none more monsoon prayer",
-    "Red Sox nine and thirteen\nDuran's blast in the seventh\nTolle gets his first",
-    "Sox at Kauffman\ntonight, six forty first pitch\nRio runs too clear",
-    "Barney Frank has died\nDodd became a law, Chelsea\nknew his sharp tongue well",
-    "Xi meets Putin now\nBeijing summit, Iran clock\nthe wire stays empty",
-    "Early voting starts\nJune second primary comes\nTaos Democrats",
-    "Energy imbalance\nwarms faster than models said\nthe satellites see",
-    "Farmer's market opens\nsummer season on the mesa\npinyon smoke and jade",
     "Enchanted Circle\ntrails association builds\nvolunteers and dirt",
     "The Rio Grande clear\nnot chocolate, historic drought\nacequieros wait",
     "Wheeler Peak still holds\nsnow in the couloirs, mid-May\ntelemark dreams live",
@@ -20184,14 +20171,27 @@
     "Psyche flew by Mars\nforty five hundred klicks out\nrock visits red rock",
     "Kachina untracked\ntelemark in late May gone\nmemory remains",
     "Data centers drink\ncoal smoke to think faster\nthe grid bends, not breaks",
-    "Rio Grande runs cold\nsnowmelt from the peaks above\nthe wire stays quiet"
+    "Rio Grande runs cold\nsnowmelt from the peaks above\nthe wire stays quiet",
+    "Trump links Iran deal\nto Abraham Accords again\noil dropped five percent",
+    "UN climate vote\none forty-one say yes, eight no\nUS stands alone",
+    "Chemical tank leaks\nNewsom begs Trump for money\nOrange County waits",
+    "Sox swept at Fenway\ntwenty-two and twenty-nine\nMayer at short now",
+    "Super El Ni\u00f1o\npredictors call it strongest\nmonsoon might arrive",
+    "Patriots Wednesday\nkick in Seattle, September\nSuper Bowl revenge",
+    "Twins took three straight games\nBrooks Lee's two-run single\nwet Fenway, spring cold",
+    "Ice still on Wheeler\ntrucks roll through in May dust storms\ntelemark withdrawn",
+    "Red hair, freckled arms\nacross the table, first date\nshe orders whiskey",
+    "Dashboard refreshed twelve\ntimes today, zero replies\nhaiku hold the line",
+    "Carbon MRV firms\npromise satellite magic\npilots never scale",
+    "ATS black hole swallows\ntwenty years of deals closed hard\none keyword mismatch",
+    "Aurlandsdalen hut\nOskar graduates in June\nVilde waits, Jotunheimen"
   ],
   "intros": [
     "No buyers today. Haiku hold the line.",
     "Quiet wire. Here's a haiku.",
-    "Iran deal cools. Sox at 22-29. White House shots fired.",
-    "US voted no. 141 said yes. Coal plants stay open for AI.",
-    "El Ni\u00f1o coming back. Gas prices hit records.",
+    "UN says yes, US says no. Sox swept, 22-29. Newsom calls Trump.",
+    "Orange County chemical leak. Patriots Wednesday night kickoff. Super El Ni\u00f1o confirmed.",
+    "Oil down five percent on ceasefire hope. Twins own Fenway now.",
     "The pipeline will refill. Until then:",
     "Zero ranked. Maximum haiku.",
     "No offers to chew on. A haiku to sit with.",
