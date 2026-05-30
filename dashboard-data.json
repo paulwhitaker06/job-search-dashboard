@@ -5866,27 +5866,6 @@
   ],
   "watch_list": [
     {
-      "company": "Xoople",
-      "category": "AI-Native Earth Observation",
-      "why": "Spanish EO startup, $130M Series B (April 2026), L3Harris sensor partnership, building constellation ground-up for on-board ML inference. Direct KSAT/GFW overlap.",
-      "roast": "Xoople just closed a $130 million Series B in April to build AI-native Earth observation satellites out of Madrid with a manufacturing partnership with L3Harris, which means they convinced defense contractors and European climate VCs that the next wave of EO is not about better cameras but about putting the neural net on the bird so the data gets smart before it hits the ground. They are Spanish, well-funded, and explicitly positioning against the legacy players like Planet and Maxar who were not built for AI inference at the edge. The thesis is good. The capital is real. The risk is that they are pre-revenue or close to it, and you would be walking in to build the commercial function while the eng team is still building the satellites. That is the job you like, but it is also the job with the highest fragility because if the constellation does not work the way the pitch deck says it works, no amount of commercial genius will save the ARR target. You have done the multi-stakeholder sale, the regulatory precedent play, the long cycle enterprise deal with super majors and governments. Xoople needs that, but they need it in Brussels, not Houston, and they need you to sell a product that does not exist yet to buyers who are not sure they need it. The L3Harris partnership is the validation that matters. If a defense prime is willing to build your sensors, someone believes the unit economics work. Whether that someone is right is a 2027 problem. Whether you want to move to Madrid or commute from Taos is a 2026 one.",
-      "careers_url": "https://www.xoople.com/careers"
-    },
-    {
-      "company": "Another Earth",
-      "category": "Synthetic EO Data / Simulation",
-      "why": "European startup (\u20ac3.5M March 2026), synthetic satellite data generation for training EO models. Deforestation, mining, agriculture focus. NovaTerra Brazil partnership, GeoTerra Africa.",
-      "roast": "Another Earth is generating fake satellite imagery to train real AI models and somehow this is a legitimate business in 2026. They raised \u20ac3.5M in March to scale their Synthetic Data Engine, which produces labeled EO datasets without actually launching anything into orbit. If you squint, this is the same problem you hit at GFW when you needed Planet imagery for the Audacious grant but the imagery was not where you needed it or when you needed it or at the price you needed it. Synthetic data does not solve the revisit problem but it solves the cost problem and the labeling problem, which is why organizations training models care. Another Earth is working in Brazil and Sub-Saharan Africa on deforestation monitoring, mining site oversight, and agricultural risk. These are exactly the verticals where you know the buyers, the use cases, and the reasons the status quo does not work. You negotiated the Planet deal that put 1.2 billion hectares under daily surveillance. You know what it costs to acquire real imagery at scale and you know what the processing pipeline looks like on the back end. Another Earth is not trying to replace real satellites. They are trying to make the data cheaper and faster to use for organizations that cannot afford a Planet contract or do not need wall-to-wall coverage. The customer is different but the pain point is identical. You also know how to sell into environmental monitoring programs backed by multilateral funding, which is exactly where Another Earth is operating. This is not a perfect fit but it is adjacent enough that a conversation would be worth having. Worst case, you learn how synthetic data economics actually work. Best case, they need someone who has licensed real EO data at scale and can tell them where the synthetic version actually matters.",
-      "careers_url": "https://www.anotherearth.ai/careers"
-    },
-    {
-      "company": "Hydrosat",
-      "category": "Thermal Earth Observation",
-      "why": "Thermal infrared EO constellation, agriculture/water stress monitoring, founded 2017, predictive analytics. Addresses gap KSAT/Planet do not cover well.",
-      "roast": "Hydrosat is flying thermal infrared satellites to measure water stress and you spent ten years at KSAT selling optical and SAR to clients who constantly asked if you could see temperature. The answer was always no, or not well, or not at the resolution that mattered for precision agriculture or drought monitoring. Hydrosat exists because thermal EO has been the missing middle of the remote sensing stack for two decades. Everyone knows it matters. Almost no one has built a commercial constellation that works. They were founded in 2017 so they are not a seed-stage science project. They have launched, they have customers, and they are scaling. The use cases are agriculture, water management, and climate risk, which means the buyer profile overlaps with everyone you have sold to. You know how to walk into an agriculture ministry or a conservation program and explain why daily revisit matters. You know how to explain why free data from Landsat or Sentinel is not sufficient when the client needs sub-field resolution and a three-day latency guarantee. Hydrosat is not trying to replace Planet or Maxar. They are filling the gap those companies do not cover, which is exactly the kind of market positioning you understand. The GFW experience is relevant here because you built a licensing program for an organization that was giving data away for free, and you had to identify the use cases where paid access actually made sense. Hydrosat has the opposite problem. They have unique data and they need to find the customers who will pay for it before the use case is fully proven. That is the pilot-to-precedent engine you ran at KSAT for a decade. This is not a moonshot. This is a company with satellites in orbit, a defined market, and a commercial model that needs someone who knows how to build enterprise relationships in environmental data. You are that person. Go talk to them.",
-      "careers_url": "https://www.hydrosat.com/careers"
-    },
-    {
       "company": "NARA Space",
       "category": "Methane Monitoring / Satellite EO",
       "why": "Asia-Pacific methane detection, AI-driven satellite analytics, WEF backing for MRV integration into financial frameworks",
@@ -6109,6 +6088,27 @@
       "why": "AI-driven satellite tasking and mission planning, CEO Guy de Carufel speaking on AI in space defense at SmallSat Europe, defense procurement angle",
       "roast": "Cognitive Space is selling AI that decides which satellite looks at what and when, which is the operational planning problem that made you want to burn your laptop at KSAT every time a customer called with a same-day tasking request during a polar weather window. Guy de Carufel stood on the defense stage at SmallSat Europe this week and said out loud that when missiles are inbound you do not have time to call a meeting and get consensus, which is the kind of talk that gets European procurement people very uncomfortable and American defense primes very interested. The company is building decision automation for multi-sensor constellations in contested environments, which is a polite way of saying they are teaching satellites to task themselves when humans are too slow. You know from Tromso that coordinating even three satellites across four ground stations with two weather systems and one grumpy customer is a Tetris problem that breaks people. Cognitive Space is trying to make the machine solve it in real time and then sell that capability to governments who are not allowed to let the machine make kinetic decisions but are quietly admitting they have no other option. The business model works if defense buyers believe the autonomy or it does not work at all. There is no middle outcome here. You have sold into that risk calculus before and you know exactly how long the contract cycle is and exactly how many times the requirement will change. But if they close DOD or ESA revenue in 2026 they become the reference architecture for autonomous space operations and you were in the room early.",
       "careers_url": "https://www.cognitivespace.com/careers"
+    },
+    {
+      "company": "Pixxel",
+      "category": "Hyperspectral EO",
+      "why": "Bengaluru and El Segundo. Hyperspectral satellite imagery. Strong commercial traction. Fits Paul's EO data sourcing and commercial licensing background.",
+      "roast": "Hyperspectral is the new SAR. Everyone wants it, nobody knows what to charge for it, and half the buyers think multispectral is good enough until a consultant convinces them otherwise. Pixxel is betting that 150+ spectral bands will unlock use cases invisible to Planet's RGB world, which is probably true, but the commercial question is whether those use cases come with budget authority or just PowerPoint enthusiasm. Paul spent a decade at KSAT explaining why oil companies should pay for proactive monitoring instead of waiting for the spill. Hyperspectral has the same problem but worse, the value proposition requires the buyer to imagine a future state they have never experienced. Pixxel has raised serious money and launched actual satellites, so they are past the vaporware stage, but they are still in the phase where the technology is ahead of the market's ability to articulate the RFP. If Paul can help them find the buyers who will pay before the use case is fully proven, this is the kind of builder stage commercial role he has owned twice before. Dual headquarters in India and California means time zones are a nightmare but the team has already navigated that. The risk is that hyperspectral becomes a feature someone else bundles rather than a standalone business. The opportunity is that Pixxel is early enough and funded enough to define the category before the aggregators swallow it.",
+      "careers_url": "https://www.pixxel.space/careers"
+    },
+    {
+      "company": "Spiral Blue",
+      "category": "Onboard Satellite Processing / Edge AI",
+      "why": "Australian. Onboard AI processing for EO satellites. Reduces bandwidth, increases speed. Fits Paul's satellite operations and commercial data background.",
+      "roast": "Spiral Blue sells the thing every satellite operator wishes they had built five years ago, an onboard computer that processes imagery in orbit so you downlink answers instead of terabytes. The value proposition is clean, bandwidth is expensive, latency is a killer, and most satellite data gets analyzed never or late. Spiral Blue's pitch is do the AI on the bird, send the insight, skip the pipeline. It is a good idea. The problem is that it requires satellite operators to trust a startup's hardware in an environment where a software bug means you bricked a 50 million dollar asset that you cannot reboot by unplugging it. Paul has been on both sides of this, he sold monitoring services to oil majors who wanted proof it works before they pay, and he bought satellite data at GFW where he had to explain to engineers why we could not wait six months for perfect imagery. Spiral Blue is in the hard part now, they have a working product and some pilot customers but they need the reference accounts that make the next twenty sales easier. The opportunity for Paul is that this is a commercial partnership sale, not a transactional close. Spiral Blue's customers are satellite operators and downstream data buyers, which is exactly the ecosystem Paul has lived in since Tromso. The company is Australian, which means remote first is native and time zones with Taos are survivable. The risk is that the big constellation operators build this in house and Spiral Blue ends up with a product the market wants but nobody buys because vertically integrated players do not outsource the edge.",
+      "careers_url": "https://www.spiralblue.space/careers"
+    },
+    {
+      "company": "VanderSat",
+      "category": "Passive Microwave Sensing / Soil Moisture EO",
+      "why": "Dutch. Global satellite-based soil moisture and vegetation data. Agriculture, insurance, commodities buyers. Fits Paul's data licensing and commercial vertical-building experience.",
+      "roast": "VanderSat has been flying under the radar, pun intended, doing passive microwave sensing for soil moisture and vegetation while everyone else chases optical and SAR. The company has real customers in agriculture, insurance, and commodities, which are the three verticals where satellite data companies go to find out if their technology is a product or a science project. Soil moisture is one of those variables that matters enormously to people who know it matters and is invisible to everyone else. Paul built the GFW commercial licensing program by identifying where a free platform needed structured commercial relationships, VanderSat has the opposite problem, they have a commercial product and need to convince buyers that passive microwave data is worth paying for when optical imagery is everywhere and free adjacent. The company has been around long enough to survive the trough, which means they have revenue and a business model that works, but they are in the growth phase where they need someone who can articulate why soil moisture data is not just nice to have but a genuine competitive advantage for the buyer. Paul has done this twice, once convincing oil majors to pay KSAT for monitoring they did not think they needed, once convincing insurance companies to pay GFW for vessel data when AIS was supposed to be free. VanderSat is Dutch, which means the company is probably under capitalized by Silicon Valley standards but over engineered by everyone else's, and the culture will be direct in a way that Paul will find refreshing after too many ATS systems that reject him with inspirational messages. The risk is that VanderSat gets acquired by a larger geospatial player and the commercial role evaporates. The opportunity is that they are at the stage where the next fifty customers look like the first fifty and Paul has built that playbook twice.",
+      "careers_url": "https://www.vandersat.com/careers/"
     }
   ],
   "morning_briefs": [
@@ -20177,18 +20177,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Red River's new guy\nMax leaves tourism for The Hill\nMayfest approaches",
-    "Memorial Day weekend\nEnchanted Circle honors dead\nsummer season kicks",
-    "Blue Planet III drops\nDavid Attenborough sees\nPlanet data at work",
-    "White House gunfire\nSecret Service returns shots\nTrump safe in the house",
-    "Iran deal not close\nTrump says time is on our side\nBooker calls him fool",
-    "One forty one yes\neight no votes on climate law\nUS stands apart",
-    "Taos seniors sign\ncollege letters, May nineteen\nthe gorge stays behind",
-    "CAS five hundred two\nSouth Korea private launch\nSvalbard hears first call",
-    "Redhead in Ranchos\ndrinks at Rolling Still someday\nno buyers today",
-    "Monsoon not due yet\nbut lightning already here\nrifle crack, checkpoint",
-    "Wheeler Peak holds snow\ninto June, the dashboard holds\nzero ranked again",
-    "Psyche flew by Mars\nforty five hundred klicks out\nrock visits red rock",
     "Kachina untracked\ntelemark in late May gone\nmemory remains",
     "Data centers drink\ncoal smoke to think faster\nthe grid bends, not breaks",
     "Rio Grande runs cold\nsnowmelt from the peaks above\nthe wire stays quiet",
@@ -20240,14 +20228,27 @@
     "Bitcoin down this morning\nseventy three thousand Friday\nIran deal pending",
     "Wheeler's summer dry\nsage hot under monsoon watch\npinyon holds the ridge",
     "Aurlandsdalen waits\nOskar graduates in June\nVilde in the peaks",
-    "Dashboard refresh again\nthe wire stays quiet today\nhaiku hold the line"
+    "Dashboard refresh again\nthe wire stays quiet today\nhaiku hold the line",
+    "Blue moon tonight small\nmicromoon 252 miles off\nTaos sees it shrink",
+    "Sox ten games below\nCleveland series, lost six straight\nthe wire stays cold",
+    "Kennedy Center\njudge strips Trump's name off the walls\nCongress holds the deed",
+    "One forty one yes\neight no on climate duty\nUS votes with Yemen",
+    "London hits thirty five\nMay heat dome traps Europe\nthe gorge stays April cool",
+    "Redhead at Medley\nmezcal margs, hockey, then next door\nbottle for later",
+    "Kachina untracked\nMay mud season over now\nJune means hiking boots",
+    "Planet three meter\nBlue Planet III segment drops\nDavid sees the work",
+    "ATS rejection\nautomatic, no human\nhaiku hold the line",
+    "Rio Grande runoff\nMother's Day races long past\nlow water by June",
+    "Norway in three weeks\nOskar graduates, Vilde waits\nAurlandsdalen hut",
+    "Pinyon smoke at dawn\nTaos Plaza empty, cool\ncoffee, then the refresh",
+    "The dashboard updates\nno ranked opportunities\nso you get more poems"
   ],
   "intros": [
     "No buyers today. Haiku hold the line.",
     "Quiet wire. Here's a haiku.",
-    "Apodaca memorial Saturday. Sox in Cleveland. Iran deal unsigned.",
-    "Eleven dead Longview mill. UN climate vote passed. Sox one-seven home.",
-    "Iran strikes traded today. Sox swept. Liquor code posted Monday.",
+    "Sergeant down State Road 518. Sox ten under. Blue moon tonight.",
+    "Kennedy name stripped. Climate vote 141 to 8. Europe bakes early.",
+    "Taos liquor code live. Sox lost six straight. Quiet wire.",
     "The pipeline will refill. Until then:",
     "Zero ranked. Maximum haiku.",
     "No offers to chew on. A haiku to sit with.",
