@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30",
+  "last_updated": "2026-05-31",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -63,7 +63,7 @@
     "deep_dives_done": 18,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-05-30"
+    "last_updated": "2026-05-31"
   },
   "ranked_opportunities": [
     {
@@ -215,7 +215,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-28",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "El Segundo, CA",
@@ -1576,7 +1576,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-28",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Remote-first role based in India, with regular travel for customer and partner meetings.",
@@ -4915,7 +4915,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-28",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "San Diego, CA",
@@ -24831,6 +24831,151 @@
           "source": "SOSV Portfolio",
           "url": "https://ecisolutions.hrmdirect.com/employment/job-opening.php?req=3721479&req_loc=1333666&&#job",
           "reason": "Senior Manager, Creative Services is a marketing/creative function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "digest_count": 20,
+      "scored_count": 1,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Octopus Energy Group - Climate Change",
+          "role": "Senior Sales Manager at Octopus Energy Group - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Business Development Director",
+          "url": "https://climatebase.org/jobs",
+          "reason": "fetch_unreadable:aggregator_climatebase_root"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "20 entries. All scored fell below Tier 3. 1 unscored.",
+      "jobs_processed": 20,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "20 entries. All scored fell below Tier 3. 1 unscored. 9 skipped by prefilter (off-domain / wrong-function).",
+      "intra_digest_duplicates": [
+        {
+          "title": "Staff Global Supply Chain Manager \u2013 Battery Cell & Enclosure",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Business Development",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "HR Business Partner Commercial",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Director",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Senior Account Executive",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Inside Sales Medewerker",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Internal Sales Support",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Sr. GIS Apps Product Engineer",
+          "url": "https://www.geo-careers.com/",
+          "kept_url": "https://www.geo-careers.com/"
+        },
+        {
+          "title": "Senior Manager - Process & Project Engineering",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        }
+      ],
+      "prefilter_skipped": [
+        {
+          "title": "Individual Contractor - Geospatial Analysts, Satellite Imagery and GIS",
+          "source": "GEO Careers",
+          "url": "https://www.geo-careers.com/",
+          "reason": "Individual Contractor for Geospatial Analysts is an IC technical role (GIS analyst work), not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Manager, Supply Chain",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/480885304-manager-supply-chain",
+          "reason": "Manager, Supply Chain is an operations/supply chain management role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Associate, Citymapper Ads",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481027317-business-development-associate-citymapper-ads",
+          "reason": "Citymapper is a consumer urban transit app with no climate/EO/maritime mission alignment, off-domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Desert-Based Associate Director",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/orange-county-coastkeeper/jobs/81082525-desert-based-associate-director",
+          "reason": "Orange County Coastkeeper is a local environmental nonprofit focused on coastal water quality and pollution, off-domain from Paul's EO/climate/maritime commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Industrial Wastewater Sales Representative",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/tidal-vision-2/jobs/81079944-industrial-wastewater-sales-representative-clear-water-services",
+          "reason": "Industrial Wastewater Sales Representative is an IC quota-carrier sales role, wrong seniority for Paul's VP/Director-level commercial leadership targets.",
+          "confidence": "high"
+        },
+        {
+          "title": "Slough, Slough, England, United Kingdom Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-slough-slough-england-united-kingdom",
+          "reason": "URL is a location-based job listing aggregator page, not a specific posting with a title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Corporate Development",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/melbourne/director-corporate-development/4832/91127146544",
+          "reason": "L3Harris is a defense and national security contractor, which is a hard exclusion per Paul's standing policy on defense/IC/clearance-required roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Development Officer",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52467/chief-development-officer/",
+          "reason": "Chief Development Officer is a fundraising/donor relations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Advancement Officer",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52468/chief-advancement-officer/",
+          "reason": "Chief Advancement Officer is a fundraising/development role at a nonprofit, not a commercial/BD/partnerships function.",
           "confidence": "high"
         }
       ]
