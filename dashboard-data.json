@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -67,11 +67,11 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 131,
-    "deep_dives_done": 14,
+    "active_pipeline": 133,
+    "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-01"
+    "last_updated": "2026-06-02"
   },
   "ranked_opportunities": [
     {
@@ -2505,7 +2505,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Brooklyn, NY ; Washington, DC ; Boston, MA",
@@ -2824,7 +2824,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "",
@@ -2877,7 +2877,7 @@
       "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_EMEA_Deep_Dive_Analysis.docx",
       "doc_note": "Full deep dive completed. Re-scored 47.0 vs brief 69.0 (Hard Requirement Cap). Separate existing Loft Orbital application in flight (Sr. Director, BD, US, status awaiting); this is the EMEA posting.",
       "added": "2026-05-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Europe (Toulouse/Paris/Golden CO hubs); EMEA-based",
@@ -3192,7 +3192,55 @@
       "rank": 74
     },
     {
-      "rank": 75,
+      "company": "",
+      "role": "Join us",
+      "score": 47.0,
+      "proxy_score": null,
+      "effective_score": 47.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-06-02",
+      "scqa": "",
+      "verdict": "RF capped at 4: JD requires \"5 years of experience in sustainability or ESG advisory (Big 4 sustainability practice, boutique ESG/climate consultancy, or a climate risk SaaS platform)\" with \"hands-on experience advising corporates or infrastructure clients on risk, sustainability or physical climate risk assessment.\" Paul has zero years in ESG/sustainability advisory; his 15 years are in commercial EO/satellite services. IL capped at 3: the specific credential and network gap (Big 4 sustainability practice, climate risk advisory background, existing infrastructure investor/financial services network in the climate context) is insurmountable on paper. The role is also primarily solutions engineering/pre-sales support (\"Partner with Account Executives...shape technical narrative...run business value assessments...design demos\"), not the commercial leadership or market-building Paul does. SPM scores 6 for generic multi-stakeholder coordination language but lacks evidence of Paul's three specific patterns. Pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.mitigasolutions.com/jobs/solutions-consultant----climate-risk"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-02",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Experience requirement mismatch",
+          "detail": "JD requires '5 years of experience in sustainability or ESG advisory (Big 4 sustainability practice, boutique ESG/climate consultancy, or a climate risk SaaS platform)' with 'hands-on experience advising corporates or infrastructure clients on risk, sustainability or physical climate risk assessment.' Paul has 15 years in commercial space/EO but zero years in sustainability advisory, Big 4 consulting, ESG practice, or climate risk advisory.",
+          "severity": "hard"
+        },
+        {
+          "type": "Role type mismatch",
+          "detail": "Despite 'Account Executive' framing in intro, the role is solutions consultant/pre-sales engineering: 'Partner with Account Executives...shape technical narrative...run business value assessments...design demos, workshops, proof-of-concept...support RFP responses.' Paul's career is commercial development and market building, not solutions engineering or technical pre-sales support.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 5,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 5,
+        "GC": 7
+      },
+      "rank": 75
+    },
+    {
+      "rank": 76,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 46.5,
@@ -3245,7 +3293,7 @@
       ]
     },
     {
-      "rank": 76,
+      "rank": 77,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -3288,7 +3336,7 @@
       ]
     },
     {
-      "rank": 77,
+      "rank": 78,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -3323,7 +3371,7 @@
       ]
     },
     {
-      "rank": 78,
+      "rank": 79,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -3358,7 +3406,7 @@
       ]
     },
     {
-      "rank": 79,
+      "rank": 80,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -3432,7 +3480,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 80
+      "rank": 81
     },
     {
       "company": "rubiconcarbon",
@@ -3490,7 +3538,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 81
+      "rank": 82
     },
     {
       "company": "",
@@ -3538,7 +3586,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 82
+      "rank": 83
     },
     {
       "company": "",
@@ -3586,10 +3634,10 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 83
+      "rank": 84
     },
     {
-      "rank": 84,
+      "rank": 85,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -3669,10 +3717,10 @@
         "CO": 9,
         "GC": 8
       },
-      "rank": 85
+      "rank": 86
     },
     {
-      "rank": 86,
+      "rank": 87,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -3752,7 +3800,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 87
+      "rank": 88
     },
     {
       "company": "",
@@ -3805,7 +3853,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 88
+      "rank": 89
     },
     {
       "company": "",
@@ -3858,7 +3906,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 89
+      "rank": 90
     },
     {
       "company": "Product Manager- Embodied Carbon for Products",
@@ -3906,10 +3954,10 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 90
+      "rank": 91
     },
     {
-      "rank": 91,
+      "rank": 92,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -3938,7 +3986,7 @@
       "blockers": []
     },
     {
-      "rank": 92,
+      "rank": 93,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -3978,7 +4026,7 @@
       ]
     },
     {
-      "rank": 93,
+      "rank": 94,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -4028,7 +4076,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 95,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 44.5,
@@ -4076,7 +4124,7 @@
       ]
     },
     {
-      "rank": 95,
+      "rank": 96,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -4150,7 +4198,7 @@
         "CO": 6,
         "GC": 9
       },
-      "rank": 96
+      "rank": 97
     },
     {
       "company": "Bees & Bears",
@@ -4190,7 +4238,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 97
+      "rank": 98
     },
     {
       "company": "Acre",
@@ -4238,7 +4286,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 98
+      "rank": 99
     },
     {
       "company": "",
@@ -4281,7 +4329,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 99
+      "rank": 100
     },
     {
       "company": "Muon Space",
@@ -4339,7 +4387,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 100
+      "rank": 101
     },
     {
       "company": "ExxonMobil",
@@ -4362,7 +4410,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "Spring, TX, US, 77389",
@@ -4392,10 +4440,10 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 101
+      "rank": 102
     },
     {
-      "rank": 102,
+      "rank": 103,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -4467,7 +4515,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 103
+      "rank": 104
     },
     {
       "company": "Arable",
@@ -4515,10 +4563,10 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 104
+      "rank": 105
     },
     {
-      "rank": 105,
+      "rank": 106,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 43.5,
@@ -4606,7 +4654,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 106
+      "rank": 107
     },
     {
       "company": "Active Site",
@@ -4641,7 +4689,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 107
+      "rank": 108
     },
     {
       "company": "Watershed Careers",
@@ -4689,10 +4737,10 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 108
+      "rank": 109
     },
     {
-      "rank": 109,
+      "rank": 110,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -4747,7 +4795,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-05-30",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "domain": "",
       "location": "",
@@ -4777,7 +4825,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 110
+      "rank": 111
     },
     {
       "company": "Narmi | Techstars Job Board",
@@ -4825,7 +4873,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 111
+      "rank": 112
     },
     {
       "company": "SWARM Engineering",
@@ -4873,7 +4921,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 112
+      "rank": 113
     },
     {
       "company": "Everlong | Techstars Job Board",
@@ -4921,7 +4969,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 113
+      "rank": 114
     },
     {
       "company": "Waitt Foundation | Schmidt Marine Job Board",
@@ -4979,10 +5027,10 @@
         "CO": 7,
         "GC": 5
       },
-      "rank": 114
+      "rank": 115
     },
     {
-      "rank": 115,
+      "rank": 116,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -5011,7 +5059,7 @@
       "blockers": []
     },
     {
-      "rank": 116,
+      "rank": 117,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -5091,7 +5139,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 117
+      "rank": 118
     },
     {
       "company": "",
@@ -5139,7 +5187,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 118
+      "rank": 119
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -5192,10 +5240,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 119
+      "rank": 120
     },
     {
-      "rank": 120,
+      "rank": 121,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -5275,7 +5323,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 121
+      "rank": 122
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -5328,10 +5376,10 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 122
+      "rank": 123
     },
     {
-      "rank": 123,
+      "rank": 124,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -5381,7 +5429,7 @@
       }
     },
     {
-      "rank": 124,
+      "rank": 125,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -5471,7 +5519,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 125
+      "rank": 126
     },
     {
       "company": "gable",
@@ -5519,7 +5567,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 126
+      "rank": 127
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -5567,7 +5615,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 127
+      "rank": 128
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -5615,7 +5663,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 128
+      "rank": 129
     },
     {
       "company": "Planet",
@@ -5683,10 +5731,68 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 129
+      "rank": 130
     },
     {
-      "rank": 130,
+      "company": "",
+      "role": "Join us",
+      "score": 40.0,
+      "proxy_score": null,
+      "effective_score": 40.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-06-02",
+      "scqa": "",
+      "verdict": "This role is a hard pass due to three unmet requirements that trigger caps. First, the JD explicitly requires \"5 years in B2B sales or a commercial client-facing role; at least 1 year carrying a quota\" and states \"You will carry your own quota.\" Paul has never carried a traditional quota\u2014his 15-year career has been market-building and strategic BD, not quota-attainment AE work. Second, the JD requires \"Strong written and verbal communication skills in both Spanish and English\"; there is no evidence Paul speaks Spanish. Third, the role requires \"demonstrable ability to run a structured sales process\" in the context of mid-market quota-carrying AE work; Paul's documented pattern is pilot-to-precedent regulatory market creation, not transactional quota attainment. RF caps at 3 because the role definition fundamentally mismatches Paul's market-builder identity. IL caps at 3 because of the missing Spanish language requirement and the quota-carrying credential gap. The mission (climate-risk analytics for infrastructure) is a strong SPM and sector fit, but the role itself is wrong.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.mitigasolutions.com/jobs/account-executive"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-02",
+      "is_new": true,
+      "tier": null,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "Hard requirement: years of experience",
+          "detail": "JD requires '5 years in B2B sales or a commercial client-facing role; at least 1 year carrying a quota.' Paul has 15 years of commercial experience (2011-2026) but has never carried a traditional quota in an AE role. His work has been market-building and strategic BD, not quota-carrying hunter sales.",
+          "severity": "hard"
+        },
+        {
+          "type": "Hard requirement: role definition",
+          "detail": "JD explicitly states 'You will carry your own quota' and requires 'demonstrable ability to run a structured sales process: discovery, qualification, demo, objection handling, close' in a quota-carrying context. Paul's documented sales pattern is pilot-to-precedent market creation, not quota attainment.",
+          "severity": "hard"
+        },
+        {
+          "type": "Language requirement",
+          "detail": "JD requires 'Strong written and verbal communication skills in both Spanish and English.' No evidence Paul speaks Spanish.",
+          "severity": "hard"
+        },
+        {
+          "type": "Geographic/Cultural constraint",
+          "detail": "Location not specified but company mentions 'Spanish and English' as core requirement and 'other European languages, a plus,' suggesting European base (likely Spain). 'Hybrid model' and 'compressed Fridays' suggest in-office expectation. No indication of US remote viability.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 4,
+        "GC": 3
+      },
+      "rank": 131
+    },
+    {
+      "rank": 132,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -5731,7 +5837,7 @@
       }
     },
     {
-      "rank": 131,
+      "rank": 133,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -5781,7 +5887,7 @@
       }
     },
     {
-      "rank": 132,
+      "rank": 134,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -25150,6 +25256,624 @@
           "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
           "url": "https://jobs.philanthropy.com/job/52468/chief-advancement-officer/",
           "reason": "Chief Advancement Officer is a fundraising/development role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "digest_count": 89,
+      "scored_count": 10,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "",
+          "role": "Join us",
+          "score": 47.0
+        },
+        {
+          "company": "",
+          "role": "Join us",
+          "score": 40.0
+        }
+      ],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Bentley Systems",
+          "role": "Product Sales Engineer, Hydraulics Engineering",
+          "score": 36.0,
+          "note": ""
+        },
+        {
+          "company": "Mallinckrodt Pharmaceuticals - Climate Change",
+          "role": "Environmental Monitoring Supervisor at Mallinckrodt Pharmaceuticals - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Loom Solar - Climate Change",
+          "role": "BESS Sales Executive at Loom Solar - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "CPB - Climate Change",
+          "role": "Sustainability Lead at CPB - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Apex Companies - Climate Change",
+          "role": "Environmental Principal at Apex Companies - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Scout Motors - Climate Change",
+          "role": "Lead, Sustainability & Stewardship Programs at Scout Motors - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Talent Insider - Climate Change",
+          "role": "Sustainability Manager at Talent Insider - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        },
+        {
+          "company": "Council on Energy, Environment and Water - Climate Change",
+          "role": "Programme Lead  -  Industrial Sustainability at Council on Energy, Environment and Water - Climate Change Jobs",
+          "score": 10.0,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "Loom Solar - Climate Change",
+          "role": "Area Sales Executive",
+          "url": "https://climatechangejobs.com/jobs/481406295-area-sales-executive",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "89 entries. No Tier 1-2; 2 Tier 3 added. T3 2. 1 unscored.",
+      "jobs_processed": 89,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "89 entries. No Tier 1-2; 2 Tier 3 added. T3 2. 1 unscored. 69 skipped by prefilter (off-domain / wrong-function).",
+      "intra_digest_duplicates": [
+        {
+          "title": "Senior Recruiter - Operations, GTM",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Maps and Geospatial Assistant",
+          "url": "https://www.geo-careers.com/",
+          "kept_url": "https://www.geo-careers.com/"
+        },
+        {
+          "title": "Director, Development",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Head of Trading (m/w/d)",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Operations Director",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Environmental GIS Analyst, TSC - Fort Collins, CO",
+          "url": "https://www.geo-careers.com/",
+          "kept_url": "https://www.geo-careers.com/"
+        },
+        {
+          "title": "Principal Software Engineer (NET Core, C#, Angular (12+), TypeScript)",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "IGNITIS GROUP CHIEF EXECUTIVE OFFICER AND CHAIR OF THE MANAGEMENT BOARD",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        },
+        {
+          "title": "Customer Success Engineer",
+          "url": "https://climatebase.org/jobs",
+          "kept_url": "https://climatebase.org/jobs"
+        }
+      ],
+      "prefilter_skipped": [
+        {
+          "title": "Product Manager \u2013 Risk Intelligence",
+          "source": "Windward",
+          "url": "https://windward.ai/company/careers/co/washington-dc-area/AD.B67/product-manager-risk-intelligence/all",
+          "reason": "Product Manager is an IC product management role, not a commercial leadership position, and does not carry a senior title token.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President, Partnerships and Advancement (Corporate) at National Urban League",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52473/vice-president-partnerships-and-advancement-corporate-at-national-urban-league/",
+          "reason": "National Urban League is a civil rights and urban advocacy nonprofit, off-domain from Paul's climate-adjacent, EO/maritime, mission-driven market focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Content Strategy and Operations",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Exton-Director%2C-Content-Strategy-and-Operations-PA-19341/1395555300/",
+          "reason": "Director, Content Strategy and Operations is a marketing-only role without commercial leadership component at infrastructure software company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Government Affairs (EU)",
+          "source": "Altana AI",
+          "url": "https://job-boards.greenhouse.io/altanaai/jobs/7758513003",
+          "reason": "Director of Government Affairs (EU) is a government relations/policy/lobbying role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Representative",
+          "source": "Orca AI",
+          "url": "https://www.orca-ai.io/careers/co/europe/2C.B60/business-development-representative/all",
+          "reason": "BDR is junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Manager, Eurofins Discovery, North and West China",
+          "source": "Climatebase",
+          "url": "https://climatebase.org/jobs",
+          "reason": "Eurofins Discovery is a pharmaceutical/life sciences contract research organization, off-domain for climate-adjacent EO/maritime/geospatial markets.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Sensor Operator",
+          "source": "GEO Careers",
+          "url": "https://www.geo-careers.com/",
+          "reason": "Geospatial Sensor Operator is a technical operations role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Enterprise GTM Lead",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/aftershoot/jobs/81169953-enterprise-gtm-lead",
+          "reason": "Aftershoot is AI-powered photo culling and editing software for photographers, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Wedding Production & Vendor Partnerships Coordinator",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/wedy/jobs/81152185-wedding-production-vendor-partnerships-coordinator",
+          "reason": "Wedy is a wedding planning/production company, completely off-domain from Paul's climate-adjacent, EO/maritime, and mission-driven focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative",
+          "source": "Normative",
+          "url": "https://careers.normative.io/jobs/7187431-sales-development-representative-stockholm",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role (SDR), wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Materials and Processing",
+          "source": "Commonwealth Fusion Systems",
+          "url": "https://jobs.lever.co/cfsenergy/23117c8e-d753-4dcb-bcf1-12e944659755",
+          "reason": "Director, Materials and Processing is a technical engineering/manufacturing role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Automation Sales Manager",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://boards.greenhouse.io/formic/jobs/4685610006",
+          "reason": "Formic is an industrial automation and robotics company for manufacturing, off-domain from Paul's climate-adjacent EO/maritime/sustainability focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Techstars",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/speak-ai/jobs/81154555-sales-representatives",
+          "reason": "Title 'Sales Representatives' indicates junior IC quota-carrier role without strategic component, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Loom Solar Pvt. Ltd. - Area Sales Executive in Paya-medinipur",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481406295/apply",
+          "reason": "Area Sales Executive is a junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Consulting Commercial Leader, Life Sciences and Environmental Health & Safety",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407466-consulting-commercial-leader-life-sciences-and-environmental-health-safety",
+          "reason": "Consulting firm commercial role selling EHS compliance services is off-domain from Paul's EO/satellite/climate data commercial background.",
+          "confidence": "high"
+        },
+        {
+          "title": "Nos offres || Ing\u00e9nieur Commercial en environnement - H/F",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414556-nos-offres-||-ingenieur-commercial-en-environnement-h-f",
+          "reason": "French-language role 'Ing\u00e9nieur Commercial en environnement' likely requires French fluency and France-based presence, wrong geography for Taos remote-first search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Ing\u00e9nieur Commercial en environnement - H/F",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414556/apply",
+          "reason": "French-language title 'Ing\u00e9nieur Commercial en environnement' indicates France-based role requiring French fluency, which Paul does not have.",
+          "confidence": "high"
+        },
+        {
+          "title": "Alen\u00e7on, Orne, France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-alencon-orne-france",
+          "reason": "URL is a location aggregation page (all jobs in Alen\u00e7on, France), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Beaumont, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-beaumont-california-united-states",
+          "reason": "URL is a geographic job board aggregator page (all Beaumont CA climate jobs), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Bristol, City Of Bristol, England, United Kingdom Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-bristol-city-of-bristol-england-united-kingdom",
+          "reason": "URL is a location-based job listing page for Bristol UK, not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chon Buri Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-chon-buri",
+          "reason": "URL is a location-based job aggregator page for Chon Buri (Thailand), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Clovis, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-clovis-california-united-states",
+          "reason": "URL is a location-based aggregator page ('jobs/in-clovis-california-united-states'), not a specific job posting with a defined title, company, or function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Colmar, Haut-Rhin, France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-colmar-haut-rhin-france",
+          "reason": "URL is a geographic job listing page (Colmar, France) not a specific role posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Gateshead, Tyne and Wear, England, United Kingdom Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-gateshead-tyne-and-wear-england-united-kingdom",
+          "reason": "URL is a geographic location aggregation page (jobs in Gateshead), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Hitchin, Hertfordshire, England, United Kingdom Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-hitchin-hertfordshire-england-united-kingdom",
+          "reason": "URL is a geographic location aggregator page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Ironton, Ohio, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-ironton-ohio-united-states",
+          "reason": "URL is a geographic location filter page (Ironton, Ohio jobs aggregator), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Joplin, Missouri, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-joplin-missouri-united-states",
+          "reason": "URL is a geographic aggregator page for all climate jobs in Joplin, Missouri, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Laval, Quebec, Canada Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-laval-quebec-canada",
+          "reason": "URL is a location-based job board aggregation page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lynchburg, Virginia, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-lynchburg-virginia-united-states",
+          "reason": "URL is a geographic job board landing page for Lynchburg, VA, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Makati, Philippines Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-makati-philippines",
+          "reason": "URL is a geographic location page aggregating all Makati, Philippines climate jobs, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Marietta, Georgia, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-marietta-georgia-united-states",
+          "reason": "URL is a geographic search results page for Marietta, Georgia jobs, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Oakdale, California, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-oakdale-california-united-states",
+          "reason": "URL is a geographic job board listing page for Oakdale, California, not a specific posting with a title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Pays de la Loire Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-pays-de-la-loire",
+          "reason": "URL is a geographic location job index page (Pays de la Loire region), not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Petaling Jaya, Selangor, Malaysia Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-petaling-jaya-selangor-malaysia",
+          "reason": "URL is a location-based job aggregator page, not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Pueblo, Colorado, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-pueblo-colorado-united-states",
+          "reason": "URL is a geographic location aggregator page (all Pueblo CO climate jobs), not a specific posting with a single role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Regina, Saskatchewan, Canada Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-regina-saskatchewan-canada",
+          "reason": "URL is a job board location filter page (Regina, Saskatchewan, Canada) rather than a specific posting, cannot evaluate individual role or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Rockville, Maryland, United States Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-rockville-maryland-united-states",
+          "reason": "URL is a location-based job board aggregation page, not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Schiltigheim, Bas-Rhin, France Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-schiltigheim-bas-rhin-france",
+          "reason": "URL is a location-based aggregator page (all jobs in Schiltigheim, France), not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Shah Alam, Selangor, Malaysia Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-shah-alam-selangor-malaysia",
+          "reason": "URL is a geographic job listing aggregator page for Shah Alam, Malaysia, not a specific posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Shanghai Shi, China Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-shanghai-shi-china",
+          "reason": "URL is a geographic location filter page, not a specific job posting.",
+          "confidence": "high"
+        },
+        {
+          "title": "Turin Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-turin-italy",
+          "reason": "URL is a geographic location aggregator page (Turin, Italy jobs), not a specific posting with a job title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Wellington Climate Jobs",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/in-wellington",
+          "reason": "URL is a location-based job board aggregator page (jobs in Wellington), not a specific posting with a defined title and company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Tanzania Carbon Credits Supervisor (Fixed-Term)",
+          "source": "Jobs in Carbon",
+          "url": "https://grnh.se/htfj8umm1us",
+          "reason": "Tanzania-based field supervision role, not remote-eligible commercial leadership position Paul targets.",
+          "confidence": "high"
+        },
+        {
+          "title": "Carbon Project Manager",
+          "source": "Jobs in Carbon",
+          "url": "https://burnmanufacturing.applytojob.com/apply/oibgd1e3b2/carbon-project-manager-west-africa?source=jobsincarbon",
+          "reason": "Carbon Project Manager is a project management IC role, not a commercial/BD/partnerships role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director of Development, Corporate and Foundation Relations",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52464/senior-director-of-development-corporate-and-foundation-relations/",
+          "reason": "Senior Director of Development is a fundraising role, not a commercial/BD/partnerships role; this is a nonprofit development function, not revenue-generating commercial work.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Development",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52471/director-of-development/?LinkSource=HomePage",
+          "reason": "Director of Development is a fundraising/development role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Assistant Director of Development",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52472/assistant-director-of-development/",
+          "reason": "Assistant Director of Development is a fundraising/development role in the nonprofit sector, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Project Manager, African Office",
+          "source": "Climate Analytics",
+          "url": "https://climate.jobs.personio.com/job/2636972?apply",
+          "reason": "Project Manager is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "National Consultant - (Short-Term) \u2013 Socio-Economic Impacts of Extreme Heat in the Philippines",
+          "source": "Climate Analytics",
+          "url": "https://climate.jobs.personio.com/job/2644618",
+          "reason": "National Consultant Philippines is a short-term, country-specific consulting role requiring local expertise, not a VP/Director commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Enterprise Inside Sales Representative",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Exton-Enterprise-Inside-Sales-Representative-PA-19341/1395524500/",
+          "reason": "Enterprise Inside Sales Representative is an IC quota-carrier role without strategic leadership component, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director, Event Experience Design & Production",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Remote-Senior-Director%2C-Event-Experience-Design-&-Production-CA/1395493500/",
+          "reason": "Senior Director, Event Experience Design & Production is a marketing/events function role, not commercial leadership or BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director, Event Operations & Program Management",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Remote-Senior-Director%2C-Event-Operations-&-Program-Management-IL-62827/1395510000/",
+          "reason": "Event Operations & Program Management is a corporate events/marketing function, not commercial/BD/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Job Openings - Spire : Global Data and Analytics",
+          "source": "Spire Global",
+          "url": "https://spire.com/careers/job-openings/?department=program-management",
+          "reason": "URL points to a department filter page (program-management) not a specific job posting, cannot evaluate fit without individual JD.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Engineer (Group Sustainability, Corporate HQ)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407334-sustainability-engineer-group-sustainability-corporate-hq",
+          "reason": "Sustainability Engineer is a technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "MVC Resources - Sustainability Engineer (Group Sustainability, Corporate HQ) in Shah Alam",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407334/apply",
+          "reason": "Sustainability Engineer is a wrong-function technical engineering role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Sustainability & Impact Analyst",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407363-environmental-sustainability-impact-analyst",
+          "reason": "Analyst title indicates IC role without strategic or commercial leadership component, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Graduate Sustainability Consultant",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407408-graduate-sustainability-consultant",
+          "reason": "Graduate Sustainability Consultant is unambiguously junior/entry-level seniority, wrong for Paul's VP/Director target level.",
+          "confidence": "high"
+        },
+        {
+          "title": "Graduate Sustainability Consultant in Shanghai, Shanghai, China",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407408/apply",
+          "reason": "Graduate Sustainability Consultant is a junior entry-level role, and Shanghai location is off-geography for Paul's Taos-based remote-first search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Data Analyst",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407460-sustainability-data-analyst",
+          "reason": "Sustainability Data Analyst is an IC analytics role, not a VP/Director-level commercial or partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Council on Energy, Environment and Water - Programme Lead - Industrial Sustainability in New Delhi",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481407490/apply",
+          "reason": "Council on Energy, Environment and Water (CEEW) is a New Delhi-based think tank and policy research institution, not a commercial organization where Paul would build revenue functions or BD programs.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, EPC Estimation",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481412220-senior-manager-epc-estimation",
+          "reason": "EPC Estimation is engineering/procurement/construction cost estimation, not a commercial or BD role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Environmental Testing",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414369-senior-manager-environmental-testing",
+          "reason": "Senior Manager, Environmental Testing is a lab/technical testing role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414376-environmental-compliance",
+          "reason": "Environmental Compliance is a regulatory/legal function outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Sustainability Engineer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414532-senior-sustainability-engineer",
+          "reason": "Senior Sustainability Engineer is a technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Apply for Senior Sustainability Engineer with Rework Recruitment",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414532/apply",
+          "reason": "Senior Sustainability Engineer is a technical engineering role outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "EHS and Sustainability Regulatory Consultant for German speaking jurisdictions",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/481414562-ehs-and-sustainability-regulatory-consultant-for-german-speaking-jurisdictions",
+          "reason": "EHS and Sustainability Regulatory Consultant is a compliance/regulatory function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Advancement Officer",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52466/chief-advancement-officer/",
+          "reason": "Chief Advancement Officer is a fundraising/development role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Manager, Trade Compliance",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/rochester/manager-trade-compliance/4832/95852668608",
+          "reason": "L3Harris is a defense and national security contractor, and Paul has a hard exclusion on defense/IC/national security/clearance-required roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager, Enterprise",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Remote-Account-Manager%2C-Enterprise-TX/1395453000/",
+          "reason": "Bentley Systems is enterprise infrastructure software (CAD/BIM for civil engineering), off-domain from Paul's climate-adjacent, EO/maritime, mission-driven target market.",
           "confidence": "high"
         }
       ]
