@@ -6254,20 +6254,6 @@
   ],
   "watch_list": [
     {
-      "company": "Voltic",
-      "category": "Maritime Decarbonization / Electric Cargo Ships",
-      "why": "US-built electric cargo vessels, MIT Ocean Engineering pedigree, $100M+ in sales, deploying early 2026, maritime innovation background, exactly Paul's domain",
-      "roast": "Voltic is building battery and solar powered cargo ships and claiming they are four times more profitable than diesel, which either means they found the naval architecture equivalent of cold fusion or their Excel model has some very optimistic assumptions about charging infrastructure in Philadelphia and retrofit timelines in Oakland. They spun out of MIT Ocean Engineering, raised money from the largest maritime VC in the world, and have over $100 million in signed sales, so somebody believes the physics work. The founding team previously started two shipping lines, which means they know how to move containers and also know how many ways a ship can lose money. You sold oil spill monitoring to Shell and ExxonMobil, you built the SkyTruth to GFW ecosystem over a decade, you closed the Planet Labs coastal monitoring deal, and you structured the ASN subsea cable partnership. Voltic is trying to electrify the dirtiest part of the global supply chain, and their early customers are either visionary or desperate. The commercial question is whether shipping companies will pay a green premium or whether this only works with IRA subsidies and California port incentives that disappear in 2027. If the unit economics are real, this is a category-defining company. If they are not, it is a very expensive science experiment that runs out of runway somewhere between the second ship and the third. Either way, you would be selling into the exact same maritime domain awareness and logistics buyers you have spent fifteen years cultivating, except this time the product is the ship instead of the imagery of the ship. That is either a natural adjacency or a costly distraction, depending on whether you want to sell hardware or data.",
-      "careers_url": "https://voltic.io/"
-    },
-    {
-      "company": "AIRMO",
-      "category": "Methane Monitoring / Satellite Emissions MRV",
-      "why": "Stuttgart-based, \u20ac5M seed March 2026, first satellite 2027. Methane monitoring from space with SWIR+micro-LIDAR at 2x accuracy vs existing systems. ESA-backed. Fits EO+climate+MRV commercial licensing experience perfectly.",
-      "roast": "You spent a decade at KSAT selling oil majors on proactive spill monitoring when they were pretending to care about their social license, and now here comes AIRMO out of Stuttgart with a rocket scientist founder and a satellite designed to catch methane leaks the energy industry has been hemorrhaging for profit. They raised \u20ac5 million in March from Ananda and kopa ventures to fly SWIR imaging with micro-LIDAR miniaturized onto a smallsat, which sounds like vaporware until you see ESA backing and airborne systems already flying commercial contracts in Europe and Central Asia. The pitch is that 70 percent of methane emissions go undetected, costing the energy sector $100 billion a year, $30 billion of that in straight revenue loss, which means there are CFOs at oil majors and pipeline operators who will pay real money if the data is defensible and the measurement is repeatable and you can walk them through how it works without making them feel stupid. That is the same conversation you had with Shell in The Hague in 2012 about why they should pay KSAT to watch their platforms when MDA had the incumbent contract. AIRMO is pre-revenue, probably six months from figuring out what enterprise sales actually means, and you have sold satellite-derived environmental monitoring to the exact verticals they are about to discover. The founder is technical, the investors are impact-first, and they will need someone who can explain to a procurement officer at TotalEnergies why continuous orbital monitoring creates regulatory and reputational value even when the law does not require it yet. Also they are in Germany, which you lived next door to for a decade, and they will absolutely botch the North American market entry unless someone who has actually closed energy contracts gets in early. This is the KSAT pitch all over again but with methane and the regulatory pressure is higher now than it was in 2015.",
-      "careers_url": "https://airmo.space/careers"
-    },
-    {
       "company": "Carbon Mapper",
       "category": "Emissions Detection / Satellite GHG Monitoring",
       "why": "California-based, $95M state contract signed March 2026 for real-time emissions enforcement. Satellite constellation detecting methane and CO2 point sources. Government and corporate licensing revenue model.",
@@ -6497,6 +6483,20 @@
       "why": "Boston-based, $175M raised, DeepSky AI-native weather satellite constellation, insurance and enterprise weather intelligence platform",
       "roast": "Boston. One hundred seventy-five million dollars raised. AI-native weather satellite constellation called DeepSky. They started as a weather API company and decided the problem was not the models, it was the data, so now they are launching satellites. This is either visionary or the most expensive pivot in climate tech history, and you will not know which until the constellation is up and someone pays for it. The bull case is that weather intelligence is a real revenue category, they already have enterprise customers, and if the satellite data actually improves the forecasts they have a differentiated product in a market where everyone else is repackaging NOAA. The bear case is that they have raised a quarter billion dollars, they are competing with European and US government weather infrastructure that is free, and the business model is selling better forecasts to people who mostly do not pay for the forecasts they use now. You spent three years at GFW trying to sell satellite-derived data products on top of a free platform. This is that, except the free platform is the National Weather Service and the product is slightly better rain predictions. The insurance vertical is real, AXA Climate licensed GFW data, but Tomorrow.io is Serie F, which means they are too big for you to shape and too far along for the role to be building something from scratch. You would be inheriting a commercial motion, not creating one. If you want to join a well-funded satellite data company with a proven revenue model and a path to an exit, this is not that. If you want to help a weather intelligence platform figure out whether launching satellites was a good idea, and you are okay with the fact that the answer might be no and the runway might be shorter than the pitch deck says, then maybe. But this does not feel like a Paul fit. You build markets. They are trying to prove a thesis. Different problem.",
       "careers_url": "https://www.tomorrow.io/careers"
+    },
+    {
+      "company": "Albedo",
+      "category": "Very Low Earth Orbit Optical EO",
+      "why": "10cm resolution from 200-300km VLEO orbit, first launch 2026, highest-res commercial optical imagery on the planet",
+      "roast": "You spent a decade at KSAT watching customers pay Maxar and DigitalGlobe eye-watering rates for sub-meter imagery because the use case demanded it and no one else could deliver. Albedo is betting they can undercut that entire value chain by flying satellites so low they burn through fuel like a Troms\u00f8 winter burns through diesel, achieving ten-centimeter resolution with commercially available optics instead of billion-dollar government glass. First satellite launches this year, and if the orbit holds and the optics deliver, they will own the defense and critical infrastructure surveillance market overnight. The technical risk is huge. The regulatory risk is bigger. But you negotiated Shell and ExxonMobil into proactive monitoring contracts when the entire industry said it was impossible, so you know exactly what happens when a new capability crosses the threshold from science project to something a procurement officer can no longer afford to ignore. Mountain View, sixty million raised, and a pitch that sounds insane until you remember that Planet flew cubesats when everyone said imagery required school bus sized satellites. You have spent twenty years on both sides of the EO licensing table. You know which conversations matter. This one matters.",
+      "careers_url": "https://albedo.com/careers"
+    },
+    {
+      "company": "Muon Space",
+      "category": "Climate Intelligence EO Platform",
+      "why": "Vertically integrated platform delivering turnkey climate data products (GHG monitoring, methane detection, wildfire risk), not raw imagery",
+      "roast": "Most EO companies are still trying to sell raw imagery to customers who have no idea what to do with a ten-terabyte TIFF file and a vague promise that insights exist somewhere inside it. Muon Space looked at that model and said no thanks, we will build the entire stack, fly the sensors ourselves, run the processing, and deliver the actual product the customer needs, which is a number they can put in a spreadsheet or a polygon they can show their board. Methane leak detection, wildfire risk scores, greenhouse gas monitoring. The pitch is that they are selling intelligence, not data, which is the only way this market ever scales beyond a few hundred technical buyers. You built GFW commercial licensing by identifying where derived products had private sector value even when the underlying data was free. Muon is doing the same thing but backwards, keeping the data closed and productizing the outputs. They have raised serious money, they are flying real hardware, and their customer list includes exactly the types of organizations that have budget authority and no patience for data engineering projects. The challenge is the same one you hit at GFW, which is that the pipeline narrows fast once you move past the early adopters. But if anyone can take a climate data product into insurance, agriculture, and financial risk modeling, it is someone who already did it once with fishing vessels and knows where the commercial conversation lives.",
+      "careers_url": "https://muon.space/careers"
     }
   ],
   "morning_briefs": [
@@ -27302,18 +27302,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Dashboard refresh, noon\nMelissa Casias confirmed\nwire stays silent",
-    "Pancreatic cancer\ndaraxonrasib doubles time\nPhase Three in the fall",
-    "OptoSAR debut\nIndia launched both sensors\nGalaxEye first move",
-    "Redhead at the bar\nordered mescal, not whiskey\nTaos adjustments",
-    "Computex Monday\nARM up fourteen, Qualcomm\ndown nine point five",
-    "Colombia runoff\nde la Espriella leads\nPetro's ally trails",
-    "New Mexico votes\nTaos primary at seven\nPoll lines in June dust",
-    "Strait of Hormuz closed\nninety-four days, gas at four\ndollar twenty-nine cents",
-    "Anthropic IPO\nfiled today, nine sixty-five\nbillion valuation",
-    "Sox face Baltimore\nFenway tonight, June second\nPatriots signed Brown",
-    "Blue Origin burns\nNew Glenn pad visible\nfrom orbit, NASA waits",
-    "Deb Haaland runs now\nGovernor primary, Taos\npolls close seven p.m.",
     "Biomass from space\nforty years of Arctic change\nthirty meter ground truth",
     "Iran talks suspend\nother fronts opening now\nTrump says rapid pace",
     "Planet three-meter\ncoastal coverage daily\nBlue Planet films it",
@@ -27366,14 +27354,26 @@
     "India solar\nforty percent growth per year\npassing China's coal\n",
     "AMOC slowing\nAtlantic current tipping\nTrump cut the sensors\n",
     "Red Sox no power\nthirteen homers, last in AL\nwalks and stolen bags\n",
-    "SatLeo thermal sats\nAhmedabad heat islands\nfour hundred thousand"
+    "SatLeo thermal sats\nAhmedabad heat islands\nfour hundred thousand",
+    "Mindanao at dawn\nseven-eight shakes the coast hard\ntsunami warning",
+    "Zverev on his back\nsobbing in Paris clay dust\nfirst Grand Slam title",
+    "Spencer Pratt trails now\nLA mayor race too close\nRaman overtakes",
+    "Sox at Tampa Bay\nthree-game series through Tuesday\nYankees in the dust",
+    "Deb Haaland wins big\nNavajo woman rising\nprimary silence",
+    "World Environment Day\none point five overshoot sure\nEl Ni\u00f1o returns",
+    "Taos Plaza Live starts\nJuly twenty-third Thursday\ngazebo six PM",
+    "Beehive AI platform\nclimate risk automated\nTrellis showcase pitch",
+    "Albedo ten-cent res\ntwo hundred klick orbit first\nlaunch window this year",
+    "June eighth monsoon dry\neighty-three degrees at noon\nplaza dust swirling",
+    "Marble Imaging seed\nfive-three million euro closed\nBremen VHR build",
+    "Red Sox visit Rays\nJune eight through tenth series\nNESN stream live feed"
   ],
   "intros": [
     "Clean queue. Haiku hold the wire.",
-    "Taos summer air service announced. Denver, Dallas, Austin. June twenty-eight.",
+    "Taos Plaza Live returns July twenty-three. Free music every Thursday through August.",
     "Senate funds ICE through 2029. Murkowski alone voted no.",
-    "World Environment Day closed in Baku. Overshoot certain. El Ni\u00f1o returns.",
-    "Blue Origin New Glenn exploded at the Cape. Amazon Leo waits.",
+    "EarthCARE finished its second year. ESA Heritage radar merged with new sensors.",
+    "Mindanao magnitude seven-eight at dawn. General Santos Airport reopened for relief flights.",
     "The pipeline will refill. Until then:",
     "El Ni\u00f1o arrives with ninety percent certainty. The heat builds.",
     "No offers to chew on. A haiku to sit with.",
