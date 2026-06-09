@@ -6564,27 +6564,6 @@
   ],
   "watch_list": [
     {
-      "company": "Carbon Mapper",
-      "category": "Emissions Detection / Satellite GHG Monitoring",
-      "why": "California-based, $95M state contract signed March 2026 for real-time emissions enforcement. Satellite constellation detecting methane and CO2 point sources. Government and corporate licensing revenue model.",
-      "roast": "Carbon Mapper just signed a $95 million contract with the State of California for real-time emissions enforcement, which means they went from being a satellite company to being the enforcement arm of a regulatory regime, and that should make every oil and gas operator and landfill manager and wastewater facility in the state very nervous and very willing to pay for early access to the same data the state is using to write citations. You know this pattern. It is the pilot-to-precedent engine you ran at KSAT when you helped draft oil spill legislation in Nigeria and got KSAT language into AMSA RFPs in Australia. Carbon Mapper is flying purpose-built satellites to detect methane and CO2 point sources at facility scale, and the California contract proves the regulatory demand is real and someone is willing to pay government rates for continuous monitoring. The company is a partnership that spun out of JPL and university researchers, which means strong technical credibility and probably weak commercial instincts, and they are about to get flooded with inbound interest from every industrial emitter who wants to know what Carbon Mapper can see before the regulators do. They need someone who understands how to sell proactive monitoring to companies that do not want to be monitored, who can structure licensing deals with enterprises that have compliance and PR concerns baked into every conversation, and who knows how to price surveillance when the customer views it as insurance against regulatory penalties they have not budgeted for yet. The California contract is proof of concept for the regulatory market. The next $95 million comes from Chevron and Equinor and ConocoPhillips buying the same data stream under a commercial license so they can fix leaks before the state publishes them. You have sold this exact service. They need you six months ago.",
-      "careers_url": "https://carbonmapper.org/careers"
-    },
-    {
-      "company": "Satellogic",
-      "category": "High-Res Daily EO",
-      "why": "Announced Merlin constellation for daily one-meter multi-spectral remapping. Sub-daily revisit competing with Planet on coverage. Commercial imagery at scale.",
-      "roast": "Satellogic just announced Merlin, their new one-meter daily remap play, which means they finally looked at Planet's pricing and thought, we can do that cheaper. You spent a decade at KSAT selling monitoring contracts to people who needed proof the oil slick happened yesterday, not last week, so you know exactly what daily revisit unlocks and what it costs when the competitor launches faster than you close. Satellogic has been the plucky South American underdog since 2010, still trying to prove they belong in the room with Maxar and Planet, still pitching ten spectral bands like it is a personality. The good news is they are well funded, the constellation is real, and they have actual customers who pay. The bad news is commercial EO is a knife fight and you would be walking in as the partnerships guy tasked with making Merlin feel differentiated when everyone already has a Planet contract and a Maxar backup. But if you want to sell imagery where the margin lives in frequency not resolution, and you miss the days when you had to explain why a client should pay for monitoring they did not think they needed yet, this is that fight all over again. Just with more Slack and fewer oil majors.",
-      "careers_url": "https://satellogic.com/careers/"
-    },
-    {
-      "company": "constellr",
-      "category": "Thermal Infrared EO",
-      "why": "Operating HiVE constellation for land surface temperature. Agriculture, utilities, infrastructure use cases. Thermal data gap Planet and Maxar do not fill.",
-      "roast": "constellr is the German thermal infrared play that everyone in ag tech and utilities has heard about but nobody has actually bought yet, which is the story of every climate dataset until somebody's insurance premium doubles and suddenly thermal anomaly detection stops being a nice to have. You sold EO services into offshore energy when the business case was build it and maybe they will pay, so you understand the gap between a working sensor and a working revenue model. constellr has the HiVE constellation flying, they have NanoAvionics building the buses, and they are generating actual land surface temperature data that matters for crop stress, power grid resilience, and construction planning. The problem is thermal IR is expensive to build, hard to sell, and the customers who need it most are municipalities and agricultural co-ops who move at the speed of procurement hell. If you join, you are the first commercial hire walking into a team of German engineers who have spent five years perfecting the sensor and approximately eight minutes thinking about how to make a farmer in Iowa pay for it. But if you want to sell a dataset that genuinely does not exist anywhere else at scale, and you still remember what it felt like to walk into Shell in 2012 with a monitoring capability nobody asked for and walk out with a contract, constellr is that same bet with worse margins and better science.",
-      "careers_url": "https://constellr.com/careers/"
-    },
-    {
       "company": "Kayrros",
       "category": "Energy & Methane Monitoring SaaS",
       "why": "Satellite-based energy and environmental analytics. Just acquired by Energy Aspects for market intelligence integration. Methane, oil storage, shipping tracking.",
@@ -6807,6 +6786,27 @@
       "why": "Vertically integrated platform delivering turnkey climate data products (GHG monitoring, methane detection, wildfire risk), not raw imagery",
       "roast": "Most EO companies are still trying to sell raw imagery to customers who have no idea what to do with a ten-terabyte TIFF file and a vague promise that insights exist somewhere inside it. Muon Space looked at that model and said no thanks, we will build the entire stack, fly the sensors ourselves, run the processing, and deliver the actual product the customer needs, which is a number they can put in a spreadsheet or a polygon they can show their board. Methane leak detection, wildfire risk scores, greenhouse gas monitoring. The pitch is that they are selling intelligence, not data, which is the only way this market ever scales beyond a few hundred technical buyers. You built GFW commercial licensing by identifying where derived products had private sector value even when the underlying data was free. Muon is doing the same thing but backwards, keeping the data closed and productizing the outputs. They have raised serious money, they are flying real hardware, and their customer list includes exactly the types of organizations that have budget authority and no patience for data engineering projects. The challenge is the same one you hit at GFW, which is that the pipeline narrows fast once you move past the early adopters. But if anyone can take a climate data product into insurance, agriculture, and financial risk modeling, it is someone who already did it once with fishing vessels and knows where the commercial conversation lives.",
       "careers_url": "https://muon.space/careers"
+    },
+    {
+      "company": "RIFFAI",
+      "category": "Hyperspectral EO / Climate Risk",
+      "why": "AI-based hyperspectral imaging for floods, wildfires, ecosystem detection. Singapore-based, EO domain fit.",
+      "roast": "Singapore hyperspectral startup doing flood and wildfire detection from orbit. You spent a decade at KSAT watching every polar-orbiting EO satellite of relevance fly overhead while you built oil spill monitoring into a multi-vertical portfolio, so you know exactly what hyperspectral can and cannot do. RIFFAI is selling AI-driven ecosystem shift detection to a market that still thinks Landsat 8 is cutting edge. The technology is real, the operational question is whether their buyers understand the difference between spectral signature and actual ground truth, because you learned that lesson in 2013 when ExxonMobil told you poor performance in many areas. The pitch is climate adaptation intelligence, the business model is enterprise SaaS to governments and insurance, and the org is young enough that they probably do not have a commercial function yet. You would be the one building it. Check the careers page, ask who their first five customers were, and if they say UN or AWS partnership without naming a paying contract, you know the distance between demo and revenue.",
+      "careers_url": "https://riffai.com/careers"
+    },
+    {
+      "company": "CREW Carbon",
+      "category": "Carbon Removal / MRV",
+      "why": "Accelerated mineral weathering with patented MRV sensors. Ocean-based CDR, fits maritime and carbon background.",
+      "roast": "Enhanced weathering startup out of the US doing ocean alkalinity measurement with patented CDR and MRV sensors in real time. They are combining mineral weathering, carbon chemistry monitoring, and integration with existing coastal infrastructure, which sounds like someone read the same enhanced weathering papers you did and decided to productize the sensor layer instead of the removal itself. You negotiated a 1.2 billion hectare Planet deal and built an ASN subsea cable partnership from a cold call, so you understand the three-party deal structure this requires. The coastal infrastructure play is smart because it avoids the we need to build everything from scratch trap that kills ocean CDR companies. The MRV sensor is the differentiated asset. The commercial question is whether they are selling carbon credits, selling MRV as a service to other removal projects, or licensing the sensor tech, because those are three different businesses. If the answer is all three, they have not decided yet, which means you would be the one deciding. That is either the perfect builder role or a signal that they have technology without a business model. Poke around, see if they have offtake, and if the CEO has a PhD and no commercial experience, you have seen this movie before.",
+      "careers_url": "https://crewcarbon.com/careers"
+    },
+    {
+      "company": "Calyx Global",
+      "category": "Carbon Markets / Ratings",
+      "why": "Carbon credit integrity ratings. SaaS platform for buyers, investors, traders. Fits GFW commercial licensing and market-making pattern.",
+      "roast": "Carbon credit ratings platform telling buyers which offsets are real and which are marketing. You built a commercial licensing program on top of a free platform at GFW by identifying where the open-access product creates demand for a verified commercial relationship, so you know exactly what Calyx is doing. They are the S&P for voluntary carbon markets, except the market is a dumpster fire and everyone knows it, which is why a ratings business exists at all. The SaaS model is sound, the customer base is buyers and brokers who got burned once and need someone else to do diligence, and the timing is decent because CORSIA Phase 1 is starting to force real money into the market. The question is whether corporate buyers trust a third-party rater or whether they just stop buying credits entirely, which is the actual trend. You would be selling credibility as a product, which is either the highest-margin business in climate tech or the hardest, depending on whether the voluntary carbon market survives the next eighteen months. If they have fifty enterprise customers and recurring revenue, take the call. If they are still venture-funded with no clear path to breakeven, it is a bet on market structure that might not materialize. You know how to evaluate that, you did it with GFW insurance deals under a Moore Foundation pilot when no one knew if the channel would exist.",
+      "careers_url": "https://calyxglobal.com/careers"
     }
   ],
   "morning_briefs": [
@@ -28541,21 +28541,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Biomass from space\nforty years of Arctic change\nthirty meter ground truth",
-    "Iran talks suspend\nother fronts opening now\nTrump says rapid pace",
-    "Planet three-meter\ncoastal coverage daily\nBlue Planet films it",
-    "Telemark season\nends, Wheeler still holds the snow\nJune monsoon inbound",
-    "Dashboard knows the wire\nbetter than the inbox does\nhaiku when it's clean",
-    "Bolton pleads guilty\nclassified docs in the den\nthe mustache wilts now",
-    "SpaceX IPO waits\none thirty five a share price\nretail can bid too",
-    "El Ni\u00f1o looms large\neighty percent by August heat\nGuterres warns hard",
-    "Red Sox eight under\ntwenty five and thirty three\nno power at all",
-    "A.J. Brown traded\nPatriots fan as a kid\nPhilly sends him home",
-    "World Environment Day\nAzerbaijan hosts the show\nsignals we send back",
-    "Taos primaries\nJune second the polling closed\nMiera wins again",
-    "LANL worker found\nRio Chiquito forest road\nMelissa gone still",
-    "Monsoon light at dusk\npinyon smoke across the mesa\nno one on the wire",
-    "Kachina Peak holds snow\nJune fourth and the couloirs wait\nnext winter too far",
     "Planet three meter\ntwo hundred million hectares\nAttenborough films",
     "Gorge bridge at sunrise\neighteen hundred feet of air\nsage and slash below",
     "Redhead at the bar\nher laugh cuts through the jukebox\nI buy her a drink",
@@ -28605,16 +28590,31 @@
     "Albedo ten-cent res\ntwo hundred klick orbit first\nlaunch window this year",
     "June eighth monsoon dry\neighty-three degrees at noon\nplaza dust swirling",
     "Marble Imaging seed\nfive-three million euro closed\nBremen VHR build",
-    "Red Sox visit Rays\nJune eight through tenth series\nNESN stream live feed"
+    "Red Sox visit Rays\nJune eight through tenth series\nNESN stream live feed",
+    "Maine votes ranked choice\ntoday, primary ballots cast\nno king on this card",
+    "H-1B fee struck down\none hundred grand per visa\njudge says no to Trump",
+    "Social Security\ntrust fund seven years away\nCongress still asleep",
+    "El Ni\u00f1o returns\neighty percent by August\nGuterres warns hard",
+    "Europe bakes in May\nthirty-five Celsius London\nheat dome ten degrees high",
+    "World Environment Day\nAzerbaijan hosts the plea\nlimbo for the Earth",
+    "NASA Eagle flies\nfour hundred wavelength channels\nmapping minerals",
+    "Red Sox beat Yankees\nContreras homers again\nChapman saves the ninth",
+    "Taos Canyon burns\nlightning-caused quarter acre\nhelicopters draw",
+    "Summer flights return\nJune twenty-eight Denver Dallas\nmesa sky opens",
+    "Telemark season\nends, Wheeler still holds the snow\nJune monsoon inbound",
+    "Dashboard knows the wire\nbetter than the inbox does\nhaiku when it's clean",
+    "Forty years Arctic\nbiomass from orbit reads\nthirty meter truth",
+    "Planet three-meter\ncoastal coverage daily\nBlue Planet films it",
+    "The pipeline refills\nuntil then the haiku hold\nTaos keeps the ground"
   ],
   "intros": [
     "Clean queue. Haiku hold the wire.",
     "Taos Plaza Live returns July twenty-three. Free music every Thursday through August.",
-    "Senate funds ICE through 2029. Murkowski alone voted no.",
-    "EarthCARE finished its second year. ESA Heritage radar merged with new sensors.",
+    "Taos summer air service returns June twenty-eight. Denver, Dallas, Austin.",
+    "NASA Eagle satellite approved. Four hundred wavelength channels for greenhouse gas plumes.",
     "Mindanao magnitude seven-eight at dawn. General Santos Airport reopened for relief flights.",
     "The pipeline will refill. Until then:",
-    "El Ni\u00f1o arrives with ninety percent certainty. The heat builds.",
+    "El Ni\u00f1o returns, eighty percent by August. Guterres calls it urgent climate warning.",
     "No offers to chew on. A haiku to sit with.",
     "All quiet on the pipeline front. Haiku dispatch:",
     "Tier 1: empty. Tier 2: empty. Tier haiku: full.",
