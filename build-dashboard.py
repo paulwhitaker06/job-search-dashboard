@@ -331,7 +331,7 @@ def compute_stat_cards(data):
     # Sent: applications with any status (total sent)
     sent = [a for a in apps if a.get("applied")]
     # Active Interviews
-    active_interviews = [a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")]
+    active_interviews = [a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "4th_interview_scheduled", "4th_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")]
     # Awaiting Response, includes speculative until it goes stale and gets retired
     awaiting = [a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach")]
     # Rejected / Closed, includes retired (separate visual section, same bucket for math)
@@ -472,7 +472,7 @@ def compute_stats(data):
     # Speculative rolls up into Awaiting until it goes stale and gets retired.
     # Retired rolls up into Rejected / Closed for the stat-card count.
     awaiting_response = len([a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach")])
-    active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
+    active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "4th_interview_scheduled", "4th_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
     rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled", "retired")])
     retired = len([a for a in apps if a.get("status") == "retired"])
     active_pipeline = len(ranked)
@@ -538,13 +538,36 @@ def extract_interviewers(text):
             out.append(n)
     return out
 
+INTERVIEW_STATUSES = ('1st_interview_scheduled','1st_interview_held','2nd_interview_scheduled','2nd_interview_held','3rd_interview_scheduled','3rd_interview_held','4th_interview_scheduled','4th_interview_held','final_round_scheduled','final_round_held','1st_interview','2nd_interview')
+
+def _resolve_interview_dt(a):
+    """Datetime for an interview. Prefer the structured interview_date field (ISO
+    YYYY-MM-DD), with a time pulled from next_action if present (default 10:00).
+    Fall back to parsing the next_action text (month-name form)."""
+    iso = a.get('interview_date')
+    if iso:
+        try:
+            base = datetime.strptime(iso, '%Y-%m-%d')
+        except (ValueError, TypeError):
+            base = None
+        if base:
+            hour, minute = 10, 0
+            tm = _re.search(r'(\d{1,2}):(\d{2})\s*(?:-\s*\d{1,2}:\d{2})?\s*(AM|PM|am|pm)?', a.get('next_action','') or '')
+            if tm:
+                hour = int(tm.group(1)); minute = int(tm.group(2))
+                ap = (tm.group(3) or '').upper()
+                if ap == 'PM' and hour < 12: hour += 12
+                elif ap == 'AM' and hour == 12: hour = 0
+            return base.replace(hour=hour, minute=minute)
+    return parse_interview_datetime(a.get('next_action'))
+
 def get_interviews(apps):
     """Apps in interview status, enriched with parsed dt + interviewers, sorted by imminence."""
     ivs = []
     for a in apps:
-        if a.get('status') not in ('1st_interview_scheduled','1st_interview_held','2nd_interview_scheduled','2nd_interview_held','3rd_interview_scheduled','3rd_interview_held','final_round_scheduled','final_round_held','1st_interview','2nd_interview'):
+        if a.get('status') not in INTERVIEW_STATUSES:
             continue
-        dt = parse_interview_datetime(a.get('next_action'))
+        dt = _resolve_interview_dt(a)
         ivs.append({**a, '_parsed_dt': dt, '_interviewers': extract_interviewers(a.get('next_action',''))})
     def sort_key(iv):
         dt = iv['_parsed_dt']
@@ -556,7 +579,8 @@ def get_interviews(apps):
     return ivs
 
 def build_next_interview_banner(interviews):
-    """Top banner for the most imminent upcoming interview with a live countdown."""
+    """Top banner: the most imminent interview as a hero countdown, plus a strip of
+    live countdowns for every other scheduled interview."""
     upcoming = [iv for iv in interviews if iv['_parsed_dt'] and iv['_parsed_dt'] > datetime.now()]
     if not upcoming:
         return ""
@@ -568,7 +592,7 @@ def build_next_interview_banner(interviews):
     role = iv.get('role','')
     job_url = iv.get('job_url','#')
     people = ' &middot; '.join(iv['_interviewers']) if iv['_interviewers'] else 'Interviewer TBD'
-    return f'''<div class="interview-banner">
+    hero = f'''<div class="interview-banner">
   <div class="ib-left">
     <div class="ib-label">NEXT INTERVIEW</div>
     <div class="ib-company">{company}</div>
@@ -583,6 +607,28 @@ def build_next_interview_banner(interviews):
     <a href="{job_url}" target="_blank" class="ib-link">Job Post &rarr;</a>
   </div>
 </div>'''
+    rest = upcoming[1:]
+    if not rest:
+        return hero
+    chips = ""
+    for r in rest:
+        rdt = r['_parsed_dt']
+        riso = rdt.strftime('%Y-%m-%dT%H:%M:%S')
+        rdisp = rdt.strftime('%a %b %-d, %-I:%M %p')
+        rco = r.get('company', '')
+        rppl = ' &middot; '.join(r['_interviewers']) if r['_interviewers'] else 'TBD'
+        chips += f'''    <div class="ib-chip">
+      <div class="ib-chip-co">{rco}</div>
+      <div class="ib-chip-count ib-countdown" data-deadline="{riso}">calculating&hellip;</div>
+      <div class="ib-chip-time">{rdisp} MDT &middot; {rppl}</div>
+    </div>
+'''
+    strip = f'''<div class="interview-strip">
+  <div class="ib-strip-label">ALSO SCHEDULED ({len(rest)})</div>
+  <div class="ib-strip-chips">
+{chips}  </div>
+</div>'''
+    return hero + strip
 
 def build_interview_prep_cards(interviews):
     """Row of interview prep cards — ONLY for interviews with a confirmed future datetime."""
@@ -1050,6 +1096,14 @@ def build_html(data):
   .interview-banner .ib-countdown {{ font-size:22px; font-weight:700; color:var(--cyan); font-variant-numeric:tabular-nums; letter-spacing:-0.5px; }}
   .interview-banner .ib-countdown.ib-live {{ color:var(--red); animation:pulse 1s ease-in-out infinite; }}
   .interview-banner .ib-time {{ font-size:11px; color:var(--text-muted); margin-top:2px; }}
+  .interview-strip {{ margin:-8px 0 16px; }}
+  .interview-strip .ib-strip-label {{ font-size:9px; letter-spacing:1.5px; color:var(--text-muted); font-weight:700; margin-bottom:6px; }}
+  .interview-strip .ib-strip-chips {{ display:flex; flex-wrap:wrap; gap:10px; }}
+  .ib-chip {{ background:linear-gradient(135deg, rgba(6,182,212,0.10), rgba(99,102,241,0.06)); border:1px solid rgba(6,182,212,0.3); border-radius:8px; padding:8px 14px; min-width:160px; }}
+  .ib-chip .ib-chip-co {{ font-size:12px; font-weight:700; color:var(--text); }}
+  .ib-chip .ib-chip-count {{ font-size:16px; font-weight:700; color:var(--cyan); font-variant-numeric:tabular-nums; letter-spacing:-0.3px; }}
+  .ib-chip .ib-chip-count.ib-live {{ color:var(--red); animation:pulse 1s ease-in-out infinite; }}
+  .ib-chip .ib-chip-time {{ font-size:10px; color:var(--text-muted); margin-top:1px; }}
   .interview-banner .ib-people {{ font-size:10px; color:var(--text-muted); opacity:0.8; margin-top:2px; }}
   .interview-banner .ib-right {{ flex:0 0 auto; }}
   .interview-banner .ib-link {{ font-size:11px; color:var(--cyan); padding:6px 12px; border:1px solid rgba(6,182,212,0.4); border-radius:6px; text-decoration:none; font-weight:600; }}
@@ -1653,12 +1707,10 @@ updateStaleness();
 
 // --- Interview countdown live ticker ---
 (function() {{
-  const el = document.querySelector('.ib-countdown');
-  if (!el) return;
-  const deadline = new Date(el.getAttribute('data-deadline')).getTime();
-  function tick() {{
-    const now = Date.now();
-    let d = deadline - now;
+  const els = Array.from(document.querySelectorAll('.ib-countdown'));
+  if (!els.length) return;
+  function tickOne(el) {{
+    let d = new Date(el.getAttribute('data-deadline')).getTime() - Date.now();
     if (d < 0) {{ el.textContent = 'LIVE NOW'; el.classList.add('ib-live'); return; }}
     const days = Math.floor(d / 86400000); d -= days * 86400000;
     const hrs = Math.floor(d / 3600000); d -= hrs * 3600000;
@@ -1666,6 +1718,7 @@ updateStaleness();
     const secs = Math.floor(d / 1000);
     el.textContent = (days > 0 ? days + 'd ' : '') + hrs + 'h ' + mins + 'm ' + secs + 's';
   }}
+  function tick() {{ els.forEach(tickOne); }}
   tick();
   setInterval(tick, 1000);
 }})();
