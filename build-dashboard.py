@@ -579,56 +579,40 @@ def get_interviews(apps):
     return ivs
 
 def build_next_interview_banner(interviews):
-    """Top banner: the most imminent interview as a hero countdown, plus a strip of
-    live countdowns for every other scheduled interview."""
+    """A row of equal-sized interview tickers, one per scheduled interview, each with a
+    live countdown. The soonest is accented as NEXT; all cards are the same size."""
     upcoming = [iv for iv in interviews if iv['_parsed_dt'] and iv['_parsed_dt'] > datetime.now()]
     if not upcoming:
         return ""
-    iv = upcoming[0]
-    dt = iv['_parsed_dt']
-    iso = dt.strftime('%Y-%m-%dT%H:%M:%S')
-    display = dt.strftime('%a %b %-d, %-I:%M %p') + ' MDT'
-    company = iv['company']
-    role = iv.get('role','')
-    job_url = iv.get('job_url','#')
-    people = ' &middot; '.join(iv['_interviewers']) if iv['_interviewers'] else 'Interviewer TBD'
-    hero = f'''<div class="interview-banner">
-  <div class="ib-left">
-    <div class="ib-label">NEXT INTERVIEW</div>
-    <div class="ib-company">{company}</div>
-    <div class="ib-role">{role}</div>
+    cards = ""
+    for idx, iv in enumerate(upcoming):
+        dt = iv['_parsed_dt']
+        iso = dt.strftime('%Y-%m-%dT%H:%M:%S')
+        display = dt.strftime('%a %b %-d, %-I:%M %p')
+        company = iv.get('company', '')
+        role = iv.get('role', '')
+        job_url = iv.get('job_url', '#')
+        people = ' &middot; '.join(iv['_interviewers']) if iv['_interviewers'] else 'Interviewer TBD'
+        s = iv.get('status', '')
+        if s.startswith('final_round'): stage = 'Final Round'
+        elif s.startswith('4th'): stage = '4th Round'
+        elif s.startswith('3rd'): stage = '3rd Round'
+        elif s.startswith('2nd'): stage = '2nd Round'
+        elif s.startswith('1st'): stage = '1st Round'
+        else: stage = 'Interview'
+        label = 'NEXT INTERVIEW' if idx == 0 else stage.upper() + ' SCHEDULED'
+        accent = ' iv-next' if idx == 0 else ''
+        cards += f'''  <div class="iv-card{accent}">
+    <div class="iv-label">{label}</div>
+    <div class="iv-company">{company}</div>
+    <div class="iv-role">{role}</div>
+    <div class="ib-countdown iv-count" data-deadline="{iso}">calculating&hellip;</div>
+    <div class="iv-time">{display}</div>
+    <div class="iv-people">{people}</div>
+    <a href="{job_url}" target="_blank" class="iv-link">Job Post &rarr;</a>
   </div>
-  <div class="ib-mid">
-    <div class="ib-countdown" data-deadline="{iso}">calculating&hellip;</div>
-    <div class="ib-time">{display}</div>
-    <div class="ib-people">{people}</div>
-  </div>
-  <div class="ib-right">
-    <a href="{job_url}" target="_blank" class="ib-link">Job Post &rarr;</a>
-  </div>
-</div>'''
-    rest = upcoming[1:]
-    if not rest:
-        return hero
-    chips = ""
-    for r in rest:
-        rdt = r['_parsed_dt']
-        riso = rdt.strftime('%Y-%m-%dT%H:%M:%S')
-        rdisp = rdt.strftime('%a %b %-d, %-I:%M %p')
-        rco = r.get('company', '')
-        rppl = ' &middot; '.join(r['_interviewers']) if r['_interviewers'] else 'TBD'
-        chips += f'''    <div class="ib-chip">
-      <div class="ib-chip-co">{rco}</div>
-      <div class="ib-chip-count ib-countdown" data-deadline="{riso}">calculating&hellip;</div>
-      <div class="ib-chip-time">{rdisp} MDT &middot; {rppl}</div>
-    </div>
 '''
-    strip = f'''<div class="interview-strip">
-  <div class="ib-strip-label">ALSO SCHEDULED ({len(rest)})</div>
-  <div class="ib-strip-chips">
-{chips}  </div>
-</div>'''
-    return hero + strip
+    return f'<div class="interview-tickers">\n{cards}</div>'
 
 def build_interview_prep_cards(interviews):
     """Row of interview prep cards — ONLY for interviews with a confirmed future datetime."""
@@ -1086,28 +1070,18 @@ def build_html(data):
   details summary::before {{ content:'\\25b8'; font-size:14px; transition:transform 0.2s; }}
   details[open] summary::before {{ transform:rotate(90deg); }}
 
-  /* Interview countdown banner */
-  .interview-banner {{ display:flex; align-items:center; gap:20px; background:linear-gradient(135deg, rgba(6,182,212,0.18), rgba(99,102,241,0.12)); border:1px solid rgba(6,182,212,0.4); border-radius:10px; padding:14px 20px; margin-bottom:16px; }}
-  .interview-banner .ib-left {{ flex:1; min-width:0; }}
-  .interview-banner .ib-label {{ font-size:9px; letter-spacing:1.5px; color:var(--cyan); font-weight:700; margin-bottom:4px; }}
-  .interview-banner .ib-company {{ font-size:16px; font-weight:700; color:var(--text); }}
-  .interview-banner .ib-role {{ font-size:12px; color:var(--text-muted); }}
-  .interview-banner .ib-mid {{ flex:1.4; text-align:center; min-width:0; }}
-  .interview-banner .ib-countdown {{ font-size:22px; font-weight:700; color:var(--cyan); font-variant-numeric:tabular-nums; letter-spacing:-0.5px; }}
-  .interview-banner .ib-countdown.ib-live {{ color:var(--red); animation:pulse 1s ease-in-out infinite; }}
-  .interview-banner .ib-time {{ font-size:11px; color:var(--text-muted); margin-top:2px; }}
-  .interview-strip {{ margin:-8px 0 16px; }}
-  .interview-strip .ib-strip-label {{ font-size:9px; letter-spacing:1.5px; color:var(--text-muted); font-weight:700; margin-bottom:6px; }}
-  .interview-strip .ib-strip-chips {{ display:flex; flex-wrap:wrap; gap:10px; }}
-  .ib-chip {{ background:linear-gradient(135deg, rgba(6,182,212,0.10), rgba(99,102,241,0.06)); border:1px solid rgba(6,182,212,0.3); border-radius:8px; padding:8px 14px; min-width:160px; }}
-  .ib-chip .ib-chip-co {{ font-size:12px; font-weight:700; color:var(--text); }}
-  .ib-chip .ib-chip-count {{ font-size:16px; font-weight:700; color:var(--cyan); font-variant-numeric:tabular-nums; letter-spacing:-0.3px; }}
-  .ib-chip .ib-chip-count.ib-live {{ color:var(--red); animation:pulse 1s ease-in-out infinite; }}
-  .ib-chip .ib-chip-time {{ font-size:10px; color:var(--text-muted); margin-top:1px; }}
-  .interview-banner .ib-people {{ font-size:10px; color:var(--text-muted); opacity:0.8; margin-top:2px; }}
-  .interview-banner .ib-right {{ flex:0 0 auto; }}
-  .interview-banner .ib-link {{ font-size:11px; color:var(--cyan); padding:6px 12px; border:1px solid rgba(6,182,212,0.4); border-radius:6px; text-decoration:none; font-weight:600; }}
-  .interview-banner .ib-link:hover {{ background:rgba(6,182,212,0.15); }}
+  /* Interview countdown tickers — equal-sized cards, side by side (wrap if more) */
+  .interview-tickers {{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:16px; }}
+  .iv-card {{ flex:1 1 320px; min-width:260px; background:linear-gradient(135deg, rgba(6,182,212,0.10), rgba(99,102,241,0.06)); border:1px solid rgba(6,182,212,0.25); border-radius:10px; padding:14px 18px; }}
+  .iv-card.iv-next {{ border-color:rgba(6,182,212,0.6); background:linear-gradient(135deg, rgba(6,182,212,0.2), rgba(99,102,241,0.12)); box-shadow:0 0 0 1px rgba(6,182,212,0.25); }}
+  .iv-card .iv-label {{ font-size:9px; letter-spacing:1.5px; color:var(--cyan); font-weight:700; margin-bottom:4px; }}
+  .iv-card .iv-company {{ font-size:16px; font-weight:700; color:var(--text); }}
+  .iv-card .iv-role {{ font-size:12px; color:var(--text-muted); margin-bottom:8px; }}
+  .iv-card .iv-count {{ font-size:24px; font-weight:700; color:var(--cyan); font-variant-numeric:tabular-nums; letter-spacing:-0.5px; }}
+  .iv-card .iv-count.ib-live {{ color:var(--red); animation:pulse 1s ease-in-out infinite; }}
+  .iv-card .iv-time {{ font-size:11px; color:var(--text-muted); margin-top:2px; }}
+  .iv-card .iv-people {{ font-size:11px; color:var(--text-muted); margin-top:1px; }}
+  .iv-card .iv-link {{ display:inline-block; margin-top:8px; font-size:11px; color:var(--cyan); text-decoration:none; }}
   @keyframes pulse {{ 0%,100% {{ opacity:1; }} 50% {{ opacity:0.5; }} }}
 
   /* Interview prep cards */
@@ -1170,7 +1144,7 @@ def build_html(data):
   /* Seasonal badge */
   .season-badge {{ display:inline-block; padding:3px 11px; border-radius:12px; font-size:11px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase; color:#0f1117; box-shadow:0 1px 8px rgba(0,0,0,0.25); }}
 
-  @media (max-width:768px) {{ body {{ padding:12px; }} .header {{ flex-direction:column; gap:8px; }} .header .meta {{ text-align:left; }} table {{ font-size:12px; }} .interview-banner {{ flex-direction:column; text-align:center; gap:10px; }} }}
+  @media (max-width:768px) {{ body {{ padding:12px; }} .header {{ flex-direction:column; gap:8px; }} .header .meta {{ text-align:left; }} table {{ font-size:12px; }} .interview-tickers {{ flex-direction:column; }} }}
   /* Tap-to-toggle stat-card tooltips (mobile-friendly fallback for hover) */
   .stat-card.touched .tooltip {{ display:block !important; }}
   /* Tighter mobile layout and touch affordances */
