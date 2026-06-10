@@ -99,7 +99,7 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 130,
+    "active_pipeline": 135,
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
@@ -5087,6 +5087,126 @@
       "rank": 115
     },
     {
+      "company": "Airbus",
+      "role": "Expert - New Civil & Parapublic (C&P) Segments & Business Development",
+      "score": 42.0,
+      "proxy_score": null,
+      "effective_score": 42.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-06-10",
+      "scqa": "",
+      "verdict": "This role has multiple hard blockers that make it unactionable for Paul. The JD explicitly requires \"10-15 years of experience in helicopter aviation\" and \"expert knowledge of industry regulations/CAR\" plus \"deep understanding of DGCA regulations/CARs, EASA/FAA regulations\" specific to helicopter operations. Paul's 15 years are in satellite/EO commercial development (KSAT 2011-2021, GFW 2021-2026), not helicopter aviation. While his regulatory-shaping pattern (writing AMSA RFP language, influencing NOPSEMA) matches the JD's \"contribute as an expert to policy making, drafting/amending of CARs,\" the domain gap is absolute\u2014helicopter aviation regulations vs. maritime satellite monitoring regulations are entirely different bodies of knowledge. SPM scores 7 because the role is textbook pattern-match: building new commercial segments (HEMS, law enforcement) where none exist, shaping CARs/regulatory frameworks, multi-stakeholder coordination across operators/ministries/regulators/state governments. But pattern fit cannot overcome hard sector and technical expertise requirements.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ag.wd3.myworkdayjobs.com/Airbus/job/New-Delhi/Expert---New-Civil---Parapublic--C-P--Segments---Business-Development_JR10415721"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-10",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "New Delhi",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "JD requires 10-15 years of experience in helicopter aviation with expert knowledge of industry regulations/CAR and exposure to commercial side of helicopter operations. Paul has 15 years in satellite/EO commercial development (KSAT, GFW), not helicopter aviation.",
+          "severity": "hard"
+        },
+        {
+          "type": "technical_expertise",
+          "detail": "JD requires expert knowledge of DGCA regulations/CARs, EASA/FAA helicopter regulations, and deep understanding of helicopter operations. Paul's regulatory expertise is in maritime/offshore oil & gas satellite monitoring, not aviation.",
+          "severity": "hard"
+        },
+        {
+          "type": "relocation",
+          "detail": "Role is based in New Delhi, India with responsibilities across South Asia (Nepal, Bhutan, Sri Lanka, Bangladesh, Maldives). Paul is currently in Taos, NM.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 7,
+        "CO": 4,
+        "GC": 2
+      },
+      "score_range": [
+        37.0,
+        49.5
+      ],
+      "confidence": "low",
+      "tier_uncertain": true,
+      "rank": 116
+    },
+    {
+      "company": "Airbus",
+      "role": "Business Development Manager",
+      "score": 42.0,
+      "proxy_score": null,
+      "effective_score": 42.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-06-10",
+      "scqa": "",
+      "verdict": "This role carries two hard blockers that make it genuinely unactionable. First, the JD explicitly requires recent Royal Navy experience at officer level and an established Royal Navy network: \"Recently transitioned out of the Royal Navy (ideally >officer level)\" and \"We are looking for someone who can bring their own contacts to the role.\" Paul has no Royal Navy background. Second, the role requires UK SC Security Clearance eligibility, which Paul as a US national may not be able to obtain. These gaps trigger RF cap at 4 and IL cap at 3. The role itself is account management of an established MOD/Navy relationship, not new market creation (SA 4). SPM scores 6 for regulated/government buyer complexity but lacks Paul's specific patterns. This is a pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ag.wd3.myworkdayjobs.com/Airbus/job/Portsmouth/Business-Development-Manager_JR10391058"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-10",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Portsmouth (+3 more)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "sector_network",
+          "detail": "Role requires recent transition from Royal Navy (ideally officer level+) and established Royal Navy network/contacts. JD states 'We are looking for someone who can bring their own contacts to the role' and 'Recently transitioned out of the Royal Navy' - Paul has no Royal Navy background.",
+          "severity": "hard"
+        },
+        {
+          "type": "security_clearance",
+          "detail": "Role requires eligibility to gain UK SC Security Clearance. Paul is US-based with US work authorization; unclear if he can obtain UK security clearance.",
+          "severity": "hard"
+        },
+        {
+          "type": "relocation",
+          "detail": "Role based in Portsmouth/Chippenham/Guildford/Stevenage, UK with regular travel to client sites UK-wide. Paul currently in Taos, NM.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 2
+      },
+      "score_range": [
+        41.0,
+        43.5
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 117
+    },
+    {
       "company": "Octopus Energy Group (Electroverse)",
       "role": "Partnerships Manager - European Speaking",
       "score": 41.5,
@@ -5137,10 +5257,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 116
+      "rank": 118
     },
     {
-      "rank": 117,
+      "rank": 119,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -5220,7 +5340,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 118
+      "rank": 120
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -5273,10 +5393,65 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 119
+      "rank": 121
     },
     {
-      "rank": 120,
+      "company": "Overstory",
+      "role": "Enterprise Customer Success Manager",
+      "score": 41.5,
+      "proxy_score": null,
+      "effective_score": 41.5,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-06-10",
+      "scqa": "",
+      "verdict": "This role carries two hard blockers that make it genuinely unactionable for Paul. First, the JD explicitly requires \"Progressive experience working with California-based utilities\" and a \"Demonstrated track record of driving real outcomes in the utility sector\"\u2014Paul's 15 years in EO span offshore energy (O&G), maritime surveillance, and fisheries, but not electric utility vegetation management. His PA Consulting background was water/wastewater utility security, not electric grid resilience. Second, the role itself is post-sale customer success management\u2014\"Manage 1-3 of our most strategic accounts\" and \"guiding them through delivery seasons\"\u2014which is account retention and adoption work on an established motion, not the market-building Paul thrives in. The company is at a commercial stage (serving utility partners across the Americas), but the role is inheriting strategic accounts, not creating new demand. SPM scores 6 because the company's problem (vegetation risk on power lines causing wildfires) involves regulated buyers and multi-stakeholder coordination (utilities, regulators, communities), but the role itself does not ask Paul to architect those coalitions\u2014customers already exist and buy. This is a pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.eu.greenhouse.io/overstory/jobs/4792521101"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-10",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Remote: San Francisco Bay Area",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "JD requires 'Progressive experience working with California-based utilities' and 'Demonstrated track record of driving real outcomes in the utility sector.' Paul has 15 years in commercial EO/satellite services spanning offshore energy, maritime surveillance, and fisheries\u2014but no documented electric utility sector experience. His PA Consulting work (2001-2010) was water/wastewater utility security risk, not electric utility vegetation management.",
+          "severity": "hard"
+        },
+        {
+          "type": "role_mismatch",
+          "detail": "This is a post-sale customer success management role focused on account retention, adoption, change management, and renewal\u2014not market-building or demand creation. Paul's identity is 'market builder, NOT market inheritor.' The JD states customers are already 'our most important customers' and the work is 'guiding them through delivery seasons' and 'expanding and renewing contracts,' which is account management of an established motion.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 5
+      },
+      "score_range": [
+        41.5,
+        42.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 122
+    },
+    {
+      "rank": 123,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -5326,7 +5501,7 @@
       }
     },
     {
-      "rank": 121,
+      "rank": 124,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -5416,7 +5591,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 122
+      "rank": 125
     },
     {
       "company": "gable",
@@ -5464,7 +5639,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 123
+      "rank": 126
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -5512,7 +5687,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 124
+      "rank": 127
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -5560,7 +5735,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 125
+      "rank": 128
     },
     {
       "company": "Planet",
@@ -5628,7 +5803,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 126
+      "rank": 129
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -5686,7 +5861,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 127
+      "rank": 130
     },
     {
       "company": "",
@@ -5739,10 +5914,140 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 128
+      "rank": 131
     },
     {
-      "rank": 129,
+      "company": "Airbus",
+      "role": "Commercial Director Services (CDS)",
+      "score": 40.0,
+      "proxy_score": null,
+      "effective_score": 40.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-06-10",
+      "scqa": "",
+      "verdict": "This Airbus Commercial Director Services role in Beijing is a hard pass due to two fundamental gaps. First, the JD explicitly requires \"5+ year experience in Aviation and / or business commercial domain\" with a preference for an \"Aviation major\" degree\u2014Paul's 15 years are in EO satellite services and maritime monitoring (KSAT, GFW), not aviation/aerospace services to airlines. Second, the role is fundamentally about executing and scaling EXISTING service lines (\"dedicated to one or several Service Lines among FHS, Upgrade and Lifecycle Services, Training Services\") within an established global framework, not building new markets. The job involves \"managing and closing the service sales campaign\" for portfolios already defined, with standard offers and pricing set centrally\u2014this is a mature-market account management and regional execution role at a large aerospace prime, the opposite of Paul's market-builder profile. While SPM scores 6 for multi-stakeholder complexity (coordinating CAD, marketing, contracts, affiliates), the role itself is wrong. The Beijing location is a soft blocker requiring international relocation.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ag.wd3.myworkdayjobs.com/Airbus/job/Beijing-Area/Commercial-Director-Services--CDS-_JR10404645-1"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-10",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Beijing Area",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "experience_requirement",
+          "detail": "JD requires '5+ year experience in Aviation and / or business commercial domain' with 'Bachelor and above degree, in Preferable Aviation major.' Paul has 15 years in commercial EO/satellite services and maritime monitoring, not aviation/aerospace commercial experience. While his KSAT and GFW work touched space sector infrastructure, this role is specifically aviation services (aircraft upgrades, training, connectivity for airlines), a distinct sector.",
+          "severity": "hard"
+        },
+        {
+          "type": "role_shape",
+          "detail": "Role is managing and scaling EXISTING service lines ('dedicated to one or several Service Lines among FHS, Upgrade and Lifecycle Services, Training Services, Digital Solutions, Connectivity Solutions') with established portfolios, standard offers, and pricing frameworks already defined centrally. This is a regional execution and account management role within a mature global commercial organization, not building a new market or function.",
+          "severity": "hard"
+        },
+        {
+          "type": "location",
+          "detail": "Role is based in Beijing Area, China. Paul is currently in Taos, NM and would need to relocate internationally.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 5,
+        "GC": 2
+      },
+      "score_range": [
+        38.5,
+        41.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": true,
+      "rank": 132
+    },
+    {
+      "company": "Airbus",
+      "role": "Head of Airbus Tech Hub Netherlands",
+      "score": 40.0,
+      "proxy_score": null,
+      "effective_score": 40.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-06-10",
+      "scqa": "",
+      "verdict": "This role carries four hard blockers that make it genuinely unactionable: required aerospace engineering graduate degree Paul does not hold, mandatory Netherlands-based work experience and network Paul lacks, and required Dutch language fluency. RF is capped at 4 and IL at 3 per hard-gap rules. The role itself is program/portfolio management and ecosystem coordination for an established tech hub\u2014not building a commercial function from scratch\u2014so SA scores 4 (running an established engine). SPM scores 7 because multi-stakeholder aerospace innovation consortia with government partners is adjacent to Paul's patterns, though the role focuses on R&D coordination rather than commercial deal architecture. Despite strong pattern adjacency, the stacked hard requirements and wrong role shape make this a clear pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ag.wd3.myworkdayjobs.com/Airbus/job/Amsterdam-Area/Head-of-Airbus-Tech-Hub-Netherlands_JR10402467-1"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-10",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Amsterdam Area",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "required_credential",
+          "detail": "Masters/Doctorate in Aerospace/Engineering with experience in aerospace industrial and/or research domain required. Paul has BA Geology + MS Hydrology coursework + MBA, no aerospace engineering degree.",
+          "severity": "hard"
+        },
+        {
+          "type": "required_experience",
+          "detail": "Experience working in a research and/or innovation environment in the Netherlands required. Paul has no documented Netherlands work experience.",
+          "severity": "hard"
+        },
+        {
+          "type": "required_network",
+          "detail": "Experience in the aerospace industry in the Netherlands with network and knowledge of global and local aviation technological developments required. Paul's aerospace network is primarily US/Australia/Norway-based, not Dutch.",
+          "severity": "hard"
+        },
+        {
+          "type": "language",
+          "detail": "Must be able to communicate effectively in English and Dutch (verbal and written). Paul does not speak Dutch.",
+          "severity": "hard"
+        },
+        {
+          "type": "relocation",
+          "detail": "Residency in the Netherlands required; position based in Amsterdam Area.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 7,
+        "CO": 6,
+        "GC": 2
+      },
+      "score_range": [
+        38.0,
+        41.5
+      ],
+      "confidence": "high",
+      "tier_uncertain": true,
+      "rank": 133
+    },
+    {
+      "rank": 134,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -5787,7 +6092,7 @@
       }
     },
     {
-      "rank": 130,
+      "rank": 135,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -5837,7 +6142,7 @@
       }
     },
     {
-      "rank": 131,
+      "rank": 136,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -34707,6 +35012,2031 @@
           "source": "Topcon Positioning Systems",
           "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-Germany/Key-Account-Manager-Machine-Distributor-DACH_JR106282",
           "reason": "Topcon Positioning Systems is a precision positioning and GNSS equipment manufacturer for construction/agriculture markets, off-domain from Paul's climate-adjacent/EO/maritime focus.",
+          "confidence": "high"
+        }
+      ],
+      "aggregator_junk_dropped": 43
+    },
+    {
+      "date": "2026-06-10",
+      "digest_count": 308,
+      "scored_count": 32,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Airbus",
+          "role": "Commercial Director Services (CDS)",
+          "score": 40.0,
+          "score_range": [
+            38.5,
+            41.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": true
+        },
+        {
+          "company": "Airbus",
+          "role": "Expert - New Civil & Parapublic (C&P) Segments & Business Development",
+          "score": 42.0,
+          "score_range": [
+            37.0,
+            49.5
+          ],
+          "confidence": "low",
+          "tier_uncertain": true
+        },
+        {
+          "company": "Airbus",
+          "role": "Business Development Manager",
+          "score": 42.0,
+          "score_range": [
+            41.0,
+            43.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Airbus",
+          "role": "Head of Airbus Tech Hub Netherlands",
+          "score": 40.0,
+          "score_range": [
+            38.0,
+            41.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": true
+        },
+        {
+          "company": "Overstory",
+          "role": "Enterprise Customer Success Manager",
+          "score": 41.5,
+          "score_range": [
+            41.5,
+            42.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        }
+      ],
+      "stretch": [],
+      "skipped_duplicates": [
+        {
+          "company": "INTERNATIONAL BUSINESS DEVELOPMENT AND SALES MANAGER VACANCY",
+          "role": "INTERNATIONAL BUSINESS DEVELOPMENT AND SALES MANAGER VACANCY",
+          "reason": "url_already_in_ranked_opportunities:Satlantis"
+        },
+        {
+          "company": "Director of Carbon Markets",
+          "role": "Director of Carbon Markets",
+          "reason": "url_already_in_ranked_opportunities:Acre"
+        },
+        {
+          "company": "Strategy & Operations Lead",
+          "role": "Strategy & Operations Lead",
+          "reason": "url_already_in_ranked_opportunities:Overstory"
+        },
+        {
+          "company": "Solutions Engineer",
+          "role": "Solutions Engineer",
+          "reason": "url_already_in_ranked_opportunities:Overstory"
+        }
+      ],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "ECO Canada - Climate Change",
+          "role": "Business Development Manager - Environmental, Climate Change & Sustainability Projects at ECO Canada - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Head of Global Business Development & Partnerships",
+          "score": 39.5,
+          "score_range": [
+            38.0,
+            43.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Commercial Director",
+          "score": 36.5,
+          "score_range": [
+            35.5,
+            40.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "Vantor",
+          "role": "Sales Director, Japan",
+          "score": 31.5,
+          "score_range": [
+            30.5,
+            37.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Head of Sales Germany (m/w/d)",
+          "score": 31.5,
+          "score_range": [
+            29.0,
+            32.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Head of Business Development North America",
+          "score": 38.0,
+          "score_range": [
+            38.0,
+            44.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Head of Digital and Analytics Factory - US",
+          "score": 36.0,
+          "score_range": [
+            33.5,
+            37.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Senior Sales Solutions Engineer",
+          "score": 36.5,
+          "score_range": [
+            34.5,
+            38.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Vantor",
+          "role": "Solutions Engineer, International Government",
+          "score": 36.0,
+          "score_range": [
+            36.0,
+            36.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Vantor",
+          "role": "Geospatial Solutions Architect",
+          "score": 29.0,
+          "score_range": [
+            29.0,
+            31.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Commercial & Contract Manager (h/f)",
+          "score": 31.5,
+          "score_range": [
+            31.0,
+            35.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Program Manager GE LEO Constellation Ground Segment and Operation (m/w/d)",
+          "score": 33.5,
+          "score_range": [
+            33.5,
+            35.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Senior Sales Engineer",
+          "score": 38.0,
+          "score_range": [
+            38.0,
+            39.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Technical Sales / Solution Engineer (m/w/d)",
+          "score": 28.5,
+          "score_range": [
+            25.5,
+            29.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Sales Contract Negotiator",
+          "score": 32.0,
+          "score_range": [
+            31.0,
+            34.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Vantor",
+          "role": "Sales Engineer",
+          "score": 30.5,
+          "score_range": [
+            30.5,
+            31.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "IIX Global - Climate Change",
+          "role": "AVP / VP, Platform Innovation \u2014 IIX Platforms - Vietnam at IIX Global - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Service Strategy, Market & Business Analysis",
+          "score": 35.0,
+          "score_range": [
+            33.0,
+            36.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Circ",
+          "role": "Director, Marketing",
+          "score": 32.5,
+          "score_range": [
+            32.5,
+            34.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Backup Service Product Manager (All Genders)",
+          "score": 16.0,
+          "score_range": [
+            13.0,
+            21.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Principle Product Manager",
+          "score": 39.5,
+          "score_range": [
+            39.5,
+            41.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "constellr GmbH",
+          "role": "Chief Operating Officer",
+          "score": 36.0,
+          "score_range": [
+            34.5,
+            37.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Regional Portfolio and Account Manager - India",
+          "score": 32.5,
+          "score_range": [
+            32.5,
+            32.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "ADS Key Account Manager - (Public Safety and Security and Air Power Services)",
+          "score": 31.5,
+          "score_range": [
+            31.5,
+            36.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Product Manager",
+          "score": 30.0,
+          "score_range": [
+            25.0,
+            31.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "INSPECTORIO | Techstars Job Board",
+          "role": "Lead Customer Success Manager @ INSPECTORIO | Techstars Job Board",
+          "score": 35.5,
+          "score_range": [
+            35.5,
+            38.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Apex Companies - Climate Change",
+          "role": "Environmental Principal at Apex Companies - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Account Executive: New Partnership Generation & Ecosystem Development",
+          "url": "https://www.careers-page.com/unravel-carbon-pte-ltd/job/v6yv3xr6?utm_medium=free_job_board&utm_source=jobsincarbon",
+          "reason": "fetch_unreadable:http_404"
+        },
+        {
+          "company": "Airbus",
+          "role": "Commercial Director Services",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Singapore-Area/Commercial-Director-Services_JR10416396",
+          "reason": "intra_run_duplicate:airbus|commercial director services"
+        },
+        {
+          "company": "Sri Lanka at IIX Global - Climate Change",
+          "role": "AVP / VP, Platform Innovation - IIX Platforms | Sri Lanka at IIX Global - Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488997743-avp-vp-platform-innovation-iix-platforms-|-sri-lanka",
+          "reason": "jd_text_too_short"
+        },
+        {
+          "company": "kone",
+          "role": "Carbon Lead",
+          "url": "https://kone.wd3.myworkdayjobs.com/careers/job/london/carbon-lead_r0661274-1/apply?source=jobsincarbon",
+          "reason": "fetch_unreadable:http_404"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "308 entries. No Tier 1-2; 5 Tier 3 added. T3 5. 4 dedup \u00b7 4 unscored.",
+      "jobs_processed": 308,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "308 entries. No Tier 1-2; 5 Tier 3 added. T3 5. 4 dedup \u00b7 4 unscored. 225 skipped by prefilter (off-domain / wrong-function). 43 aggregator junk URLs dropped pre-score.",
+      "prefilter_skipped": [
+        {
+          "title": "SKYWISE Commercial Director India and South Asia",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/New-Delhi/SKYWISE-Commercial-Director-India-and-South-Asia_JR10416126",
+          "reason": "Skywise is Airbus's aviation data platform for airlines and MRO operators, outside Paul's climate/EO/maritime domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Fisheries Technician 1-Monterey Bay Area Ocean Salmon Port Sampler",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/pacific-states-marine-fisheries-commission/jobs/82111349-fisheries-technician-1-monterey-bay-area-ocean-salmon-port-sampler",
+          "reason": "Fisheries Technician 1 is an IC field sampling role, wrong function and seniority for VP/Director-level commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Supply Chain",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Head-of-Supply-Chain_JR100525",
+          "reason": "Axiom Space Head of Supply Chain is a pure operations/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Supply Chain",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bingen-WA/Head-of-Supply-Chain_JR10409725",
+          "reason": "Head of Supply Chain is a pure operations function outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Advanced Analytics Leader (m/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain-Advanced-Analytics-Leader--m-f-_JR10380144",
+          "reason": "Supply Chain Advanced Analytics Leader is a supply chain analytics/operations function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Export Control : Foreign Regulations, Sanctions & Investigations (m/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/Head-of-Export-Control---Foreign-Regulations--Sanctions---Investigations--m-f-_JR10404658-1",
+          "reason": "Head of Export Control is a compliance/legal function, not commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Charg\u00e9(e) de comptes, Ing\u00e9nierie clients et strat\u00e9gie de personnalisation de la cabine / Customer Engineering Account Manager and Cabin Customization Strategy",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mirabel/Charg-e--de-comptes--Ingnierie-clients-et-stratgie-de-personnalisation-de-la-cabine---Customer-Engineering-Account-Manager-and-Cabin-Customization-Strategy_JR10398432-1",
+          "reason": "Airbus Intelligence posting is for aircraft cabin customization engineering, completely off-domain from Paul's EO/satellite/maritime/climate focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Design Services & Compliance Verification Engineer (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Head-of-Design-Services---Compliance-Verification-Engineer--d-f-m-_JR10405878-1",
+          "reason": "Title indicates engineering compliance role (Compliance Verification Engineer), not commercial leadership, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Werkstudent (d/m/w) A320 Value Stream Management - Chief Industrial Communications Strategy",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Werkstudent--d-m-w--A320-Value-Stream-Management---Chief-Industrial-Communications-Strategy_JR10412064",
+          "reason": "Werkstudent is a German student intern role, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Project Supply Manager (d/f/m) Earth Observation, Science and Exploration Programs",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Immenstaad-am-Bodensee/Project-Supply-Manager--d-f-m--Earth-Observation--Science-and-Exploration-Programs_JR10373257",
+          "reason": "Project Supply Manager is a supply chain/procurement function, not a commercial/BD/partnerships role, and clearly outside Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "#CORE DIGITAL CAMPUS - SAP Product Manager Sales & Distribution",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Albacete/XMLNAME--CORE-DIGITAL-CAMPUS----SAP-Product-Manager-Sales---Distribution_JR10387465",
+          "reason": "SAP Product Manager is an internal enterprise systems role (SAP SD module), not a commercial/BD function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Account Executive, U.S. Government (TS)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Herndon-VA/Senior-Account-Executive--US-Government--TS-_R23656",
+          "reason": "TS clearance requirement indicates defense/IC/national security role, which is a hard exclusion in Paul's standing exclusion list.",
+          "confidence": "high"
+        },
+        {
+          "title": "Software Sales Account Manager",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-TX-US/Software-Sales-Account-Manager_JR107198",
+          "reason": "Topcon Positioning Systems is a GNSS/positioning hardware and software company serving construction, agriculture, and surveying markets, which is off-domain from Paul's climate-adjacent, EO/maritime, mission-driven target market.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Data Analyst & Improver (H/F)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/Supply-Chain-Data-Analyst---Improver--H-F-_JR10400058-1",
+          "reason": "Supply Chain Data Analyst is an operations/analytics IC role, not commercial leadership or BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 - Apprenti Ing\u00e9nieur supply chain (All gender)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Saint-Nazaire-Area/ALT-2026---Apprenti-Ingnieur-supply-chain--All-gender-_JR10397157",
+          "reason": "Apprenti Ing\u00e9nieur (apprentice engineer) supply chain role is wrong function and wrong seniority, clearly junior IC role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager for Engineering Means & Services (F/M)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain-Quality-Manager-for-Engineering-Means---Services--F-M-_JR10404585",
+          "reason": "Supply Chain Quality Manager is a wrong-function operations/quality role, not commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Team Leader",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Coimbra/Supply-Chain-Team-Leader_JR10418898",
+          "reason": "Supply Chain Team Leader is an operations/supply chain management role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager FAL Services",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mobile-Area-AL/Supply-Chain-Quality-Manager-FAL-Services---PIACS---Mobile-AL_JR10416561",
+          "reason": "Supply Chain Quality Manager FAL Services is a supply chain/operations quality role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager (Tijuana)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mexico-City-Area/Supply-Chain-Quality-Manager--Tijuana-_JR10413732-1",
+          "reason": "Supply Chain Quality Manager is a quality/operations function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain & Quality Manager - Cockpit & Avionics equipment (Atlanta or Washington D.C.)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Atlanta-Area-GA/Supply-Chain---Quality-Manager---Cockpit---Avionics-equipment--Atlanta-or-Washington-DC-_JR10405376",
+          "reason": "Supply Chain & Quality Manager for Cockpit & Avionics is an operational/engineering function outside Paul's commercial BD profile, and Airbus Intelligence avionics equipment is off-domain from climate/EO/maritime.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager (SCQM) TAOPOZ1 Avionic Systems",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe/Supply-Chain-Quality-Manager--SCQM--TAOPOZ1-Avionic-Systems_JR10409386-1",
+          "reason": "Supply Chain Quality Manager is a supply chain operations/quality assurance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Material and Process Engineer - Materials Compliance & Sustainability",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Material-and-Process-Engineer---Materials-Compliance---Sustainability_JR10418353",
+          "reason": "Material and Process Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Detail Parts Supply Chain and Quality Manager (Temp Agency)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Sevilla-Area/Detail-Parts-Supply-Chain-and-Quality-Manager--Temp-Agency-_JR10415202",
+          "reason": "Supply Chain and Quality Manager is an operations/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sp\u00e9cialiste de la cha\u00eene d'approvisionnement et Qualit\u00e9 / Supply Chain Quality Specialist (SCQS)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Spcialiste-de-la-chane-d-approvisionnement-et-Qualit----Supply-Chain-Quality-Specialist--SCQS-_JR10407329-1",
+          "reason": "Supply Chain Quality Specialist is an operations/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Plant Supply Chain Interface Coordinator",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Coimbra/Plant-Supply-Chain-Interface-Coordinator_JR10417641",
+          "reason": "Plant Supply Chain Interface Coordinator is an operational supply chain coordination role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 - Apprenti(e) Supply Chain & Warehousing (F/H)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/ALT-2026---Apprenti-e--Supply-Chain---Warehousing--F-H-_JR10394850",
+          "reason": "Apprenti(e) is an apprenticeship/internship role in supply chain and warehousing, wrong seniority and wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain and Quality Specialist SCQS",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain-and-Quality-Specialist-SCQS_JR10414431",
+          "reason": "Supply Chain and Quality Specialist is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "VIE-Germany-Geospatial AI Business Developer & Market Analyst",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Immenstaad-am-Bodensee/VIE-Germany-Geospatial-AI-Business-Developer---Market-Analyst--m-f-d-_JR10339261",
+          "reason": "VIE program is for recent graduates under age 28, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Manufacturing Engineer- Industrial Supply Chain",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Manufacturing-Engineer--Industrial-Supply-Chain_JR10415939-1",
+          "reason": "Manufacturing Engineer is a pure technical engineering role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "A220 Supply Chain Quality Manager - Propulsion (Hartford, CT)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Herndon-Area-VA/A220-Supply-Chain-Quality-Manager---Propulsion--Hartford--CT-_JR10371441",
+          "reason": "A220 Supply Chain Quality Manager is a supply chain/quality operations role in aerospace manufacturing, wrong function and off-domain from Paul's EO/climate/maritime commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain and Quality Management",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Supply-Chain-and-Quality-Management_JR10396231-1",
+          "reason": "Supply Chain and Quality Management is a pure operations/quality function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Active Antenna RF Architect",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe/Active-Antenna-RF-Architect_JR10411666-1",
+          "reason": "Active Antenna RF Architect is a pure technical engineering role, not a commercial or partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Information Security Officer & Product Regulatory Compliance Officer (m/w/d)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Stuttgart-Area/Chief-Information-Security-Officer---Product-Regulatory-Compliance-Officer--m-w-d-_JR10404377",
+          "reason": "Chief Information Security Officer is a CISO cybersecurity leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Training Business Development Intern",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Beijing-Area/Training-Business-Development-Intern_JR10415312",
+          "reason": "Title indicates intern-level role, well below Paul's VP/Director seniority requirement.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 - Apprenti en Gestion de la Performance Supply Chain (All gender)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Saint-Nazaire-Area/ALT-2026---Apprenti-en-Gestion-de-la-Performance-Supply-Chain--All-gender-_JR10392333",
+          "reason": "Apprenti (apprentice/intern) role in supply chain performance management is wrong seniority and wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "#Discover II 2026-2027 Supply chain Services & MRO Intership",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Sevilla-Area/XMLNAME--Discover-II-2026-2027-Supply-chain-Services---MRO-Intership_JR10412739",
+          "reason": "Internship role in supply chain/MRO operations is wrong seniority and wrong function for VP/Director-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "PIMCC - Supply Chain and Quality Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/PIMCC---Supply-Chain-and-Quality-Manager_JR10411221-1",
+          "reason": "Supply Chain and Quality Manager is a supply chain operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain and Quality Intern",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Beijing-Area/Supply-Chain-and-Quality-Intern_JR10414197",
+          "reason": "Supply Chain and Quality Intern is an internship role, not a VP/Director-level commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 - Apprenti en Supply chain-gestion de stock (h/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/ALT-2026---Apprenti-en-Supply-chain-gestion-de-stock---h-f-_JR10392643",
+          "reason": "Apprenti (apprentice) role is an entry-level training position, wrong seniority for a VP/Director-level candidate.",
+          "confidence": "high"
+        },
+        {
+          "title": "Cross Plant Supply Chain Intern",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Tianjin-Area/Cross-Plant-Supply-Chain-Intern_JR10407362",
+          "reason": "Title is 'Cross Plant Supply Chain Intern' which is explicitly an internship role, wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "#Discover II 2026-2027 Supply Chain Quality Internship",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Supply-Chain-Quality-Internship_JR10409402",
+          "reason": "Supply Chain Quality Internship is wrong seniority and wrong function, not a senior commercial leadership role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Herndon-Area-VA/Supply-Chain-Quality-Manager_JR10409168-1",
+          "reason": "Supply Chain Quality Manager is a supply chain operations/quality assurance role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Cross Plant Supply Chain",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Tianjin-Area/Cross-Plant-Supply-Chain_JR10402695-1",
+          "reason": "Cross Plant Supply Chain is an operations/supply chain role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "DISCOVER II 2026-2027 INTERNSHIP Supply Chain & Quality Services",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/DISCOVER-II-2026-2027-INTERNSHIP-Supply-Chain---Quality-Services_JR10411512",
+          "reason": "Internship role for 2026-2027 in Supply Chain & Quality Services, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "#Discover II 2026 2027 Supply chain Services & MRO Internship",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Supply-chain-Services---MRO-Internship_JR10411059",
+          "reason": "Internship role, clearly wrong seniority for 25 years of VP/Director-level experience.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain and Quality Manager (m/w/d) \u2013 Military Support Center Germany",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Donauwrth/Supply-Chain-and-Quality-Manager--m-w-d----Military-Support-Center-Germany_JR10362516-1",
+          "reason": "Supply Chain and Quality Manager is an operations function role, not commercial/BD/partnerships, and the Military Support Center context suggests defense/clearance work outside Paul's domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "SCQM - Supply Chain and Quality Manager - Aerostructures Doors (Temp Agency)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/SCQM---Supply-Chain-and-Quality-Manager----Aerostructures-Doors--Temp-Agency-_JR10411670",
+          "reason": "Supply Chain and Quality Manager for Aerostructures Doors is aerospace manufacturing operations role, wrong function entirely.",
+          "confidence": "high"
+        },
+        {
+          "title": "#Discover II 2026-2027 Supply Chain Composite Materials Internship",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Supply-Chain-Composite-Materials-Internship_JR10408647",
+          "reason": "Internship role targeting 2026-2027 students in supply chain operations, wrong seniority for VP/Director-level commercial leader with 25 years experience.",
+          "confidence": "high"
+        },
+        {
+          "title": "ATR - Supply Chain Quality Specialist",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/ATR---Supply-Chain-Quality-Specialist_JR10411761",
+          "reason": "Supply Chain Quality Specialist is a quality/ops function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "#Discover II 2026-2027 Customer Services Business Development & Major Repairs Team support Intership",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Customer-Services-Business-Development---Major-Repairs-Team-support-Intership_JR10411029",
+          "reason": "Title clearly indicates internship role, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "#Discover II 2026-2027 / Active Antena RF Engineer Internship",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---Active-Antena-RF-Engineer-Internship_JR10410179",
+          "reason": "Active Antenna RF Engineer Internship is a pure technical engineering role at wrong seniority level, not commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "#BECA-AHE MRO Supply Chain & Logistics projects",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Albacete/XMLNAME--BECA-AHE-MRO-Supply-Chain---Logistics-projects_JR10406856",
+          "reason": "BECA-AHE MRO Supply Chain & Logistics projects is an operations/supply chain role outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "SCQM (Supply Chain Quality Manager)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Airbus/Buyer_JR10367729-1",
+          "reason": "Supply Chain Quality Manager is a supply chain operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF Engineer",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Portsmouth/RF-Engineer_JR10403816",
+          "reason": "RF Engineer is a pure technical engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "SOM Supply Chain Operations Manager (Temp Agency)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Sevilla-Area/SOM-Supply-Chain-Operations-Manager--Temp-Agency-_JR10405352",
+          "reason": "SOM Supply Chain Operations Manager is a supply chain operations role, not a commercial/BD/partnerships function, and temp agency designation suggests wrong seniority for Paul's VP/Director search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Global Supply Chain Specialist",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Santiago-De-Quertaro_Area/Global-Supply-Chain-Specialist_JR10399150",
+          "reason": "Global Supply Chain Specialist is an ops/supply chain function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager (SCQM)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Portsmouth/Supply-Chain-Quality-Manager--SCQM-_JR10372957-1",
+          "reason": "Supply Chain Quality Manager is an operations/quality function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Analyst (TS/SCI)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Tampa-FL/Geospatial-Analyst--TS-SCI-_R24039",
+          "reason": "TS/SCI clearance required, defense/IC role, matches Paul's standing hard exclusion for national security work.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Geospatial Analyst",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Tampa-FL/Senior-Geospatial-Analyst---Team-Lead--TS-SCI-_R24009",
+          "reason": "TS/SCI clearance requirement visible in title indicates defense/IC/national security role, which is a hard exclusion.",
+          "confidence": "high"
+        },
+        {
+          "title": "Master Thesis in Geospatial AI",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Linkping/Master-Thesis-in-Automated-Image-Selection-for-3D-_R22866",
+          "reason": "Master Thesis role is an academic internship for current students, not a VP/Director-level commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Applied Geospatial ML Engineer",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Herndon-VA/Applied-Geospatial-ML-Engineer_R23846",
+          "reason": "Applied Geospatial ML Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Analyst",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Reston-VA/Geospatial-Analyst---Senior_R23050",
+          "reason": "Geospatial Analyst is a technical IC analysis role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Data Scientist",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/McLean-VA/Geospatial-Data-Scientist_R23262",
+          "reason": "Geospatial Data Scientist is a technical engineering/data science role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Supply Chain FP&A Manager",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Fort-Atkinson-WI/Supply-Chain-FP-A-Sr-Manager_JR106698",
+          "reason": "Supply Chain FP&A is a finance function role (Financial Planning & Analysis), not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Manager Construction \u2013 Mass Distribution\u200b",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-Germany/Business-Development-Manager-Construction---Mass-Distribution-_JR106639",
+          "reason": "Topcon Positioning Systems is construction equipment and positioning technology, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Representative (BDR)",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://jobs.ashbyhq.com/allspice/db45ffdd-f2a0-42ba-99ac-0a755087040d?utm_source=jobs.greentownlabs.com",
+          "reason": "BDR is junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Platform Engineering",
+          "source": "Overstory",
+          "url": "https://job-boards.eu.greenhouse.io/overstory/jobs/4777118101",
+          "reason": "Director of Platform Engineering is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Satellite Constellation Manager",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/7992823",
+          "reason": "Senior Satellite Constellation Manager is a technical engineering role managing satellite operations, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Quality",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Head-of-Quality_JR100526",
+          "reason": "Head of Quality is a pure operations/compliance function outside Paul's commercial BD and partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Engineering Analysis",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Director--Engineering-Analysis_JR100471",
+          "reason": "Director, Engineering Analysis is a technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Electrical Engineering",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Director--Electrical-Engineering_JR100472",
+          "reason": "Director, Electrical Engineering is a pure technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President of System Engineering & Integration",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Vice-President-of-System-Engineering---Integration_JR100464",
+          "reason": "VP of System Engineering & Integration is a technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable du domaine des solutions num\u00e9riques d'entreprise / Head of Corporate Digital Solutions Domain",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable-du-domaine-des-solutions-numriques-d-entreprise---Head-of-Corporate-Digital-Solutions-Domain_JR10409251",
+          "reason": "Head of Corporate Digital Solutions Domain is an internal IT/enterprise systems leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Business Continuity Manager (m/w/d)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Head-of-Business-Continuity-Manager--m-w-d-_JR10394442",
+          "reason": "Business Continuity Manager is a risk management and operational resilience function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable des Contrats de services et Garanties / Head of Contracts Services and Warranty",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable-des-contrats-de-services---Head-of-Services-Contracts_JR10379336",
+          "reason": "Responsable des Contrats (Head of Contracts Services and Warranty) is a contracts management/legal/warranty administration function, not a commercial BD or partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable de l'Offre du Portefeuille Commercial S&S (Support & Services) (h/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/Responsable-de-l-Offre-du-Portefeuille-Commercial-S-S--Support---Services---h-f-_JR10402403",
+          "reason": "Title is in French for a role based in Marseille area, requiring French fluency; Paul is US-based in Taos NM with no indication of French language capability or willingness to relocate to France.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Electronics Engineering",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Portsmouth/Head-of-Electronics-Engineering_JR10408438",
+          "reason": "Head of Electronics Engineering is a pure technical engineering role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Quality Engineering & DOA Monitoring Lead (m/f)- Airbus Commercial Engineering Center",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Krakow-Area/Quality-Engineering---DOA-Monitoring-Lead---m-f---Airbus-Commercial-Engineering-Center_JR10418331-1",
+          "reason": "Quality Engineering & DOA Monitoring Lead is a technical quality/compliance engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of A220 Program Operations",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Herndon-VA/Head-of-A220-Program-Operations_JR10417836",
+          "reason": "Airbus A220 Program Operations is commercial aircraft manufacturing, entirely off-domain from Paul's climate/EO/maritime stack.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Material Support & Logistics",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Grand-Prairie-TX/Director--Material-Support---Logistics_JR10414093",
+          "reason": "Director, Material Support & Logistics is a supply chain/operations function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "#ET19 Ing\u00e9nieur Confirm\u00e9 en Furtivit\u00e9 Radar et SER (F/H)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/XMLNAME--ET19-Ingnieur-Expriment-en-Militarisation--F-H-_JR10378897",
+          "reason": "Title is pure technical engineering role (Radar Stealth Engineer / RCS) with no commercial or BD component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commodity Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Commodity-Manager_JR10414597",
+          "reason": "Commodity Manager is a procurement/supply chain function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Satair - Head of Customer Resolution Services Asia Pacific and China",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Singapore-Area/Head-of-Customer-Resolution-Services-Asia-Pacific-and-China_JR10419075-1",
+          "reason": "Satair is Airbus's aviation spare parts business serving airlines and MRO providers, completely off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Communications Commodity Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Communications-Commodity-Manager_JR10412755-1",
+          "reason": "Communications Commodity Manager is a procurement/supply chain function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chef Pr\u00e9paration Manufacturi\u00e8re et Essais Sol / Head of Work Preparation & Ground Test",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Chef-Prparation-Manufacturire-et-Essais-Sol---Head-of--Work-Preparation---Ground-Test_JR10405579-1",
+          "reason": "Title is in French and clearly describes a manufacturing/ground test engineering leadership role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Navigation and Surveillance Systems Commodity Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Navigation-and-Surveillance-Systems-Commodity-Manager_JR10413474-1",
+          "reason": "Navigation and Surveillance Systems Commodity Manager is a procurement/supply chain role managing hardware components, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Logistics Americas",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Dulles-VA/Head-of-Logistics-Americas_JR10403859-1",
+          "reason": "Head of Logistics Americas is a supply chain/operations function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Python Software Engineer - Frameworks & Data Products",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Gdansk/Python-Software-Engineer---Frameworks---Data-Products_JR10398577-1",
+          "reason": "Python Software Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Antenna System Design and Validation Spain",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Head-of-TSEDR2---Antenna-System-Design-and-Validation-Spain_JR10397421-1",
+          "reason": "Head of Antenna System Design and Validation is a pure technical engineering leadership role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Working student Industrial Strategy (d/w/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Working-student-Industrial-Strategy--d-w-m-_JR10407511",
+          "reason": "Working student role is a part-time university student position, wrong seniority and function for VP/Director-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Logistics Operations Spain",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Albacete/HO-logistics-Operations-Spain_JR10401063",
+          "reason": "Head of Logistics Operations Spain is a supply chain/logistics function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Systems Engineer (m/f/d) \u2013 Eurofighter Radar",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Manching/Systems-Engineer--m-f-d----Eurofighter-Radar_JR10416378",
+          "reason": "Eurofighter Radar is a defense/military systems engineering role, hard exclusion on defense/IC/national security.",
+          "confidence": "high"
+        },
+        {
+          "title": "Cabin Program Director",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Newport-Beach-CA/Cabin-Program-Director_JR10410436",
+          "reason": "Airbus Intelligence posting is for Cabin Program Director, which is aircraft cabin interior program management, off-domain from Paul's EO/climate/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Campaign Manager Middle East Sales",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Riyadh/Campaign-Manager-Middle-East-Sales_JR10391880-1",
+          "reason": "Riyadh-based role at company with Saudi ownership creates sales conversation Paul does not want to have, parallels UP42 standing exclusion.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 : Ventes Syst\u00e8mes et Services Satcom (technico-commercial) F/H",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Paris-Area/ALT-2026---Ventes-Systmes-et-Services-Satcom--technico-commercial--F-H_JR10388132",
+          "reason": "Title is in French for an Airbus graduate trainee program (ALT 2026) in Satcom sales, wrong seniority and likely France-based.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Assistant to the Head of Defence & Space (India & South Asia)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/New-Delhi/Executive-Assistant-to-the-Head-of-Defence---Space--India---South-Asia-_JR10409534-1",
+          "reason": "Executive Assistant is an administrative support role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Mission & Armament Commodity Manager (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Manching/Mission---Armament-Commodity-Manager--d-f-m-_JR10402504",
+          "reason": "Mission & Armament Commodity Manager is a defense procurement role involving weapons systems, which falls under Paul's hard exclusion for defense/IC/national security roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commodity Buyer - Electrical Systems (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Immenstaad-am-Bodensee/Commodity-Buyer---Electrical-Systems--d-f-m-_JR10388485-1",
+          "reason": "Commodity Buyer is a procurement/supply chain role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of System Integration Team",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Krakow-Area/Head-of-System-Integration-Team_JR10415405-1",
+          "reason": "Head of System Integration Team is a technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Satair - Head of Inbound (Warehouse)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Singapore-Area/Satair---Head-of-Inbound--Warehouse-_JR10406621",
+          "reason": "Satair Head of Inbound (Warehouse) is a logistics/warehouse operations role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commodity Manager for Materials & Standard Parts SpS",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Commodity-Manager-for-Materials---Standard-Parts-SpS_JR10397904",
+          "reason": "Commodity Manager for Materials & Standard Parts is a procurement/supply chain function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "ATR - Head of Customer Acceptance and Delivery Managers",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/ATR---Head-of-Customer-Acceptance-and-Delivery-Managers_JR10412269",
+          "reason": "ATR is Airbus's commercial aircraft turboprop division; this is a post-delivery customer acceptance role in aerospace manufacturing, off-domain from Paul's EO/maritime/climate stack.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Systems",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Portsmouth/Head-of-Systems_JR10406866",
+          "reason": "Head of Systems at Airbus Intelligence is a technical engineering leadership role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Structure Design & integration Engineer Senior (f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Krakow-Area/Head-of-Structure-Design---integration-Engineer-Senior--f-m-_JR10413891-1",
+          "reason": "Head of Structure Design & Integration Engineer Senior is a pure technical engineering role focused on hardware/mechanical design, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Stress Analysis & integration Engineer (f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Krakow-Area/Head-of-Stress-Analysis---integration-Engineer--f-m-_JR10413895-1",
+          "reason": "Head of Stress Analysis & Integration Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Quality (d/m/w)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Stuttgart-Area/Head-of-Quality--d-m-w-_JR10386027",
+          "reason": "Head of Quality is an operations/quality assurance function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Engineering - Resource & Competency",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Wichita-KS/Head-of-Engineering---Resource---Competency_JR10364959",
+          "reason": "Head of Engineering - Resource & Competency is a pure engineering management role focused on resource allocation and competency development, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Risk Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Portsmouth/Risk-Manager_JR10380688-1",
+          "reason": "Risk Manager is a finance/compliance function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Werkstudent (m/w/d) zur Unterst\u00fctzung des Head of Solutions Management",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Ulm-Area/Werkstudent--m-w-d--zur-Untersttzung-des-Head-of-Solutions-Management_JR10411374",
+          "reason": "Werkstudent is a German student intern/working student position, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Cyber Sales Manager Germany (d/m/w)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Cyber-Sales-Manager-Germany--d-m-w-_JR10389516-1",
+          "reason": "Cyber Sales Manager is cybersecurity sales, off-domain from Paul's climate/EO/maritime commercial leadership background.",
+          "confidence": "high"
+        },
+        {
+          "title": "VIE Risk Management and Aviation Safety (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Donauwrth/VIE-Risk-Management-and-Aviation-Safety--d-f-m-_JR10405704",
+          "reason": "VIE Risk Management and Aviation Safety is an aviation safety and compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable Contr\u00f4le FAL et Pr\u00e9-FAL / Head of FAL & Pre-FAL Controlling",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable-Contrle-FAL-et-Pr-FAL---Head-of-FAL---Pre-FAL-Controlling_JR10411089-1",
+          "reason": "FAL (Final Assembly Line) Controlling is a finance/operations control function in aerospace manufacturing, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of General Ledger Accounting ADS France",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Head-of-General-Ledger-Accounting-ADS-France_JR10392756",
+          "reason": "Head of General Ledger Accounting is a Finance function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Lineside Support and Work Prep",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Kinston-NC/Head-of-Lineside-Support-and-Work-Prep_JR10404342",
+          "reason": "Head of Lineside Support and Work Prep is manufacturing operations role (production line support), not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director of Human Resources, EHS and Facilities",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Kinston-NC/Senior-Director-of-Human-Resources--EHS-and-Facilities_JR10407980",
+          "reason": "Senior Director of HR, EHS and Facilities is clearly an HR/operations function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Export Credit Agencies Due Diligence (\u201cECA\u201d) Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Export-Credit-Agencies-Due-Diligence---ECA---Manager_JR10402632-1",
+          "reason": "ECA Due Diligence Manager is a finance/credit risk compliance function, not a commercial or BD role.",
+          "confidence": "high"
+        },
+        {
+          "title": "#BECA AHE",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/XMLNAME--BECA-AHE---AI-Strategy-Lead---Engineering-Transformation_JR10407319",
+          "reason": "BECA title is uninterpretable and likely a non-English internship or trainee program ('beca' = scholarship/internship in Spanish), wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Executive, USSOCOM (TS/SCI)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Herndon-VA/Account-Executive--USSOCOM--TS-SCI-_R23882",
+          "reason": "TS/SCI clearance-required role with USSOCOM (US Special Operations Command) is defense/IC work, a hard exclusion per Paul's standing criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Mission Director (Secret Clearance)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Longmont-CO/Mission-Director--Secret-Clearance-_R23982",
+          "reason": "Secret Clearance requirement indicates defense/IC/national security role, which is a hard exclusion in Paul's standing criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, DevOps and Mission Infrastructure",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Westminster-CO/Director--DevOps-and-Mission-Infrastructure_R23964",
+          "reason": "Director of DevOps and Mission Infrastructure is a pure technical infrastructure role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Corporate Attorney",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Westminster-CO/Director--Corporate-Attorney_R23382",
+          "reason": "Director, Corporate Attorney is a legal function role, clearly outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Director of AI & Architecture",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Westminster-CO/Sr-Director-of-AI---Architecture_R23780",
+          "reason": "Sr. Director of AI & Architecture is a technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "GIS DevOps Engineer",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Herndon-VA/GIS-DevOps-Engineer_R23791",
+          "reason": "GIS DevOps Engineer is a pure technical infrastructure role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "GIS Engineer (Mid)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Bolling-AFB-DC/GIS-Engineer--Mid-_R23747-1",
+          "reason": "GIS Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "GIS Engineer (Senior)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Bolling-AFB-DC/GIS-Engineer--Senior-_R23746",
+          "reason": "Bolling AFB DC location signals defense/IC/clearance-required role, which is a hard exclusion in Paul's standing criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "GIS Engineer (SME)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Bolling-AFB-DC/GIS-Engineer--SME-_R23745",
+          "reason": "GIS Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative",
+          "source": "Normative",
+          "url": "https://careers.normative.io/jobs/5805365-sales-development-representative",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role (SDR), wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Schmidt Marine",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/california-state-coastal-conservancy/jobs/82236962-job-posting-project-support-analyst",
+          "reason": "Project Support Analyst is an analyst IC role without commercial or BD function, wrong-function for Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Environmental Health and Safety",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717596-director-of-environmental-health-and-safety",
+          "reason": "Director of Environmental Health and Safety is a workplace safety and compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Ing\u00e9nieur Technico-Commercial \u2013 Solutions C\u00e2blage & Environnement Datacenter",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717955-ingenieur-technico-commercial-solutions-cablage-environnement-datacenter",
+          "reason": "Datacenter cabling infrastructure role is off-domain for climate-adjacent work, unrelated to EO/maritime/sustainability stack.",
+          "confidence": "high"
+        },
+        {
+          "title": "MUNISYS - Ing\u00e9nieur Technico-Commercial \u2013 Solutions C\u00e2blage & Environnement Datacenter",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717955",
+          "reason": "MUNISYS datacenter cabling and infrastructure is off-domain; pure enterprise IT infrastructure unrelated to climate/EO/maritime.",
+          "confidence": "high"
+        },
+        {
+          "title": "Associate Director, Grants",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52573/associate-director-grants/?LinkSource=PromotedJob",
+          "reason": "Associate Director, Grants is a grant-making/program management role in the nonprofit sector, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Foundation Relations",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52576/director-foundation-relations/?LinkSource=PromotedJob",
+          "reason": "Director, Foundation Relations is a fundraising role, not a commercial/BD/partnerships role in Paul's domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Director",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52581/executive-director-/",
+          "reason": "Executive Director at unspecified nonprofit is wrong-function role without commercial/BD/partnerships component, and no company information to assess mission/domain fit.",
+          "confidence": "high"
+        },
+        {
+          "title": "Territory Sales Representative",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-WI-US/Sales-Representative_JR106358",
+          "reason": "Territory Sales Representative is a junior IC quota-carrier role without strategic leadership component, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Representative",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Warrendale-PA/Sales-Representative_JR106719",
+          "reason": "Topcon Positioning Systems is a precision positioning and geospatial hardware company outside Paul's climate/EO/maritime domain focus, and 'Sales Representative' is an IC quota-carrier title at wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director CXE",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://jobs.ashbyhq.com/allspice/1a40722a-3fb0-4cdd-933d-99ecc90fb6d2?utm_source=jobs.greentownlabs.com",
+          "reason": "CXE is almost certainly Customer Experience / Customer Success Executive, an IC customer success role outside Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Carbon Project Developer",
+          "source": "Jobs in Carbon",
+          "url": "https://anthesisgroup.pinpointhq.com/postings/de9f8323-fc00-4b45-8c8c-5145f03fb0b0",
+          "reason": "Senior Carbon Project Developer is a project development IC role in the voluntary carbon market, not a commercial leadership or BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supervisor Operations Forest Carbon",
+          "source": "Jobs in Carbon",
+          "url": "https://apply.workable.com/techconnect/#jobs?id_vacancy=ehhdx0jng",
+          "reason": "Supervisor Operations Forest Carbon is an operational/field management role in forestry operations, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Manager, Carbon, Commodities & Trade, WIB FCF BCM",
+          "source": "Jobs in Carbon",
+          "url": "https://ebuu.fa.ap1.oraclecloud.com/hcmui/candidateexperience/en/sites/cx/job/69409?utm_medium=jobshare&src=sns-10620",
+          "reason": "Title indicates a corporate finance/commodities trading role ('WIB FCF BCM' suggests internal division codes), not a commercial leadership or BD/partnerships role in Paul's climate-adjacent EO/mission space.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Technology Officer",
+          "source": "Overstory",
+          "url": "https://job-boards.eu.greenhouse.io/overstory/jobs/4724552101",
+          "reason": "Chief Technology Officer is a senior technical/engineering leadership role, not a commercial/BD/partnerships function, and Paul's context explicitly notes Overstory buyer base is electric utilities where his PA Consulting credential is water/wastewater infrastructure.",
+          "confidence": "high"
+        },
+        {
+          "title": "Staff Product Manager, AI",
+          "source": "Overstory",
+          "url": "https://job-boards.eu.greenhouse.io/overstory/jobs/4871257101",
+          "reason": "Staff Product Manager, AI is a product management IC role at a company Paul has already evaluated and passed on due to electric utility buyer base mismatch with his PA Consulting water/wastewater background.",
+          "confidence": "high"
+        },
+        {
+          "title": "Materials & Process Principal Engineer",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Materials---Process-Principal-Engineer_JR100367",
+          "reason": "Materials & Process Principal Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Government Relations Manager",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Remote-DC/Government-Relations-Manager_JR100514-1",
+          "reason": "Axiom Space is a commercial space station company, and Government Relations Manager is a lobbying/public policy function outside Paul's commercial BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Procurement",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Senior-Manager--Procurement_JR100463",
+          "reason": "Senior Manager Procurement is a supply chain/operations function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lunar Terrain Vehicle (LTV) Principal Operations Engineer (NASA LTVS Award Contingent)",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Lunar-Terrain-Vehicle--LTV--Principal-Operations-Engineer--NASA-LTVS-Award-Contingent-_JR100327",
+          "reason": "Principal Operations Engineer is a technical engineering role for lunar vehicle operations, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lunar Terrain Vehicle (LTV), Chief Engineer (NASA LTVS Award Contingent)",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Lunar-Terrain-Vehicle--LTV---Chief-Engineer--NASA-LTVS-Award-Contingent-_JR100291",
+          "reason": "Chief Engineer is a pure technical engineering role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lunar Terrain Vehicle (LTV) Principal Electrical Engineer (NASA LTVS Award Contingent)",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Lunar-Terrain-Vehicle--LTV--Principal-Electrical-Engineer--NASA-LTVS-Award-Contingent-_JR100302",
+          "reason": "Principal Electrical Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lunar Terrain Vehicle (LTV) Principal Mechanical Engineer (NASA LTVS Award Contingent)",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Lunar-Terrain-Vehicle--LTV--Principal-Mechanical-Engineer--NASA-LTVS-Award-Contingent-_JR100298-1",
+          "reason": "Principal Mechanical Engineer is a pure technical engineering role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lunar Terrain Vehicle (LTV) Principal Mockups Engineer (NASA LTVS Award Contingent)",
+          "source": "Axiom Space",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Lunar-Terrain-Vehicle--LTV--Principal-Mockups-Engineer--NASA-LTVS-Award-Contingent-_JR100309",
+          "reason": "Principal Mockups Engineer is a pure technical engineering role designing hardware mockups for lunar vehicles, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 - Apprenti(e) en communication interne & intelligence artificielle (IA) (h/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/ALT-2026---Apprenti-e--en-communication-interne---intelligence-artificielle--IA---h-f-_JR10393495",
+          "reason": "Apprenti(e) indicates apprenticeship/intern role in internal communications and AI, wrong seniority and function.",
+          "confidence": "high"
+        },
+        {
+          "title": "VIE 2026 - USA - Aftermarket Services Regional Intelligence monitoring (m/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Herndon-Area-VA/VIE-2026---USA---Aftermarket-Services-Regional-Intelligence-monitoring--m-f-_JR10402907",
+          "reason": "VIE is French international volunteer program for junior professionals under 28, wrong seniority for Paul's VP/Director target.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT 2026 Apprenti(e) en Intelligence Artificielle et Quantification d\u2019Incertitudes (h/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Paris-Area/ALT-2026-Apprenti-e--en-Intelligence-Artificielle-et-Quantification-d-Incertitudes--h-f-_JR10393463",
+          "reason": "Apprenti(e) indicates apprenticeship/internship role, wrong seniority level for VP/Director commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Skywise",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Principal-Product-Manager_JR10401890",
+          "reason": "Skywise is Airbus's aviation data platform for airline operations and maintenance, not Earth observation or climate-adjacent work\u2014off-domain company context for this role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Tax Compliance Officer F/M",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Paris-Area/Tax-Compliance-Officer-F-M_JR10417637",
+          "reason": "Tax Compliance Officer is a Finance/Compliance function role, clearly outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Export Control Compliance Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Herndon-Area-VA/Export-Control-Compliance-Manager_JR10411796",
+          "reason": "Export Control Compliance Manager is a legal/compliance function role, not a commercial or partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Digital Finance Product Manager for O2C & P2P",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bristol-Area/IT-Product-Manager--Financial-Operations--AP-AR-_JR10362181-1",
+          "reason": "Digital Finance Product Manager for O2C & P2P is a finance/IT operations role (Order-to-Cash, Procure-to-Pay), not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "ITOPS Lead - SAP Native HANA , ABAP/UI5",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/ITOPS-Lead----Analytics_JR10416667",
+          "reason": "ITOPS Lead SAP HANA/ABAP role is pure IT operations technical position, wrong function for commercial BD leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal MRB/Liaison Engineer",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Wichita-KS/Principal-Stress-Engineer_JR10391472",
+          "reason": "Principal MRB/Liaison Engineer and Principal Stress Engineer are pure technical engineering roles, not commercial/BD/partnerships functions.",
+          "confidence": "high"
+        },
+        {
+          "title": "ATR - Supplier Account Manager Referent",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/ATR---Supplier-Account-Manager-Referent_JR10415191-1",
+          "reason": "Supplier Account Manager Referent is a procurement/supply chain role managing vendor relationships, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Engineer for future SATCOM projects (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Chief-Engineer-for-future-SATCOM-projects--d-f-m-_JR10414247",
+          "reason": "Chief Engineer is a pure technical engineering role, not a commercial or BD function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager of Military Costing",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Grand-Prairie-TX/Senior-Manager-of-Military-Costing_JR10405887",
+          "reason": "Senior Manager of Military Costing is a finance/costing function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "#CORE IT Product Manager (m/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/XMLNAME--CORE-IT-Product-Manager--m-f-_JR10405807-1",
+          "reason": "IT Product Manager is a product management IC role in internal enterprise IT, not a commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Compliance Manager Risks (f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Responsable-Conformit-et-Risques--F-H-_JR10416609",
+          "reason": "Compliance Manager Risks is a legal/compliance function role, not a commercial or BD role.",
+          "confidence": "high"
+        },
+        {
+          "title": "#CORE Data & Analytics Release Release Train Engineer (RTE) (M/F)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/XMLNAME--CORE-Data---Analytics-Release-Release-Train-Engineer--RTE---M-F-_JR10404796-1",
+          "reason": "Release Train Engineer is a technical program management role in agile/SAFe methodology, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "#CORE Product Manager (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Donauwrth/XMLNAME--CORE-Product-Manager--d-f-m-_JR10398434-1",
+          "reason": "Product Manager is an IC product role at large aerospace company, wrong function per skip criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Engineer \u2013 Physical Design & Structural Integrity (m/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Krakow-Area/Principal-Engineer---Physical-Design---Structural-Integrity--m-f-_JR10418334",
+          "reason": "Principal Engineer \u2013 Physical Design & Structural Integrity is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Key Account Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/New-Delhi/Key-Account-Manager---Military_JR10417059",
+          "reason": "Military Key Account Manager role explicitly excludes defense/IC/national security customers, which Paul has as a standing hard exclusion.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Cabin Stress Engineer (Contract)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mobile-Area-AL/Principal-Cabin-Stress-Engineer--Contract-_JR10417033",
+          "reason": "Principal Cabin Stress Engineer is a pure technical engineering role (structural/mechanical engineering), wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Artificial Intelligence Lead",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Artificial-Intelligence-Lead---Airbus-India-Innovation-Centre_JR10338360",
+          "reason": "Artificial Intelligence Lead is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "VIE 2026-Airbus Portugal Finance Compliance",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Lisbon-Airbus-Portugal/VIE-2026-Airbus-Portugal-Finance-Compliance_JR10406208",
+          "reason": "Finance Compliance is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "NH90 Vehicle Chief Engineering Project Manager & Major Incidents Focal point (M/F)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/NH90-Vehicle-Chief-Engineering-Project-Manager---Major-Incidents-Focal-point--M-F-_JR10396496",
+          "reason": "NH90 is a military helicopter program; defense/clearance role outside Paul's domain and hard exclusion criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Airbus Atlantic - IT Product Manager (All Gender)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Maulte-Area/Airbus-Atlantic---IT-Product-Manager--All-Gender-_JR10398531",
+          "reason": "Airbus Atlantic IT Product Manager is an internal IT/product management role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "WERKSTUDENT IM BEREICH SUSTAINABILITY (D/F/M)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Taufkirchen--Ottobrunn/WERKSTUDENT-IM-BEREICH-SUSTAINABILITY--D-F-M-_JR10416187-1",
+          "reason": "WERKSTUDENT is German for student intern or working student, wrong seniority level for VP/Director search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Training Services Team : Training Compliance Assistant",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Incheon/Training-Services-Team---Training-Compliance-Assistant_JR10414091-1",
+          "reason": "Training Compliance Assistant is a training administration/HR function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Communication Systems Product Manager for Combat Aircraft",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Communication-Systems-Product-Manager-for-Combat-Aircraft_JR10402876-1",
+          "reason": "Combat Aircraft is a defense role requiring clearance, which is a hard exclusion for Paul.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Stress Engineer",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mobile-Area-AL/Principal-Stress-Engineer_JR10410858-1",
+          "reason": "Principal Stress Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Industrial Support Senior Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Kinston-NC/Industrial-Support-Senior-Manager_JR10413730",
+          "reason": "Industrial Support Senior Manager is a manufacturing/operations function at Airbus, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Key Account Manager Air Power (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Taufkirchen--Ottobrunn/Key-Account-Manager-Air-Power--d-f-m-_JR10365852",
+          "reason": "Key Account Manager Air Power at Airbus Intelligence is defense/military sales role requiring clearance, hard exclusion per Paul's criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Conseiller principal en architecture syst\u00e8me / Lead Advisor System Architecture",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable--Systme---Lead-System_JR10407630",
+          "reason": "Lead Advisor System Architecture is a technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Export Compliance Manager (d/m/w)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Immenstaad-am-Bodensee/Export-Compliance-Manager--d-m-w-_JR10391125-1",
+          "reason": "Export Compliance Manager is a legal/compliance function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Discover II 2026-2027 MRO Program Compliance Manager Intership",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Discover-II-2026-2027-MRO-Program-Compliance-Manager--Intership_JR10409796",
+          "reason": "MRO Program Compliance Manager Internship is explicitly an internship role, wrong seniority for VP/Director-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable Ing\u00e9nierie en Chef \u2013 Performance portefeuille et excellence op\u00e9rationnelle / Chief Engineering Responsible \u2013 Portfolio Performance & Operational Excellence",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable-Ingnierie-en-Chef-A220---Performance-Portefeuille-et-Excellence-Oprationnelle---A220-Chief-Engineering-Responsible---Portfolio-Performance---Operational-Excellence_JR10403682-1",
+          "reason": "Chief Engineering Responsible is a pure technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Digital Finance Product Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Kinston-NC/Digital-Finance-Product-Manager_JR10411175",
+          "reason": "Digital Finance Product Manager is a finance function product role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "VIE 2026-Italy-Aeronautical Compliance & SMS Support-H/F",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Trento/VIE-2026-Italy-Aeronautical-Compliance---SMS-Support-H-F_JR10410615",
+          "reason": "VIE is a junior rotational program (Volontariat International en Entreprise), and the title indicates aeronautical compliance and safety management system work, which is wrong-function (regulatory compliance / aviation safety operations, not commercial/BD).",
+          "confidence": "high"
+        },
+        {
+          "title": "AI & Analytics Service Owner (Temp Agency)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe/AI---Analytics-Service-Owner--Temp-Agency-_JR10406277",
+          "reason": "Temp agency contract role in AI/Analytics service ownership, clearly a technical IC function outside Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Information Security Officer (CISO) (m/w/d)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Ulm/Chief-Information-Security-Officer--CISO---m-w-d-_JR10373998",
+          "reason": "Chief Information Security Officer is a cybersecurity/IT security function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Energy & Sustainability Manager (Sevilla)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Sevilla-Area/Energy---Sustainability-Manager--Sevilla--M-F_JR10388518",
+          "reason": "Energy & Sustainability Manager is an internal operations/facilities role managing corporate energy use and sustainability programs, not a commercial BD or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Energy & Sustainability Manager (Illescas)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Illescas/Energy---Sustainability-Manager--Illescas--M-F_JR10389676",
+          "reason": "Energy & Sustainability Manager is an internal operations/facilities role managing energy use and sustainability programs at a manufacturing site, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Regulatory Compliance (PRC) Electrical Safety Engineer",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bucharest/Product-Regulatory-Compliance--PRC--Electrical-Safety-Engineer--m-f-d-_JR10405265",
+          "reason": "Product Regulatory Compliance Electrical Safety Engineer is a pure technical engineering role focused on electrical safety and regulatory compliance, not a commercial or BD function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Regulatory Compliance (PRC) Safety Engineer",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bucharest/Product-Regulatory-Compliance--PRC--Safety-Engineer--m-f-d-_JR10405256-1",
+          "reason": "Product Regulatory Compliance Safety Engineer is a pure technical engineering role focused on regulatory compliance and safety engineering, not a commercial or BD function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Airbus Protect - Ing\u00e9nieur.e S\u00fbret\u00e9 Nucl\u00e9aire (All Gender)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Paris-Area/INGENIEUR-SURETE-DE-FONCTIONNEMENT---SURETE-NUCLEAIRE-DEFENSE---Expriment--H-F-_JR10294161-1",
+          "reason": "Title is in French and refers to 'Ing\u00e9nieur.e S\u00fbret\u00e9 Nucl\u00e9aire' (Nuclear Safety Engineer), which is a technical engineering role outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable Produit Digital pour les solutions de livraison d'a\u00e9ronefs / Digital Product Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable-Produit-Digital-pour-les-solutions-de-livraison-d-aronefs------Digital-Product-Manager---Aircraft--Delivery-_JR10403660",
+          "reason": "Airbus Intelligence posting is for Digital Product Manager role in aircraft delivery solutions, wrong function (product management IC, not commercial leadership).",
+          "confidence": "high"
+        },
+        {
+          "title": "Software Engineer (Backend Data and API Developer)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Software-Engineer--Backend-Data-and-API-Developer-_JR10405716",
+          "reason": "Software Engineer (Backend Data and API Developer) is a pure technical engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "SUSTAINABILITY CONSULTANT_1",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Madrid-Area/SUSTAINABILITY-CONSULTANT-1_JR10408036-1",
+          "reason": "Sustainability Consultant is a wrong-function role outside Paul's commercial/BD/partnerships profile, appearing to be a consulting/advisory IC position rather than commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "SUSTAINABILITY CONSULTANT_2",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Madrid-Area/SUSTAINABILITY-CONSULTANT-2_JR10408024",
+          "reason": "SUSTAINABILITY CONSULTANT_2 is a consultant role, not commercial/BD/partnerships leadership, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Owner for Connected Aircraft Ecosystem (M/F)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Product-Owner-for-Connected-Aircraft-Ecosystem--M-F-_JR10384160-1",
+          "reason": "Product Owner is an IC product management role at Airbus for connected aircraft systems, which is aviation IT/IoT, not Paul's EO/maritime/climate domain, and wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chef de section, Ing\u00e9nierie A\u00e9rostructure \u2013 Standards, Surfaces et Assemblage / Section Chief, Airframe Engineering \u2013 Standards, Surfaces and Assembly",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Chef-de-section--Ingnierie-Arostructure---Standards--Surfaces-et-Assemblage---Section-Chief--Airframe-Engineering---Standards--Surfaces-and-Assembly_JR10403987-1",
+          "reason": "Airframe Engineering Section Chief is a pure aerospace engineering leadership role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Systems Engineer Advancing Spatial Intelligence",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Linkping/Systems-Engineer-Advancing-Spatial-Intelligence_R23633",
+          "reason": "Systems Engineer is a pure technical engineering role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Software Developers Advancing Spatial Intelligence",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Linkping/Software-Developers-Advancing-Spatial-Intelligence_R23754",
+          "reason": "Software Developer is a pure technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Backend Developer, Data Platform",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Reston-VA/Senior-Backend-Developer--Data-Platform_R23917",
+          "reason": "Senior Backend Developer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Acquisition Intelligence Analyst (TS/SCI)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Tampa-FL/Acquisition-Intelligence-Analyst--TS-SCI-_R23871",
+          "reason": "TS/SCI clearance required, defense/IC role per Paul's hard exclusion list.",
+          "confidence": "high"
+        },
+        {
+          "title": "Security & Compliance Analyst (TS/SCI)",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Doral-FL-Customer-Site/Security---Compliance-Analyst--TS-SCI-_R23431-2",
+          "reason": "TS/SCI clearance required role, hard exclusion per Paul's defense/IC/national security filter.",
+          "confidence": "high"
+        },
+        {
+          "title": "Backend Developer, Data Platform",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Reston-VA/Backend-Developer--Data-Platform_R23667",
+          "reason": "Backend Developer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Customer Success Manager",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/case-status/jobs/82182500-customer-success-manager",
+          "reason": "Customer Success Manager is a junior IC CSM role, wrong function for Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Techstars",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/lightning-social-ventures/jobs/82237090-analytics-engineer-lightning-reach",
+          "reason": "Analytics Engineer is a pure technical data engineering role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Customer Success Manager (Corporate - Global Security Vertical)",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/skopenow/jobs/82185785-customer-success-manager-corporate-global-security-vertical",
+          "reason": "Customer Success Manager is junior IC customer success role, wrong function for Paul's commercial/BD/partnerships leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Finance Manager, Energy and Sustainability Finance",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717576-finance-manager-energy-and-sustainability-finance",
+          "reason": "Finance Manager is a finance function role, not commercial/BD/partnerships, despite climate-adjacent domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Engineer, PyPI",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717738-sustainability-engineer-pypi",
+          "reason": "PyPI is the Python Package Index, a software repository for Python packages - pure dev infrastructure role outside Paul's commercial/BD profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance and Permitting Project Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717787-environmental-compliance-and-permitting-project-manager",
+          "reason": "Environmental Compliance and Permitting Project Manager is a regulatory compliance IC role, not commercial/BD/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance Program Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717834-environmental-compliance-program-manager",
+          "reason": "Environmental Compliance Program Manager is a compliance/regulatory function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability Manager (m/w/d)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717995-sustainability-manager-m-w-d",
+          "reason": "Title is 'Sustainability Manager' which is a corporate sustainability/ESG function role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Jetzt Bewerben als Sustainability Manager (m/w/d) mit Alexander Graham",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488717995",
+          "reason": "Title is in German ('Jetzt Bewerben als Sustainability Manager') and likely targets German-speaking market; Paul's profile is North American commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Graduate Assistant-Sustainability",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488718005-graduate-assistant-sustainability",
+          "reason": "Graduate Assistant is a university student support role, wrong seniority and wrong function for a VP/Director-level commercial leader.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance Inspector",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488776357-environmental-compliance-inspector",
+          "reason": "Environmental Compliance Inspector is a wrong-function role: field inspection/compliance work, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Environmental Impact Assessment (EIA) Planner",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488776434-principal-environmental-impact-assessment-eia-planner-various-locations-considered",
+          "reason": "Principal EIA Planner is environmental consulting/planning role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/brisbane/account-manager/4832/94433392128",
+          "reason": "L3Harris is a defense and national security contractor, which is a hard exclusion in Paul's criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Finance \u2013 FP&A and Project Finance",
+          "source": "Climate Policy Initiative",
+          "url": "https://www.climatepolicyinitiative.org/career/senior-manager-finance-fpa-and-project-finance-2/",
+          "reason": "Senior Manager Finance role is FP&A and project finance function, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Compliance Engineer",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Livermore-CA/Compliance-Engineer_JR107161",
+          "reason": "Compliance Engineer is a pure technical compliance/regulatory function outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Compliance & Regulatory Engineer",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Geisenheim-DEU/Compliance---Regulatory-Engineer_JR107134-1",
+          "reason": "Compliance & Regulatory Engineer is a technical compliance/legal function role, not a commercial or partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Key Account Manager Construction France",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-France/Key-Account-Manager-Construction-France_JR107126",
+          "reason": "Topcon Positioning Systems is a construction equipment/positioning technology company with no climate, EO, maritime, or mission-driven alignment, and the role is France-based not remote-first.",
+          "confidence": "high"
+        },
+        {
+          "title": "Technical Account Manager UK",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-United-Kingdom/Technical-Account-Manager-UK_JR106642",
+          "reason": "Topcon Positioning Systems is a positioning/surveying/construction tech company outside Paul's climate-adjacent, EO/maritime, mission-driven market domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager Geomatics",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-Germany/Account-Manager-Geomatics_JR106791",
+          "reason": "Topcon Positioning Systems is a construction/survey equipment company, and Account Manager is an IC quota-carrier role without strategic leadership component.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager Construction",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-Germany/Account-Manager-Construction_JR106712",
+          "reason": "Topcon Positioning Systems is a construction equipment/positioning technology company outside Paul's climate-adjacent, EO/maritime, or mission-driven target domains.",
+          "confidence": "high"
+        },
+        {
+          "title": "Key Account Manager Machine Distributor DACH",
+          "source": "Topcon Positioning Systems",
+          "url": "https://topcon.wd1.myworkdayjobs.com/TopconPositioningCareers/job/Remote-Germany/Key-Account-Manager-Machine-Distributor-DACH_JR106282",
+          "reason": "Topcon Positioning Systems is a precision positioning/construction technology company, off-domain from Paul's climate/EO/maritime focus.",
           "confidence": "high"
         }
       ],
