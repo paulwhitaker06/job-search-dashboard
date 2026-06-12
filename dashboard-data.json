@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11",
+  "last_updated": "2026-06-12",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -59,11 +59,11 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 136,
+    "active_pipeline": 137,
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-11",
+    "last_updated": "2026-06-12",
     "last_processed_digest_date": "2026-06-11"
   },
   "ranked_opportunities": [
@@ -131,7 +131,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-09",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": true,
       "domain": "",
@@ -2033,7 +2033,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-09",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -3598,7 +3598,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-09",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -5874,6 +5874,61 @@
       "rank": 131
     },
     {
+      "company": "Biomesense",
+      "role": "Director, Partnerships and Business Development - BiomeSense - Career Page",
+      "score": 40.5,
+      "proxy_score": null,
+      "effective_score": 40.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-06-12",
+      "scqa": "",
+      "verdict": "This role carries two hard blockers that make it genuinely unactionable. The JD explicitly requires \"5+ years in a life sciences discipline in business development roles\" and \"track record managing academic or clinical research partnerships in translational medicine or biomarker discovery\", Paul's 15 years are in satellite/EO services, maritime monitoring, and fisheries surveillance, not life sciences or clinical research. The JD also requires \"knowledge of microbiome science, translational research & academic research\" in a life sciences context, which Paul does not possess. While Paul is a proven market-builder who creates demand in regulated sectors and manages multi-stakeholder partnerships (SPM 5), and the role itself involves building a partnership function from scratch (which would otherwise align with his strengths), the domain gap is insurmountable. BiomeSense needs someone who can be \"credible\" with academic investigators and research administrators in microbiome/translational medicine from day one, Paul would need years of domain re-credentialing to compete.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "http://biomesense.applytojob.com/apply/gm9t0ruyHo/Director-Partnerships-And-Business-Development"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-12",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "domain_experience",
+          "detail": "Role requires 5+ years in life sciences business development with track record managing academic/clinical research partnerships in translational medicine or biomarker discovery. Paul's background is satellite/EO data services, maritime monitoring, and fisheries surveillance - not life sciences, not microbiome science, not clinical/translational research partnerships.",
+          "severity": "hard"
+        },
+        {
+          "type": "technical_knowledge",
+          "detail": "Role requires knowledge of microbiome science, translational research & academic research in life sciences context. Paul has no documented background in life sciences, clinical research, biomarker discovery, or microbiome science.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 3,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 6,
+        "GC": 5
+      },
+      "score_range": [
+        37.0,
+        42.5
+      ],
+      "confidence": "medium",
+      "tier_uncertain": true,
+      "rank": 132
+    },
+    {
       "company": "",
       "role": "Join us",
       "score": 40.0,
@@ -5924,7 +5979,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 132
+      "rank": 133
     },
     {
       "company": "Airbus",
@@ -5984,7 +6039,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 133
+      "rank": 134
     },
     {
       "company": "Airbus",
@@ -6054,10 +6109,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 134
+      "rank": 135
     },
     {
-      "rank": 135,
+      "rank": 136,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -6102,7 +6157,7 @@
       }
     },
     {
-      "rank": 136,
+      "rank": 137,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -6152,7 +6207,7 @@
       }
     },
     {
-      "rank": 137,
+      "rank": 138,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -37452,6 +37507,305 @@
           "confidence": "high"
         }
       ]
+    },
+    {
+      "date": "2026-06-12",
+      "digest_count": 37,
+      "scored_count": 4,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Biomesense",
+          "role": "Director, Partnerships and Business Development - BiomeSense - Career Page",
+          "score": 40.5,
+          "score_range": [
+            37.0,
+            42.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true
+        }
+      ],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Frontline",
+          "role": "Careers at Frontline | Frontline",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Solar Energy Solutions - Climate Change",
+          "role": "Commercial Sales Manager - Industry Specialist at Solar Energy Solutions - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Bentley Systems",
+          "role": "Sales Engineer",
+          "score": 26.0,
+          "score_range": [
+            26.0,
+            26.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "Fugro",
+          "role": "Senior Business Development Manager \u2013 MSC Norway",
+          "url": "https://www.fugro.com/careers/jobs/R0031500-senior-business-development-manager-msc-norway",
+          "reason": "post_fetch_dedup_in_applications:Fugro status=rejected"
+        },
+        {
+          "company": "Too Good To Go - Climate Change",
+          "role": "Global Product Marketing Manager at Too Good To Go - Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/490702488-global-product-marketing-manager",
+          "reason": "score_exception:BadRequestError"
+        },
+        {
+          "company": "Too Good To Go - Climate Change",
+          "role": "\u30a8\u30f3\u30bf\u30fc\u30d7\u30e9\u30a4\u30ba\u30bb\u30fc\u30eb\u30b9/Business Development Manager at Too Good To Go - Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/490702489-business-development-manager",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "Fugro",
+          "role": "Senior Product Manager - Geo-data Digitalization",
+          "url": "https://www.fugro.com/careers/jobs/R0031480-senior-product-manager-geo-data-digitalization",
+          "reason": "post_fetch_dedup_in_applications:Fugro status=rejected"
+        },
+        {
+          "company": "Vantor",
+          "role": "Senior Customer Success Manager",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Herndon-VA/Senior-Customer-Success-Manager_R24043",
+          "reason": "score_skipped_api_outage"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "37 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 5 unscored. \u26a0\ufe0f Scoring API died mid-run (BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha): 1 postings were NOT scored after 4 succeeded. Likely low API credits. The digest is left unstamped so the 17:00 UTC backstop (or a manual digest_date re-run) retries the missed ones; already-scored roles dedup cleanly.",
+      "jobs_processed": 37,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "37 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 5 unscored. 28 skipped by prefilter (off-domain / wrong-function). \u26a0\ufe0f Scoring API died mid-run (BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha): 1 postings were NOT scored after 4 succeeded. Likely low API credits. The digest is left unstamped so the 17:00 UTC backstop (or a manual digest_date re-run) retries the missed ones; already-scored roles dedup cleanly.",
+      "prefilter_skipped": [
+        {
+          "title": "Schmidt Marine",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/corpower-ocean/jobs/82344823-subsea-cable-engineer",
+          "reason": "Subsea Cable Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director \u2013 Sales (India & APAC)",
+          "source": "SOSV Portfolio",
+          "url": "https://unboxrobotics.keka.com/careers/jobdetails/123011",
+          "reason": "Unbox Robotics is warehouse automation robotics (sorting/picking hardware), off-domain from Paul's climate/EO/maritime stack.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain & Quality Manager (SCQM for Equipment & System ) - M/F",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain---Quality-Manager--SCQM--for-Equipment---System-----M-F_JR10417445",
+          "reason": "Supply Chain & Quality Manager is an ops/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Manager Production Materials",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Supply-Chain-Quality-Manager-Production-Materials_JR10419454",
+          "reason": "Supply Chain Quality Manager Production Materials is wrong-function role - quality/ops function, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain and Quality Management (Temp Agency)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Sevilla-Area/Supply-Chain-and-Quality-Management--Temp-Agency-_JR10419322",
+          "reason": "Supply Chain and Quality Management is a wrong-function role (ops/supply chain, not commercial/BD/partnerships).",
+          "confidence": "high"
+        },
+        {
+          "title": "Project Leader Procurement, Supply Chain and Logistic (D/F/M)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Project-Leader-Procurement--Supply-Chain-and-Logistic--D-F-M-_JR10382587-1",
+          "reason": "Project Leader Procurement, Supply Chain and Logistic is an operations/supply chain function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sustainability & Compliance Engineer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/490518277-sustainability-compliance-engineer",
+          "reason": "Sustainability & Compliance Engineer is a pure technical engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Sustainability Spec",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/490518278-principal-sustainability-spec",
+          "reason": "Principal Sustainability Spec is a specialist/technical role, not a commercial leadership or BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Program Manager, Fluid Systems",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://eh2.com/careers?gh_jid=4702253005",
+          "reason": "Supply Chain Program Manager is an operations/program management role, not a commercial/BD/partnerships role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "EU Nature & Deforestation Policy Consultant",
+          "source": "Mighty Earth",
+          "url": "https://mightyearth.applytojob.com/apply/tid4grQcG8/EU-Nature-Deforestation-Policy-Consultant?source=Our Career Page Widget",
+          "reason": "EU Nature & Deforestation Policy Consultant is a policy/advocacy role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "SAP Sales Business Analyst - CoE for ERP Spares & Services M/F",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/SAP-Sales-Business-Analyst---CoE-for-ERP-Spares---Services-M-F_JR10404706-1",
+          "reason": "SAP Sales Business Analyst is an internal ERP/systems analyst role for spares and services operations, not a commercial BD or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Postdoctoral Research Scientist Threatened Species",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/australian-institute-of-marine-science/jobs/82391239-postdoctoral-research-scientist-threatened-species",
+          "reason": "Postdoctoral Research Scientist is a research/academic role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "County Executive Director Expanded",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/490750542-county-executive-director-expanded",
+          "reason": "County Executive Director is a government administrative role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Fundraising Relations",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52551/director-of-fundraising-relations/?LinkSource=HomePage",
+          "reason": "Director of Fundraising Relations is a nonprofit fundraising/development role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Development Director, New York",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52597/development-director-new-york/?LinkSource=PremiumListing",
+          "reason": "Development Director is a fundraising role in the nonprofit sector, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President, Development",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52599/vice-president-development-/?LinkSource=PromotedJob",
+          "reason": "Vice President, Development is a fundraising/development role at a nonprofit, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Director",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52612/executive-director/",
+          "reason": "Generic Executive Director nonprofit role with no climate, EO, maritime, or mission-aligned domain signal in title or source.",
+          "confidence": "high"
+        },
+        {
+          "title": "Center for Yiddish Life \u2014 Executive Director",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52613/center-for-yiddish-life-executive-director-/",
+          "reason": "Center for Yiddish Life is a cultural/heritage nonprofit with no intersection with Paul's climate-adjacent, EO/maritime, or mission-driven commercial domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Director, Fiscal Sponsorship Initiatives",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52614/executive-director-fiscal-sponsorship-initiatives/",
+          "reason": "Executive Director role in fiscal sponsorship and nonprofit infrastructure, entirely off-domain from Paul's EO/climate/maritime commercial leadership background.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Advancement",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52615/director-of-advancement/",
+          "reason": "Director of Advancement is a fundraising/development role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of People",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Astro-Mechanica/b1613597-eef8-445a-a7cc-d48fd0b57ac4",
+          "reason": "Head of People is an HR function role, clearly outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Engineering",
+          "source": "Acre Sustainability Jobs",
+          "url": "https://www.acre.com/jobs/acre-13720-acre-13720",
+          "reason": "Head of Engineering is a pure technical engineering leadership role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Engineering",
+          "source": "SOSV Portfolio",
+          "url": "http://biomesense.applytojob.com/apply/mGBEFbr2cZ/Director-Of-Engineering",
+          "reason": "Director of Engineering is a pure technical engineering leadership role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Product Marketing Manager",
+          "source": "SOSV Portfolio",
+          "url": "https://careers.formlabs.com/job/7997868/apply/?gh_jid=7997868",
+          "reason": "Senior Product Marketing Manager is a marketing IC role without commercial leadership component at Formlabs, a 3D printing hardware company outside Paul's climate/EO/maritime domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "SKYWISE - Product Manager Flight Planning",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Waterloo/Product-Manager-Flight-Planning_JR10421014",
+          "reason": "Airbus Intelligence SKYWISE is aviation SaaS for flight planning, off-domain from climate/EO/maritime stack.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Engineer, SCADA Engineering (BESS)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/490437731-principal-engineer-scada-engineering-bess",
+          "reason": "Principal Engineer, SCADA Engineering is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Huangjia-Buzi-Account-Manager-BJ/1399265000/",
+          "reason": "Bentley Systems is infrastructure engineering software (CAD/BIM for civil/structural), off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager - ERP AI, Accounting & Finance",
+          "source": "Trimble",
+          "url": "https://trimblecareers.trimble.com/careers",
+          "reason": "Product Manager is IC product management role at enterprise SaaS company (Trimble ERP) outside climate/EO/maritime domain.",
+          "confidence": "high"
+        }
+      ],
+      "scoring_outage": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha"
     }
   ],
   "cold_outreach": [],
