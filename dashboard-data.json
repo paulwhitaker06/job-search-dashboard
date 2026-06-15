@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-06-15",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -59,12 +59,12 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 138,
+    "active_pipeline": 139,
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-14",
-    "last_processed_digest_date": "2026-06-14"
+    "last_updated": "2026-06-15",
+    "last_processed_digest_date": "2026-06-15"
   },
   "ranked_opportunities": [
     {
@@ -5954,7 +5954,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-12",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -6172,7 +6172,67 @@
       "rank": 136
     },
     {
-      "rank": 137,
+      "company": "Hydrosat | Techstars Job Board",
+      "role": "Capture Manager - U.S. Government Contracts @ Hydrosat | Techstars Job Board",
+      "score": 40.0,
+      "proxy_score": null,
+      "effective_score": 40.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-06-15",
+      "scqa": "",
+      "verdict": "This is a dedicated capture/proposal manager role for federal government contracts, a fundamentally different function from Paul's market-building commercial work. The hard blocker is role type: the JD describes managing \"complex, multi-volume submissions,\" ensuring \"full compliance with solicitation requirements (RFP, RFI, BAA, SBIR/STTR),\" and writing \"technical, management, past performance, and cost/price volumes.\" This is compliance-driven proposal management, not the pilot-to-precedent market creation Paul has built his career on. The soft blockers compound the gap: Paul lacks the 5+ years of federal capture experience, formal proposal methodology training (Shipley), and track record of managing federal RFP responses that the JD explicitly requires. While Hydrosat's thermal EO mission is adjacent to Paul's domain and the pre-solicitation shaping language (\"engage federal agency program offices\u2026to shape requirements\") echoes his regulatory precedent work, the core job is writing and coordinating proposal volumes under federal procurement rules, a role Paul has never held.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.techstars.com/companies/hydrosat/jobs/82664593-capture-manager-u-s-government-contracts"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-15",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "role_type_mismatch",
+          "detail": "Role is a dedicated capture/proposal manager position focused on government procurement processes and compliance-driven proposal writing, not a market-building commercial function. Paul's identity is 'market builder, NOT market inheritor' who creates demand through pilots and regulatory precedent, not someone who manages RFP responses and proposal volumes.",
+          "severity": "hard"
+        },
+        {
+          "type": "sector_experience_gap",
+          "detail": "JD requires 5+ years of federal government capture management experience with demonstrated wins across the full capture lifecycle. Paul has 15 years building commercial markets in EO/maritime but has never been a dedicated capture manager or proposal manager for federal government contracts. His KSAT and GFW work involved commercial sales to oil majors, NGOs, and some government maritime agencies (AMSA, Peru Navy), not federal civilian/DoD/IC procurement.",
+          "severity": "soft"
+        },
+        {
+          "type": "skill_gap",
+          "detail": "JD requires strong working knowledge of U.S. federal procurement processes, proposal structure (Shipley methodology), and experience managing complex multi-volume submissions. Paul has never written federal proposals or managed capture plans through the formal federal procurement cycle.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 5,
+        "GC": 6
+      },
+      "score_range": [
+        40.0,
+        42.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 137
+    },
+    {
+      "rank": 138,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -6217,7 +6277,7 @@
       }
     },
     {
-      "rank": 138,
+      "rank": 139,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -6267,7 +6327,7 @@
       }
     },
     {
-      "rank": 139,
+      "rank": 140,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -38572,6 +38632,334 @@
           "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
           "url": "https://jobs.philanthropy.com/job/52622/chief-development-officer/?LinkSource=HomePage",
           "reason": "Chief Development Officer is a fundraising/donor relations role, not a commercial/BD/partnerships role in Paul's target domain.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "digest_count": 39,
+      "scored_count": 7,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Hydrosat | Techstars Job Board",
+          "role": "Capture Manager - U.S. Government Contracts @ Hydrosat | Techstars Job Board",
+          "score": 40.0,
+          "score_range": [
+            40.0,
+            42.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        }
+      ],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Agensi Pekerjaan Asia Recruit - Climate Change",
+          "role": "Renewable Energy Sales Executive (under Green Infrastructure Department) at Agensi Pekerjaan Asia Recruit - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "The Chronicle of Philanthropy Jobs",
+          "role": "Partnerships & Development Manager",
+          "score": 12.0,
+          "score_range": [
+            12.0,
+            12.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Kahala Nui - Climate Change",
+          "role": "Environmental Risk & Safety Manager at Kahala Nui - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Manager Business Development",
+          "score": 36.0,
+          "score_range": [
+            31.5,
+            37.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Liveeo Gmbh",
+          "role": "Head of Customer Success (f/m/x)",
+          "score": 33.0,
+          "score_range": [
+            33.0,
+            33.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Boardroom Appointments - Climate Change",
+          "role": "Executive Sustainability at Boardroom Appointments - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "Loom Solar - Climate Change",
+          "role": "Field Sales Executive",
+          "url": "https://climatechangejobs.com/jobs/493479964-field-sales-executive",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Stand Insurance",
+          "role": "Head of Western Wildfire Insurance Product & Pricing",
+          "url": "https://jobs.ashbyhq.com/StandInsurance/b935c6e5-9477-4be5-9a87-101c72fa3c55",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Ashgrove Renewables - Climate Change",
+          "role": "Account Executive",
+          "url": "https://climatechangejobs.com/jobs/493480022-account-executive",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "British Safety Council - Climate Change",
+          "role": "Environmental Management and Sustainability Consultants",
+          "url": "https://climatechangejobs.com/jobs/493553157-environmental-management-and-sustainability-consultants",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "39 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 4 unscored.",
+      "jobs_processed": 39,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "39 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 4 unscored. 28 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Group Sustainability, Risk & Compliance Manager/AM",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553039-group-sustainability-risk-compliance-manager-am",
+          "reason": "Group Sustainability, Risk & Compliance Manager is a compliance/risk management function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager, Mill Commercial Hardware",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://boards.greenhouse.io/Mill/jobs/4704441005",
+          "reason": "Product Manager is an IC product management role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Sales Manager Integrated Air and Missile Defence (IAMD) Germany (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Senior-Sales-Manager-Integrated-Air-and-Missile-Defence--IAMD--Germany--d-f-m-_JR10374870",
+          "reason": "Integrated Air and Missile Defence (IAMD) is a defense/military role, which is a hard exclusion per Paul's standing no-defense/IC/national-security policy.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative - AI Advocate - Base44",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/corra-health/jobs/82663694-sales-development-representative-ai-advocate-base44",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role (SDR), wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Marketing Manager - Base44",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/corra-health/jobs/82663697-product-marketing-manager-base44",
+          "reason": "Product Marketing Manager is an IC marketing role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Area Sales Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493479982-area-sales-manager",
+          "reason": "Area Sales Manager is typically a regional territory role managing transactional dealer networks or junior IC quota-carrier position, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Solar Energy Sales Consultant \u2013 $200K+ Opportunity",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493480020-solar-energy-sales-consultant-$200k+-opportunity-|-paid-training-hicksville",
+          "reason": "Solar Energy Sales Consultant is transactional residential solar IC role, wrong seniority and function for Paul's VP/Director-level commercial leadership search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Area Sales Executive",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493480051-area-sales-executive",
+          "reason": "Area Sales Executive is typically a junior IC quota-carrier territory role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Environmental Health & Safety",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553219-director-environmental-health-safety",
+          "reason": "Director, Environmental Health & Safety is a workplace safety and compliance function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Scientist (Climate Change)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553242-scientist-climate-change",
+          "reason": "Title 'Scientist (Climate Change)' is a pure technical research role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Health, Safety and Environment (Internal)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553276-head-of-health-safety-and-environment-internal",
+          "reason": "Head of Health, Safety and Environment is a pure HSE/EHS function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Scientist or Geologist - Mid Level - Industrial and Commercial Projects - NJ #2800",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553286-environmental-scientist-or-geologist-mid-level-industrial-and-commercial-projects-nj-2800",
+          "reason": "Environmental Scientist/Geologist is a technical IC role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Estate and Planned Giving, ISU Foundation (2606)",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52639/director-of-estate-and-planned-giving-isu-foundation-2606-/",
+          "reason": "Director of Estate and Planned Giving is a fundraising/development role at a university foundation, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Cross-Functional Creative Team, Marketing",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/7993116",
+          "reason": "Senior Manager, Cross-Functional Creative Team, Marketing is a marketing function role without commercial leadership component at large public company Planet Labs.",
+          "confidence": "high"
+        },
+        {
+          "title": "ALT_2026 Apprenti(e) en Intelligence Artificiell (h/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/ALT-2026-Apprenti-e--en-Intelligence-Artificiell--h-f-_JR10395672",
+          "reason": "Apprenti(e) is an apprenticeship/intern role, wrong seniority for VP/Director-level commercial leader with 25 years experience.",
+          "confidence": "high"
+        },
+        {
+          "title": "Lead Analyst, HR Analytics & Workday Reporting",
+          "source": "Maxar",
+          "url": "https://maxar.wd1.myworkdayjobs.com/Vantor/job/Westminster-CO/Lead-Analyst--HR-Analytics---Workday-Reporting_R24124",
+          "reason": "Lead Analyst, HR Analytics & Workday Reporting is an HR function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Techstars",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/mesodyne/jobs/82673031-forward-deployed-engineer-at-a-defense-tech-startup",
+          "reason": "Defense tech startup role explicitly excluded by Paul's standing hard-exclusion criteria for defense, IC, and national security roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Workday Platform & Enterprise Applications",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493479953-senior-manager-workday-platform-enterprise-applications",
+          "reason": "Workday Platform & Enterprise Applications is HR/IT systems administration, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "EHS and Sustainability Regulatory Consultant- South Asia",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493552786-ehs-and-sustainability-regulatory-consultant-south-asia",
+          "reason": "EHS and Sustainability Regulatory Consultant is a compliance/regulatory function role outside Paul's commercial/BD/partnerships profile, not a commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Post-doctoral Fellow, HKU Jockey Club Enterprise Sustainability Global Research Institute",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493552796-post-doctoral-fellow-hku-jockey-club-enterprise-sustainability-global-research-institute",
+          "reason": "Post-doctoral Fellow is an academic research role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "SHERQ & Sustainability Integration Executive",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493552870-sherq-sustainability-integration-executive",
+          "reason": "SHERQ (Safety, Health, Environment, Risk, Quality) is an operational compliance/EHS function, not a commercial or BD role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Environmental Compliance Manager",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493552872-environmental-compliance-manager",
+          "reason": "Environmental Compliance Manager is an operations/compliance function role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Designer Sustainability 80-100% (m/w/d) m/w/d",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553030-product-designer-sustainability-80-100-m-w-d-m-w-d",
+          "reason": "Product Designer is a design IC role outside Paul's commercial/BD/partnerships profile, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Environmental Consultant",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553097-principal-environmental-consultant",
+          "reason": "Principal Environmental Consultant is an environmental consulting/technical role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Assistant Professor, Sustainability Studies",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553257-assistant-professor-sustainability-studies",
+          "reason": "Assistant Professor, Sustainability Studies is an academic faculty position, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "EHS and Sustainability Regulatory Consultant for Japanese speaking Jurisdictions",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/493553273-ehs-and-sustainability-regulatory-consultant-for-japanese-speaking-jurisdictions",
+          "reason": "EHS and Sustainability Regulatory Consultant is a compliance/regulatory function role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://breathebatterytechnologies.teamtailor.com/jobs/7885248-product-manager",
+          "reason": "Product Manager is an IC product management role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager",
+          "source": "Trimble",
+          "url": "https://trimblecareers.trimble.com/careers",
+          "reason": "Product Manager is an IC product management role outside Paul's commercial/BD/partnerships profile, and Trimble is a large enterprise technology company not in Paul's climate-adjacent/EO/maritime target domain.",
           "confidence": "high"
         }
       ]
