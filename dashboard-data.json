@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -63,8 +63,8 @@
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-18",
-    "last_processed_digest_date": "2026-06-18"
+    "last_updated": "2026-06-19",
+    "last_processed_digest_date": "2026-06-19"
   },
   "ranked_opportunities": [
     {
@@ -1266,7 +1266,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-16",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": true,
       "domain": "",
@@ -1537,7 +1537,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-16",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -2623,7 +2623,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-16",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -6727,7 +6727,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-16",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -40728,6 +40728,362 @@
           "source": "True Anomaly",
           "url": "https://job-boards.greenhouse.io/trueanomalyinc/jobs/5099076007",
           "reason": "Autonomy Engineer is a pure technical engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "digest_count": 44,
+      "scored_count": 5,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Dfns | Techstars Job Board",
+          "role": "Principal Solutions Engineer, APAC @ Dfns | Techstars Job Board",
+          "score": 37.0,
+          "score_range": [
+            28.0,
+            38.0
+          ],
+          "confidence": "low",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Vantor",
+          "role": "Solutions Engineer - New Products",
+          "score": 31.0,
+          "score_range": [
+            29.0,
+            32.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Environmental Law & Policy Center - Climate Change",
+          "role": "Chief Administrative Officer at Environmental Law & Policy Center - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "telnyx | Techstars Job Board",
+          "role": "Solutions Engineer, LATAM (Remote) @ telnyx | Techstars Job Board",
+          "score": 35.0,
+          "score_range": [
+            30.0,
+            35.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Dfns | Techstars Job Board",
+          "role": "Principal Solutions Engineer, US @ Dfns | Techstars Job Board",
+          "score": 37.0,
+          "score_range": [
+            36.5,
+            39.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "Blue Energy",
+          "role": "Director of Origination",
+          "url": "https://jobs.ashbyhq.com/blue-energy/de468e06-c695-4b77-800d-20c89935fb56?utm_source=jobs.atoneventures.com",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "44 entries. All scored fell below Tier 3. 1 unscored.",
+      "jobs_processed": 44,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "44 entries. All scored fell below Tier 3. 1 unscored. 37 skipped by prefilter (off-domain / wrong-function).",
+      "intra_digest_duplicates": [
+        {
+          "title": "Senior Data Scientist \u2013 Geospatial Foundation Models",
+          "url": "https://satsure.keka.com/careers",
+          "kept_url": "https://satsure.keka.com/careers"
+        }
+      ],
+      "prefilter_skipped": [
+        {
+          "title": "Vice President of Supply Chain",
+          "source": "Commonwealth Fusion Systems",
+          "url": "https://jobs.lever.co/cfsenergy/bb2c83e7-8901-4652-911b-e2e8befed3a8",
+          "reason": "VP of Supply Chain is an ops/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Agriculture Manager, Methane Pollution Prevention",
+          "source": "Clean Air Task Force",
+          "url": "https://clean-air-task-force.breezy.hr/p/2ec36b10769c-agriculture-manager-methane-pollution-prevention",
+          "reason": "Agriculture Manager is a program/policy role at a climate NGO, not a commercial BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President of Supply Chain",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497571511-vice-president-of-supply-chain",
+          "reason": "Vice President of Supply Chain is a supply chain operations function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Executive / Manager (Fullstack Sales)",
+          "source": "Y Combinator Jobs",
+          "url": "https://www.ycombinator.com/companies/anima/jobs/KiHHqcN-account-executive-manager-fullstack-sales",
+          "reason": "Anima is a design-to-code tool for frontend developers, pure enterprise SaaS dev tools, off-domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP Institutional Sales, EMEA",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/dfns-2-4e956051-1133-42b4-a43c-f9ef0eb69c7e/jobs/83333066-vp-institutional-sales-emea",
+          "reason": "Dfns is crypto/web3 infrastructure (wallet-as-a-service), off-domain from Paul's climate-adjacent, EO/maritime, mission-driven target market.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP Institutional Sales",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/dfns-2-4e956051-1133-42b4-a43c-f9ef0eb69c7e/jobs/83333067-vp-institutional-sales-us",
+          "reason": "Dfns is a Web3 wallet-as-a-service infrastructure company, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Regional Sales Director",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/synack/jobs/83340128-regional-sales-director",
+          "reason": "Synack is a cybersecurity company (crowdsourced pentesting), off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President & Chief Information Security Officer",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8014499",
+          "reason": "Chief Information Security Officer is a cybersecurity/IT function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Consumer Growth Marketing Principal",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497571459-consumer-growth-marketing-principal",
+          "reason": "Consumer Growth Marketing Principal is a marketing IC role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Associate, Government Compliance",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/clifton/senior-associate-government-compliance/4832/96639950272",
+          "reason": "Government Compliance is a legal/regulatory function, not commercial/BD/partnerships, and L3Harris is a defense contractor requiring clearance.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Global Mechanical Supply Chain Manager",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://boards.greenhouse.io/Mill/jobs/4706905005",
+          "reason": "Sr. Global Mechanical Supply Chain Manager is a supply chain operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Data Scientist \u2013 Geospatial Foundation Models",
+          "source": "SatSure",
+          "url": "https://satsure.keka.com/careers",
+          "reason": "Data Scientist is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Marketing Manager, AI Solutions",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/7964648",
+          "reason": "Product Marketing Manager is an IC marketing role without commercial leadership component at a large organization.",
+          "confidence": "high"
+        },
+        {
+          "title": "Procurement Business Improvement and Strategy Management",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Lisbon-Airbus-Portugal/Procurement-Business-Improvement-and-Strategy-Manager_JR10407592",
+          "reason": "Procurement Business Improvement and Strategy Manager is a procurement/supply chain function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head Of Digital Software Engineering M/F",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Head-Of-Digital-Software-Engineering-M-F_JR10386665-1",
+          "reason": "Head Of Digital Software Engineering is a pure technical engineering leadership role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Aircraft Manager / Risk Sharing Partner (d/f/m)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Aircraft-Manager---Risk-Sharing-Partner--d-f-m-_JR10419334",
+          "reason": "Aircraft Manager / Risk Sharing Partner is aircraft fleet management or aircraft financing role, not EO/satellite commercial function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Manager Internal Audit",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/canada-s-ocean-supercluster/jobs/83353034-manager-internal-audit-sox",
+          "reason": "Manager Internal Audit is a finance/compliance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Mass Market Acquisition and Engagement",
+          "source": "Clean Air Task Force",
+          "url": "https://clean-air-task-force.breezy.hr/p/25b0ef146616-director-mass-market-acquisition-and-engagement",
+          "reason": "Director, Mass Market Acquisition and Engagement is a marketing/audience growth role, not a commercial BD or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "U.S. Director, Nuclear Energy",
+          "source": "Clean Air Task Force",
+          "url": "https://clean-air-task-force.breezy.hr/p/f84dc5da5904-u-s-director-nuclear-energy",
+          "reason": "U.S. Director, Nuclear Energy is a subject-matter advocacy/policy director role at a climate nonprofit, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP Fintech",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/dfns-2-4e956051-1133-42b4-a43c-f9ef0eb69c7e/jobs/83333068-vp-fintech-us",
+          "reason": "VP Fintech at a fintech/crypto company is off-domain; no intersection with climate, EO/maritime, or Paul's mission-driven commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Marketing",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/dfns-2-4e956051-1133-42b4-a43c-f9ef0eb69c7e/jobs/83333075-head-of-marketing",
+          "reason": "Head of Marketing at Dfns, a company with no apparent climate/EO/maritime/sustainability connection based on available information.",
+          "confidence": "high"
+        },
+        {
+          "title": "Associate Director of Development",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497453476-associate-director-of-development",
+          "reason": "Associate Director of Development is a fundraising/donor relations role in the nonprofit sector, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP, Performance Management & Learning Development",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497477215-vp-performance-management-learning-development-india",
+          "reason": "VP Performance Management & Learning Development is an HR function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Guest Education",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497837955-director-of-guest-education",
+          "reason": "Director of Guest Education is a museum/visitor center/interpretation role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Venue Sales Representative",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497842981-venue-sales-representative",
+          "reason": "Venue Sales Representative is clearly a wrong-function role outside Paul's commercial/BD/partnerships profile in climate-adjacent EO/maritime domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Production and Test Engineering",
+          "source": "True Anomaly",
+          "url": "https://job-boards.greenhouse.io/trueanomalyinc/jobs/5169340007",
+          "reason": "Director, Production and Test Engineering is a technical engineering leadership role in hardware manufacturing, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Regional Sales Manager",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://job-boards.greenhouse.io/soundagriculture/jobs/7775252003",
+          "reason": "Regional Sales Manager at ag company is territory sales role managing dealer network, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Regional Sr. Sales Manager",
+          "source": "SOSV Portfolio",
+          "url": "https://hisenseusacorporation.bamboohr.com/careers/303",
+          "reason": "Hisense USA Corporation is a consumer electronics manufacturer (TVs, appliances, HVAC), completely off-domain from Paul's climate-adjacent/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Artificial Intelligence Lead",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Artificial-Intelligence-Lead---Airbus-India-Innovation-Centre_JR10422787",
+          "reason": "Artificial Intelligence Lead is a technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Implementation & Customer Success",
+          "source": "Y Combinator Jobs",
+          "url": "https://www.ycombinator.com/companies/anima/jobs/7ZP8eZ4-implementation-customer-success",
+          "reason": "Implementation & Customer Success is a junior IC customer success role, wrong function and seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Software Engineer, APAC",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/dfns-2-4e956051-1133-42b4-a43c-f9ef0eb69c7e/jobs/83333071-principal-software-engineer-apac",
+          "reason": "Principal Software Engineer is a pure technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Project Engineer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/497193819-senior-project-engineer-grid-modelling-and-compliance",
+          "reason": "Senior Project Engineer is a pure technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal, Institutional Giving",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52675/principal-institutional-giving/?LinkSource=PromotedJob",
+          "reason": "Principal, Institutional Giving is a fundraising role at a nonprofit, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Advancement Officer",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52687/chief-advancement-officer/?LinkSource=HomePage",
+          "reason": "Chief Advancement Officer is a fundraising/development role at a nonprofit, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal, Capture Management",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/waco/principal-capture-management/4832/95586861424",
+          "reason": "L3Harris is a defense/aerospace contractor; role likely requires clearance, matches Paul's hard exclusion on defense/IC/national security roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, AI Enterprise Engineering",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Remote-Senior-Manager%2C-AI-Enterprise-Engineering-PA-18834/1401264400/",
+          "reason": "Bentley Systems is infrastructure engineering software (CAD/BIM for civil projects), off-domain from Paul's climate/EO/maritime focus, and the title is a technical engineering management role, not commercial/BD.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal MLE",
+          "source": "Voyager Ventures Portfolio",
+          "url": "https://jobs.ashbyhq.com/tem/e81f5106-ce7e-4df2-abd0-8b37b3290474?utm_source=careers.voyagervc.com",
+          "reason": "Principal MLE is a pure technical engineering role (Machine Learning Engineer), wrong function for Paul's commercial/BD/partnerships profile.",
           "confidence": "high"
         }
       ]
