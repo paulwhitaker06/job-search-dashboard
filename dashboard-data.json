@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20",
+  "last_updated": "2026-06-21",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -63,8 +63,8 @@
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-20",
-    "last_processed_digest_date": "2026-06-20"
+    "last_updated": "2026-06-21",
+    "last_processed_digest_date": "2026-06-21"
   },
   "ranked_opportunities": [
     {
@@ -1592,7 +1592,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-18",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": true,
       "domain": "",
@@ -5050,7 +5050,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-18",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -41290,6 +41290,128 @@
           "source": "S2G Ventures Portfolio",
           "url": "https://jobs.lever.co/onceuponafarm/db31e035-e663-49e2-82cb-0d3ecf3e50db",
           "reason": "Once Upon a Farm is a children's food/beverage company; Customer Business Manager Mass Channel is a CPG sales role managing retail accounts, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "digest_count": 12,
+      "scored_count": 3,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Solar Energy Solutions - Climate Change",
+          "role": "Vice President of Commercial Sales at Solar Energy Solutions - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Zanskar - Climate Change",
+          "role": "Project Manager, Partnerships & Projects at Zanskar - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Y Combinator",
+          "role": "Solutions Engineer",
+          "score": 37.5,
+          "score_range": [
+            36.5,
+            37.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [],
+      "failed_em_dash_gate": [],
+      "notes": "12 entries. All scored fell below Tier 3.",
+      "jobs_processed": 12,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "12 entries. All scored fell below Tier 3. 9 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Manager, Supply Chain Business Partner",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/rivalia-chemical-co/jobs/83518747-manager-supply-chain-business-partner",
+          "reason": "Supply Chain Business Partner is a supply chain operations role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Apprenticeship - Strategy & Transversal Integration",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Apprenticeship---Strategy---Transversal-Integration_JR10408712",
+          "reason": "Apprenticeship is junior training role, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Manufacturing Finance & Cost Accounting",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/saildrone/jobs/83505863-director-manufacturing-finance-cost-accounting",
+          "reason": "Director, Manufacturing Finance & Cost Accounting is a finance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commercial Licensed Journeyman Electrician",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/498629114-commercial-licensed-journeyman-electrician",
+          "reason": "Commercial Licensed Journeyman Electrician is a hands-on technical trade role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Manager, Sales Collateral & Proposal Management",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/499013511-manager-sales-collateral-proposal-management",
+          "reason": "Manager, Sales Collateral & Proposal Management is a sales enablement/marketing operations role, not a commercial leadership or BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Major Gifts",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52705/director-major-gifts/",
+          "reason": "Director, Major Gifts is a fundraising/development role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Director",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52708/executive-director/",
+          "reason": "Generic Executive Director title at nonprofit job board with no company or domain context visible; likely outside climate/EO/maritime domain.",
+          "confidence": "medium"
+        },
+        {
+          "title": "Senior Manager, Engineering & Technology Finance",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/499013513-senior-manager-engineering-technology-finance",
+          "reason": "Finance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Scientist, Systems Engineering (Chief Systems Engineer)",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/fort-wayne/scientist-systems-engineering-chief-systems-engineer/4832/95441285152",
+          "reason": "L3Harris is a defense contractor; role likely requires clearance which is a hard exclusion for Paul.",
           "confidence": "high"
         }
       ]
