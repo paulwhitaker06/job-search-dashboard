@@ -518,7 +518,15 @@ def parse_interview_datetime(text):
     except ValueError:
         return None
     if (now - dt).days > 30:
-        dt = dt.replace(year=year + 1)
+        # A bare month/day in the past usually means a near-term interview across a
+        # year boundary (e.g. "Jan 5" parsed in late December). Only roll forward when
+        # the result stays near-term; bare-month/day interviews are always weeks out.
+        # If rolling forward lands more than 120 days out, the date is genuinely past
+        # (stale status or a held interview), so keep it in the past and let the
+        # upcoming surfaces filter it out instead of fabricating a phantom countdown.
+        rolled = dt.replace(year=year + 1)
+        if (rolled - now).days <= 120:
+            dt = rolled
     return dt
 
 def extract_interviewers(text):
@@ -539,6 +547,12 @@ def extract_interviewers(text):
     return out
 
 INTERVIEW_STATUSES = ('1st_interview_scheduled','1st_interview_held','2nd_interview_scheduled','2nd_interview_held','3rd_interview_scheduled','3rd_interview_held','4th_interview_scheduled','4th_interview_held','final_round_scheduled','final_round_held','1st_interview','2nd_interview')
+
+# Subset representing a FUTURE, not-yet-held interview. Only these drive the
+# next-interview banner and prep cards. A *_held interview is a past event; letting
+# it through lets parse_interview_datetime roll its past date forward a year and
+# fabricate a phantom countdown (Open Cosmos "2nd round held May 14" became 326 days).
+SCHEDULED_INTERVIEW_STATUSES = tuple(s for s in INTERVIEW_STATUSES if s.endswith('_scheduled') or s in ('1st_interview', '2nd_interview'))
 
 def _resolve_interview_dt(a):
     """Datetime for an interview. Prefer the structured interview_date field (ISO
@@ -562,10 +576,12 @@ def _resolve_interview_dt(a):
     return parse_interview_datetime(a.get('next_action'))
 
 def get_interviews(apps):
-    """Apps in interview status, enriched with parsed dt + interviewers, sorted by imminence."""
+    """Apps with a SCHEDULED (not yet held) interview, enriched with parsed dt +
+    interviewers, sorted by imminence. Feeds the next-interview banner and prep
+    cards only, so held interviews are intentionally excluded."""
     ivs = []
     for a in apps:
-        if a.get('status') not in INTERVIEW_STATUSES:
+        if a.get('status') not in SCHEDULED_INTERVIEW_STATUSES:
             continue
         dt = _resolve_interview_dt(a)
         ivs.append({**a, '_parsed_dt': dt, '_interviewers': extract_interviewers(a.get('next_action',''))})
