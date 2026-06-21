@@ -50,7 +50,7 @@ Phase 11g fixed it by pointing `_run_build_script` at `repo / "build-dashboard.p
 
 `json.dumps` with default `ensure_ascii=True` escapes em-dashes to `—`. So `if "—" in raw` against the serialized string never matches. My em-dash gate had been silently passing on every push for the entire session. 196 em-dashes accumulated in dashboard-data.json before I caught it.
 
-Phase 11e + 11f fixed this. The new gate walks dict values pre-serialization (recursive `_find_banned_dashes`). It lives in BOTH `pipeline/dashboard_push/push.py` (dashboard repo, sandbox pushes) AND `pipeline/commit_and_push.py` (paul-job-pipeline, morning brief writes). Every write path is gated. Hyphen-minus is NOT banned, only em-dash, en-dash, figure-dash. If a future morning brief tries to write an em-dash, the gate raises a `RuntimeError` with the offending field path.
+Phase 11e + 11f fixed the sandbox-push path: the gate walks dict values pre-serialization (recursive `_find_banned_dashes`) in `pipeline/dashboard_push/push.py` and raises on any em / en / figure dash. Hyphen-minus is NOT banned. CORRECTION (2026-06-22): the claim that the same gate also lived in `paul-job-pipeline/pipeline/commit_and_push.py` was wrong; that file is a plain git helper with no gate, so the morning brief's write path stayed ungated and leaked external job-title dashes for weeks. The brief now scrubs dashes via `em_dash_gate.scrub_dashes` on ingest and inside `dashboard.save_dashboard`. See the 'Em-dash gates' section below for the corrected architecture.
 
 ### 4. Sloppy shortcut habit, called out twice in one session
 
@@ -159,11 +159,11 @@ If you want to change rendering, edit `dashboard-repo/build-dashboard.py`. Futur
 
 ### Em-dash gates (post phase 11e + 11f)
 
-Two gates, same logic:
-- `dashboard-repo/pipeline/dashboard_push/push.py` — runs on every sandbox push via `push_dashboard_edits`. Walks `dashboard-data.json`'s dict values pre-serialization, raises `RuntimeError` with field paths if any em / en / figure dash is found.
-- `paul-job-pipeline/pipeline/commit_and_push.py` — same gate, runs on every paul-job-pipeline commit (morning brief, feed refreshes). Same `_enforce_em_dash_gate` function.
+Two protections, different mechanisms (corrected 2026-06-22: they are NOT 'the same gate'):
+- `dashboard-repo/pipeline/dashboard_push/push.py` `_enforce_em_dash_gate` is a RAISING gate. It runs on every sandbox push via `push_dashboard_edits`, walks `dashboard-data.json`'s dict values pre-serialization (recursive `_find_banned_dashes`), and raises `RuntimeError` with field paths if any em / en / figure dash is found, blocking the push.
+- `paul-job-pipeline` uses a SCRUBBING path, not a raising gate. `pipeline/commit_and_push.py` is a plain git clone/commit/push helper and does NOT gate. (The old claim that it ran `_enforce_em_dash_gate` was false; that gap let the morning brief leak external job-title dashes for weeks, fixed 2026-06-22.) The brief now normalizes dashes via `pipeline/em_dash_gate.py` `scrub_dashes` / `scrub_dashes_deep`: external titles are scrubbed on ingest, and `pipeline/dashboard.py` `save_dashboard` scrubs every write to dashboard-data.json as a catch-all. The brief scrubs (to a hyphen) rather than raises, so a stray dash never aborts the daily run. Model-written verdict / blocker prose is separately scrubbed (to a comma splice) by `pipeline/scoring.py` `strip_banned_dashes`.
 
-Both gates live in checked-in code. The dict-walk approach matters: the older check-the-json-string approach silently passes because `json.dumps` escapes non-ASCII by default. Don't regress this. If you write a new gate, walk dict values, never the serialized string.
+Both protections live in checked-in code. The dict-walk approach matters: the older check-the-json-string approach silently passes because `json.dumps` escapes non-ASCII by default. Don't regress this. If you write a new gate or scrub, walk dict values, never the serialized string.
 
 Hyphen-minus (`-`) is NOT banned. Em-dash (`—`), en-dash (`–`), figure-dash (`‒`) are banned.
 
