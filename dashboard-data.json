@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-27",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -63,8 +63,8 @@
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-26",
-    "last_processed_digest_date": "2026-06-26"
+    "last_updated": "2026-06-27",
+    "last_processed_digest_date": "2026-06-27"
   },
   "ranked_opportunities": [
     {
@@ -808,7 +808,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-24",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -6067,7 +6067,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-24",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -43304,6 +43304,169 @@
           "source": "SOSV Portfolio",
           "url": "https://ats.rippling.com/carv-careers/jobs/31ddefc8-a0e2-4f44-86a0-fe19fa4ca7cc",
           "reason": "Customer Success Manager is a junior IC CSM role, not the Director/Head of Customer Success pattern Paul targets.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-27",
+      "digest_count": 19,
+      "scored_count": 2,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Octopus Energy Group - Climate Change",
+          "role": "Business Development Manager at Octopus Energy Group - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Watershed Careers",
+          "role": "Sustainability advisor - Watershed Careers",
+          "score": 37.0,
+          "score_range": [
+            31.0,
+            37.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Vice President, Business Development and Corporate Relations",
+          "url": "https://jobs.philanthropy.com/job/52783/vice-president-business-development-and-corporate-relations/?LinkSource=PromotedJob",
+          "reason": "fetch_unreadable:http_403"
+        },
+        {
+          "company": "Fugro",
+          "role": "Business Development Manager - Pile testing &amp; Monitoring",
+          "url": "https://www.fugro.com/careers/jobs/R0031688-business-development-manager-pile-testing-%26-monitoring",
+          "reason": "post_fetch_dedup_in_applications:Fugro status=rejected"
+        },
+        {
+          "company": "Via - Climate Change",
+          "role": "Launch Principal",
+          "url": "https://climatechangejobs.com/jobs/503656729-launch-principal",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Via - Climate Change",
+          "role": "Launch Operations Principal",
+          "url": "https://climatechangejobs.com/jobs/503656730-launch-operations-principal",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "19 entries. All scored fell below Tier 3. 4 unscored.",
+      "jobs_processed": 19,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "19 entries. All scored fell below Tier 3. 4 unscored. 13 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "VP, Consumer Growth Marketing",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/503656725-vp-consumer-growth-marketing",
+          "reason": "VP Consumer Growth Marketing is a marketing function role without commercial leadership component, not BD/partnerships/commercial.",
+          "confidence": "high"
+        },
+        {
+          "title": "Global Supply Chain Manager",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8015224",
+          "reason": "Global Supply Chain Manager is a supply chain operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Responsable chaine d'approvisionnement et Qualit\u00e9 / Supply Chain Quality Manager",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Montreal-Area/Responsable-chaine-d-approvisionnement-et-Qualit---Supply-Chain-Quality-Manager_JR10378965-1",
+          "reason": "Supply Chain Quality Manager is an operations/quality function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior / Principal Product Manager-AI Agent Manager and AI Agent Workflows",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/8020838",
+          "reason": "Senior/Principal Product Manager is an IC product management role, not a commercial leadership role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Tutor GTM Specialist",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/preply/jobs/84359776-senior-tutor-gtm-specialist",
+          "reason": "Preply is an online language tutoring platform, off-domain from Paul's climate-adjacent, EO/maritime, mission-driven commercial leadership focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Development",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/488947099-director-of-development",
+          "reason": "Director of Development is a fundraising/philanthropy role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Arizona Culture & Engagement Director",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/494080812-arizona-culture-engagement-director",
+          "reason": "Arizona Culture & Engagement Director is an HR/people function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Security",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/503379529-director-security",
+          "reason": "Director, Security is a security/physical security/cybersecurity function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Global Director of Logistics & Fulfilment",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/503599719-global-director-of-logistics-fulfilment",
+          "reason": "Global Director of Logistics & Fulfilment is a supply chain operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Venue Sales Representative",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/503796204-venue-sales-representative",
+          "reason": "Venue Sales Representative is event/hospitality sales, not climate-adjacent commercial work.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Project Finance and Capital Markets",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/503796408-director-project-finance-and-capital-markets",
+          "reason": "Director, Project Finance and Capital Markets is a finance function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Business Process and Systems",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://jobs.lever.co/ana-corp/2672903a-0343-4c90-a320-b2062c5c96b6",
+          "reason": "Director of Business Process and Systems is an operations/systems role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/strategic-blue/jobs/84257279-account-manager",
+          "reason": "Account Manager is a customer-retention IC role managing existing accounts, not a VP/Director commercial leadership position.",
           "confidence": "high"
         }
       ]
