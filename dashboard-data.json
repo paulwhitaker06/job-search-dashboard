@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -59,12 +59,12 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 154,
+    "active_pipeline": 155,
     "deep_dives_done": 21,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-29",
-    "last_processed_digest_date": "2026-06-29"
+    "last_updated": "2026-06-30",
+    "last_processed_digest_date": "2026-06-30"
   },
   "ranked_opportunities": [
     {
@@ -5858,6 +5858,66 @@
       "rank": 129
     },
     {
+      "company": "Nimble Gravity",
+      "role": "Director, Strategic Partnerships & Alliances",
+      "score": 42.0,
+      "proxy_score": null,
+      "effective_score": 42.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-06-30",
+      "scqa": "",
+      "verdict": "This role is a hard pass. The Director, Strategic Partnerships & Alliances is a vendor partner program management and channel operations seat, not a market-building commercial role. The JD explicitly states the job is to \"operationalize Microsoft Azure Accelerate (Partner-led MCI, Field-led ECIF, Azure Offer Navigator, Cloud Accelerate Factory), Databricks deal registration and co-sell, and the Anthropic partner program\" and to \"own the funding lifecycle end to end on every applicable deal.\" This is administrative and relational orchestration of existing vendor incentive programs, not creating demand where none exists. Paul's 15-year track record is building new commercial functions and shaping regulatory precedent to create markets, he has never managed a vendor partner program, navigated Microsoft Partner Center, or operationalized co-sell deal registration workflows. The experience gap is hard, the role shape is wrong, and even the sector (consulting services sales vs. technology product sales) is a mismatch. RF and IL are both capped at the hard-gap ceiling.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://job-boards.greenhouse.io/nimblegravity/jobs/4710402005"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "US (Remote)/LATAM (Remote)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "role_responsibility_mismatch",
+          "detail": "Role is fundamentally about managing vendor partner programs (Microsoft, Databricks, Anthropic) and navigating co-sell mechanics, not building commercial demand in new markets. Core verbs are 'operationalize partner funding,' 'drive deal registration,' 'manage funding lifecycle,' 'maintain cadences with partner stakeholders', this is partner program management and channel operations, not market creation.",
+          "severity": "hard"
+        },
+        {
+          "type": "experience_gap",
+          "detail": "JD requires 'Demonstrated success as an alliances lead, partner manager, or co-sell focused seller with a major cloud, data, or AI platform vendor' and 'Working knowledge of Microsoft Cloud Partner Program mechanics is strongly preferred, including Azure specializations, managed partner status, Partner Center, MCI, ECIF, Azure Offer Navigator.' Paul has no background managing vendor partner programs, no Microsoft Partner Center experience, and no demonstrated knowledge of Azure Accelerate funding mechanics.",
+          "severity": "hard"
+        },
+        {
+          "type": "sector_experience_gap",
+          "detail": "Role requires deep working knowledge of consultancy services sales and partner-led services revenue models. Paul's background is selling satellite data and monitoring services as products/capabilities, not selling consulting/professional services engagements. The motion is structurally different.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 6,
+        "GC": 7
+      },
+      "score_range": [
+        42.0,
+        44.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 130
+    },
+    {
       "company": "Octopus Energy Group (Electroverse)",
       "role": "Partnerships Manager - European Speaking",
       "score": 41.5,
@@ -5908,10 +5968,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 130
+      "rank": 131
     },
     {
-      "rank": 131,
+      "rank": 132,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -5991,7 +6051,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 132
+      "rank": 133
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -6044,7 +6104,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 133
+      "rank": 134
     },
     {
       "company": "Overstory",
@@ -6099,7 +6159,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 134
+      "rank": 135
     },
     {
       "company": "Acre",
@@ -6159,10 +6219,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 135
+      "rank": 136
     },
     {
-      "rank": 136,
+      "rank": 137,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -6212,7 +6272,7 @@
       }
     },
     {
-      "rank": 137,
+      "rank": 138,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -6302,7 +6362,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 138
+      "rank": 139
     },
     {
       "company": "gable",
@@ -6350,7 +6410,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 139
+      "rank": 140
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -6398,7 +6458,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 140
+      "rank": 141
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -6446,7 +6506,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 141
+      "rank": 142
     },
     {
       "company": "Planet",
@@ -6514,7 +6574,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 142
+      "rank": 143
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -6572,7 +6632,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 143
+      "rank": 144
     },
     {
       "company": "Biomesense",
@@ -6627,7 +6687,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 144
+      "rank": 145
     },
     {
       "company": "Vantor",
@@ -6692,7 +6752,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 145
+      "rank": 146
     },
     {
       "company": "Ocean Conservancy | Schmidt Marine Job Board",
@@ -6752,7 +6812,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 146
+      "rank": 147
     },
     {
       "company": "",
@@ -6805,7 +6865,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 147
+      "rank": 148
     },
     {
       "company": "Airbus",
@@ -6865,7 +6925,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 148
+      "rank": 149
     },
     {
       "company": "Airbus",
@@ -6935,7 +6995,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 149
+      "rank": 150
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -6995,7 +7055,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 150
+      "rank": 151
     },
     {
       "company": "Vantor",
@@ -7060,7 +7120,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 151
+      "rank": 152
     },
     {
       "company": "Acre",
@@ -7120,10 +7180,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 152
+      "rank": 153
     },
     {
-      "rank": 153,
+      "rank": 154,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -7168,7 +7228,7 @@
       }
     },
     {
-      "rank": 154,
+      "rank": 155,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -7218,7 +7278,7 @@
       }
     },
     {
-      "rank": 155,
+      "rank": 156,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -44366,6 +44426,194 @@
           "source": "Climate Change Jobs",
           "url": "https://climatechangejobs.com/jobs/504927950-3-1-principal-chemical-process-engineer-separation",
           "reason": "Principal Chemical Process Engineer-Separation is a core technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "digest_count": 23,
+      "scored_count": 1,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Nimble Gravity",
+          "role": "Director, Strategic Partnerships & Alliances",
+          "score": 42.0,
+          "score_range": [
+            42.0,
+            44.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        }
+      ],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [],
+      "unscored": [],
+      "failed_em_dash_gate": [],
+      "notes": "23 entries. No Tier 1-2; 1 Tier 3 added. T3 1.",
+      "jobs_processed": 23,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "23 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 22 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Vice President and Chief Development Officer",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52813/vice-president-and-chief-development-officer/?LinkSource=PremiumListing",
+          "reason": "Chief Development Officer is a fundraising/donor relations role, not a commercial/BD/partnerships role, and falls under wrong-function exclusion.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain and Quality Manager M/F",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain-and-Quality-Manager-M-F_JR10416595-1",
+          "reason": "Supply Chain and Quality Manager is an operations function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Market Development Manager",
+          "source": "Bentley Systems",
+          "url": "https://jobs.bentley.com/job/Denver-Market-Development-Manager-CO-80002/1404136200/",
+          "reason": "Bentley Systems is infrastructure engineering software (CAD/BIM for civil engineers), off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Engineering Manager, Platform Engineering & Data Systems",
+          "source": "Carbon Mapper",
+          "url": "https://jobs.gusto.com/postings/carbon-mapper-inc-senior-engineering-manager-platform-engineering-data-systems-42635c1c-c7f9-43d5-b81e-621b92a000ca",
+          "reason": "Senior Engineering Manager, Platform Engineering & Data Systems is a pure technical engineering management role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Material Support & Logistics",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Tokyo/Head-of-Material-Support---Logistics_JR10424341",
+          "reason": "Head of Material Support & Logistics is a supply chain/operations function, not commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "EXECUTIVE DIRECTOR",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52760/executive-director/?LinkSource=HomePage",
+          "reason": "Executive Director is a CEO-equivalent role, not a VP/Director commercial or partnerships function Paul targets.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President for Development and Outreach",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52805/vice-president-for-development-and-outreach/?LinkSource=PromotedJob",
+          "reason": "Vice President for Development and Outreach is a fundraising/philanthropy role, not a commercial/BD/partnerships role in Paul's domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Assistant Vice President for Colleges, Campuses, and Units",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52810/assistant-vice-president-for-colleges-campuses-and-units/?LinkSource=PremiumListing",
+          "reason": "Higher education fundraising/advancement role at a university, off-domain from climate/EO/maritime commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Assistant Vice President for Advancement Services",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52812/assistant-vice-president-for-advancement-services/?LinkSource=HomePage",
+          "reason": "Assistant Vice President for Advancement Services is a fundraising/development operations role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior People Strategy & Programs Manager",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/Crusoe/10614eb4-8ed2-4784-aafd-3510c1f64d90",
+          "reason": "Senior People Strategy & Programs Manager is an HR function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of People",
+          "source": "Albedo",
+          "url": "https://job-boards.greenhouse.io/albedo/jobs/4277961009",
+          "reason": "Head of People is an HR leadership role, outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Cybersecurity & GRC",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://formenergy.com/careers/open-jobs?ashby_jid=75817a2b-e76b-4ed1-874e-73efe23fa0e0&utm_source=jobs.greentownlabs.com",
+          "reason": "Director, Cybersecurity & GRC is a security/compliance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, IT Operations",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://formenergy.com/careers/open-jobs?ashby_jid=cd7e2265-08db-487e-83b7-2743aab70127&utm_source=jobs.greentownlabs.com",
+          "reason": "Director, IT Operations is a wrong-function role - IT/technical operations, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Marketing Manager, Dental (3D Printing)",
+          "source": "SOSV Portfolio",
+          "url": "https://careers.formlabs.com/job/8036857/apply/?gh_jid=8036857",
+          "reason": "Product Marketing Manager is an IC marketing role without commercial leadership component, and Formlabs 3D printing hardware for dental is off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Montana Water Program Director",
+          "source": "Trout Unlimited",
+          "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4292701",
+          "reason": "Montana Water Program Director is a conservation program leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Communications Manager - Climate Policy (Maternity Leave cover)",
+          "source": "Climate Analytics",
+          "url": "https://climate.jobs.personio.com/job/2691187",
+          "reason": "Senior Communications Manager is a marketing/communications function without commercial leadership component, and maternity leave cover signals fixed short-term duration inconsistent with Paul's search for permanent VP/Director commercial roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Technical Program Manager, Trade Compliance",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8014103",
+          "reason": "Technical Program Manager for Trade Compliance is a compliance/legal function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Engineer - Cabin Stress A220",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Kinston-NC/Principal-Engineer---Cabin-Stress-A220_JR10424698",
+          "reason": "Principal Engineer - Cabin Stress A220 is a pure technical engineering role (aircraft structural engineering), wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Stress Engineer-FEM",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Belfast/Lead-Stress-Engineer_JR10404398",
+          "reason": "Principal Stress Engineer-FEM is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr Manager, Sustainability Roadmap & Sponsorships",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Washington-DC/Sr-Manager--Sustainability-Roadmap---Sponsorships_JR10422673-2",
+          "reason": "Sustainability Roadmap & Sponsorships is a corporate sustainability/ESG strategy role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Electrical Engineer, Power Systems",
+          "source": "True Anomaly",
+          "url": "https://job-boards.greenhouse.io/trueanomalyinc/jobs/5174580007",
+          "reason": "Principal Electrical Engineer, Power Systems is a pure technical engineering role, not a commercial or BD function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Geologist",
+          "source": "Voyager Ventures Portfolio",
+          "url": "https://jobs.ashbyhq.com/endurance-energy/16627034-38cc-442e-88b5-1c56ea23896d?utm_source=careers.voyagervc.com",
+          "reason": "Principal Geologist is a pure technical geology role, not a commercial/BD/partnerships function.",
           "confidence": "high"
         }
       ]
