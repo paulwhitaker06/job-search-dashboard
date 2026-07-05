@@ -9521,20 +9521,6 @@
   ],
   "watch_list": [
     {
-      "company": "Jua",
-      "category": "Climate AI / Weather Intelligence",
-      "why": "Zurich-based, $11.8M Series A, building Earth Intelligence Platform using satellite data and AI to simulate atmospheric physics. Climate risk modeling customer base overlaps Paul's insurance vertical work (AXA Climate, British Marine/QBE).",
-      "roast": "Swiss startup that raised eleven million euros to build an AI model that learns physics from satellite data because apparently numerical weather prediction is not complicated enough already. They integrate optical sensors, radiometers, radars, and GNSS radio occultation which sounds like they are ingesting every feed on the market and hoping the model figures out what to do with it. The climate tech angle is real and the insurance vertical is live which means someone at AXA or Swiss Re is taking their calls but the question is whether they are selling forecasts or selling the idea of better forecasts. You closed AXA Climate and British Marine QBE deals at GFW by finding the moment when the status quo felt riskier than the pilot and that exact skill is what Jua needs if they are going to convince parametric insurance underwriters to trust a black box model over fifty years of actuarial tables. They are based in Zurich which is the world capital of people who do not take risks they cannot quantify and you are the person who taught conservative buyers how to buy things they did not know existed. The team is technical and the funding is adequate and the market timing is good if you believe extreme weather is going to keep breaking underwriting models. The hard part is not the science, it is making the commercial argument stick when the buyer's entire career depends on not being wrong. You have done that in offshore energy, in fisheries surveillance, in maritime risk. Do it again but this time the customer already knows they have a problem.",
-      "careers_url": "https://jua.ai/careers"
-    },
-    {
-      "company": "SARsatX",
-      "category": "Synthetic Aperture Radar / Middle East EO",
-      "why": "Saudi Arabia-based, $2.6M seed (Tonomus/Aramco VC), building SAR constellation for MENA region (deforestation, border security, disasters, oil leakage). Sovereign EO play with regional focus, fits Paul's government/commercial deal-building and oil/gas monitoring background.",
-      "roast": "Saudi-backed SAR startup that closed two point six million from Tonomus and Aramco Ventures to build the ArabiaEye constellation because apparently the Middle East decided it wants its own satellites now and SARsatX is the chosen vehicle. The pitch is SAR plus optical fusion for the MENA region with use cases that read like a KSAT proposal from 2014 when you were flying to Perth and Houston explaining why oil majors should pay for proactive monitoring. The sovereignty angle is real and the funding sources tell you exactly who the customer is going to be but the question is whether they are building a commercial business or a subsidy recycling program for Vision 2030. You spent years in the North Sea and offshore Australia getting ENI and Woodside to move NOPSEMA toward requiring remote sensing in environmental plans and that playbook works if the regulatory pressure is genuine. Saudi has the budget and the strategic intent but you would be selling into a market where the government is the customer, the investor, and the regulator at the same time which is either the easiest deal structure you ever touched or the most politically suffocating. They are Seraphim alumni which means someone in London thought the business model was credible and the MENA market is underserved and growing fast but you already passed on UP42 because you did not want to explain Saudi ownership to North American enterprise customers. This is the inverse problem but the question is the same which is whether you want to spend the next three years navigating Riyadh instead of Taos.",
-      "careers_url": "https://sarsatx.com/careers"
-    },
-    {
       "company": "Wyvern",
       "category": "Hyperspectral EO",
       "why": "Vertical specialist, own constellation, analytics-first model, mentioned alongside ICEYE/Planet in 2026 EO industry roundup",
@@ -9764,6 +9750,20 @@
       "why": "Thermal EO constellation, recently back in business after funding, defense and commercial applications, unique dataset with licensing potential",
       "roast": "British thermal imaging satellite company that went quiet for a bit and is now officially back in business, which in the EO world usually means they either found a cornerstone customer who wrote a big enough check to make the unit economics work or they convinced a new set of investors that thermal intelligence is finally a category and not just a science experiment. Thermal EO is one of those datasets that everyone agrees is incredibly valuable right up until the moment you ask them to pay for it, and SatVu has been grinding through that exact conversation for years, so if they are hiring now it means someone finally said yes. The use cases are real, the defense applications are obvious, and the commercial verticals are insurance, energy infrastructure, and anyone else who needs to know what is hot when optical imagery can't see it, which is a narrow enough market that you have to be good at finding the buyers who will pay and patient enough to build the deals one stakeholder at a time. You have done that twice. KSAT built the commercial monitoring business in oil and gas when nobody was buying, GFW built the licensing function when the organization didn't believe commercial revenue was legitimate, and SatVu would be the same pattern but with a dataset that is genuinely scarce and a buyer base that skews government and enterprise. The company is not a startup anymore, they have flown hardware, and if they are scaling the commercial side that means they need someone who can structure partnerships, build licensing frameworks, and translate a unique technical capability into a repeatable revenue motion. You are that operator. The question is whether they are hiring for it or just trying to keep the lights on, but if it is the former, you should be in the conversation.",
       "careers_url": "https://www.satvu.com/careers"
+    },
+    {
+      "company": "LambdAI Space",
+      "category": "EO / Climate Analytics",
+      "why": "AI-driven satellite imagery interpretation for climate impact, natural resource monitoring, ag risk. Singapore-based, direct fit for Paul's EO + climate buyer expertise.",
+      "roast": "Singapore outfit using AI to interpret satellite imagery for climate insights. Which is what everyone with a GPU and a Planet API key has been doing since 2019, but sure, call it a startup. The pitch deck probably has a slide about how nobody else thought to point machine learning at Sentinel-2 data. You spent a decade at KSAT stitching together multi-provider EO ecosystems and teaching oil majors that proactive monitoring beats reactive crisis management. You know the difference between a technology demo and a business model. LambdAI's natural resource monitoring sounds like every other remote sensing consultancy that discovered AWS SageMaker last year. But if they have actual recurring revenue from someone who isn't their seed investor's portfolio company, and if they need someone who can explain to a procurement officer at an ag insurer why paying for this beats free Copernicus data, you can make that call in your sleep. The question is whether they have anyone in the room who has actually closed a deal with someone who wasn't already a believer. That's where you'd walk in. Check the careers page. If it's all ML engineers and zero commercial hires, you already know the problem.",
+      "careers_url": "https://www.lambdai.space/careers"
+    },
+    {
+      "company": "AIRMO",
+      "category": "GHG Monitoring / Satellite Methane",
+      "why": "LiDAR-equipped satellite constellation for continuous GHG emissions monitoring. Germany-based. Methane detection, CO2 tracking, exactly the regulatory-commercial intersection Paul knows from ENI/NOPSEMA and Planet methane work.",
+      "roast": "German startup building a LiDAR satellite constellation to track methane and CO2 in near-real-time. Spectrometers in space pointing at oil fields and telling you what you already knew but couldn't prove in a boardroom. The pitch is continuous monitoring with granularity that makes current reporting look like self-assessment theater. Which it is. You negotiated the Planet Labs deal that put 200 million hectares a day through a detection pipeline. You know exactly what the gap is between a beautiful map of a methane plume and a contract that someone's compliance officer will actually sign. AIRMO is solving a real problem but they're launching into a market where half the potential buyers are waiting to see if the regulations survive the next election cycle and the other half are trying to figure out if satellite-detected emissions create legal liability they don't currently have. If they need someone who can walk into a room with an energy company's environmental lead and say we both know you're emitting more than you're reporting, let's figure out the commercial structure that makes transparency feel less like a threat, that's a conversation you've had in five languages across three continents. The founder is probably a PhD who has never sold anything that wasn't a grant application. You'd fix that in six months.",
+      "careers_url": "https://www.airmo.io/careers"
     }
   ],
   "morning_briefs": [
@@ -49153,18 +49153,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "AMOC slowing\nAtlantic current tipping\nTrump cut the sensors\n",
-    "Red Sox no power\nthirteen homers, last in AL\nwalks and stolen bags\n",
-    "SatLeo thermal sats\nAhmedabad heat islands\nfour hundred thousand",
-    "Mindanao at dawn\nseven-eight shakes the coast hard\ntsunami warning",
-    "Zverev on his back\nsobbing in Paris clay dust\nfirst Grand Slam title",
-    "Spencer Pratt trails now\nLA mayor race too close\nRaman overtakes",
-    "Sox at Tampa Bay\nthree-game series through Tuesday\nYankees in the dust",
-    "Deb Haaland wins big\nNavajo woman rising\nprimary silence",
-    "World Environment Day\none point five overshoot sure\nEl Ni\u00f1o returns",
-    "Taos Plaza Live starts\nJuly twenty-third Thursday\ngazebo six PM",
-    "Beehive AI platform\nclimate risk automated\nTrellis showcase pitch",
-    "Albedo ten-cent res\ntwo hundred klick orbit first\nlaunch window this year",
     "June eighth monsoon dry\neighty-three degrees at noon\nplaza dust swirling",
     "Marble Imaging seed\nfive-three million euro closed\nBremen VHR build",
     "Red Sox visit Rays\nJune eight through tenth series\nNESN stream live feed",
@@ -49217,14 +49205,26 @@
     "SpaceX one million\norbital compute vision\nwhere does data live",
     "ICEYE credit line\nthree fifty million euros\nSAR intelligence",
     "Thermal satellite\nSatLeo monitors cities\nheat islands mapped",
-    "Planet Germany\ntwo sixty million contract\ndefense EO won"
+    "Planet Germany\ntwo sixty million contract\ndefense EO won",
+    "Khamenei's second day\nTehran funeral stretches long\nchants for revenge rise",
+    "Coney Island fence\nblack mask fires into cookout\nsix and seven years",
+    "Sox power still gone\nthirteen bombs, dead last again\nwalks won't save this year",
+    "El Ni\u00f1o's back now\nrapid strengthening they say\nGuterres warns hard",
+    "Data centers switch\nbackup generators humming\nheat wave frees the grid",
+    "Taos Plaza Live\nJuly twenty-three it starts\nThursday nights till August",
+    "Burn ban holds in Taos\nno fireworks for July Fourth\nMavericks played instead",
+    "Eagle and Falcon\nNASA's new earth watchers fly\nspectral mapper launched",
+    "Red Willow at dusk\nMavericks and Felix played\nno fireworks this year",
+    "OMB proposes\nfederal grants reshaped soon\nOctober first live",
+    "Monsoon should be here\npinyon dust and waiting sky\nJuly still too dry",
+    "ATS job board glows\nthree roles, none quite right today\nrefresh one more time"
   ],
   "intros": [
     "Clean queue. Haiku hold the wire.",
     "Taos Plaza Live returns July twenty-three. Free music every Thursday through August.",
-    "Taos July 4 tonight at Red Willow Park. The Mavericks, Felix y Los Gatos. No fireworks this year, burn ban holds.",
-    "Ocean temps hit record high in June. El Ni\u00f1o coming back. Heat dome over 185 million Americans this weekend.",
-    "Khamenei funeral underway in Tehran. Millions in the streets. America turns 250 today.",
+    "Las Fiestas de Taos starts Thursday July 17. Burn ban still in effect.",
+    "El Ni\u00f1o rapidly strengthening. Great Barrier Reef logged worst summer on record.",
+    "Khamenei funeral, day two. Chants for revenge in Tehran streets.",
     "The pipeline will refill. Until then:",
     "WMO: eighty percent chance El Ni\u00f1o by August. Guterres calls it climate alarm.",
     "No offers to chew on. A haiku to sit with.",
