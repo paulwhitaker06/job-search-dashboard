@@ -43,7 +43,7 @@
     "awaiting_response": 11,
     "active_interviews": 3,
     "active_pipeline": 180,
-    "deep_dives_done": 21,
+    "deep_dives_done": 22,
     "resumes_built": 1,
     "rejected_closed": 7,
     "last_updated": "2026-07-06",
@@ -882,6 +882,60 @@
       "rank": 20
     },
     {
+      "company": "Loft Orbital Solutions",
+      "role": "Senior Sales Manager, Americas",
+      "score": 54.5,
+      "proxy_score": null,
+      "effective_score": 54.5,
+      "fit": 6,
+      "has_deep_dive": true,
+      "date": "2026-07-02",
+      "scqa": "The Second Mission Problem",
+      "verdict": "Deep dive 2026-07-06 (supersedes pipeline 50.0). Honest Tier 3 at 54.5: the motion is conventional full-cycle new business on an existing Americas team, not zero-to-one building, but the sale itself is consultative multi-vertical space services sold to institutional and commercial buyers, the closest live analog to Paul's KSAT decade. RF raised 5 to 6 (the pipeline's sector-depth cap violates the rubric's commercial-space rule) and SA 4 to 5 (Americas new-customer acquisition is a new-region build woven into an existing function). No hard blockers; the single most actionable senior US space seat in the current pile.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/loftorbital/f48e757b-27c8-4b8c-87b3-f56dd6954102"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_Americas_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed",
+      "added": "2026-07-02",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "Space infrastructure / mission-as-a-service",
+      "location": "Golden, CO or San Francisco (on-site, relocation assistance offered)",
+      "hook": "US-actionable senior space sales seat at a scaling unicorn; 500M USD bookings, buyers Paul has sold to for twenty years.",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "Paul meets the JD's space-industry requirement broadly (KSAT 2011-2021, GFW 2021-2026), but the satellite-manufacturing and supply-chain half of the ecosystem is the thinner half of his record; he has traded with it rather than worked inside it.",
+          "severity": "soft"
+        },
+        {
+          "type": "sales_approach",
+          "detail": "JD asks for full lifecycle quota-rhythm sales; Paul's core motion is market creation, though his KSAT decade covered lead generation through contract negotiation.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "On-site in Golden, CO or San Francisco; relocation assistance offered. Soft flag per the geography rule.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 6,
+        "SA": 5,
+        "IL": 5,
+        "SPM": 5,
+        "CO": 6,
+        "GC": 6
+      },
+      "rank": 21
+    },
+    {
       "company": "Crux Climate",
       "role": "Managing Director, Industry Coverage & Debt Advisory",
       "score": 54.0,
@@ -927,7 +981,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 21
+      "rank": 22
     },
     {
       "company": "Revalue",
@@ -977,10 +1031,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 22
+      "rank": 23
     },
     {
-      "rank": 23,
+      "rank": 24,
       "company": "David Energy",
       "role": "Customer Success Manager",
       "date": "2026-04-17",
@@ -1061,7 +1115,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 24
+      "rank": 25
     },
     {
       "company": "Satlantis",
@@ -1111,10 +1165,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 25
+      "rank": 26
     },
     {
-      "rank": 26,
+      "rank": 27,
       "company": "Bentley Systems",
       "role": "Market Development Director, North America Transportation",
       "score": 53.0,
@@ -1162,7 +1216,7 @@
       ]
     },
     {
-      "rank": 27,
+      "rank": 28,
       "company": "Systemiq",
       "role": "Strategy Director ,  Low Carbon Energy",
       "score": 53.0,
@@ -1262,10 +1316,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 28
+      "rank": 29
     },
     {
-      "rank": 29,
+      "rank": 30,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -1362,7 +1416,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 30
+      "rank": 31
     },
     {
       "company": "Reflex Aerospace Gmbh",
@@ -1422,10 +1476,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 31
+      "rank": 32
     },
     {
-      "rank": 32,
+      "rank": 33,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -1456,7 +1510,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 33,
+      "rank": 34,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -1530,7 +1584,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -1578,7 +1632,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 35
+      "rank": 36
     },
     {
       "company": "Overstory",
@@ -1633,7 +1687,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 36
+      "rank": 37
     },
     {
       "company": "Ocean Visions, Inc",
@@ -1688,7 +1742,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 37
+      "rank": 38
     },
     {
       "company": "ChemFinity Technologies",
@@ -1748,7 +1802,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 38
+      "rank": 39
     },
     {
       "company": "Climeworks",
@@ -1808,10 +1862,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 39
+      "rank": 40
     },
     {
-      "rank": 40,
+      "rank": 41,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -1840,7 +1894,7 @@
       "blockers": []
     },
     {
-      "rank": 41,
+      "rank": 42,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -1875,7 +1929,7 @@
       ]
     },
     {
-      "rank": 42,
+      "rank": 43,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -1961,10 +2015,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 43
+      "rank": 44
     },
     {
-      "rank": 44,
+      "rank": 45,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -2005,7 +2059,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 46,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development ,  Mission Critical Infrastructure",
       "score": 51.0,
@@ -2048,7 +2102,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 47,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -2122,7 +2176,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 47
+      "rank": 48
     },
     {
       "company": "telnyx | Techstars Job Board",
@@ -2170,7 +2224,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 48
+      "rank": 49
     },
     {
       "company": "",
@@ -2223,7 +2277,7 @@
         "CO": 9,
         "GC": 7
       },
-      "rank": 49
+      "rank": 50
     },
     {
       "company": "Manatal",
@@ -2283,7 +2337,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 50
+      "rank": 51
     },
     {
       "company": "Synspective",
@@ -2348,11 +2402,11 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 51,
+      "rank": 52,
       "source_note": "2026-07-06: deduped (removed stale April entry) and re-scored; hard sector cap corrected to soft, real EU work-auth blocker surfaced."
     },
     {
-      "rank": 52,
+      "rank": 53,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 50.5,
@@ -2405,7 +2459,7 @@
       ]
     },
     {
-      "rank": 53,
+      "rank": 54,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -2434,7 +2488,7 @@
       "blockers": []
     },
     {
-      "rank": 54,
+      "rank": 55,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -2519,7 +2573,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 55
+      "rank": 56
     },
     {
       "company": "",
@@ -2567,7 +2621,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 56
+      "rank": 57
     },
     {
       "company": "Electra",
@@ -2615,7 +2669,7 @@
         "CO": 7,
         "GC": 6
       },
-      "rank": 57
+      "rank": 58
     },
     {
       "company": "LocateAI | Techstars Job Board",
@@ -2663,66 +2717,6 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 58
-    },
-    {
-      "company": "Senior Sales Manager, Americas",
-      "role": "Loft Orbital Solutions - Senior Sales Manager, Americas",
-      "score": 50.0,
-      "proxy_score": null,
-      "effective_score": 50.0,
-      "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-07-02",
-      "scqa": "",
-      "verdict": "Loft Orbital is a space infrastructure company selling mission-as-a-service to commercial and institutional customers. The role is full-cycle sales (lead gen through contracting) for payload services. Paul has 15 years in commercial space (KSAT satellite services 2011-2021, GFW data partnerships 2021-2026), meeting the sector requirement broadly, but his experience is on the data/services side, not spacecraft manufacturing or mission infrastructure, a sector-depth gap that triggers a soft blocker and caps RF at 5. The JD asks for '4+ years of experience in full lifecycle cycle sales... with a demonstrable track record of success', Paul's KSAT and GFW work involved proposals and contracting, but his core motion is market creation via pilots and regulatory precedent, not conventional quota-carrying full-cycle sales, capping IL at 5. The role is managing an established sales process ('support the cradle-to-grave sales process') at a scaling company with 30+ missions flown and a growing fleet, not building a commercial function from scratch, SA scores 4. SPM is 5: space sector and some multi-stakeholder complexity, but no clear match to Paul's three patterns. CO is 6: $130k-$180k is solid mid-tier, equity mentioned. GC is 6: on-site in Golden or SF requires relocation from Taos, but within US and Paul is open to relocation for the right role. Weighted total: (5×25 + 4×20 + 5×20 + 5×15 + 6×10 + 6×10)/10 = 49.5. This is a Tier 3 role, space sector fit, but the sales motion and stage are misaligned with Paul's market-builder profile.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.lever.co/loftorbital/f48e757b-27c8-4b8c-87b3-f56dd6954102"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-02",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "Golden, CO or San Francisco",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "sector_experience",
-          "detail": "JD requires 'Deep understanding of the space industry, including satellite manufacturers, operators, and related stakeholders, and the supply chains and ecosystem supporting them.' Paul's space sector experience is primarily from the data/services buyer side (KSAT monitoring services, GFW data partnerships), not spacecraft manufacturing, mission-as-a-service, or satellite operations infrastructure. This is a sector-depth gap.",
-          "severity": "soft"
-        },
-        {
-          "type": "sales_approach",
-          "detail": "JD requires 'full lifecycle cycle sales' with 'lead generation, proposal crafting, and Contract negotiations' for physical and virtual payload services. Paul's track record is in market creation and pilot-to-precedent regulatory plays, not conventional full-cycle quota-carrying sales with cradle-to-grave account ownership.",
-          "severity": "soft"
-        },
-        {
-          "type": "relocation",
-          "detail": "Role is on-site in Golden, CO or San Francisco. Paul is based in Taos, NM and would need to relocate or commute.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 5,
-        "SA": 4,
-        "IL": 5,
-        "SPM": 5,
-        "CO": 6,
-        "GC": 6
-      },
-      "score_range": [
-        44.5,
-        60.0
-      ],
-      "confidence": "low",
-      "tier_uncertain": true,
       "rank": 59
     },
     {
