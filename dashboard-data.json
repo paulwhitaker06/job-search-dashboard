@@ -310,7 +310,7 @@
       "has_deep_dive": false,
       "date": "2026-04-14",
       "scqa": "Scored ,  not pursued (Houston + narrow ecosystem gap)",
-      "verdict": "YC-backed Series A maritime decarbonization startup (battery-electric shipping). Strong pattern match on partnership architecture, but JD names 'Intimate knowledge of the integrator, shipyard, and vessel designer landscape' as Non-Negotiable Competency #1. Paul has maritime authority and oil major sales experience (KSAT) but not the shipbuilding commercial ecosystem specifically. Houston on-site, which Paul has explicitly ruled out. Pass.",
+      "verdict": "YC-backed Series A maritime decarbonization startup (battery-electric shipping). Strong pattern match on partnership architecture, but JD names 'Intimate knowledge of the integrator, shipyard, and vessel designer landscape' as Non-Negotiable Competency #1. Paul has maritime authority and oil major sales experience (KSAT) but not the shipbuilding commercial ecosystem specifically. Houston on-site, which Paul has explicitly ruled out. Pass. [2026-07-06: Houston on-site reclassified to a soft relocation flag per the rubric geography rule. Score unchanged at 59.0: the legitimate hard blocker (JD names intimate knowledge of the integrator, shipyard, and vessel designer ecosystem as a Non-Negotiable) keeps the hard-cap ceiling in place.]",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -328,9 +328,9 @@
       "hook": "YC-backed Series A maritime decarb. Pattern fits but shipbuilding ecosystem knowledge required per JD non-negotiable; Houston ruled out.",
       "blockers": [
         {
-          "type": "geographic_residency",
-          "detail": "Houston, TX, On-site. Paul has explicitly stated he does not want to live in Houston.",
-          "severity": "hard"
+          "type": "relocation",
+          "detail": "Houston, TX, On-site. Paul has explicitly stated he does not want to live in Houston. [2026-07-06: US-domestic location is a soft relocation flag per the rubric geography rule, never a hard cap; GC re-scored on merits.]",
+          "severity": "soft"
         },
         {
           "type": "narrow_experience",
@@ -396,6 +396,54 @@
     },
     {
       "rank": 9,
+      "company": "Archer Daniels Midland (ADM)",
+      "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
+      "score": 58.5,
+      "proxy_score": null,
+      "effective_score": 58.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-20",
+      "scqa": "Scored - carbon markets BD but agri giant + on-site Midwest",
+      "verdict": "Fortune 500 agribusiness seeking to commercialize carbon credits from its CCUS assets across U.S. and international markets. The role itself maps cleanly to Paul's market-builder pattern (build new customers and pathways for a novel commodity, operate in fast-evolving market with incomplete information, CBAM exposure). But JD requires 10+ years in commodity trading or merchandising, which is a domain Paul has not worked in, and the role is explicitly on-site in Chicago or Decatur (#LI-Onsite). ADM is also an ag conglomerate rather than a mission-driven climate venture, which is outside Paul's stated target profile. Pass unless Paul wants to use this as a carbon-market learning conversation. [2026-07-06: hard US-geography cap removed (rubric geography rule); GC 2 to 5 on merits. The soft commodity-trading experience gap still caps RF/IL; ceiling about 58.5.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://sjobs.brassring.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&partnerid=25416&siteid=5998&jobid=3352268&codes=linkedin_adm#jobdetails=3352268_5998"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Tier 3, tracking only. Hard geo blocker (Chicago/Decatur on-site); domain adjacent but not mission-driven.",
+      "added": "2026-04-20",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Agribusiness / Carbon Markets / CCUS",
+      "location": "Chicago, IL or Decatur, IL (On-site)",
+      "hook": "Commercialize carbon credits from ADM's CCUS portfolio. Carbon markets + CBAM angle fits Paul's pattern; on-site Midwest and 10+ years commodity-trading requirement do not.",
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 6,
+        "IL": 5,
+        "SPM": 8,
+        "CO": 7,
+        "GC": 5
+      },
+      "blockers": [
+        {
+          "type": "relocation",
+          "detail": "Role is #LI-Onsite in Chicago, IL or Decatur, IL. Paul is in Taos, NM and has ruled out relocation to Midwest corporate HQ locations. [2026-07-06: US-domestic location is a soft relocation flag per the rubric geography rule, never a hard cap; GC re-scored on merits.]",
+          "severity": "soft"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "JD requires 10+ years in commodity trading, merchandising, or commercial sales in a commodity context. Paul has 25+ years of commercial BD but not in ag commodity trading.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 10,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -424,7 +472,7 @@
       "blockers": []
     },
     {
-      "rank": 10,
+      "rank": 11,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -453,7 +501,7 @@
       "blockers": []
     },
     {
-      "rank": 11,
+      "rank": 12,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -525,10 +573,10 @@
         "CO": 8,
         "GC": 8
       },
-      "rank": 12
+      "rank": 13
     },
     {
-      "rank": 13,
+      "rank": 14,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -565,7 +613,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -596,54 +644,6 @@
           "type": "geographic_residency",
           "detail": "APAC in-region role. Requires APAC residency and work authorization.",
           "severity": "hard"
-        }
-      ]
-    },
-    {
-      "rank": 15,
-      "company": "Archer Daniels Midland (ADM)",
-      "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
-      "score": 55.5,
-      "proxy_score": null,
-      "effective_score": 55.5,
-      "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-04-20",
-      "scqa": "Scored - carbon markets BD but agri giant + on-site Midwest",
-      "verdict": "Fortune 500 agribusiness seeking to commercialize carbon credits from its CCUS assets across U.S. and international markets. The role itself maps cleanly to Paul's market-builder pattern (build new customers and pathways for a novel commodity, operate in fast-evolving market with incomplete information, CBAM exposure). But JD requires 10+ years in commodity trading or merchandising, which is a domain Paul has not worked in, and the role is explicitly on-site in Chicago or Decatur (#LI-Onsite). ADM is also an ag conglomerate rather than a mission-driven climate venture, which is outside Paul's stated target profile. Pass unless Paul wants to use this as a carbon-market learning conversation.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://sjobs.brassring.com/tgnewui/search/home/homewithpreload?pagetype=jobdetails&partnerid=25416&siteid=5998&jobid=3352268&codes=linkedin_adm#jobdetails=3352268_5998"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Tier 3, tracking only. Hard geo blocker (Chicago/Decatur on-site); domain adjacent but not mission-driven.",
-      "added": "2026-04-20",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Agribusiness / Carbon Markets / CCUS",
-      "location": "Chicago, IL or Decatur, IL (On-site)",
-      "hook": "Commercialize carbon credits from ADM's CCUS portfolio. Carbon markets + CBAM angle fits Paul's pattern; on-site Midwest and 10+ years commodity-trading requirement do not.",
-      "dimension_scores": {
-        "RF": 5,
-        "SA": 6,
-        "IL": 5,
-        "SPM": 8,
-        "CO": 7,
-        "GC": 2
-      },
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Role is #LI-Onsite in Chicago, IL or Decatur, IL. Paul is in Taos, NM and has ruled out relocation to Midwest corporate HQ locations.",
-          "severity": "hard"
-        },
-        {
-          "type": "narrow_experience",
-          "detail": "JD requires 10+ years in commodity trading, merchandising, or commercial sales in a commodity context. Paul has 25+ years of commercial BD but not in ag commodity trading.",
-          "severity": "soft"
         }
       ]
     },
@@ -1320,6 +1320,56 @@
     },
     {
       "rank": 30,
+      "company": "Fleetzero",
+      "role": "Growth Manager",
+      "date": "2026-04-17",
+      "added": "2026-04-17",
+      "is_new": false,
+      "fit": 5,
+      "score": 53.0,
+      "effective_score": 53.0,
+      "proxy_score": null,
+      "tier": null,
+      "status": "not_applied",
+      "recommendation": "pass",
+      "domain": "Maritime decarbonization",
+      "location": "Remote / Hybrid",
+      "hook": "Houston on-site + explicit IC sales rep. Same ship-owner ecosystem gap as the other Fleetzero role.",
+      "verdict": "RF low: JD explicitly says 'individual contributor sales professional.' SA high: YC Series A maritime decarb. IL very high: maritime + climate crossover is Paul's core. SPM moderate: enterprise consultative to ship owners, but ship-owner ecosystem knowledge Paul does not have. CO weak: IC comp. GC hard blocker: Houston TX on-site. [2026-07-06: hard US-geography cap removed (rubric geography rule); GC 1 to 5 on merits. The wrong_seniority hard blocker (JD says individual contributor sales professional) stands.]",
+      "scqa": "Missed-roles audit surfaced Fleetzero at score 68.0",
+      "blockers": [
+        {
+          "type": "relocation",
+          "detail": "Houston, TX on-site. Paul is in Taos, NM. [2026-07-06: US-domestic location is a soft relocation flag per the rubric geography rule, never a hard cap; GC re-scored on merits.]",
+          "severity": "soft"
+        },
+        {
+          "type": "wrong_seniority",
+          "detail": "JD says 'individual contributor sales professional.'",
+          "severity": "hard"
+        }
+      ],
+      "job_urls": [
+        "https://jobs.lever.co/fleetzero/87c1b7b3-870f-47fc-8966-21b1f0e6b3d4"
+      ],
+      "resume_path": null,
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
+      "has_deep_dive": false,
+      "overdue": null,
+      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
+      "dimension_scores": {
+        "RF": 2,
+        "SA": 7,
+        "IL": 8,
+        "SPM": 6,
+        "CO": 4,
+        "GC": 5
+      }
+    },
+    {
+      "rank": 31,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -1416,7 +1466,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 31
+      "rank": 32
     },
     {
       "company": "Reflex Aerospace Gmbh",
@@ -1476,10 +1526,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 32
+      "rank": 33
     },
     {
-      "rank": 33,
+      "rank": 34,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -1510,7 +1560,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 34,
+      "rank": 35,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -1584,7 +1634,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -1632,7 +1682,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 36
+      "rank": 37
     },
     {
       "company": "Overstory",
@@ -1687,7 +1737,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 37
+      "rank": 38
     },
     {
       "company": "Ocean Visions, Inc",
@@ -1742,7 +1792,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 38
+      "rank": 39
     },
     {
       "company": "ChemFinity Technologies",
@@ -1802,7 +1852,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 39
+      "rank": 40
     },
     {
       "company": "Climeworks",
@@ -1862,10 +1912,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 40
+      "rank": 41
     },
     {
-      "rank": 41,
+      "rank": 42,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -1894,7 +1944,7 @@
       "blockers": []
     },
     {
-      "rank": 42,
+      "rank": 43,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -1929,7 +1979,7 @@
       ]
     },
     {
-      "rank": 43,
+      "rank": 44,
       "company": "Fugro",
       "role": "Regional Director, Strategic Sales",
       "score": 51.5,
@@ -2015,10 +2065,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 44
+      "rank": 45
     },
     {
-      "rank": 45,
+      "rank": 46,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -2059,7 +2109,7 @@
       ]
     },
     {
-      "rank": 46,
+      "rank": 47,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development ,  Mission Critical Infrastructure",
       "score": 51.0,
@@ -2102,7 +2152,7 @@
       ]
     },
     {
-      "rank": 47,
+      "rank": 48,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -2176,7 +2226,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 48
+      "rank": 49
     },
     {
       "company": "telnyx | Techstars Job Board",
@@ -2224,7 +2274,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 49
+      "rank": 50
     },
     {
       "company": "",
@@ -2277,7 +2327,7 @@
         "CO": 9,
         "GC": 7
       },
-      "rank": 50
+      "rank": 51
     },
     {
       "company": "Manatal",
@@ -2337,7 +2387,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 51
+      "rank": 52
     },
     {
       "company": "Synspective",
@@ -2402,11 +2452,11 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 52,
+      "rank": 53,
       "source_note": "2026-07-06: deduped (removed stale April entry) and re-scored; hard sector cap corrected to soft, real EU work-auth blocker surfaced."
     },
     {
-      "rank": 53,
+      "rank": 54,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 50.5,
@@ -2459,7 +2509,7 @@
       ]
     },
     {
-      "rank": 54,
+      "rank": 55,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -2488,7 +2538,7 @@
       "blockers": []
     },
     {
-      "rank": 55,
+      "rank": 56,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -2573,7 +2623,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 56
+      "rank": 57
     },
     {
       "company": "",
@@ -2621,7 +2671,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 57
+      "rank": 58
     },
     {
       "company": "Electra",
@@ -2669,7 +2719,7 @@
         "CO": 7,
         "GC": 6
       },
-      "rank": 58
+      "rank": 59
     },
     {
       "company": "LocateAI | Techstars Job Board",
@@ -2717,7 +2767,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 59
+      "rank": 60
     },
     {
       "company": "Loft Orbital Solutions",
@@ -2782,7 +2832,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 60
+      "rank": 61
     },
     {
       "company": "Green Jobs Board - greenjobsearch.org",
@@ -2847,7 +2897,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 61
+      "rank": 62
     },
     {
       "company": "Oxygen Conservation",
@@ -2895,10 +2945,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 62
+      "rank": 63
     },
     {
-      "rank": 63,
+      "rank": 64,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -2931,56 +2981,6 @@
           "severity": "hard"
         }
       ]
-    },
-    {
-      "rank": 64,
-      "company": "Fleetzero",
-      "role": "Growth Manager",
-      "date": "2026-04-17",
-      "added": "2026-04-17",
-      "is_new": false,
-      "fit": 2,
-      "score": 49.0,
-      "effective_score": 49.0,
-      "proxy_score": null,
-      "tier": null,
-      "status": "not_applied",
-      "recommendation": "pass",
-      "domain": "Maritime decarbonization",
-      "location": "Remote / Hybrid",
-      "hook": "Houston on-site + explicit IC sales rep. Same ship-owner ecosystem gap as the other Fleetzero role.",
-      "verdict": "RF low: JD explicitly says 'individual contributor sales professional.' SA high: YC Series A maritime decarb. IL very high: maritime + climate crossover is Paul's core. SPM moderate: enterprise consultative to ship owners, but ship-owner ecosystem knowledge Paul does not have. CO weak: IC comp. GC hard blocker: Houston TX on-site.",
-      "scqa": "Missed-roles audit surfaced Fleetzero at score 68.0",
-      "blockers": [
-        {
-          "type": "geographic_onsite",
-          "detail": "Houston, TX on-site. Paul is in Taos, NM.",
-          "severity": "hard"
-        },
-        {
-          "type": "wrong_seniority",
-          "detail": "JD says 'individual contributor sales professional.'",
-          "severity": "hard"
-        }
-      ],
-      "job_urls": [
-        "https://jobs.lever.co/fleetzero/87c1b7b3-870f-47fc-8966-21b1f0e6b3d4"
-      ],
-      "resume_path": null,
-      "cover_letter_path": null,
-      "doc_path": null,
-      "doc_note": "Surfaced via missed-roles audit 2026-04-17",
-      "has_deep_dive": false,
-      "overdue": null,
-      "source_note": "Canonical rubric applied 2026-04-17 (RF/SA/IL/SPM/CO/GC per job-evaluate SKILL.md)",
-      "dimension_scores": {
-        "RF": 2,
-        "SA": 7,
-        "IL": 8,
-        "SPM": 6,
-        "CO": 4,
-        "GC": 1
-      }
     },
     {
       "rank": 65,
@@ -4044,6 +4044,54 @@
     },
     {
       "rank": 88,
+      "company": "Patch",
+      "role": "Embedded Climate Strategist",
+      "score": 47.5,
+      "proxy_score": null,
+      "effective_score": 47.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-18",
+      "scqa": "Scored ,  carbon advisory role with SF hybrid blocker",
+      "verdict": "Patch's Embedded Climate Strategist is a subject-matter advisor who partners with AEs to guide corporate buyers on carbon market strategy, SBTi/VCMI/CSRD disclosures, and carbon budgeting. Stage alignment is good (Patch is a growth-stage carbon market infrastructure company), but the role requires a carbon-markets subject-matter expert, not a market-builder. Paul's climate credentials are EO/conservation/maritime, not voluntary carbon market expertise. SF hybrid (3-5 days in office) is a hard blocker. Pass. [2026-07-06: hard US-geography cap removed (rubric geography rule); GC 1 to 5 on merits. RF 4 and SPM 3 already say this is mostly not Paul's function; no deep-dive effort warranted at this score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.ashbyhq.com/patch.io/a641c9c8-a3d5-452c-8970-7bf15fd4b90e"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief 2026-04-18 ,  SF hybrid hard blocker, plus carbon-markets subject-matter expertise not Paul's background. Tracking only.",
+      "added": "2026-04-18",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Carbon Markets / Climate Advisory",
+      "location": "San Francisco (Hybrid 3-5 days/week)",
+      "hook": "Growth-stage carbon market infra company, advisory role partnering with AEs. Stage fits, function and location do not.",
+      "blockers": [
+        {
+          "type": "relocation",
+          "detail": "JD requires 'Ability to work out of our San Francisco office a few days a week' (3-5 days/week in SF office). Hybrid, not remote. Hard block from Taos, NM. [2026-07-06: US-domestic location is a soft relocation flag per the rubric geography rule, never a hard cap; GC re-scored on merits.]",
+          "severity": "soft"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "JD requires '10+ years of experience in sustainability strategy, carbon markets, or climate advisory.' Paul's climate work is EO/conservation/maritime, not voluntary carbon markets specifically.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 7,
+        "IL": 5,
+        "SPM": 3,
+        "CO": 4,
+        "GC": 5
+      }
+    },
+    {
+      "rank": 89,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -4078,7 +4126,7 @@
       ]
     },
     {
-      "rank": 89,
+      "rank": 90,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -4178,7 +4226,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 90
+      "rank": 91
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -4226,7 +4274,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 91
+      "rank": 92
     },
     {
       "company": "Acre",
@@ -4284,10 +4332,10 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 92
+      "rank": 93
     },
     {
-      "rank": 93,
+      "rank": 94,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -4330,7 +4378,7 @@
       ]
     },
     {
-      "rank": 94,
+      "rank": 95,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -4365,7 +4413,7 @@
       ]
     },
     {
-      "rank": 95,
+      "rank": 96,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -4400,7 +4448,7 @@
       ]
     },
     {
-      "rank": 96,
+      "rank": 97,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -4474,7 +4522,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 97
+      "rank": 98
     },
     {
       "company": "",
@@ -4522,7 +4570,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 98
+      "rank": 99
     },
     {
       "company": "Sales Systems Engineer",
@@ -4577,7 +4625,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 99
+      "rank": 100
     },
     {
       "company": "Acre",
@@ -4632,10 +4680,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 100
+      "rank": 101
     },
     {
-      "rank": 101,
+      "rank": 102,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -4715,10 +4763,10 @@
         "CO": 9,
         "GC": 8
       },
-      "rank": 102
+      "rank": 103
     },
     {
-      "rank": 103,
+      "rank": 104,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -4798,7 +4846,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 104
+      "rank": 105
     },
     {
       "company": "Product Manager- Embodied Carbon for Products",
@@ -4846,7 +4894,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 105
+      "rank": 106
     },
     {
       "company": "Earthdaily",
@@ -4901,10 +4949,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 106
+      "rank": 107
     },
     {
-      "rank": 107,
+      "rank": 108,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -4933,7 +4981,7 @@
       "blockers": []
     },
     {
-      "rank": 108,
+      "rank": 109,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -5025,7 +5073,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 109
+      "rank": 110
     },
     {
       "company": "Europe",
@@ -5085,7 +5133,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 110
+      "rank": 111
     },
     {
       "company": "Watershed Careers",
@@ -5140,10 +5188,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 111
+      "rank": 112
     },
     {
-      "rank": 112,
+      "rank": 113,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -5193,7 +5241,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -5259,7 +5307,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 114
+      "rank": 115
     },
     {
       "company": "Acre",
@@ -5307,7 +5355,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 115
+      "rank": 116
     },
     {
       "company": "",
@@ -5350,7 +5398,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 116
+      "rank": 117
     },
     {
       "company": "Muon Space",
@@ -5408,7 +5456,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 117
+      "rank": 118
     },
     {
       "company": "ExxonMobil",
@@ -5461,10 +5509,10 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 118
+      "rank": 119
     },
     {
-      "rank": 119,
+      "rank": 120,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -5536,7 +5584,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 120
+      "rank": 121
     },
     {
       "company": "Arable",
@@ -5584,55 +5632,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 121
-    },
-    {
-      "rank": 122,
-      "company": "Patch",
-      "role": "Embedded Climate Strategist",
-      "score": 43.5,
-      "proxy_score": null,
-      "effective_score": 43.5,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-04-18",
-      "scqa": "Scored ,  carbon advisory role with SF hybrid blocker",
-      "verdict": "Patch's Embedded Climate Strategist is a subject-matter advisor who partners with AEs to guide corporate buyers on carbon market strategy, SBTi/VCMI/CSRD disclosures, and carbon budgeting. Stage alignment is good (Patch is a growth-stage carbon market infrastructure company), but the role requires a carbon-markets subject-matter expert, not a market-builder. Paul's climate credentials are EO/conservation/maritime, not voluntary carbon market expertise. SF hybrid (3-5 days in office) is a hard blocker. Pass.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.ashbyhq.com/patch.io/a641c9c8-a3d5-452c-8970-7bf15fd4b90e"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief 2026-04-18 ,  SF hybrid hard blocker, plus carbon-markets subject-matter expertise not Paul's background. Tracking only.",
-      "added": "2026-04-18",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Carbon Markets / Climate Advisory",
-      "location": "San Francisco (Hybrid 3-5 days/week)",
-      "hook": "Growth-stage carbon market infra company, advisory role partnering with AEs. Stage fits, function and location do not.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "JD requires 'Ability to work out of our San Francisco office a few days a week' (3-5 days/week in SF office). Hybrid, not remote. Hard block from Taos, NM.",
-          "severity": "hard"
-        },
-        {
-          "type": "narrow_experience",
-          "detail": "JD requires '10+ years of experience in sustainability strategy, carbon markets, or climate advisory.' Paul's climate work is EO/conservation/maritime, not voluntary carbon markets specifically.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 7,
-        "IL": 5,
-        "SPM": 3,
-        "CO": 4,
-        "GC": 1
-      }
+      "rank": 122
     },
     {
       "company": "Active Site",
