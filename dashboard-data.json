@@ -200,14 +200,14 @@
       "rank": 4,
       "company": "Satlantis",
       "role": "Corporate & Business Development Manager",
-      "score": 59.5,
+      "score": 62.5,
       "proxy_score": null,
-      "effective_score": 59.5,
+      "effective_score": 62.5,
       "fit": 6,
       "has_deep_dive": false,
       "date": "2026-04-11",
       "scqa": "Scored ,  EO startup BD role",
-      "verdict": "Spanish satellite company building miniaturized EO sensors for urban and environmental monitoring. BD Manager role in the right domain (EO data commercialization) but 'Manager' title is below Director/VP target and Spain location is a constraint. Company is early-stage with limited public revenue data. Worth monitoring for a more senior role if one opens.",
+      "verdict": "Spanish satellite company building miniaturized EO sensors for urban and environmental monitoring. BD Manager role in the right domain (EO data commercialization) but 'Manager' title is below Director/VP target and Spain location is a constraint. Company is early-stage with limited public revenue data. Worth monitoring for a more senior role if one opens. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -225,14 +225,82 @@
       "hook": "EO satellite startup building miniaturized sensors. Right domain, wrong seniority and location.",
       "blockers": [
         {
-          "type": "geographic_residency",
-          "detail": "Location listed as Spain. Likely requires Spanish/EU residency. Verify US-remote not available.",
-          "severity": "hard"
+          "type": "work_authorization",
+          "detail": "Location listed as Spain. Likely requires Spanish/EU residency. Verify US-remote not available. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
         }
       ]
     },
     {
       "rank": 5,
+      "company": "Dioxycle",
+      "role": "Head of Business Development",
+      "score": 61.0,
+      "proxy_score": null,
+      "effective_score": 61.0,
+      "fit": 6,
+      "has_deep_dive": true,
+      "date": "2026-04-09",
+      "scqa": "The Offtaker Pipeline Problem",
+      "verdict": "Highest SA in pipeline (9) and great stage fit, but 100% on-site Paris and chemical industry domain is entirely new territory. Paul passed. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Dioxycle_Deep_Dive_Analysis.docx",
+      "doc_note": "Deep dive completed, parked Tier 3",
+      "added": "2026-04-06",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Carbon Utilization / Cleantech",
+      "location": "Paris (On-site)",
+      "hook": "Amazing stage alignment but Paris on-site and domain gap too wide.",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Paris (On-site). Hard block for US-based candidate. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "company": "Windward",
+      "role": "Senior Manager, Data Acquisition & Partnerships",
+      "score": 59.5,
+      "proxy_score": null,
+      "effective_score": 59.5,
+      "fit": 5,
+      "has_deep_dive": true,
+      "date": "2026-04-06",
+      "scqa": "The Data Sourcing Inflection",
+      "verdict": "Strong domain fit (IL:8) but Senior Manager title too junior, London with no remote signal, Israeli military culture, ~$100-140K comp. Paul passed. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://windward.ai/company/careers/co/london/A8.86F/senior-manager-data-acquisition-partnerships/all/"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Windward_Deep_Dive_Analysis.docx",
+      "doc_note": "Deep dive completed, parked Tier 3",
+      "added": "2026-04-06",
+      "is_new": false,
+      "tier": "tier3",
+      "domain": "Maritime AI / Data",
+      "location": "London",
+      "hook": "Domain fit is real but title, comp, location, and culture all wrong.",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "London-based role. Likely requires UK residency. Verify US-remote not available. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 7,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -324,10 +392,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 6
+      "rank": 8
     },
     {
-      "rank": 7,
+      "rank": 9,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -356,40 +424,7 @@
       "blockers": []
     },
     {
-      "rank": 8,
-      "company": "Dioxycle",
-      "role": "Head of Business Development",
-      "score": 58.0,
-      "proxy_score": null,
-      "effective_score": 58.0,
-      "fit": 6,
-      "has_deep_dive": true,
-      "date": "2026-04-09",
-      "scqa": "The Offtaker Pipeline Problem",
-      "verdict": "Highest SA in pipeline (9) and great stage fit, but 100% on-site Paris and chemical industry domain is entirely new territory. Paul passed.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Dioxycle_Deep_Dive_Analysis.docx",
-      "doc_note": "Deep dive completed, parked Tier 3",
-      "added": "2026-04-06",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Carbon Utilization / Cleantech",
-      "location": "Paris (On-site)",
-      "hook": "Amazing stage alignment but Paris on-site and domain gap too wide.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Paris (On-site). Hard block for US-based candidate.",
-          "severity": "hard"
-        }
-      ]
-    },
-    {
-      "rank": 9,
+      "rank": 10,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -418,7 +453,7 @@
       "blockers": []
     },
     {
-      "rank": 10,
+      "rank": 11,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -490,10 +525,10 @@
         "CO": 8,
         "GC": 8
       },
-      "rank": 11
+      "rank": 12
     },
     {
-      "rank": 12,
+      "rank": 13,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -530,7 +565,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 14,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -560,41 +595,6 @@
         {
           "type": "geographic_residency",
           "detail": "APAC in-region role. Requires APAC residency and work authorization.",
-          "severity": "hard"
-        }
-      ]
-    },
-    {
-      "rank": 14,
-      "company": "Windward",
-      "role": "Senior Manager, Data Acquisition & Partnerships",
-      "score": 56.5,
-      "proxy_score": null,
-      "effective_score": 56.5,
-      "fit": 5,
-      "has_deep_dive": true,
-      "date": "2026-04-06",
-      "scqa": "The Data Sourcing Inflection",
-      "verdict": "Strong domain fit (IL:8) but Senior Manager title too junior, London with no remote signal, Israeli military culture, ~$100-140K comp. Paul passed.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://windward.ai/company/careers/co/london/A8.86F/senior-manager-data-acquisition-partnerships/all/"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Windward_Deep_Dive_Analysis.docx",
-      "doc_note": "Deep dive completed, parked Tier 3",
-      "added": "2026-04-06",
-      "is_new": false,
-      "tier": "tier3",
-      "domain": "Maritime AI / Data",
-      "location": "London",
-      "hook": "Domain fit is real but title, comp, location, and culture all wrong.",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "London-based role. Likely requires UK residency. Verify US-remote not available.",
           "severity": "hard"
         }
       ]
@@ -1904,7 +1904,67 @@
       "blockers": []
     },
     {
-      "rank": 43,
+      "company": "Vantor",
+      "role": "General Manager - Sovereign Satellite Product Line & Commercialization",
+      "score": 51.5,
+      "proxy_score": null,
+      "effective_score": 51.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-06-16",
+      "scqa": "",
+      "verdict": "This is a senior executive GM role requiring P&L ownership, cross-functional delivery authority over engineering/production teams, and deep satellite technical knowledge that Paul does not meet. The hard seniority gap caps RF at 4 and IL at 3. The JD states: \"Extensive experience in a GM, Business Unit Leader, or Senior Director role managing complex, high-value product lines or strategic business units\" and \"Own the ultimate delivery and execution roadmap for the sovereign satellite product line globally, transitioning programs seamlessly from design and development into production, launch, and delivery.\" Paul has built commercial functions and closed deals but has never managed a business unit with engineering/production delivery responsibility. The London location requires UK work authorization Paul does not have, capping GC at 2. SPM scores 7 because the sovereign localization/offset work and multi-stakeholder ecosystem development match Paul's pattern 2 (multi-party deal architecture), but the role itself is structurally wrong. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://maxar.wd1.myworkdayjobs.com/Vantor/job/London-United-Kingdom/General-Manager---Sovereign-Satellite-Product-Line---Commercialization_R24114"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-06-16",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "London, United Kingdom (+2 more)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "seniority_gap",
+          "detail": "Role requires 'extensive experience in a GM, Business Unit Leader, or Senior Director role managing complex, high-value product lines or strategic business units within the satellite, aerospace, defense, or space sectors with a clear international or global scope.' Paul has Director-level commercial/BD experience but has never held a GM or Business Unit Leader role with P&L ownership and cross-functional delivery authority over engineering, production, and operations teams.",
+          "severity": "hard"
+        },
+        {
+          "type": "technical_depth",
+          "detail": "Role requires 'strong foundational knowledge of satellite and aerospace technologies' with ability to 'translate complex technical satellite capabilities, payload specifications, and orbital mechanics into high-value commercial offerings.' Paul's technical literacy is commercial-facing (SAR modes, delivery chains, use cases) not engineering-depth (payload specs, orbital mechanics, satellite subsystems).",
+          "severity": "soft"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in London, United Kingdom. Paul has US work authorization but would require UK work authorization/visa sponsorship, which is not mentioned in the JD. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 7,
+        "CO": 8,
+        "GC": 5
+      },
+      "score_range": [
+        45.5,
+        55.0
+      ],
+      "confidence": "low",
+      "tier_uncertain": false,
+      "rank": 43
+    },
+    {
+      "rank": 44,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -1945,7 +2005,7 @@
       ]
     },
     {
-      "rank": 44,
+      "rank": 45,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development ,  Mission Critical Infrastructure",
       "score": 51.0,
@@ -1988,7 +2048,7 @@
       ]
     },
     {
-      "rank": 45,
+      "rank": 46,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -2062,7 +2122,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 46
+      "rank": 47
     },
     {
       "company": "telnyx | Techstars Job Board",
@@ -2110,7 +2170,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 47
+      "rank": 48
     },
     {
       "company": "",
@@ -2163,7 +2223,7 @@
         "CO": 9,
         "GC": 7
       },
-      "rank": 48
+      "rank": 49
     },
     {
       "company": "Manatal",
@@ -2223,10 +2283,129 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 49
+      "rank": 50
     },
     {
-      "rank": 50,
+      "company": "Synspective",
+      "role": "Senior Manager Partnerships & Key Accounts EMEA",
+      "score": 50.5,
+      "proxy_score": null,
+      "effective_score": 50.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-07-02",
+      "scqa": "",
+      "verdict": "Re-scored 2026-07-06 after a scoring audit. The prior HARD 'sector_experience' cap was a misapplication: the JD asks for sales experience and a network within the EUROPEAN Geospatial / Defence sectors, but Paul HAS the EO/SAR sector (15 years; SAR is a direct KSAT match), so the sector requirement is met. The unmet slice is European market track record plus regional network, which the rubric treats as a soft, transferable market/geography gap, not a hard sector or named-network gap. RF raised to 5 and the sector gap set to soft. The genuine hard blocker is work authorization: the role is Munich-based (EU/DE residency, hybrid on-site) and Paul holds US work authorization only with no EU or US-remote option offered, so GC caps at 2 and the role is not actionable without sponsorship. Net ~47.5, Tier 3, a pass on actionability (EU work auth), not on fit. The duplicate April entry (generic careers URL, unscored) was removed. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://careers.synspective.com/o/senior-manager-partnerships-key-accounts-emea"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-02",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Munich,Bayern,Germany",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "severity": "soft",
+          "detail": "Munich-based (EU/DE residency, hybrid on-site, 30 to 40 percent EMEA travel). Paul holds US work authorization only; no EU or US-remote option is offered, so this is not actionable without sponsorship. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]"
+        },
+        {
+          "type": "sector_experience",
+          "severity": "soft",
+          "detail": "Corrected 2026-07-06: JD asks for sales/network within the EUROPEAN Geospatial/Defence sectors. Paul has deep EO/SAR sector experience (15 years; SAR is a direct KSAT match); the gap is European market track record + regional network, a soft/transferable market gap, not a hard sector or named-network gap. Previously mis-capped as hard."
+        },
+        {
+          "type": "relocation",
+          "severity": "soft",
+          "detail": "Munich (hybrid); Paul is Taos-based."
+        },
+        {
+          "type": "role_type",
+          "severity": "soft",
+          "detail": "Primarily channel/partner + key-account management (scale existing relationships) rather than new-market build."
+        }
+      ],
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 5,
+        "IL": 4,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 5
+      },
+      "score_range": [
+        45.0,
+        47.5
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 51,
+      "source_note": "2026-07-06: deduped (removed stale April entry) and re-scored; hard sector cap corrected to soft, real EU work-auth blocker surfaced."
+    },
+    {
+      "rank": 52,
+      "company": "Fugro",
+      "role": "GroundIQ Sales Manager, Germany",
+      "score": 50.5,
+      "proxy_score": null,
+      "effective_score": 50.5,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-04-21",
+      "scqa": "Scored. Not pursued (Germany residency + TSO network gap).",
+      "verdict": "Fugro GroundIQ is hiring multiple Sales Managers across Europe to accelerate an early-market-maturity subsurface mapping product. This specific role is Germany-based (Berlin/Hamburg/Bremen), not US remote. The JD names 'extensive knowledge and contact base from [TSO/government] sector' as essential, which is a network Paul does not have in Europe. Market-builder pattern match at product level exists, but geographic and network gaps make it not actionable. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.fugro.com/careers/jobs/R0031142-groundiq-sales-manager-germany"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: Germany-based + likely EU work authorization required. Soft blocker: European TSO network explicitly called out as essential, which Paul does not have.",
+      "added": "2026-04-21",
+      "is_new": false,
+      "tier": null,
+      "domain": "Geotechnical / Subsurface Mapping",
+      "location": "Germany (Berlin, Hamburg, Bremen)",
+      "hook": "Early-market-maturity subsurface intelligence product at scale, Germany region. Geo + European TSO network blockers.",
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 7,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 4,
+        "GC": 5
+      },
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in Berlin, Hamburg, or Bremen with 30-50% regional travel. Not a US-remote posting. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Germany-based Fugro entity; EU work authorization is effectively required. Sponsorship not indicated. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "JD states 'extensive knowledge and contact base from [TSO/government] sector is essential'. Paul has US utility regulator relationships but not a European TSO network.",
+          "severity": "soft"
+        }
+      ]
+    },
+    {
+      "rank": 53,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -2255,7 +2434,7 @@
       "blockers": []
     },
     {
-      "rank": 51,
+      "rank": 54,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -2340,7 +2519,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 52
+      "rank": 55
     },
     {
       "company": "",
@@ -2388,7 +2567,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 53
+      "rank": 56
     },
     {
       "company": "Electra",
@@ -2436,7 +2615,7 @@
         "CO": 7,
         "GC": 6
       },
-      "rank": 54
+      "rank": 57
     },
     {
       "company": "LocateAI | Techstars Job Board",
@@ -2484,7 +2663,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 55
+      "rank": 58
     },
     {
       "company": "Senior Sales Manager, Americas",
@@ -2544,7 +2723,72 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 56
+      "rank": 59
+    },
+    {
+      "company": "Loft Orbital Solutions",
+      "role": "Loft Orbital Solutions - Director, Business Development - Germany",
+      "score": 50.0,
+      "proxy_score": null,
+      "effective_score": 50.0,
+      "fit": 5,
+      "has_deep_dive": false,
+      "date": "2026-07-02",
+      "scqa": "",
+      "verdict": "This role carries two hard blockers: required German language fluency and German work authorization/basing, with no sponsorship pathway indicated. The JD explicitly states \"Fluency in German and English is required (both spoken and written)\" and the role is \"to be based in Germany\" with responsibility for \"the German ecosystem.\" While Paul has deep commercial space sector experience (15 years across KSAT and GFW), he has no German market network, does not speak German, and lacks EU work authorization. The role's responsibilities, building pipeline across German government and defense, cultivating relationships with DLR/BAAINBw/Bundeswehr, require local presence and language capability that Paul cannot provide. The SA score of 7 reflects that space-as-a-service infrastructure sales is adjacent to Paul's market-building pattern, but the hard gaps make this genuinely unactionable. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/loftorbital/6fd96b61-515b-41fa-b410-91ed6e5451bb"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-02",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Germany",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in Germany and requires fluency in German (both spoken and written). Paul does not speak German and does not have EU/German work authorization. No sponsorship mentioned. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "sector_experience",
+          "detail": "JD requires '7+ years of sales, business development, or strategic partnerships experience across the commercial space, aerospace, or defense sectors' with 'Demonstrated success in capturing new business across the German space and defense landscape.' Paul has 15 years in commercial space but zero German market experience or network.",
+          "severity": "soft"
+        },
+        {
+          "type": "language",
+          "detail": "Must have: Fluency in German and English is required (both spoken and written). Paul does not speak German.",
+          "severity": "hard"
+        },
+        {
+          "type": "language",
+          "detail": "JD requires fluency in German (spoken and written); Paul does not speak German. This stays a hard blocker.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 7,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 5
+      },
+      "score_range": [
+        45.0,
+        47.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 60
     },
     {
       "company": "Green Jobs Board - greenjobsearch.org",
@@ -2609,7 +2853,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 57
+      "rank": 61
     },
     {
       "company": "Oxygen Conservation",
@@ -2621,7 +2865,7 @@
       "has_deep_dive": true,
       "date": "2026-05-24",
       "scqa": "Make a Market, Do Not Work One",
-      "verdict": "Genuine zero-to-one market-building mandate that matches Paul's pattern, but the posting requires a luxury and high-end B2B partnerships profile selling to FTSE 100, S&P 500, and hyperscaler buyers that Paul does not have. The Hard Requirement Cap (RF 4, IL 3) pulls the honest content score to 49.0, Tier 3. Also UK-remote with regular UK travel, impractical from Taos.",
+      "verdict": "Genuine zero-to-one market-building mandate that matches Paul's pattern, but the posting requires a luxury and high-end B2B partnerships profile selling to FTSE 100, S&P 500, and hyperscaler buyers that Paul does not have. The Hard Requirement Cap (RF 4, IL 3) pulls the honest content score to 49.0, Tier 3. UK-remote with regular UK travel; per the 2026-07-06 policy this is pursue-if-sponsored (the application asks about future visa sponsorship).",
       "recommendation": "pass",
       "status": "not_applied",
       "overdue": null,
@@ -2657,10 +2901,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 58
+      "rank": 62
     },
     {
-      "rank": 59,
+      "rank": 63,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -2695,7 +2939,7 @@
       ]
     },
     {
-      "rank": 60,
+      "rank": 64,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -2745,7 +2989,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 65,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -2774,7 +3018,7 @@
       "blockers": []
     },
     {
-      "rank": 62,
+      "rank": 66,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -2819,7 +3063,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 67,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -2899,67 +3143,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 64
-    },
-    {
-      "company": "Vantor",
-      "role": "General Manager - Sovereign Satellite Product Line & Commercialization",
-      "score": 48.5,
-      "proxy_score": null,
-      "effective_score": 48.5,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-06-16",
-      "scqa": "",
-      "verdict": "This is a senior executive GM role requiring P&L ownership, cross-functional delivery authority over engineering/production teams, and deep satellite technical knowledge that Paul does not meet. The hard seniority gap caps RF at 4 and IL at 3. The JD states: \"Extensive experience in a GM, Business Unit Leader, or Senior Director role managing complex, high-value product lines or strategic business units\" and \"Own the ultimate delivery and execution roadmap for the sovereign satellite product line globally, transitioning programs seamlessly from design and development into production, launch, and delivery.\" Paul has built commercial functions and closed deals but has never managed a business unit with engineering/production delivery responsibility. The London location requires UK work authorization Paul does not have, capping GC at 2. SPM scores 7 because the sovereign localization/offset work and multi-stakeholder ecosystem development match Paul's pattern 2 (multi-party deal architecture), but the role itself is structurally wrong.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://maxar.wd1.myworkdayjobs.com/Vantor/job/London-United-Kingdom/General-Manager---Sovereign-Satellite-Product-Line---Commercialization_R24114"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-06-16",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "London, United Kingdom (+2 more)",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "seniority_gap",
-          "detail": "Role requires 'extensive experience in a GM, Business Unit Leader, or Senior Director role managing complex, high-value product lines or strategic business units within the satellite, aerospace, defense, or space sectors with a clear international or global scope.' Paul has Director-level commercial/BD experience but has never held a GM or Business Unit Leader role with P&L ownership and cross-functional delivery authority over engineering, production, and operations teams.",
-          "severity": "hard"
-        },
-        {
-          "type": "technical_depth",
-          "detail": "Role requires 'strong foundational knowledge of satellite and aerospace technologies' with ability to 'translate complex technical satellite capabilities, payload specifications, and orbital mechanics into high-value commercial offerings.' Paul's technical literacy is commercial-facing (SAR modes, delivery chains, use cases) not engineering-depth (payload specs, orbital mechanics, satellite subsystems).",
-          "severity": "soft"
-        },
-        {
-          "type": "work_authorization",
-          "detail": "Role is based in London, United Kingdom. Paul has US work authorization but would require UK work authorization/visa sponsorship, which is not mentioned in the JD.",
-          "severity": "hard"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 6,
-        "IL": 3,
-        "SPM": 7,
-        "CO": 8,
-        "GC": 2
-      },
-      "score_range": [
-        45.5,
-        55.0
-      ],
-      "confidence": "low",
-      "tier_uncertain": false,
-      "rank": 65
+      "rank": 68
     },
     {
       "company": "EMEA",
@@ -3024,10 +3208,58 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 66
+      "rank": 69
     },
     {
-      "rank": 67,
+      "rank": 70,
+      "company": "Exotrail",
+      "role": "Business Development & Sales Manager (In-Orbit Services)",
+      "score": 48.5,
+      "proxy_score": null,
+      "effective_score": 48.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-04-21",
+      "scqa": "Scored. Not pursued (France + French fluency + sub-Director title).",
+      "verdict": "Exotrail is a French space scale-up (founded 2017) hiring a BD & Sales Manager for its In-Orbit Services product line. Role is Toulouse/Massy hybrid, requires fluent French and English, and is a BD Manager rather than Director. Space domain is adjacent to Paul's EO background but the title seniority is below his target and two hard blockers (geographic + language) make this not actionable. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://careers.exotrail.com/jobs/7606512-business-development-sales-manager-h-f"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: France-based, requires fluent French. Also below Paul's Director/VP seniority target.",
+      "added": "2026-04-21",
+      "is_new": false,
+      "tier": null,
+      "domain": "In-Orbit Services / Space Mobility",
+      "location": "Toulouse, Massy, France (Hybrid)",
+      "hook": "French space scale-up, In-Orbit Services BD role. France-based + French required.",
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 7,
+        "IL": 4,
+        "SPM": 4,
+        "CO": 3,
+        "GC": 5
+      },
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in Toulouse or Massy, France, hybrid. Not a US-remote posting. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "language",
+          "detail": "JD requires 'excellente communication en francais et en anglais'. Paul is English-only.",
+          "severity": "hard"
+        }
+      ]
+    },
+    {
+      "rank": 71,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -3062,7 +3294,7 @@
       ]
     },
     {
-      "rank": 68,
+      "rank": 72,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -3097,7 +3329,7 @@
       ]
     },
     {
-      "rank": 69,
+      "rank": 73,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -3176,7 +3408,7 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 70
+      "rank": 74
     },
     {
       "company": "Ecog",
@@ -3224,7 +3456,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 71
+      "rank": 75
     },
     {
       "company": "Overstory",
@@ -3272,7 +3504,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 72
+      "rank": 76
     },
     {
       "company": "Environmental Defense Fund",
@@ -3320,7 +3552,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 73
+      "rank": 77
     },
     {
       "company": "ECI Software Solutions",
@@ -3368,7 +3600,7 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 74
+      "rank": 78
     },
     {
       "company": "Altana",
@@ -3421,7 +3653,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 75
+      "rank": 79
     },
     {
       "company": "Hydrosat",
@@ -3474,7 +3706,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 76
+      "rank": 80
     },
     {
       "company": "Overstory",
@@ -3524,7 +3756,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 77
+      "rank": 81
     },
     {
       "company": "Acre",
@@ -3579,10 +3811,123 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 78
+      "rank": 82
     },
     {
-      "rank": 79,
+      "company": "Loft Orbital",
+      "role": "Director, Commercial Business Development, EMEA",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 4,
+      "has_deep_dive": true,
+      "date": "2026-05-30",
+      "scqa": "Selling the Service, Not the Bus",
+      "verdict": "High-fit company on mission, technology, and commercial model, but a poor fit on this specific posting. The EMEA Director seat requires existing Europe-based BD networks and European work authorization, triggering the Hard Requirement Cap (IL 3) and an honest 47.0, Tier 3. Strong company alignment with Paul's space-data market-building, but three hard blockers make this seat not actionable from Taos. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/loftorbital/6e2a1cc0-a531-4952-a532-e7a3350ae8e3"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_EMEA_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed. Re-scored 47.0 vs brief 69.0 (Hard Requirement Cap). Separate existing Loft Orbital application in flight (Sr. Director, BD, US, status awaiting); this is the EMEA posting.",
+      "added": "2026-05-30",
+      "is_new": false,
+      "tier": null,
+      "domain": "",
+      "location": "Europe (Toulouse/Paris/Golden CO hubs); EMEA-based",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "EMEA Director seat is based in Europe; Paul is in Taos, NM. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Requires existing European work authorization; no US-based option for the EMEA seat. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "language",
+          "detail": "Fluency in a second European language listed as preferred; Paul is English-only.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 8,
+        "SA": 6,
+        "IL": 7,
+        "SPM": 8,
+        "CO": 7,
+        "GC": 5
+      },
+      "rank": 83
+    },
+    {
+      "company": "",
+      "role": "Head of Farmer Engagement",
+      "score": 48.0,
+      "proxy_score": null,
+      "effective_score": 48.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-02",
+      "scqa": "",
+      "verdict": "This role carries two hard blockers: (1) Paul's 15 years of commercial experience are in satellite services/EO data sales to maritime, oil & gas, and fisheries sectors, not agriculture, agribusiness, or Brazilian crop systems (soybean, maize, sugarcane, pasture, citrus); and (2) the role is based in São Paulo, Brazil, requiring Brazilian work authorization with no sponsorship mentioned, which Paul does not have. RF and IL are capped at 4 and 3 respectively. The role does involve multi-stakeholder partnership activation (cooperatives, agro-industries, producer associations) and building a commercial function for ERW deployment, which is adjacent to Paul's patterns, earning SPM 6. SA scores 6 because the role is building a farmer engagement function for a scaling climate solution, but it's in an entirely new domain. The hard domain and work-authorization gaps make this unactionable despite mission alignment. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ats.rippling.com/en-GB/terradot-careers/jobs/a7334297-d401-4686-8fc2-7328ee347c9f"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-02",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "domain_experience",
+          "detail": "Role requires 8+ years in agriculture/agribusiness and deep understanding of Brazilian agricultural systems, farm economics, and hands-on experience with Brazilian crops (soybean, maize, sugarcane, pasture, citrus). Paul's 15 years are in satellite services/EO data sales to maritime, oil & gas, and fisheries, not agriculture.",
+          "severity": "hard"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in São Paulo, Brazil. Paul has US work authorization but no indication of Brazilian work authorization or visa eligibility. JD does not mention sponsorship. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Role requires frequent travel across agricultural regions in Brazil and is based in São Paulo. Paul is currently in Taos, NM.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 5
+      },
+      "score_range": [
+        40.0,
+        46.0
+      ],
+      "confidence": "medium",
+      "tier_uncertain": false,
+      "rank": 84
+    },
+    {
+      "rank": 85,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -3648,7 +3993,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 80
+      "rank": 86
     },
     {
       "company": "hampr | Techstars Job Board",
@@ -3701,129 +4046,10 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 81
+      "rank": 87
     },
     {
-      "company": "Synspective",
-      "role": "Senior Manager Partnerships & Key Accounts EMEA",
-      "score": 47.5,
-      "proxy_score": null,
-      "effective_score": 47.5,
-      "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-07-02",
-      "scqa": "",
-      "verdict": "Re-scored 2026-07-06 after a scoring audit. The prior HARD 'sector_experience' cap was a misapplication: the JD asks for sales experience and a network within the EUROPEAN Geospatial / Defence sectors, but Paul HAS the EO/SAR sector (15 years; SAR is a direct KSAT match), so the sector requirement is met. The unmet slice is European market track record plus regional network, which the rubric treats as a soft, transferable market/geography gap, not a hard sector or named-network gap. RF raised to 5 and the sector gap set to soft. The genuine hard blocker is work authorization: the role is Munich-based (EU/DE residency, hybrid on-site) and Paul holds US work authorization only with no EU or US-remote option offered, so GC caps at 2 and the role is not actionable without sponsorship. Net ~47.5, Tier 3, a pass on actionability (EU work auth), not on fit. The duplicate April entry (generic careers URL, unscored) was removed.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://careers.synspective.com/o/senior-manager-partnerships-key-accounts-emea"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-02",
-      "is_new": true,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "Munich,Bayern,Germany",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "work_authorization",
-          "severity": "hard",
-          "detail": "Munich-based (EU/DE residency, hybrid on-site, 30 to 40 percent EMEA travel). Paul holds US work authorization only; no EU or US-remote option is offered, so this is not actionable without sponsorship."
-        },
-        {
-          "type": "sector_experience",
-          "severity": "soft",
-          "detail": "Corrected 2026-07-06: JD asks for sales/network within the EUROPEAN Geospatial/Defence sectors. Paul has deep EO/SAR sector experience (15 years; SAR is a direct KSAT match); the gap is European market track record + regional network, a soft/transferable market gap, not a hard sector or named-network gap. Previously mis-capped as hard."
-        },
-        {
-          "type": "relocation",
-          "severity": "soft",
-          "detail": "Munich (hybrid); Paul is Taos-based."
-        },
-        {
-          "type": "role_type",
-          "severity": "soft",
-          "detail": "Primarily channel/partner + key-account management (scale existing relationships) rather than new-market build."
-        }
-      ],
-      "dimension_scores": {
-        "RF": 5,
-        "SA": 5,
-        "IL": 4,
-        "SPM": 6,
-        "CO": 6,
-        "GC": 2
-      },
-      "score_range": [
-        45.0,
-        47.5
-      ],
-      "confidence": "high",
-      "tier_uncertain": false,
-      "rank": 82,
-      "source_note": "2026-07-06: deduped (removed stale April entry) and re-scored; hard sector cap corrected to soft, real EU work-auth blocker surfaced."
-    },
-    {
-      "company": "Loft Orbital",
-      "role": "Director, Commercial Business Development, EMEA",
-      "score": 47.0,
-      "proxy_score": null,
-      "effective_score": 47.0,
-      "fit": 5,
-      "has_deep_dive": true,
-      "date": "2026-05-30",
-      "scqa": "Selling the Service, Not the Bus",
-      "verdict": "High-fit company on mission, technology, and commercial model, but a poor fit on this specific posting. The EMEA Director seat requires existing Europe-based BD networks and European work authorization, triggering the Hard Requirement Cap (IL 3) and an honest 47.0, Tier 3. Strong company alignment with Paul's space-data market-building, but three hard blockers make this seat not actionable from Taos.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.lever.co/loftorbital/6e2a1cc0-a531-4952-a532-e7a3350ae8e3"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_EMEA_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed. Re-scored 47.0 vs brief 69.0 (Hard Requirement Cap). Separate existing Loft Orbital application in flight (Sr. Director, BD, US, status awaiting); this is the EMEA posting.",
-      "added": "2026-05-30",
-      "is_new": false,
-      "tier": null,
-      "domain": "",
-      "location": "Europe (Toulouse/Paris/Golden CO hubs); EMEA-based",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "EMEA Director seat is based in Europe; Paul is in Taos, NM.",
-          "severity": "hard"
-        },
-        {
-          "type": "work_authorization",
-          "detail": "Requires existing European work authorization; no US-based option for the EMEA seat.",
-          "severity": "hard"
-        },
-        {
-          "type": "language",
-          "detail": "Fluency in a second European language listed as preferred; Paul is English-only.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 8,
-        "SA": 6,
-        "IL": 7,
-        "SPM": 8,
-        "CO": 7,
-        "GC": 4
-      },
-      "rank": 83
-    },
-    {
-      "rank": 84,
+      "rank": 88,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -3858,7 +4084,7 @@
       ]
     },
     {
-      "rank": 85,
+      "rank": 89,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -3958,7 +4184,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 86
+      "rank": 90
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -4006,7 +4232,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 87
+      "rank": 91
     },
     {
       "company": "Acre",
@@ -4064,123 +4290,10 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 88
+      "rank": 92
     },
     {
-      "company": "Germany",
-      "role": "Loft Orbital Solutions - Director, Business Development - Germany",
-      "score": 47.0,
-      "proxy_score": null,
-      "effective_score": 47.0,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-07-02",
-      "scqa": "",
-      "verdict": "This role carries two hard blockers: required German language fluency and German work authorization/basing, with no sponsorship pathway indicated. The JD explicitly states \"Fluency in German and English is required (both spoken and written)\" and the role is \"to be based in Germany\" with responsibility for \"the German ecosystem.\" While Paul has deep commercial space sector experience (15 years across KSAT and GFW), he has no German market network, does not speak German, and lacks EU work authorization. The role's responsibilities, building pipeline across German government and defense, cultivating relationships with DLR/BAAINBw/Bundeswehr, require local presence and language capability that Paul cannot provide. The SA score of 7 reflects that space-as-a-service infrastructure sales is adjacent to Paul's market-building pattern, but the hard gaps make this genuinely unactionable.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.lever.co/loftorbital/6fd96b61-515b-41fa-b410-91ed6e5451bb"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-02",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "Germany",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "work_authorization",
-          "detail": "Role is based in Germany and requires fluency in German (both spoken and written). Paul does not speak German and does not have EU/German work authorization. No sponsorship mentioned.",
-          "severity": "hard"
-        },
-        {
-          "type": "sector_experience",
-          "detail": "JD requires '7+ years of sales, business development, or strategic partnerships experience across the commercial space, aerospace, or defense sectors' with 'Demonstrated success in capturing new business across the German space and defense landscape.' Paul has 15 years in commercial space but zero German market experience or network.",
-          "severity": "soft"
-        },
-        {
-          "type": "language",
-          "detail": "Must have: Fluency in German and English is required (both spoken and written). Paul does not speak German.",
-          "severity": "hard"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 7,
-        "IL": 3,
-        "SPM": 6,
-        "CO": 6,
-        "GC": 2
-      },
-      "score_range": [
-        45.0,
-        47.0
-      ],
-      "confidence": "high",
-      "tier_uncertain": false,
-      "rank": 89
-    },
-    {
-      "rank": 90,
-      "company": "Fugro",
-      "role": "GroundIQ Sales Manager, Germany",
-      "score": 46.5,
-      "proxy_score": null,
-      "effective_score": 46.5,
-      "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-04-21",
-      "scqa": "Scored. Not pursued (Germany residency + TSO network gap).",
-      "verdict": "Fugro GroundIQ is hiring multiple Sales Managers across Europe to accelerate an early-market-maturity subsurface mapping product. This specific role is Germany-based (Berlin/Hamburg/Bremen), not US remote. The JD names 'extensive knowledge and contact base from [TSO/government] sector' as essential, which is a network Paul does not have in Europe. Market-builder pattern match at product level exists, but geographic and network gaps make it not actionable.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://www.fugro.com/careers/jobs/R0031142-groundiq-sales-manager-germany"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: Germany-based + likely EU work authorization required. Soft blocker: European TSO network explicitly called out as essential, which Paul does not have.",
-      "added": "2026-04-21",
-      "is_new": false,
-      "tier": null,
-      "domain": "Geotechnical / Subsurface Mapping",
-      "location": "Germany (Berlin, Hamburg, Bremen)",
-      "hook": "Early-market-maturity subsurface intelligence product at scale, Germany region. Geo + European TSO network blockers.",
-      "dimension_scores": {
-        "RF": 5,
-        "SA": 7,
-        "IL": 3,
-        "SPM": 6,
-        "CO": 4,
-        "GC": 1
-      },
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Role is based in Berlin, Hamburg, or Bremen with 30-50% regional travel. Not a US-remote posting.",
-          "severity": "hard"
-        },
-        {
-          "type": "work_authorization",
-          "detail": "Germany-based Fugro entity; EU work authorization is effectively required. Sponsorship not indicated.",
-          "severity": "hard"
-        },
-        {
-          "type": "narrow_experience",
-          "detail": "JD states 'extensive knowledge and contact base from [TSO/government] sector is essential'. Paul has US utility regulator relationships but not a European TSO network.",
-          "severity": "soft"
-        }
-      ]
-    },
-    {
-      "rank": 91,
+      "rank": 93,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -4223,7 +4336,7 @@
       ]
     },
     {
-      "rank": 92,
+      "rank": 94,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -4258,7 +4371,7 @@
       ]
     },
     {
-      "rank": 93,
+      "rank": 95,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -4293,7 +4406,7 @@
       ]
     },
     {
-      "rank": 94,
+      "rank": 96,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -4349,8 +4462,8 @@
       "hook": "Right shape (build APAC from ground up) but Singapore-only with no visa sponsorship.",
       "blockers": [
         {
-          "type": "geographic_residency",
-          "detail": "JD: 'Candidates must already hold valid work authorization for Singapore, as we are unable to sponsor employment visas.'",
+          "type": "work_authorization",
+          "detail": "JD: 'Candidates must already hold valid work authorization for Singapore, as we are unable to sponsor employment visas.' [2026-07-06: stays HARD - JD explicitly rules out sponsorship.]",
           "severity": "hard"
         },
         {
@@ -4367,7 +4480,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 95
+      "rank": 97
     },
     {
       "company": "",
@@ -4415,7 +4528,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 96
+      "rank": 98
     },
     {
       "company": "Sales Systems Engineer",
@@ -4470,7 +4583,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 97
+      "rank": 99
     },
     {
       "company": "Acre",
@@ -4525,10 +4638,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 98
+      "rank": 100
     },
     {
-      "rank": 99,
+      "rank": 101,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -4608,10 +4721,10 @@
         "CO": 9,
         "GC": 8
       },
-      "rank": 100
+      "rank": 102
     },
     {
-      "rank": 101,
+      "rank": 103,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -4691,7 +4804,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 102
+      "rank": 104
     },
     {
       "company": "Product Manager- Embodied Carbon for Products",
@@ -4739,7 +4852,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 103
+      "rank": 105
     },
     {
       "company": "Earthdaily",
@@ -4794,10 +4907,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 104
+      "rank": 106
     },
     {
-      "rank": 105,
+      "rank": 107,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -4826,7 +4939,7 @@
       "blockers": []
     },
     {
-      "rank": 106,
+      "rank": 108,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -4918,7 +5031,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 107
+      "rank": 109
     },
     {
       "company": "Europe",
@@ -4978,7 +5091,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 108
+      "rank": 110
     },
     {
       "company": "Watershed Careers",
@@ -5033,70 +5146,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 109
+      "rank": 111
     },
     {
-      "company": "",
-      "role": "Head of Farmer Engagement",
-      "score": 45.0,
-      "proxy_score": null,
-      "effective_score": 45.0,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-07-02",
-      "scqa": "",
-      "verdict": "This role carries two hard blockers: (1) Paul's 15 years of commercial experience are in satellite services/EO data sales to maritime, oil & gas, and fisheries sectors, not agriculture, agribusiness, or Brazilian crop systems (soybean, maize, sugarcane, pasture, citrus); and (2) the role is based in São Paulo, Brazil, requiring Brazilian work authorization with no sponsorship mentioned, which Paul does not have. RF and IL are capped at 4 and 3 respectively. The role does involve multi-stakeholder partnership activation (cooperatives, agro-industries, producer associations) and building a commercial function for ERW deployment, which is adjacent to Paul's patterns, earning SPM 6. SA scores 6 because the role is building a farmer engagement function for a scaling climate solution, but it's in an entirely new domain. The hard domain and work-authorization gaps make this unactionable despite mission alignment.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://ats.rippling.com/en-GB/terradot-careers/jobs/a7334297-d401-4686-8fc2-7328ee347c9f"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-02",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "domain_experience",
-          "detail": "Role requires 8+ years in agriculture/agribusiness and deep understanding of Brazilian agricultural systems, farm economics, and hands-on experience with Brazilian crops (soybean, maize, sugarcane, pasture, citrus). Paul's 15 years are in satellite services/EO data sales to maritime, oil & gas, and fisheries, not agriculture.",
-          "severity": "hard"
-        },
-        {
-          "type": "work_authorization",
-          "detail": "Role is based in São Paulo, Brazil. Paul has US work authorization but no indication of Brazilian work authorization or visa eligibility. JD does not mention sponsorship.",
-          "severity": "hard"
-        },
-        {
-          "type": "relocation",
-          "detail": "Role requires frequent travel across agricultural regions in Brazil and is based in São Paulo. Paul is currently in Taos, NM.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 6,
-        "IL": 3,
-        "SPM": 6,
-        "CO": 6,
-        "GC": 2
-      },
-      "score_range": [
-        40.0,
-        46.0
-      ],
-      "confidence": "medium",
-      "tier_uncertain": false,
-      "rank": 110
-    },
-    {
-      "rank": 111,
+      "rank": 112,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -5144,54 +5197,6 @@
         "CO": 3,
         "GC": 7
       }
-    },
-    {
-      "rank": 112,
-      "company": "Exotrail",
-      "role": "Business Development & Sales Manager (In-Orbit Services)",
-      "score": 44.5,
-      "proxy_score": null,
-      "effective_score": 44.5,
-      "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-04-21",
-      "scqa": "Scored. Not pursued (France + French fluency + sub-Director title).",
-      "verdict": "Exotrail is a French space scale-up (founded 2017) hiring a BD & Sales Manager for its In-Orbit Services product line. Role is Toulouse/Massy hybrid, requires fluent French and English, and is a BD Manager rather than Director. Space domain is adjacent to Paul's EO background but the title seniority is below his target and two hard blockers (geographic + language) make this not actionable.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://careers.exotrail.com/jobs/7606512-business-development-sales-manager-h-f"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": "Scored via morning brief 2026-04-21. Hard blockers: France-based, requires fluent French. Also below Paul's Director/VP seniority target.",
-      "added": "2026-04-21",
-      "is_new": false,
-      "tier": null,
-      "domain": "In-Orbit Services / Space Mobility",
-      "location": "Toulouse, Massy, France (Hybrid)",
-      "hook": "French space scale-up, In-Orbit Services BD role. France-based + French required.",
-      "dimension_scores": {
-        "RF": 5,
-        "SA": 7,
-        "IL": 4,
-        "SPM": 4,
-        "CO": 3,
-        "GC": 1
-      },
-      "blockers": [
-        {
-          "type": "geographic_residency",
-          "detail": "Role is based in Toulouse or Massy, France, hybrid. Not a US-remote posting.",
-          "severity": "hard"
-        },
-        {
-          "type": "language",
-          "detail": "JD requires 'excellente communication en francais et en anglais'. Paul is English-only.",
-          "severity": "hard"
-        }
-      ]
     },
     {
       "rank": 113,
@@ -5827,7 +5832,67 @@
       "rank": 126
     },
     {
-      "rank": 127,
+      "company": "Asterra",
+      "role": "Territory Sales Manager, UK (Channel & Partner Sales)",
+      "score": 43.5,
+      "proxy_score": null,
+      "effective_score": 43.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-02",
+      "scqa": "",
+      "verdict": "This role carries a hard work-authorization blocker: it requires being based in the UK with no mention of sponsorship, and Paul has US work authorization only. Beyond geography, the role is structurally misaligned with Paul's profile. The JD explicitly states the role \"focuses primarily on channel and partner-driven sales, rather than direct selling\" and requires recruiting/managing resellers and distributors, a motion Paul has never executed. His 15 years are in direct end-customer relationship building (KSAT oil majors, GFW licensing), not channel ecosystem management. The infrastructure/utilities domain is adjacent, but the core job is partner enablement, not market creation. With a hard blocker and multiple soft gaps (channel experience, UK location), this is a clear pass. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://asterra.io/jobs/territory-sales-manager-uk-channel-partner-sales/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-02",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "UK",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Role requires being based in the United Kingdom. Paul has US work authorization but not UK work authorization, and the JD states 'Must be based in the United Kingdom' with no mention of sponsorship or relocation support. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "role_structure",
+          "detail": "Role is primarily channel/partner sales ('focuses primarily on channel and partner-driven sales, rather than direct selling'), not market creation or direct commercial function building. Paul's career has been building direct commercial relationships and demand, not managing reseller networks.",
+          "severity": "soft"
+        },
+        {
+          "type": "experience_gap",
+          "detail": "JD requires '7-10+ years of experience in channel sales, partner management, or business development' with 'Strong experience working with resellers, distributors, and strategic partners.' Paul has 15 years in commercial/BD but his experience is direct relationship selling to end customers, not managing channel partners or reseller ecosystems.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 4,
+        "SPM": 5,
+        "CO": 5,
+        "GC": 5
+      },
+      "score_range": [
+        36.0,
+        40.5
+      ],
+      "confidence": "medium",
+      "tier_uncertain": true,
+      "rank": 127
+    },
+    {
+      "rank": 128,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -5912,7 +5977,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 128
+      "rank": 129
     },
     {
       "company": "Acre",
@@ -5972,7 +6037,127 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 129
+      "rank": 130
+    },
+    {
+      "company": "Mitiga Solutions",
+      "role": "Account Executive",
+      "score": 43.0,
+      "proxy_score": null,
+      "effective_score": 43.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-02",
+      "scqa": "",
+      "verdict": "This role carries a hard work-authorization blocker: it is based in Barcelona, Spain, and the JD makes no mention of visa sponsorship, while Paul currently has US work authorization only. RF is capped at 4 and IL at 3 because the JD explicitly requires \"5 years in a quota-carrying AE or senior SDR/BDR role\" and \"at least 1 year carrying a quota.\" Paul's 15 years of commercial experience at KSAT and GFW was strategic market-building and pilot-to-precedent BD work, not traditional quota-carrying AE work. The role itself, full-cycle AE selling climate-risk SaaS to infrastructure/energy/finance, is a conventional sales seat, not the new-build commercial function Paul thrives in (SA 4). SPM scores 6 because the company sells to regulated/infrastructure buyers with multi-stakeholder complexity, but the role does not architect pilots-to-precedent or shape regulation. GC is capped at 2 due to the hard work-authorization gap. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://careers.mitigasolutions.com/jobs/7927000-account-executive"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-02",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "experience_gap",
+          "detail": "JD requires '5 years in B2B sales or a commercial client-facing role; at least 1 year carrying a quota' and '5 years in a quota-carrying AE or senior SDR/BDR role.' Paul has 15 years of commercial experience but in market-building BD roles, not quota-carrying AE positions. His KSAT and GFW work was strategic deal architecture and pilot-to-precedent development, not traditional quota-carrying sales.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Role is based in Barcelona, Spain (hybrid). Paul is currently in Taos, NM. This is an international relocation requiring consideration of visa/work authorization for Spain.",
+          "severity": "soft"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in Barcelona, Spain. Paul has US work authorization but would require Spanish/EU work authorization or sponsorship to work in Spain. JD does not mention visa sponsorship availability. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 5,
+        "GC": 5
+      },
+      "score_range": [
+        37.5,
+        40.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": true,
+      "rank": 131
+    },
+    {
+      "company": "ZeroNorth",
+      "role": "Senior Account Executive",
+      "score": 43.0,
+      "proxy_score": null,
+      "effective_score": 43.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-04",
+      "scqa": "",
+      "verdict": "ZeroNorth Senior Account Executive (Athens) is a **pass**. The role carries a **hard work-authorization blocker**: it is based in Athens, Greece, with no mention of visa sponsorship or relocation support, and Paul would require EU/Greek work authorization he does not currently possess. Beyond geography, this is a **quota-carrying enterprise AE role** managing an existing sales motion to large shipping enterprises, \"drive new business acquisition and manage the full sales cycle\", not building a commercial function from scratch. Paul's maritime experience is in selling satellite monitoring services TO the sector, not operating WITHIN shipping operations (shipowners/charterers/technical managers), creating a sector-depth gap. The role is execution-focused, not market-building, and the geographic/visa barrier is genuinely hard. [2026-07-06 policy update: foreign work authorization is now a soft sponsorship dependency, not a hard cap. GC re-scored on merits (was capped); RF/IL may still reflect the old hard cap pending a full re-score.]",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://careers.zeronorth.com/jobs/8016054-senior-account-executive"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-04",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Athens",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "relocation",
+          "detail": "Role is based in Athens, Greece. Paul is currently in Taos, NM with US work authorization. This is a relocation requirement to an international location.",
+          "severity": "soft"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Role is based in Athens, Greece. JD does not mention visa sponsorship or relocation support. Paul has US work authorization but would require EU/Greek work authorization to accept this role. [2026-07-06: reclassified soft - Paul will relocate anywhere; pursue if the employer sponsors a work visa.]",
+          "severity": "soft"
+        },
+        {
+          "type": "role_scope",
+          "detail": "Role is described as 'drive new business acquisition and manage the full sales cycle' with 'proven track record of successfully selling to large enterprises' - this is quota-carrying enterprise sales execution, not commercial function building.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 5,
+        "GC": 5
+      },
+      "score_range": [
+        40.0,
+        40.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 132
     },
     {
       "company": "Narmi | Techstars Job Board",
@@ -6020,7 +6205,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 130
+      "rank": 133
     },
     {
       "company": "SWARM Engineering",
@@ -6068,7 +6253,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 131
+      "rank": 134
     },
     {
       "company": "Everlong | Techstars Job Board",
@@ -6116,7 +6301,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 132
+      "rank": 135
     },
     {
       "company": "Waitt Foundation | Schmidt Marine Job Board",
@@ -6174,7 +6359,7 @@
         "CO": 7,
         "GC": 5
       },
-      "rank": 133
+      "rank": 136
     },
     {
       "company": "Help Scout | Techstars Job Board",
@@ -6229,10 +6414,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 134
+      "rank": 137
     },
     {
-      "rank": 135,
+      "rank": 138,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -6261,7 +6446,7 @@
       "blockers": []
     },
     {
-      "rank": 136,
+      "rank": 139,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -6341,7 +6526,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 137
+      "rank": 140
     },
     {
       "company": "",
@@ -6389,7 +6574,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 138
+      "rank": 141
     },
     {
       "company": "Airbus",
@@ -6449,7 +6634,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 139
+      "rank": 142
     },
     {
       "company": "Airbus",
@@ -6509,7 +6694,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 140
+      "rank": 143
     },
     {
       "company": "Airbus",
@@ -6569,7 +6754,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 141
+      "rank": 144
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -6624,7 +6809,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 142
+      "rank": 145
     },
     {
       "company": "Nimble Gravity",
@@ -6684,7 +6869,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 143
+      "rank": 146
     },
     {
       "company": "Planet",
@@ -6744,7 +6929,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 144
+      "rank": 147
     },
     {
       "company": "Satelytics (en-US)",
@@ -6799,7 +6984,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 145
+      "rank": 148
     },
     {
       "company": "Liveeo Gmbh",
@@ -6859,7 +7044,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 146
+      "rank": 149
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -6912,10 +7097,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 147
+      "rank": 150
     },
     {
-      "rank": 148,
+      "rank": 151,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -6995,7 +7180,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 149
+      "rank": 152
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -7048,7 +7233,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 150
+      "rank": 153
     },
     {
       "company": "Overstory",
@@ -7103,7 +7288,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 151
+      "rank": 154
     },
     {
       "company": "Acre",
@@ -7163,10 +7348,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 152
+      "rank": 155
     },
     {
-      "rank": 153,
+      "rank": 156,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -7216,7 +7401,7 @@
       }
     },
     {
-      "rank": 154,
+      "rank": 157,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -7306,7 +7491,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 155
+      "rank": 158
     },
     {
       "company": "gable",
@@ -7354,7 +7539,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 156
+      "rank": 159
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -7402,7 +7587,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 157
+      "rank": 160
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -7450,7 +7635,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 158
+      "rank": 161
     },
     {
       "company": "Business Development Account Executive",
@@ -7505,7 +7690,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 159
+      "rank": 162
     },
     {
       "company": "Carbonfuture",
@@ -7570,7 +7755,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 160
+      "rank": 163
     },
     {
       "company": "Astranis",
@@ -7630,7 +7815,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 161
+      "rank": 164
     },
     {
       "company": "Planet",
@@ -7698,7 +7883,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 162
+      "rank": 165
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -7756,7 +7941,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 163
+      "rank": 166
     },
     {
       "company": "Biomesense",
@@ -7811,7 +7996,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 164
+      "rank": 167
     },
     {
       "company": "Vantor",
@@ -7876,7 +8061,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 165
+      "rank": 168
     },
     {
       "company": "Ocean Conservancy | Schmidt Marine Job Board",
@@ -7936,7 +8121,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 166
+      "rank": 169
     },
     {
       "company": "Ørsted",
@@ -7991,67 +8176,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 167
-    },
-    {
-      "company": "Asterra",
-      "role": "Territory Sales Manager, UK (Channel & Partner Sales)",
-      "score": 40.5,
-      "proxy_score": null,
-      "effective_score": 40.5,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-07-02",
-      "scqa": "",
-      "verdict": "This role carries a hard work-authorization blocker: it requires being based in the UK with no mention of sponsorship, and Paul has US work authorization only. Beyond geography, the role is structurally misaligned with Paul's profile. The JD explicitly states the role \"focuses primarily on channel and partner-driven sales, rather than direct selling\" and requires recruiting/managing resellers and distributors, a motion Paul has never executed. His 15 years are in direct end-customer relationship building (KSAT oil majors, GFW licensing), not channel ecosystem management. The infrastructure/utilities domain is adjacent, but the core job is partner enablement, not market creation. With a hard blocker and multiple soft gaps (channel experience, UK location), this is a clear pass.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://asterra.io/jobs/territory-sales-manager-uk-channel-partner-sales/"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-02",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "UK",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "work_authorization",
-          "detail": "Role requires being based in the United Kingdom. Paul has US work authorization but not UK work authorization, and the JD states 'Must be based in the United Kingdom' with no mention of sponsorship or relocation support.",
-          "severity": "hard"
-        },
-        {
-          "type": "role_structure",
-          "detail": "Role is primarily channel/partner sales ('focuses primarily on channel and partner-driven sales, rather than direct selling'), not market creation or direct commercial function building. Paul's career has been building direct commercial relationships and demand, not managing reseller networks.",
-          "severity": "soft"
-        },
-        {
-          "type": "experience_gap",
-          "detail": "JD requires '7-10+ years of experience in channel sales, partner management, or business development' with 'Strong experience working with resellers, distributors, and strategic partners.' Paul has 15 years in commercial/BD but his experience is direct relationship selling to end customers, not managing channel partners or reseller ecosystems.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 4,
-        "IL": 4,
-        "SPM": 5,
-        "CO": 5,
-        "GC": 2
-      },
-      "score_range": [
-        36.0,
-        40.5
-      ],
-      "confidence": "medium",
-      "tier_uncertain": true,
-      "rank": 168
+      "rank": 170
     },
     {
       "company": "",
@@ -8104,7 +8229,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 169
+      "rank": 171
     },
     {
       "company": "Airbus",
@@ -8164,7 +8289,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 170
+      "rank": 172
     },
     {
       "company": "Airbus",
@@ -8234,7 +8359,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 171
+      "rank": 173
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -8294,7 +8419,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 172
+      "rank": 174
     },
     {
       "company": "Vantor",
@@ -8359,7 +8484,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 173
+      "rank": 175
     },
     {
       "company": "Acre",
@@ -8419,7 +8544,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 174
+      "rank": 176
     },
     {
       "company": "Director of Industrial Management",
@@ -8476,126 +8601,6 @@
       "score_range": [
         40.0,
         40.5
-      ],
-      "confidence": "high",
-      "tier_uncertain": false,
-      "rank": 175
-    },
-    {
-      "company": "Mitiga Solutions",
-      "role": "Account Executive",
-      "score": 40.0,
-      "proxy_score": null,
-      "effective_score": 40.0,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-07-02",
-      "scqa": "",
-      "verdict": "This role carries a hard work-authorization blocker: it is based in Barcelona, Spain, and the JD makes no mention of visa sponsorship, while Paul currently has US work authorization only. RF is capped at 4 and IL at 3 because the JD explicitly requires \"5 years in a quota-carrying AE or senior SDR/BDR role\" and \"at least 1 year carrying a quota.\" Paul's 15 years of commercial experience at KSAT and GFW was strategic market-building and pilot-to-precedent BD work, not traditional quota-carrying AE work. The role itself, full-cycle AE selling climate-risk SaaS to infrastructure/energy/finance, is a conventional sales seat, not the new-build commercial function Paul thrives in (SA 4). SPM scores 6 because the company sells to regulated/infrastructure buyers with multi-stakeholder complexity, but the role does not architect pilots-to-precedent or shape regulation. GC is capped at 2 due to the hard work-authorization gap.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://careers.mitigasolutions.com/jobs/7927000-account-executive"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-02",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "experience_gap",
-          "detail": "JD requires '5 years in B2B sales or a commercial client-facing role; at least 1 year carrying a quota' and '5 years in a quota-carrying AE or senior SDR/BDR role.' Paul has 15 years of commercial experience but in market-building BD roles, not quota-carrying AE positions. His KSAT and GFW work was strategic deal architecture and pilot-to-precedent development, not traditional quota-carrying sales.",
-          "severity": "soft"
-        },
-        {
-          "type": "relocation",
-          "detail": "Role is based in Barcelona, Spain (hybrid). Paul is currently in Taos, NM. This is an international relocation requiring consideration of visa/work authorization for Spain.",
-          "severity": "soft"
-        },
-        {
-          "type": "work_authorization",
-          "detail": "Role is based in Barcelona, Spain. Paul has US work authorization but would require Spanish/EU work authorization or sponsorship to work in Spain. JD does not mention visa sponsorship availability.",
-          "severity": "hard"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 4,
-        "IL": 3,
-        "SPM": 6,
-        "CO": 5,
-        "GC": 2
-      },
-      "score_range": [
-        37.5,
-        40.0
-      ],
-      "confidence": "high",
-      "tier_uncertain": true,
-      "rank": 176
-    },
-    {
-      "company": "ZeroNorth",
-      "role": "Senior Account Executive",
-      "score": 40.0,
-      "proxy_score": null,
-      "effective_score": 40.0,
-      "fit": 4,
-      "has_deep_dive": false,
-      "date": "2026-07-04",
-      "scqa": "",
-      "verdict": "ZeroNorth Senior Account Executive (Athens) is a **pass**. The role carries a **hard work-authorization blocker**: it is based in Athens, Greece, with no mention of visa sponsorship or relocation support, and Paul would require EU/Greek work authorization he does not currently possess. Beyond geography, this is a **quota-carrying enterprise AE role** managing an existing sales motion to large shipping enterprises, \"drive new business acquisition and manage the full sales cycle\", not building a commercial function from scratch. Paul's maritime experience is in selling satellite monitoring services TO the sector, not operating WITHIN shipping operations (shipowners/charterers/technical managers), creating a sector-depth gap. The role is execution-focused, not market-building, and the geographic/visa barrier is genuinely hard.",
-      "recommendation": "pass",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://careers.zeronorth.com/jobs/8016054-senior-account-executive"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-07-04",
-      "is_new": true,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "Athens",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "relocation",
-          "detail": "Role is based in Athens, Greece. Paul is currently in Taos, NM with US work authorization. This is a relocation requirement to an international location.",
-          "severity": "soft"
-        },
-        {
-          "type": "work_authorization",
-          "detail": "Role is based in Athens, Greece. JD does not mention visa sponsorship or relocation support. Paul has US work authorization but would require EU/Greek work authorization to accept this role.",
-          "severity": "hard"
-        },
-        {
-          "type": "role_scope",
-          "detail": "Role is described as 'drive new business acquisition and manage the full sales cycle' with 'proven track record of successfully selling to large enterprises' - this is quota-carrying enterprise sales execution, not commercial function building.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 4,
-        "SA": 4,
-        "IL": 3,
-        "SPM": 6,
-        "CO": 5,
-        "GC": 2
-      },
-      "score_range": [
-        40.0,
-        40.0
       ],
       "confidence": "high",
       "tier_uncertain": false,
