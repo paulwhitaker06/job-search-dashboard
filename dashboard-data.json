@@ -97,52 +97,47 @@
     {
       "company": "Orbit Fab",
       "role": "Business Development Manager",
-      "score": 56.0,
+      "score": 57.5,
       "proxy_score": null,
       "effective_score": 67.0,
       "fit": 5,
-      "has_deep_dive": false,
-      "date": "2026-06-09",
-      "scqa": "",
-      "verdict": "Orbit Fab is a post-PMF space infrastructure company scaling its commercial, civil, and government customer base. The role emphasizes formal proposal/capture management and government contracting BD motions, areas where Paul has adjacent but not direct experience. His 15 years in commercial space (KSAT satellite services, GFW data partnerships) demonstrate deep sector knowledge and relationship-building strength, but his work was market-creation and partnership-driven, not GovCon proposal/capture. The JD's requirement for \"Proven experience leading proposal development and capture management processes\" and \"Minimum 5 years of business development experience\" creates a soft gap: Paul's titles and documented work do not emphasize formal BD or proposal management, capping RF at 5 and IL at 5. The role is growth-stage execution (SA 6), not greenfield new-build, and the company's situation is adjacent to Paul's patterns (regulated buyers, multi-stakeholder complexity) but not a textbook match (SPM 7). Compensation ($130-165k + equity at a Series B space infrastructure company) and hybrid Colorado location are both reasonable (CO 6, GC 5). Weighted total: ~54 (Tier 3). This is a sector-aligned role at a mission-driven company, but the BD/proposal emphasis and Paul's lack of formal GovCon capture experience make it a stretch. Pursue with caveats: Paul would need to frame his KSAT/GFW work as de facto BD and address the proposal/capture gap directly.",
-      "recommendation": "pursue",
+      "has_deep_dive": true,
+      "date": "2026-07-06",
+      "scqa": "Precedent Before the Prime",
+      "verdict": "Full deep dive 2026-07-06. Orbit Fab is a post-demo, pre-commercial-revenue space-infrastructure company at a founder-transition inflection (CEO Faber out March 2026, no permanent CEO, 20M Series B), converting years of government-funded refueling demos into first commercial dollars. The strategic problem, making its RAFTI port the commercial default before Northrop's co-endorsed PRM interface locks in, maps almost exactly onto Paul's pilot-to-precedent pattern (SPM 8) and the commercialization inflection is his KSAT sweet spot (SA 7); but the JD's 'proven capture and proposal management' requirement is a real gap that soft-caps RF at 5 and IL at 4. Net 57.5, Tier 3 stretch. Clearance NOT required (clears the defense line). Pursue with caveats: high personal interest, but eyes open on the Colorado-hybrid relocation, the formal-capture gap, and the company's operational instability.",
+      "recommendation": "pursue_with_caveats",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
         "https://ats.rippling.com/orbitfab/jobs/a349119f-7034-43d3-b68a-d51cf80ab893"
       ],
       "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Orbit_Fab_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed 2026-07-06",
       "added": "2026-06-09",
-      "is_new": false,
+      "is_new": true,
       "tier": null,
       "stretch": true,
-      "domain": "",
-      "location": "and Benefits",
-      "hook": "",
+      "domain": "Space Infrastructure / On-Orbit Servicing",
+      "location": "Lafayette, CO (hybrid)",
+      "hook": "RAFTI-as-industry-standard is Paul's write-the-regulation pattern almost literally, at a commercialization inflection; the gaps are formal government capture and a Colorado-hybrid relocation.",
       "blockers": [
         {
-          "type": "experience_gap",
-          "detail": "JD requires 'Minimum 5 years of business development experience' and 'Minimum 8 years in a professional environment.' Paul has 15 years of commercial experience but his title/role history (KSAT, GFW) was not explicitly 'business development' titled roles, creating a potential paper-match gap in how his experience maps to the BD title requirement.",
-          "severity": "soft"
-        },
-        {
-          "type": "sector_experience",
-          "detail": "JD states 'Previous experience working within the aerospace or space industry' as a required qualification. Paul has 10 years at KSAT (space ground services, satellite data) and 5 years at GFW (satellite data buyer), totaling 15 years in commercial space sector across infrastructure, data, and services, this is a strong match, not a gap.",
-          "severity": "soft"
-        },
-        {
           "type": "relocation",
-          "detail": "Role is hybrid in Lafayette, CO office. Paul is currently in Taos, NM and open to relocation.",
-          "severity": "soft"
+          "severity": "soft",
+          "detail": "Colorado-based hybrid (Lafayette, CO office plus remote); the posting says all roles are based in Colorado. Not US-remote, so a Taos base means relocating to the Denver-Boulder area. Paul is open to relocation."
+        },
+        {
+          "type": "experience_gap",
+          "severity": "soft",
+          "detail": "JD requires 'Proven experience leading proposal development and capture management processes.' Paul has built complex commercial and partnership deals but has not run formal government capture/proposal management. Adjacent not direct; would pair with a capture specialist. Soft-caps RF at 5, IL at 4."
         }
       ],
       "dimension_scores": {
         "RF": 5,
-        "SA": 6,
-        "IL": 5,
-        "SPM": 7,
+        "SA": 7,
+        "IL": 4,
+        "SPM": 8,
         "CO": 6,
         "GC": 5
       },
@@ -151,7 +146,7 @@
       "tier_uncertain": false,
       "rank": 2,
       "pinned": true,
-      "source_note": "Pinned by Paul 2026-06-09: high personal interest, elevated by choice above Rainmaker. Raw fit score 56.0; Tier-3 reflects a formal capture/proposal-management gap, not geography."
+      "source_note": "Pinned by Paul 2026-06-09 (high interest, elevated above Rainmaker). Deep dive 2026-07-06 set raw score 56.0 -> 57.5 (Tier 3 stretch). effective_score kept at 67.0 to preserve Paul's pin; unpin to let the deep-dive score rank it naturally."
     },
     {
       "company": "Rainmaker Technology Corporation",
