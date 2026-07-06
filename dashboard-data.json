@@ -9540,20 +9540,6 @@
   ],
   "watch_list": [
     {
-      "company": "Wyvern",
-      "category": "Hyperspectral EO",
-      "why": "Vertical specialist, own constellation, analytics-first model, mentioned alongside ICEYE/Planet in 2026 EO industry roundup",
-      "roast": "Calgary builds hyperspectral satellites promising to see what nobody else can see, which is basically the EO industry in a single sentence. You spent a decade at KSAT selling the idea that someone should pay for what free Sentinel data almost delivers, so you understand exactly what Wyvern is up against. They raised money, they launched hardware, and now comes the hard part where a corporate sustainability officer has to explain to her CFO why 100 spectral bands matter when three bands are free. The technical capability is real. The customer education timeline is long. You have done this movie before, including the part where the pilot works, the customer loves the insights, and procurement says we will think about it and circle back next quarter. But hyperspectral is not vaporware anymore, and if someone is going to make the commercial case stick it will be a team that understands the gap between spectrum and spreadsheet. You closed Shell on a 2.5 year cycle selling oil spill monitoring. Wyvern is selling molecules you cannot see to buyers who are not sure they need them yet. Same game, higher resolution, narrower margin for error. Check the careers page and decide if you want to build the business case one pharma supply chain at a time or wait until someone else proves the market exists.",
-      "careers_url": "https://www.wyvern.space/careers"
-    },
-    {
-      "company": "EOI Space",
-      "category": "VLEO / Ultra-High-Resolution EO",
-      "why": "US-based, 15cm resolution, VLEO at 250km, defense/intel buyer base, proprietary propulsion for drag mitigation",
-      "roast": "San Francisco decided that flying satellites at half the altitude of everyone else would deliver twice the resolution, which is the kind of engineering logic that works until you hit the atmosphere at 17,000 mph and your orbit decays in three months. EOI Space patented a propulsion system to solve the drag problem, raised the money, and is now in the phase where they have to prove the tech works and someone will pay for 15cm imagery when 30cm is already available and mostly good enough. You have sold Earth observation data to oil majors, governments, and NGOs who all asked the same question at some point, which is why this costs so much. The answer at KSAT was always because physics, and the answer at EOI is the same except the physics are harder and the customer is either DoD or a three-letter agency with a black budget. They are hiring across the board, which means they are scaling to launch, and VLEO is not a fantasy anymore even if the unit economics are still speculative. The company has AFRL partnerships, which is the Space Force putting chips on the table, and that matters more than customer slide decks. This is a builder role at a hard-tech company solving actual propulsion and thermal problems, not a SaaS play with a satellite wrapper. If you want to sell to the commercial market you will spend three years explaining why sub-meter matters. If you want to sell to the government you will spend three years getting clearance and learning RFP compliance. But the imagery will be the best anyone outside of NRO has ever flown commercially, and that counts for something when the entire industry is converging toward higher resolution and lower altitude. The question is whether you want to build the market or wait until someone else proves it.",
-      "careers_url": "https://eoi.space/"
-    },
-    {
       "company": "Agreena",
       "category": "Soil Carbon MRV",
       "why": "EU-based, farm-scale MRV for soil carbon, addressing the measurement gap in ag carbon markets, 4.5M hectares monitored",
@@ -9783,6 +9769,20 @@
       "why": "LiDAR-equipped satellite constellation for continuous GHG emissions monitoring. Germany-based. Methane detection, CO2 tracking, exactly the regulatory-commercial intersection Paul knows from ENI/NOPSEMA and Planet methane work.",
       "roast": "German startup building a LiDAR satellite constellation to track methane and CO2 in near-real-time. Spectrometers in space pointing at oil fields and telling you what you already knew but couldn't prove in a boardroom. The pitch is continuous monitoring with granularity that makes current reporting look like self-assessment theater. Which it is. You negotiated the Planet Labs deal that put 200 million hectares a day through a detection pipeline. You know exactly what the gap is between a beautiful map of a methane plume and a contract that someone's compliance officer will actually sign. AIRMO is solving a real problem but they're launching into a market where half the potential buyers are waiting to see if the regulations survive the next election cycle and the other half are trying to figure out if satellite-detected emissions create legal liability they don't currently have. If they need someone who can walk into a room with an energy company's environmental lead and say we both know you're emitting more than you're reporting, let's figure out the commercial structure that makes transparency feel less like a threat, that's a conversation you've had in five languages across three continents. The founder is probably a PhD who has never sold anything that wasn't a grant application. You'd fix that in six months.",
       "careers_url": "https://www.airmo.io/careers"
+    },
+    {
+      "company": "Pina Earth",
+      "category": "Forest Carbon MRV / Digital Forestry",
+      "why": "YC-backed digital MRV for EU forest carbon projects, addressing climate-vulnerable forests with tech stack",
+      "roast": "YC-backed German outfit building digital tools for forest carbon certification across the EU, which sounds great until you remember that European forests are burning at rates no one predicted three years ago and the voluntary carbon market has spent 2025 explaining why half its credits were fake. Pina Earth is betting they can monitor and certify projects fast enough to matter, using satellite data and ground sensors to automate what used to require manual field visits and prayer. The problem they are solving is real. EU forests are high-risk, landowners need revenue to adapt, and carbon finance could pay for resilience if anyone still trusts the credits. You spent a decade at KSAT watching governments write check after check for satellite monitoring they never quite deployed at scale, then built GFW's licensing program by finding the buyers who could not afford to not know. Pina Earth is that same structural bet but aimed at a European carbon market that does not exist yet in compliance form and a voluntary market that got kneecapped by journalism in 2023. If they survive until the EU compliance framework lands, they own the certification layer for every forester in Bavaria. If the market stays broken, they are selling software no one wants to buy. Either way, they need someone who has sold satellite-derived environmental data to people who were not sure they needed it yet, which is uncomfortably close to your entire professional biography. Check the careers page, but this one might hurt.",
+      "careers_url": "https://jobs.lever.co/pinaearth"
+    },
+    {
+      "company": "Sirona Technologies",
+      "category": "Direct Air Capture / Carbon Removal",
+      "why": "Advanced chemical DAC with basalt mineralization partnerships, addresses scalability and permanence",
+      "roast": "Direct air capture startup building machines that pull CO2 out of the atmosphere using chemical filters, then partner with someone else to inject it into basalt for permanent mineralization. The tech is conceptually sound. Draw air through a selective adsorbent, heat the filters with steam to release concentrated CO2, hand it off to a geology partner who pumps it underground where it turns into rock. Permanent, verifiable, scalable in theory. The business model is harder. DAC has been the supermodel of climate tech for five years. Everyone wants to fund it, no one wants to be the first corporate offtake customer at $600 per tonne when they can buy forestry credits for $15 and hope no one checks the methodology too closely. You watched this movie at GFW when you built the commercial licensing program on top of a free platform and had to argue internally that someone would pay for data they could get for nothing if you repositioned it correctly. Sirona has the same problem but worse, because their customer is not buying imagery or vessel tracking, they are buying tonnes of removed CO2 at a price that makes their CFO cry. The wedge is finding the buyer who cares more about the permanence guarantee and the press release than the cost per tonne, and that is a short list. If they have traction with industrial buyers who need hard removal for compliance or corporate commitments, this could be real. If they are still living off grants and pre-purchase agreements from philanthropies, they are two years from figuring out the commercial motion and you would be building it from scratch. You have done that twice. You know the scar tissue it leaves. If you are ready to do it again in a harder market with a product that costs 40x more than the substitutes, send the application. If you want to sleep at night, find a company with revenue.",
+      "careers_url": "https://sironatechnologies.com/careers"
     }
   ],
   "morning_briefs": [
@@ -49427,15 +49427,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "June eighth monsoon dry\neighty-three degrees at noon\nplaza dust swirling",
-    "Marble Imaging seed\nfive-three million euro closed\nBremen VHR build",
-    "Red Sox visit Rays\nJune eight through tenth series\nNESN stream live feed",
-    "Maine votes ranked choice\ntoday, primary ballots cast\nno king on this card",
-    "H-1B fee struck down\none hundred grand per visa\njudge says no to Trump",
-    "Social Security\ntrust fund seven years away\nCongress still asleep",
-    "El Ni\u00f1o returns\neighty percent by August\nGuterres warns hard",
-    "Europe bakes in May\nthirty-five Celsius London\nheat dome ten degrees high",
-    "World Environment Day\nAzerbaijan hosts the plea\nlimbo for the Earth",
     "NASA Eagle flies\nfour hundred wavelength channels\nmapping minerals",
     "Red Sox beat Yankees\nContreras homers again\nChapman saves the ninth",
     "Taos Canyon burns\nlightning-caused quarter acre\nhelicopters draw",
@@ -49491,16 +49482,25 @@
     "Red Willow at dusk\nMavericks and Felix played\nno fireworks this year",
     "OMB proposes\nfederal grants reshaped soon\nOctober first live",
     "Monsoon should be here\npinyon dust and waiting sky\nJuly still too dry",
-    "ATS job board glows\nthree roles, none quite right today\nrefresh one more time"
+    "ATS job board glows\nthree roles, none quite right today\nrefresh one more time",
+    "Khamenei's funeral\nTrump says we'll win either way\nTehran chants for blood",
+    "Typhoon Bavi spins\nGuam braces for the big wind\nPacific islands drown",
+    "Sox host Rays this week\nJuly seventeenth first pitch\nFenway summer night",
+    "Nonfarm jobs fifty\nseven thousand way below\nwhat the street wanted",
+    "Taos Plaza Live starts\nJuly twenty third at six\nNosotros plays free",
+    "Wheeler Peak still white\nmid-July monsoons building\nheat dome ninety-four",
+    "Red Sox eight thirteen\nPatriots Day comeback win\nYankees arrive Tuesday",
+    "Sudan drone war kills\nthree hundred children six months\nUNICEF counts the dead",
+    "The dashboard refreshed\nhaiku hold the wire again\nclean queue earns the rest"
   ],
   "intros": [
     "Clean queue. Haiku hold the wire.",
     "Taos Plaza Live returns July twenty-three. Free music every Thursday through August.",
     "Las Fiestas de Taos starts Thursday July 17. Burn ban still in effect.",
     "El Ni\u00f1o rapidly strengthening. Great Barrier Reef logged worst summer on record.",
-    "Khamenei funeral, day two. Chants for revenge in Tehran streets.",
+    "Trump says U.S. will win one way or the other as Iran buries Khamenei.",
     "The pipeline will refill. Until then:",
-    "WMO: eighty percent chance El Ni\u00f1o by August. Guterres calls it climate alarm.",
+    "Typhoon Bavi hammering Guam. Super El Ni\u00f1o still building across Pacific.",
     "No offers to chew on. A haiku to sit with.",
     "All quiet on the pipeline front. Haiku dispatch:",
     "Tier 1: empty. Tier 2: empty. Tier haiku: full.",
