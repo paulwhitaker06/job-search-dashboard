@@ -80,6 +80,24 @@ def is_new(added_date_str):
     except:
         return False
 
+STALE_DAYS = 60
+
+def is_stale(d):
+    """A ranked opportunity not yet applied to (status not_applied or
+    speculative) whose added date is more than STALE_DAYS old is almost
+    certainly filled. Buried at render time only (2026-07-06): the data stays
+    intact, and the entry re-enters the active view automatically if the
+    status ever moves off not_applied/speculative."""
+    if d.get("status") not in ("not_applied", "speculative"):
+        return False
+    added = d.get("added") or d.get("date")
+    if not added:
+        return False
+    try:
+        return (datetime.now() - datetime.strptime(added, "%Y-%m-%d")).days > STALE_DAYS
+    except Exception:
+        return False
+
 def score_color(score):
     if score is None: return "var(--text-muted)"
     if score >= 75: return "var(--green)"
@@ -327,7 +345,7 @@ def compute_stat_cards(data):
     ranked = data.get("ranked_opportunities", [])
 
     # Worth Applying: ranked entries with pursue/pursue_with_caveats, not yet applied, Tier 1 & 2 only (score 60+)
-    waiting_app = [d for d in ranked if d.get("recommendation") in ("pursue", "pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
+    waiting_app = [d for d in ranked if not is_stale(d) and d.get("recommendation") in ("pursue", "pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
     # Sent: applications with any status (total sent)
     sent = [a for a in apps if a.get("applied")]
     # Active Interviews
@@ -790,16 +808,21 @@ def build_html(data):
     cost_section_html = build_cost_section_html(compute_cost_summary())
 
     ranked = data.get("ranked_opportunities", [])
+    # Bury super-stale not-yet-applied roles at render time (2026-07-06).
+    # Excluded from the cards, tier tables, and action items below; rendered
+    # only in the collapsed Buried / Aged Out section.
+    buried = [d for d in ranked if is_stale(d)]
+    ranked_live = [d for d in ranked if not is_stale(d)]
     # Tier 1 & 2 only for the Ranked Opportunities card grid (score 60+)
-    ranked_t12 = [d for d in ranked if (d.get("effective_score") or 0) >= 60]
+    ranked_t12 = [d for d in ranked_live if (d.get("effective_score") or 0) >= 60]
 
     # Derive pipeline tiers from ranked_opportunities by score threshold
     # Only include entries that are still actionable (not applied/rejected/pass)
-    active_ranked = [d for d in ranked if d.get("status") in ("not_applied", "cold_outreach")]
+    active_ranked = [d for d in ranked_live if d.get("status") in ("not_applied", "cold_outreach")]
     tier1 = [d for d in active_ranked if (d.get("effective_score") or 0) >= 75]
     tier2 = [d for d in active_ranked if 60 <= (d.get("effective_score") or 0) < 75]
     tier3 = [d for d in active_ranked if (d.get("effective_score") or 0) < 60]
-    actionable = [d for d in ranked if d.get("recommendation") in ("pursue","pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
+    actionable = [d for d in ranked_live if d.get("recommendation") in ("pursue","pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
     action_items = ""
     for i, d in enumerate(actionable[:5]):
         new_badge = f' {pill("New", "cyan")}' if (d.get("is_new") or is_new(d.get("added"))) else ""
@@ -1330,6 +1353,20 @@ def build_html(data):
 </table>
 </div>
 </details>
+</details>
+
+<details class="collapsible-section">
+<summary class="section-header">Buried / Aged Out <span class="badge pill-muted" style="font-size:10px;">{len(buried)} stale (60+ days old, likely filled)</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Not-yet-applied roles whose posting went up more than 60 days ago; odds are they are filled. Nothing is deleted. If a status moves off not_applied/speculative, the entry returns to the active view automatically on the next build.</p>
+<input class="table-filter" type="search" placeholder="Filter buried..." aria-label="Filter buried" />
+<div class="table-wrapper" style="margin-top:12px">
+<table class="pipeline-table">
+  <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Fit</th><th data-type="num">Score</th><th data-type="date">Added</th><th data-type="text">Domain</th><th data-type="text">Location</th><th>Link</th><th>Why</th></tr></thead>
+  <tbody>
+{build_pipeline_rows(buried)}
+  </tbody>
+</table>
+</div>
 </details>
 
 <details open class="collapsible-section">
