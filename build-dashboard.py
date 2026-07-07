@@ -997,6 +997,47 @@ def build_html(data):
     else:
         speculative_outreach_html = ""
 
+    # Proactive targets (2026-07-07): the target list lives on the dashboard,
+    # not in a document. Rendered as its own filterable section; the watch
+    # list keeps feeding Company of the Day separately.
+    pt = data.get("proactive_targets", [])
+    pt_status = {
+        "cold_outreach": ("Cold Outreach", "cyan"),
+        "posted": ("Posted Role", "green"),
+        "applied_followup": ("Follow Up", "amber"),
+        "in_process": ("In Process", "purple"),
+        "watch": ("Watch", "muted"),
+        "not_actionable": ("Not Actionable", "red"),
+    }
+    pt_rows = ""
+    for t in pt:
+        lbl, cls = pt_status.get(t.get("status", ""), (t.get("status", ""), "muted"))
+        pt_rows += (f'    <tr><td data-sort="{t.get("rank", 999)}">{t.get("rank", "")}</td>'
+                    f'<td class="company-name" data-sort="{(t.get("company") or "").lower()}">{t.get("company", "")}</td>'
+                    f'<td data-sort="{t.get("tier", "")}">{t.get("tier", "")}</td>'
+                    f'<td data-sort="{lbl.lower()}"><span class="pill pill-{cls}">{lbl}</span></td>'
+                    f'<td style="max-width:230px;font-size:11px;">{t.get("entry_point", "")}</td>'
+                    f'<td style="max-width:330px;font-size:11px;color:var(--text-muted)">{t.get("why", "")}</td>'
+                    f'<td style="max-width:180px;font-size:11px;color:var(--text-muted)">{t.get("flags", "")}</td></tr>\n')
+    if pt:
+        proactive_targets_html = f"""<details open class="collapsible-section">
+<summary class="section-header">Proactive Targets <span class="badge pill-purple">{len(pt)} companies</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Companies at a commercial inflection where a senior market-builder seat fits, posted or not. Researched 2026-07-06, corrected 2026-07-07 against the applications ledger. Tier A = pursue in the next two weeks; foreign seats are pursue-if-sponsored; active-clearance seats are flagged not actionable.</p>
+<input class="table-filter" type="search" placeholder="Filter targets..." aria-label="Filter targets" />
+<div class="table-wrapper" style="margin-top:12px">
+<table class="pipeline-table">
+  <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Tier</th><th data-type="text">Status</th><th data-type="text">Entry point</th><th>Why now / fit</th><th>Flags</th></tr></thead>
+  <tbody>
+{pt_rows}
+  </tbody>
+</table>
+</div>
+</details>
+
+"""
+    else:
+        proactive_targets_html = ""
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1393,7 +1434,7 @@ def build_html(data):
 </div>
 </details>
 
-{speculative_outreach_html}
+{proactive_targets_html}{speculative_outreach_html}
 
 <details>
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
