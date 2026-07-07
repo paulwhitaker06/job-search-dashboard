@@ -98,6 +98,22 @@ def is_stale(d):
     except Exception:
         return False
 
+def is_stale_application(a):
+    """Sent-but-silent applications age out the same way (Paul, 2026-07-07):
+    an application still in awaiting/speculative/cold_outreach whose applied
+    date is more than STALE_DAYS old auto-retires at render time. The data
+    keeps its real status; any status change brings it back to the active
+    Applications view on the next build."""
+    if a.get("status") not in ("awaiting", "speculative", "cold_outreach"):
+        return False
+    applied = a.get("applied") or a.get("date")
+    if not applied:
+        return False
+    try:
+        return (datetime.now() - datetime.strptime(applied, "%Y-%m-%d")).days > STALE_DAYS
+    except Exception:
+        return False
+
 def score_color(score):
     if score is None: return "var(--text-muted)"
     if score >= 75: return "var(--green)"
@@ -226,11 +242,12 @@ def build_app_rows(apps, include=None):
     """Render application rows. include=None shows all; 'active' excludes rejected/filled/retired;
     'closed' shows only rejected/filled; 'retired' shows only retired."""
     if include == 'active':
-        apps = [a for a in apps if a.get('status') not in ('rejected', 'filled', 'retired')]
+        apps = [a for a in apps if a.get('status') not in ('rejected', 'filled', 'retired')
+                and not is_stale_application(a)]
     elif include == 'closed':
         apps = [a for a in apps if a.get('status') in ('rejected', 'filled')]
     elif include == 'retired':
-        apps = [a for a in apps if a.get('status') == 'retired']
+        apps = [a for a in apps if a.get('status') == 'retired' or is_stale_application(a)]
     status_order = {
         "offer": 0,
         "final_round_held": 1,
@@ -351,7 +368,7 @@ def compute_stat_cards(data):
     # Active Interviews
     active_interviews = [a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "4th_interview_scheduled", "4th_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")]
     # Awaiting Response, includes speculative until it goes stale and gets retired
-    awaiting = [a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach")]
+    awaiting = [a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach") and not is_stale_application(a)]
     # Rejected / Closed, includes retired (separate visual section, same bucket for math)
     rejected = [a for a in apps if a.get("status") in ("rejected", "filled", "retired")]
 
@@ -489,10 +506,10 @@ def compute_stats(data):
     # Bucket math: Active Interviews + Awaiting Response + Rejected / Closed = Sent.
     # Speculative rolls up into Awaiting until it goes stale and gets retired.
     # Retired rolls up into Rejected / Closed for the stat-card count.
-    awaiting_response = len([a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach")])
+    awaiting_response = len([a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach") and not is_stale_application(a)])
     active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "4th_interview_scheduled", "4th_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
-    rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled", "retired")])
-    retired = len([a for a in apps if a.get("status") == "retired"])
+    rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled", "retired") or is_stale_application(a)])
+    retired = len([a for a in apps if a.get("status") == "retired" or is_stale_application(a)])
     active_pipeline = len(ranked)
     deep_dives_done = len([r for r in ranked if r.get("doc_path")]) + len([a for a in archived if a.get("doc_path")])
     resumes_built = len(set(r.get("company") for r in ranked if r.get("resume_path")))
@@ -1380,7 +1397,7 @@ def build_html(data):
 
 <details>
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Applications where the proactive process has run its course, follow-ups sent, no response. Kept here for record so the same role does not get re-prioritized.</p>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Applications where the proactive process has run its course, follow-ups sent, no response. Applications awaiting a response for 60+ days auto-age here as well; any status change returns them to the active view. Kept here for record so the same role does not get re-prioritized.</p>
 <input class="table-filter" type="search" placeholder="Filter retired..." aria-label="Filter retired" />
 <div class="table-wrapper" style="margin-top:12px">
 <table class="applications-table">
