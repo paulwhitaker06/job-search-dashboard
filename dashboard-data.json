@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -47,8 +47,8 @@
     "deep_dives_done": 22,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-21",
-    "last_processed_digest_date": "2026-06-21"
+    "last_updated": "2026-06-22",
+    "last_processed_digest_date": "2026-06-22"
   },
   "ranked_opportunities": [
     {
@@ -55382,6 +55382,254 @@
           "source": "Climate Change Jobs",
           "url": "https://climatechangejobs.com/jobs/499013513-senior-manager-engineering-technology-finance",
           "reason": "Senior Manager, Engineering & Technology Finance is a finance function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "digest_count": 31,
+      "scored_count": 3,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Mitiga Solutions",
+          "role": "Solutions Consultant (Climate & Risk)",
+          "score": 39.0,
+          "score_range": [
+            37.5,
+            41.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "OneInbox.ai | Techstars Job Board",
+          "role": "Solutions Engineer - APAC",
+          "score": 34.0,
+          "score_range": [
+            34.0,
+            38.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Mitiga Solutions",
+          "role": "Risk Modeller (Energy)",
+          "score": 34.5,
+          "score_range": [
+            33.0,
+            36.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "formlabs",
+          "role": "Head of Software Product Management",
+          "url": "https://careers.formlabs.com/job/8020054/apply/?gh_jid=8020054",
+          "reason": "fetch_unreadable:http_404"
+        },
+        {
+          "company": "",
+          "role": "Principal Sustainability",
+          "url": "https://climatechangejobs.com/jobs/499784063-principal-sustainability",
+          "reason": "fetch_unreadable:http_404"
+        },
+        {
+          "company": "axiomspace",
+          "role": "Chief Technology Officer",
+          "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Remote-WA/Chief-Technology-Officer_JR100540",
+          "reason": "fetch_unreadable:http_403"
+        },
+        {
+          "company": "Commonwealth Fusion Systems - Climate Change",
+          "role": "Director, Project Development",
+          "url": "https://climatechangejobs.com/jobs/500146711-director-project-development",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "31 entries. All scored fell below Tier 3. 4 unscored.",
+      "jobs_processed": 31,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "31 entries. All scored fell below Tier 3. 4 unscored. 21 skipped by prefilter (off-domain / wrong-function).",
+      "intra_digest_duplicates": [
+        {
+          "title": "Solutions Consultant (Climate &amp; Risk)",
+          "url": "https://careers.mitigasolutions.com/jobs/7930806-solutions-consultant-climate-risk",
+          "kept_url": "https://careers.mitigasolutions.com/jobs/7930806-solutions-consultant-climate-risk"
+        },
+        {
+          "title": "Risk Modeller (Energy)",
+          "url": "https://careers.mitigasolutions.com/jobs/7930726-risk-modeller-energy",
+          "kept_url": "https://careers.mitigasolutions.com/jobs/7930726-risk-modeller-energy"
+        },
+        {
+          "title": "Climate Data Scientist",
+          "url": "https://careers.mitigasolutions.com/jobs/7931331-climate-data-scientist",
+          "kept_url": "https://careers.mitigasolutions.com/jobs/7931331-climate-data-scientist"
+        }
+      ],
+      "prefilter_skipped": [
+        {
+          "title": "ACJ Customer Account Director, India & South Asia",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/New-Delhi/ACJ-Customer-Account-Director--India---South-Asia_JR10413504-1",
+          "reason": "ACJ is Airbus Corporate Jets (private aviation), not Earth observation or satellite intelligence, off-domain for Paul's climate/EO market.",
+          "confidence": "high"
+        },
+        {
+          "title": "Satair - Head of Customer Resolution Services Asia Pacific (Satair Channel)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Singapore-Area/Satair---Head-of-Customer-Resolution-Services-Asia-Pacific--Satair-Channel-_JR10422809",
+          "reason": "Satair is Airbus's aircraft spare parts supply chain division, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Quality Specialist (m/f)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain-Quality-Specialist--m-f-_JR10410673",
+          "reason": "Supply Chain Quality Specialist is a wrong-function role (quality/ops specialist IC work, not commercial leadership).",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Manager - Training Center H/F",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Business-Development-Manager---Training-Center-H-F_JR10386907",
+          "reason": "Training Center BD role is outside Paul's EO/climate/maritime commercial leadership domain; training services are off-domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain & Logistics Specialist - Process Optimization & Transport Control (d/m/w)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Supply-Chain---Logistics-Specialist---Process-Optimization---Transport-Control--d-m-w-_JR10361340",
+          "reason": "Supply Chain & Logistics Specialist is an operations/logistics function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Material Flow Manager (H/F)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Supply-Chain-Material-Flow-Manager--H-F-_JR10417727",
+          "reason": "Supply Chain Material Flow Manager is an operations/supply chain function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Associate Manager, Global Supply Chain for 2027 MBA Grads",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/boxes-4-0-devices-2/jobs/83565017-associate-manager-global-supply-chain-for-2027-mba-grads",
+          "reason": "Associate Manager Global Supply Chain is an operations role outside Paul's commercial/BD/partnerships function, and the 2027 MBA grad requirement signals junior rotational program, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Associate, Global Supply Chain for 2027 BBA/BS Grads",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/boxes-4-0-devices-2/jobs/83565018-associate-global-supply-chain-for-2027-bba-bs-grads",
+          "reason": "Title explicitly targets 2027 BBA/BS graduates, which is entry-level new-grad role incompatible with Paul's 25 years of VP/Director-level experience.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager - Data Platform & Marketplace",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/oneinbox-ai/jobs/83536788-product-manager-data-platform-marketplace",
+          "reason": "Product Manager is an IC product role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager - Studio & Growth",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/oneinbox-ai/jobs/83536789-product-manager-studio-growth",
+          "reason": "Product Manager IC role at a company (OneInbox AI) outside Paul's climate/EO/maritime domain, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Climate Data Scientist",
+          "source": "Mitiga Solutions",
+          "url": "https://careers.mitigasolutions.com/jobs/7931331-climate-data-scientist",
+          "reason": "Climate Data Scientist is a pure technical research/modeling role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Assistant to the President and Managing Director",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/New-Delhi/Executive-Assistant-to-the-President-and-Managing-Director_JR10400157-1",
+          "reason": "Executive Assistant is an administrative support role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Laboratory Services and Applied Science Division",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/500165383-director-laboratory-services-and-applied-science-division",
+          "reason": "Director, Laboratory Services and Applied Science Division is a lab operations management role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supervisory Marine Biologist",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/500165393-supervisory-marine-biologist",
+          "reason": "Supervisory Marine Biologist is a government scientific research role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commercial Licensed Journeyman",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/500211440-commercial-licensed-journeyman",
+          "reason": "Commercial Licensed Journeyman is a skilled trades role (electrician/plumber/HVAC), wrong function entirely.",
+          "confidence": "high"
+        },
+        {
+          "title": "In-Home Solar Sales Consultant",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/500211441-in-home-solar-sales-consultant",
+          "reason": "In-Home Solar Sales Consultant is an IC residential solar sales role, not commercial/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Development and Major Gifts",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52653/director-of-development-and-major-gifts/?LinkSource=HomePage",
+          "reason": "Director of Development and Major Gifts is a fundraising role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Product Management, Software",
+          "source": "SOSV Portfolio",
+          "url": "https://careers.formlabs.com/job/8020055/apply/?gh_jid=8020055",
+          "reason": "Director of Product Management is a product function role, not commercial/BD/partnerships, at a 3D printing hardware company outside Paul's climate/EO/maritime domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP, Brand & Narrative Marketing",
+          "source": "SOSV Portfolio",
+          "url": "https://careers.formlabs.com/job/8020052/apply/?gh_jid=8020052",
+          "reason": "VP Brand & Narrative Marketing is a marketing-only leadership role without commercial/BD/partnerships component.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Electrical Engineering",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/rochester/senior-manager-electrical-engineering/4832/95629389872",
+          "reason": "Senior Manager, Electrical Engineering is a technical engineering management role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "AI Product Manager",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.ashbyhq.com/nevoya/97a8d582-7540-492a-a417-623d4d6171f3",
+          "reason": "AI Product Manager is an IC product management role, wrong function for Paul's commercial/BD/partnerships profile.",
           "confidence": "high"
         }
       ]
