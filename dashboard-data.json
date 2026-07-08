@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13",
+  "last_updated": "2026-06-20",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -47,8 +47,8 @@
     "deep_dives_done": 22,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-06-13",
-    "last_processed_digest_date": "2026-06-13"
+    "last_updated": "2026-06-20",
+    "last_processed_digest_date": "2026-06-20"
   },
   "ranked_opportunities": [
     {
@@ -5857,7 +5857,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-06-13",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -55054,6 +55054,207 @@
           "source": "Bentley Systems",
           "url": "https://jobs.bentley.com/job/Remote-Senior-Account-Manager%2C-Enterprise/1399386300/",
           "reason": "Bentley Systems is infrastructure engineering software (CAD/BIM for civil/plant design), off-domain from Paul's climate-adjacent/EO/maritime profile.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "digest_count": 24,
+      "scored_count": 2,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "stretch": [],
+      "skipped_duplicates": [],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Nimble Gravity",
+          "role": "Director of Delivery",
+          "score": 37.5,
+          "score_range": [
+            34.0,
+            42.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Commercial Operations Manager",
+          "score": 32.5,
+          "score_range": [
+            32.5,
+            32.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "",
+          "role": "Senior Manager, Sustainability",
+          "url": "https://climatechangejobs.com/jobs/498228184-senior-manager-sustainability",
+          "reason": "fetch_unreadable:http_404"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "24 entries. All scored fell below Tier 3. 1 unscored.",
+      "jobs_processed": 24,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "24 entries. All scored fell below Tier 3. 1 unscored. 21 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Platform Engineer (Early to Mid-level)- Geospatial Data Systems",
+          "source": "Carbon Mapper",
+          "url": "https://jobs.gusto.com/postings/carbon-mapper-inc-platform-engineer-early-to-mid-level-geospatial-data-systems-c4e01787-bf23-458d-a2b9-af2dc6213585",
+          "reason": "Platform Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President of Supply Chain",
+          "source": "Lowercarbon Capital Portfolio",
+          "url": "https://jobs.lever.co/cfsenergy/bb2c83e7-8901-4652-911b-e2e8befed3a8",
+          "reason": "CFS Energy VP of Supply Chain is a pure operations/supply chain function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Enterprise Account Executive",
+          "source": "Patch",
+          "url": "https://jobs.ashbyhq.com/patch.io/5f1879b6-f5ce-493b-80c0-7f17f4fc8838/application",
+          "reason": "Patch.io is in carbon markets domain, SF in-person, already evaluated and passed on in job search tracker.",
+          "confidence": "high"
+        },
+        {
+          "title": "Enterprise Account Executive, APAC",
+          "source": "Patch",
+          "url": "https://jobs.ashbyhq.com/patch.io/1d73e679-d6f7-42c1-9545-74c31e97e7da/application",
+          "reason": "Patch.io is carbon markets domain previously evaluated and passed on, and APAC geographic focus creates additional misfit.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head Of Export Control & Sanctions Regulatory (F/M)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/Head-Of-Export-Control---Sanctions-Regulatory--F-M-_JR10422862",
+          "reason": "Head of Export Control & Sanctions Regulatory is a compliance/legal function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Growth & Partnerships Manager, Thailand",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/seek-sophie/jobs/83434888-growth-partnerships-manager-thailand",
+          "reason": "Seek Sophie is a consumer app for women's health and fertility tracking, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Growth & Partnerships Manager, Indonesia",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/seek-sophie/jobs/83434889-growth-partnerships-manager-indonesia",
+          "reason": "Indonesia-based role with no indication of remote eligibility; Paul is Taos-based and seeking remote-first roles.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Global Mechanical Supply Chain Manager",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://boards.greenhouse.io/Mill/jobs/4706905005",
+          "reason": "Sr. Global Mechanical Supply Chain Manager is a supply chain operations role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "ES Export control & National Security Officier",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/ES-Export-control---National-Security-Officier_JR10404705-1",
+          "reason": "Export control and national security compliance officer role, clearly HR/Legal/Compliance function outside commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Data Analyst - Export Control & National Security (M/F)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Marseille-Area/Data-Analyst---Export-Control---National-Security--M-F-_JR10407135",
+          "reason": "Data Analyst role in export control/compliance function, wrong function for commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Operations Manager - Base44",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/corra-health/jobs/83421702-sales-operations-manager-base44",
+          "reason": "Sales Operations Manager is an IC ops role, not a commercial leadership role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Executive Director of Advancement - Mewbourne College of Earth & Energy",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52706/executive-director-of-advancement-mewbourne-college-of-earth-and-energy/?LinkSource=PromotedJob",
+          "reason": "Executive Director of Advancement is a university fundraising role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director of Development - Mewbourne College of Earth & Energy",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52707/senior-director-of-development-mewbourne-college-of-earth-and-energy/?LinkSource=PromotedJob",
+          "reason": "Senior Director of Development is a fundraising/advancement role at a university, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of International Accounting",
+          "source": "SOSV Portfolio",
+          "url": "https://ecisolutions.hrmdirect.com/employment/job-opening.php?req=3737072&req_loc=1355986&&#job",
+          "reason": "Director of International Accounting is a finance/accounting function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Customer Success Manager",
+          "source": "Fathom",
+          "url": "https://careers.fathom.global/jobs/7942956-customer-success-manager",
+          "reason": "Customer Success Manager is a junior IC CSM role, wrong function per skip criteria.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Financial Officer (all genders)",
+          "source": "Reflex Aerospace",
+          "url": "https://reflex-aerospace-gmbh.jobs.personio.de/job/2639269",
+          "reason": "CFO is a Finance function role, clearly outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Revenue Operations Manager - Base44",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/corra-health/jobs/83421698-revenue-operations-manager-base44",
+          "reason": "Revenue Operations Manager is an ops/RevOps IC role, wrong function for Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Manager - Base44",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/corra-health/jobs/83421700-account-manager-base44",
+          "reason": "Account Manager is an IC customer relationship role, not a strategic commercial leadership position matching Paul's VP/Director-level target.",
+          "confidence": "high"
+        },
+        {
+          "title": "AI Growth Marketer - Base44",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/corra-health/jobs/83421703-ai-growth-marketer-base44",
+          "reason": "AI Growth Marketer is a marketing IC role without commercial leadership component, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Construction Manager, Construction Program Management",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/498055233-principal-construction-manager-construction-program-management",
+          "reason": "Principal Construction Manager is a construction project management role, outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Customer Business Manager, Mass Channel",
+          "source": "S2G Ventures Portfolio",
+          "url": "https://jobs.lever.co/onceuponafarm/db31e035-e663-49e2-82cb-0d3ecf3e50db",
+          "reason": "Once Upon a Farm is a consumer packaged goods baby food company; wrong domain and Customer Business Manager is a sales IC role managing retail channel relationships, not Paul's strategic commercial leadership profile.",
           "confidence": "high"
         }
       ]
