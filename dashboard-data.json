@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-04",
+  "last_updated": "2026-07-05",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -43,12 +43,12 @@
     "applications_sent": 26,
     "awaiting_response": 11,
     "active_interviews": 3,
-    "active_pipeline": 202,
+    "active_pipeline": 203,
     "deep_dives_done": 22,
     "resumes_built": 1,
     "rejected_closed": 7,
-    "last_updated": "2026-07-04",
-    "last_processed_digest_date": "2026-07-04"
+    "last_updated": "2026-07-05",
+    "last_processed_digest_date": "2026-07-05"
   },
   "ranked_opportunities": [
     {
@@ -5116,7 +5116,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -6162,7 +6162,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -7101,7 +7101,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -8637,7 +8637,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -8697,7 +8697,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -8740,6 +8740,66 @@
       "confidence": "high",
       "tier_uncertain": false,
       "rank": 180
+    },
+    {
+      "company": "Orca AI",
+      "role": "Job opportunity: Head of Maritime Certification & Regulatory Strategy (IC)",
+      "score": 41.0,
+      "proxy_score": null,
+      "effective_score": 41.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-07-05",
+      "scqa": "",
+      "verdict": "This is a specialized maritime certification engineering role requiring deep technical experience Paul does not possess. The JD explicitly requires \"8+ Years of 'In the Trenches' Experience...within a Classification Society or a maritime tech company, specifically focused on Bridge Systems or Navigation Technologies\" and \"personally led at least 2-3 complex systems through the full Product Design Assessment (PDA) or Type Approval lifecycle.\" Paul's maritime background is commercial sales and business development (KSAT monitoring services, GFW data licensing), not regulatory certification engineering. He has never authored a PDA, facilitated an FMEA workshop, or interfaced with Class surveyors. While the role exhibits a strong pattern match (SPM 7), shaping regulatory infrastructure for a novel technology in a new market, the hard technical requirements make this unactionable. Multiple hard gaps trigger RF cap at 4 and IL cap at 3.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.orca-ai.io/careers/co/remote-europe/EA.76F/head-of-maritime-certification-regulatory-strategy-ic/all"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-05",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Remote (Europe)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "domain_experience",
+          "detail": "Role requires 8+ years of direct experience within a Classification Society or maritime tech company focused on Bridge Systems or Navigation Technologies. Paul has maritime domain exposure (KSAT oil spill monitoring, GFW fishing surveillance) but no Classification Society experience, no bridge systems certification work, and no IMO/SOLAS/COLREG rule application experience.",
+          "severity": "hard"
+        },
+        {
+          "type": "technical_credential",
+          "detail": "JD requires hands-on authorship of Product Design Assessment (PDA) and Type Approval technical dossiers, facilitation of FMEA/HAZID/HAZOP workshops, and direct interface with Class surveyors (DNV, ABS, LR, BV, ClassNK). Paul has no certification engineering background.",
+          "severity": "hard"
+        },
+        {
+          "type": "professional_network",
+          "detail": "Role requires established relationships and credibility with Classification Society surveyors and engineers. Paul's maritime network is commercial (oil & gas operators, NGOs, fisheries agencies), not regulatory certification bodies.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 7,
+        "CO": 4,
+        "GC": 5
+      },
+      "score_range": [
+        39.5,
+        50.0
+      ],
+      "confidence": "low",
+      "tier_uncertain": true,
+      "rank": 181
     },
     {
       "company": "Planet",
@@ -8807,7 +8867,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 181
+      "rank": 182
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -8865,7 +8925,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 182
+      "rank": 183
     },
     {
       "company": "Biomesense",
@@ -8920,7 +8980,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 183
+      "rank": 184
     },
     {
       "company": "Vantor",
@@ -8985,7 +9045,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 184
+      "rank": 185
     },
     {
       "company": "Ocean Conservancy | Schmidt Marine Job Board",
@@ -9045,7 +9105,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 185
+      "rank": 186
     },
     {
       "company": "\u00d8rsted",
@@ -9100,7 +9160,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 186
+      "rank": 187
     },
     {
       "company": "Airbus",
@@ -9165,7 +9225,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 187
+      "rank": 188
     },
     {
       "company": "Planet",
@@ -9230,7 +9290,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 188
+      "rank": 189
     },
     {
       "company": "Planet",
@@ -9253,7 +9313,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -9295,7 +9355,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 189
+      "rank": 190
     },
     {
       "company": "",
@@ -9348,7 +9408,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 190
+      "rank": 191
     },
     {
       "company": "Airbus",
@@ -9408,7 +9468,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 191
+      "rank": 192
     },
     {
       "company": "Airbus",
@@ -9478,7 +9538,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 192
+      "rank": 193
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -9538,7 +9598,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 193
+      "rank": 194
     },
     {
       "company": "Vantor",
@@ -9603,7 +9663,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 194
+      "rank": 195
     },
     {
       "company": "Acre",
@@ -9663,7 +9723,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 195
+      "rank": 196
     },
     {
       "company": "Director of Industrial Management",
@@ -9723,7 +9783,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 196
+      "rank": 197
     },
     {
       "company": "Quilt",
@@ -9783,7 +9843,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 197
+      "rank": 198
     },
     {
       "company": "Quilt",
@@ -9843,7 +9903,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 198
+      "rank": 199
     },
     {
       "company": "Isar Aerospace SE",
@@ -9866,7 +9926,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -9908,7 +9968,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 199
+      "rank": 200
     },
     {
       "company": "Watershed Careers",
@@ -9931,7 +9991,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-02",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -9963,10 +10023,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 200
+      "rank": 201
     },
     {
-      "rank": 201,
+      "rank": 202,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -10011,7 +10071,7 @@
       }
     },
     {
-      "rank": 202,
+      "rank": 203,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -10061,7 +10121,7 @@
       }
     },
     {
-      "rank": 203,
+      "rank": 204,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -61855,6 +61915,231 @@
           "source": "Greentown Labs (Green Town Labs)",
           "url": "https://jobs.lever.co/PhoenixTailings/0fd89998-9858-4c6e-ac94-59bbd4a6b928?lever-source%5B%5D=jobs.greentownlabs.com",
           "reason": "Scientific Chief of Staff is a technical/science operations role supporting scientific leadership, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "digest_count": 24,
+      "scored_count": 7,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Orca AI",
+          "role": "Job opportunity: Head of Maritime Certification & Regulatory Strategy (IC)",
+          "score": 41.0,
+          "score_range": [
+            39.5,
+            50.0
+          ],
+          "confidence": "low",
+          "tier_uncertain": true
+        }
+      ],
+      "stretch": [],
+      "skipped_duplicates": [
+        {
+          "company": "Director of Solutions Development",
+          "role": "Director of Solutions Development",
+          "reason": "url_already_in_ranked_opportunities:Acre"
+        }
+      ],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Via - Climate Change",
+          "role": "VP, Product Marketing at Via - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Too Good To Go - Climate Change",
+          "role": "Business Development Executive - Key Accounts  at Too Good To Go - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Phoenix Tailings - Climate Change",
+          "role": "Business Development Manager at Phoenix Tailings - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "ClimatePartner",
+          "role": "Sales | ClimatePartner",
+          "score": 32.5,
+          "score_range": [
+            28.0,
+            35.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Ocean Visions",
+          "role": "Careers at Ocean Visions",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Matter",
+          "role": "Chief Operating Officer - Bristol | Matter Careers",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "Everstream Analytics",
+          "role": "Senior Account Executive",
+          "url": "https://everstream.ai/careers/jobs/?gh_jid=5675798004",
+          "reason": "fetch_unreadable:content_too_short"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "24 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 1 dedup \u00b7 1 unscored.",
+      "jobs_processed": 24,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "24 entries. No Tier 1-2; 1 Tier 3 added. T3 1. 1 dedup \u00b7 1 unscored. 15 skipped by prefilter (off-domain / wrong-function).",
+      "prefilter_skipped": [
+        {
+          "title": "Remote Sensing, Optics and GIS jobs",
+          "source": "Space-Careers",
+          "url": "https://www.space-careers.com/jobs/remote_sensing_optics_and_gis",
+          "reason": "URL is a job category listing page, not a specific job posting",
+          "confidence": "high"
+        },
+        {
+          "title": "SVP/VP of ESG and Impact Advisory (Corporate Sustainability Solutions)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/512188668-svp-vp-of-esg-and-impact-advisory-corporate-sustainability-solutions-india",
+          "reason": "India-based SVP/VP ESG Advisory role is wrong geography for Taos-based remote-first candidate seeking US/Europe commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Enterprise Account Executive",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/7338688",
+          "reason": "Project44 is supply-chain visibility SaaS unrelated to climate/EO/maritime mission domain, and Enterprise AE is an IC quota-carrier role without strategic leadership component.",
+          "confidence": "high"
+        },
+        {
+          "title": "We\u2019re shaping the future of the maritime economy",
+          "source": "Lloyd's Register",
+          "url": "https://www.lr.org/en/careers/what-we-do/",
+          "reason": "URL points to a general 'what we do' page, not a specific job posting, so there is no role to evaluate.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr Manager, Product Partnerships",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/7760180",
+          "reason": "Project44 is supply chain visibility SaaS for logistics/freight, off-domain from Paul's climate-adjacent, EO/maritime, mission-driven target market.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF Engineer jobs",
+          "source": "Space-Careers",
+          "url": "https://www.space-careers.com/jobs/rf_engineer",
+          "reason": "RF Engineer is a pure technical engineering role, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Visibility Careers",
+          "source": "FourKites",
+          "url": "https://www.fourkites.com/careers/",
+          "reason": "FourKites is supply chain logistics SaaS (truck/freight tracking), off-domain from Paul's climate/EO/maritime stack.",
+          "confidence": "high"
+        },
+        {
+          "title": "Assistant Controller (Reporting to Director of Finance))",
+          "source": "Orca AI",
+          "url": "https://www.orca-ai.io/careers/co/israel/C6.D69/assistant-controller-reporting-to-director-of-finance/all",
+          "reason": "Assistant Controller is a finance/accounting function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sales Development Representative",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/7724797",
+          "reason": "Sales Development Representative is a junior IC quota-carrier role (SDR), wrong seniority for Paul's VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Strategic Account Executive",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/7718249",
+          "reason": "Project44 is supply chain visibility SaaS for logistics/transportation, off-domain from Paul's climate-adjacent, EO/maritime, mission-driven target market.",
+          "confidence": "high"
+        },
+        {
+          "title": "Climate tech jobs by country, state, region, and city",
+          "source": "ClimateTechList",
+          "url": "https://www.climatetechlist.com/jobs/by-location",
+          "reason": "URL is a job board location index page, not a specific posting with a title or company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Latest Colorado, Boulder, Denver, & Fort Collins based jobs from 500+ Climate Tech Companies - ClimateTechList",
+          "source": "ClimateTechList",
+          "url": "https://www.climatetechlist.com/jobs/colorado",
+          "reason": "URL is a geographic job board aggregator page (Colorado jobs across 500+ companies), not a specific posting with a title and company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Carbon Offset & Green Energy Services",
+          "source": "ClimatePartner",
+          "url": "https://www.climatepartner.com/en/career/carbon-offset-green-energy-services",
+          "reason": "Title 'Carbon Offset & Green Energy Services' reads as a service offering or product line, not a job posting title, and lacks any recognizable role function or seniority marker.",
+          "confidence": "high"
+        },
+        {
+          "title": "Customer Success Manager",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/7683877",
+          "reason": "Customer Success Manager is a junior IC CSM role, wrong function for Paul's commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager, Data Science Platform (AI/ML)",
+          "source": "Project44",
+          "url": "https://job-boards.greenhouse.io/project44/jobs/7656153",
+          "reason": "Product Manager role is an IC product management position outside Paul's commercial/BD/partnerships profile.",
           "confidence": "high"
         }
       ]
