@@ -1038,6 +1038,41 @@ def build_html(data):
     else:
         proactive_targets_html = ""
 
+    # Payload newsletter intel (2026-07-08): inventory of companies covered
+    # by payload@news.payloadspace.com, cross-referenced against the board.
+    pintel = data.get("payload_intel", {})
+    pi_companies = pintel.get("companies", [])
+    pi_rows = ""
+    for c in pi_companies:
+        ob = c.get("on_board", "no")
+        ob_cls = "muted" if ob == "no" else ("red" if ob.startswith("EXCLUDED") else "cyan")
+        note = c.get("employer_note", "")
+        note_html = f'<div style="margin-top:3px;color:var(--cyan);">{note}</div>' if note else ""
+        pi_rows += (f'    <tr><td class="company-name" data-sort="{(c.get("company") or "").lower()}">{c.get("company", "")}</td>'
+                    f'<td data-sort="{c.get("mentions", 0)}">{c.get("mentions", 0)}</td>'
+                    f'<td data-sort="{c.get("last_seen", "")}">{c.get("last_seen", "")}</td>'
+                    f'<td data-sort="{(c.get("signal_types") or "")}">{c.get("signal_types", "")}</td>'
+                    f'<td style="max-width:380px;font-size:11px;color:var(--text-muted)">{c.get("digest", "")}{note_html}</td>'
+                    f'<td><span class="pill pill-{ob_cls}">{ob}</span></td></tr>\n')
+    if pi_companies:
+        payload_intel_html = f"""<details class="collapsible-section">
+<summary class="section-header">Payload Intel <span class="badge pill-cyan">{len(pi_companies)} companies from {pintel.get("issues", "?")} issues</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Companies covered by the Payload newsletter ({pintel.get("window_start", "")} to {pintel.get("last_harvest", "")}), with what was said and whether they are already on this board. Harvested for intel and as a feed for careers-page checks and proactive outreach.</p>
+<input class="table-filter" type="search" placeholder="Filter Payload intel..." aria-label="Filter Payload intel" />
+<div class="table-wrapper" style="margin-top:12px">
+<table class="pipeline-table">
+  <thead><tr><th data-type="text">Company</th><th data-type="num">Mentions</th><th data-type="date">Last seen</th><th data-type="text">Signals</th><th>What Payload said (latest first)</th><th data-type="text">On the board?</th></tr></thead>
+  <tbody>
+{pi_rows}
+  </tbody>
+</table>
+</div>
+</details>
+
+"""
+    else:
+        payload_intel_html = ""
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1434,7 +1469,7 @@ def build_html(data):
 </div>
 </details>
 
-{proactive_targets_html}{speculative_outreach_html}
+{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
 
 <details>
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
