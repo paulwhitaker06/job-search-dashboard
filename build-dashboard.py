@@ -81,6 +81,7 @@ def is_new(added_date_str):
         return False
 
 STALE_DAYS = 60
+ACTION_FRESH_DAYS = 30
 
 def is_stale(d):
     """A ranked opportunity not yet applied to (status not_applied or
@@ -839,7 +840,19 @@ def build_html(data):
     tier1 = [d for d in active_ranked if (d.get("effective_score") or 0) >= 75]
     tier2 = [d for d in active_ranked if 60 <= (d.get("effective_score") or 0) < 75]
     tier3 = [d for d in active_ranked if (d.get("effective_score") or 0) < 60]
-    actionable = [d for d in ranked_live if d.get("recommendation") in ("pursue","pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
+    # "What To Do Next" is a to-do list, not an archive (Paul, 2026-07-09):
+    # only postings added in the last ACTION_FRESH_DAYS belong in it. Older
+    # not-applied roles keep their place in the tier tables until the 60-day
+    # burial rule catches them.
+    def _action_fresh(d):
+        a = d.get("added") or d.get("date")
+        if not a:
+            return True
+        try:
+            return (datetime.now() - datetime.strptime(a, "%Y-%m-%d")).days <= ACTION_FRESH_DAYS
+        except Exception:
+            return True
+    actionable = [d for d in ranked_live if _action_fresh(d) and d.get("recommendation") in ("pursue","pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
     action_items = ""
     for i, d in enumerate(actionable[:5]):
         new_badge = f' {pill("New", "cyan")}' if (d.get("is_new") or is_new(d.get("added"))) else ""
