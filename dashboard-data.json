@@ -12,31 +12,54 @@
     "updated": "2026-04-20"
   },
   "sports_feed": {
-    "updated": "2026-07-07T16:37:14Z",
+    "updated": "2026-07-09T16:31:48Z",
     "_note": "Refreshed by the refresh-sports-feed scheduled task. Each item is {headline, url, source, published (ISO8601), snark}. Snark voice: Barstool-adjacent guy-at-the-bar, crass, horny, cocky, zero filler. One sentence. No slurs, no punching down at specific real people in a harmful way. Punch sideways (at media, front offices, rival fanbases) and up (at ownership). Keep it Boston.",
     "sox": {
       "items": [
         {
-          "headline": "Red Sox rapidly gaining traction in race for third Wild Card",
-          "url": "https://www.overthemonster.com/red-sox-analysis/104000/the-red-sox-are-rapidly-gaining-traction-in-the-race-for-the-third-wild-card",
+          "headline": "Red Sox vs. White Sox preview: Sandoval makes debut in sweep bid",
+          "url": "https://www.bostonglobe.com/2026/07/09/sports/red-sox-white-sox-preview-july-9/",
+          "source": "Boston Globe",
+          "published": "2026-07-09T14:00:00Z",
+          "snark": "Patrick Sandoval back from Tommy John purgatory to face the White Sox, who've scored zero runs in 11 innings, so basically batting practice.",
+          "game_tag": "preview"
+        },
+        {
+          "headline": "What will the Red Sox do with their rotation this weekend?",
+          "url": "https://www.overthemonster.com/red-sox-discussion/104178/today-on-otm-what-will-the-red-sox-do-with-their-rotation-this-weekend",
           "source": "Over the Monster",
-          "published": "2026-07-07T06:00:00Z",
-          "snark": "Sox cut the Wild Card gap from six games to four, and the traffic above them is finally thicker than a Fenway nacho line.",
+          "published": "2026-07-09T10:48:00Z",
+          "snark": "Early's elbow is cooked, Suarez is day to day, and they're seriously wondering if they should call up Brayan Bello, which tells you everything.",
+          "game_tag": null
+        },
+        {
+          "headline": "Willson Contreras injury overshadows Red Sox sixth straight win",
+          "url": "https://www.overthemonster.com/red-sox-discussion/104148/willson-contreras-injury-overshadows-red-sox-sixth-straight-win",
+          "source": "Over the Monster",
+          "published": "2026-07-09T04:00:00Z",
+          "snark": "Sox win five straight then lose their best hitter to a foot contusion, because this franchise cannot have nice things.",
+          "game_tag": "recap"
+        },
+        {
+          "headline": "Jake Bennett allowed four hits in seven innings in 5-0 shutout win",
+          "url": "https://www.espn.com/mlb/team/_/name/bos/boston-red-sox",
+          "source": "ESPN",
+          "published": "2026-07-09T03:00:00Z",
+          "snark": "Bennett threw seven shutout innings and the offense actually showed up, which is rarer than a Fenway hot dog without ketchup.",
+          "game_tag": "recap"
+        },
+        {
+          "headline": "Contreras named to AL All-Star team as injury replacement",
+          "url": "https://www.bostonglobe.com/sports/baseball/redsox/",
+          "source": "Boston Globe",
+          "published": "2026-07-08T18:00:00Z",
+          "snark": "Contreras makes the All-Star team while suspended pending appeal, which is the most Red Sox thing since trading Mookie for a bag of Fritos.",
           "game_tag": null
         }
       ]
     },
     "pats": {
-      "items": [
-        {
-          "headline": "Patriots set to play six nationally televised games in 2026 season",
-          "url": "https://www.patriots.com/schedule/",
-          "source": "Patriots.com",
-          "published": "2026-07-07T06:00:00Z",
-          "snark": "Six primetime slots including a Super Bowl rematch Week 1, America gets to watch us lose under the lights again.",
-          "game_tag": null
-        }
-      ]
+      "items": []
     }
   },
   "stats": {
