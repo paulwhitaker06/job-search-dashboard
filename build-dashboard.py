@@ -1073,6 +1073,37 @@ def build_html(data):
     else:
         payload_intel_html = ""
 
+    # Careers watch registry (2026-07-08): job boards the pipeline polls
+    # daily (Phase 12) for new senior-commercial postings.
+    cw = data.get("careers_watch", {})
+    cw_reg = cw.get("registry", [])
+    cw_rows = ""
+    for r in cw_reg:
+        cw_rows += (f'    <tr><td class="company-name" data-sort="{(r.get("company") or "").lower()}">{r.get("company", "")}</td>'
+                    f'<td><a href="{r.get("careers_url", "")}" target="_blank" rel="noopener">{r.get("careers_url", "")}</a></td>'
+                    f'<td data-sort="{r.get("ats", "")}">{r.get("ats", "")}</td>'
+                    f'<td data-sort="{r.get("added", "")}">{r.get("added", "")}</td></tr>\n'
+                    )
+    if cw_reg:
+        seeded = "seeded" if cw.get("seeded") else "seeds on next pipeline run"
+        careers_watch_html = f"""<details class="collapsible-section">
+<summary class="section-header">Careers Watch <span class="badge pill-green">{len(cw_reg)} boards polled daily</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Machine-readable job boards from the Payload company inventory, polled every morning by the pipeline (Phase 12). New senior-commercial postings flow into the normal scoring pipeline automatically ({seeded}; {len(cw.get("seen_urls", []))} postings tracked).</p>
+<input class="table-filter" type="search" placeholder="Filter watched boards..." aria-label="Filter watched boards" />
+<div class="table-wrapper" style="margin-top:12px">
+<table class="pipeline-table">
+  <thead><tr><th data-type="text">Company</th><th>Careers page</th><th data-type="text">ATS</th><th data-type="date">Added</th></tr></thead>
+  <tbody>
+{cw_rows}
+  </tbody>
+</table>
+</div>
+</details>
+
+"""
+    else:
+        careers_watch_html = ""
+
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1469,7 +1500,7 @@ def build_html(data):
 </div>
 </details>
 
-{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
+{proactive_targets_html}{payload_intel_html}{careers_watch_html}{speculative_outreach_html}
 
 <details>
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
