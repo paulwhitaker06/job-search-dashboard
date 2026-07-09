@@ -1515,7 +1515,7 @@ def build_html(data):
 
 {proactive_targets_html}{payload_intel_html}{careers_watch_html}{speculative_outreach_html}
 
-<details>
+<details class="archive-section">
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
 <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Applications where the proactive process has run its course, follow-ups sent, no response. Applications awaiting a response for 60+ days auto-age here as well; any status change returns them to the active view. Kept here for record so the same role does not get re-prioritized.</p>
 <input class="table-filter" type="search" placeholder="Filter retired..." aria-label="Filter retired" />
@@ -1529,7 +1529,7 @@ def build_html(data):
 </div>
 </details>
 
-<details>
+<details class="archive-section">
 <summary class="section-header">Rejected / Closed <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed</span></summary>
 <input class="table-filter" type="search" placeholder="Filter rejected/closed..." aria-label="Filter rejected" />
 <div class="table-wrapper" style="margin-top:12px">
@@ -1783,6 +1783,10 @@ function updateStaleness() {{
 
     const row = el.closest('tr');
     const company = row ? row.querySelector('.company-name')?.textContent : '';
+    // Rows in archived sections (Retired, Rejected/Closed) keep their day
+    // counter but never generate What To Do Next items; they are already
+    // resolved or auto-aged out (Paul, 2026-07-09).
+    const inArchive = !!el.closest('details.archive-section');
 
     if (status !== 'awaiting') {{
       el.style.color = 'var(--text-muted)';
@@ -1799,7 +1803,7 @@ function updateStaleness() {{
         el.style.color = 'var(--red)';
         el.style.fontWeight = '600';
         el.title = 'Follow-up sent ' + daysSinceFollowUp + 'd ago with no response — retire?';
-        if (company) actions.push({{ company, days: daysSinceApplied, daysSinceFU: daysSinceFollowUp, level: 'retire' }});
+        if (company && !inArchive) actions.push({{ company, days: daysSinceApplied, daysSinceFU: daysSinceFollowUp, level: 'retire' }});
       }} else {{
         // Follow-up sent recently — ball is in their court
         el.style.color = 'var(--cyan)';
@@ -1812,12 +1816,12 @@ function updateStaleness() {{
         el.style.color = 'var(--red)';
         el.style.fontWeight = '600';
         el.title = 'Likely stale — consider follow-up or writing off';
-        if (company) actions.push({{ company, days: daysSinceApplied, level: 'stale' }});
+        if (company && !inArchive) actions.push({{ company, days: daysSinceApplied, level: 'stale' }});
       }} else if (daysSinceApplied >= 21) {{
         el.style.color = 'var(--amber)';
         el.style.fontWeight = '600';
         el.title = 'Consider sending a follow-up';
-        if (company) actions.push({{ company, days: daysSinceApplied, level: 'followup' }});
+        if (company && !inArchive) actions.push({{ company, days: daysSinceApplied, level: 'followup' }});
       }} else {{
         el.style.color = 'var(--text-muted)';
       }}
