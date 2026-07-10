@@ -75,7 +75,61 @@
   },
   "ranked_opportunities": [
     {
-      "rank": 1,
+      "company": "Loft Orbital Solutions",
+      "role": "Senior Sales Manager, Americas",
+      "score": 60.5,
+      "proxy_score": null,
+      "effective_score": 60.5,
+      "fit": 6,
+      "has_deep_dive": true,
+      "date": "2026-07-02",
+      "scqa": "The Second Mission Problem",
+      "verdict": "Deep dive 2026-07-06 (supersedes pipeline 50.0). Honest Tier 3 at 54.5: the motion is conventional full-cycle new business on an existing Americas team, not zero-to-one building, but the sale itself is consultative multi-vertical space services sold to institutional and commercial buyers, the closest live analog to Paul's KSAT decade. RF raised 5 to 6 (the pipeline's sector-depth cap violates the rubric's commercial-space rule) and SA 4 to 5 (Americas new-customer acquisition is a new-region build woven into an existing function). No hard blockers; the single most actionable senior US space seat in the current pile. [2026-07-09 re-score on Paul's challenge, 54.5 to 60.5, Tier 2: IL raised 5 to 7 because the JD's nice-to-haves are nearly verbatim Paul's record ('experience in consultative or mission- or satellite-as-a-service sales', 'experience selling within the satellite or mission services market', '7+ years of experience in full cycle sales'), and SA 5 to 6 because four of the JD's five duty areas are new-business acquisition, the rubric's central-thrust anchor. RF 6 stands: senior IC seller seat, not a function build. Since the deep dive, Loft added the Lockheed Martin collaboration and the JPL AI hosting contract, strengthening the US institutional book this seat sells from.]",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://jobs.lever.co/loftorbital/f48e757b-27c8-4b8c-87b3-f56dd6954102"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_Americas_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed",
+      "added": "2026-07-02",
+      "is_new": false,
+      "tier": null,
+      "stretch": false,
+      "domain": "Space infrastructure / mission-as-a-service",
+      "location": "Golden, CO or San Francisco (on-site, relocation assistance offered)",
+      "hook": "Re-scored 60.5 Tier 2 on review: the JD's nice-to-haves read like Paul's KSAT decade; US-actionable, no hard blockers.",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "Paul meets the JD's space-industry requirement broadly (KSAT 2011-2021, GFW 2021-2026), but the satellite-manufacturing and supply-chain half of the ecosystem is the thinner half of his record; he has traded with it rather than worked inside it.",
+          "severity": "soft"
+        },
+        {
+          "type": "sales_approach",
+          "detail": "JD asks for full lifecycle quota-rhythm sales; Paul's core motion is market creation, though his KSAT decade covered lead generation through contract negotiation.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "On-site in Golden, CO or San Francisco; relocation assistance offered. Soft flag per the geography rule.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 6,
+        "SA": 6,
+        "IL": 7,
+        "SPM": 5,
+        "CO": 6,
+        "GC": 6
+      },
+      "rank": 1
+    },
+    {
+      "rank": 2,
       "company": "Windward",
       "role": "Senior Manager, Data Acquisition & Partnerships",
       "score": 59.5,
@@ -110,7 +164,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -202,10 +256,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 3
+      "rank": 4
     },
     {
-      "rank": 4,
+      "rank": 5,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 58.5,
@@ -253,7 +307,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "company": "AAC Clyde Space",
       "role": "Head of BD & Sales (Products)",
       "score": 58.0,
@@ -282,7 +336,7 @@
       "blockers": []
     },
     {
-      "rank": 6,
+      "rank": 7,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -311,7 +365,7 @@
       "blockers": []
     },
     {
-      "rank": 7,
+      "rank": 8,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -383,10 +437,10 @@
         "CO": 8,
         "GC": 8
       },
-      "rank": 8
+      "rank": 9
     },
     {
-      "rank": 9,
+      "rank": 10,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -423,7 +477,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -458,7 +512,7 @@
       ]
     },
     {
-      "rank": 11,
+      "rank": 12,
       "company": "Satlantis",
       "role": "Europe Business Development and Sales Manager",
       "score": 55.5,
@@ -506,7 +560,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 13,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -586,7 +640,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 13
+      "rank": 14
     },
     {
       "company": "Antora",
@@ -646,10 +700,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 14
+      "rank": 15
     },
     {
-      "rank": 15,
+      "rank": 16,
       "company": "Crusoe",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 54.5,
@@ -736,60 +790,6 @@
         "SPM": 6,
         "CO": 6,
         "GC": 7
-      },
-      "rank": 16
-    },
-    {
-      "company": "Loft Orbital Solutions",
-      "role": "Senior Sales Manager, Americas",
-      "score": 54.5,
-      "proxy_score": null,
-      "effective_score": 54.5,
-      "fit": 6,
-      "has_deep_dive": true,
-      "date": "2026-07-02",
-      "scqa": "The Second Mission Problem",
-      "verdict": "Deep dive 2026-07-06 (supersedes pipeline 50.0). Honest Tier 3 at 54.5: the motion is conventional full-cycle new business on an existing Americas team, not zero-to-one building, but the sale itself is consultative multi-vertical space services sold to institutional and commercial buyers, the closest live analog to Paul's KSAT decade. RF raised 5 to 6 (the pipeline's sector-depth cap violates the rubric's commercial-space rule) and SA 4 to 5 (Americas new-customer acquisition is a new-region build woven into an existing function). No hard blockers; the single most actionable senior US space seat in the current pile.",
-      "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://jobs.lever.co/loftorbital/f48e757b-27c8-4b8c-87b3-f56dd6954102"
-      ],
-      "resume_path": null,
-      "doc_path": "~/Desktop/Claude Deep Dives/Loft_Orbital_Americas_Deep_Dive_Analysis.docx",
-      "doc_note": "Full deep dive completed",
-      "added": "2026-07-02",
-      "is_new": false,
-      "tier": null,
-      "stretch": false,
-      "domain": "Space infrastructure / mission-as-a-service",
-      "location": "Golden, CO or San Francisco (on-site, relocation assistance offered)",
-      "hook": "US-actionable senior space sales seat at a scaling unicorn; 500M USD bookings, buyers Paul has sold to for twenty years.",
-      "blockers": [
-        {
-          "type": "sector_experience",
-          "detail": "Paul meets the JD's space-industry requirement broadly (KSAT 2011-2021, GFW 2021-2026), but the satellite-manufacturing and supply-chain half of the ecosystem is the thinner half of his record; he has traded with it rather than worked inside it.",
-          "severity": "soft"
-        },
-        {
-          "type": "sales_approach",
-          "detail": "JD asks for full lifecycle quota-rhythm sales; Paul's core motion is market creation, though his KSAT decade covered lead generation through contract negotiation.",
-          "severity": "soft"
-        },
-        {
-          "type": "relocation",
-          "detail": "On-site in Golden, CO or San Francisco; relocation assistance offered. Soft flag per the geography rule.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 6,
-        "SA": 5,
-        "IL": 5,
-        "SPM": 5,
-        "CO": 6,
-        "GC": 6
       },
       "rank": 17
     },
