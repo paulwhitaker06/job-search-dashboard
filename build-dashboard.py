@@ -832,7 +832,10 @@ def build_html(data):
     buried = [d for d in ranked if is_stale(d)]
     ranked_live = [d for d in ranked if not is_stale(d)]
     # Tier 1 & 2 only for the Ranked Opportunities card grid (score 60+)
-    ranked_t12 = [d for d in ranked_live if (d.get("effective_score") or 0) >= 60]
+    # Applied roles leave the Ranked Opportunities cards and live in
+    # Applications Sent (Paul, 2026-07-09); tiles are pre-application only.
+    ranked_t12 = [d for d in ranked_live if (d.get("effective_score") or 0) >= 60
+                  and d.get("status") in ("not_applied", "cold_outreach")]
 
     # Derive pipeline tiers from ranked_opportunities by score threshold
     # Only include entries that are still actionable (not applied/rejected/pass)
