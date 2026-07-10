@@ -967,7 +967,9 @@ def build_html(data):
 </style>'''
 
     # Sports strip — live widget, shell HTML + embedded feed data for snark rotation
-    personal_section_html = build_personal_section(data)
+    # Personal section killed per Paul, 2026-07-09. The tile JS is guarded
+    # (early-returns when the elements are absent), so emitting nothing is safe.
+    personal_section_html = ""  # was: build_personal_section(data)
     # Bake all five feeds into the HTML at build time. The widget's FEED object
     # starts populated so tiles render content immediately, even when the page
     # is opened via file:// (where Chrome blocks fetch() from local files).
