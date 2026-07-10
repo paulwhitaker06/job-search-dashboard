@@ -1036,8 +1036,8 @@
 </details>
 
 <details class="collapsible-section">
-<summary class="section-header">Careers Watch <span class="badge pill-green">24 boards polled daily</span> <span class="badge pill-muted" style="font-size:10px;">8 manual-check only</span></summary>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Machine-readable job boards from the Payload company inventory, polled every morning by the pipeline (Phase 12). New senior-commercial postings flow into the normal scoring pipeline automatically (seeds on next pipeline run; 0 postings tracked).</p>
+<summary class="section-header">Careers Watch <span class="badge pill-green">32 boards, merged into job-tracker</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Historical record of the job boards surfaced by the Payload company inventory. As of 2026-07-09 these boards live in the job-tracker scraper config (companies.yaml, 537 companies) and are scraped every day like the rest of the [Job Tracker] digest; the pipeline no longer polls them separately. New companies surfaced by the Payload harvest are probed for a live ATS board and added to companies.yaml automatically (Phase 13b).</p>
 <input class="table-filter" type="search" placeholder="Filter watched boards..." aria-label="Filter watched boards" />
 <div class="table-wrapper" style="margin-top:12px">
 <table class="pipeline-table">
