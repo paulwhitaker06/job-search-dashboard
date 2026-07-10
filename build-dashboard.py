@@ -1125,7 +1125,7 @@ def build_html(data):
     if cw_reg:
         seeded = "seeded" if cw.get("seeded") else "seeds on next pipeline run"
         careers_watch_html = f"""<details class="collapsible-section">
-<summary class="section-header">Careers Watch <span class="badge pill-green">{len(cw_reg)} boards polled daily</span></summary>
+<summary class="section-header">Careers Watch <span class="badge pill-green">{sum(1 for r in cw_reg if (r.get("ats") or "none") in ("greenhouse", "lever", "ashby", "recruitee", "jazzhr"))} boards polled daily</span> <span class="badge pill-muted" style="font-size:10px;">{sum(1 for r in cw_reg if (r.get("ats") or "none") not in ("greenhouse", "lever", "ashby", "recruitee", "jazzhr"))} manual-check only</span></summary>
 <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Machine-readable job boards from the Payload company inventory, polled every morning by the pipeline (Phase 12). New senior-commercial postings flow into the normal scoring pipeline automatically ({seeded}; {len(cw.get("seen_urls", []))} postings tracked).</p>
 <input class="table-filter" type="search" placeholder="Filter watched boards..." aria-label="Filter watched boards" />
 <div class="table-wrapper" style="margin-top:12px">
