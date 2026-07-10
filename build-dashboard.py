@@ -876,6 +876,24 @@ def build_html(data):
     <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}</div>
   </div>\n"""
 
+    # Follow-up aging (2026-07-09): an application awaiting response for 10+
+    # days with no follow-up gets a nudge. Window capped at 35 days; older
+    # silence is answer enough and belongs to the retirement rules instead.
+    for a in data.get("applications", []):
+        if a.get("status") != "awaiting" or a.get("followed_up"):
+            continue
+        try:
+            age = (datetime.now() - datetime.strptime(a.get("applied", ""), "%Y-%m-%d")).days
+        except Exception:
+            continue
+        if not (10 <= age <= 35):
+            continue
+        link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
+        todo_items += f"""  <div class="action-item" data-company="{a.get('company','')}">
+    <div class="priority" style="background:var(--amber);">{age}d</div>
+    <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">FOLLOW UP</span> — applied {a.get('applied','')} ({age} days, no reply, no follow-up yet). Ask Claude to draft the note.{link}</div>
+  </div>\n"""
+
     action_items = ""
     for i, d in enumerate(actionable[:5]):
         new_badge = f' {pill("New", "cyan")}' if (d.get("is_new") or is_new(d.get("added"))) else ""
@@ -1110,6 +1128,29 @@ def build_html(data):
 """
     else:
         payload_intel_html = ""
+
+
+    # Outreach Radar (2026-07-09): weekly Phase 13c shortlist of high-momentum
+    # intel companies with no posted commercial role and no engagement yet.
+    radar = data.get("outreach_radar", {})
+    radar_items_html = ""
+    for it in radar.get("items", []):
+        radar_items_html += f'''  <div class="action-item" data-company="{it.get("company","")}">
+    <div class="priority" style="background:var(--purple);">&#8599;</div>
+    <div><strong>{it.get("company","")}</strong> <span class="pill pill-purple" style="font-size:10px;">{it.get("mentions",0)} mentions</span> <span style="color:var(--text-muted);font-size:11px;">{it.get("signals","")}</span><br>
+    <span style="font-size:12px;">{it.get("why_now","")}</span><br>
+    <span style="font-size:12px;color:var(--text-muted);"><strong>First move:</strong> {it.get("first_move","")}</span></div>
+  </div>\n'''
+    if radar_items_html:
+        outreach_radar_html = f'''<details class="collapsible-section" open>
+<summary class="section-header">Outreach Radar <span class="badge pill-purple">week of {radar.get("last_run","")}</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:10px;">Companies with momentum in the newsletter intel, no posted senior-commercial role, and no engagement yet. The unposted-job play: reach them before the req exists.</p>
+{radar_items_html}
+</details>
+
+'''
+    else:
+        outreach_radar_html = ""
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -1507,7 +1548,7 @@ def build_html(data):
 </div>
 </details>
 
-{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
+{outreach_radar_html}{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
 
 <details class="archive-section">
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
