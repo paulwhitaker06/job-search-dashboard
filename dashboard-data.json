@@ -67379,6 +67379,504 @@
         }
       ],
       "scoring_outage": "BudgetExceededError: daily API budget reached: $15.02 spent today, cap is $15.00 (DAILY_BUDGET_USD). Halting further calls; already-scored work is kept."
+    },
+    {
+      "date": "2026-07-10",
+      "digest_count": 69,
+      "scored_count": 1,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "stretch": [],
+      "skipped_duplicates": [
+        {
+          "company": "Commercial Integration Portfolio Lead",
+          "role": "Commercial Integration Portfolio Lead",
+          "reason": "url_already_in_ranked_opportunities:External"
+        }
+      ],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Via - Climate Change",
+          "role": "Head of Risk & Insurance  at Via - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "External",
+          "role": "Industrial Base/Supply Chain Engineer",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Industrial-Base-Supply-Chain-Engineer_R014139",
+          "reason": "score_exception:BadRequestError"
+        },
+        {
+          "company": "External",
+          "role": "Principal Director - Launch Directorate",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Principal-Director---Launch-Directorate_R015821",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Principal Director, Service Operations",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Principal-Director--Service-Operations_R014531",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Sr. Space Based Environmental Monitoring (SBEM) Strategic Architect",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Colorado-Springs-CO/Sr-Space-Based-Environmental-Monitoring--SBEM--Strategic-Architect_R015528",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Space Security EW/RF Operational Engineer",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Colorado-Springs-CO/Space-Security-EW-RF-Operational-Engineer_R015687",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "Sri Lanka at IIX Global - Climate Change",
+          "role": "AVP / VP, Platform Innovation - IIX Platforms | Sri Lanka at IIX Global - Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/516977931-avp-vp-platform-innovation-iix-platforms-|-sri-lanka",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "IIX Global - Climate Change",
+          "role": "AVP / VP, Platform Innovation - IIX Platforms - Vietnam at IIX Global - Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/516977932-avp-vp-platform-innovation-iix-platforms-vietnam",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Servicing, Mobility and Logistics (SML) Systems Director",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Cape-Canaveral-AFS-FL/Servicing--Mobility-and-Logistics--SML--Systems-Director_R015775",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Portfolio Analysis Department Associate Director",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Associate-Director-Requisition_R015684",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Propulsion Systems Director",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Los-Angeles-AFB-CA/Propulsion-Systems-Director_R015557",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Associate Director - Electro-Optical Engineering",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Associate-Director---Electro-Optical-Engineering_R014667",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Systems Director - Mission Integration",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Tysons-Corner-VA/Systems-Director---Mission-Integration_R015338-1",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "NNSA Defense Programs Senior Project Engineer\u202f\u202f",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Crystal-City-VA/NNSA-Defense-Programs-Senior-Project-Engineer--_R015712",
+          "reason": "score_skipped_api_outage"
+        },
+        {
+          "company": "External",
+          "role": "Data Architect and Solutions Engineer",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Data-Architect-and-Solutions-Engineer_R014288",
+          "reason": "score_skipped_api_outage"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "69 entries. All scored fell below Tier 3. 1 dedup \u00b7 14 unscored. \u26a0\ufe0f Scoring API died mid-run (BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha): 1 postings were NOT scored after 1 succeeded. Likely low API credits. The digest is left unstamped so the 17:00 UTC backstop (or a manual digest_date re-run) retries the missed ones; already-scored roles dedup cleanly.",
+      "jobs_processed": 69,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "69 entries. All scored fell below Tier 3. 1 dedup \u00b7 14 unscored. 53 skipped by prefilter (off-domain / wrong-function). \u26a0\ufe0f Scoring API died mid-run (BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha): 1 postings were NOT scored after 1 succeeded. Likely low API credits. The digest is left unstamped so the 17:00 UTC backstop (or a manual digest_date re-run) retries the missed ones; already-scored roles dedup cleanly.",
+      "prefilter_skipped": [
+        {
+          "title": "Senior Analytics Engineer - Finance & Risk",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/517407174-senior-analytics-engineer-finance-risk",
+          "reason": "Senior Analytics Engineer is a technical data engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "SAR Signal and Image Processing Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/SAR-Signal-and-Image-Processing-Engineer_R015831",
+          "reason": "SAR Signal and Image Processing Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior SAR Signal and Image Processing Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Senior-SAR-Signal-and-Image-Processing-Engineer_R015830",
+          "reason": "Senior SAR Signal and Image Processing Engineer is a pure technical engineering role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Remote Sensing Architecture Performance Analyst Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Remote-Sensing-Architecture-Performance-Analyst-Engineer_R015559",
+          "reason": "Remote Sensing Architecture Performance Analyst Engineer is a technical engineering role analyzing sensor performance and system architecture, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Director, Enterprise Applications",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Principal-Director--Enterprise-Applications_R014532-1",
+          "reason": "Principal Director, Enterprise Applications is an IT/enterprise software leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Remote Sensing Architecture Performance Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Remote-Sensing-Architecture-Performance-Engineer_R015529",
+          "reason": "Remote Sensing Architecture Performance Engineer is a technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Electro Optical Remote Sensing Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Electro-Optical-Remote-Sensing-Engineer_R015145",
+          "reason": "Electro Optical Remote Sensing Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Space Security EW/RF Operational Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Colorado-Springs-CO/Sr-Space-Security-EW-RF-Operational-Engineer_R015328",
+          "reason": "Sr. Space Security EW/RF Operational Engineer is a technical engineering role (electronic warfare/RF engineering), not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "2026 Digital Signals and RF Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2026-Digital-Signals-and-RF-Engineer_R015709",
+          "reason": "Title 'Digital Signals and RF Engineer' is a pure technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Moonbase Test and Evaluation and Partnerships Senior Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Johnson-Space-Center-TX/Moonbase-Test-and-Evaluation-and-Partnerships-Senior-Engineer_R015725",
+          "reason": "Moonbase Test and Evaluation Senior Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior RF Analyst",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Senior-RF-Analyst_R015335",
+          "reason": "Senior RF Analyst is a technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Systems Engineer - Electronic Parts & Supply Chain",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Senior-Systems-Engineer---Electronic-Parts---Supply-Chain_R015692",
+          "reason": "Senior Systems Engineer - Electronic Parts & Supply Chain is a technical engineering role focused on hardware/supply chain, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF Payload Analyst",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/RF-Payload-Analyst---Engineering-Specialist_R015655",
+          "reason": "RF Payload Analyst is a technical engineering analysis role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF and Antenna Engineer\u200b - Eng Specialist/Sr Eng Specialist",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/RF-and-Antenna-Engineer----Eng-Specialist-Sr-Eng-Specialist_R015488",
+          "reason": "RF and Antenna Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. RF Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Kirtland-AFB-NM/Sr-RF-Engineer---Space-RCO_R015472",
+          "reason": "Sr. RF Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF and Launch Operations Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Cape-Canaveral-AFS-FL/RF-and-Launch-Operations-Engineer_R015463",
+          "reason": "RF and Launch Operations Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Digital Signals & RF Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Digital-Signals---RF-Engineer_R015281",
+          "reason": "Digital Signals & RF Engineer is a pure technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF Systems Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/RF-Systems-Engineer_R015222-1",
+          "reason": "RF Systems Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF/Microwave Engineer - Senior Member of Technical Staff",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/RF-Microwave-Engineer---Senior-Member-of-Technical-Staff_R015041",
+          "reason": "RF/Microwave Engineer is a pure technical engineering role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior RF Spectrum Policy Analyst/Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Senior-RF-Spectrum-Policy-Analyst-Engineer_R015099",
+          "reason": "Senior RF Spectrum Policy Analyst/Engineer is a technical engineering role focused on RF spectrum policy analysis, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior RF Spectrum Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Senior-RF-Spectrum-Engineer_R015100",
+          "reason": "Senior RF Spectrum Engineer is a technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Data Engineer, Constellation Services",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8052727",
+          "reason": "Senior Data Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Operations",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/516987711-director-of-operations",
+          "reason": "Director of Operations is a wrong-function role (operations/internal management, not commercial/BD/partnerships).",
+          "confidence": "high"
+        },
+        {
+          "title": "County Executive Director Expanded",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/516991590-county-executive-director-expanded",
+          "reason": "County Executive Director is a government agency leadership role, not a commercial/BD/partnerships function at a mission-driven company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Marine Machinery Mechanic",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/516991603-marine-machinery-mechanic",
+          "reason": "Marine Machinery Mechanic is a hands-on technical repair role, not a commercial/BD/partnerships leadership function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Data Analyst - Risk & Collections H/F",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/517407173-senior-data-analyst-risk-collections-h-f",
+          "reason": "Senior Data Analyst is a pure technical/analytics IC role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Philanthropy, School of Medicine",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52899/director-of-philanthropy-school-of-medicine/?LinkSource=HomePage",
+          "reason": "Director of Philanthropy is a fundraising/development role at an academic medical institution, wrong function (not commercial/BD/partnerships).",
+          "confidence": "high"
+        },
+        {
+          "title": "Associate Director, Grants",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/52906/associate-director-grants/?LinkSource=PromotedJob",
+          "reason": "Associate Director, Grants is a grantmaking/philanthropy function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Space Vehicle Processing Engineering",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Vandenberg-SFB-CA/Director--Space-Vehicle-Processing-Engineering_R015842",
+          "reason": "Director, Space Vehicle Processing Engineering is a technical engineering management role focused on spacecraft processing operations, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director - Modeling & Simulation Software",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Director---Modeling---Simulation-Software_R015806",
+          "reason": "Title 'Director - Modeling & Simulation Software' indicates a technical software engineering leadership role, not commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vehicle and Ground Concepts Department Associate Director",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Vehicle-and-Ground-Concepts-Department--Associate-Director_R015299",
+          "reason": "Associate Director title at Aerospace Corporation, which is an FFRDC serving national security space programs - wrong function (engineering/technical leadership) and national security domain Paul explicitly excluded.",
+          "confidence": "high"
+        },
+        {
+          "title": "Systems Director - DAF Integrated Fires Command and Control (DIFC2)",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Reston-VA/Systems-Director---DAF-Integrated-Fires-Command-and-Control--DIFC2-_R015804",
+          "reason": "DAF (Department of the Air Force) Integrated Fires Command and Control is a defense/military command and control system role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Risk Management Staff",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Risk-Management-Staff_R015800",
+          "reason": "Risk Management Staff is an off-function role in enterprise risk/compliance, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Systems Director - Performance & Control Analysis",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Los-Angeles-AFB-CA/Systems-Director---Performance---Control-Analysis_R015782",
+          "reason": "Systems Director - Performance & Control Analysis is a technical engineering role at Aerospace Corporation, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of People Management",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Director-of-People-Management_R014741",
+          "reason": "Director of People Management is an HR function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Enterprise Risk Management Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Sr-Enterprise-Risk-Management-Engineer_R015748",
+          "reason": "Enterprise Risk Management Engineer is a compliance/risk function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director - Earth-Orbit Flight Dynamics Department",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Director---Earth-Orbit-Flight-Dynamics-Department_R015720",
+          "reason": "Flight Dynamics Department is a technical engineering/operations function, not commercial or partnerships work.",
+          "confidence": "high"
+        },
+        {
+          "title": "xLab Manufacturing Operations Director",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/xLab-Manufacturing-Operations-Director_R015602",
+          "reason": "xLab Manufacturing Operations Director is a manufacturing operations/production management role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Technical Portfolio Operations",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Director--Technical-Portfolio-Operations_R015496",
+          "reason": "Aerospace Corporation is an FFRDC serving national security space programs; Director of Technical Portfolio Operations is a program management role overseeing technical portfolios, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Mid-Market Account Executive, CPG",
+          "source": "Greentown Labs (Green Town Labs)",
+          "url": "https://jobs.lever.co/runlaminar/ab45ee40-81f3-465d-b6f4-41e31085b22b?lever-source%5B%5D=jobs.greentownlabs.com",
+          "reason": "Mid-Market Account Executive is a junior IC quota-carrier role at wrong seniority level for Paul's VP/Director search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Digital Solutions Engineer",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Digital-Solutions-Engineer_JR10427836",
+          "reason": "Digital Solutions Engineer is a technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Demand Generation Principal",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/516987710-demand-generation-principal",
+          "reason": "Demand Generation Principal is a marketing-only IC role without a commercial leadership component.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. OPIR Ground Platform Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Buckley-SFB-CO/OPIR-Ground-Deputy-Chief-Engineer_R015175",
+          "reason": "Sr. OPIR Ground Platform Engineer is a pure technical engineering role (platform engineering), wrong function for commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Moonbase Principal Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Houston-TX/Moonbase-Principal-Engineer_R015789",
+          "reason": "Moonbase Principal Engineer is a pure technical engineering role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Ground Data Networks (GDN) and Cyber & Network Defense (CND) Architect",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Colorado-Springs-CO/Ground-Data-Networks--GDN--and-Cyber---Network-Defense--CND--Architect_R015455",
+          "reason": "Cyber & Network Defense Architect is a technical infrastructure role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "NNSA Defense Programs Project Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Albuquerque-NM/NNSA-Defense-Programs-Project-Engineer_R015713",
+          "reason": "NNSA Defense Programs Project Engineer is a technical engineering role in the nuclear security domain, wrong function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Procurement Manager - Government Subcontracts",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Subcontracts-Manager--Government-Direct-Charge-_R014983",
+          "reason": "Procurement Manager / Subcontracts Manager is a procurement/contracting function, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. System of Systems Integration Engineer - Missile Warning, Tracking, Defense",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Sr-System-of-Systems-Integration-Engineer---Missile-Warning--Tracking--Defense_R014847",
+          "reason": "Aerospace Corporation missile warning/defense role is pure defense/national-security engineering, wrong function and domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Medium Earth Orbit (MEO) Missile Warning, Tracking & Defense (MWTD) Ground Segment Project Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Sr-Medium-Earth-Orbit--MEO--Missile-Warning--Tracking---Defense--MWTD--Ground-Segment-Project-Engineer_R015579",
+          "reason": "Sr. Project Engineer is a technical engineering role (ground segment systems engineering for missile warning satellites), not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Medium Earth Orbit (MEO) Missile Warning, Tracking & Defense Space Vehicle & Communication Subsystem Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Los-Angeles-AFB-CA/Sr-Medium-Earth-Orbit--MEO--Missile-Warning--Tracking---Defense-Space-Vehicle---Communication-Subsystem-Engineer_R014974",
+          "reason": "Missile Warning, Tracking & Defense Space Vehicle Engineer is a pure technical engineering role with no commercial or BD component.",
+          "confidence": "high"
+        },
+        {
+          "title": "SAP S/4HANA Business Analytics Developer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/SAP-S-4HANA-Business-Analytics-Developer_R014640",
+          "reason": "SAP S/4HANA Business Analytics Developer is a technical analytics/ERP implementation role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Full Stack Engineer (Intelligence Center)",
+          "source": "MITRE",
+          "url": "https://careers.mitre.org/us/en/job/R115435/Full-Stack-Engineer-Intelligence-Center",
+          "reason": "Full Stack Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Software, Data, and AI Engineer",
+          "source": "MITRE",
+          "url": "https://careers.mitre.org/us/en/job/R116549/Principal-Software-Data-and-AI-Engineer",
+          "reason": "Principal Software/Data/AI Engineer is a pure technical IC engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        }
+      ],
+      "scoring_outage": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purcha"
     }
   ],
   "cold_outreach": [],
