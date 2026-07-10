@@ -1822,10 +1822,14 @@ updateStaleness();
     // Pool exhausted: every current haiku has been seen. Don't reset (Paul's rule:
     // never see the same one twice). Show a random one without adding it to seen,
     // and flag the state so the caller can render an "all caught up" hint.
+    // Counter reports seen-of-CURRENT-pool, not lifetime seen: the seen list
+    // tracks every haiku ever read (by hash, surviving pool churn), so its
+    // length can exceed today's pool size (the 103/65 bug, 2026-07-09).
+    const seenInPool = pool.length - unseenIdx.length;
     if (unseenIdx.length === 0) {
       const idx = Math.floor(Math.random() * pool.length);
       memRef.value = seen;
-      return { item: pool[idx], seenCount: seen.length, total: pool.length, exhausted: true };
+      return { item: pool[idx], seenCount: pool.length, total: pool.length, exhausted: true };
     }
 
     const idx = unseenIdx[Math.floor(Math.random() * unseenIdx.length)];
@@ -1834,7 +1838,7 @@ updateStaleness();
       try { localStorage.setItem(seenKey, JSON.stringify(seen)); } catch(e) {}
     }
     memRef.value = seen;
-    return { item: pool[idx], seenCount: seen.length, total: pool.length, exhausted: false };
+    return { item: pool[idx], seenCount: seenInPool + 1, total: pool.length, exhausted: false };
   }
 
   function renderHaiku() {
