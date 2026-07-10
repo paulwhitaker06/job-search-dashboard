@@ -856,6 +856,26 @@ def build_html(data):
         except Exception:
             return True
     actionable = [d for d in ranked_live if _action_fresh(d) and d.get("recommendation") in ("pursue","pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
+    # Pinned to-dos (2026-07-09): manual tasks Paul wants in What To Do Next,
+    # each with copy-path links to the files needed. Data: action_todos
+    # [{text, doc_path, url, hold_until, done}]. Mark done:true to clear.
+    todos = [t for t in data.get("action_todos", []) if not t.get("done")]
+    todo_items = ""
+    for t in todos:
+        links = ""
+        if t.get("doc_path"):
+            _p = t["doc_path"].replace("'", "\\'")
+            links += f' <a href="#" class="copy-path-link" onclick="copyFilePath(this, \'{_p}\'); return false;" style="font-size:11px;">Draft</a>'
+        if t.get("url"):
+            links += f' <a href="{t["url"]}" target="_blank" rel="noopener" style="font-size:11px;">Link</a>'
+        hold = ""
+        if t.get("hold_until"):
+            hold = f' <span class="pill pill-muted" style="font-size:10px;">hold until {t["hold_until"]}</span>'
+        todo_items += f"""  <div class="action-item" data-company="{t.get('company','')}">
+    <div class="priority" style="background:var(--amber);">!</div>
+    <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}</div>
+  </div>\n"""
+
     action_items = ""
     for i, d in enumerate(actionable[:5]):
         new_badge = f' {pill("New", "cyan")}' if (d.get("is_new") or is_new(d.get("added"))) else ""
@@ -1413,7 +1433,7 @@ def build_html(data):
 
 <div class="action-banner">
   <h2>What To Do Next</h2>
-{action_items}
+{todo_items}{action_items}
 </div>
 
 {interview_prep_html}
