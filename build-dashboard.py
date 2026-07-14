@@ -324,6 +324,9 @@ def build_app_rows(apps, include=None):
         # Link column: real URL from job_url field (only real verified URLs)
         job_url = a.get("job_url")
         link_col = f'<a href="{job_url}" target="_blank" style="color:var(--cyan);text-decoration:none">View</a>' if job_url else "—"
+        if a.get('doc_path'):
+            _dp = a['doc_path'].replace("'", "\\'")
+            link_col += f' · <a href="#" style="color:var(--purple);text-decoration:none" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief</a>'
         rows.append(f'''    <tr{opacity}>
       <td class="company-name">{a["company"]}</td><td>{a["role"]}</td><td>{score_col}</td><td>{applied_col}</td><td>{days_col}</td>
       <td>{a["domain"]}</td><td>{a["location"]}</td><td>{a["comp"]}</td>
@@ -630,35 +633,6 @@ def get_interviews(apps):
     ivs.sort(key=sort_key)
     return ivs
 
-def _prep_slug(company):
-    return "prep-" + _re.sub(r"[^a-z0-9]+", "-", (company or "").lower()).strip("-")
-
-def build_prep_briefs(apps):
-    """Render call_prep dicts on scheduled-interview apps as anchored brief
-    sections. Keys render as headings; strings as paragraphs; lists as bullets."""
-    out = ""
-    for a in apps:
-        if a.get("status") not in SCHEDULED_INTERVIEW_STATUSES or not a.get("call_prep"):
-            continue
-        body = ""
-        for key, val in a["call_prep"].items():
-            heading = key.replace("_", " ").title()
-            body += f'<h4 style="margin:14px 0 4px;color:var(--cyan);font-size:13px;">{heading}</h4>'
-            if isinstance(val, list):
-                body += "<ul style='margin:0;padding-left:20px;'>" + "".join(
-                    f"<li style='font-size:13px;margin-bottom:6px;'>{v}</li>" for v in val) + "</ul>"
-            else:
-                body += f'<p style="font-size:13px;margin:0;">{val}</p>'
-        out += f"""<details class="collapsible-section" open id="{_prep_slug(a.get('company'))}">
-<summary class="section-header">Prep Brief: {a.get('company','')} <span class="badge pill-purple">interview {a.get('interview_date','')}</span></summary>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">{a.get('role','')}</p>
-{body}
-</details>
-
-"""
-    return out
-
-
 def build_next_interview_banner(interviews):
     """A row of equal-sized interview tickers, one per scheduled interview, each with a
     live countdown. The soonest is accented as NEXT; all cards are the same size."""
@@ -681,6 +655,10 @@ def build_next_interview_banner(interviews):
         elif s.startswith('2nd'): stage = '2nd Round'
         elif s.startswith('1st'): stage = '1st Round'
         else: stage = 'Interview'
+        brief_link = ''
+        if iv.get('doc_path'):
+            _dp = iv['doc_path'].replace("'", "\\'")
+            brief_link = f' <a href="#" class="iv-link" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief &rarr;</a>'
         label = 'NEXT INTERVIEW' if idx == 0 else stage.upper() + ' SCHEDULED'
         accent = ' iv-next' if idx == 0 else ''
         cards += f'''  <div class="iv-card{accent}">
@@ -690,7 +668,7 @@ def build_next_interview_banner(interviews):
     <div class="ib-countdown iv-count" data-deadline="{iso}">calculating&hellip;</div>
     <div class="iv-time">{display}</div>
     <div class="iv-people">{people}</div>
-    <a href="{job_url}" target="_blank" class="iv-link">Job Post &rarr;</a>{f' <a href="#{_prep_slug(company)}" class="iv-link">Prep Brief &rarr;</a>' if iv.get('call_prep') else ''}
+    <a href="{job_url}" target="_blank" class="iv-link">Job Post &rarr;</a>{brief_link}
   </div>
 '''
     return f'<div class="interview-tickers">\n{cards}</div>'
@@ -911,10 +889,14 @@ def build_html(data):
         if a.get("status") not in SCHEDULED_INTERVIEW_STATUSES:
             continue
         ivd = a.get("interview_date") or "date TBC"
+        iv_brief = ''
+        if a.get('doc_path'):
+            _dp = a['doc_path'].replace("'", "\\'")
+            iv_brief = f' <a href="#" style="font-size:11px;" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief</a>'
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
         todo_items = f"""  <div class="action-item" data-company="{a.get('company','')}">
     <div class="priority" style="background:var(--purple);">IV</div>
-    <div><strong>{a.get('company','')}</strong> <span class="pill pill-purple" style="font-size:10px;">PREP INTERVIEW</span> — interview {ivd}. {a.get('next_action','')[:140]}{link}{f' <a href="#{_prep_slug(a.get("company"))}" style="font-size:11px;">Prep Brief</a>' if a.get('call_prep') else ''}</div>
+    <div><strong>{a.get('company','')}</strong> <span class="pill pill-purple" style="font-size:10px;">PREP INTERVIEW</span> — interview {ivd}. {a.get('next_action','')[:140]}{link}{iv_brief}</div>
   </div>\n""" + todo_items
 
     # Follow-up aging (2026-07-09): an application awaiting response for 10+
@@ -968,7 +950,6 @@ def build_html(data):
     interviews = get_interviews(data.get("applications", []))
     interview_banner_html = build_next_interview_banner(interviews)
     interview_prep_html = build_interview_prep_cards(interviews)
-    prep_briefs_html = build_prep_briefs(data.get("applications", []))
 
 # Seasonal accent — shift --accent-light and add a top bar so the season is actually visible
     season = get_seasonal_accent()
@@ -1491,7 +1472,6 @@ def build_html(data):
 </div>
 
 {interview_prep_html}
-{prep_briefs_html}
 
 <details open class="collapsible-section">
 <summary class="section-header">Ranked Opportunities <span class="badge pill-purple">{len(ranked_t12)} Tier 1 &amp; 2</span></summary>
