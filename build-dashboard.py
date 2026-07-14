@@ -876,6 +876,18 @@ def build_html(data):
     <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}</div>
   </div>\n"""
 
+    # Interview prep (2026-07-14, Paul): a scheduled interview always surfaces
+    # a prep item in What To Do Next, above everything else.
+    for a in data.get("applications", []):
+        if a.get("status") not in SCHEDULED_INTERVIEW_STATUSES:
+            continue
+        ivd = a.get("interview_date") or "date TBC"
+        link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
+        todo_items = f"""  <div class="action-item" data-company="{a.get('company','')}">
+    <div class="priority" style="background:var(--purple);">IV</div>
+    <div><strong>{a.get('company','')}</strong> <span class="pill pill-purple" style="font-size:10px;">PREP INTERVIEW</span> — interview {ivd}. {a.get('next_action','')[:140]}{link}</div>
+  </div>\n""" + todo_items
+
     # Follow-up aging (2026-07-09): an application awaiting response for 10+
     # days with no follow-up gets a nudge. Window capped at 35 days; older
     # silence is answer enough and belongs to the retirement rules instead.
