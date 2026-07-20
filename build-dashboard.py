@@ -899,9 +899,10 @@ def build_html(data):
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-purple" style="font-size:10px;">PREP INTERVIEW</span> — interview {ivd}. {a.get('next_action','')[:140]}{link}{iv_brief}</div>
   </div>\n""" + todo_items
 
-    # Follow-up aging (2026-07-09): an application awaiting response for 10+
-    # days with no follow-up gets a nudge. Window capped at 35 days; older
-    # silence is answer enough and belongs to the retirement rules instead.
+    # Follow-up aging: an application awaiting response for 14+ days with no
+    # follow-up gets a nudge (Paul, 2026-07-20: 11 days is too soon; his own
+    # cadence is ~2 weeks). Window capped at 35 days; older silence is answer
+    # enough and belongs to the retirement rules instead.
     for a in data.get("applications", []):
         if a.get("status") != "awaiting" or a.get("followed_up"):
             continue
@@ -909,7 +910,7 @@ def build_html(data):
             age = (datetime.now() - datetime.strptime(a.get("applied", ""), "%Y-%m-%d")).days
         except Exception:
             continue
-        if not (10 <= age <= 35):
+        if not (14 <= age <= 35):
             continue
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
         todo_items += f"""  <div class="action-item" data-company="{a.get('company','')}">
