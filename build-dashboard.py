@@ -915,7 +915,7 @@ def build_html(data):
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
         todo_items += f"""  <div class="action-item" data-company="{a.get('company','')}">
     <div class="priority" style="background:var(--amber);">{age}d</div>
-    <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">FOLLOW UP</span> — applied {a.get('applied','')} ({age} days, no reply, no follow-up yet). Ask Claude to draft the note.{link}</div>
+    <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">DECIDE</span> — applied {a.get('applied','')}, {age} days silent. Find a person to write, or let it ride.{link}</div>
   </div>\n"""
 
     action_items = ""
