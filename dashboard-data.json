@@ -22431,26 +22431,6 @@
   ],
   "watch_list": [
     {
-      "company": "Pixxel",
-      "category": "Proactive Target - Cold Outreach",
-      "why": "Six hyperspectral Fireflies on orbit, second NRO contract in 2026, raising $80-100M at ~$400M (in talks, May 2026) explicitly to scale commercialization; US entity in El Segundo holds NASA/NRO business. US senior seat plausible; center of gravity Bengaluru.",
-      "roast": "Pixxel launched the first three Firefly hyperspectral satellites in early 2026, which means they have finally graduated from PowerPoint to on-orbit, and now the commercial question is whether anyone will pay hyperspectral prices for hyperspectral data when the use cases that actually generate revenue (crop stress, mineral exploration, methane detection) can mostly be solved with multispectral at a tenth of the cost and twice the revisit. You would be walking into the moment when the technology validation is over and the market validation begins, which is the dangerous part, the part where a hardware company realizes the data alone is not the business model and starts talking about analytics and insights and vertically integrated solutions, which is startup code for we need to figure out what people will actually pay for. The three-satellite constellation is a beginning, not a market, and the path from three to thirty depends on whether the first commercial customers are paying for the spectral resolution because they need it or because it is novel, and you have spent enough time in this industry to know that novel does not renew. If you want to build the commercial function for a hyperspectral constellation at the exact moment when the story stops being about the technology and starts being about the business, and you are willing to bet that there are enough buyers who need two hundred bands instead of twenty, this is a legitimate builder role. But every comp in your model will come from Planet, and Planet succeeded by being cheap and fast, not by being precise."
-    },
-    {
-      "company": "Carbon Mapper",
-      "category": "Methane/CO2 Detection from Space",
-      "why": "Non-profit satellite constellation detecting methane super-emitters. Public data portal just launched. Planet Labs partnership. Direct GFW parallel but carbon-focused.",
-      "roast": "Carbon Mapper is still flying their Tanager-1 methane and CO2 detection satellite and preparing for additional launches, which positions them exactly where you want an EO startup to be when you arrive: orbiting hardware, proven detection capability, and a market thesis (methane super-emitters are a compliance and reputational problem for oil and gas) that has real commercial legs if you can close the deals before every other SAR and hyperspectral shop pivots to methane because they read the same IEA report you did. The NASA JPL pedigree gives them credibility with the science buyers and the Tanager data is legitimately differentiated, but you would be walking into the same commercial trap you saw at KSAT in the mid-2010s, which is that the customers who need methane detection the most (oil majors, pipeline operators, upstream producers) are also the customers who least want to advertise that they need methane detection, because buying the monitoring service is an admission that they have a methane problem, which becomes an SEC disclosure problem, which becomes a stock price problem. The policy window is better now than it was then, the EPA methane rule and the EU regulations create a forcing function, but the commercial model still depends on whether you are selling compliance (volume, low margin, long sales cycles) or reputation management (bespoke, high touch, requires trust you do not have yet). If you can navigate the game where the buyer knows they need you but cannot admit it in public, and you are willing to spend two years turning methane plume detections into signed MSAs, this is a category-defining company at the category-defining moment. But it is also exactly the kind of market-creation play that requires more patience than most venture-backed startups can afford, and you would be the one managing that expectation with a board that wants ARR growth yesterday.",
-      "careers_url": "https://carbonmapper.org/about/careers/"
-    },
-    {
-      "company": "VANYA",
-      "category": "AI-Powered MRV for Carbon Credits",
-      "why": "India-based, processing satellite and remote sensing via ML for nature-based credits. Blockchain ledger, real-time reporting. MRV pain point is very real.",
-      "roast": "VANYA is an Indian AI and satellite MRV startup trying to fix the voluntary carbon market by processing remote sensing data through machine learning and recording it on a blockchain, which is two hype cycles in one sentence and somehow still the most credible solution to the MRV disaster that the market has produced. They are targeting nature-based credits, which means forestry projects in countries where ground truth is either inaccessible or politically inconvenient, and they are claiming high precision and transaction transparency, which is exactly what every credit buyer says they want until you put a contract in front of them and they start hedging on the methodology. You built a commercial licensing program on top of an open data platform where the internal argument was whether selling anything at all violated the mission. VANYA has the opposite problem, which is that the market desperately wants what they are selling but does not trust anyone selling it. The voluntary carbon market is a MRV graveyard and you know it. If VANYA has figured out how to automate reporting without cutting corners on validation, and if they can get a major credit registry or a financial institution to bless the output, they have a business. If they are just another AI wrapper on Sentinel-2 with a blockchain PR strategy, they have a deck. Go find out which one it is before someone else does.",
-      "careers_url": "https://vanya.co.in/careers"
-    },
-    {
       "company": "Vantor",
       "category": "3D Earth Observation",
       "why": "American EO doing 3D mapping from space with stunning output, per Space.com July 2026. Direct fit for Paul's sat data licensing background.",
@@ -22673,6 +22653,27 @@
       "why": "Berkeley-based DAC, hardware and scale problem, YC-backed, need commercial partnerships before the tech is fully proven",
       "roast": "Direct air capture out of Berkeley. AirMyne is building machines to pull CO2 out of ambient air so it can be utilized or sequestered downstream, which is a polite way of saying they are building very expensive vacuum cleaners for the atmosphere and hoping someone will pay them to run the thing. The technology is real. The physics work. The unit economics are a nightmare and the commercial question is whether anyone will pay for atmospheric carbon removal at a price that covers the cost of the machine, the energy to run it, and the people who have to explain to corporate buyers why this is not just a very elaborate tax write-off. Paul has never sold hardware but he has spent twenty years selling the argument for paying for data that nobody thought they needed until a regulator or a reputation risk made it non-negotiable. DAC has the same problem. The buyers are not lining up because the technology works. They will line up when not buying becomes riskier than buying, and that moment is coming but it is not here yet. AirMyne needs someone who can build the commercial relationships before the cost curve proves itself, which means finding the corporates and the compliance buyers and the offtake partners who are willing to pay for removal credits at a price that keeps the lights on while the technology scales. Paul closed the Planet Labs deal at 95 percent off commercial rates by finding the third party objection and going directly at it. That is the same skill AirMyne needs, just in a different molecule.",
       "careers_url": "https://www.airmyne.com/careers"
+    },
+    {
+      "company": "Albedo",
+      "category": "Ultra High-Resolution EO Imaging",
+      "why": "10cm commercial optical resolution launching 2026, direct fit for Paul's EO data licensing background",
+      "roast": "You want to sell ten centimeter optical imagery to the commercial market. That is either brilliant or delusional and you will find out which about six months after your first bird flies. The optical physics work. The Tromso winter taught me that clarity and cold make magic, and very low orbit plus good glass gets you resolution the suits at NGA spent billions trying to own. The question is whether anyone outside defense and intelligence will pay what this costs. Planet won the volume game with three meter cubes you can afford to fly by the hundred. Maxar owns the government wallet. You are betting there is a third lane for customers who need to see the panel gaps on a shipping container or the stress cracks in a pipeline valve but cannot sign a classification agreement. I have spent two decades finding those customers. Some exist. Not enough to justify the capital you just raised unless you are planning to pivot into the same defense contracts you currently swear you will avoid. But I would rather help you prove me wrong than watch from Taos while you figure out the commercial argument six months too late. If you are serious about non-defense adoption and you understand that licensing these pixels means teaching buyers why ten centimeters answers a question three meters cannot, we should talk before your first data hits the ground.",
+      "careers_url": "https://albedo.com/careers"
+    },
+    {
+      "company": "Hydrosat",
+      "category": "Thermal EO / Water Stress Monitoring",
+      "why": "Agriculture and water stress monitoring via thermal EO, commercial angle aligns with Paul's conservation and climate mission experience",
+      "roast": "Thermal infrared from space to tell farmers their fields are thirsty. The physics are sound. The timing might even be right. Every insurance company, every agriculture input supplier, every water district in the West is suddenly willing to admit that rainfall is not a reliable planning assumption anymore. You want to sell them the truth before the plants die. I respect that. The problem is the same problem everyone in this sector hits around year three. The data works. The pilots convert. Then you discover that selling a recurring thermal monitoring subscription to a farming operation requires you to become their agronomist, their accountant, their IT department, and their therapist. The customer success cost per account will eat you alive unless you can package this into something a buyer can adopt without a consultant holding their hand. GFW taught me that an open platform and a mission story can cover a lot of commercial sins, but it cannot cover all of them. You will need to pick a vertical, prove value in dollars not temperature deltas, and build a sales motion that does not require a PhD to explain the output. If you can do that, there is a real market here. If you cannot, you will raise another round, hire another VP of Growth, and discover in 2028 that you have thirty pilots and no recurring revenue. I have built commercial programs in harder markets than this. Let me know when you are ready to stop talking about the science and start talking about the close.",
+      "careers_url": "https://hydrosat.com/careers"
+    },
+    {
+      "company": "Spiral Blue",
+      "category": "Onboard Satellite Edge Processing",
+      "why": "Edge compute on EO satellites, intersection of space tech and data infrastructure, aligns with Paul's technical EO background and product development",
+      "roast": "Edge processing on the bird so the satellite sends answers instead of raw pixels. I love it. I also know it will take you four years longer to monetize than your pitch deck says. The engineering is real. The value proposition is obvious to anyone who has ever tried to downlink terabytes of multispectral crap just to find the six frames that matter. But here is what your seed deck does not mention. You are not selling to satellite operators. You are selling to satellite operators who are also willing to let a Series A startup rewrite their ground segment assumptions and their data delivery SLAs at the same time. That is a short list. It gets shorter when they realize onboard processing means they are flying your software in their mission critical chain and eating the risk when your model halts the bus. I spent a decade at KSAT. I know how conservative the procurement cycle is when the thing you are selling sits between the mission and the money. You will get pilots. You will get letters of intent. You will get an ESA Innovation Prize and a keynote at SmallSat. What you will not get is revenue at the scale you need unless you can make this so simple that an operator can deploy it without changing their ops manual. If you can build that and you need someone who knows how to sell infrastructure into risk averse buyers with long decision cycles and short budgets, Taos has good internet and I have done this before.",
+      "careers_url": "https://spiralblue.space/careers"
     }
   ],
   "morning_briefs": [
@@ -87998,18 +87999,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "Rio Grande low flow\nJuly sage and pinyon dust\nmonsoon a week out",
-    "Fiestas end today\nPlaza quiet, burn ban holds\nMonsoon clouds building",
-    "Iran strike night eight\ntwo soldiers down, one missing\nHormuz still choked tight",
-    "World Cup final day\nArgentina Spain New Jersey\nback to back the dream",
-    "Sox eleven straight\nfirst in ten years, back at five\nhundred, Rays at one",
-    "EV sales tanked hard\nfirst half twenty twenty six\nrebound whispers start",
-    "Photo Day Fenway\nRays at one thirty five sun\nkids on the outfield",
-    "Dashboard refreshed noon\nranked queue still empty, haiku\nearned, Fiestas done",
-    "Redhead at the bar\nFiestas over, plaza dust\nher laugh, monsoon close",
-    "Planet three meter\nAttenborough segment soon\nAtlantic small boats",
-    "VVHR era starts\ntwenty five centimeter\nsovereign eyes compete",
-    "Thermal EO climbs\nSatVu constellr OroraTech\nheat map money now",
     "Telemark season\nfour months out, Wheeler holds snow\nKachina untracked",
     "Tromso midnight sun\nKSAT years, Shell the long game\noil spill contracts won",
     "Oskar graduates\nAurlandsdalen next spring hike\nVilde waits, peaks high",
@@ -88062,14 +88051,26 @@
     "Monsoon forecast holds\nSuper El Ni\u00f1o winter\nski season coming",
     "Sox above five hundred\nPatriots Saturday morning\nTaos burn ban dry",
     "Gorge bridge gets a fence\neight feet high, decades late, still\nfamilies waited",
-    "ATS black hole takes\nanother cover letter in\nI write a haiku"
+    "ATS black hole takes\nanother cover letter in\nI write a haiku",
+    "Wildfire smoke from north\nDC skyline orange again\nTrump demands answers",
+    "Taos Plaza Live\nGazebo free music Thursday\nAugust twentieth done",
+    "PACE saw the Black Sea\nturquoise bloom phytoplankton\ncoccolithophore",
+    "Seven GRUS Three birds\nVandenberg Transporter launch\nAxelspace next stage",
+    "New York data ban\nHochul pulled the permit brake\nfirst state level halt",
+    "Redhead at the bar\nTelluride t shirt, Pabst can\nAspen pass on belt",
+    "Rio Grande so low\nJuly dust, monsoon a ghost\ngorge holds its own breath",
+    "The wire still quiet\nno offers, no second rounds\nhaiku season holds",
+    "Kachina Peak waits\nOctober first prayers, la Ni\u00f1a\nwax the tele skis",
+    "Sox wild card third seed\nfifty two and forty nine\nOctober still lives",
+    "Inbox three unread\nLinkedIn recruiter, two bots\narchive, back to this",
+    "McCarthy dust line\nblood meridian Taos road\ngorge below Wheeler"
   ],
   "intros": [
     "Clean queue. The wire holds. Haiku until something moves.",
-    "Sox host Blue Jays tonight. Patriots camp opens Saturday. Starship holds at Starbase.",
+    "Sox host Blue Jays four ten today. Wild card third seed. Streak ended, playoffs alive.",
     "Sox fifty two and forty nine. Above five hundred. Training camp tomorrow.",
     "Nothing in the pipe. Monsoon season, model season. Haiku till something breaks.",
-    "Oil hit one hundred. Iran strikes twelve nights running. Markets rattled hard.",
+    "Canadian wildfire smoke blanketing DC and New York. Orange skies, hazardous air.",
     "The pipeline will refill. Until then:",
     "Burn ban holds. Las Fiestas Thursday. Main pool back open.",
     "No offers to chew on. A haiku to sit with.",
