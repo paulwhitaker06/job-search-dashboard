@@ -25006,27 +25006,6 @@
   ],
   "watch_list": [
     {
-      "company": "Oklo",
-      "category": "Nuclear / Advanced Reactors",
-      "why": "Small modular reactors, commercial deployment path, data center/industrial power angle",
-      "roast": "Oklo is building small fast reactors to power data centers and remote industrial sites, which is the kind of sentence that gets you either a term sheet or a restraining order from the NRC depending on the decade. Sam Altman chairs the board, so at minimum the pitch deck has good fonts and someone who can get a meeting with anyone. You have spent your career in industries where the regulatory body can kill the entire business model by changing a definition in a guidance document. You know what it is like to sit in a room with NOPSEMA or AMSA and argue about whether proactive monitoring is required or just encouraged. Oklo has been in that room with the Nuclear Regulatory Commission for years and the NRC has said no, then maybe, then we will see. The company has a commercial agreement with the Department of Energy for fuel recycling from spent reactor material and a partnership with Southern Company, which is not nothing. If the hyperscalers actually need firm clean power at the hundred-megawatt scale and the grid cannot deliver it, Oklo has a product. If they do not, or if natural gas with a carbon offset is cheaper, Oklo has a very expensive science project. The fit is decent. You understand long enterprise sales cycles and the art of using one pilot customer to move an entire regulatory framework. The product is the least unserious small reactor play in the US. The risk is that nuclear has been five years away from a comeback for fifty years and you would be betting your next job that this time is different. Worth a look. Not worth leading with unless you want to explain fission to your Taos neighbors for the next three years.",
-      "careers_url": "https://oklo.com/careers"
-    },
-    {
-      "company": "Dendra Systems",
-      "category": "Ecological Restoration / Drone Forestry",
-      "why": "Drone-based reforestation, EO/geospatial analysis, carbon/restoration market customer base",
-      "roast": "Dendra flies drones over degraded land, maps it with enough spatial resolution to see which bits are actually dead, then fires seed pods at the ground like a very earnest AC-130. The pitch is that you can reforest faster and cheaper than humans with shovels, which is true if the humans are expensive and the drones do not crash into each other. They have done deployments in Australia, South Africa, and the UAE, which tells you the customer base is mining companies with rehabilitation obligations and governments with land restoration PR problems. You built GFW's commercial licensing program by figuring out which organizations had a use case they could not ignore and a budget line they could not repurpose. Dendra has the same dynamic but the customer is usually a mine that needs to prove they replanted after digging a hole the size of Luxembourg. The EO backend is solid. They use Planet and Airbus to verify survival rates and track biomass over time, which is the only way you avoid the reforestation version of the AIS spoofing problem. The team came out of BioCarbon Engineering, they know the domain, they are not selling vaporware. The concerns are scale and margin. Ecological restoration is project-based and lumpy. You close one big mining rehab contract and you eat for a year. You miss one and you do not. It is not SaaS recurring revenue, it is consulting with robots. Could be interesting if you want to stay in the satellite data licensing world but from the service delivery side instead of the imagery supply side. But if you are walking away from GFW because you want predictable pipeline and repeatable sales, this is not that.",
-      "careers_url": "https://dendra.io/careers"
-    },
-    {
-      "company": "Aurassure",
-      "category": "Climate Risk Intelligence / Satellite + IoT",
-      "why": "Combines satellite imagery, IoT sensors, and predictive analytics for climate disaster monitoring. Indian market leader raised $3M late 2025. Serves insurers, city governments, infrastructure operators.",
-      "roast": "So you built a climate intelligence platform in India that monitors heat waves, flooding, and air pollution with satellite imagery and IoT sensors, just raised 25 crore rupees from Rainmatter, and you think selling disaster dashboards to overwhelmed municipal governments is the path to scale. I spent a decade at KSAT convincing Shell and Exxon they could not afford not to know where the next oil slick was forming, and the lesson was always the same. The buyers who pay are not the ones facing the most risk. They are the ones whose shareholders will punish them for getting caught unprepared on an earnings call. Your tech works. Your market is real. Your funding is there. But if you want someone who has actually closed insurance deals with climate data, who knows how to translate IoT noise into a commercial argument that survives procurement, and who will not waste six months pitching government RFPs that dissolve after the election, you want someone who has done this before. Taos has wildfire smoke today from Arizona. I know exactly what your customers need to hear. It is not that the risk is growing. It is that their current tools make them look incompetent when the disaster arrives.",
-      "careers_url": "https://www.aurassure.com/careers"
-    },
-    {
       "company": "Sortera Technologies",
       "category": "Advanced Recycling / AI Material Recovery",
       "why": "Advanced imaging, ML, and real-time decisioning for metals recovery from waste. Raised $45M late 2025. Processed millions of tons, identified 200 billion items. Domestic upcycled metals supply chain play.",
@@ -25079,7 +25058,7 @@
       "company": "Climavision",
       "category": "Weather Intelligence / Satellite + Radar",
       "why": "Satellite and radar-based extreme weather forecasting, enterprise customers (utilities, shipping, insurance), StartUs and TRUiC 2026 lists",
-      "roast": "Climavision is building radar and satellite-based forecasting systems to improve speed and accuracy for extreme weather, which is what everyone in this space says they are doing until you ask them what their ground truth validation looks like and the room gets quiet. The difference here is that they are targeting enterprise customers who have learned the hard way that free government weather data gets you exactly what you pay for when a hurricane shows up six hours earlier than NOAA said it would. Utilities, shipping, and insurance buyers will pay real money for better forecasts, but only if you can prove that your model beat the ECMWF on the last three events that cost them eight figures. You know this because you spent ten years selling satellite-derived intelligence to oil majors and maritime customers who would compare your data to three other vendors and then pick the one that was right when it mattered, not the one with the best deck. If Climavision has figured out that the commercial weather business is won in the post-event debrief, not the pre-sale demo, they are real. If not, they are going to spend the next two years learning what you already know, which is that in this business the sale happens after the client did not get the thing they paid someone else for.",
+      "roast": "Climavision builds radar and satellite based weather forecasting systems designed to improve speed and accuracy for emergency planning, utilities, shipping, and insurance, which is exactly the kind of value proposition Paul has been explaining to risk averse enterprise buyers for twenty years. Weather is one of those markets where everyone agrees better data would be valuable but almost no one can articulate why they would pay for it until the thing they were worried about actually happens. Then they pay immediately. Paul saw this at KSAT selling oil spill monitoring. Shell did not want proactive surveillance until the GoM spill made doing nothing obviously riskier than doing something. ExxonMobil went from cold start to master contract in two years because Paul found the moment when their risk calculus flipped. Climavision is selling into the same pattern except the catalyst is not a single spill, it is every extreme weather event since 2023 compounding into a situation where insurance actuaries are screaming at their executive teams that the loss models no longer work. That is the opening. The buyer is not the meteorologist. It is the CFO at an insurance company who just got told that their Florida book is fundamentally unhedgeable under current forecasting accuracy. Paul knows how to find that person. He also knows the difference between selling a forecast and selling the argument that your forecast is now load bearing infrastructure for a nine figure risk position. Climavision has the technology. The question is whether they have someone who can walk into Allstate or Swiss Re and make that case without sounding like a vendor.",
       "careers_url": "https://www.climavision.com/careers"
     },
     {
@@ -25249,6 +25228,27 @@
       "why": "Thermal satellite monitoring for wildfire early detection. Growing investor interest in disaster prevention. Parallels to OroraTech but earlier stage.",
       "roast": "Wildfire detection from space using thermal sensors, which is the climate tech equivalent of selling flood insurance after the water is already in the living room. The value proposition is early detection, which matters if there is anyone on the ground to respond, and in most of the geographies where this matters there is not. OroraTech is ahead of them, Pano AI has the ground camera network locked, and every forestry service in the western US is still using Sentinel hotspots because they are free. The company will pitch you on climate adaptation and disaster prevention, which is real, but the revenue model is selling to governments who move slowly and corporates who self insure. You know this space, you watched KSAT try to sell oil spill monitoring to energy companies for three years before the regulatory argument finally worked. This is the same play, except the regulation has not moved yet and may never move because half the US states that need this do not believe in climate change. If they have a path to commercial buyers outside of government procurement, listen. If the pitch is we will sell to Cal Fire and the Forest Service, walk. You have done the patient regulatory play twice, once in Norway and once in Australia. It worked because you were willing to wait four years for NOPSEMA to move. Ask yourself if you want to do that again in a market where the regulatory winds are blowing backward.",
       "careers_url": "https://www.planetwatchers.com/careers"
+    },
+    {
+      "company": "Sirona Technologies",
+      "category": "Direct Air Capture / Carbon Removal",
+      "why": "DAC machines at industrial scale, commercial pathway emerging, Paul's carbon markets and MRV background fits",
+      "roast": "Sirona makes machines that suck CO2 out of the air using advanced chemical filtration, which sounds like exactly the kind of thing Paul spent a decade explaining to oil majors who did not want to hear it. The technology is real. The commercial model is the interesting part. Someone has to pay to pull carbon out of the atmosphere, and the someone is usually a hyperscaler with an ESG problem or a government with a compliance deadline. Paul built the GFW commercial licensing program by finding the narrow sliver of buyers who needed a structured relationship with a free platform. Sirona is the same exercise one layer deeper. The free platform is the atmosphere. The structured relationship is a binding offtake agreement with Microsoft or Stripe. The narrow sliver is figuring out which industrial buyers will pay before the regulation forces them to. This is the regulatory precedent game Paul ran at KSAT with NOPSEMA and ENI, except the regulator is the carbon market itself and the precedent is voluntary corporate demand creating the floor for compliance markets. Paul knows how to find that buyer. He also knows the difference between a pilot that sets a price and a pilot that sets a market. Sirona needs someone who has closed deals in markets that did not exist yet. That was the entire KSAT value proposition. It is also the entire GFW story. The question is whether Sirona has figured out that their commercial problem is not selling CO2 removal, it is selling the argument that waiting is now riskier than moving. If they have not figured that out, Paul will tell them in the first meeting.",
+      "careers_url": "https://sironatechnologies.com/careers"
+    },
+    {
+      "company": "STEP4",
+      "category": "ESG Data Management / Supply Chain",
+      "why": "Sustainability management platform standardizing ESG across supplier networks, fits Paul's multi-stakeholder ecosystem skillset",
+      "roast": "STEP4 is a Turkish startup building a sustainability management system that standardizes ESG data across organizations and supplier networks, which is the kind of problem that sounds boring until you realize it is the only thing standing between a corporate sustainability pledge and an actual operational plan. Paul spent three years at GFW trying to build a commercial licensing program on top of a platform designed to give everything away for free, which taught him that the hardest commercial problems are never about the technology. They are about convincing an organization that the thing they said they wanted is not actually the thing they need. STEP4 is selling into the same dynamic. Every enterprise buyer says they want ESG visibility. What they actually need is a system that survives contact with their procurement team, their legal department, and their Tier 2 suppliers in Vietnam who have never heard of Scope 3. Paul has built that system three times. Once at PA Consulting selling VSAT to water utilities that did not want to admit they had a terrorist risk problem. Once at KSAT selling oil spill monitoring to oil majors who were Fine Actually Until The Regulator Said Otherwise. Once at GFW selling commercial licenses to buyers who thought they could just use the free version. Every time, the commercial challenge was not explaining what the product did. It was reframing the buyer's problem so that doing nothing became obviously riskier than doing something. STEP4 is in that market. Paul is in Taos applying to jobs and wondering why no one has called him yet. Someone should fix that.",
+      "careers_url": "https://step4.earth/careers"
+    },
+    {
+      "company": "Sublime Systems",
+      "category": "Low-Carbon Cement / Industrial Decarbonization",
+      "why": "Electrochemical cement production, Microsoft offtake deal, Paul's experience structuring anchor deals with hyperscalers fits perfectly",
+      "roast": "Sublime Systems makes low carbon cement using an electrochemical process instead of burning fossil fuels in a kiln, and in early 2026 they closed a binding offtake agreement with Microsoft for 622,500 tons of the stuff, which is the kind of deal that changes everything about how a climate tech startup gets funded. Paul knows this because he closed the same kind of deal at GFW. Planet Labs, 1.2 billion hectares of daily coastal coverage, three party negotiation, 95 percent discount off commercial rates. The deal was not hard because Planet did not want to do it. It was hard because a third party commercial customer thought GFW getting cheap imagery would create competitive harm. Paul went directly to the objecting party in month five and the objection dissolved. The lesson was that the objection was never really about competitive harm. It was about clarity. The buyer needed to understand that high latency non commercial detection is not a threat to real time commercial intelligence because they are structurally different use cases. Sublime has the same problem one layer up. Low carbon cement sounds like a threat to incumbent cement producers until you realize that Microsoft and Google are going to build data centers either way, and if they can buy cement that lets them hit their net zero targets without explaining to shareholders why they are paying a green premium, they will. The commercial problem is not convincing hyperscalers that low carbon cement is real. It is convincing them that waiting for the incumbent cement industry to decarbonize itself is riskier than locking in an offtake agreement with a startup whose production capacity does not exist yet. That is a Paul conversation. Sublime already closed the Microsoft deal so they clearly figured it out. The question is whether they need someone to close the next five.",
+      "careers_url": "https://sublime-systems.com/careers"
     }
   ],
   "morning_briefs": [
@@ -93145,20 +93145,6 @@
   ],
   "cold_outreach": [],
   "haiku": [
-    "MRV satellite\nNorthrop Grumman servicing\nSpaceX launched Monday",
-    "Tesla profit fell\nstrong deliveries, still fell\nfourteen percent down",
-    "Twelve nights bombing Iran\nTrump threatens power plants now\nHormuz choke point tight",
-    "Contreras twenty-two\nhome runs, nine forty-eight OPS\nSonny Gray twelve and one",
-    "Monsoon arrived late\nheat illness still a real threat\nplague, rabies, the wire",
-    "Fifteen game streak done\ndoubleheader second game\nFenway stood and clapped",
-    "Redhead at Plaza Live\ndust on her boots, burn ban rules\nI watch from the edge",
-    "Carson Forest dropped\nfire restrictions at six\nstill no open flames",
-    "Starship thirteen holds\nthirty Raptors light, then wait\nthe mesa exhales",
-    "Sox fifty two wins\nBlue Jays at Fenway tonight\nPatriots camp starts",
-    "Iran night thirteen\ntariffs land at midnight, oil\ntrucks roll through diesel",
-    "Super El Ni\u00f1o\nbuilding strength for winter now\nJotunheimen snow",
-    "Tariff math at dawn\nsixty nations, forced labor\nthe deal structure breaks",
-    "Plaza Live concert\nredhead laughing, Los Lonely\nBoys coming July",
     "Training camp opens\nGillette grass, no offers yet\nthe wait is the work",
     "Monsoon forecast holds\nSuper El Ni\u00f1o winter\nski season coming",
     "Sox above five hundred\nPatriots Saturday morning\nTaos burn ban dry",
@@ -93209,14 +93195,28 @@
     "France and Spain burn\nmonster fires, they said\ngrid at tipping point",
     "dashboard at three AM\nno jobs moved, monsoon builds west\nhaiku till it breaks",
     "Spire AIS contract\nthree year term, reduced rates\nKpler acquisition",
-    "telemark at dawn\nKachina untracked, no one\nwhy I live at nine"
+    "telemark at dawn\nKachina untracked, no one\nwhy I live at nine",
+    "Eleven hundred\nAI workers ask for brakes\nbuilt the thing, scared now",
+    "Fed holds the line flat\nIran war pressures oil up\nmarkets bounce at close",
+    "Jordan intercepts\nIran missiles, then we strike\nHormuz still choked tight",
+    "Two fifty thousand\nhectares burning in Europe\nFrance and Spain ablaze",
+    "Sox seven back now\nOakland tonight, road record\nthirty wins, twenty two",
+    "Heritage Center\nPueblo Norte, opened Sunday\ndust and story, both",
+    "Axelspace GRUS three\nseven satellites this month\nNikon glass, new eyes",
+    "Sentinel three C\nunpacked in French Guiana\nCopernicus grows",
+    "Plaza Live Wednesday\nstone cold beer, redhead laughing\nI should say something",
+    "Monsoon finally\nstill checking the gorge each dawn\nRio runs or not",
+    "Tromso midnight sun\nKSAT dishes tracking passes\nI sold what they saw",
+    "Telemark descent\nKachina Peak untracked snow\nknees remember this",
+    "Wheeler Peak alone\nthirteen thousand feet of wind\nno signal up here",
+    "Dashboard refresh script\nfails on Notion career page\nBeZero laughs, hides"
   ],
   "intros": [
     "Clean queue. The wire holds. Haiku until something moves.",
-    "Sox fifty four and fifty. Tracy still interim. Third in the East.",
-    "Pueblo Heritage Center opened July twenty seven. Monsoon season peak.",
+    "Sox seven back, thirty and twenty two on the road. Oakland tonight.",
+    "Pueblo Heritage Center opened Sunday. Twelve point two months inventory in Taos.",
     "Nothing in the pipe. Monsoon season, model season. Haiku till something breaks.",
-    "France and Spain battle monster fires. California bracing for atmospheric rivers.",
+    "Europe burning. Two fifty thousand hectares, twelve fifty four fires since January.",
     "The pipeline will refill. Until then:",
     "Burn ban holds. Fiesta de Taos this weekend. Pueblo Heritage Center opens tomorrow.",
     "No offers to chew on. A haiku to sit with.",
