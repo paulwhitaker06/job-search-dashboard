@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-07-30",
   "sports_today": {
     "mlb": {
       "label": "Red Sox vs Tigers ,  Patriots' Day at Fenway",
@@ -66,12 +66,12 @@
     "applications_sent": 27,
     "awaiting_response": 12,
     "active_interviews": 3,
-    "active_pipeline": 424,
+    "active_pipeline": 435,
     "deep_dives_done": 26,
     "resumes_built": 6,
     "rejected_closed": 7,
-    "last_updated": "2026-07-29",
-    "last_processed_digest_date": "2026-07-29"
+    "last_updated": "2026-07-30",
+    "last_processed_digest_date": "2026-07-30"
   },
   "ranked_opportunities": [
     {
@@ -996,7 +996,62 @@
       }
     },
     {
-      "rank": 20,
+      "company": "NAYA",
+      "role": "Director of Commercial Development",
+      "score": 55.5,
+      "proxy_score": null,
+      "effective_score": 55.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "NAYA is at a genuine commercial inflection, transitioning from technology validation to market expansion, and the role involves multi-stakeholder partnership architecture across energy companies, utilities, data center operators, and infrastructure investors (Pattern 2). However, the role requires 15+ years in business development/sales leadership with deep understanding of power systems, utilities, renewable energy integration, and AI infrastructure, sectors Paul has not operated within. His offshore O&G monitoring and maritime surveillance background does not transfer directly to power conversion systems or data center energy infrastructure. His network (Shell/ExxonMobil for offshore monitoring, IUU fishing NGOs) does not overlap with utility providers, data center operators, or AI infrastructure investors. The stage and problem shape are strong fits (SA 7, SPM 7), but the sector gap and network mismatch are material (RF 4, IL 4). This is a stretch role where Paul's market-building patterns apply, but his domain credibility and named relationships do not.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4446385649/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": true,
+      "domain": "",
+      "location": "United States",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "experience_gap",
+          "detail": "JD requires '15+ years of experience in business development, commercial strategy, sales leadership, or strategic partnerships.' Paul has 15 years of commercial function-building experience (2011-2026), but the role emphasizes sales leadership and strategic partnerships in a different context than his market-builder profile.",
+          "severity": "soft"
+        },
+        {
+          "type": "sector_gap",
+          "detail": "JD requires 'Strong understanding of energy, infrastructure, technology, AI, utilities, or related industries' and prefers 'Experience in renewable energy, power systems, utilities, data centers, or AI infrastructure.' Paul's energy experience is offshore oil & gas monitoring (KSAT), not power systems, utilities, renewable energy integration, or data center infrastructure.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 7,
+        "IL": 4,
+        "SPM": 7,
+        "CO": 6,
+        "GC": 7
+      },
+      "score_range": [
+        54.0,
+        55.5
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 20
+    },
+    {
+      "rank": 21,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -1088,7 +1143,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 21
+      "rank": 22
     },
     {
       "company": "Metric Geo",
@@ -1148,7 +1203,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 22
+      "rank": 23
     },
     {
       "company": "EVONA",
@@ -1208,7 +1263,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 23
+      "rank": 24
     },
     {
       "company": "Nu Quantum",
@@ -1268,10 +1323,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 24
+      "rank": 25
     },
     {
-      "rank": 25,
+      "rank": 26,
       "company": "Crusoe",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 54.5,
@@ -1359,7 +1414,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 26
+      "rank": 27
     },
     {
       "company": "Crux Climate",
@@ -1407,7 +1462,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 27
+      "rank": 28
     },
     {
       "company": "Revalue",
@@ -1457,7 +1512,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 28
+      "rank": 29
     },
     {
       "company": "Amelore Ltd",
@@ -1507,7 +1562,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 29
+      "rank": 30
     },
     {
       "company": "Vantor",
@@ -1572,7 +1627,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 30
+      "rank": 31
     },
     {
       "company": "Garuda Ventures",
@@ -1627,7 +1682,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 31
+      "rank": 32
     },
     {
       "company": "Ocean Aero Inc",
@@ -1682,7 +1737,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 32
+      "rank": 33
     },
     {
       "company": "EVONA",
@@ -1742,7 +1797,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 33
+      "rank": 34
     },
     {
       "company": "Armada",
@@ -1765,7 +1820,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-27",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -1797,10 +1852,65 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 34
+      "rank": 35
     },
     {
-      "rank": 35,
+      "company": "Prologue",
+      "role": "Head of Sales",
+      "score": 54.0,
+      "proxy_score": null,
+      "effective_score": 54.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This is a genuine first-commercial-hire role ('build the sales function from the ground up') at a post-PMF SaaS startup, which matches Paul's market-builder identity and stage preference. However, two soft gaps limit fit: Paul has no higher education sector sales experience, and the role explicitly requires building and coaching a sales team ('Recruit, hire, coach, and develop'), which Paul has never done, his entire career is IC commercial development and partnership architecture, not people management. The JD also emphasizes 'B2B SaaS sales experience with a history of exceeding quota,' and Paul's background is EO/maritime services and data partnerships, not SaaS. SA scores 7 because the role is genuinely new-build, but is capped there (soft blockers, SA/SPM cap rule). SPM is 6: the company sells to institutions (universities) with complex buying cycles, which is adjacent to Paul's regulated/government-buyer experience, but the JD does not describe regulatory precedent-setting, multi-party deal architecture, or Paul's three specific patterns. This is a stretch role requiring sector pivot and a management skill set Paul has not demonstrated.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4445133392/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "United States",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "JD requires 'Experience selling into Higher Education institutions, with strong knowledge of the higher ed buying cycle.' Paul's 15 years are in offshore energy (KSAT oil & gas monitoring), maritime/IUU fishing surveillance, and geospatial data partnerships. No documented higher ed sales experience.",
+          "severity": "soft"
+        },
+        {
+          "type": "role_shape",
+          "detail": "JD requires 'Personally lead enterprise sales opportunities while establishing a repeatable sales motion' and 'Recruit, hire, coach, and develop the company's future sales team.' Paul is a market builder, not a people-managing sales leader; his record is IC commercial development and partnership architecture, not building and coaching quota-carrying sales teams.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 7,
+        "IL": 4,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 7
+      },
+      "score_range": [
+        42.0,
+        54.0
+      ],
+      "confidence": "low",
+      "tier_uncertain": false,
+      "rank": 36
+    },
+    {
+      "rank": 37,
       "company": "David Energy",
       "role": "Customer Success Manager",
       "date": "2026-04-17",
@@ -1881,7 +1991,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 36
+      "rank": 38
     },
     {
       "company": "Satlantis",
@@ -1931,7 +2041,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 37
+      "rank": 39
     },
     {
       "company": "Apex - Satellite Platforms",
@@ -1991,10 +2101,65 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 38
+      "rank": 40
     },
     {
-      "rank": 39,
+      "company": "NATILUS",
+      "role": "Business Development Manager",
+      "score": 53.5,
+      "proxy_score": null,
+      "effective_score": 53.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "Natilus is building autonomous cargo aircraft and needs a BD Manager to develop commercial and DoD opportunities. The role involves relationship-building, multi-stakeholder partnerships, and new-market development, work shaped like Paul's wins. However, the JD explicitly requires \"10+ years of experience in business development, strategy, program management in aerospace/defense, commercial aviation or a related field,\" and Paul's 15 years are in satellite services and EO data, not aerospace manufacturing or aviation platforms. This is a soft sector-depth gap (Paul's commercial-building skills transfer, but he lacks the named aviation/aircraft domain), capping RF at 5 and IL at 4. SA scores 6: the role is new-opportunity development within a forming function at a post-prototype startup, not pure new-build from zero. SPM scores 7 because Natilus is creating a market (autonomous cargo aviation) where regulatory pathways and customer buying habits don't yet exist, matching Paul's P2/P3 patterns. GC scores 7: San Diego, in-office/travel-heavy, but Paul will relocate. CO is mid-range at $150K, $180K for a stretch role. A Tier-3 stretch opportunity with strong pattern match but clear sector gap.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4446131817/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": true,
+      "domain": "",
+      "location": "San Diego, CA",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "experience_gap",
+          "detail": "JD requires '10+ years of experience in business development, strategy, program management in aerospace/defense, commercial aviation or a related field.' Paul has 15 years in commercial development but primarily in satellite services/EO data, not aerospace manufacturing or aviation platforms. This is a sector-depth gap.",
+          "severity": "soft"
+        },
+        {
+          "type": "sector_experience",
+          "detail": "JD states 'Experience working within aerospace, aviation, defense, or another highly technical industry preferred' with emphasis on aerospace/aviation platforms (Natilus builds cargo aircraft). Paul's aerospace experience is satellite ground services and EO data, not aircraft/aviation manufacturing or DoD aerospace platforms.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 6,
+        "IL": 4,
+        "SPM": 7,
+        "CO": 6,
+        "GC": 7
+      },
+      "score_range": [
+        50.0,
+        54.5
+      ],
+      "confidence": "medium",
+      "tier_uncertain": false,
+      "rank": 41
+    },
+    {
+      "rank": 42,
       "company": "Bentley Systems",
       "role": "Market Development Director, North America Transportation",
       "score": 53.0,
@@ -2042,7 +2207,7 @@
       ]
     },
     {
-      "rank": 40,
+      "rank": 43,
       "company": "Systemiq",
       "role": "Strategy Director ,  Low Carbon Energy",
       "score": 53.0,
@@ -2085,7 +2250,7 @@
       ]
     },
     {
-      "rank": 41,
+      "rank": 44,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -2192,7 +2357,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 42
+      "rank": 45
     },
     {
       "company": "Peak Power",
@@ -2252,7 +2417,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 43
+      "rank": 46
     },
     {
       "company": "Rainmaker Technology Corporation",
@@ -2307,7 +2472,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 44
+      "rank": 47
     },
     {
       "company": "The Nature Conservancy",
@@ -2357,7 +2522,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 45
+      "rank": 48
     },
     {
       "company": "Orca AI",
@@ -2407,7 +2572,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 46
+      "rank": 49
     },
     {
       "company": "EVONA",
@@ -2467,7 +2632,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 47
+      "rank": 50
     },
     {
       "company": "Teleo",
@@ -2527,10 +2692,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 48
+      "rank": 51
     },
     {
-      "rank": 49,
+      "rank": 52,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -2627,7 +2792,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 50
+      "rank": 53
     },
     {
       "company": "Honeywell Aerospace",
@@ -2697,10 +2862,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 51
+      "rank": 54
     },
     {
-      "rank": 52,
+      "rank": 55,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -2731,7 +2896,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 53,
+      "rank": 56,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -2805,7 +2970,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 54
+      "rank": 57
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -2853,7 +3018,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 55
+      "rank": 58
     },
     {
       "company": "Overstory",
@@ -2908,7 +3073,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 56
+      "rank": 59
     },
     {
       "company": "Ocean Visions, Inc",
@@ -2963,7 +3128,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 57
+      "rank": 60
     },
     {
       "company": "Zap Energy",
@@ -3023,7 +3188,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 58
+      "rank": 61
     },
     {
       "company": "Rainmaker Technology Corporation",
@@ -3088,7 +3253,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 59
+      "rank": 62
     },
     {
       "company": "Impulse Space",
@@ -3138,7 +3303,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 60
+      "rank": 63
     },
     {
       "company": "Cloverly",
@@ -3193,7 +3358,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 61
+      "rank": 64
     },
     {
       "company": "Doodle Labs",
@@ -3253,7 +3418,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 62
+      "rank": 65
     },
     {
       "company": "Rocket Lab",
@@ -3313,7 +3478,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 63
+      "rank": 66
     },
     {
       "company": "K2 Space Corporation",
@@ -3373,7 +3538,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 64
+      "rank": 67
     },
     {
       "company": "PSC by Rocket Lab",
@@ -3433,7 +3598,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 65
+      "rank": 68
     },
     {
       "company": "Terma Group",
@@ -3493,7 +3658,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 66
+      "rank": 69
     },
     {
       "company": "OpenWorks Engineering Ltd",
@@ -3553,7 +3718,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 67
+      "rank": 70
     },
     {
       "company": "Altis Labs",
@@ -3608,7 +3773,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 68
+      "rank": 71
     },
     {
       "company": "EVONA",
@@ -3663,7 +3828,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 69
+      "rank": 72
     },
     {
       "company": "EVONA",
@@ -3723,7 +3888,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 70
+      "rank": 73
     },
     {
       "company": "SEAKR",
@@ -3783,7 +3948,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 71
+      "rank": 74
     },
     {
       "company": "Inversion",
@@ -3843,7 +4008,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 72
+      "rank": 75
     },
     {
       "company": "Orca AI",
@@ -3898,7 +4063,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 73
+      "rank": 76
     },
     {
       "company": "Rippling Recruiting",
@@ -3953,10 +4118,70 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 74
+      "rank": 77
     },
     {
-      "rank": 75,
+      "company": "Arkeus",
+      "role": "Director of Business Development - US",
+      "score": 52.0,
+      "proxy_score": null,
+      "effective_score": 52.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This is a hard-blocked role on three counts. The JD explicitly requires \"Must hold, or be readily capable of obtaining, a U.S. Secret (or higher) security clearance\", Paul holds none and will not pursue vetting, making this a hard security_clearance blocker. The role demands \"5+ years of proven success in defense business development\" with \"Deep knowledge of the uncrewed aerial systems market, including payloads, sensors (EO/IR, radar), open architectures (MOSA), and autonomous software\", Paul's 15 years are in commercial satellite services (KSAT, GFW), not defense UAS or airborne payloads. Finally, it requires \"An active, relevant network of contacts across the US DoD UAS program offices and defense aerospace primes\", Paul's network is oil & gas, IUU fishing NGOs, and commercial EO buyers, not DoD program offices or UAS OEMs. These are three distinct hard gaps. RF is capped at 4, IL at 3. SA scores 7 because the role itself is genuinely new-build commercial within a scaling defense tech company, but the SA/SPM cap rule holds SA at 7 given the hard blockers. SPM scores 6: regulated/government buyers are present but none of Paul's three specific patterns apply. This is not actionable.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4445713029/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "United States",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "security_clearance",
+          "detail": "Must hold, or be readily capable of obtaining, a U.S. Secret (or higher) security clearance. Paul holds no active clearance and will not pursue vetting.",
+          "severity": "hard"
+        },
+        {
+          "type": "domain_experience",
+          "detail": "5+ years of proven success in defense business development with UAS domain expertise (payloads, sensors EO/IR, radar, open architectures MOSA, autonomous software). Paul's defense-adjacent experience is in satellite services/EO data, not uncrewed aerial systems or defense procurement.",
+          "severity": "hard"
+        },
+        {
+          "type": "network_requirement",
+          "detail": "An active, relevant network of contacts across the US DoD UAS program offices and defense aerospace primes. Paul's network is in commercial EO/maritime/IUU fishing, not DoD UAS programs.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 7,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 7
+      },
+      "score_range": [
+        50.0,
+        52.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 78
+    },
+    {
+      "rank": 79,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -3985,7 +4210,7 @@
       "blockers": []
     },
     {
-      "rank": 76,
+      "rank": 80,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -4077,7 +4302,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 77
+      "rank": 81
     },
     {
       "company": "YipitData",
@@ -4132,7 +4357,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 78
+      "rank": 82
     },
     {
       "company": "Space Ocean Corp",
@@ -4192,7 +4417,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 79
+      "rank": 83
     },
     {
       "company": "Redwire",
@@ -4247,10 +4472,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 80
+      "rank": 84
     },
     {
-      "rank": 81,
+      "rank": 85,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -4291,7 +4516,7 @@
       ]
     },
     {
-      "rank": 82,
+      "rank": 86,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development ,  Mission Critical Infrastructure",
       "score": 51.0,
@@ -4334,7 +4559,7 @@
       ]
     },
     {
-      "rank": 83,
+      "rank": 87,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -4408,7 +4633,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 84
+      "rank": 88
     },
     {
       "company": "Manatal",
@@ -4468,7 +4693,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 85
+      "rank": 89
     },
     {
       "company": "Orca AI",
@@ -4528,7 +4753,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 86
+      "rank": 90
     },
     {
       "company": "Fugro",
@@ -4576,7 +4801,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 87
+      "rank": 91
     },
     {
       "company": "Zap Energy",
@@ -4629,7 +4854,7 @@
         "CO": 9,
         "GC": 7
       },
-      "rank": 88
+      "rank": 92
     },
     {
       "company": "Epsilon3",
@@ -4694,7 +4919,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 89
+      "rank": 93
     },
     {
       "company": "SES Space & Defense",
@@ -4754,7 +4979,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 90
+      "rank": 94
     },
     {
       "company": "Voyager Technologies",
@@ -4809,7 +5034,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 91
+      "rank": 95
     },
     {
       "company": "PSC by Rocket Lab",
@@ -4864,7 +5089,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 92
+      "rank": 96
     },
     {
       "company": "BAE Systems, Inc.",
@@ -4919,7 +5144,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 93
+      "rank": 97
     },
     {
       "company": "Sierra Nevada Corporation",
@@ -4979,7 +5204,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 94
+      "rank": 98
     },
     {
       "company": "Blue Origin",
@@ -5034,7 +5259,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 95
+      "rank": 99
     },
     {
       "company": "Voyager Technologies",
@@ -5094,7 +5319,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 96
+      "rank": 100
     },
     {
       "company": "General Atomics",
@@ -5117,7 +5342,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-27",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -5154,7 +5379,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 97
+      "rank": 101
     },
     {
       "company": "Synspective",
@@ -5219,11 +5444,11 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 98,
+      "rank": 102,
       "source_note": "2026-07-06: deduped (removed stale April entry) and re-scored; hard sector cap corrected to soft, real EU work-auth blocker surfaced."
     },
     {
-      "rank": 99,
+      "rank": 103,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 50.5,
@@ -5333,7 +5558,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 100
+      "rank": 104
     },
     {
       "company": "Trident",
@@ -5393,10 +5618,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 101
+      "rank": 105
     },
     {
-      "rank": 102,
+      "rank": 106,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -5425,7 +5650,7 @@
       "blockers": []
     },
     {
-      "rank": 103,
+      "rank": 107,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -5505,7 +5730,7 @@
         "CO": 7,
         "GC": 6
       },
-      "rank": 104
+      "rank": 108
     },
     {
       "company": "LocateAI | Techstars Job Board",
@@ -5553,7 +5778,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 105
+      "rank": 109
     },
     {
       "company": "Loft Orbital Solutions",
@@ -5618,7 +5843,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 106
+      "rank": 110
     },
     {
       "company": "Carbon Mapper",
@@ -5671,7 +5896,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 107
+      "rank": 111
     },
     {
       "company": "Corus International",
@@ -5719,7 +5944,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 108
+      "rank": 112
     },
     {
       "company": "Space Kinetic Corp.",
@@ -5779,7 +6004,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 109
+      "rank": 113
     },
     {
       "company": "Jobgether",
@@ -5834,7 +6059,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 110
+      "rank": 114
     },
     {
       "company": "OpenWorks Engineering Ltd",
@@ -5894,7 +6119,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 111
+      "rank": 115
     },
     {
       "company": "Umbra",
@@ -5949,7 +6174,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 112
+      "rank": 116
     },
     {
       "company": "Germany (Frankfurt, Munich, Berlin, Hybrid)",
@@ -6014,7 +6239,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 113
+      "rank": 117
     },
     {
       "company": "EVONA",
@@ -6069,7 +6294,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 114
+      "rank": 118
     },
     {
       "company": "Vannevar",
@@ -6129,7 +6354,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 115
+      "rank": 119
     },
     {
       "company": "UK",
@@ -6184,7 +6409,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 116
+      "rank": 120
     },
     {
       "company": "Oxygen Conservation",
@@ -6232,10 +6457,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 117
+      "rank": 121
     },
     {
-      "rank": 118,
+      "rank": 122,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -6270,7 +6495,7 @@
       ]
     },
     {
-      "rank": 119,
+      "rank": 123,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -6299,7 +6524,7 @@
       "blockers": []
     },
     {
-      "rank": 120,
+      "rank": 124,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -6344,7 +6569,7 @@
       }
     },
     {
-      "rank": 121,
+      "rank": 125,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -6424,7 +6649,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 122
+      "rank": 126
     },
     {
       "company": "Greenway Collins",
@@ -6479,7 +6704,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 123
+      "rank": 127
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -6539,7 +6764,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 124
+      "rank": 128
     },
     {
       "company": "L-Charge",
@@ -6594,7 +6819,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 125
+      "rank": 129
     },
     {
       "company": "Melavex",
@@ -6649,7 +6874,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 126
+      "rank": 130
     },
     {
       "company": "Windbornesystems",
@@ -6709,7 +6934,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 127
+      "rank": 131
     },
     {
       "company": "Nova Solvers",
@@ -6764,7 +6989,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 128
+      "rank": 132
     },
     {
       "company": "EMEA",
@@ -6829,10 +7054,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 129
+      "rank": 133
     },
     {
-      "rank": 130,
+      "rank": 134,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 48.5,
@@ -6880,7 +7105,7 @@
       ]
     },
     {
-      "rank": 131,
+      "rank": 135,
       "company": "EnduroSat",
       "role": "Business Development Manager, Space Hardware",
       "score": 48.5,
@@ -6980,7 +7205,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 132
+      "rank": 136
     },
     {
       "company": "Quvia",
@@ -7035,7 +7260,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 133
+      "rank": 137
     },
     {
       "company": "Tensor Tech",
@@ -7095,10 +7320,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 134
+      "rank": 138
     },
     {
-      "rank": 135,
+      "rank": 139,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -7133,7 +7358,7 @@
       ]
     },
     {
-      "rank": 136,
+      "rank": 140,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -7168,7 +7393,7 @@
       ]
     },
     {
-      "rank": 137,
+      "rank": 141,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -7242,7 +7467,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 138
+      "rank": 142
     },
     {
       "company": "Overstory",
@@ -7290,7 +7515,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 139
+      "rank": 143
     },
     {
       "company": "Environmental Defense Fund",
@@ -7338,7 +7563,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 140
+      "rank": 144
     },
     {
       "company": "ECI Software Solutions",
@@ -7386,7 +7611,7 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 141
+      "rank": 145
     },
     {
       "company": "Altana",
@@ -7439,7 +7664,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 142
+      "rank": 146
     },
     {
       "company": "Hydrosat",
@@ -7492,7 +7717,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 143
+      "rank": 147
     },
     {
       "company": "Overstory",
@@ -7542,7 +7767,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 144
+      "rank": 148
     },
     {
       "company": "Acre",
@@ -7597,7 +7822,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 145
+      "rank": 149
     },
     {
       "company": "Loft Orbital",
@@ -7650,7 +7875,7 @@
         "CO": 7,
         "GC": 5
       },
-      "rank": 146
+      "rank": 150
     },
     {
       "company": "Altanaai",
@@ -7710,7 +7935,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 147
+      "rank": 151
     },
     {
       "company": "ExxonMobil",
@@ -7763,7 +7988,7 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 148
+      "rank": 152
     },
     {
       "company": "Terradot",
@@ -7823,7 +8048,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 149
+      "rank": 153
     },
     {
       "company": "Momentus Space LLC",
@@ -7878,7 +8103,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 150
+      "rank": 154
     },
     {
       "company": "SciMax Global",
@@ -7933,7 +8158,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 151
+      "rank": 155
     },
     {
       "company": "Optiml",
@@ -7988,7 +8213,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 152
+      "rank": 156
     },
     {
       "company": "General Dynamics Information Technology",
@@ -8048,7 +8273,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 153
+      "rank": 157
     },
     {
       "company": "L3Harris Technologies",
@@ -8071,7 +8296,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-27",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -8108,7 +8333,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 154
+      "rank": 158
     },
     {
       "company": "SES Space & Defense",
@@ -8173,10 +8398,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 155
+      "rank": 159
     },
     {
-      "rank": 156,
+      "rank": 160,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -8242,7 +8467,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 157
+      "rank": 161
     },
     {
       "company": "hampr | Techstars Job Board",
@@ -8295,10 +8520,10 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 158
+      "rank": 162
     },
     {
-      "rank": 159,
+      "rank": 163,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 47.5,
@@ -8346,7 +8571,7 @@
       }
     },
     {
-      "rank": 160,
+      "rank": 164,
       "company": "Apex",
       "role": "Business Development Director, US Government Markets",
       "score": 47.5,
@@ -8451,7 +8676,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 161
+      "rank": 165
     },
     {
       "company": "Flex",
@@ -8506,10 +8731,75 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 162
+      "rank": 166
     },
     {
-      "rank": 163,
+      "company": "Orca AI",
+      "role": "Job opportunity: Director of Business Development - Defense (Europe)",
+      "score": 47.5,
+      "proxy_score": null,
+      "effective_score": 47.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This is a stretch role for Paul. The JD explicitly requires \"8+ years of professional experience, with a heavy focus on the defense and government sectors\" and \"A documented history of closing complex deals with federal and defense customers.\" Paul's 15-year commercial track record is primarily with commercial maritime buyers (Shell, ExxonMobil, ConocoPhillips) and NGOs (GFW, Sea Shepherd), not defense organizations or DoD procurement, a soft sector gap that caps RF at 5 and IL at 4. However, the role's shape is a strong pattern match: it's a new-build commercial function (\"primary engine for our market expansion,\" \"build processes where they don't exist\") in a venture-backed startup expanding into a new buyer segment (defense/government), which aligns well with Paul's market-builder identity (SA 6, SPM 7 for multi-stakeholder deal architecture and market creation). The maritime/naval nice-to-have (\"Specific experience in shipbuilding, naval systems, autonomous maritime contexts\") is a partial credit via his KSAT decade in commercial maritime. Europe-based requirement is a soft relocation + work-authorization dependency. This is a Tier 3 role: the pattern match is solid, but the defense-sector credential gap is real.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.orca-ai.io/careers/co/remote-europe/C4.D63/director-of-business-development-defense-europe/all"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Remote (Europe)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "experience_gap",
+          "detail": "JD requires '8+ years of professional experience, with a heavy focus on the defense and government sectors.' Paul has 15 years of commercial experience but primarily in commercial maritime/EO sectors (KSAT oil & gas/fishing, GFW), not defense/government procurement.",
+          "severity": "soft"
+        },
+        {
+          "type": "domain_gap",
+          "detail": "JD requires 'A documented history of closing complex deals with federal and defense customers.' Paul's track record is with commercial oil & gas majors (Shell, ExxonMobil), NGOs (GFW, Sea Shepherd), and civilian maritime agencies (AMSA), not defense organizations or DoD.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Role is Remote (Europe), must be based in Europe. Paul is currently in Taos, NM. Willing to relocate but represents a geographic shift.",
+          "severity": "soft"
+        },
+        {
+          "type": "work_authorization",
+          "detail": "Role requires being based in Europe. Paul holds US work authorization only; employer would need to sponsor a European work visa.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 6,
+        "IL": 3,
+        "SPM": 7,
+        "CO": 5,
+        "GC": 4
+      },
+      "score_range": [
+        46.0,
+        52.0
+      ],
+      "confidence": "medium",
+      "tier_uncertain": false,
+      "rank": 167
+    },
+    {
+      "rank": 168,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -8544,7 +8834,7 @@
       ]
     },
     {
-      "rank": 164,
+      "rank": 169,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -8644,7 +8934,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 165
+      "rank": 170
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -8692,7 +8982,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 166
+      "rank": 171
     },
     {
       "company": "Acre",
@@ -8750,7 +9040,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 167
+      "rank": 172
     },
     {
       "company": "FOSSA Systems",
@@ -8810,7 +9100,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 168
+      "rank": 173
     },
     {
       "company": "Onterris",
@@ -8865,7 +9155,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 169
+      "rank": 174
     },
     {
       "company": "Samsung C&T America, Inc.",
@@ -8925,7 +9215,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 170
+      "rank": 175
     },
     {
       "company": "Germany/DACH",
@@ -8990,7 +9280,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 171
+      "rank": 176
     },
     {
       "company": "LinkedIn",
@@ -9050,10 +9340,65 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 172
+      "rank": 177
     },
     {
-      "rank": 173,
+      "company": "BAE Systems, Inc.",
+      "role": "Sr. Director of Strategic Partnerships",
+      "score": 47.0,
+      "proxy_score": null,
+      "effective_score": 47.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This is a strategic partnerships role at a major defense prime (BAE Systems Intelligence & Security) focused on managing enterprise technology alliances (Microsoft, AWS, Google, Palantir-scale). The role requires two hard gaps Paul cannot bridge: (1) an active security clearance (JD: \"Ability to obtain and maintain security clearance\"), which Paul will not pursue, and (2) proven track record leading enterprise-level strategic alliances with major technology platforms plus experience inside or alongside a defense prime. Paul's partnership work at KSAT and GFW was multi-stakeholder deal architecture with NGOs, government maritime agencies, and EO data providers, not enterprise tech alliance management at the Microsoft/AWS/Palantir scale. He has never worked within a defense prime organizational structure. The role's verbs, \"manage a portfolio of tech partners,\" \"establish governance structures (QBRs, tech syncs),\" \"operationalize & scale the partnership model\", describe running an existing alliance function, not building a market from scratch (SA 4). SPM scores 6 because the role involves genuine multi-party coordination across BAE business units, partner orgs, and government customers, but it is not one of Paul's three canonical patterns. CO is strong (Sr. Director title, $173k, $294k range, equity in a large prime). GC is fine (McLean VA, hybrid likely). Two hard blockers make this not actionable.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4428034016/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "McLean, VA",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "security_clearance",
+          "detail": "Role requires ability to obtain and maintain security clearance. Paul holds no active clearance and will not pursue vetting.",
+          "severity": "hard"
+        },
+        {
+          "type": "experience_gap",
+          "detail": "JD requires 'Proven success leading strategic alliances or enterprise-level partner relationships with major technology companies (e.g., Microsoft, AWS, Google, Palantir)' and 'Experience working within or closely alongside a large defense prime.' Paul has neither enterprise tech partnership leadership nor defense prime organizational experience.",
+          "severity": "hard"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 7
+      },
+      "score_range": [
+        47.0,
+        47.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 178
+    },
+    {
+      "rank": 179,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -9096,7 +9441,7 @@
       ]
     },
     {
-      "rank": 174,
+      "rank": 180,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -9131,7 +9476,7 @@
       ]
     },
     {
-      "rank": 175,
+      "rank": 181,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -9166,7 +9511,7 @@
       ]
     },
     {
-      "rank": 176,
+      "rank": 182,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -9240,7 +9585,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 177
+      "rank": 183
     },
     {
       "company": "Sales Systems Engineer",
@@ -9295,7 +9640,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 178
+      "rank": 184
     },
     {
       "company": "Acre",
@@ -9350,10 +9695,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 179
+      "rank": 185
     },
     {
-      "rank": 180,
+      "rank": 186,
       "company": "Northwood Space",
       "role": "Director, USG Growth, National Security Space",
       "score": 46.5,
@@ -9446,7 +9791,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 181
+      "rank": 187
     },
     {
       "company": "Serval",
@@ -9501,7 +9846,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 182
+      "rank": 188
     },
     {
       "company": "Dataminr",
@@ -9556,7 +9901,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 183
+      "rank": 189
     },
     {
       "company": "Luster National",
@@ -9616,7 +9961,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 184
+      "rank": 190
     },
     {
       "company": "CesiumAstro",
@@ -9676,7 +10021,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 185
+      "rank": 191
     },
     {
       "company": "Black Bear Energy Inc.",
@@ -9736,7 +10081,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 186
+      "rank": 192
     },
     {
       "company": "Inversion",
@@ -9801,7 +10146,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 187
+      "rank": 193
     },
     {
       "company": "Confidential",
@@ -9856,10 +10201,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 188
+      "rank": 194
     },
     {
-      "rank": 189,
+      "rank": 195,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -9939,10 +10284,10 @@
         "CO": 9,
         "GC": 8
       },
-      "rank": 190
+      "rank": 196
     },
     {
-      "rank": 191,
+      "rank": 197,
       "company": "Apex",
       "role": "Head of Business Development, US Government Markets",
       "score": 46.0,
@@ -10047,7 +10392,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 192
+      "rank": 198
     },
     {
       "company": "Katalyst Space Technologies",
@@ -10112,7 +10457,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 193
+      "rank": 199
     },
     {
       "company": "Seaman Corporation",
@@ -10177,7 +10522,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 194
+      "rank": 200
     },
     {
       "company": "Kepler US",
@@ -10232,7 +10577,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 195
+      "rank": 201
     },
     {
       "company": "EVgo",
@@ -10292,7 +10637,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 196
+      "rank": 202
     },
     {
       "company": "Environmental Defense Fund",
@@ -10352,7 +10697,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 197
+      "rank": 203
     },
     {
       "company": "Canadian Solar Inc.",
@@ -10407,7 +10752,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 198
+      "rank": 204
     },
     {
       "company": "HawkEye 360",
@@ -10467,7 +10812,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 199
+      "rank": 205
     },
     {
       "company": "EVONA",
@@ -10532,7 +10877,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 200
+      "rank": 206
     },
     {
       "company": "908 Devices",
@@ -10592,7 +10937,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 201
+      "rank": 207
     },
     {
       "company": "Sofar | Schmidt Marine Job Board",
@@ -10647,7 +10992,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 202
+      "rank": 208
     },
     {
       "company": "Ladders",
@@ -10702,7 +11047,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 203
+      "rank": 209
     },
     {
       "company": "Voyager Technologies",
@@ -10757,10 +11102,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 204
+      "rank": 210
     },
     {
-      "rank": 205,
+      "rank": 211,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -10840,7 +11185,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 206
+      "rank": 212
     },
     {
       "company": "Product Manager- Embodied Carbon for Products",
@@ -10888,7 +11233,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 207
+      "rank": 213
     },
     {
       "company": "Earthdaily",
@@ -10943,7 +11288,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 208
+      "rank": 214
     },
     {
       "company": "Descartes Underwriting",
@@ -11003,7 +11348,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 209
+      "rank": 215
     },
     {
       "company": "LevelTen Energy | Techstars Job Board",
@@ -11058,7 +11403,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 210
+      "rank": 216
     },
     {
       "company": "Albany International Corp.",
@@ -11113,7 +11458,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 211
+      "rank": 217
     },
     {
       "company": "onXmaps, Inc.",
@@ -11168,7 +11513,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 212
+      "rank": 218
     },
     {
       "company": "Certa | Techstars Job Board",
@@ -11223,7 +11568,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 213
+      "rank": 219
     },
     {
       "company": "cKinetics",
@@ -11278,7 +11623,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 214
+      "rank": 220
     },
     {
       "company": "Mimica",
@@ -11333,7 +11678,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 215
+      "rank": 221
     },
     {
       "company": "Ladders",
@@ -11393,10 +11738,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 216
+      "rank": 222
     },
     {
-      "rank": 217,
+      "rank": 223,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -11425,7 +11770,7 @@
       "blockers": []
     },
     {
-      "rank": 218,
+      "rank": 224,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -11517,7 +11862,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 219
+      "rank": 225
     },
     {
       "company": "Europe",
@@ -11577,7 +11922,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 220
+      "rank": 226
     },
     {
       "company": "Watershed Careers",
@@ -11632,7 +11977,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 221
+      "rank": 227
     },
     {
       "company": "L3Harris Technologies",
@@ -11687,7 +12032,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 222
+      "rank": 228
     },
     {
       "company": "Outpost Mission Services",
@@ -11742,7 +12087,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 223
+      "rank": 229
     },
     {
       "company": "Raydar",
@@ -11797,7 +12142,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 224
+      "rank": 230
     },
     {
       "company": "General Atomics",
@@ -11857,7 +12202,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 225
+      "rank": 231
     },
     {
       "company": "Axiom Space",
@@ -11912,7 +12257,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 226
+      "rank": 232
     },
     {
       "company": "Cascade Energy",
@@ -11972,7 +12317,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 227
+      "rank": 233
     },
     {
       "company": "Confidential",
@@ -12032,7 +12377,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 228
+      "rank": 234
     },
     {
       "company": "Ocean Aero Inc",
@@ -12087,7 +12432,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 229
+      "rank": 235
     },
     {
       "company": "Windward",
@@ -12147,7 +12492,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 230
+      "rank": 236
     },
     {
       "company": "Green Key Resources",
@@ -12207,7 +12552,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 231
+      "rank": 237
     },
     {
       "company": "Ladders",
@@ -12267,10 +12612,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 232
+      "rank": 238
     },
     {
-      "rank": 233,
+      "rank": 239,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -12320,7 +12665,7 @@
       }
     },
     {
-      "rank": 234,
+      "rank": 240,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -12386,7 +12731,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 235
+      "rank": 241
     },
     {
       "company": "Acre",
@@ -12434,7 +12779,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 236
+      "rank": 242
     },
     {
       "company": "Muon Space",
@@ -12492,7 +12837,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 237
+      "rank": 243
     },
     {
       "company": "ExxonMobil",
@@ -12545,7 +12890,7 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 238
+      "rank": 244
     },
     {
       "company": "Taranis",
@@ -12600,7 +12945,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 239
+      "rank": 245
     },
     {
       "company": "UKI, Nordics & Middle East | Jobs at LiveEO GmbH",
@@ -12660,7 +13005,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 240
+      "rank": 246
     },
     {
       "company": "Tract",
@@ -12703,7 +13048,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 241
+      "rank": 247
     },
     {
       "company": "Cleared | Remote in United States | LinkedIn",
@@ -12763,7 +13108,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 242
+      "rank": 248
     },
     {
       "company": "Safran Defense & Space, Inc.",
@@ -12828,7 +13173,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 243
+      "rank": 249
     },
     {
       "company": "GKN Aerospace",
@@ -12883,7 +13228,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 244
+      "rank": 250
     },
     {
       "company": "Minim & Tonye",
@@ -12938,7 +13283,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 245
+      "rank": 251
     },
     {
       "company": "Sensata Technologies",
@@ -12988,7 +13333,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 246
+      "rank": 252
     },
     {
       "company": "PermitFlow",
@@ -13043,7 +13388,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 247
+      "rank": 253
     },
     {
       "company": "Birdstop | Techstars Job Board",
@@ -13103,7 +13448,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 248
+      "rank": 254
     },
     {
       "company": "Sony",
@@ -13163,7 +13508,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 249
+      "rank": 255
     },
     {
       "company": "FairWind",
@@ -13218,7 +13563,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 250
+      "rank": 256
     },
     {
       "company": "Rocket Lab",
@@ -13278,7 +13623,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 251
+      "rank": 257
     },
     {
       "company": "Albany International Corp.",
@@ -13333,7 +13678,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 252
+      "rank": 258
     },
     {
       "company": "explore-career-opportunities",
@@ -13383,7 +13728,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 253
+      "rank": 259
     },
     {
       "company": "Forge Nano, Inc.",
@@ -13458,7 +13803,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 254
+      "rank": 260
     },
     {
       "company": "Fermi America",
@@ -13513,7 +13858,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 255
+      "rank": 261
     },
     {
       "company": "Seven Executive Limited",
@@ -13578,10 +13923,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 256
+      "rank": 262
     },
     {
-      "rank": 257,
+      "rank": 263,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -13653,7 +13998,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 258
+      "rank": 264
     },
     {
       "company": "Watershed Careers",
@@ -13713,7 +14058,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 259
+      "rank": 265
     },
     {
       "company": "Blue Forest",
@@ -13768,7 +14113,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 260
+      "rank": 266
     },
     {
       "company": "Worley",
@@ -13828,7 +14173,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 261
+      "rank": 267
     },
     {
       "company": "Honeywell Aerospace",
@@ -13888,7 +14233,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 262
+      "rank": 268
     },
     {
       "company": "SRT Marine Systems plc",
@@ -13943,7 +14288,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 263
+      "rank": 269
     },
     {
       "company": "HIRECLOUT",
@@ -13998,7 +14343,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 264
+      "rank": 270
     },
     {
       "company": "Arable",
@@ -14046,7 +14391,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 265
+      "rank": 271
     },
     {
       "company": "Active Site",
@@ -14081,7 +14426,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 266
+      "rank": 272
     },
     {
       "company": "Watershed Careers",
@@ -14129,7 +14474,7 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 267
+      "rank": 273
     },
     {
       "company": "Astranis",
@@ -14184,7 +14529,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 268
+      "rank": 274
     },
     {
       "company": "Asterra",
@@ -14244,7 +14589,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 269
+      "rank": 275
     },
     {
       "company": "Utah and Great Basin Director",
@@ -14299,7 +14644,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 270
+      "rank": 276
     },
     {
       "company": "Mitiga Solutions",
@@ -14352,7 +14697,7 @@
         "CO": 5,
         "GC": 4
       },
-      "rank": 271
+      "rank": 277
     },
     {
       "company": "True Anomaly",
@@ -14422,7 +14767,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 272
+      "rank": 278
     },
     {
       "company": "L3Harris Technologies",
@@ -14477,7 +14822,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 273
+      "rank": 279
     },
     {
       "company": "Altera",
@@ -14542,7 +14887,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 274
+      "rank": 280
     },
     {
       "company": "Kratos Defense and Security Solutions",
@@ -14602,7 +14947,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 275
+      "rank": 281
     },
     {
       "company": "Kratos Defense and Security Solutions",
@@ -14662,7 +15007,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 276
+      "rank": 282
     },
     {
       "company": "Hexcel Corporation",
@@ -14717,7 +15062,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 277
+      "rank": 283
     },
     {
       "company": "Booz Allen Hamilton",
@@ -14777,7 +15122,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 278
+      "rank": 284
     },
     {
       "company": "LinkedIn",
@@ -14842,7 +15187,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 279
+      "rank": 285
     },
     {
       "company": "L3Harris Technologies",
@@ -14897,7 +15242,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 280
+      "rank": 286
     },
     {
       "company": "Michael Baker International",
@@ -14957,7 +15302,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 281
+      "rank": 287
     },
     {
       "company": "LinkedIn",
@@ -15017,7 +15362,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 282
+      "rank": 288
     },
     {
       "company": "Gilat Satellite Networks",
@@ -15082,10 +15427,70 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 283
+      "rank": 289
     },
     {
-      "rank": 284,
+      "company": "Celestica",
+      "role": "Global Business Office Director - Aerospace & Defense",
+      "score": 43.5,
+      "proxy_score": null,
+      "effective_score": 43.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This is a hard pass. The role manages existing $100M+ customer portfolios within a contract electronics manufacturing environment, Paul's career has been building new commercial functions from scratch in satellite services and EO data, not managing mature P&L-accountable manufacturing accounts. Two hard gaps apply: (1) \"15+ years relevant experience\" managing large established customer portfolios with multi-site operational and financial accountability, Paul built markets, he did not inherit and manage $100M revenue streams; (2) \"in-depth knowledge of the manufacturing process, schedules and scheduling requirements\" and \"in-depth knowledge of the business issues associated with manufacturing PCBs\", Paul's domain is satellite ground services and data licensing, not contract manufacturing. The ITAR facility flag adds a soft security/compliance blocker. The role's verbs are \"managing,\" \"contract negotiation & management,\" \"balance sheet management,\" \"coordination of new program introductions\", all describing stewardship of existing complex operations, not new-market creation. This is a senior operations/account management role in a sector Paul has never worked in, requiring credentials he does not hold.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4436038527/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Hillsborough County, NH",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "experience_gap",
+          "detail": "JD requires 15+ years relevant experience managing customer portfolios with $100M+ annual revenue. Paul has 15 years in commercial roles but his work was building new markets/functions from scratch (KSAT oil spill monitoring from one contract, GFW commercial licensing from zero), not managing established $100M+ customer portfolios with P&L accountability and multi-site operational oversight.",
+          "severity": "hard"
+        },
+        {
+          "type": "sector_experience",
+          "detail": "Role requires in-depth knowledge of manufacturing process, PCB manufacturing business issues, and contract manufacturing operations. Paul's background is satellite services and EO data licensing, not electronics manufacturing or contract manufacturing.",
+          "severity": "hard"
+        },
+        {
+          "type": "security_clearance",
+          "detail": "JD states 'This location is a US ITAR facility and these positions will involve the release of export controlled goods.' Paul holds no active clearance and will not pursue vetting; ITAR facility access may require clearance or create compliance barriers.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 7,
+        "GC": 5
+      },
+      "score_range": [
+        43.5,
+        51.0
+      ],
+      "confidence": "medium",
+      "tier_uncertain": false,
+      "rank": 290
+    },
+    {
+      "rank": 291,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -15170,7 +15575,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 285
+      "rank": 292
     },
     {
       "company": "Acre",
@@ -15230,7 +15635,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 286
+      "rank": 293
     },
     {
       "company": "Mitiga Solutions",
@@ -15290,7 +15695,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 287
+      "rank": 294
     },
     {
       "company": "ZeroNorth",
@@ -15350,7 +15755,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 288
+      "rank": 295
     },
     {
       "company": "Rubicon Carbon",
@@ -15410,7 +15815,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 289
+      "rank": 296
     },
     {
       "company": "CesiumAstro",
@@ -15470,7 +15875,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 290
+      "rank": 297
     },
     {
       "company": "L3Harris Technologies",
@@ -15530,7 +15935,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 291
+      "rank": 298
     },
     {
       "company": "Saab, Inc.",
@@ -15590,7 +15995,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 292
+      "rank": 299
     },
     {
       "company": "Green Jobs Board - greenjobsearch.org",
@@ -15645,7 +16050,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 293
+      "rank": 300
     },
     {
       "company": "Confidential",
@@ -15700,7 +16105,62 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 294
+      "rank": 301
+    },
+    {
+      "company": "Root Inc.",
+      "role": "Senior Director, Strategic Partnerships",
+      "score": 43.0,
+      "proxy_score": null,
+      "effective_score": 43.0,
+      "fit": 3,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This role requires building a Financial Institutions vertical for an insurtech company, targeting banks, credit unions, FinTechs, and payment providers, a sector and buyer ecosystem entirely outside Paul's 15-year track record in satellite services, maritime monitoring, and EO data. The JD names two soft gaps: sector experience in financial services/insurtech and an executive network across financial institutions. Both caps fire (RF\u22645, IL\u22644). The role's core responsibilities, embedded insurance partnerships, C-suite negotiations with banks, and financial services thought leadership, demand domain credibility Paul does not possess on paper. While the partnership-building mechanics (multi-stakeholder deals, long enterprise cycles, new vertical creation) align with Paul's strengths, the sector mismatch is too wide for a credible candidacy. The compensation and title are strong, and remote-US eliminates geographic friction, but this is a clear pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4446167878/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "United States",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "JD requires 12+ years of executive business development experience with preferred experience in Banking, FinTech, Embedded Finance, Embedded Insurance, or InsurTech. Paul's 15 years are in satellite services/EO/maritime monitoring, not financial services or insurance technology.",
+          "severity": "soft"
+        },
+        {
+          "type": "professional_network",
+          "detail": "JD requires 'Deep executive network and active relationships across banks, credit unions, FinTechs, payment providers, and financial technology companies.' Paul's network is in oil & gas, maritime surveillance, NGOs, and space/EO sectors, not financial services.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 3,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 7,
+        "GC": 7
+      },
+      "score_range": [
+        43.0,
+        54.0
+      ],
+      "confidence": "low",
+      "tier_uncertain": false,
+      "rank": 302
     },
     {
       "company": "Narmi | Techstars Job Board",
@@ -15748,7 +16208,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 295
+      "rank": 303
     },
     {
       "company": "SWARM Engineering",
@@ -15796,7 +16256,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 296
+      "rank": 304
     },
     {
       "company": "Everlong | Techstars Job Board",
@@ -15844,7 +16304,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 297
+      "rank": 305
     },
     {
       "company": "Waitt Foundation | Schmidt Marine Job Board",
@@ -15902,7 +16362,7 @@
         "CO": 7,
         "GC": 5
       },
-      "rank": 298
+      "rank": 306
     },
     {
       "company": "Help Scout | Techstars Job Board",
@@ -15957,7 +16417,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 299
+      "rank": 307
     },
     {
       "company": "Synspective",
@@ -16027,7 +16487,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 300
+      "rank": 308
     },
     {
       "company": "Windward",
@@ -16092,7 +16552,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 301
+      "rank": 309
     },
     {
       "company": "Sayari",
@@ -16147,7 +16607,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 302
+      "rank": 310
     },
     {
       "company": "SEER Robotics",
@@ -16202,7 +16662,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 303
+      "rank": 311
     },
     {
       "company": "Jobgether",
@@ -16262,7 +16722,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 304
+      "rank": 312
     },
     {
       "company": "First Mile Development",
@@ -16317,7 +16777,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 305
+      "rank": 313
     },
     {
       "company": "Eddyfi Technologies",
@@ -16372,7 +16832,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 306
+      "rank": 314
     },
     {
       "company": "Ocean Optics",
@@ -16427,7 +16887,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 307
+      "rank": 315
     },
     {
       "company": "Planet",
@@ -16482,7 +16942,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 308
+      "rank": 316
     },
     {
       "company": "Tomorrow.io",
@@ -16537,7 +16997,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 309
+      "rank": 317
     },
     {
       "company": "Ceres Environmental Services, Inc.",
@@ -16597,7 +17057,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 310
+      "rank": 318
     },
     {
       "company": "Knight Aerospace",
@@ -16652,7 +17112,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 311
+      "rank": 319
     },
     {
       "company": "Amogy",
@@ -16712,7 +17172,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 312
+      "rank": 320
     },
     {
       "company": "Horizon Offshore, LTD.",
@@ -16767,7 +17227,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 313
+      "rank": 321
     },
     {
       "company": "DataRobot | Techstars Job Board",
@@ -16822,7 +17282,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 314
+      "rank": 322
     },
     {
       "company": "Wild West Systems, Inc.",
@@ -16887,7 +17347,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 315
+      "rank": 323
     },
     {
       "company": "Tradeverifyd | Techstars Job Board",
@@ -16942,7 +17402,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 316
+      "rank": 324
     },
     {
       "company": "The Fordy Group",
@@ -16997,7 +17457,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 317
+      "rank": 325
     },
     {
       "company": "Opensea Marine Services Limited",
@@ -17052,10 +17512,70 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 318
+      "rank": 326
     },
     {
-      "rank": 319,
+      "company": "Confidential",
+      "role": "Director of Business Development - Defense Sector",
+      "score": 42.5,
+      "proxy_score": null,
+      "effective_score": 42.5,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This is a pure hunter IC role in a sector where Paul has no named experience or network. The JD requires \"5+ years of B2B sales and business development experience in the defense sector in North America\" and \"proven track record of opening new strategic accounts and generating new logos in the U.S. defense ecosystem\" with \"OEM-facing relationships\" in drone manufacturers, defense integrators, or autonomous systems companies. Paul's 15 years are in satellite/EO/maritime commercial development with oil & gas majors, NGOs, and maritime agencies, not defense OEMs. The role is explicitly \"hands-on, individual contributor, hunter-focused\" for \"new logo hunting,\" which is a sales motion mismatch: Paul builds markets via pilots and regulatory precedent, not quota-carrying transactional hunting. Three soft gaps (sector experience, named network, sales model) cap RF at 5 and IL at 4. The company is Nasdaq-listed and the role involves \"opening new strategic accounts\" and \"building long-term partnerships,\" which offers some SA credit (4), but the core work is running an established hunter motion in an established defense market, not building a commercial function from scratch. SPM is 5, generic complex BD, no pattern match. Pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4445709203/"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "United States",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "JD requires 5+ years of B2B sales and business development experience in the defense sector in North America. Paul has 15 years building commercial functions in satellite/EO/maritime, not defense OEM/integrator sales. Adjacent but not the named sector.",
+          "severity": "soft"
+        },
+        {
+          "type": "network",
+          "detail": "JD emphasizes proven track record opening new strategic accounts and generating new logos in the U.S. defense ecosystem, with OEM-facing relationships in drone manufacturers, defense integrators, or autonomous systems companies. Paul's network is oil & gas majors, NGOs, maritime agencies, and satellite operators, not defense OEMs or integrators.",
+          "severity": "soft"
+        },
+        {
+          "type": "sales_model",
+          "detail": "Role is explicitly a hands-on, individual contributor, hunter-focused position for opening new logos and driving revenue generation from early-stage discussions through deal closure. Paul is a market builder who uses pilots to create demand, not a quota-carrying hunter closing transactional deals.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 5,
+        "CO": 6,
+        "GC": 5
+      },
+      "score_range": [
+        42.5,
+        42.5
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 327
+    },
+    {
+      "rank": 328,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -17084,7 +17604,7 @@
       "blockers": []
     },
     {
-      "rank": 320,
+      "rank": 329,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -17164,7 +17684,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 321
+      "rank": 330
     },
     {
       "company": "Airbus",
@@ -17224,7 +17744,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 322
+      "rank": 331
     },
     {
       "company": "Airbus",
@@ -17284,7 +17804,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 323
+      "rank": 332
     },
     {
       "company": "Airbus",
@@ -17344,7 +17864,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 324
+      "rank": 333
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -17399,7 +17919,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 325
+      "rank": 334
     },
     {
       "company": "Nimble Gravity",
@@ -17459,7 +17979,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 326
+      "rank": 335
     },
     {
       "company": "Planet",
@@ -17519,7 +18039,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 327
+      "rank": 336
     },
     {
       "company": "Satelytics (en-US)",
@@ -17574,7 +18094,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 328
+      "rank": 337
     },
     {
       "company": "Liveeo Gmbh",
@@ -17634,7 +18154,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 329
+      "rank": 338
     },
     {
       "company": "Novata",
@@ -17682,7 +18202,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 330
+      "rank": 339
     },
     {
       "company": "Terradot",
@@ -17742,7 +18262,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 331
+      "rank": 340
     },
     {
       "company": "External",
@@ -17797,7 +18317,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 332
+      "rank": 341
     },
     {
       "company": "Aquent",
@@ -17857,7 +18377,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 333
+      "rank": 342
     },
     {
       "company": "Coltala Aerospace",
@@ -17917,7 +18437,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 334
+      "rank": 343
     },
     {
       "company": "Prophecy",
@@ -17972,7 +18492,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 335
+      "rank": 344
     },
     {
       "company": "Unseenlabs",
@@ -18037,7 +18557,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 336
+      "rank": 345
     },
     {
       "company": "Ulteig",
@@ -18092,7 +18612,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 337
+      "rank": 346
     },
     {
       "company": "South Pole",
@@ -18147,7 +18667,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 338
+      "rank": 347
     },
     {
       "company": "HawkEye 360",
@@ -18207,7 +18727,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 339
+      "rank": 348
     },
     {
       "company": "NV5",
@@ -18262,7 +18782,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 340
+      "rank": 349
     },
     {
       "company": "Sphera",
@@ -18317,7 +18837,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 341
+      "rank": 350
     },
     {
       "company": "GridUnity",
@@ -18372,7 +18892,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 342
+      "rank": 351
     },
     {
       "company": "Confidential",
@@ -18427,7 +18947,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 343
+      "rank": 352
     },
     {
       "company": "Armada",
@@ -18450,7 +18970,7 @@
       "doc_path": null,
       "doc_note": null,
       "added": "2026-07-27",
-      "is_new": true,
+      "is_new": false,
       "tier": null,
       "stretch": false,
       "domain": "",
@@ -18482,7 +19002,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 344
+      "rank": 353
     },
     {
       "company": "Databricks",
@@ -18537,7 +19057,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 345
+      "rank": 354
     },
     {
       "company": "Flex",
@@ -18597,7 +19117,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 346
+      "rank": 355
     },
     {
       "company": "Nabla",
@@ -18647,7 +19167,72 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 347
+      "rank": 356
+    },
+    {
+      "company": "External",
+      "role": "Business Growth Manager - International Programs",
+      "score": 42.0,
+      "proxy_score": null,
+      "effective_score": 42.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This role is genuinely unactionable due to the hard TS/SCI clearance requirement, which Paul will not pursue. Beyond that hard stop, the role carries multiple soft gaps: the JD requires a Bachelor's in engineering (Paul holds BA Geology + MBA), 12+ years in an FFRDC/UARC/federally funded lab environment (Paul's 15 years are commercial EO/space services at KSAT and GFW, not FFRDC), and demonstrated closes of $2M-$25M international space partnerships with allied government entities (Paul built commercial markets but not in the FFRDC contracting context). The role itself is business development for an FFRDC serving international government space agencies, conceptually adjacent to Paul's market-building pattern, but the institutional environment (FFRDC governance, FMS/DCS mechanisms, TS/SCI-gated relationships) is fundamentally different from his commercial demand-creation work. SPM scores 6 for genuine international multi-stakeholder complexity, but the clearance blocker alone makes this a pass.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Business-Growth-Manager---International-Programs_R015944"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "El Segundo, CA (+1 more)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "security_clearance",
+          "detail": "Requires ability to obtain and maintain TS/SCI security clearance. Paul holds no active clearance and will not pursue the vetting process.",
+          "severity": "hard"
+        },
+        {
+          "type": "sector_experience",
+          "detail": "Requires at least 12 years of technical space experience in FFRDC, UARC, industry, or federally funded laboratory. Paul has commercial space sector experience but not in the FFRDC/UARC environment.",
+          "severity": "soft"
+        },
+        {
+          "type": "domain_credential",
+          "detail": "Requires Bachelor's degree in engineering, physical science, or related technical discipline. Paul holds BA Geology + MBA, not an engineering degree.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Full-time on-site required at El Segundo, CA or Crystal City, VA. Paul is currently in Taos, NM and would need to relocate.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 7,
+        "GC": 2
+      },
+      "score_range": [
+        41.0,
+        45.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 357
     },
     {
       "company": "Octopus Energy Group (Electroverse)",
@@ -18700,10 +19285,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 348
+      "rank": 358
     },
     {
-      "rank": 349,
+      "rank": 359,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -18783,7 +19368,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 350
+      "rank": 360
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -18836,7 +19421,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 351
+      "rank": 361
     },
     {
       "company": "Overstory",
@@ -18891,7 +19476,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 352
+      "rank": 362
     },
     {
       "company": "Acre",
@@ -18951,7 +19536,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 353
+      "rank": 363
     },
     {
       "company": "Confidential",
@@ -19006,7 +19591,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 354
+      "rank": 364
     },
     {
       "company": "Amentum",
@@ -19066,7 +19651,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 355
+      "rank": 365
     },
     {
       "company": "Koch",
@@ -19121,7 +19706,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 356
+      "rank": 366
     },
     {
       "company": "L3Harris Technologies",
@@ -19176,7 +19761,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 357
+      "rank": 367
     },
     {
       "company": "Biorce",
@@ -19231,7 +19816,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 358
+      "rank": 368
     },
     {
       "company": "Employ",
@@ -19286,7 +19871,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 359
+      "rank": 369
     },
     {
       "company": "South Pole",
@@ -19346,7 +19931,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 360
+      "rank": 370
     },
     {
       "company": "RxPx",
@@ -19406,7 +19991,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 361
+      "rank": 371
     },
     {
       "company": "Onterris",
@@ -19461,7 +20046,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 362
+      "rank": 372
     },
     {
       "company": "Windbornesystems",
@@ -19511,7 +20096,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 363
+      "rank": 373
     },
     {
       "company": "West at Job Board",
@@ -19566,7 +20151,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 364
+      "rank": 374
     },
     {
       "company": "General Dynamics Information Technology",
@@ -19626,10 +20211,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 365
+      "rank": 375
     },
     {
-      "rank": 366,
+      "rank": 376,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -19679,7 +20264,7 @@
       }
     },
     {
-      "rank": 367,
+      "rank": 377,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -19769,7 +20354,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 368
+      "rank": 378
     },
     {
       "company": "gable",
@@ -19817,7 +20402,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 369
+      "rank": 379
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -19865,7 +20450,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 370
+      "rank": 380
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -19913,7 +20498,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 371
+      "rank": 381
     },
     {
       "company": "Business Development Account Executive",
@@ -19968,7 +20553,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 372
+      "rank": 382
     },
     {
       "company": "Carbonfuture",
@@ -20033,7 +20618,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 373
+      "rank": 383
     },
     {
       "company": "Astranis",
@@ -20093,7 +20678,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 374
+      "rank": 384
     },
     {
       "company": "OneInbox.ai | Techstars Job Board",
@@ -20158,7 +20743,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 375
+      "rank": 385
     },
     {
       "company": "Watershed Careers",
@@ -20218,7 +20803,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 376
+      "rank": 386
     },
     {
       "company": "Planet",
@@ -20283,7 +20868,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 377
+      "rank": 387
     },
     {
       "company": "Orca AI",
@@ -20343,7 +20928,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 378
+      "rank": 388
     },
     {
       "company": "HTS Magnet Engineering",
@@ -20403,7 +20988,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 379
+      "rank": 389
     },
     {
       "company": "Katalyst Space Technologies",
@@ -20458,7 +21043,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 380
+      "rank": 390
     },
     {
       "company": "Rubicon Carbon",
@@ -20518,7 +21103,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 381
+      "rank": 391
     },
     {
       "company": "Kinara Group",
@@ -20578,7 +21163,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 382
+      "rank": 392
     },
     {
       "company": "Hexagon US Federal",
@@ -20638,7 +21223,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 383
+      "rank": 393
     },
     {
       "company": "The Nuclear Company",
@@ -20698,7 +21283,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 384
+      "rank": 394
     },
     {
       "company": "L3Harris Technologies",
@@ -20758,7 +21343,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 385
+      "rank": 395
     },
     {
       "company": "L3Harris Technologies",
@@ -20818,7 +21403,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 386
+      "rank": 396
     },
     {
       "company": "Zenix Aerospace SoCal",
@@ -20873,7 +21458,77 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 387
+      "rank": 397
+    },
+    {
+      "company": "Airbus",
+      "role": "Senior Business Development Manager - Space Deutschland (m/w/d)",
+      "score": 41.0,
+      "proxy_score": null,
+      "effective_score": 41.0,
+      "fit": 4,
+      "has_deep_dive": false,
+      "date": "2026-07-30",
+      "scqa": "",
+      "verdict": "This role has two hard blockers that make it genuinely unactionable: the JD requires native-level German for negotiation with military leadership (\"verhandlungssichere Deutsch- (Muttersprachenniveau)\"), which Paul does not speak, and an active contact network within the German Armed Forces and government agencies (\"Ein aktives Kontaktnetzwerk innerhalb der Deutschen Streitkr\u00e4fte, den relevanten Beh\u00f6rden/Dienststellen\"), which Paul does not possess. His network spans US, Australia, Norway, and emerging markets, not Germany. Additionally, the role demands deep experience selling complex EO/SAR solutions into German defense and intelligence (C4ISR, GEOINT), a sector Paul has not worked in, his 15 years are in commercial EO (oil spill monitoring, IUU fishing, maritime surveillance). The hard-blocker caps apply: RF\u22644, IL\u22643, GC\u22642 (Germany-based, silent on sponsorship, requires native German). The role itself is managing an existing defense sales function in a mature market, not building a new commercial function (SA 4). SPM 6 reflects adjacent multi-stakeholder complexity (defense procurement, KMU partnerships) but not Paul's specific patterns.",
+      "recommendation": "pass",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://ag.wd3.myworkdayjobs.com/Airbus/job/Immenstaad-am-Bodensee/Senior-Business-Development-Manager---Space-Deutschland--m-w-d-_JR10426058"
+      ],
+      "resume_path": null,
+      "doc_path": null,
+      "doc_note": null,
+      "added": "2026-07-30",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "",
+      "location": "Immenstaad am Bodensee (+1 more)",
+      "hook": "",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Role based in Germany (Immenstaad am Bodensee); Paul holds US work authorization only. JD is silent on visa sponsorship but requires native-level German ('Deutsch- (Muttersprachenniveau)'), suggesting local hiring preference.",
+          "severity": "soft"
+        },
+        {
+          "type": "language",
+          "detail": "JD requires 'verhandlungssichere Deutsch- (Muttersprachenniveau)', native-level German for negotiation with C-level and military leadership. Paul does not speak German.",
+          "severity": "hard"
+        },
+        {
+          "type": "network",
+          "detail": "JD requires 'Ein aktives Kontaktnetzwerk innerhalb der Deutschen Streitkr\u00e4fte, den relevanten Beh\u00f6rden/Dienststellen', active contact network within German Armed Forces and relevant government agencies. Paul's network is US, Australia, Norway, Southeast Asia, West Africa, not Germany.",
+          "severity": "hard"
+        },
+        {
+          "type": "domain_experience",
+          "detail": "JD requires 'Fundiertes Verst\u00e4ndnis von satellitengest\u00fctzter Erdbeobachtung (z. B. optische Sensoren, SAR-Radar, SIGINT) und deren operativem Mehrwert f\u00fcr milit\u00e4rische Aufkl\u00e4rungs- und Planungsszenarien', deep understanding of EO sensors and their operational value for military intelligence scenarios. Paul has EO technical literacy and sold SAR for oil spill/vessel detection, but not military intelligence use cases.",
+          "severity": "soft"
+        },
+        {
+          "type": "sector_experience",
+          "detail": "JD requires '5+ Jahre nachweisbare Erfolge im strategischen Kundenmanagement oder Business Development innerhalb der Verteidigungs-, Geo-IT- oder Raumfahrtindustrie' with focus on C4ISR and GEOINT for German defense customers. Paul has 15 years in commercial space/EO (KSAT, GFW), but not defense/intelligence sector sales.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 4,
+        "SA": 4,
+        "IL": 3,
+        "SPM": 6,
+        "CO": 6,
+        "GC": 2
+      },
+      "score_range": [
+        41.0,
+        41.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 398
     },
     {
       "company": "Planet",
@@ -20941,7 +21596,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 388
+      "rank": 399
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -20999,7 +21654,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 389
+      "rank": 400
     },
     {
       "company": "Biomesense",
@@ -21054,7 +21709,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 390
+      "rank": 401
     },
     {
       "company": "Vantor",
@@ -21119,7 +21774,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 391
+      "rank": 402
     },
     {
       "company": "Ocean Conservancy | Schmidt Marine Job Board",
@@ -21179,7 +21834,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 392
+      "rank": 403
     },
     {
       "company": "\u00d8rsted",
@@ -21234,7 +21889,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 393
+      "rank": 404
     },
     {
       "company": "Airbus",
@@ -21299,7 +21954,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 394
+      "rank": 405
     },
     {
       "company": "Planet",
@@ -21364,7 +22019,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 395
+      "rank": 406
     },
     {
       "company": "Planet",
@@ -21429,7 +22084,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 396
+      "rank": 407
     },
     {
       "company": "Seamachines",
@@ -21484,7 +22139,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 397
+      "rank": 408
     },
     {
       "company": "Amentum",
@@ -21544,7 +22199,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 398
+      "rank": 409
     },
     {
       "company": "Moog Inc.",
@@ -21609,7 +22264,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 399
+      "rank": 410
     },
     {
       "company": "Pentair",
@@ -21669,7 +22324,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 400
+      "rank": 411
     },
     {
       "company": "Airbus",
@@ -21729,7 +22384,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 401
+      "rank": 412
     },
     {
       "company": "Airbus",
@@ -21794,7 +22449,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 402
+      "rank": 413
     },
     {
       "company": "Red 6",
@@ -21854,7 +22509,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 403
+      "rank": 414
     },
     {
       "company": "Octave",
@@ -21909,7 +22564,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 404
+      "rank": 415
     },
     {
       "company": "Harbinger Motors Inc.",
@@ -21964,7 +22619,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 405
+      "rank": 416
     },
     {
       "company": "Monta",
@@ -22024,7 +22679,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 406
+      "rank": 417
     },
     {
       "company": "Instagrid",
@@ -22084,7 +22739,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 407
+      "rank": 418
     },
     {
       "company": "DataRobot | Techstars Job Board",
@@ -22139,7 +22794,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 408
+      "rank": 419
     },
     {
       "company": "Ecovyst, Inc.",
@@ -22199,7 +22854,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 409
+      "rank": 420
     },
     {
       "company": "Airbus",
@@ -22259,7 +22914,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 410
+      "rank": 421
     },
     {
       "company": "Airbus",
@@ -22329,7 +22984,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 411
+      "rank": 422
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -22389,7 +23044,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 412
+      "rank": 423
     },
     {
       "company": "Vantor",
@@ -22454,7 +23109,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 413
+      "rank": 424
     },
     {
       "company": "Acre",
@@ -22514,7 +23169,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 414
+      "rank": 425
     },
     {
       "company": "Director of Industrial Management",
@@ -22574,7 +23229,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 415
+      "rank": 426
     },
     {
       "company": "Quilt",
@@ -22634,7 +23289,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 416
+      "rank": 427
     },
     {
       "company": "Quilt",
@@ -22694,7 +23349,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 417
+      "rank": 428
     },
     {
       "company": "Isar Aerospace SE",
@@ -22759,7 +23414,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 418
+      "rank": 429
     },
     {
       "company": "Watershed Careers",
@@ -22814,7 +23469,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 419
+      "rank": 430
     },
     {
       "company": "External_Career_Site",
@@ -22869,7 +23524,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 420
+      "rank": 431
     },
     {
       "company": "CSA Ocean Sciences Inc.",
@@ -22929,7 +23584,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 421
+      "rank": 432
     },
     {
       "company": "reesmarx",
@@ -22989,7 +23644,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 422
+      "rank": 433
     },
     {
       "company": "Confidential",
@@ -23049,7 +23704,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 423
+      "rank": 434
     },
     {
       "company": "Exponent",
@@ -23109,7 +23764,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 424
+      "rank": 435
     },
     {
       "company": "South Pole",
@@ -23164,7 +23819,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 425
+      "rank": 436
     },
     {
       "company": "Outpost",
@@ -23224,7 +23879,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 426
+      "rank": 437
     },
     {
       "company": "Watershed Careers",
@@ -23279,10 +23934,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 427
+      "rank": 438
     },
     {
-      "rank": 428,
+      "rank": 439,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -23327,7 +23982,7 @@
       }
     },
     {
-      "rank": 429,
+      "rank": 440,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -23377,7 +24032,7 @@
       }
     },
     {
-      "rank": 430,
+      "rank": 441,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -93141,6 +93796,906 @@
           "confidence": "high"
         }
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "digest_count": 85,
+      "scored_count": 23,
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [
+        {
+          "company": "Airbus",
+          "role": "Senior Business Development Manager - Space Deutschland (m/w/d)",
+          "score": 41.0,
+          "score_range": [
+            41.0,
+            41.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Orca AI",
+          "role": "Job opportunity: Director of Business Development - Defense (Europe)",
+          "score": 47.5,
+          "score_range": [
+            46.0,
+            52.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false
+        },
+        {
+          "company": "External",
+          "role": "Business Growth Manager - International Programs",
+          "score": 42.0,
+          "score_range": [
+            41.0,
+            45.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Arkeus",
+          "role": "Director of Business Development - US",
+          "score": 52.0,
+          "score_range": [
+            50.0,
+            52.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        },
+        {
+          "company": "NATILUS",
+          "role": "Business Development Manager",
+          "score": 53.5,
+          "score_range": [
+            50.0,
+            54.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Confidential",
+          "role": "Director of Business Development - Defense Sector",
+          "score": 42.5,
+          "score_range": [
+            42.5,
+            42.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        },
+        {
+          "company": "NAYA",
+          "role": "Director of Commercial Development",
+          "score": 55.5,
+          "score_range": [
+            54.0,
+            55.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Prologue",
+          "role": "Head of Sales",
+          "score": 54.0,
+          "score_range": [
+            42.0,
+            54.0
+          ],
+          "confidence": "low",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Celestica",
+          "role": "Global Business Office Director - Aerospace & Defense",
+          "score": 43.5,
+          "score_range": [
+            43.5,
+            51.0
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false
+        },
+        {
+          "company": "Root Inc.",
+          "role": "Senior Director, Strategic Partnerships",
+          "score": 43.0,
+          "score_range": [
+            43.0,
+            54.0
+          ],
+          "confidence": "low",
+          "tier_uncertain": false
+        },
+        {
+          "company": "BAE Systems, Inc.",
+          "role": "Sr. Director of Strategic Partnerships",
+          "score": 47.0,
+          "score_range": [
+            47.0,
+            47.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        }
+      ],
+      "stretch": [
+        {
+          "company": "NATILUS",
+          "role": "Business Development Manager",
+          "score": 53.5,
+          "score_range": [
+            50.0,
+            54.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": false
+        },
+        {
+          "company": "NAYA",
+          "role": "Director of Commercial Development",
+          "score": 55.5,
+          "score_range": [
+            54.0,
+            55.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false
+        }
+      ],
+      "skipped_duplicates": [
+        {
+          "company": "Red 6",
+          "role": "Director of Business Development - Red 6",
+          "reason": "url_already_in_ranked_opportunities:Red 6"
+        },
+        {
+          "company": "Nova Solvers",
+          "role": "Director of Business Development - Nova Solvers",
+          "reason": "url_already_in_ranked_opportunities:Nova Solvers"
+        },
+        {
+          "company": "Fermi America",
+          "role": "Director of Business Development - Fermi America",
+          "reason": "url_already_in_ranked_opportunities:Fermi America"
+        },
+        {
+          "company": "CALSTART",
+          "role": "Senior Director, Trucks & Off-Road - CALSTART",
+          "reason": "url_already_in_ranked_opportunities:Jobgether"
+        },
+        {
+          "company": "Ladders",
+          "role": "Director, Business Development - Ladders",
+          "reason": "url_already_in_ranked_opportunities:Ladders"
+        },
+        {
+          "company": "Ladders",
+          "role": "Advanced Materials Business Development Manager - Ladders",
+          "reason": "url_already_in_ranked_opportunities:Ladders"
+        }
+      ],
+      "excluded": [],
+      "watch_list_resights": [],
+      "sub_40_scored": [
+        {
+          "company": "Monta",
+          "role": "Go-to-Market (GTM) Engineer",
+          "score": 36.5,
+          "score_range": [
+            36.5,
+            38.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "JASARA PMC - Climate Change",
+          "role": "Director - Sustainability at JASARA PMC - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Watershed Careers",
+          "role": "Partnerships, Strategic Partner Lead - Watershed Careers",
+          "score": 37.5,
+          "score_range": [
+            37.5,
+            42.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "Account Executive",
+          "role": "Account Executive",
+          "score": 31.5,
+          "score_range": [
+            30.5,
+            32.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Airbus",
+          "role": "Senior Key Account Manager (m/w/d) f\u00fcr Raumfahrt-Equipment",
+          "score": 38.5,
+          "score_range": [
+            35.5,
+            38.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Smiths Group - Climate Change",
+          "role": "Sustainability Manager at Smiths Group - Climate Change Jobs",
+          "score": 10.0,
+          "score_range": [
+            10.0,
+            10.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Advanced Technology Search",
+          "role": "Director of Business Development",
+          "score": 38.5,
+          "score_range": [
+            38.5,
+            41.0
+          ],
+          "confidence": "high",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "Banook",
+          "role": "Senior Director, Business Development",
+          "score": 36.5,
+          "score_range": [
+            35.0,
+            38.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Dash0",
+          "role": "Commercial Director - US",
+          "score": 38.5,
+          "score_range": [
+            38.5,
+            38.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Envision Horizons",
+          "role": "VP of Partnerships",
+          "score": 39.5,
+          "score_range": [
+            39.5,
+            40.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": true,
+          "note": ""
+        },
+        {
+          "company": "XINDARA",
+          "role": "Head of Strategic Partnerships",
+          "score": 30.5,
+          "score_range": [
+            30.5,
+            31.5
+          ],
+          "confidence": "high",
+          "tier_uncertain": false,
+          "note": ""
+        },
+        {
+          "company": "Pangea",
+          "role": "Geospatial / GIS - Business Development Manager / BDM",
+          "score": 36.5,
+          "score_range": [
+            36.5,
+            44.5
+          ],
+          "confidence": "medium",
+          "tier_uncertain": true,
+          "note": ""
+        }
+      ],
+      "unscored": [
+        {
+          "company": "AnySignal",
+          "role": "Director of Business Development",
+          "url": "https://jobs.ashbyhq.com/anysignal/4e768130-0ef2-47a6-91a6-c144a1371994",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Sofar Ocean",
+          "role": "UK Defence Go to Market (GTM) Lead",
+          "url": "https://jobs.ashbyhq.com/sofarocean/abf12542-eee0-4b95-a86d-1f7e8d9e6572",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Fugro",
+          "role": "Head of Product - ROAMES &amp; PaaS",
+          "url": "https://www.fugro.com/careers/jobs/R0030864-head-of-product-roames-%26-paas",
+          "reason": "post_fetch_dedup_in_applications:Fugro status=rejected"
+        },
+        {
+          "company": "Relectrify",
+          "role": "Chief of Staff & Head of Market Development",
+          "url": "https://apply.workable.com/j/0A5B4E675A",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Fugro",
+          "role": "\u200bGeophysics Solutions Engineer",
+          "url": "https://www.fugro.com/careers/jobs/R0031905-%E2%80%8Bgeophysics-solutions-engineer",
+          "reason": "post_fetch_dedup_in_applications:Fugro status=rejected"
+        },
+        {
+          "company": "Crusoe",
+          "role": "Senior Solutions Engineer",
+          "url": "https://jobs.ashbyhq.com/Crusoe/ae617133-d56a-4020-812f-08e071dd2daa",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "Fugro",
+          "role": "Lead Product Manager",
+          "url": "https://www.fugro.com/careers/jobs/R0031920-lead-product-manager-groundiq",
+          "reason": "post_fetch_dedup_in_applications:Fugro status=rejected"
+        },
+        {
+          "company": "CesiumAstro",
+          "role": "Director of Business Development - CesiumAstro",
+          "url": "https://www.linkedin.com/jobs/view/4379500552/",
+          "reason": "post_fetch_dedup_in_recent_ranked:CesiumAstro role=Director of Business Development"
+        },
+        {
+          "company": "The MITRE Corporation",
+          "role": "Electrical Engineer (Intelligence Center)",
+          "url": "https://careers.mitre.org/us/en/job/R116938/Electrical-Engineer-Intelligence-Center",
+          "reason": "fetch_unreadable:content_too_short"
+        },
+        {
+          "company": "908 Devices",
+          "role": "Director, Business Development and Key Account Partnerships - 908 Devices",
+          "url": "https://www.linkedin.com/jobs/view/4445467056/",
+          "reason": "post_fetch_dedup_in_recent_ranked:908 Devices role=Director, Business Development and Key A"
+        }
+      ],
+      "failed_em_dash_gate": [],
+      "notes": "85 entries. No Tier 1-2, but 2 stretch roles worth a look. T3 11. 6 dedup \u00b7 10 unscored.",
+      "jobs_processed": 85,
+      "high_scores": 0,
+      "deep_dives": 0,
+      "result": "85 entries. No Tier 1-2, but 2 stretch roles worth a look. T3 11. 6 dedup \u00b7 10 unscored. 67 skipped by prefilter (off-domain / wrong-function).",
+      "intra_digest_duplicates": [
+        {
+          "title": "Head of IT",
+          "url": "https://hometree-1690194722.teamtailor.com/jobs/8143384-head-of-it",
+          "kept_url": "https://hometree-1690194722.teamtailor.com/jobs/8143384-head-of-it"
+        },
+        {
+          "title": "Head of IT",
+          "url": "https://hometree-1690194722.teamtailor.com/jobs/8143384-head-of-it",
+          "kept_url": "https://hometree-1690194722.teamtailor.com/jobs/8143384-head-of-it"
+        },
+        {
+          "title": "Vice President",
+          "url": "https://energydome.com/careers",
+          "kept_url": "https://energydome.com/careers"
+        },
+        {
+          "title": "Project Development Director",
+          "url": "https://energydome.com/careers",
+          "kept_url": "https://energydome.com/careers"
+        },
+        {
+          "title": "Key Account Manager (AEC Focus)",
+          "url": "https://trimblecareers.trimble.com/careers",
+          "kept_url": "https://trimblecareers.trimble.com/careers"
+        }
+      ],
+      "prefilter_skipped": [
+        {
+          "title": "Sr. Partner Sales Director",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/databricks/jobs/8638943002",
+          "reason": "Databricks is pure enterprise SaaS dev tools/data platform outside climate/EO/maritime domain, off-domain company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Software",
+          "source": "G2 Venture Partners Portfolio",
+          "url": "https://boards.greenhouse.io/carbon/jobs/5194662007",
+          "reason": "Director, Software is a technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Contract Announcement: CCIRA Marine Shipping and Response Coordination (mat leave coverage).",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/mapp-2/jobs/87973732-contract-announcement-ccira-marine-shipping-and-response-coordination-mat-leave-coverage",
+          "reason": "Maternity leave coverage contract role is wrong seniority and temporary duration, not a strategic commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commercial Admin (Sales & Purchase)",
+          "source": "SOSV Portfolio",
+          "url": "https://malaysia.indeed.com/cmp/Imotorbike-1/jobs?jk=33868116298a14bf",
+          "reason": "Commercial Admin is an administrative support role, not a commercial leadership position, and wrong seniority for Paul's VP/Director search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Product Manager, Analysis Ready Data Products",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/7967529",
+          "reason": "Senior Product Manager is a product management IC role, not a commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Financial Officer (CFO) / Head of Finance (m/w/d)",
+          "source": "AENU Portfolio",
+          "url": "https://join.com/companies/feld1/16508803-chief-financial-officer-cfo-head-of-finance-m-w-d",
+          "reason": "CFO / Head of Finance is a finance function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Litigation & Legal Compliance",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/sentinellabs/jobs/7809665003",
+          "reason": "Head of Litigation & Legal Compliance is a legal function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior SAR-Based MTI Engineer",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Senior-SAR-Based-MTI-Engineer_R015971",
+          "reason": "Senior SAR-Based MTI Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain & Quality Specialist",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Lisbon-Airbus-Portugal/Supply-Chain---Quality-Specialist_JR10433321",
+          "reason": "Supply Chain & Quality Specialist is a wrong-function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Business Development Associate",
+          "source": "Energy Impact Partners Portfolio",
+          "url": "https://gridbeyond.bamboohr.com/careers/129",
+          "reason": "Business Development Associate is unambiguously junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior GTM Systems Engineer",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/twelve-labs/jobs/88019082-senior-gtm-systems-engineer",
+          "reason": "Senior GTM Systems Engineer is a sales engineering / solutions engineering role, not a commercial leadership position Paul targets.",
+          "confidence": "medium"
+        },
+        {
+          "title": "Business Development Representative",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565560917-business-development-representative",
+          "reason": "BDR is junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supply Chain Specialist",
+          "source": "Elemental Excelerator Portfolio",
+          "url": "https://energydome.com/careers",
+          "reason": "Supply Chain Specialist is an operations function role outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "RF/Microwave Engineer - Senior Member of Technical Staff",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/RF-Microwave-Engineer---Senior-Member-of-Technical-Staff_R015955",
+          "reason": "RF/Microwave Engineer is a pure technical engineering role, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior RF/Satellite Communications & Architectures Engineer\u200b",
+          "source": "Aerospace Corporation",
+          "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/Senior-RF-Satellite-Communications---Architectures-Engineer-_R015950",
+          "reason": "Senior RF/Satellite Communications Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "GALAXEYE SPACE SOLUTIONS PRIVATE LIMITED - Supply Chain Associate (Satellite Systems) in Banglorenorth",
+          "source": "GalaxEye",
+          "url": "https://careers.galaxeye.space/jobs/Careers/214465000003515534/Supply-Chain-Associate-Satellite-Systems-?source=CareerSite",
+          "reason": "Supply Chain Associate is an ops/procurement IC role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Director, Global Talent Acquisition",
+          "source": "Planet Labs",
+          "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8081498",
+          "reason": "Senior Director, Global Talent Acquisition is a recruiting leadership role, which falls under the wrong-function criteria (HR/Recruiting).",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of IT",
+          "source": "AENU Portfolio",
+          "url": "https://hometree-1690194722.teamtailor.com/jobs/8143384-head-of-it",
+          "reason": "Head of IT is a pure technology infrastructure role outside Paul's commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Sr. Director, People Business Partner",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/sentinellabs/jobs/7814557003",
+          "reason": "Sr. Director, People Business Partner is an HR function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Strategic Core Account Executive",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/databricks/jobs/8652521002",
+          "reason": "Databricks is enterprise data/AI platform SaaS unrelated to climate, EO, maritime, or mission-driven domains; off-domain company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Strategic Account Executive, Public Sector",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/databricks/jobs/8652590002",
+          "reason": "Databricks is enterprise data/AI platform SaaS unrelated to climate/EO/maritime domain, off-domain company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Startup Hunter Account Executive",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/databricks/jobs/8643831002",
+          "reason": "Databricks is pure enterprise SaaS data/AI platform unrelated to climate, EO, or maritime domains, off-domain company.",
+          "confidence": "high"
+        },
+        {
+          "title": "Technical Project Manager, IR Data Products",
+          "source": "Muon Space",
+          "url": "https://job-boards.greenhouse.io/muonspace/jobs/5198354007",
+          "reason": "Technical Project Manager is a pure product management IC role, not commercial leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Antora - Director of Grid Policy",
+          "source": "Antora Energy",
+          "url": "https://www.antora.com/job/director-of-grid-policy",
+          "reason": "Director of Grid Policy is a regulatory/policy function, not commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Head of Finance",
+          "source": "Planet A Ventures Portfolio",
+          "url": "https://dk.linkedin.com/jobs/view/head-of-finance-at-enkel-energi-4446388496",
+          "reason": "Head of Finance is a finance function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Inside Sales Representative - Launch Your Sales Career \ud83d\ude80",
+          "source": "Prelude Ventures Portfolio",
+          "url": "https://boards.greenhouse.io/pivotbio/jobs/8654294002",
+          "reason": "Inside Sales Representative is junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director, Data & Information Architecture",
+          "source": "Prelude Ventures Portfolio",
+          "url": "https://boards.greenhouse.io/pivotbio/jobs/8653991002",
+          "reason": "Director, Data & Information Architecture is a data infrastructure / IT architecture role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Executive - Emerging Accounts - San Francisco, CA",
+          "source": "G2 Venture Partners Portfolio",
+          "url": "https://boards.greenhouse.io/fictiv/jobs/8650908002",
+          "reason": "Account Executive at Emerging Accounts level is junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        },
+        {
+          "title": "Account Executive - Emerging Accounts - Seattle, WA",
+          "source": "G2 Venture Partners Portfolio",
+          "url": "https://boards.greenhouse.io/fictiv/jobs/8650906002",
+          "reason": "Fictiv is on-demand manufacturing platform for mechanical parts, off-domain from Paul's climate/EO/maritime focus.",
+          "confidence": "high"
+        },
+        {
+          "title": "Naturalist",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/allen-marine/jobs/87955720-naturalist",
+          "reason": "Naturalist is an educational/interpretive guide role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Pilot Deployments Program (PDP) Conservation Aquaculture Project Officer",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/australian-institute-of-marine-science/jobs/88021688-pilot-deployments-program-pdp-conservation-aquaculture-project-officer",
+          "reason": "Conservation Aquaculture Project Officer is a science/research execution role at a marine science institute, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Forest Policy Director",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/friends-of-the-clearwater/jobs/87942692-forest-policy-director",
+          "reason": "Forest Policy Director is a policy/advocacy role at a land-based conservation organization, off-domain and wrong-function for Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Social Responsibility Manager",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/ocean-outcomes/jobs/88008537-social-responsibility-manager",
+          "reason": "Social Responsibility Manager is an HR/compliance/ESG function role, not a commercial/BD/partnerships role.",
+          "confidence": "high"
+        },
+        {
+          "title": "Schmidt Marine",
+          "source": "Schmidt Marine Jobs Board",
+          "url": "https://jobs.schmidtmarine.org/companies/sustainable-fisheries/jobs/87924542-senior-accountant-remote-us-pst",
+          "reason": "Senior Accountant is a finance/accounting function role, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director Office of the National Training Center",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565892803-director-office-of-the-national-training-center",
+          "reason": "National Training Center is a U.S. Army combat training facility at Fort Irwin; this is a military/defense installation leadership role, off-domain from climate/EO/maritime commercial work.",
+          "confidence": "high"
+        },
+        {
+          "title": "County Executive Director",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565892820-county-executive-director",
+          "reason": "County Executive Director is a government/public sector administrative role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Marine Machinery Repairer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565892825-marine-machinery-repairer",
+          "reason": "Marine Machinery Repairer is a technical maintenance/repair role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Director of Development",
+          "source": "Nonprofit Jobs (Chronicle of Philanthropy)",
+          "url": "https://jobs.philanthropy.com/job/53093/director-of-development/",
+          "reason": "Director of Development is a fundraising/development role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Retail Sales Support Regional Manager",
+          "source": "SOSV Portfolio",
+          "url": "https://hisenseusacorporation.bamboohr.com/careers/327",
+          "reason": "Hisense is a consumer electronics manufacturer (TVs, appliances) and Retail Sales Support Regional Manager is a field sales role managing retail partnerships, both off-domain and wrong function for Paul's climate/EO/mission-driven commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Field Sales Representative",
+          "source": "Trimble",
+          "url": "https://trimblecareers.trimble.com/careers",
+          "reason": "Field Sales Representative is an IC quota-carrier role without strategic leadership component, wrong seniority for Paul's VP/Director target.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Simulation",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/agilityrobotics/jobs/6127736004",
+          "reason": "Senior Manager, Simulation at Agility Robotics is a technical engineering role focused on robotics simulation infrastructure, not a commercial/BD/partnerships position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Software Engineer, AI SIEM",
+          "source": "DCVC Portfolio",
+          "url": "https://boards.greenhouse.io/sentinellabs/jobs/7814850003",
+          "reason": "Principal Software Engineer is a pure technical engineering role, not a commercial or partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Project Manager - Chief Engineering Light Twin Helicopter (m/w/d)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Donauwrth/Project-Manager---Chief-Engineering-Light-Twin-Helicopter--m-w-d-_JR10398410-1",
+          "reason": "Project Manager Chief Engineering Light Twin Helicopter is a technical engineering program management role in helicopter design, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Export Compliance Manager (d/m/w)",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Bremen-Area/Export-Compliance-Manager--d-m-w-_JR10429394",
+          "reason": "Export Compliance Manager is a legal/regulatory compliance function, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Working Student (d/f/m) - Chief Engineering Office",
+          "source": "Airbus Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Manching/Working-Student--d-f-m----Chief-Engineering-Office_JR10428965",
+          "reason": "Working Student role is part-time student internship, wrong seniority for VP/Director-level search.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Engineer",
+          "source": "Energy Impact Partners Portfolio",
+          "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4372382",
+          "reason": "Chief Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Engineer",
+          "source": "Clean Energy Ventures Portfolio",
+          "url": "https://futureprooftech.io/careers/principal-engineer",
+          "reason": "Principal Engineer is a pure technical engineering role, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Product Manager",
+          "source": "Prelude Ventures Portfolio",
+          "url": "https://jobs.lever.co/T6TalentPartners/3bd56035-ae74-4f2b-a279-ecb94bfb3e24",
+          "reason": "Senior Product Manager is an IC product management role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Product Manager (ShelfView)",
+          "source": "G2 Venture Partners Portfolio",
+          "url": "https://boards.greenhouse.io/scandit/jobs/8093936",
+          "reason": "Senior Product Manager is an IC product role, not a commercial leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Software Engineer, Data Platform",
+          "source": "Y Combinator Jobs",
+          "url": "https://www.ycombinator.com/companies/onechronos/jobs/vqgGG8a-software-engineer-data-platform",
+          "reason": "Software Engineer, Data Platform is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Customer Success Manager",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/outreach/jobs/88021422-senior-customer-success-manager",
+          "reason": "Senior Customer Success Manager is an IC CSM role, not a Director/Head/VP of Customer Success at a small startup.",
+          "confidence": "high"
+        },
+        {
+          "title": "Techstars",
+          "source": "Techstars Jobs",
+          "url": "https://jobs.techstars.com/companies/payangel/jobs/88006650-senior-manager-compliance-financial-crimes-mlro-uk",
+          "reason": "MLRO (Money Laundering Reporting Officer) is a Compliance/Legal function, not commercial/BD/partnerships.",
+          "confidence": "high"
+        },
+        {
+          "title": "Principal Environmental Scientist",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565395841-principal-environmental-scientist-contaminated-land",
+          "reason": "Principal Environmental Scientist role focused on contaminated land is environmental consulting/remediation work, not commercial/BD/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Data Analyst",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565395842-data-analyst-sustainability",
+          "reason": "Data Analyst is an IC analytics role, not a commercial/BD/partnerships function, and does not carry a senior title override like Director or VP.",
+          "confidence": "high"
+        },
+        {
+          "title": "Supervisor - Health, Safety, Security, Sustainability (HSSS)",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565395843-supervisor-health-safety-security-sustainability-hsss",
+          "reason": "Supervisor-level HSSS role is an operations/compliance function outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "UK Sustainability & Social Value Engagement Officer",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565395849-uk-sustainability-social-value-engagement-officer",
+          "reason": "Engagement Officer is a mid-level sustainability communications/coordination role, not commercial/BD/partnerships leadership.",
+          "confidence": "high"
+        },
+        {
+          "title": "Performance Marketing Principal",
+          "source": "Climate Change Jobs",
+          "url": "https://climatechangejobs.com/jobs/565892358-performance-marketing-principal",
+          "reason": "Performance Marketing Principal is a marketing IC role without commercial leadership component, wrong function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Senior Manager, Finance",
+          "source": "L3Harris",
+          "url": "https://careers.l3harris.com/en/job/montreal/senior-manager-finance/4832/95430067680",
+          "reason": "Senior Manager, Finance is a finance function role, outside Paul's commercial/BD/partnerships profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Performance Marketing Principal",
+          "source": "Elemental Excelerator Portfolio",
+          "url": "https://boards.greenhouse.io/via/jobs/8656248002",
+          "reason": "Performance Marketing Principal is a marketing-only IC role without commercial leadership component.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Engineer, Vehicle",
+          "source": "Outpost Space",
+          "url": "https://job-boards.greenhouse.io/outpostspace/jobs/4700806006",
+          "reason": "Chief Engineer, Vehicle is a pure technical engineering leadership role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Chief Engineer",
+          "source": "Sphinx Defense",
+          "url": "https://job-boards.greenhouse.io/sphinxdefense/jobs/5290365008",
+          "reason": "Chief Engineer is a pure technical engineering role, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Control Account Manager (CAM)",
+          "source": "Sphinx Defense",
+          "url": "https://job-boards.greenhouse.io/sphinxdefense/jobs/5287430008",
+          "reason": "Control Account Manager is a project management/finance role tracking earned value management in defense contracts, not a commercial/BD/partnerships function.",
+          "confidence": "high"
+        },
+        {
+          "title": "Product Manager",
+          "source": "Sphinx Defense",
+          "url": "https://job-boards.greenhouse.io/sphinxdefense/jobs/5222019008",
+          "reason": "Product Manager is an IC product management role, not a commercial/BD/partnerships leadership position.",
+          "confidence": "high"
+        },
+        {
+          "title": "Commercial Director - Hilton",
+          "source": "linkedin-alert",
+          "url": "https://www.linkedin.com/jobs/view/4446129983/",
+          "reason": "Hilton is a global hotel and hospitality chain, entirely off-domain from Paul's climate-adjacent, EO/maritime, mission-driven target market.",
+          "confidence": "high"
+        },
+        {
+          "title": "VP, Strategic Partnerships - Automation Anywhere",
+          "source": "linkedin-alert",
+          "url": "https://www.linkedin.com/jobs/view/4437719890/",
+          "reason": "Automation Anywhere is enterprise RPA/automation software for unrelated verticals, off-domain.",
+          "confidence": "high"
+        },
+        {
+          "title": "Vice President Strategic Partnerships - National Register USA",
+          "source": "linkedin-alert",
+          "url": "https://www.linkedin.com/jobs/view/4445161948/",
+          "reason": "National Register USA is a pharmacy/prescription benefits company, off-domain for Paul's climate-adjacent, EO/maritime, mission-driven commercial leadership profile.",
+          "confidence": "high"
+        },
+        {
+          "title": "Geospatial Business Development Representative (Inside Sales) - GeoMarvel",
+          "source": "linkedin-alert",
+          "url": "https://www.linkedin.com/jobs/view/4445180916/",
+          "reason": "BDR is junior IC quota-carrier role, wrong seniority.",
+          "confidence": "high"
+        }
+      ]
     }
   ],
   "cold_outreach": [],
@@ -93505,8 +95060,8 @@
   "payload_intel": {
     "source": "payload@news.payloadspace.com",
     "window_start": "2026-05-13",
-    "last_harvest": "2026-07-28",
-    "issues": 72,
+    "last_harvest": "2026-07-29",
+    "issues": 73,
     "companies": [
       {
         "company": "SpaceX",
@@ -93560,11 +95115,11 @@
       },
       {
         "company": "Firefly Aerospace",
-        "mentions": 12,
+        "mentions": 13,
         "first_seen": "2026-05-13",
-        "last_seen": "2026-07-27",
+        "last_seen": "2026-07-29",
         "signal_types": "contract, funding, m&a, other, partnership",
-        "digest": "[2026-07-27] Subject of documentary To the Black following founder Tom Markusic over six years rebuilding company from bankruptcy.; [2026-07-23] Won $13M subcontract to build the landing aeroshell for NASA's SkyFall Mars mission.; [2026-07-22] Featured in documentary 'To the Black' following founder Tom Markusic's 6-year journey rebuilding company from bankruptcy to orbit; [2026-07-08] Won $13M JPL subcontract for th",
+        "digest": "[2026-07-29] Blue Ghost mission to carry Honeybee Robotics lunar rover to the Moon NET 2028; [2026-07-27] Subject of documentary To the Black following founder Tom Markusic over six years rebuilding company from bankruptcy.; [2026-07-23] Won $13M subcontract to build the landing aeroshell for NASA's SkyFall Mars mission.; [2026-07-22] Featured in documentary 'To the Black' following founder Tom Markusic's 6-year jour",
         "on_board": "no",
         "employer_note": ""
       },
@@ -93719,6 +95274,16 @@
         "employer_note": "EMPLOYER LENS: maritime/aviation data expansions (Amadeus, energy trading); mature org, opportunistic only."
       },
       {
+        "company": "Katalyst Space",
+        "mentions": 6,
+        "first_seen": "2026-06-12",
+        "last_seen": "2026-07-29",
+        "signal_types": "funding, launch, other, product",
+        "digest": "[2026-07-29] LINK spacecraft facing critical issues weeks after launch while attempting to reboost NASA Neil Gehrels Swift Observatory; [2026-07-22] LINK mission to boost the Swift Observatory as part of 2026 ISAM operations; [2026-07-15] Released imagery of mission to boost NASA's Neil Gehrels Swift Observatory, 10 days in orbit and halfway through commissioning process.; [2026-06-29] LINK spacecraft to launch Swift",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
         "company": "Quantum Space",
         "mentions": 5,
         "first_seen": "2026-05-14",
@@ -93807,16 +95372,6 @@
         "digest": "[2026-07-20] Selected as one of seven providers under DoD NSSL Phase 3 Lane 1 program with ceiling increased to $17B total.; [2026-07-09] Added to National Security Space Launch Phase 3 Lane 1 IDIQ contract vehicle by SSC; [2026-07-06] $500M Series D in H1 2026; [2026-07-01] Over $1B raised at $4.26B valuation; embedded in Golden Dome architecture with Anduril; GEO rideshare booked out before first flight; [2026-06-0",
         "on_board": "proactive target (tier B)",
         "employer_note": "EMPLOYER LENS: $1B+ raised at $4.26B; GEO rideshare reportedly booked out before first flight, Golden Dome role with Anduril; commercial hiring must follow, cold-outreach candidate stands."
-      },
-      {
-        "company": "Katalyst Space",
-        "mentions": 5,
-        "first_seen": "2026-06-12",
-        "last_seen": "2026-07-22",
-        "signal_types": "funding, launch, product",
-        "digest": "[2026-07-22] LINK mission to boost the Swift Observatory as part of 2026 ISAM operations; [2026-07-15] Released imagery of mission to boost NASA's Neil Gehrels Swift Observatory, 10 days in orbit and halfway through commissioning process.; [2026-06-29] LINK spacecraft to launch Swift Observatory reboost mission on Pegasus XL; [2026-06-17] $12M led by Geodesic Capital for NEXUS GEO robotic servicer launching on Ariane",
-        "on_board": "no",
-        "employer_note": ""
       },
       {
         "company": "Stoke Space",
@@ -93979,22 +95534,22 @@
         "employer_note": ""
       },
       {
+        "company": "Starfighters Space",
+        "mentions": 4,
+        "first_seen": "2026-05-21",
+        "last_seen": "2026-07-29",
+        "signal_types": "funding, other, partnership, product",
+        "digest": "[2026-07-29] Plans to advance reusable airborne platform that can achieve microgravity-like conditions for customer tech development; [2026-06-05] Added to the broad-market Russell 3000 index; [2026-06-01] Closed $17.5M from undisclosed global institutional investors; [2026-05-21] MoU with Mu-g Technologies to support parabolic flight testing",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
         "company": "Kayrros",
         "mentions": 3,
         "first_seen": "2026-03-23",
         "last_seen": "2026-05-26",
         "signal_types": "M&A, m&a",
         "digest": "[2026-05-26] [TerraWatch EO Essentials] Geospatial intelligence activities acquired by Safran, while energy assets acquired by Energy Aspects.; [2026-03-23] [TerraWatch EO Essentials] French satellite-based energy and environmental analytics firm acquired by Energy Aspects for undisclosed amount.; [2026-05-22] French satellite data company to be acquired by Energy Aspects",
-        "on_board": "no",
-        "employer_note": ""
-      },
-      {
-        "company": "Starfighters Space",
-        "mentions": 3,
-        "first_seen": "2026-05-21",
-        "last_seen": "2026-06-05",
-        "signal_types": "funding, other, partnership",
-        "digest": "[2026-06-05] Added to the broad-market Russell 3000 index; [2026-06-01] Closed $17.5M from undisclosed global institutional investors; [2026-05-21] MoU with Mu-g Technologies to support parabolic flight testing",
         "on_board": "no",
         "employer_note": ""
       },
@@ -94225,6 +95780,16 @@
         "last_seen": "2026-07-28",
         "signal_types": "partnership",
         "digest": "[2026-07-28] Plans to collaborate with SES Space & Defense on Starlab space station's communication architecture.; [2026-07-27] Signed reservation agreement with DigitalBlast for services leveraging the space environment.; [2026-07-10] Signed on as customer to rely on power beamed from Pulse satellites; ",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Iridium Communications",
+        "mentions": 3,
+        "first_seen": "2026-07-15",
+        "last_seen": "2026-07-29",
+        "signal_types": "M&A, partnership, product",
+        "digest": "[2026-07-29] Strategic partnership with SKYWAVE for LEO-sat and IoT connectivity targeting heavy equipment manufacturers; [2026-07-20] Expected acquisition by Rocket Lab, will release Q2 results but not host teleconference due to pending acquisition.; [2026-07-15] Began selling anti-jamming and anti-spoofing GNSS chips.; ",
         "on_board": "no",
         "employer_note": ""
       },
@@ -94729,16 +96294,6 @@
         "employer_note": ""
       },
       {
-        "company": "Iridium Communications",
-        "mentions": 2,
-        "first_seen": "2026-07-15",
-        "last_seen": "2026-07-20",
-        "signal_types": "M&A, product",
-        "digest": "[2026-07-20] Expected acquisition by Rocket Lab, will release Q2 results but not host teleconference due to pending acquisition.; [2026-07-15] Began selling anti-jamming and anti-spoofing GNSS chips.; ",
-        "on_board": "no",
-        "employer_note": ""
-      },
-      {
         "company": "Optera",
         "mentions": 2,
         "first_seen": "2026-06-16",
@@ -94895,6 +96450,26 @@
         "last_seen": "2026-07-28",
         "signal_types": "launch, other",
         "digest": "[2026-07-28] Part of shared launch vehicle pool supporting Amazon's Leo broadband constellation deployment.; [2026-06-18] Ariane 6 launched Amazon Leo sats, the heaviest payload ever on an Ariane launcher",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Rocket Factory Augsburg",
+        "mentions": 2,
+        "first_seen": "2026-07-21",
+        "last_seen": "2026-07-29",
+        "signal_types": "launch, other",
+        "digest": "[2026-07-29] RFA ONE rocket experienced an issue requiring investigation after first pad tests at SaxaVord Spaceport; [2026-07-21] Stood up RFA ONE launcher at SaxaVord Spaceport in Scotland for second test flight as early as August 10; ",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Seraphim Space",
+        "mentions": 2,
+        "first_seen": "2026-07-22",
+        "last_seen": "2026-07-29",
+        "signal_types": "other, partnership",
+        "digest": "[2026-07-29] Partnering with Japan External Trade Organization on program to help Japanese companies scale presence across UK and European markets; [2026-07-22] Announced second Florida cohort of Investment Readiness Program with 5 startups: LEO Biosciences, RootMatrix Bio, Satlantis, Seagate Space, The Skyway Organization; ",
         "on_board": "no",
         "employer_note": ""
       },
@@ -97459,16 +99034,6 @@
         "employer_note": ""
       },
       {
-        "company": "Rocket Factory Augsburg",
-        "mentions": 1,
-        "first_seen": "2026-07-21",
-        "last_seen": "2026-07-21",
-        "signal_types": "launch",
-        "digest": "[2026-07-21] Stood up RFA ONE launcher at SaxaVord Spaceport in Scotland for second test flight as early as August 10; ",
-        "on_board": "no",
-        "employer_note": ""
-      },
-      {
         "company": "deltaVision",
         "mentions": 1,
         "first_seen": "2026-07-21",
@@ -97535,16 +99100,6 @@
         "last_seen": "2026-07-22",
         "signal_types": "partnership",
         "digest": "[2026-07-22] Established joint 300,000 GBP ($401,000) fund with UK for space partnerships, targeting transportation, satellites, research, exploration, and ISAM; ",
-        "on_board": "no",
-        "employer_note": ""
-      },
-      {
-        "company": "Seraphim Space",
-        "mentions": 1,
-        "first_seen": "2026-07-22",
-        "last_seen": "2026-07-22",
-        "signal_types": "other",
-        "digest": "[2026-07-22] Announced second Florida cohort of Investment Readiness Program with 5 startups: LEO Biosciences, RootMatrix Bio, Satlantis, Seagate Space, The Skyway Organization; ",
         "on_board": "no",
         "employer_note": ""
       },
@@ -98147,6 +99702,66 @@
         "digest": "[2026-07-28] Plans to collaborate with Starlab Space on Starlab space station's communication architecture.; ",
         "on_board": "ranked (51.0)",
         "employer_note": ""
+      },
+      {
+        "company": "Outlier Space",
+        "mentions": 1,
+        "first_seen": "2026-07-29",
+        "last_seen": "2026-07-29",
+        "signal_types": "funding",
+        "digest": "[2026-07-29] Raised $7.35M pre-seed round led by Global from Day One to develop reusable microgravity research and return vehicle, debut mission scheduled 2028; ",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Aalyria",
+        "mentions": 1,
+        "first_seen": "2026-07-29",
+        "last_seen": "2026-07-29",
+        "signal_types": "contract",
+        "digest": "[2026-07-29] Selected by ESA to build deep-space network operations center at Goonhilly Earth Station using delay-tolerant networking and Spacetime orchestration; ",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Antares",
+        "mentions": 1,
+        "first_seen": "2026-07-29",
+        "last_seen": "2026-07-29",
+        "signal_types": "funding",
+        "digest": "[2026-07-29] Closed $470M Series C, achieved reactor criticality under DOE reactor pilot program, expects to surpass $1B in defense contracts; ",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Armada",
+        "mentions": 1,
+        "first_seen": "2026-07-29",
+        "last_seen": "2026-07-29",
+        "signal_types": "other",
+        "digest": "[2026-07-29] CEO Dan Wright says company is becoming a hyperscaler for edge computing including space applications; ",
+        "on_board": "ranked (56.0)",
+        "employer_note": ""
+      },
+      {
+        "company": "Honeybee Robotics",
+        "mentions": 1,
+        "first_seen": "2026-07-29",
+        "last_seen": "2026-07-29",
+        "signal_types": "product",
+        "digest": "[2026-07-29] Lunar rover passed CDR, scheduled to fly on Firefly Aerospace Blue Ghost mission to the Moon NET 2028; ",
+        "on_board": "no",
+        "employer_note": ""
+      },
+      {
+        "company": "Space Phoenix Systems",
+        "mentions": 1,
+        "first_seen": "2026-07-29",
+        "last_seen": "2026-07-29",
+        "signal_types": "hiring",
+        "digest": "[2026-07-29] Appointed Inara Tabir as managing director of international development; ",
+        "on_board": "no",
+        "employer_note": ""
       }
     ],
     "processed_ids": [
@@ -98172,6 +99787,7 @@
       "19fa3bb0f98d639a",
       "19fa4bc15a133061",
       "19fa8df83a47a87b",
+      "19fae07f629be8d0",
       "terrawatch:6890b4e2fd9b6d00014da9a4",
       "terrawatch:6910cf768264760001dec7f7",
       "terrawatch:692592e913bca70001494668",
@@ -98202,6 +99818,7 @@
       "AXA",
       "AXA Digital",
       "Aalo Atomics",
+      "Aalyria",
       "Aampere",
       "Aardaia",
       "Advanced Space",
@@ -98215,6 +99832,7 @@
       "Aitech Systems",
       "Alen Space",
       "American Airlines",
+      "Antares",
       "Antaris",
       "Apex",
       "Applied Aerospace & Defense",
@@ -98224,6 +99842,7 @@
       "Argotec",
       "ArkEdge Space",
       "Arkadia Space",
+      "Armada",
       "Array Labs",
       "AstroForge",
       "Astrobotic",
@@ -98334,6 +99953,7 @@
       "Hippo Harvest",
       "Holland & Knight",
       "Holtec",
+      "Honeybee Robotics",
       "Honeywell Aerospace",
       "Hongqing Technology",
       "Hubble Network",
@@ -98443,6 +100063,7 @@
       "Orbital Matter",
       "Orbital Sidekick",
       "OroraTech",
+      "Outlier Space",
       "Outpost Space",
       "Outpost Technologies",
       "Overstory",
@@ -98537,6 +100158,7 @@
       "Space Forge",
       "Space Markets",
       "Space Norway",
+      "Space Phoenix Systems",
       "Space Solar",
       "Space VC",
       "SpaceComputer",
@@ -98815,7 +100437,13 @@
       "19faa866ba2da7cf",
       "19faaf440e4b6fec",
       "19fab62160c9b2e1",
-      "19fabcffc70a7364"
+      "19fabcffc70a7364",
+      "19faed10bcabc091",
+      "19faf3ee4058a751",
+      "19fafacbe581efbf",
+      "19fb01caf3a8b506",
+      "19fb0887df04fdf9",
+      "19fb0f658a9ec4de"
     ]
   },
   "outreach_radar": {
