@@ -1138,12 +1138,19 @@ def build_html(data):
             sc_sort = 0
         why = t.get("why_now") or t.get("why", "")
         move = t.get("first_move") or t.get("entry_point", "")
+        from urllib.parse import quote_plus
+        links = []
+        if t.get("careers_url"):
+            links.append(f'<a href="{t["careers_url"]}" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none">Careers</a>')
+        links.append(f'<a href="https://www.google.com/search?q={quote_plus((t.get("company") or "") + " company")}" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:none">Search</a>')
+        links_cell = " &middot; ".join(links)
         pt_rows += (f'    <tr><td data-sort="{t.get("rank", 999)}">{t.get("rank", "")}</td>'
                     f'<td class="company-name" data-sort="{(t.get("company") or "").lower()}">{t.get("company", "")}</td>'
                     f'<td data-type="num" data-sort="{sc_sort}">{score_cell}</td>'
                     f'<td data-sort="{lbl.lower()}"><span class="pill pill-{cls}">{lbl}</span></td>'
                     f'<td style="max-width:330px;font-size:11px;">{why}</td>'
                     f'<td style="max-width:250px;font-size:11px;color:var(--text-muted)">{move}</td>'
+                    f'<td style="font-size:11px;white-space:nowrap">{links_cell}</td>'
                     f'<td data-sort="{t.get("last_signal", "")}" style="font-size:11px;color:var(--text-muted)">{t.get("last_signal", "")}</td></tr>\n')
     if pt:
         hidden_note = f' <span class="badge pill-muted">{pt_hidden} parked</span>' if pt_hidden else ""
@@ -1153,7 +1160,7 @@ def build_html(data):
 <input class="table-filter" type="search" placeholder="Filter targets..." aria-label="Filter targets" />
 <div class="table-wrapper" style="margin-top:12px">
 <table class="pipeline-table">
-  <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="num">Outreach fit</th><th data-type="text">Status</th><th>Why now</th><th>First move</th><th data-type="text">Last signal</th></tr></thead>
+  <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="num">Outreach fit</th><th data-type="text">Status</th><th>Why now</th><th>First move</th><th>Links</th><th data-type="text">Last signal</th></tr></thead>
   <tbody>
 {pt_rows}
   </tbody>
