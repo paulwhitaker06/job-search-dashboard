@@ -884,7 +884,7 @@ def build_html(data):
         if t.get("hold_until"):
             hold = f' <span class="pill pill-muted" style="font-size:10px;">hold until {t["hold_until"]}</span>'
         wtdn_items.append((1, t.get('company',''), f"""  <div class="action-item" data-company="{t.get('company','')}">
-    <div class="priority" style="background:var(--amber);">!</div>
+    <div class="priority" style="background:var(--amber);color:#141414;">!</div>
     <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}</div>
   </div>\n"""))
 
@@ -919,7 +919,7 @@ def build_html(data):
             continue
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
         wtdn_items.append((2, a.get('company',''), f"""  <div class="action-item" data-company="{a.get('company','')}">
-    <div class="priority" style="background:var(--amber);">?</div>
+    <div class="priority" style="background:var(--amber);color:#141414;">?</div>
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">DECIDE</span> — applied {a.get('applied','')}, {age} days silent. Find a person to write, or let it ride.{link}</div>
   </div>\n"""))
 
