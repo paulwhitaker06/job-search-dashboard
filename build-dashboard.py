@@ -1115,6 +1115,7 @@ def build_html(data):
         "sent": ("Sent", "purple"),
         "replied": ("Replied", "green"),
         "parked": ("Parked", "muted"),
+        "engaged": ("Engaged via application", "purple"),
         "dead": ("Dead", "red"),
         # Legacy statuses render sensibly until the Phase 13c migration rescores.
         "cold_outreach": ("Identified", "cyan"),
