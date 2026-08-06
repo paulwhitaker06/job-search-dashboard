@@ -1115,7 +1115,6 @@ def build_html(data):
         "sent": ("Sent", "purple"),
         "replied": ("Replied", "green"),
         "parked": ("Parked", "muted"),
-        "engaged": ("Engaged via application", "purple"),
         "dead": ("Dead", "red"),
         # Legacy statuses render sensibly until the Phase 13c migration rescores.
         "cold_outreach": ("Identified", "cyan"),
@@ -1915,48 +1914,12 @@ function updateStaleness() {{
     }}
   }});
 
-  // Inject action items into What To Do Next
-  const banner = document.querySelector('.action-banner');
-  if (banner) {{
-    // Remove any previous staleness items
-    banner.querySelectorAll('.followup-item').forEach(el => el.remove());
-
-    if (actions.length > 0) {{
-      // Sort: retire first, then stale, then followup; within each by days descending
-      const levelOrder = {{ retire: 0, stale: 1, followup: 2 }};
-      actions.sort((a, b) => {{
-        if (a.level !== b.level) return (levelOrder[a.level] || 99) - (levelOrder[b.level] || 99);
-        return b.days - a.days;
-      }});
-
-      const existing = banner.querySelectorAll('.action-item:not(.followup-item)').length;
-
-      actions.forEach((f, i) => {{
-        const div = document.createElement('div');
-        div.className = 'action-item followup-item';
-        let color, label, badge;
-        if (f.level === 'retire') {{
-          color = 'var(--red)';
-          badge = '<span class="pill pill-red" style="font-size:10px;margin-left:6px">RETIRE</span>';
-          label = 'Follow-up sent ' + f.daysSinceFU + 'd ago, ' + f.days + 'd total — time to write off?';
-        }} else if (f.level === 'stale') {{
-          color = 'var(--red)';
-          badge = '<span class="pill pill-red" style="font-size:10px;margin-left:6px">STALE</span>';
-          label = f.days + 'd with no response — follow up or write off';
-        }} else {{
-          color = 'var(--amber)';
-          badge = '<span class="pill pill-amber" style="font-size:10px;margin-left:6px">FOLLOW UP</span>';
-          label = f.days + 'd with no response — consider a follow-up';
-        }}
-        div.innerHTML = `<div class="priority" style="color:${{color}}">${{existing + i + 1}}</div><div><strong>${{f.company}}</strong>${{badge}} — ${{label}}</div>`;
-        banner.appendChild(div);
-      }});
-
-      // Remove "caught up" message if actions exist
-      const caughtUp = banner.querySelector('.caught-up');
-      if (caughtUp) caughtUp.remove();
-    }}
-  }}
+  // What To Do Next injection removed 2026-08-06: it predated the
+  // server-rendered DECIDE cards and produced duplicate per-company items
+  // (EnduroSat #4 DECIDE + #12 FOLLOW UP). Server-side cards with
+  // one-card-per-company dedup are the single implementation now; this
+  // function only colors application rows by staleness.
+}}
 }}
 updateStaleness();
 
