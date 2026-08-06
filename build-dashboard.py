@@ -919,7 +919,7 @@ def build_html(data):
             continue
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
         wtdn_items.append((2, a.get('company',''), f"""  <div class="action-item" data-company="{a.get('company','')}">
-    <div class="priority" style="background:var(--amber);">{age}d</div>
+    <div class="priority" style="background:var(--amber);">?</div>
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">DECIDE</span> — applied {a.get('applied','')}, {age} days silent. Find a person to write, or let it ride.{link}</div>
   </div>\n"""))
 
@@ -1256,7 +1256,7 @@ def build_html(data):
   .action-banner {{ background:linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.1)); border:1px solid rgba(99,102,241,0.3); border-radius:10px; padding:16px 20px; margin-bottom:24px; }}
   .action-banner h2 {{ font-size:15px; font-weight:600; margin-bottom:10px; color:var(--accent-light); }}
   .action-item {{ display:flex; align-items:flex-start; gap:10px; padding:5px 0; font-size:13px; }}
-  .action-item .priority {{ flex-shrink:0; width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; background:var(--accent); color:white; }}
+  .action-item .priority {{ flex-shrink:0; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; letter-spacing:-0.02em; background:var(--accent); color:white; }}
   .table-wrapper {{ overflow-x:auto; border-radius:10px; border:1px solid var(--border); margin-bottom:24px; }}
   /* Per-table search filter */
   .table-filter {{ width:100%; padding:7px 12px; margin:8px 0 6px 0; background:var(--card); border:1px solid var(--border); border-radius:6px; color:var(--text); font-size:12.5px; font-family:inherit; box-sizing:border-box; transition:border-color 0.15s, box-shadow 0.15s; }}
@@ -1439,7 +1439,7 @@ def build_html(data):
     .action-banner {{ padding:12px; margin:16px 0; }}
     .action-banner h2 {{ font-size:15px; }}
     .action-item {{ padding:8px; gap:8px; }}
-    .action-item .priority {{ font-size:16px; min-width:24px; }}
+    .action-item .priority {{ font-size:11px; min-width:24px; }}
     .dd-grid {{ gap:10px; }}
     .ip-grid {{ grid-template-columns:1fr; }}
     /* Buttons and pills get proper tap targets per Apple HIG (min ~44px) */
