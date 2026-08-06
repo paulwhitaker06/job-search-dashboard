@@ -867,7 +867,12 @@ def build_html(data):
     # each with copy-path links to the files needed. Data: action_todos
     # [{text, doc_path, url, hold_until, done}]. Mark done:true to clear.
     todos = [t for t in data.get("action_todos", []) if not t.get("done")]
-    todo_items = ""
+    # What To Do Next dedup (Paul, 2026-08-06): one card per company. When a
+    # company earns multiple cards (interview prep, manual to-do, follow-up
+    # aging, apply, outreach) only the highest-priority one renders.
+    # Priority: 0 interview prep, 1 manual to-do, 2 follow-up aging,
+    # 3 apply-to-ranked, 4 proactive outreach.
+    wtdn_items = []
     for t in todos:
         links = ""
         if t.get("doc_path"):
@@ -878,10 +883,10 @@ def build_html(data):
         hold = ""
         if t.get("hold_until"):
             hold = f' <span class="pill pill-muted" style="font-size:10px;">hold until {t["hold_until"]}</span>'
-        todo_items += f"""  <div class="action-item" data-company="{t.get('company','')}">
+        wtdn_items.append((1, t.get('company',''), f"""  <div class="action-item" data-company="{t.get('company','')}">
     <div class="priority" style="background:var(--amber);">!</div>
     <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}</div>
-  </div>\n"""
+  </div>\n"""))
 
     # Interview prep (2026-07-14, Paul): a scheduled interview always surfaces
     # a prep item in What To Do Next, above everything else.
@@ -894,10 +899,10 @@ def build_html(data):
             _dp = a['doc_path'].replace("'", "\\'")
             iv_brief = f' <a href="#" style="font-size:11px;" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief</a>'
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
-        todo_items = f"""  <div class="action-item" data-company="{a.get('company','')}">
+        wtdn_items.append((0, a.get('company',''), f"""  <div class="action-item" data-company="{a.get('company','')}">
     <div class="priority" style="background:var(--purple);">IV</div>
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-purple" style="font-size:10px;">PREP INTERVIEW</span> — interview {ivd}. {a.get('next_action','')[:140]}{link}{iv_brief}</div>
-  </div>\n""" + todo_items
+  </div>\n"""))
 
     # Follow-up aging: an application awaiting response for 14+ days with no
     # follow-up gets a nudge (Paul, 2026-07-20: 11 days is too soon; his own
@@ -913,21 +918,44 @@ def build_html(data):
         if not (14 <= age <= 35):
             continue
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
-        todo_items += f"""  <div class="action-item" data-company="{a.get('company','')}">
+        wtdn_items.append((2, a.get('company',''), f"""  <div class="action-item" data-company="{a.get('company','')}">
     <div class="priority" style="background:var(--amber);">{age}d</div>
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">DECIDE</span> — applied {a.get('applied','')}, {age} days silent. Find a person to write, or let it ride.{link}</div>
-  </div>\n"""
+  </div>\n"""))
 
-    action_items = ""
     for i, d in enumerate(actionable[:5]):
         new_badge = f' {pill("New", "cyan")}' if (d.get("is_new") or is_new(d.get("added"))) else ""
         eff = d.get("effective_score", 0)
         score_str = f' <span style="color:{score_color(eff)};font-weight:600">{eff:.0f}/100</span>' if eff else ""
         hook = d.get("hook", d.get("verdict", "")[:120])
-        action_items += f'''  <div class="action-item" data-company="{d["company"]}">
+        wtdn_items.append((3, d["company"], f'''  <div class="action-item" data-company="{d["company"]}">
     <div class="priority">{i+1}</div>
-    <div><strong>{d["company"]}</strong>{score_str} — {hook}{new_badge}</div>
-  </div>\n'''
+    <div><strong>{d["company"]}</strong> <span class="pill pill-cyan" style="font-size:10px;">APPLY</span>{score_str} — {hook}{new_badge}</div>
+  </div>\n'''))
+
+    # Proactive outreach (2026-08-06): outreach-fit 70+ still untouched earns
+    # a What To Do Next card, capped at 3.
+    outreach_ready = [t for t in data.get("proactive_targets", [])
+                      if (t.get("outreach_score") or 0) >= 70
+                      and t.get("status") == "identified"][:3]
+    for t in outreach_ready:
+        osc = t.get("outreach_score", 0)
+        why = (t.get("why_now") or t.get("why", ""))[:150]
+        wtdn_items.append((4, t.get("company", ""), f'''  <div class="action-item" data-company="{t.get("company","")}">
+    <div class="priority" style="background:var(--purple);">&#8599;</div>
+    <div><strong>{t.get("company","")}</strong> <span class="pill pill-purple" style="font-size:10px;">OUTREACH</span> <span style="color:{score_color(osc)};font-weight:600">{osc:.0f}/100</span> — {why}</div>
+  </div>\n'''))
+
+    # Dedup by company, highest priority wins; stable within priority.
+    seen_companies = set()
+    todo_items = ""
+    for prio, company, html in sorted(wtdn_items, key=lambda x: x[0]):
+        key = (company or "").strip().lower()
+        if key and key in seen_companies:
+            continue
+        seen_companies.add(key)
+        todo_items += html
+    action_items = ""
 
     # Morning brief rows (sort newest-first so appended entries don't get buried)
     brief_rows = ""
@@ -1081,32 +1109,51 @@ def build_html(data):
     # not in a document. Rendered as its own filterable section; the watch
     # list keeps feeding Company of the Day separately.
     pt = data.get("proactive_targets", [])
-    pt_status = {
-        "cold_outreach": ("Cold Outreach", "cyan"),
+    ot_status = {
+        "identified": ("Identified", "cyan"),
+        "drafted": ("Drafted", "amber"),
+        "sent": ("Sent", "purple"),
+        "replied": ("Replied", "green"),
+        "parked": ("Parked", "muted"),
+        "dead": ("Dead", "red"),
+        # Legacy statuses render sensibly until the Phase 13c migration rescores.
+        "cold_outreach": ("Identified", "cyan"),
         "posted": ("Posted Role", "green"),
         "applied_followup": ("Follow Up", "amber"),
         "in_process": ("In Process", "purple"),
         "watch": ("Watch", "muted"),
         "not_actionable": ("Not Actionable", "red"),
     }
+    pt_active = [t for t in pt if t.get("status") not in ("parked", "dead")]
+    pt_hidden = len(pt) - len(pt_active)
     pt_rows = ""
-    for t in pt:
-        lbl, cls = pt_status.get(t.get("status", ""), (t.get("status", ""), "muted"))
+    for t in pt_active:
+        lbl, cls = ot_status.get(t.get("status", ""), (t.get("status", ""), "muted"))
+        sc = t.get("outreach_score")
+        if sc:
+            score_cell = f'<span style="color:{score_color(sc)};font-weight:600">{sc:.0f}</span><span style="color:var(--text-muted)">/100</span>'
+            sc_sort = sc
+        else:
+            score_cell = '<span class="pill pill-muted">pending</span>'
+            sc_sort = 0
+        why = t.get("why_now") or t.get("why", "")
+        move = t.get("first_move") or t.get("entry_point", "")
         pt_rows += (f'    <tr><td data-sort="{t.get("rank", 999)}">{t.get("rank", "")}</td>'
                     f'<td class="company-name" data-sort="{(t.get("company") or "").lower()}">{t.get("company", "")}</td>'
-                    f'<td data-sort="{t.get("tier", "")}">{t.get("tier", "")}</td>'
+                    f'<td data-type="num" data-sort="{sc_sort}">{score_cell}</td>'
                     f'<td data-sort="{lbl.lower()}"><span class="pill pill-{cls}">{lbl}</span></td>'
-                    f'<td style="max-width:230px;font-size:11px;">{t.get("entry_point", "")}</td>'
-                    f'<td style="max-width:330px;font-size:11px;color:var(--text-muted)">{t.get("why", "")}</td>'
-                    f'<td style="max-width:180px;font-size:11px;color:var(--text-muted)">{t.get("flags", "")}</td></tr>\n')
+                    f'<td style="max-width:330px;font-size:11px;">{why}</td>'
+                    f'<td style="max-width:250px;font-size:11px;color:var(--text-muted)">{move}</td>'
+                    f'<td data-sort="{t.get("last_signal", "")}" style="font-size:11px;color:var(--text-muted)">{t.get("last_signal", "")}</td></tr>\n')
     if pt:
+        hidden_note = f' <span class="badge pill-muted">{pt_hidden} parked</span>' if pt_hidden else ""
         proactive_targets_html = f"""<details open class="collapsible-section">
-<summary class="section-header">Proactive Targets <span class="badge pill-purple">{len(pt)} companies</span></summary>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Companies at a commercial inflection where a senior market-builder seat fits, posted or not. Researched 2026-07-06, corrected 2026-07-07 against the applications ledger. Tier A = pursue in the next two weeks; foreign seats are pursue-if-sponsored; active-clearance seats are flagged not actionable.</p>
+<summary class="section-header">Proactive Outreach <span class="badge pill-purple">{len(pt_active)} ranked</span>{hidden_note}</summary>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">One consolidated lane (replaces Proactive Targets + Outreach Radar, 2026-08-06). Companies worth approaching before a role is posted, ranked by outreach fit out of 100: function gap 30%, pattern fit 30%, momentum 25%, access 15%. Refreshed weekly from newsletter intel; entries with no fresh signal in 60 days park automatically. Score 70+ surfaces in What To Do Next.</p>
 <input class="table-filter" type="search" placeholder="Filter targets..." aria-label="Filter targets" />
 <div class="table-wrapper" style="margin-top:12px">
 <table class="pipeline-table">
-  <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Tier</th><th data-type="text">Status</th><th data-type="text">Entry point</th><th>Why now / fit</th><th>Flags</th></tr></thead>
+  <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="num">Outreach fit</th><th data-type="text">Status</th><th>Why now</th><th>First move</th><th data-type="text">Last signal</th></tr></thead>
   <tbody>
 {pt_rows}
   </tbody>
@@ -1154,27 +1201,7 @@ def build_html(data):
         payload_intel_html = ""
 
 
-    # Outreach Radar (2026-07-09): weekly Phase 13c shortlist of high-momentum
-    # intel companies with no posted commercial role and no engagement yet.
-    radar = data.get("outreach_radar", {})
-    radar_items_html = ""
-    for it in radar.get("items", []):
-        radar_items_html += f'''  <div class="action-item" data-company="{it.get("company","")}">
-    <div class="priority" style="background:var(--purple);">&#8599;</div>
-    <div><strong>{it.get("company","")}</strong> <span class="pill pill-purple" style="font-size:10px;">{it.get("mentions",0)} mentions</span> <span style="color:var(--text-muted);font-size:11px;">{it.get("signals","")}</span><br>
-    <span style="font-size:12px;">{it.get("why_now","")}</span><br>
-    <span style="font-size:12px;color:var(--text-muted);"><strong>First move:</strong> {it.get("first_move","")}</span></div>
-  </div>\n'''
-    if radar_items_html:
-        outreach_radar_html = f'''<details class="collapsible-section" open>
-<summary class="section-header">Outreach Radar <span class="badge pill-purple">week of {radar.get("last_run","")}</span></summary>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:10px;">Companies with momentum in the newsletter intel, no posted senior-commercial role, and no engagement yet. The unposted-job play: reach them before the req exists.</p>
-{radar_items_html}
-</details>
-
-'''
-    else:
-        outreach_radar_html = ""
+    # Outreach Radar retired 2026-08-06: consolidated into Proactive Outreach.
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -1572,7 +1599,7 @@ def build_html(data):
 </div>
 </details>
 
-{outreach_radar_html}{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
+{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
 
 <details class="archive-section">
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
