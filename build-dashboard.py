@@ -292,7 +292,7 @@ def build_app_rows(apps, include=None):
             "2nd_interview_scheduled": ("2nd Interview Scheduled", "cyan"),
             "1st_interview_held": ("1st Interview Held", "cyan"),
             "1st_interview_scheduled": ("1st Interview Scheduled", "cyan"),
-            "awaiting": ("Awaiting", "amber"),
+            "awaiting": ("No response", "amber"),
             "applied": ("Applied", "amber"),
             "rejected": ("Rejected", "muted"),
             "filled": ("Filled", "muted"),
@@ -1528,7 +1528,8 @@ def build_html(data):
 {personal_section_html}
 
 <details open class="collapsible-section">
-<summary class="section-header">Applications &amp; Outreach Sent <span class="badge pill-green">{s["awaiting_response"]} active</span> <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed below</span></summary>
+<summary class="section-header">Applications &amp; Outreach Sent <span class="badge pill-green">{s["active_interviews"]} in conversation</span> <span class="badge pill-amber" style="font-size:10px;">{s["awaiting_response"]} unanswered</span> <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed below</span></summary>
+<p style="font-size:12px;color:var(--text-muted);margin:8px 0 10px 0;">Everything here has been sent; until a human responds, an application and a direct note are the same state. "In conversation" means a person has actually engaged.</p>
 <input class="table-filter" type="search" placeholder="Filter applications by company, role, domain, status..." aria-label="Filter applications" />
 <div class="table-wrapper">
 <table class="applications-table">
