@@ -1528,7 +1528,7 @@ def build_html(data):
 {personal_section_html}
 
 <details open class="collapsible-section">
-<summary class="section-header">Applications Sent <span class="badge pill-green">{s["awaiting_response"]} active</span> <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed below</span></summary>
+<summary class="section-header">Applications &amp; Outreach Sent <span class="badge pill-green">{s["awaiting_response"]} active</span> <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed below</span></summary>
 <input class="table-filter" type="search" placeholder="Filter applications by company, role, domain, status..." aria-label="Filter applications" />
 <div class="table-wrapper">
 <table class="applications-table">
@@ -1538,6 +1538,8 @@ def build_html(data):
   </tbody>
 </table>
 </div>
+
+{speculative_outreach_html}
 
 </details>
 
@@ -1606,7 +1608,7 @@ def build_html(data):
 </div>
 </details>
 
-{proactive_targets_html}{payload_intel_html}{speculative_outreach_html}
+{proactive_targets_html}{payload_intel_html}
 
 <details class="archive-section">
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
