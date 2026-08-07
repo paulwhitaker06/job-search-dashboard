@@ -2758,6 +2758,19 @@ def publish_to_github(html_path):
     lock conflicts.
     """
     dashboard_dir = os.path.dirname(os.path.abspath(html_path))
+    # Script-balance guard (2026-08-07): a stray brace from a hand edit shipped
+    # a SyntaxError that silently disabled every onclick on the page (Draft
+    # copy-links, status dropdowns). Fail the build instead of the browser.
+    import re as _re
+    _html = open(html_path, encoding="utf-8").read()
+    for _i, _m in enumerate(_re.finditer(r"<script[^>]*>(.*?)</script>", _html, _re.S)):
+        _b = _m.group(1)
+        if _b.count("{") != _b.count("}"):
+            raise SystemExit(
+                f"BUILD ABORTED: script block {_i} has unbalanced braces "
+                f"({_b.count('{')} open vs {_b.count('}')} close). "
+                "If a legitimate string literal caused this, rebalance with a comment brace.")
+
     index_path = os.path.join(dashboard_dir, "index.html")
 
     try:
