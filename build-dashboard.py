@@ -1093,7 +1093,7 @@ def build_html(data):
     cold_outreach_list = data.get("cold_outreach", [])
     if cold_outreach_list:
         speculative_outreach_html = f'''<div class="section-header">Speculative Outreach <span class="badge pill-blue">{len(cold_outreach_list)} sent</span></div>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Direct outbound emails tracked separately from form-submitted applications. Form-based speculative applications (no specific role posted) live at the bottom of Applications Sent with a "Speculative" status.</p>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Notes sent directly to a person (LinkedIn, email) with no application submitted. A company appears in the table above only when a resume actually went into their system; one that got both a resume and a note (e.g. Pixxel) appears in both.</p>
 <div class="table-wrapper">
 <table>
   <thead><tr><th>Company</th><th>Contact</th><th>Method</th><th>Date</th><th>Status</th><th>Notes</th></tr></thead>
