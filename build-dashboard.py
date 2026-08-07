@@ -1930,7 +1930,6 @@ function updateStaleness() {{
   // one-card-per-company dedup are the single implementation now; this
   // function only colors application rows by staleness.
 }}
-}}
 updateStaleness();
 
 // --- Interview countdown live ticker ---
