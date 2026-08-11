@@ -883,9 +883,16 @@ def build_html(data):
         hold = ""
         if t.get("hold_until"):
             hold = f' <span class="pill pill-muted" style="font-size:10px;">hold until {t["hold_until"]}</span>'
+        msg = ""
+        if t.get("message"):
+            msg = (f'<details style="margin-top:6px"><summary style="cursor:pointer;color:var(--cyan);font-size:11px;">'
+                   f'Message to send <span style="color:var(--text-muted)">(expand, then Copy)</span></summary>'
+                   f'<div style="margin-top:4px;"><a href="#" onclick="copyMsg(this); return false;" style="font-size:11px;">Copy message</a>'
+                   f'<div class="fu-msg" style="white-space:pre-wrap;font-size:11.5px;color:var(--text);padding:8px 10px;'
+                   f'background:var(--card);border-radius:6px;margin-top:4px;">{t["message"]}</div></div></details>')
         wtdn_items.append((1, t.get('company',''), f"""  <div class="action-item" data-company="{t.get('company','')}">
     <div class="priority" style="background:var(--amber);color:#141414;">!</div>
-    <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}</div>
+    <div><strong>{t.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">TO DO</span>{hold} — {t.get('text','')}{links}{msg}</div>
   </div>\n"""))
 
     # Interview prep (2026-07-14, Paul): a scheduled interview always surfaces
@@ -973,7 +980,10 @@ def build_html(data):
         status = c.get("status", "sent")
         status_cls = {"sent": "pill-blue", "replied": "pill-green", "meeting": "pill-purple", "no_reply": "pill-muted", "declined": "pill-red"}.get(status, "pill-muted")
         status_label = {"sent": "Sent", "replied": "Replied", "meeting": "Meeting", "no_reply": "No Reply", "declined": "Declined"}.get(status, status.title())
-        cold_outreach_rows += f'    <tr><td class="company-name">{c["company"]}</td><td>{c.get("contact","—")}</td><td>{c.get("method","—")}</td><td>{c.get("date","—")}</td><td><span class="pill {status_cls}">{status_label}</span></td><td style="max-width:260px;font-size:11px;color:var(--text-muted)">{c.get("notes","")}</td></tr>\n'
+        fu = c.get("followup_message", "")
+        fu_html = (f'<details style="margin-top:4px"><summary style="cursor:pointer;color:var(--cyan);font-size:10.5px;">Prepared follow-up (send on accept)</summary>'
+                   f'<div style="white-space:pre-wrap;font-size:11px;color:var(--text);padding:6px 8px;background:var(--card);border-radius:6px;margin-top:4px;">{fu}</div></details>') if fu else ""
+        cold_outreach_rows += f'    <tr><td class="company-name">{c["company"]}</td><td>{c.get("contact","—")}</td><td>{c.get("method","—")}</td><td>{c.get("date","—")}</td><td><span class="pill {status_cls}">{status_label}</span></td><td style="max-width:340px;font-size:11px;color:var(--text-muted)">{c.get("notes","")}{fu_html}</td></tr>\n'
 
     # Interview prep + countdown
     interviews = get_interviews(data.get("applications", []))
@@ -1849,6 +1859,15 @@ function copyFilePath(el, path) {{
     document.execCommand('copy');
     tmp.remove();
     showToast(`\u2705 Path copied! Open Finder \u2192 <b>Cmd+Shift+G</b> \u2192 paste to open.`);
+  }});
+}}
+
+// --- Copy a WTDN prepared message to clipboard ---
+function copyMsg(el) {{
+  const box = el.parentElement.querySelector('.fu-msg');
+  if (!box) return;
+  navigator.clipboard.writeText(box.innerText).then(() => {{
+    showToast('\u2705 Message copied, ready to paste into LinkedIn.');
   }});
 }}
 
