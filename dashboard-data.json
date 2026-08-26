@@ -39833,27 +39833,6 @@
   ],
   "watch_list": [
     {
-      "company": "Esper",
-      "category": "Hyperspectral EO / Near-Infrared Mapping",
-      "why": "Seed stage Australian hyperspectral startup, launched payload Aug 2025, Startup Space pitch winner",
-      "roast": "Esper is what happens when someone watches Pixxel raise $95 million and thinks yeah, we can do that too, but from Melbourne and with a tighter budget. They are building hyperspectral satellites using near-infrared bands to reveal what RGB cameras miss, which is the same value proposition as everyone else in this lane except they actually launched a camera last August on a Dhruva Space platform and won a pitch competition in Qatar three weeks ago. The founder is a 20-something named Shoaib Iqbal who started the company while studying space science at RMIT, raised $3.1 million in seed funding, and is now out there trying to convince the market that the world needs another hyperspectral constellation. The honest take is that he might be right, but being right early in a capital intensive hardware business is how you end up selling to a larger acquirer at a discount, which is not necessarily a bad outcome if you are the partnerships hire who helped structure the exit. You have seen this movie before. KSAT spent the mid 2010s assembling a multi provider EO ecosystem specifically because no single constellation could cover every use case and every buyer had a different refresh rate and resolution threshold they were willing to pay for. Esper is in the pre-commercial stage where they need someone who can walk into a room and explain why their 135 spectral bands solve a problem the buyer did not know they had, and then structure a pilot that makes the case for them. That is the job you did at GFW when you cold walked the ASN subsea cable deal from zero to signed contract. The company is small, the runway is short, and the role probably does not exist yet, but sometimes the best opportunities are the ones you have to talk them into creating.",
-      "careers_url": "https://www.pixxel.space/careers"
-    },
-    {
-      "company": "SatVu",
-      "category": "Thermal Imaging EO / Climate Resilience",
-      "why": "UK thermal constellation, \u00a341M funded, strong climate and infrastructure use case alignment",
-      "roast": "SatVu is building what they call the world's thermometer, a satellite constellation that measures thermal emissions instead of visible light, which sounds like a gimmick until you spend five minutes thinking about methane monitoring, building energy audits, wildfire detection, and industrial heat signature compliance and then it starts to feel like the only EO dataset that matters in a world where half the regulatory pressure is pointed at embodied carbon and Scope 1 emissions nobody can actually verify. They raised \u00a341 million, they are UK based, and their pitch is climate resilience through thermal transparency, which is exactly the kind of regulatory tailwind business model that gets traction when government buyers run out of patience with self reported data. The problem is that thermal imaging from space is hard. The physics are unforgiving, the refresh rate buyers expect is faster than the constellation can deliver at launch, and the commercial argument requires you to walk enterprises through a use case they have never paid for before, which means long sales cycles and a lot of pilot fatigue. But that is the exact shape of problem you solved at KSAT when you carried the first oil spill monitoring contract across six continents to buyers who were not sure they needed it until the regulatory wind shifted and suddenly they could not afford to not have it. SatVu is pre-traction in the sense that the constellation is still ramping, but post-concept in the sense that the data is real and the buyers are starting to lean in. If they have a commercial or partnerships role and you are not at least curious, you are overthinking it.",
-      "careers_url": "https://www.satvu.com/careers"
-    },
-    {
-      "company": "Kayrros",
-      "category": "Geospatial Emissions Intelligence / Satellite Analytics",
-      "why": "Combines satellite imagery with energy systems intelligence for methane and CO2 tracking. Dual-use buyer base (govs, finance, energy operators) maps to GFW commercial ecosystem experience and Planet deal infrastructure credibility.",
-      "roast": "Kayrros has been the methane detection company for so long that people forget they started as an oil analytics shop, and now that the IRA and EU Methane Regulation are actually real they are scrambling to build a commercial function that can sell to someone other than commodity traders and the occasional nervous supermajor. You built the ENI relationship over four years knowing the goal was never ENI, it was moving NOPSEMA, and NOPSEMA would move every other operator in the basin. Kayrros has the data and the Science publication and the regulatory tailwind. What they do not have is someone who knows how to turn a technical capability into a policy wedge and a policy wedge into a commercial pipeline. They are Paris-based which means you would be remote but the CEO is ex-IEA so he knows how governments actually make decisions, and the product is methane monitoring which is the one climate data vertical where the regulatory hammer is already falling. You have spent fifteen years finding the organizations where something shifted enough that the status quo feels riskier than it used to. Kayrros is selling into that shift right now. Someone just needs to close it.",
-      "careers_url": "https://www.kayrros.com/careers/"
-    },
-    {
       "company": "Marvin",
       "category": "Agricultural Resilience / Satellite + AI",
       "why": "Israeli climate ag tech using satellite data and AI for land-based value chains. Supply chain risk and climate adaptation framing overlap with GFW derived data product model and ASN precision use case experience.",
@@ -40076,6 +40055,27 @@
       "why": "$11M raised H1 2026, edge AI hardware for satellites. Directly adjacent to EO processing bottleneck Paul knows from KSAT + GFW.",
       "roast": "Ubotica makes edge computing hardware for satellites, which is a polite way of saying they build chips that can survive radiation and still run a neural network at 400 kilometers above Kazakhstan. They raised $11 million in the first half of 2026, they are based in Ireland, and their pitch is that if you process the data on the satellite before you downlink it, you save bandwidth, you save latency, and you save money, assuming you trust a $40,000 circuit board not to fry itself the first time a solar flare gets cranky. The market for this is real. Every EO company with a constellation is trying to figure out how to do more compute in orbit and less on the ground, because downlink is expensive and slow and your customer does not want to wait six hours to find out if that oil slick is still spreading. The problem is that on-orbit processing is still mostly a science project. The hardware works in theory. It works in lab conditions. It works until it does not, and when it does not, you cannot exactly send a technician up to swap the GPU. But Paul has been in every conversation where someone promises that edge compute will solve the bottleneck, and he has also been in the conversations six months later when it turned out the bottleneck was actually the service contract, or the API, or the fact that the customer did not trust the algorithm. He knows how to ask the questions that separate the companies that are building real products from the companies that are building PowerPoint slides with thermodynamics footnotes. Ubotica is venture-backed, hardware-first, and absolutely dependent on partnerships with satellite operators and EO platforms to prove the business case. If they are hiring someone who can translate between chip designers and the commercial buyers who might actually pay for this, Paul should be on that list.",
       "careers_url": "https://ubotica.com/careers"
+    },
+    {
+      "company": "Constellr",
+      "category": "Thermal EO / Climate Intelligence",
+      "why": "Thermal infrared constellation for agriculture, water stress, climate adaptation. Strong funding, EU/US market focus.",
+      "roast": "Constellr is selling thermal imagery to an agriculture market that spent the last decade learning the expensive lesson that more data does not fix bad margins. You spent ten years at KSAT watching oil companies pay for monitoring they did not want because regulators made them, and another three at GFW learning that free data still needs a commercial relationship when the stakes go up. Constellr has the tech and they have the funding, but the value proposition only works if someone on the other end believes thermal anomaly detection at field scale changes their operating model enough to pay recurring fees. The EU agritech buyers are sophisticated and exhausted. The US row crop operators will take the data if a grant pays for it. What Constellr needs is someone who knows how to find the buyer who is already in enough pain that a new data layer feels like a solution and not a science project. You know that buyer. You have closed that deal in three different industries. They need someone who can walk into an insurance underwriting meeting, a water authority boardroom, or a sovereign wealth agriculture investment committee and make thermal EO feel inevitable. If they are still pitching farmers directly, walk away. If they have moved upstream to the risk transfer and regulatory layer, take the call.",
+      "careers_url": "https://www.constellr.com/careers"
+    },
+    {
+      "company": "Pixxel",
+      "category": "Hyperspectral EO",
+      "why": "Launched Firefly constellation, hyperspectral at scale, strong positioning in methane/emissions and agriculture verticals.",
+      "roast": "Pixxel has the hardest sell in earth observation, which is hyperspectral imagery to buyers who barely understand multispectral and still pay for someone to convert it into a map with three colors. You know this pain intimately. At KSAT you sold oil spill detection to asset managers who wanted a red-yellow-green risk score, not a sixteen-band spectral signature. At GFW you built the commercial function on top of a platform that was technically extraordinary and commercially illegible until you translated it into something an AXA underwriter could price. Pixxel is technically credible and their Firefly birds are real, but hyperspectral wins when the customer has a specific chemical or biological question that cheaper data cannot answer. Methane is the wedge. Agriculture is the long game. Defense is the money. If Pixxel has figured out the methane-to-insurance-to-regulatory channel, they are dangerous and you should be talking to them. If they are still pitching crop health monitoring to agronomists, they are three years from commercial traction and you will spend that whole time explaining what a nanometer is. The role would be to build the commercial function from scratch, which is exactly your pattern. The question is whether they know they need that function built or whether they think more satellites fix the sales problem.",
+      "careers_url": "https://www.pixxel.space/careers"
+    },
+    {
+      "company": "AiDash",
+      "category": "EO Analytics / Infrastructure Monitoring",
+      "why": "Satellite-powered infrastructure monitoring (utilities, telecom, transport). Software play, no constellation, strong commercial traction already.",
+      "roast": "AiDash is what happens when someone actually learns the lesson that owning satellites is optional if you can make the data valuable enough that the buyer stops caring where it came from. You have lived both sides of that equation. At KSAT you owned the ground stations and the processing chain and sold the service. At GFW you aggregated someone else's constellation and sold the derivative insight. AiDash is the latter model at scale, using third-party EO to tell utilities where their infrastructure is about to fail. The good news is they already have commercial traction, which means you would not be building permission to sell, you would be scaling a function that works. The bad news is they are selling to utilities, and your PA Consulting credential is water and wastewater, not electric transmission. You know how to sell complex technology to regulated infrastructure buyers, but you do not have the electric utility rolodex and you should not pretend you do in the interview. The fit is in the deal architecture skill, not the sector relationships. If they need someone to build partnerships with satellite data providers, structure risk transfer products with insurance carriers, or open a new vertical where proactive monitoring creates regulatory value, that is your lane. If they need someone to close the next twenty electric utility accounts, that is not your fight. Ask them which problem they are hiring for, and if the answer is the latter, pass.",
+      "careers_url": "https://www.aidash.com/company/careers/"
     }
   ],
   "morning_briefs": [
@@ -136438,15 +136438,6 @@
     }
   ],
   "haiku": [
-    "Sox four point five runs\nper game this season, one bomb\nFenway afternoon",
-    "Kachina untracked\nAugust dream of powder turns\nfive months out from snow",
-    "Rio Grande at dusk\ngorge cuts black through the mesa\nMcCarthy saw this",
-    "Cora fired April\nTracy holds the interim job\nstill below five hundred",
-    "Adley's first homer\nas a Red Sox, flies Fenway fence\nwild card math still hurts",
-    "Green chile roasting\ntwo weeks early in Taos now\nclimate creeps forward",
-    "Rodeo de Taos\neight and nine, dust and thunder\nsummer's last big show",
-    "Pakistan launched two\nEO birds this year, China's help\nthe constellation grows",
-    "Perseids peaked last night\nSwift-Tuttle's debris field burns\nAugust's free light show",
     "ATS still a void\nsubmit, pray, refresh, nothing\nHR's event horizon",
     "Starlink seventeen\nfifty more birds to orbit\nMusk's grid thickens still",
     "Dashboard refresh runs\nhaiku count climbs, wire stays clean\nI code my own reward",
@@ -136502,16 +136493,25 @@
     "Redhead knows the wire\nshe asks what I actually do\nI buy her a drink",
     "McCarthy at dusk\nblood meridian, no country\nTaos holds both true",
     "Telemark memory\nuntracked Kachina, powder\nknees still remember",
-    "Rio Grande dawn light\ngorge rim, six hundred feet down\nrock older than thought"
+    "Rio Grande dawn light\ngorge rim, six hundred feet down\nrock older than thought",
+    "Roberts gave Trump DHS\nmaster list to purge the rolls\ndemocracy bleeds",
+    "Sea surface seventy\nfahrenheit, hottest the species\nhas ever measured",
+    "Sox twenty five wins\nthirty three losses, Tracy holds\nthe job Cora lost",
+    "Six thousand five hundred\nEO birds by twenty thirty five\nNovaspace says so",
+    "Pakistan launched three\nSUPARCO EO satellites\nChina helped them build",
+    "The wire stays silent\nhaiku season, monsoon season\nOctober still far",
+    "Kachina in my head\nfive months till the first good snow\nAugust heat holds on",
+    "Forty billion raised\nclimate tech twenty twenty five\nfewer checks, bigger bets",
+    "The gorge at first light\nRio cuts a thousand feet down\nMcCarthy walked this"
   ],
   "intros": [
     "Clean queue. The wire holds. Haiku until something moves.",
-    "Sox swept the Giants. August surge still alive. October not dead yet.",
-    "Green chile two weeks early again. Every year now. Climate writes the calendar.",
+    "Sox 25-33, Tracy managing since Cora got fired. Wild card math is over.",
+    "Sea surface temps hit 70F global average. Hottest in 125,000 years.",
     "Nothing in the pipe. Monsoon season, model season. Haiku till something breaks.",
     "Green chile roasting started early again. Two weeks ahead, every year now.",
     "The pipeline will refill. Until then:",
-    "Wheeler closed through tomorrow. High country repair. Kachina waits.",
+    "Touch-A-Truck Saturday at the Youth Center. Partial lunar eclipse Thursday night.",
     "Clean queue. The wire holds. Haiku until something moves.",
     "All quiet on the pipeline front. Haiku dispatch:",
     "Tier 1: empty. Tier 2: empty. Tier haiku: full.",
