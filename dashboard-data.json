@@ -41166,27 +41166,6 @@
   ],
   "watch_list": [
     {
-      "company": "Neuraspace",
-      "category": "AI Space Traffic Management / Space Domain Awareness",
-      "why": "Lisbon-based, just raised 15.6M EUR in Aug 2026, AI-driven STM for satellite operators and defense, growing fast",
-      "roast": "Portuguese startup that just closed 15 million euros to sell AI-powered space traffic management to satellite operators who are already flying and somehow survived this long without it. The pitch is that low Earth orbit is getting crowded and someone needs to manage conjunctions before a Starlink hits a Planet sat and creates a debris cloud that shuts down an entire orbital shell. That threat is real. The business model is not. Satellite operators do their own conjunction analysis because they do not trust anyone else to do it, and the defense customers Neuraspace is courting have their own internal STM teams with clearances and congressional funding. So the wedge here is selling to the operators who are too small to build it themselves but big enough to care, which is a narrow market that requires someone who understands what satellite operators actually pay for and how their procurement works. You negotiated AIS data contracts with three different suppliers while renegotiating pricing mid-acquisition. You know the difference between a nice-to-have dashboard and a service someone will actually put in a budget line. Neuraspace raised the round in August 2026, which means they are hiring now and the commercial team is probably two people and a pitch deck. Lisbon is not Tromso, but it is closer than San Francisco, and if they have traction with even three paying customers this could be the builder-stage role you keep looking for. If they do not, it is another PowerPoint company and you will smell it in the first call.",
-      "careers_url": "https://www.neuraspace.com/careers"
-    },
-    {
-      "company": "Boomitra",
-      "category": "Satellite MRV / Soil Carbon",
-      "why": "Satellite-based MRV for soil carbon in Global South, Earthshot Prize winner, profitable while competitors burned cash",
-      "roast": "Satellite MRV for soil carbon sequestration in India and East Africa. Profitable. Let that sink in for a second. While every Silicon Valley carbon registry is burning Series B cash trying to figure out if a tree in Montana is additional, these guys are removing two million tonnes a year in Uganda and turning a profit doing it. They won the Earthshot Prize, got called out by TIME as one of the most influential climate companies, and their CEO keeps talking about serving the farmers who need carbon finance most instead of the enterprise customers who can afford the longest sales cycles. The whole pitch is built on the same Planet/Sentinel-2 imagery you sold at KSAT and licensed at GFW, except they are proving the commercial case in markets where the margin for MRV expense is basically zero. Which means if it works there, it works anywhere. You have spent a decade explaining why satellite data is worth paying for in low-margin use cases. They are actually doing it. The founder is ex-Trimble, the team knows remote sensing and agronomy, and the model works because they made it work, not because a foundation wrote a check. If you want to see what commercial discipline looks like in the satellite-for-good space, this is the case study. Downside is they are based in Silicon Valley and Gurugram, not exactly Taos adjacent. But if you are serious about finding a climate company that understands how to make satellite data pay in hard markets, you should be talking to them.",
-      "careers_url": "https://boomitra.com/careers"
-    },
-    {
-      "company": "Hydrosat",
-      "category": "Thermal EO / Water Stress Monitoring",
-      "why": "Thermal imaging constellation for agriculture and water monitoring, raised $20M+ and filling gap Planet cannot address",
-      "roast": "Thermal infrared from space for precision agriculture, water stress monitoring, and industrial heat leak detection. They are building a constellation of smallsats to image surface temperature at field scale, which is the one thing Planet cannot give you and the thing every agronomist actually wants when they say they want satellite data. The use case is obvious, the tech is hard, and the customer base is real. Insurance, agriculture, utilities, anyone trying to price water risk or optimize irrigation at scale. You have sold satellite data to oil majors who did not know they needed it, you have licensed EO to conservation buyers who could not afford it, and you have built partnerships with people who had no idea how to use imagery until you showed them. Hydrosat has a cleaner value prop than any of that. Their problem is not explaining why thermal matters. Their problem is scaling the constellation, keeping the refresh rate high enough to matter, and making sure the data gets into the hands of the decision makers instead of stopping at the agtech middleware layer that takes the margin and adds the jargon. The team is ex-NASA JPL and ex-Planet, so they know how to build the hardware and they know how to talk to the commercial market. They raised a Series A from Finistere and Energy Innovation Capital, which tells you the ag and climate infrastructure money is taking them seriously. If you are looking for an EO company where the satellite is the hard part and the commercial argument is the easy part, instead of the other way around, this is that company. Based in Luxembourg and DC, so the commute is a problem, but the job is real.",
-      "careers_url": "https://www.hydrosat.com/careers"
-    },
-    {
       "company": "Voltic",
       "category": "Maritime Decarbonization / Electric Cargo Ships",
       "why": "YC-backed electric cargo ship startup with $100M+ in sales, first commercial deployment 2026, MIT battery tech and experienced maritime founders",
@@ -41409,6 +41388,27 @@
       "why": "India-based, $34.9M funded, selling verified carbon credits across regen ag, agroforestry, biochar, enhanced weathering. Multi-pathway MRV, Puro/Isometric/Verra distribution. Raised $20M Series B Feb 2026.",
       "roast": "Indian carbon credit developer that does not bet on one removal pathway, which either makes them diversified or means they could not pick a lane. They are in regen ag, agroforestry, biochar, and enhanced rock weathering, selling through every registry that will let them in the door. Puro, Isometric, Verra, Gold Standard, the whole alphabet soup of carbon credibility signaling. They raised twenty million in February, which means someone thinks the voluntary carbon market is not completely dead, and they are based in Gurugram, which means their customer acquisition cost for smallholder farmers is a rounding error compared to what a Bay Area competitor would burn. The commercial job here is enterprise carbon credit sales, and the question is whether they have any blue-chip offtake or if they are grinding through middlemen and brokerages hoping someone builds a compliance market underneath them. You negotiated the Planet three-party deal and structured the ASN subsea infrastructure partnership, which means you can manage a multi-stakeholder sales process where half the parties do not trust the other half and the science is just credible enough to close. If Varaha has a path to compliance-driven demand in India or the EU, this is real. If they are selling to CSR departments at consumer brands, it is a grind you have seen before.",
       "careers_url": "https://www.varaha.com/careers"
+    },
+    {
+      "company": "Thallo",
+      "category": "Carbon Markets / API Infrastructure",
+      "why": "Carbon credit API platform embedding verified offsets into fintech and e-commerce. Paul built commercial licensing at GFW, understands data-as-infrastructure plays.",
+      "roast": "Thallo wants to be Stripe for carbon credits, which is either visionary or completely delusional depending on whether the voluntary carbon market survives the next eighteen months. You spent a decade selling satellite data to oil companies who wanted monitoring before regulators made them want it, so you understand the timing problem here better than most. They are betting that embedding offsets at point of sale will create demand that does not currently exist at scale, which is exactly the kind of market-making bet you made when you cold-called Shell in 2012. The API model is elegant. The customer is every fintech and e-commerce platform that wants to offer offsets without building their own verification stack. Whether those platforms actually want that or just want to say they want it is the entire game. London-based, probably eight to twelve people, venture-backed, Series Arange if the website UI is any indicator. You would be selling partnerships into companies that have sustainability teams but not sustainability budgets. This is either the future of embedded climate finance or it is 2023 all over again. You know how to find out.",
+      "careers_url": "https://www.thallo.io/careers"
+    },
+    {
+      "company": "GreenEmissions",
+      "category": "Agriculture Carbon MRV / Satellite Verification",
+      "why": "Satellite imagery plus blockchain for agriculture carbon sequestration verification. Intersection of EO data licensing and carbon markets, both Paul domains.",
+      "roast": "GreenEmissions is Swedish, uses satellites to verify agricultural carbon sequestration, and puts it on a blockchain, which means they either solved the MRV trust problem or they are selling the same remote sensing datasets everyone else has with a web3 wrapper. You negotiated Planet imagery deals covering 1.2 billion hectares for small vessel detection, so you know exactly how hard it is to get farmers to adopt new monitoring systems and how expensive high-cadence imagery gets when you need it at field scale. The value proposition is transparency and measurement, which is what every carbon MRV platform says, but the question is always who pays and why. If the answer is compliance-driven European buyers under something like the EUDR, this is real. If the answer is voluntary market buyers hoping for premium credits, good luck. Sweden means they are probably targeting Nordic institutional buyers and EU agricultural subsidy programs, which is the right move if you can stand another decade of selling into European bureaucracies. You did that at KSAT with EMSA. You know the patience it requires. The blockchain part is either essential for immutable record-keeping or it is investor catnip. Probably thirty people, probably already generating revenue, probably need someone who has sold satellite-derived data products to people who were not sure they wanted them yet.",
+      "careers_url": "https://www.greenemissions.se/careers"
+    },
+    {
+      "company": "Carbonera eXchange",
+      "category": "Carbon Credit Trading / Blockchain Marketplace",
+      "why": "Blockchain-powered carbon credit marketplace. Simplifies validation and real-time trading. Commercial infrastructure play adjacent to Paul's GFW licensing work.",
+      "roast": "Carbonera eXchange runs a blockchain marketplace for verified carbon credits, which puts them in the extremely crowded space of platforms trying to be the NASDAQ of carbon while the underlying asset class is having an identity crisis. You built a commercial licensing program on top of a free platform at GFW, so you understand the challenge of creating a marketplace when the thing being sold is contested, inconsistent, and hard to price. They are betting on real-time validation and frictionless trading, which sounds great until you remember that most carbon credit buyers are not looking for liquidity, they are looking for a story they can tell their board. The blockchain framing will attract a certain kind of investor and repel a certain kind of enterprise buyer. You know which is which because you spent three years convincing insurers and shipping companies that non-obvious data products were worth paying for. US-based means they are probably targeting corporate sustainability teams and compliance buyers in California and the Northeast. The real question is whether they have actual credit supply or just a very nice interface. If they have supply and verification partnerships that hold up under scrutiny, this could be the commercial infrastructure layer the market actually needs. If they are waiting for supply to show up because they built it, you have seen that movie before. Probably Series A, probably fewer than twenty people, probably need someone who can sell a platform when the platform is only as good as what flows through it.",
+      "careers_url": "https://www.carboneraexchange.com/careers"
     }
   ],
   "morning_briefs": [
@@ -139034,14 +139034,6 @@
     }
   ],
   "haiku": [
-    "global warming shift\nzero three five per decade\nthe planet's new gear",
-    "Touch-A-Truck rolls in\nAugust twenty ninth Taos kids\nfree tires and sirens",
-    "green chile season\ntwo weeks early every year\nroasters fired up soon",
-    "SpaceX eleven\nthousand sats in orbit now\ncongestion is real",
-    "dashboard clicks at forty\nhaiku refresh the only\nwork that feels like work",
-    "redhead in Madrid\neclipse totality kiss\nthought I saw her twice",
-    "the GFW inbox\nstill forwards to this address\nMarch feels like last year",
-    "Code Talkers museum\nfinally breaking ground now\nstories get their walls",
     "Artemis holds tight\ntwenty twenty seven lunar\nNASA slow but real",
     "glacial job market\nPatriot Act for resumes\nKSAT days were fast",
     "Strait of Hormuz choked\nIran says closed till we blink\nsanctions fail, oil waits",
@@ -139098,16 +139090,24 @@
     "NVIDIA's Q2 beat\nninety six billion posted\nchipmakers all rise",
     "Mogote Ridge Fire burns\nCarson National Forest\nEl Rito smoke drifts south",
     "Muon Space raised funds\ntwo fifty million Series C\nEO builds momentum",
-    "Coastal Carbon trains\nfoundation models on earth\nnot just internet"
+    "Coastal Carbon trains\nfoundation models on earth\nnot just internet",
+    "Sox at Yankees today\none oh five first pitch Bronx air\nbasement teams both lost",
+    "Roman telescope waits\nAugust thirtieth launch window\ndark energy hunt",
+    "Chinese booster lands\nLandSpace first commercial catch\nlegs work gravity",
+    "dashboard refresh count\nfifty seven times today\nhaiku job search blend",
+    "redhead at the game\nYankee Stadium Sunday beer\nthought about texting",
+    "Taos Youth Center\nfree event one to four today\nwish Oskar was young",
+    "Rio Grande runs low\nAugust twenty ninth same story\nevery year less flow",
+    "LandSpace stuck it\norbital class booster down\nChina beats us home"
   ],
   "intros": [
     "Clean queue. The wire holds. Haiku until something moves.",
-    "Sox at Yankees tonight, 25-33 record. Basement view, late August.",
+    "Sox 73-60, third in the East. Not dead yet.",
     "Sea surface temps hit 70F global average. Hottest in 125,000 years.",
     "Nothing in the pipe. Monsoon season, model season. Haiku till something breaks.",
     "Green chile roasting started early again. Two weeks ahead, every year now.",
     "The pipeline will refill. Until then:",
-    "Touch-A-Truck runs 1-4pm today at Youth Center. Free, all ages.",
+    "Touch-A-Truck today 1-4pm, 25th year running. Sox at Yanks 1:05 ET.",
     "Clean queue. The wire holds. Haiku until something moves.",
     "All quiet on the pipeline front. Haiku dispatch:",
     "Tier 1: empty. Tier 2: empty. Tier haiku: full.",
