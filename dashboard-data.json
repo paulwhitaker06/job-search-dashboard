@@ -157366,9 +157366,9 @@
     },
     {
       "company": "Job Tracker",
-      "text": "MAINTENANCE NEARLY DONE (2026-09-10): sections 1+2 applied (69 fixes, 41 removals, 605 to 564 boards). Section 3 resolved: 8 boards render-verified in a real browser, 3 code items SHIPPED to the scraper (real Chrome UA fixes African Wildlife Foundation, item_selector fixes Orbcomm, Felt parked as manual_check). REMAINING, your call: (a) approve the 10 verified config fixes from the section-3 verification (Undo Carbon, Unseenlabs, Carbon Trust's NEW careers site, FBN, Defenders, Veson's Jobvite board, SFP, Planblue, Restore America's Estuaries, Beacon), one word applies them; (b) section 5 process items: empty-streak alarm and health.json prune are small code jobs on request, quarterly re-run can become a scheduled task. Tomorrow's daily workflow run is the live test of the scraper changes.",
+      "text": "DONE 2026-09-10: Job Tracker maintenance audit fully closed. Sections 1+2 applied earlier today (69 fixes, 41 removals). Section 3 resolved: 3 scraper code items shipped (real Chrome UA, item_selector, render_wait_ms) and the 10 render-verified config fixes applied (Undo Carbon, Unseenlabs, Carbon Trust's new site, FBN, Defenders, Veson's Jobvite board, SFP, Planblue, RAE, Beacon; Felt parked as manual_check). Section 5: empty-streak alarm and health prune shipped (44 ghost entries drop on next run); audit now recurs MONTHLY via the monthly-board-audit scheduled task (1st of month, 10 AM), which also proactively harvests new companies from Payload and other newsletters into companies.yaml. Live test of everything: the next daily scraper run.",
       "doc_path": "~/Desktop/Job_Tracker_Maintenance_2026-08-27.docx",
-      "done": false
+      "done": true
     },
     {
       "company": "Matter Intelligence",
