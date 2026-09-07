@@ -157366,7 +157366,7 @@
     },
     {
       "company": "Job Tracker",
-      "text": "MAINTENANCE PARTIALLY APPLIED 2026-09-10: sections 1 and 2 of the audit doc are live in job-tracker (69 verified board fixes applied, 41 dead boards removed, 605 to 564 entries; includes removing the Spire Maritime board whose obvious fix would have piped hard-excluded Kpler postings into the digest). Expect tomorrow's digest to be larger as revived boards report first-time postings. STILL PENDING, your call: section 3 (14 boards needing a manual look) and section 5 (6 process suggestions, including the empty-streak alarm and quarterly re-run). Doc linked.",
+      "text": "MAINTENANCE NEARLY DONE (2026-09-10): sections 1+2 applied (69 fixes, 41 removals, 605 to 564 boards). Section 3 resolved: 8 boards render-verified in a real browser, 3 code items SHIPPED to the scraper (real Chrome UA fixes African Wildlife Foundation, item_selector fixes Orbcomm, Felt parked as manual_check). REMAINING, your call: (a) approve the 10 verified config fixes from the section-3 verification (Undo Carbon, Unseenlabs, Carbon Trust's NEW careers site, FBN, Defenders, Veson's Jobvite board, SFP, Planblue, Restore America's Estuaries, Beacon), one word applies them; (b) section 5 process items: empty-streak alarm and health.json prune are small code jobs on request, quarterly re-run can become a scheduled task. Tomorrow's daily workflow run is the live test of the scraper changes.",
       "doc_path": "~/Desktop/Job_Tracker_Maintenance_2026-08-27.docx",
       "done": false
     },
