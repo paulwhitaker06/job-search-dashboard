@@ -66,8 +66,8 @@
     "applications_sent": 34,
     "awaiting_response": 17,
     "active_interviews": 0,
-    "active_pipeline": 770,
-    "deep_dives_done": 27,
+    "active_pipeline": 772,
+    "deep_dives_done": 29,
     "resumes_built": 6,
     "rejected_closed": 11,
     "last_updated": "2026-09-09",
@@ -206,6 +206,47 @@
       ]
     },
     {
+      "rank": 4,
+      "company": "LatConnect 60",
+      "role": "Senior Commercial Lead (inferred; no posting, cold outreach)",
+      "score": 68.0,
+      "proxy_score": 68.0,
+      "effective_score": 68.0,
+      "fit": 8,
+      "has_deep_dive": true,
+      "date": "2026-09-09",
+      "scqa": "",
+      "verdict": "PROXY score, no posting. Pre-launch Perth SWIR constellation raising $5-20M; SWIRSAT-1 ~late 2026, 18 sats by 2029. Two buyer universes (AUKUS defense, methane accountability) and no visible commercial leadership. RF/IL high on Paul's literal Perth oil-and-gas and NOPSEMA history; SA 5 is the honest pre-launch brake; CO 4 on startup-lean pay. Australian seat, soft pursue-if-sponsored; US office worth probing.",
+      "recommendation": "pursue_with_caveats",
+      "status": "speculative",
+      "overdue": null,
+      "job_urls": [],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Jobs/LatConnect 60/LatConnect60_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed (cold-outreach evaluation)",
+      "added": "2026-09-09",
+      "is_new": true,
+      "tier": null,
+      "domain": "SWIR Earth observation / methane and defense imaging",
+      "location": "Perth, Australia",
+      "hook": "Highest-resolution SWIR constellation, AUKUS-aligned, methane market second act; Paul's Perth decade makes the pilot buyers his old accounts.",
+      "blockers": [
+        {
+          "type": "work_authorization",
+          "detail": "Perth HQ; JD-less, so no sponsorship language to check; pursue if sponsored, probe the US office.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 8,
+        "SA": 5,
+        "IL": 8,
+        "SPM": 8,
+        "CO": 4,
+        "GC": 6
+      }
+    },
+    {
       "company": "Northwood",
       "role": "Head of Partnerships",
       "score": 65.0,
@@ -253,7 +294,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 4
+      "rank": 5
     },
     {
       "company": "Kodama Systems",
@@ -308,7 +349,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 5
+      "rank": 6
     },
     {
       "company": "Optiml",
@@ -363,7 +404,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 6
+      "rank": 7
     },
     {
       "company": "Loft Orbital Solutions",
@@ -417,7 +458,7 @@
         "CO": 6,
         "GC": 6
       },
-      "rank": 7
+      "rank": 8
     },
     {
       "company": "Matter Intelligence",
@@ -473,7 +514,53 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 8
+      "rank": 9
+    },
+    {
+      "rank": 10,
+      "company": "Stoke Space",
+      "role": "Senior Commercial / BD (inferred; no posting, cold outreach)",
+      "score": 60.5,
+      "proxy_score": 60.5,
+      "effective_score": 60.5,
+      "fit": 5,
+      "has_deep_dive": true,
+      "date": "2026-09-09",
+      "scqa": "",
+      "verdict": "PROXY score, no posting. $1.34B raised, ~$1B more reportedly raising; NSSL Phase 3 Lane 1 selected March 2026; first flight near. Launch-slot sales is a soft sector gap (RF capped 5, IL capped 4 by rule; IL scored 5 with nice-to-have credit on the space network), so this is track-and-connect, not pursue-hard. Stoke HAS a VP of BD (Devon Papandrew), so outreach is a join-the-team-later relationship with him, never a function-building pitch over his head.",
+      "recommendation": "track",
+      "status": "speculative",
+      "overdue": null,
+      "job_urls": [],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Jobs/Stoke Space/StokeSpace_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed (cold-outreach evaluation)",
+      "added": "2026-09-09",
+      "is_new": true,
+      "tier": null,
+      "domain": "Launch / fully reusable Nova vehicle",
+      "location": "Kent, WA",
+      "hook": "NSSL Lane 1 anchor plus ~$2.3B raised or raising; the manifest team gets built in the 18 months after Nova's first flight.",
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "Launch manifest sales record absent; soft gap, said plainly in outreach.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Kent, WA seat; informational flag only.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 5,
+        "SA": 7,
+        "IL": 5,
+        "SPM": 6,
+        "CO": 8,
+        "GC": 7
+      }
     },
     {
       "company": "SparkHouse LLC",
@@ -528,10 +615,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 9
+      "rank": 11
     },
     {
-      "rank": 10,
+      "rank": 12,
       "company": "Fleetzero",
       "role": "Head of Strategic Partnerships",
       "score": 59.0,
@@ -623,7 +710,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 11
+      "rank": 13
     },
     {
       "company": "Orbital",
@@ -673,10 +760,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 12
+      "rank": 14
     },
     {
-      "rank": 13,
+      "rank": 15,
       "company": "Archer Daniels Midland (ADM)",
       "role": "Director Carbon Markets - Chicago, IL or Decatur, IL",
       "score": 58.5,
@@ -776,7 +863,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 14
+      "rank": 16
     },
     {
       "company": "Y Combinator",
@@ -826,10 +913,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 15
+      "rank": 17
     },
     {
-      "rank": 16,
+      "rank": 18,
       "company": "Safe Software",
       "role": "Senior Director, Customer Success",
       "score": 58.0,
@@ -858,7 +945,7 @@
       "blockers": []
     },
     {
-      "rank": 17,
+      "rank": 19,
       "company": "WindBorne Systems",
       "role": "Cold outreach (posted BD roles too junior)",
       "score": 58.0,
@@ -942,7 +1029,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 18
+      "rank": 20
     },
     {
       "company": "Google",
@@ -1002,7 +1089,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 19
+      "rank": 21
     },
     {
       "company": "Clean Air Task Force",
@@ -1057,7 +1144,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 20
+      "rank": 22
     },
     {
       "company": "Kodiak",
@@ -1112,7 +1199,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 21
+      "rank": 23
     },
     {
       "company": "World Labs",
@@ -1167,7 +1254,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 22
+      "rank": 24
     },
     {
       "company": "LevelTen Energy | Techstars Job Board",
@@ -1215,7 +1302,7 @@
         "CO": 8,
         "GC": 8
       },
-      "rank": 23
+      "rank": 25
     },
     {
       "company": "Rainmaker Technology Corporation",
@@ -1275,7 +1362,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 24
+      "rank": 26
     },
     {
       "company": "Invariant AI (EF S26)",
@@ -1330,10 +1417,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 25
+      "rank": 27
     },
     {
-      "rank": 26,
+      "rank": 28,
       "company": "Avidbots",
       "role": "VP, Sales",
       "score": 57.0,
@@ -1427,7 +1514,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 27
+      "rank": 29
     },
     {
       "company": "Hexium",
@@ -1487,10 +1574,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 28
+      "rank": 30
     },
     {
-      "rank": 29,
+      "rank": 31,
       "company": "Waymo",
       "role": "Strategic Partnerships Development Manager",
       "score": 57.0,
@@ -1571,7 +1658,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 30
+      "rank": 32
     },
     {
       "company": "Vessev",
@@ -1626,10 +1713,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 31
+      "rank": 33
     },
     {
-      "rank": 32,
+      "rank": 34,
       "company": "Slingshot Aerospace",
       "role": "Manager of Growth, APAC",
       "score": 56.5,
@@ -1711,7 +1798,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 33
+      "rank": 35
     },
     {
       "company": "Mapbox",
@@ -1756,7 +1843,7 @@
       "confidence": "high",
       "tier_uncertain": false,
       "verdict": "This is installed base management, not market building: the JD centers on owning 'the commercial strategy and long-term growth of a portfolio of Mapbox's largest and most strategic global customers, with accountability for retention, renewals, expansion, and overall account health,' which is squarely the run-the-engine shape (SA 3). Paul genuinely clears the stated bar: '8+ years of experience in strategic account management, enterprise sales, or customer growth within complex enterprise technology environments' matches his KSAT decade growing Shell, ExxonMobil, ConocoPhillips, Total, and ENI into master contracts, and the preferred 'experience in location technology, developer platforms, cloud infrastructure, mobility, logistics, telecommunications' is exactly his 25 years in geospatial, lifting IL to 7 under the nice-to-have credit rule. The gap is scale and motion, not credentials: Mapbox wants sophisticated renewals and consumption-model expansion across very large SaaS accounts, while Paul's record is building demand where none existed, so RF stays at 6. None of Paul's three patterns appear in the JD, so SPM is 3. Comp is exceptional at $357,000 to $483,000 OTE with remote or hybrid flexibility on a US seat.",
-      "rank": 34
+      "rank": 36
     },
     {
       "company": "Tapio",
@@ -1811,7 +1898,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 35
+      "rank": 37
     },
     {
       "company": "Armada",
@@ -1861,7 +1948,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 36
+      "rank": 38
     },
     {
       "company": "Rippling Recruiting",
@@ -1921,7 +2008,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 37
+      "rank": 39
     },
     {
       "company": "Unframe",
@@ -1976,7 +2063,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 38
+      "rank": 40
     },
     {
       "company": "Food System Innovations",
@@ -2026,7 +2113,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 39
+      "rank": 41
     },
     {
       "company": "TerraPower",
@@ -2086,7 +2173,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 40
+      "rank": 42
     },
     {
       "company": "The Nuclear Company",
@@ -2141,7 +2228,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 41
+      "rank": 43
     },
     {
       "company": "Katalyst Space Technologies",
@@ -2201,10 +2288,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 42
+      "rank": 44
     },
     {
-      "rank": 43,
+      "rank": 45,
       "company": "Kambo Energy Group",
       "role": "Director, Business Development U.S.",
       "score": 56.0,
@@ -2248,7 +2335,7 @@
       "stretch": true
     },
     {
-      "rank": 44,
+      "rank": 46,
       "company": "Satlantis",
       "role": "Europe Business Development and Sales Manager",
       "score": 55.5,
@@ -2348,10 +2435,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 45
+      "rank": 47
     },
     {
-      "rank": 46,
+      "rank": 48,
       "company": "EVONA",
       "role": "Director of Business Development (confidential client, Denver)",
       "score": 55.5,
@@ -2448,7 +2535,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 47
+      "rank": 49
     },
     {
       "company": "Noetik",
@@ -2503,10 +2590,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 48
+      "rank": 50
     },
     {
-      "rank": 49,
+      "rank": 51,
       "company": "Copper",
       "role": "Director of Business Development, East Coast",
       "score": 55.0,
@@ -2598,7 +2685,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 50
+      "rank": 52
     },
     {
       "company": "Metric Geo",
@@ -2658,7 +2745,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 51
+      "rank": 53
     },
     {
       "company": "EVONA",
@@ -2718,7 +2805,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 52
+      "rank": 54
     },
     {
       "company": "Nu Quantum",
@@ -2778,7 +2865,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 53
+      "rank": 55
     },
     {
       "company": "Avalanche Energy",
@@ -2843,7 +2930,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 54
+      "rank": 56
     },
     {
       "company": "Rippling Recruiting",
@@ -2898,7 +2985,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 55
+      "rank": 57
     },
     {
       "company": "Dfns | Techstars Job Board",
@@ -2953,7 +3040,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 56
+      "rank": 58
     },
     {
       "company": "Isar Aerospace SE",
@@ -3018,7 +3105,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 57
+      "rank": 59
     },
     {
       "company": "Anduril Industries",
@@ -3073,7 +3160,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 58
+      "rank": 60
     },
     {
       "company": "Blue Origin",
@@ -3133,7 +3220,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 59
+      "rank": 61
     },
     {
       "company": "Rippling Recruiting",
@@ -3193,7 +3280,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 60
+      "rank": 62
     },
     {
       "company": "Axiom Space",
@@ -3243,7 +3330,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 61
+      "rank": 63
     },
     {
       "company": "GRIDSIGHT",
@@ -3293,7 +3380,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 62
+      "rank": 64
     },
     {
       "company": "Neros Technologies",
@@ -3348,7 +3435,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 63
+      "rank": 65
     },
     {
       "company": "Neros Technologies",
@@ -3403,7 +3490,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 64
+      "rank": 66
     },
     {
       "company": "Avalanche Energy",
@@ -3463,10 +3550,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 65
+      "rank": 67
     },
     {
-      "rank": 66,
+      "rank": 68,
       "company": "Zipline",
       "role": "Director of Industry Standards",
       "score": 55.0,
@@ -3515,7 +3602,7 @@
       "stretch": true
     },
     {
-      "rank": 67,
+      "rank": 69,
       "company": "Crusoe",
       "role": "Director, Energy Innovation and Commercialization",
       "score": 54.5,
@@ -3603,7 +3690,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 68
+      "rank": 70
     },
     {
       "company": "WeaveGrid",
@@ -3654,7 +3741,7 @@
       "confidence": "high",
       "tier_uncertain": false,
       "verdict": "The role's shape is strongly Paul-like: a senior IC who must be 'comfortable creating new relationships, navigating complex organizations, structuring deals with multiple stakeholders' in 'long and ambiguous deal cycles' with regulated buyers, and the partnerships work asks him to 'develop partnership structures that clearly define shared value, commercial terms, responsibilities, technical dependencies, and paths to market' across automakers, EVSE providers, and utilities, each contributing a distinct asset, a clean Multi-Stakeholder Deal Architecture match justifying SPM 8. But the domain center of gravity is electric utilities and vehicle-grid integration, none of which Paul has, so the soft Hard Requirement Cap fires: RF capped at 5, IL capped at 4. He does match two preferred items ('Experience working with regulated customers or in markets shaped by public utility commissions and regulatory proceedings' reads onto his NOPSEMA and AMSA work; 'Experience negotiating agreements that include both commercial and technical components'), but the sector core misses hold IL at the cap. The commercial function already exists (reports to a VP of Market Development and Partnerships), so SA is 5. Compensation is light for the seniority: $135,200 to $169,000 base plus equity, well under Paul's $250K OTE benchmark.",
-      "rank": 69
+      "rank": 71
     },
     {
       "company": "Redwire",
@@ -3709,7 +3796,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 70
+      "rank": 72
     },
     {
       "company": "Crux Climate",
@@ -3757,7 +3844,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 71
+      "rank": 73
     },
     {
       "company": "Revalue",
@@ -3807,7 +3894,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 72
+      "rank": 74
     },
     {
       "company": "Amelore Ltd",
@@ -3857,7 +3944,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 73
+      "rank": 75
     },
     {
       "company": "Vantor",
@@ -3922,7 +4009,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 74
+      "rank": 76
     },
     {
       "company": "Garuda Ventures",
@@ -3977,7 +4064,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 75
+      "rank": 77
     },
     {
       "company": "Ocean Aero Inc",
@@ -4032,7 +4119,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 76
+      "rank": 78
     },
     {
       "company": "EVONA",
@@ -4092,7 +4179,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 77
+      "rank": 79
     },
     {
       "company": "Armada",
@@ -4147,7 +4234,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 78
+      "rank": 80
     },
     {
       "company": "Prologue",
@@ -4202,7 +4289,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 79
+      "rank": 81
     },
     {
       "company": "Armada",
@@ -4257,7 +4344,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 80
+      "rank": 82
     },
     {
       "company": "Wilbur",
@@ -4312,7 +4399,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 81
+      "rank": 83
     },
     {
       "company": "Reflection",
@@ -4372,7 +4459,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 82
+      "rank": 84
     },
     {
       "company": "Climactic",
@@ -4432,10 +4519,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 83
+      "rank": 85
     },
     {
-      "rank": 84,
+      "rank": 86,
       "company": "David Energy",
       "role": "Customer Success Manager",
       "date": "2026-04-17",
@@ -4516,7 +4603,7 @@
         "CO": 7,
         "GC": 2
       },
-      "rank": 85
+      "rank": 87
     },
     {
       "company": "Satlantis",
@@ -4566,7 +4653,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 86
+      "rank": 88
     },
     {
       "company": "Apex - Satellite Platforms",
@@ -4626,7 +4713,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 87
+      "rank": 89
     },
     {
       "company": "NATILUS",
@@ -4681,10 +4768,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 88
+      "rank": 90
     },
     {
-      "rank": 89,
+      "rank": 91,
       "company": "Instagrid",
       "role": "Business Development Manager, Military & Law Enforcement",
       "score": 53.5,
@@ -4737,7 +4824,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 92,
       "company": "Bentley Systems",
       "role": "Market Development Director, North America Transportation",
       "score": 53.0,
@@ -4785,7 +4872,7 @@
       ]
     },
     {
-      "rank": 91,
+      "rank": 93,
       "company": "Systemiq",
       "role": "Strategy Director ,  Low Carbon Energy",
       "score": 53.0,
@@ -4828,7 +4915,7 @@
       ]
     },
     {
-      "rank": 92,
+      "rank": 94,
       "company": "Fleetzero",
       "role": "Growth Manager",
       "date": "2026-04-17",
@@ -4935,7 +5022,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 93
+      "rank": 95
     },
     {
       "company": "Peak Power",
@@ -4995,7 +5082,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 94
+      "rank": 96
     },
     {
       "company": "Rainmaker Technology Corporation",
@@ -5050,7 +5137,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 95
+      "rank": 97
     },
     {
       "company": "The Nature Conservancy",
@@ -5100,7 +5187,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 96
+      "rank": 98
     },
     {
       "company": "Orca AI",
@@ -5150,7 +5237,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 97
+      "rank": 99
     },
     {
       "company": "EVONA",
@@ -5210,7 +5297,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 98
+      "rank": 100
     },
     {
       "company": "Teleo",
@@ -5270,7 +5357,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 99
+      "rank": 101
     },
     {
       "company": "K2 Space Corporation",
@@ -5330,7 +5417,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 100
+      "rank": 102
     },
     {
       "company": "L3Harris Technologies",
@@ -5390,7 +5477,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 101
+      "rank": 103
     },
     {
       "company": "Energy Alliances",
@@ -5445,7 +5532,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 102
+      "rank": 104
     },
     {
       "company": "Tomorrow.io",
@@ -5500,7 +5587,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 103
+      "rank": 105
     },
     {
       "company": "Anduril Industries",
@@ -5555,7 +5642,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 104
+      "rank": 106
     },
     {
       "company": "Firestorm",
@@ -5615,10 +5702,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 105
+      "rank": 107
     },
     {
-      "rank": 106,
+      "rank": 108,
       "company": "CarbonCure Technologies",
       "role": "Senior Market Development Manager, North America",
       "score": 52.5,
@@ -5715,7 +5802,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 107
+      "rank": 109
     },
     {
       "company": "Honeywell Aerospace",
@@ -5785,7 +5872,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 108
+      "rank": 110
     },
     {
       "company": "Armada",
@@ -5840,7 +5927,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 109
+      "rank": 111
     },
     {
       "company": "Apex - Satellite Platforms",
@@ -5895,7 +5982,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 110
+      "rank": 112
     },
     {
       "company": "Y Combinator",
@@ -5950,7 +6037,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 111
+      "rank": 113
     },
     {
       "company": "Y Combinator",
@@ -6005,10 +6092,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 112
+      "rank": 114
     },
     {
-      "rank": 113,
+      "rank": 115,
       "company": "Formic",
       "role": "Chief of Staff to the CEO",
       "date": "2026-04-17",
@@ -6039,7 +6126,7 @@
       "source_note": "Missed-roles audit 2026-04-17"
     },
     {
-      "rank": 114,
+      "rank": 116,
       "company": "Nofence (via Acre)",
       "role": "Customer Success Manager (US, first hire)",
       "date": "2026-04-17",
@@ -6113,7 +6200,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 115
+      "rank": 117
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -6161,7 +6248,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 116
+      "rank": 118
     },
     {
       "company": "Overstory",
@@ -6216,7 +6303,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 117
+      "rank": 119
     },
     {
       "company": "Ocean Visions, Inc",
@@ -6271,7 +6358,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 118
+      "rank": 120
     },
     {
       "company": "Zap Energy",
@@ -6331,7 +6418,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 119
+      "rank": 121
     },
     {
       "company": "Rainmaker Technology Corporation",
@@ -6396,7 +6483,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 120
+      "rank": 122
     },
     {
       "company": "Impulse Space",
@@ -6446,7 +6533,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 121
+      "rank": 123
     },
     {
       "company": "Cloverly",
@@ -6501,7 +6588,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 122
+      "rank": 124
     },
     {
       "company": "Doodle Labs",
@@ -6561,7 +6648,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 123
+      "rank": 125
     },
     {
       "company": "Rocket Lab",
@@ -6621,7 +6708,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 124
+      "rank": 126
     },
     {
       "company": "K2 Space Corporation",
@@ -6681,7 +6768,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 125
+      "rank": 127
     },
     {
       "company": "PSC by Rocket Lab",
@@ -6741,7 +6828,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 126
+      "rank": 128
     },
     {
       "company": "Terma Group",
@@ -6801,7 +6888,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 127
+      "rank": 129
     },
     {
       "company": "OpenWorks Engineering Ltd",
@@ -6861,7 +6948,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 128
+      "rank": 130
     },
     {
       "company": "Altis Labs",
@@ -6916,7 +7003,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 129
+      "rank": 131
     },
     {
       "company": "EVONA",
@@ -6971,7 +7058,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 130
+      "rank": 132
     },
     {
       "company": "EVONA",
@@ -7031,7 +7118,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 131
+      "rank": 133
     },
     {
       "company": "SEAKR",
@@ -7091,7 +7178,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 132
+      "rank": 134
     },
     {
       "company": "Inversion",
@@ -7151,7 +7238,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 133
+      "rank": 135
     },
     {
       "company": "Orca AI",
@@ -7206,7 +7293,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 134
+      "rank": 136
     },
     {
       "company": "Rippling Recruiting",
@@ -7261,7 +7348,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 135
+      "rank": 137
     },
     {
       "company": "Arkeus",
@@ -7321,7 +7408,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 136
+      "rank": 138
     },
     {
       "company": "Hydrogen Group",
@@ -7381,7 +7468,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 137
+      "rank": 139
     },
     {
       "company": "Fervo Energy",
@@ -7441,7 +7528,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 138
+      "rank": 140
     },
     {
       "company": "Anduril Industries",
@@ -7501,7 +7588,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 139
+      "rank": 141
     },
     {
       "company": "Interlune",
@@ -7561,7 +7648,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 140
+      "rank": 142
     },
     {
       "company": "Mantle Reach Power",
@@ -7611,7 +7698,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 141
+      "rank": 143
     },
     {
       "company": "Loft Orbital Solutions",
@@ -7671,7 +7758,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 142
+      "rank": 144
     },
     {
       "company": "Valar Atomics",
@@ -7731,7 +7818,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 143
+      "rank": 145
     },
     {
       "company": "Rippling Recruiting",
@@ -7786,7 +7873,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 144
+      "rank": 146
     },
     {
       "company": "Tocaro Blue",
@@ -7846,7 +7933,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 145
+      "rank": 147
     },
     {
       "company": "HavocAI",
@@ -7901,7 +7988,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 146
+      "rank": 148
     },
     {
       "company": "TurbineOne",
@@ -7961,7 +8048,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 147
+      "rank": 149
     },
     {
       "company": "Via",
@@ -8026,7 +8113,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 148
+      "rank": 150
     },
     {
       "company": "Scout Global",
@@ -8081,7 +8168,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 149
+      "rank": 151
     },
     {
       "company": "Rocket Lab",
@@ -8136,7 +8223,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 150
+      "rank": 152
     },
     {
       "company": "Perry Weather",
@@ -8191,7 +8278,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 151
+      "rank": 153
     },
     {
       "company": "STA",
@@ -8241,7 +8328,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 152
+      "rank": 154
     },
     {
       "company": "Water For People",
@@ -8301,7 +8388,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 153
+      "rank": 155
     },
     {
       "company": "Y Combinator",
@@ -8356,7 +8443,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 154
+      "rank": 156
     },
     {
       "company": "Neros Technologies",
@@ -8411,7 +8498,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 155
+      "rank": 157
     },
     {
       "company": "VP of Deployment Operations",
@@ -8466,7 +8553,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 156
+      "rank": 158
     },
     {
       "company": "Auriga Space",
@@ -8526,10 +8613,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 157
+      "rank": 159
     },
     {
-      "rank": 158,
+      "rank": 160,
       "company": "Ceres Imaging",
       "role": "Enterprise Sales Lead - Agricultural Capital Markets",
       "score": 51.5,
@@ -8558,7 +8645,7 @@
       "blockers": []
     },
     {
-      "rank": 159,
+      "rank": 161,
       "company": "Crusoe",
       "role": "EDG Commercial Development Director, Nuclear",
       "score": 51.5,
@@ -8650,7 +8737,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 160
+      "rank": 162
     },
     {
       "company": "YipitData",
@@ -8705,7 +8792,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 161
+      "rank": 163
     },
     {
       "company": "Space Ocean Corp",
@@ -8765,7 +8852,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 162
+      "rank": 164
     },
     {
       "company": "Redwire",
@@ -8820,7 +8907,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 163
+      "rank": 165
     },
     {
       "company": "PraxisPro AI | Techstars Job Board",
@@ -8880,7 +8967,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 164
+      "rank": 166
     },
     {
       "company": "Peskind Executive Search",
@@ -8935,7 +9022,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 165
+      "rank": 167
     },
     {
       "company": "Y Combinator",
@@ -8990,10 +9077,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 166
+      "rank": 168
     },
     {
-      "rank": 167,
+      "rank": 169,
       "company": "Hitachi Energy",
       "role": "Strategic Partnerships Leader, North America",
       "score": 51.5,
@@ -9036,7 +9123,7 @@
       }
     },
     {
-      "rank": 168,
+      "rank": 170,
       "company": "Commonwealth Fusion Systems",
       "role": "Director, Project Development",
       "score": 51.0,
@@ -9077,7 +9164,7 @@
       ]
     },
     {
-      "rank": 169,
+      "rank": 171,
       "company": "LVT (LiveView Technologies)",
       "role": "Area Vice President, Business and Market Development ,  Mission Critical Infrastructure",
       "score": 51.0,
@@ -9120,7 +9207,7 @@
       ]
     },
     {
-      "rank": 170,
+      "rank": 172,
       "company": "Open Cosmos",
       "role": "Data Customer Success Manager",
       "score": 51.0,
@@ -9194,7 +9281,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 171
+      "rank": 173
     },
     {
       "company": "Manatal",
@@ -9254,7 +9341,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 172
+      "rank": 174
     },
     {
       "company": "Orca AI",
@@ -9314,7 +9401,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 173
+      "rank": 175
     },
     {
       "company": "Fugro",
@@ -9362,7 +9449,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 174
+      "rank": 176
     },
     {
       "company": "Zap Energy",
@@ -9415,7 +9502,7 @@
         "CO": 9,
         "GC": 7
       },
-      "rank": 175
+      "rank": 177
     },
     {
       "company": "Epsilon3",
@@ -9480,7 +9567,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 176
+      "rank": 178
     },
     {
       "company": "SES Space & Defense",
@@ -9540,7 +9627,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 177
+      "rank": 179
     },
     {
       "company": "Voyager Technologies",
@@ -9595,7 +9682,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 178
+      "rank": 180
     },
     {
       "company": "PSC by Rocket Lab",
@@ -9650,7 +9737,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 179
+      "rank": 181
     },
     {
       "company": "BAE Systems, Inc.",
@@ -9705,7 +9792,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 180
+      "rank": 182
     },
     {
       "company": "Sierra Nevada Corporation",
@@ -9765,7 +9852,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 181
+      "rank": 183
     },
     {
       "company": "Blue Origin",
@@ -9820,7 +9907,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 182
+      "rank": 184
     },
     {
       "company": "Voyager Technologies",
@@ -9880,7 +9967,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 183
+      "rank": 185
     },
     {
       "company": "General Atomics",
@@ -9940,7 +10027,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 184
+      "rank": 186
     },
     {
       "company": "Armada",
@@ -10000,7 +10087,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 185
+      "rank": 187
     },
     {
       "company": "Confidential",
@@ -10060,7 +10147,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 186
+      "rank": 188
     },
     {
       "company": "Aventra Defense Systems",
@@ -10120,7 +10207,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 187
+      "rank": 189
     },
     {
       "company": "APIUM Swarm Robotics - A Red Cat Company",
@@ -10185,7 +10272,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 188
+      "rank": 190
     },
     {
       "company": "Living Carbon",
@@ -10245,7 +10332,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 189
+      "rank": 191
     },
     {
       "company": "Liveeo Gmbh",
@@ -10300,7 +10387,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 190
+      "rank": 192
     },
     {
       "company": "Albedo",
@@ -10360,7 +10447,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 191
+      "rank": 193
     },
     {
       "company": "Hedge (YC P26)",
@@ -10415,7 +10502,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 192
+      "rank": 194
     },
     {
       "company": "Planet",
@@ -10475,7 +10562,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 193
+      "rank": 195
     },
     {
       "company": "SparkHouse LLC",
@@ -10530,10 +10617,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 194
+      "rank": 196
     },
     {
-      "rank": 195,
+      "rank": 197,
       "company": "Avantus",
       "role": "Sr. Director or Vice President, Business Development",
       "score": 51.0,
@@ -10581,7 +10668,7 @@
       }
     },
     {
-      "rank": 196,
+      "rank": 198,
       "company": "Ampd Energy",
       "role": "Business Development Manager (Benelux)",
       "score": 51.0,
@@ -10701,11 +10788,11 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 197,
+      "rank": 199,
       "source_note": "2026-07-06: deduped (removed stale April entry) and re-scored; hard sector cap corrected to soft, real EU work-auth blocker surfaced."
     },
     {
-      "rank": 198,
+      "rank": 200,
       "company": "Fugro",
       "role": "GroundIQ Sales Manager, Germany",
       "score": 50.5,
@@ -10815,7 +10902,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 199
+      "rank": 201
     },
     {
       "company": "Trident",
@@ -10875,7 +10962,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 200
+      "rank": 202
     },
     {
       "company": "u-blox",
@@ -10935,10 +11022,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 201
+      "rank": 203
     },
     {
-      "rank": 202,
+      "rank": 204,
       "company": "ElectraSteel",
       "role": "Head of Sales",
       "score": 50.0,
@@ -10967,7 +11054,7 @@
       "blockers": []
     },
     {
-      "rank": 203,
+      "rank": 205,
       "company": "Stripe (EU Climate)",
       "role": "EU Market Development, Climate",
       "score": 50.0,
@@ -11047,7 +11134,7 @@
         "CO": 7,
         "GC": 6
       },
-      "rank": 204
+      "rank": 206
     },
     {
       "company": "LocateAI | Techstars Job Board",
@@ -11095,7 +11182,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 205
+      "rank": 207
     },
     {
       "company": "Loft Orbital Solutions",
@@ -11160,7 +11247,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 206
+      "rank": 208
     },
     {
       "company": "Carbon Mapper",
@@ -11213,7 +11300,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 207
+      "rank": 209
     },
     {
       "company": "Corus International",
@@ -11261,7 +11348,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 208
+      "rank": 210
     },
     {
       "company": "Space Kinetic Corp.",
@@ -11321,7 +11408,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 209
+      "rank": 211
     },
     {
       "company": "Jobgether",
@@ -11376,7 +11463,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 210
+      "rank": 212
     },
     {
       "company": "OpenWorks Engineering Ltd",
@@ -11436,7 +11523,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 211
+      "rank": 213
     },
     {
       "company": "Umbra",
@@ -11491,7 +11578,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 212
+      "rank": 214
     },
     {
       "company": "Optiml",
@@ -11556,7 +11643,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 213
+      "rank": 215
     },
     {
       "company": "EVONA",
@@ -11611,7 +11698,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 214
+      "rank": 216
     },
     {
       "company": "Vannevar",
@@ -11671,7 +11758,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 215
+      "rank": 217
     },
     {
       "company": "Zenno Astronautics",
@@ -11731,7 +11818,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 216
+      "rank": 218
     },
     {
       "company": "Slingshot Aerospace",
@@ -11786,7 +11873,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 217
+      "rank": 219
     },
     {
       "company": "Sierra Space",
@@ -11846,7 +11933,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 218
+      "rank": 220
     },
     {
       "company": "Camus",
@@ -11901,7 +11988,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 219
+      "rank": 221
     },
     {
       "company": "Firestorm",
@@ -11961,7 +12048,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 220
+      "rank": 222
     },
     {
       "company": "Volantyx Aerospace",
@@ -12026,7 +12113,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 221
+      "rank": 223
     },
     {
       "company": "Hidden Level",
@@ -12081,7 +12168,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 222
+      "rank": 224
     },
     {
       "company": "Rocket Lab",
@@ -12136,7 +12223,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 223
+      "rank": 225
     },
     {
       "company": "Primavolt Energy Infrastructure",
@@ -12191,7 +12278,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 224
+      "rank": 226
     },
     {
       "company": "Rocket Lab",
@@ -12251,7 +12338,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 225
+      "rank": 227
     },
     {
       "company": "Pebl",
@@ -12306,7 +12393,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 226
+      "rank": 228
     },
     {
       "company": "Phantom",
@@ -12361,7 +12448,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 227
+      "rank": 229
     },
     {
       "company": "Drafted | Techstars Job Board",
@@ -12416,7 +12503,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 228
+      "rank": 230
     },
     {
       "company": "Liveeo Gmbh",
@@ -12471,7 +12558,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 229
+      "rank": 231
     },
     {
       "company": "Unknown (LinkedIn posting)",
@@ -12521,7 +12608,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 230
+      "rank": 232
     },
     {
       "company": "External_Career_Site",
@@ -12576,7 +12663,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 231
+      "rank": 233
     },
     {
       "company": "YipitData",
@@ -12631,7 +12718,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 232
+      "rank": 234
     },
     {
       "company": "Brightsmith",
@@ -12691,7 +12778,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 233
+      "rank": 235
     },
     {
       "company": "Oxygen Conservation",
@@ -12739,10 +12826,10 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 234
+      "rank": 236
     },
     {
-      "rank": 235,
+      "rank": 237,
       "company": "Carbon Gap",
       "role": "CDR Demand and Market Development Lead",
       "score": 49.0,
@@ -12777,7 +12864,7 @@
       ]
     },
     {
-      "rank": 236,
+      "rank": 238,
       "company": "UtilityAPI",
       "role": "Strategic Sales Director",
       "score": 49.0,
@@ -12806,7 +12893,7 @@
       "blockers": []
     },
     {
-      "rank": 237,
+      "rank": 239,
       "company": "Voltus",
       "role": "Product Manager",
       "date": "2026-04-17",
@@ -12851,7 +12938,7 @@
       }
     },
     {
-      "rank": 238,
+      "rank": 240,
       "company": "InPlanet",
       "role": "Head of Carbon",
       "score": 49.0,
@@ -12931,7 +13018,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 239
+      "rank": 241
     },
     {
       "company": "Greenway Collins",
@@ -12986,7 +13073,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 240
+      "rank": 242
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -13046,7 +13133,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 241
+      "rank": 243
     },
     {
       "company": "L-Charge",
@@ -13101,7 +13188,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 242
+      "rank": 244
     },
     {
       "company": "Melavex",
@@ -13156,7 +13243,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 243
+      "rank": 245
     },
     {
       "company": "Windbornesystems",
@@ -13216,7 +13303,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 244
+      "rank": 246
     },
     {
       "company": "Nova Solvers",
@@ -13271,7 +13358,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 245
+      "rank": 247
     },
     {
       "company": "Armada",
@@ -13331,7 +13418,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 246
+      "rank": 248
     },
     {
       "company": "Armada",
@@ -13386,7 +13473,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 247
+      "rank": 249
     },
     {
       "company": "Rocket Lab",
@@ -13441,7 +13528,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 248
+      "rank": 250
     },
     {
       "company": "Sierra Space",
@@ -13501,7 +13588,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 249
+      "rank": 251
     },
     {
       "company": "BlackSky",
@@ -13561,7 +13648,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 250
+      "rank": 252
     },
     {
       "company": "Climactic",
@@ -13621,7 +13708,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 251
+      "rank": 253
     },
     {
       "company": "Rocket Lab",
@@ -13681,7 +13768,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 252
+      "rank": 254
     },
     {
       "company": "Astra Core-X",
@@ -13746,7 +13833,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 253
+      "rank": 255
     },
     {
       "company": "Quartermaster",
@@ -13806,7 +13893,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 254
+      "rank": 256
     },
     {
       "company": "Locus Lock | Techstars Job Board",
@@ -13871,7 +13958,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 255
+      "rank": 257
     },
     {
       "company": "Planet",
@@ -13936,7 +14023,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 256
+      "rank": 258
     },
     {
       "company": "The Aerospace Corporation",
@@ -13991,7 +14078,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 257
+      "rank": 259
     },
     {
       "company": "Amperesand",
@@ -14056,7 +14143,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 258
+      "rank": 260
     },
     {
       "company": "Iridium",
@@ -14121,7 +14208,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 259
+      "rank": 261
     },
     {
       "company": "ALAC HR Solutions",
@@ -14176,7 +14263,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 260
+      "rank": 262
     },
     {
       "company": "SEAKR",
@@ -14231,7 +14318,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 261
+      "rank": 263
     },
     {
       "company": "SEAKR",
@@ -14281,7 +14368,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 262
+      "rank": 264
     },
     {
       "company": "Loft Orbital Solutions",
@@ -14346,10 +14433,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 263
+      "rank": 265
     },
     {
-      "rank": 264,
+      "rank": 266,
       "company": "Exotrail",
       "role": "Business Development & Sales Manager (In-Orbit Services)",
       "score": 48.5,
@@ -14397,7 +14484,7 @@
       ]
     },
     {
-      "rank": 265,
+      "rank": 267,
       "company": "EnduroSat",
       "role": "Business Development Manager, Space Hardware",
       "score": 48.5,
@@ -14497,7 +14584,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 266
+      "rank": 268
     },
     {
       "company": "Quvia",
@@ -14552,7 +14639,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 267
+      "rank": 269
     },
     {
       "company": "Tensor Tech",
@@ -14612,7 +14699,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 268
+      "rank": 270
     },
     {
       "company": "Nova Sky Stories",
@@ -14677,7 +14764,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 269
+      "rank": 271
     },
     {
       "company": "Germany/DACH (Hybrid, Berlin, Frankfurt, Munich, Hamburg)",
@@ -14742,7 +14829,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 270
+      "rank": 272
     },
     {
       "company": "Germany/DACH (Hybrid, Berlin, Frankfurt, Munich, Hamburg)",
@@ -14807,7 +14894,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 271
+      "rank": 273
     },
     {
       "company": "Planet",
@@ -14867,10 +14954,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 272
+      "rank": 274
     },
     {
-      "rank": 273,
+      "rank": 275,
       "company": "HKEX",
       "role": "Vice President, Carbon and ESG Products",
       "score": 48.0,
@@ -14905,7 +14992,7 @@
       ]
     },
     {
-      "rank": 274,
+      "rank": 276,
       "company": "Planet Labs",
       "role": "Customer Success Manager (D&I - South Korea & ANZ)",
       "score": 48.0,
@@ -14940,7 +15027,7 @@
       ]
     },
     {
-      "rank": 275,
+      "rank": 277,
       "company": "Sylvera",
       "role": "Customer Success Manager",
       "score": 48.0,
@@ -15014,7 +15101,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 276
+      "rank": 278
     },
     {
       "company": "Overstory",
@@ -15062,7 +15149,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 277
+      "rank": 279
     },
     {
       "company": "Environmental Defense Fund",
@@ -15110,7 +15197,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 278
+      "rank": 280
     },
     {
       "company": "ECI Software Solutions",
@@ -15158,7 +15245,7 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 279
+      "rank": 281
     },
     {
       "company": "Altana",
@@ -15211,7 +15298,7 @@
         "CO": 8,
         "GC": 7
       },
-      "rank": 280
+      "rank": 282
     },
     {
       "company": "Hydrosat",
@@ -15264,7 +15351,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 281
+      "rank": 283
     },
     {
       "company": "Overstory",
@@ -15314,7 +15401,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 282
+      "rank": 284
     },
     {
       "company": "Acre",
@@ -15369,7 +15456,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 283
+      "rank": 285
     },
     {
       "company": "Loft Orbital Solutions",
@@ -15422,7 +15509,7 @@
         "CO": 7,
         "GC": 5
       },
-      "rank": 284
+      "rank": 286
     },
     {
       "company": "Altanaai",
@@ -15482,7 +15569,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 285
+      "rank": 287
     },
     {
       "company": "ExxonMobil",
@@ -15535,7 +15622,7 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 286
+      "rank": 288
     },
     {
       "company": "Terradot",
@@ -15595,7 +15682,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 287
+      "rank": 289
     },
     {
       "company": "Momentus Space LLC",
@@ -15650,7 +15737,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 288
+      "rank": 290
     },
     {
       "company": "SciMax Global",
@@ -15705,7 +15792,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 289
+      "rank": 291
     },
     {
       "company": "Optiml",
@@ -15760,7 +15847,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 290
+      "rank": 292
     },
     {
       "company": "General Dynamics Information Technology",
@@ -15820,7 +15907,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 291
+      "rank": 293
     },
     {
       "company": "L3Harris Technologies",
@@ -15880,7 +15967,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 292
+      "rank": 294
     },
     {
       "company": "SES Space & Defense",
@@ -15945,7 +16032,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 293
+      "rank": 295
     },
     {
       "company": "Armada",
@@ -16015,7 +16102,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 294
+      "rank": 296
     },
     {
       "company": "Armada",
@@ -16075,7 +16162,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 295
+      "rank": 297
     },
     {
       "company": "Vatn Systems",
@@ -16135,7 +16222,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 296
+      "rank": 298
     },
     {
       "company": "Halter",
@@ -16195,7 +16282,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 297
+      "rank": 299
     },
     {
       "company": "CACI International Inc",
@@ -16260,7 +16347,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 298
+      "rank": 300
     },
     {
       "company": "Loft Orbital Solutions",
@@ -16320,7 +16407,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 299
+      "rank": 301
     },
     {
       "company": "Windward",
@@ -16385,7 +16472,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 300
+      "rank": 302
     },
     {
       "company": "Ladders",
@@ -16445,7 +16532,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 301
+      "rank": 303
     },
     {
       "company": "Color",
@@ -16500,7 +16587,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 302
+      "rank": 304
     },
     {
       "company": "Space Kinetic",
@@ -16560,7 +16647,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 303
+      "rank": 305
     },
     {
       "company": "Airbus",
@@ -16620,7 +16707,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 304
+      "rank": 306
     },
     {
       "company": "Remoracarbon",
@@ -16675,7 +16762,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 305
+      "rank": 307
     },
     {
       "company": "Space Kinetic Corp.",
@@ -16735,7 +16822,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 306
+      "rank": 308
     },
     {
       "company": "L3Harris Technologies",
@@ -16790,10 +16877,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 307
+      "rank": 309
     },
     {
-      "rank": 308,
+      "rank": 310,
       "company": "Ceres Imaging",
       "role": "Senior Enterprise Account Executive",
       "score": 47.5,
@@ -16859,7 +16946,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 309
+      "rank": 311
     },
     {
       "company": "hampr | Techstars Job Board",
@@ -16912,10 +16999,10 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 310
+      "rank": 312
     },
     {
-      "rank": 311,
+      "rank": 313,
       "company": "Patch",
       "role": "Embedded Climate Strategist",
       "score": 47.5,
@@ -16963,7 +17050,7 @@
       }
     },
     {
-      "rank": 312,
+      "rank": 314,
       "company": "Apex",
       "role": "Business Development Director, US Government Markets",
       "score": 47.5,
@@ -17068,7 +17155,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 313
+      "rank": 315
     },
     {
       "company": "Flex",
@@ -17123,7 +17210,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 314
+      "rank": 316
     },
     {
       "company": "Orca AI",
@@ -17188,7 +17275,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 315
+      "rank": 317
     },
     {
       "company": "Voyager Technologies",
@@ -17238,7 +17325,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 316
+      "rank": 318
     },
     {
       "company": "Zone 5 Technologies",
@@ -17303,7 +17390,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 317
+      "rank": 319
     },
     {
       "company": "L3Harris Technologies",
@@ -17363,7 +17450,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 318
+      "rank": 320
     },
     {
       "company": "Converteo",
@@ -17423,7 +17510,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 319
+      "rank": 321
     },
     {
       "company": "Avathon",
@@ -17483,7 +17570,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 320
+      "rank": 322
     },
     {
       "company": "SEAKR",
@@ -17538,7 +17625,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 321
+      "rank": 323
     },
     {
       "company": "Credible",
@@ -17593,7 +17680,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 322
+      "rank": 324
     },
     {
       "company": "Everpure",
@@ -17653,7 +17740,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 323
+      "rank": 325
     },
     {
       "company": "Flex",
@@ -17708,7 +17795,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 324
+      "rank": 326
     },
     {
       "company": "Polimak Space",
@@ -17768,7 +17855,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 325
+      "rank": 327
     },
     {
       "company": "Seamachines",
@@ -17823,10 +17910,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 326
+      "rank": 328
     },
     {
-      "rank": 327,
+      "rank": 329,
       "company": "Alcumus (Planet Mark)",
       "role": "Carbon Data Transformation Director / Consultant",
       "score": 47.0,
@@ -17861,7 +17948,7 @@
       ]
     },
     {
-      "rank": 328,
+      "rank": 330,
       "company": "Gradient",
       "role": "Strategic Sales Director, HVAC (West Coast)",
       "date": "2026-04-17",
@@ -17961,7 +18048,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 329
+      "rank": 331
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -18009,7 +18096,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 330
+      "rank": 332
     },
     {
       "company": "Acre",
@@ -18067,7 +18154,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 331
+      "rank": 333
     },
     {
       "company": "FOSSA Systems",
@@ -18127,7 +18214,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 332
+      "rank": 334
     },
     {
       "company": "Onterris",
@@ -18182,7 +18269,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 333
+      "rank": 335
     },
     {
       "company": "Samsung C&T America, Inc.",
@@ -18242,7 +18329,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 334
+      "rank": 336
     },
     {
       "company": "Germany/DACH",
@@ -18307,7 +18394,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 335
+      "rank": 337
     },
     {
       "company": "Lastwall",
@@ -18367,7 +18454,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 336
+      "rank": 338
     },
     {
       "company": "BAE Systems, Inc.",
@@ -18422,7 +18509,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 337
+      "rank": 339
     },
     {
       "company": "Planetlabs",
@@ -18477,7 +18564,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 338
+      "rank": 340
     },
     {
       "company": "Teratherm Energy",
@@ -18532,7 +18619,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 339
+      "rank": 341
     },
     {
       "company": "Rainmaker Technology Corporation",
@@ -18587,7 +18674,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 340
+      "rank": 342
     },
     {
       "company": "MicroVision®",
@@ -18652,7 +18739,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 341
+      "rank": 343
     },
     {
       "company": "York Space Systems",
@@ -18717,7 +18804,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 342
+      "rank": 344
     },
     {
       "company": "OpenWorks Engineering Ltd",
@@ -18777,7 +18864,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 343
+      "rank": 345
     },
     {
       "company": "Unknown (LinkedIn posting)",
@@ -18832,7 +18919,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 344
+      "rank": 346
     },
     {
       "company": "<a href=\"https://www.linkedin.com/comm/jobs/view/4446794078/?trackingId=T6Dj5AdcTgv1GSLY3uIigg%3D%3D&refId=Mek4FjA5j7af5WIJKojWwQ%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BsYGC18GTSMGEuzJ%2BfuBegw%3D%3D&midToken=AQEDlwz42K0bTQ&midSig=2QoWonVx_WIIo1&trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4446794078_sectionid_282015_fmid_a99q4~mtdf4sc2~4b&trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4446794078_sectionid_282015_fmid_a99q4~mtdf4sc2~",
@@ -18882,7 +18969,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 345
+      "rank": 347
     },
     {
       "company": "Powder Watts",
@@ -18942,7 +19029,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 346
+      "rank": 348
     },
     {
       "company": "NODA AI",
@@ -19002,7 +19089,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 347
+      "rank": 349
     },
     {
       "company": "Y Combinator",
@@ -19057,7 +19144,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 348
+      "rank": 350
     },
     {
       "company": "AGS AGUNSA",
@@ -19117,7 +19204,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 349
+      "rank": 351
     },
     {
       "company": "Senior Business Development Manager",
@@ -19172,10 +19259,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 350
+      "rank": 352
     },
     {
-      "rank": 351,
+      "rank": 353,
       "company": "Hanwha Qcells (inferred)",
       "role": "Associate Director, Power Marketing & Origination",
       "score": 46.5,
@@ -19218,7 +19305,7 @@
       ]
     },
     {
-      "rank": 352,
+      "rank": 354,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Area Vice President, Technology & Strategic Partnership APAC",
       "score": 46.5,
@@ -19253,7 +19340,7 @@
       ]
     },
     {
-      "rank": 353,
+      "rank": 355,
       "company": "Moveworks (DCVC Portfolio)",
       "role": "Director, Canada Partnerships & Channels",
       "score": 46.5,
@@ -19288,7 +19375,7 @@
       ]
     },
     {
-      "rank": 354,
+      "rank": 356,
       "company": "Patch",
       "role": "Enterprise Account Executive",
       "score": 46.5,
@@ -19362,7 +19449,7 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 355
+      "rank": 357
     },
     {
       "company": "Loft Orbital Solutions",
@@ -19417,7 +19504,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 356
+      "rank": 358
     },
     {
       "company": "Acre",
@@ -19472,10 +19559,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 357
+      "rank": 359
     },
     {
-      "rank": 358,
+      "rank": 360,
       "company": "Northwood Space",
       "role": "Director, USG Growth, National Security Space",
       "score": 46.5,
@@ -19568,7 +19655,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 359
+      "rank": 361
     },
     {
       "company": "Serval",
@@ -19623,7 +19710,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 360
+      "rank": 362
     },
     {
       "company": "Dataminr",
@@ -19678,7 +19765,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 361
+      "rank": 363
     },
     {
       "company": "Luster National",
@@ -19738,7 +19825,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 362
+      "rank": 364
     },
     {
       "company": "CesiumAstro",
@@ -19799,7 +19886,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 363
+      "rank": 365
     },
     {
       "company": "Black Bear Energy Inc.",
@@ -19859,7 +19946,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 364
+      "rank": 366
     },
     {
       "company": "Inversion",
@@ -19924,7 +20011,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 365
+      "rank": 367
     },
     {
       "company": "Confidential",
@@ -19979,7 +20066,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 366
+      "rank": 368
     },
     {
       "company": "Pelmorex",
@@ -20034,7 +20121,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 367
+      "rank": 369
     },
     {
       "company": "InnoForge",
@@ -20089,7 +20176,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 368
+      "rank": 370
     },
     {
       "company": "Zipline",
@@ -20144,7 +20231,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 369
+      "rank": 371
     },
     {
       "company": "Trezly",
@@ -20204,7 +20291,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 370
+      "rank": 372
     },
     {
       "company": "Redwire",
@@ -20259,7 +20346,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 371
+      "rank": 373
     },
     {
       "company": "Daten Technology Solutions",
@@ -20314,7 +20401,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 372
+      "rank": 374
     },
     {
       "company": "Scout Global",
@@ -20369,7 +20456,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 373
+      "rank": 375
     },
     {
       "company": "Alta Resource Technologies, Inc.",
@@ -20434,7 +20521,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 374
+      "rank": 376
     },
     {
       "company": "Movopack | Techstars Job Board",
@@ -20489,7 +20576,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 375
+      "rank": 377
     },
     {
       "company": "Ladders",
@@ -20544,7 +20631,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 376
+      "rank": 378
     },
     {
       "company": "Remote",
@@ -20604,10 +20691,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 377
+      "rank": 379
     },
     {
-      "rank": 378,
+      "rank": 380,
       "company": "Environmental Science Associates (ESA)",
       "role": "Client Development Director, Transmission Strategy and Business Development",
       "score": 46.5,
@@ -20655,7 +20742,7 @@
       }
     },
     {
-      "rank": 379,
+      "rank": 381,
       "company": "Amp Americas",
       "role": "Director of Business Development",
       "score": 46.5,
@@ -20698,7 +20785,7 @@
       }
     },
     {
-      "rank": 380,
+      "rank": 382,
       "company": "ZeroNorth",
       "role": "Customer Success Manager",
       "score": 46.0,
@@ -20778,10 +20865,10 @@
         "CO": 9,
         "GC": 8
       },
-      "rank": 381
+      "rank": 383
     },
     {
-      "rank": 382,
+      "rank": 384,
       "company": "Apex",
       "role": "Head of Business Development, US Government Markets",
       "score": 46.0,
@@ -20886,7 +20973,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 383
+      "rank": 385
     },
     {
       "company": "Katalyst Space Technologies",
@@ -20951,7 +21038,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 384
+      "rank": 386
     },
     {
       "company": "Seaman Corporation",
@@ -21016,7 +21103,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 385
+      "rank": 387
     },
     {
       "company": "Kepler Communications",
@@ -21071,7 +21158,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 386
+      "rank": 388
     },
     {
       "company": "EVgo",
@@ -21131,7 +21218,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 387
+      "rank": 389
     },
     {
       "company": "Environmental Defense Fund",
@@ -21191,7 +21278,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 388
+      "rank": 390
     },
     {
       "company": "Canadian Solar Inc.",
@@ -21246,7 +21333,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 389
+      "rank": 391
     },
     {
       "company": "HawkEye 360",
@@ -21306,7 +21393,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 390
+      "rank": 392
     },
     {
       "company": "EVONA",
@@ -21371,7 +21458,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 391
+      "rank": 393
     },
     {
       "company": "908 Devices",
@@ -21431,7 +21518,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 392
+      "rank": 394
     },
     {
       "company": "Sofar | Schmidt Marine Job Board",
@@ -21486,7 +21573,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 393
+      "rank": 395
     },
     {
       "company": "Ladders",
@@ -21541,7 +21628,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 394
+      "rank": 396
     },
     {
       "company": "PadSplit | Techstars Job Board",
@@ -21596,7 +21683,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 395
+      "rank": 397
     },
     {
       "company": "Descartes Underwriting",
@@ -21651,7 +21738,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 396
+      "rank": 398
     },
     {
       "company": "Orca AI",
@@ -21721,7 +21808,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 397
+      "rank": 399
     },
     {
       "company": "Vantor",
@@ -21781,7 +21868,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 398
+      "rank": 400
     },
     {
       "company": "Motorola Solutions",
@@ -21846,7 +21933,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 399
+      "rank": 401
     },
     {
       "company": "Senior Manager, Land Development",
@@ -21906,7 +21993,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 400
+      "rank": 402
     },
     {
       "company": "Voyager Technologies",
@@ -21961,10 +22048,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 401
+      "rank": 403
     },
     {
-      "rank": 402,
+      "rank": 404,
       "company": "Fugro",
       "role": "GroundIQ Sales Lead",
       "score": 45.5,
@@ -22044,7 +22131,7 @@
         "CO": 7,
         "GC": 9
       },
-      "rank": 403
+      "rank": 405
     },
     {
       "company": "Product Manager- Embodied Carbon for Products",
@@ -22092,7 +22179,7 @@
         "CO": 7,
         "GC": 8
       },
-      "rank": 404
+      "rank": 406
     },
     {
       "company": "Earthdaily",
@@ -22147,7 +22234,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 405
+      "rank": 407
     },
     {
       "company": "Descartes Underwriting",
@@ -22207,7 +22294,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 406
+      "rank": 408
     },
     {
       "company": "LevelTen Energy | Techstars Job Board",
@@ -22262,7 +22349,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 407
+      "rank": 409
     },
     {
       "company": "Albany International Corp.",
@@ -22317,7 +22404,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 408
+      "rank": 410
     },
     {
       "company": "onXmaps, Inc.",
@@ -22372,7 +22459,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 409
+      "rank": 411
     },
     {
       "company": "Certa | Techstars Job Board",
@@ -22427,7 +22514,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 410
+      "rank": 412
     },
     {
       "company": "cKinetics",
@@ -22482,7 +22569,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 411
+      "rank": 413
     },
     {
       "company": "Mimica",
@@ -22537,7 +22624,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 412
+      "rank": 414
     },
     {
       "company": "Ladders",
@@ -22597,7 +22684,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 413
+      "rank": 415
     },
     {
       "company": "Detroit Defense",
@@ -22657,7 +22744,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 414
+      "rank": 416
     },
     {
       "company": "Planet",
@@ -22712,7 +22799,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 415
+      "rank": 417
     },
     {
       "company": "Sitetracker",
@@ -22767,7 +22854,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 416
+      "rank": 418
     },
     {
       "company": "L3Harris Technologies",
@@ -22827,7 +22914,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 417
+      "rank": 419
     },
     {
       "company": "Qualcomm",
@@ -22882,7 +22969,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 418
+      "rank": 420
     },
     {
       "company": "InnoForge",
@@ -22942,7 +23029,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 419
+      "rank": 421
     },
     {
       "company": "Nova Sky Stories",
@@ -23002,7 +23089,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 420
+      "rank": 422
     },
     {
       "company": "Ladders",
@@ -23057,10 +23144,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 421
+      "rank": 423
     },
     {
-      "rank": 422,
+      "rank": 424,
       "company": "NatureMetrics",
       "role": "Interim Head of Marketing (Contract)",
       "score": 45.0,
@@ -23089,7 +23176,7 @@
       "blockers": []
     },
     {
-      "rank": 423,
+      "rank": 425,
       "company": "Veritree",
       "role": "Enterprise Business Development Representative",
       "score": 45.0,
@@ -23181,7 +23268,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 424
+      "rank": 426
     },
     {
       "company": "Kepler Communications",
@@ -23241,7 +23328,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 425
+      "rank": 427
     },
     {
       "company": "Watershed Careers",
@@ -23296,7 +23383,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 426
+      "rank": 428
     },
     {
       "company": "L3Harris Technologies",
@@ -23351,7 +23438,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 427
+      "rank": 429
     },
     {
       "company": "Outpost Mission Services",
@@ -23406,7 +23493,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 428
+      "rank": 430
     },
     {
       "company": "Raydar",
@@ -23461,7 +23548,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 429
+      "rank": 431
     },
     {
       "company": "General Atomics",
@@ -23521,7 +23608,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 430
+      "rank": 432
     },
     {
       "company": "Axiom Space",
@@ -23576,7 +23663,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 431
+      "rank": 433
     },
     {
       "company": "Cascade Energy",
@@ -23636,7 +23723,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 432
+      "rank": 434
     },
     {
       "company": "Confidential",
@@ -23696,7 +23783,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 433
+      "rank": 435
     },
     {
       "company": "Ocean Aero Inc",
@@ -23751,7 +23838,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 434
+      "rank": 436
     },
     {
       "company": "Windward",
@@ -23811,7 +23898,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 435
+      "rank": 437
     },
     {
       "company": "Green Key Resources",
@@ -23871,7 +23958,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 436
+      "rank": 438
     },
     {
       "company": "Ladders",
@@ -23931,7 +24018,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 437
+      "rank": 439
     },
     {
       "company": "21Tech",
@@ -23986,7 +24073,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 438
+      "rank": 440
     },
     {
       "company": "DSV - Global Transport and Logistics",
@@ -24041,7 +24128,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 439
+      "rank": 441
     },
     {
       "company": "Crux",
@@ -24101,7 +24188,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 440
+      "rank": 442
     },
     {
       "company": "Astranis",
@@ -24161,7 +24248,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 441
+      "rank": 443
     },
     {
       "company": "Aquent",
@@ -24221,10 +24308,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 442
+      "rank": 444
     },
     {
-      "rank": 443,
+      "rank": 445,
       "company": "Clean Air Task Force",
       "role": "U.S. Director, Nuclear Energy",
       "date": "2026-04-17",
@@ -24274,7 +24361,7 @@
       }
     },
     {
-      "rank": 444,
+      "rank": 446,
       "company": "Medable",
       "role": "Senior Director, Business Development (CRO Focus)",
       "score": 44.5,
@@ -24340,7 +24427,7 @@
           "severity": "hard"
         }
       ],
-      "rank": 445
+      "rank": 447
     },
     {
       "company": "Acre",
@@ -24388,7 +24475,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 446
+      "rank": 448
     },
     {
       "company": "Muon Space",
@@ -24446,7 +24533,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 447
+      "rank": 449
     },
     {
       "company": "ExxonMobil",
@@ -24499,7 +24586,7 @@
         "CO": 8,
         "GC": 3
       },
-      "rank": 448
+      "rank": 450
     },
     {
       "company": "Taranis",
@@ -24554,7 +24641,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 449
+      "rank": 451
     },
     {
       "company": "UKI, Nordics & Middle East | Jobs at LiveEO GmbH",
@@ -24614,7 +24701,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 450
+      "rank": 452
     },
     {
       "company": "Tract",
@@ -24657,7 +24744,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 451
+      "rank": 453
     },
     {
       "company": "Unknown (LinkedIn posting)",
@@ -24717,7 +24804,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 452
+      "rank": 454
     },
     {
       "company": "Safran Defense & Space, Inc.",
@@ -24782,7 +24869,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 453
+      "rank": 455
     },
     {
       "company": "GKN Aerospace",
@@ -24837,7 +24924,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 454
+      "rank": 456
     },
     {
       "company": "Minim & Tonye",
@@ -24892,7 +24979,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 455
+      "rank": 457
     },
     {
       "company": "Sensata Technologies",
@@ -24942,7 +25029,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 456
+      "rank": 458
     },
     {
       "company": "PermitFlow",
@@ -24997,7 +25084,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 457
+      "rank": 459
     },
     {
       "company": "Birdstop | Techstars Job Board",
@@ -25057,7 +25144,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 458
+      "rank": 460
     },
     {
       "company": "Sony",
@@ -25117,7 +25204,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 459
+      "rank": 461
     },
     {
       "company": "FairWind",
@@ -25172,7 +25259,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 460
+      "rank": 462
     },
     {
       "company": "Rocket Lab",
@@ -25232,7 +25319,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 461
+      "rank": 463
     },
     {
       "company": "Albany International Corp.",
@@ -25287,7 +25374,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 462
+      "rank": 464
     },
     {
       "company": "explore-career-opportunities",
@@ -25337,7 +25424,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 463
+      "rank": 465
     },
     {
       "company": "Forge Nano, Inc.",
@@ -25412,7 +25499,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 464
+      "rank": 466
     },
     {
       "company": "Fermi America",
@@ -25467,7 +25554,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 465
+      "rank": 467
     },
     {
       "company": "Seven Executive Limited",
@@ -25532,7 +25619,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 466
+      "rank": 468
     },
     {
       "company": "Cobham Satcom",
@@ -25592,7 +25679,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 467
+      "rank": 469
     },
     {
       "company": "Anthesis Group",
@@ -25647,7 +25734,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 468
+      "rank": 470
     },
     {
       "company": "NAYA",
@@ -25702,7 +25789,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 469
+      "rank": 471
     },
     {
       "company": "Inari",
@@ -25757,7 +25844,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 470
+      "rank": 472
     },
     {
       "company": "Atrium",
@@ -25812,7 +25899,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 471
+      "rank": 473
     },
     {
       "company": "Itron",
@@ -25867,7 +25954,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 472
+      "rank": 474
     },
     {
       "company": "Defense Unicorns",
@@ -25922,7 +26009,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 473
+      "rank": 475
     },
     {
       "company": "JERA Americas",
@@ -25977,7 +26064,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 474
+      "rank": 476
     },
     {
       "company": "Page Executive",
@@ -26032,7 +26119,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 475
+      "rank": 477
     },
     {
       "company": "Planet",
@@ -26092,7 +26179,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 476
+      "rank": 478
     },
     {
       "company": "SPAN",
@@ -26152,7 +26239,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 477
+      "rank": 479
     },
     {
       "company": "NV5",
@@ -26207,7 +26294,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 478
+      "rank": 480
     },
     {
       "company": "Orennia",
@@ -26257,7 +26344,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 479
+      "rank": 481
     },
     {
       "company": "Datacor, Inc.",
@@ -26312,10 +26399,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 480
+      "rank": 482
     },
     {
-      "rank": 481,
+      "rank": 483,
       "company": "CIBO Technologies",
       "role": "Senior Sales Executive, Enterprise Sales",
       "score": 44.0,
@@ -26387,7 +26474,7 @@
         "CO": 6,
         "GC": 5
       },
-      "rank": 482
+      "rank": 484
     },
     {
       "company": "Watershed Careers",
@@ -26447,7 +26534,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 483
+      "rank": 485
     },
     {
       "company": "Blue Forest",
@@ -26502,7 +26589,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 484
+      "rank": 486
     },
     {
       "company": "Worley",
@@ -26562,7 +26649,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 485
+      "rank": 487
     },
     {
       "company": "Honeywell Aerospace",
@@ -26622,7 +26709,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 486
+      "rank": 488
     },
     {
       "company": "SRT Marine Systems plc",
@@ -26677,7 +26764,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 487
+      "rank": 489
     },
     {
       "company": "HIRECLOUT",
@@ -26732,7 +26819,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 488
+      "rank": 490
     },
     {
       "company": "Tiberius Aerospace",
@@ -26797,7 +26884,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 489
+      "rank": 491
     },
     {
       "company": "Pyka",
@@ -26857,7 +26944,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 490
+      "rank": 492
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -26912,7 +26999,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 491
+      "rank": 493
     },
     {
       "company": "Airbus",
@@ -26977,7 +27064,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 492
+      "rank": 494
     },
     {
       "company": "Space Kinetic",
@@ -27037,7 +27124,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 493
+      "rank": 495
     },
     {
       "company": "The Fordy Group",
@@ -27097,7 +27184,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 494
+      "rank": 496
     },
     {
       "company": "Ocean Mind",
@@ -27157,7 +27244,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 495
+      "rank": 497
     },
     {
       "company": "Spire Global",
@@ -27213,7 +27300,7 @@
       "confidence": "high",
       "tier_uncertain": false,
       "verdict": "Confirmed employer is Spire Global the satellite company, but this specific seat sells weather and climate data into two buyer segments Paul has never sold to: the JD requires 'Demonstrated success selling data/analytics to financial trading desks or hedge funds' and 'Experience with U.S. electric utilities, independent power producers, or grid operators', so the soft Hard Requirement Cap fires (RF capped at 5, IL at 4). The role is also a quota-carrying hunter seat ('Meet and exceed assigned sales quotas' across an existing territory motion), which holds RF at 4 and SA at 4 since the commercial function and both segments already exist. Paul's decade selling this class of space-based data at KSAT and his AIS-adjacent GFW record are real, but the JD's must-haves point at trading floors and grid operators, not maritime, and the pattern-match firewall keeps that from inflating RF or IL. SPM is 4: conventional data sales into existing demand. Comp is decent for the level but the title and role shape sit below Paul's market-builder profile.",
-      "rank": 496
+      "rank": 498
     },
     {
       "company": "Scout Global",
@@ -27268,7 +27355,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 497
+      "rank": 499
     },
     {
       "company": "LevelTen Energy",
@@ -27328,7 +27415,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 498
+      "rank": 500
     },
     {
       "company": "Ocean Wise | Schmidt Marine Job Board",
@@ -27388,7 +27475,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 499
+      "rank": 501
     },
     {
       "company": "Cambridge Consultants",
@@ -27443,7 +27530,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 500
+      "rank": 502
     },
     {
       "company": "Rippling Recruiting",
@@ -27498,7 +27585,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 501
+      "rank": 503
     },
     {
       "company": "External",
@@ -27558,7 +27645,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 502
+      "rank": 504
     },
     {
       "company": "Honeywell Aerospace",
@@ -27613,7 +27700,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 503
+      "rank": 505
     },
     {
       "company": "Ladders",
@@ -27668,7 +27755,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 504
+      "rank": 506
     },
     {
       "company": "Mitiga Solutions",
@@ -27723,7 +27810,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 505
+      "rank": 507
     },
     {
       "company": "Arable",
@@ -27771,7 +27858,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 506
+      "rank": 508
     },
     {
       "company": "Active Site",
@@ -27806,7 +27893,7 @@
           "severity": "soft"
         }
       ],
-      "rank": 507
+      "rank": 509
     },
     {
       "company": "Watershed Careers",
@@ -27854,7 +27941,7 @@
         "CO": 5,
         "GC": 6
       },
-      "rank": 508
+      "rank": 510
     },
     {
       "company": "Astranis",
@@ -27909,7 +27996,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 509
+      "rank": 511
     },
     {
       "company": "Asterra",
@@ -27969,7 +28056,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 510
+      "rank": 512
     },
     {
       "company": "Utah and Great Basin Director",
@@ -28024,7 +28111,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 511
+      "rank": 513
     },
     {
       "company": "Mitiga Solutions",
@@ -28077,7 +28164,7 @@
         "CO": 5,
         "GC": 4
       },
-      "rank": 512
+      "rank": 514
     },
     {
       "company": "True Anomaly",
@@ -28147,7 +28234,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 513
+      "rank": 515
     },
     {
       "company": "L3Harris Technologies",
@@ -28202,7 +28289,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 514
+      "rank": 516
     },
     {
       "company": "Altera",
@@ -28267,7 +28354,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 515
+      "rank": 517
     },
     {
       "company": "Kratos Defense and Security Solutions",
@@ -28327,7 +28414,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 516
+      "rank": 518
     },
     {
       "company": "Kratos Defense and Security Solutions",
@@ -28387,7 +28474,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 517
+      "rank": 519
     },
     {
       "company": "Hexcel Corporation",
@@ -28442,7 +28529,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 518
+      "rank": 520
     },
     {
       "company": "Booz Allen Hamilton",
@@ -28502,7 +28589,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 519
+      "rank": 521
     },
     {
       "company": "Goodcarbon",
@@ -28567,7 +28654,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 520
+      "rank": 522
     },
     {
       "company": "L3Harris Technologies",
@@ -28622,7 +28709,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 521
+      "rank": 523
     },
     {
       "company": "Michael Baker International",
@@ -28682,7 +28769,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 522
+      "rank": 524
     },
     {
       "company": "Opensolar",
@@ -28742,7 +28829,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 523
+      "rank": 525
     },
     {
       "company": "Gilat Satellite Networks",
@@ -28807,7 +28894,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 524
+      "rank": 526
     },
     {
       "company": "Celestica",
@@ -28867,7 +28954,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 525
+      "rank": 527
     },
     {
       "company": "Multiplier",
@@ -28927,7 +29014,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 526
+      "rank": 528
     },
     {
       "company": "AECOM",
@@ -28987,7 +29074,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 527
+      "rank": 529
     },
     {
       "company": "Romega Solutions",
@@ -29042,7 +29129,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 528
+      "rank": 530
     },
     {
       "company": "SAIC",
@@ -29107,7 +29194,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 529
+      "rank": 531
     },
     {
       "company": "Dragonfli Group",
@@ -29162,7 +29249,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 530
+      "rank": 532
     },
     {
       "company": "Coda Octopus Engineering",
@@ -29227,7 +29314,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 531
+      "rank": 533
     },
     {
       "company": "Fictiv",
@@ -29287,7 +29374,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 532
+      "rank": 534
     },
     {
       "company": "Planet",
@@ -29342,7 +29429,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 533
+      "rank": 535
     },
     {
       "company": "Ladders",
@@ -29407,7 +29494,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 534
+      "rank": 536
     },
     {
       "company": "Planet",
@@ -29467,7 +29554,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 535
+      "rank": 537
     },
     {
       "company": "RDSolutions",
@@ -29522,7 +29609,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 536
+      "rank": 538
     },
     {
       "company": "Cyclomedia",
@@ -29577,7 +29664,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 537
+      "rank": 539
     },
     {
       "company": "Drone.vet",
@@ -29632,10 +29719,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 538
+      "rank": 540
     },
     {
-      "rank": 539,
+      "rank": 541,
       "company": "OCEANA UK",
       "role": "Head of Campaigns",
       "score": 43.0,
@@ -29720,7 +29807,7 @@
         "CO": 5,
         "GC": 2
       },
-      "rank": 540
+      "rank": 542
     },
     {
       "company": "Acre",
@@ -29780,7 +29867,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 541
+      "rank": 543
     },
     {
       "company": "Mitiga Solutions",
@@ -29840,7 +29927,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 542
+      "rank": 544
     },
     {
       "company": "ZeroNorth",
@@ -29900,7 +29987,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 543
+      "rank": 545
     },
     {
       "company": "Rubicon Carbon",
@@ -29960,7 +30047,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 544
+      "rank": 546
     },
     {
       "company": "CesiumAstro",
@@ -30020,7 +30107,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 545
+      "rank": 547
     },
     {
       "company": "L3Harris Technologies",
@@ -30080,7 +30167,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 546
+      "rank": 548
     },
     {
       "company": "Saab, Inc.",
@@ -30140,7 +30227,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 547
+      "rank": 549
     },
     {
       "company": "Green Jobs Board - greenjobsearch.org",
@@ -30195,7 +30282,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 548
+      "rank": 550
     },
     {
       "company": "Confidential",
@@ -30250,7 +30337,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 549
+      "rank": 551
     },
     {
       "company": "Root Inc.",
@@ -30305,7 +30392,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 550
+      "rank": 552
     },
     {
       "company": "BAE Systems, Inc.",
@@ -30365,7 +30452,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 551
+      "rank": 553
     },
     {
       "company": "Engine",
@@ -30420,7 +30507,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 552
+      "rank": 554
     },
     {
       "company": "Aivar Innovations",
@@ -30480,7 +30567,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 553
+      "rank": 555
     },
     {
       "company": "Ladders",
@@ -30535,7 +30622,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 554
+      "rank": 556
     },
     {
       "company": "Frontgrade Technologies",
@@ -30595,7 +30682,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 555
+      "rank": 557
     },
     {
       "company": "Mission Technologies, a division of HII",
@@ -30650,7 +30737,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 556
+      "rank": 558
     },
     {
       "company": "Ladders",
@@ -30705,7 +30792,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 557
+      "rank": 559
     },
     {
       "company": "Optiml",
@@ -30765,7 +30852,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 558
+      "rank": 560
     },
     {
       "company": "Voltus",
@@ -30815,7 +30902,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 559
+      "rank": 561
     },
     {
       "company": "Campaign Director",
@@ -30875,7 +30962,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 560
+      "rank": 562
     },
     {
       "company": "Senior Account Manager",
@@ -30925,7 +31012,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 561
+      "rank": 563
     },
     {
       "company": "Spire Government",
@@ -30985,7 +31072,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 562
+      "rank": 564
     },
     {
       "company": "Y Combinator",
@@ -31045,7 +31132,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 563
+      "rank": 565
     },
     {
       "company": "Narmi | Techstars Job Board",
@@ -31093,7 +31180,7 @@
         "CO": 5,
         "GC": 7
       },
-      "rank": 564
+      "rank": 566
     },
     {
       "company": "SWARM Engineering",
@@ -31141,7 +31228,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 565
+      "rank": 567
     },
     {
       "company": "Everlong | Techstars Job Board",
@@ -31189,7 +31276,7 @@
         "CO": 6,
         "GC": 7
       },
-      "rank": 566
+      "rank": 568
     },
     {
       "company": "Waitt Foundation | Schmidt Marine Job Board",
@@ -31247,7 +31334,7 @@
         "CO": 7,
         "GC": 5
       },
-      "rank": 567
+      "rank": 569
     },
     {
       "company": "Help Scout | Techstars Job Board",
@@ -31302,7 +31389,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 568
+      "rank": 570
     },
     {
       "company": "Synspective",
@@ -31372,7 +31459,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 569
+      "rank": 571
     },
     {
       "company": "Windward",
@@ -31437,7 +31524,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 570
+      "rank": 572
     },
     {
       "company": "Sayari",
@@ -31492,7 +31579,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 571
+      "rank": 573
     },
     {
       "company": "SEER Robotics",
@@ -31547,7 +31634,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 572
+      "rank": 574
     },
     {
       "company": "Jobgether",
@@ -31607,7 +31694,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 573
+      "rank": 575
     },
     {
       "company": "First Mile Development",
@@ -31662,7 +31749,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 574
+      "rank": 576
     },
     {
       "company": "Eddyfi Technologies",
@@ -31717,7 +31804,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 575
+      "rank": 577
     },
     {
       "company": "Ocean Optics",
@@ -31772,7 +31859,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 576
+      "rank": 578
     },
     {
       "company": "Tomorrow.io",
@@ -31827,7 +31914,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 577
+      "rank": 579
     },
     {
       "company": "Ceres Environmental Services, Inc.",
@@ -31887,7 +31974,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 578
+      "rank": 580
     },
     {
       "company": "Knight Aerospace",
@@ -31942,7 +32029,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 579
+      "rank": 581
     },
     {
       "company": "Amogy",
@@ -32002,7 +32089,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 580
+      "rank": 582
     },
     {
       "company": "Horizon Offshore, LTD.",
@@ -32057,7 +32144,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 581
+      "rank": 583
     },
     {
       "company": "DataRobot | Techstars Job Board",
@@ -32112,7 +32199,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 582
+      "rank": 584
     },
     {
       "company": "Wild West Systems, Inc.",
@@ -32177,7 +32264,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 583
+      "rank": 585
     },
     {
       "company": "Tradeverifyd | Techstars Job Board",
@@ -32232,7 +32319,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 584
+      "rank": 586
     },
     {
       "company": "The Fordy Group",
@@ -32287,7 +32374,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 585
+      "rank": 587
     },
     {
       "company": "Opensea Marine Services Limited",
@@ -32342,7 +32429,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 586
+      "rank": 588
     },
     {
       "company": "Confidential",
@@ -32402,7 +32489,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 587
+      "rank": 589
     },
     {
       "company": "CesiumAstro",
@@ -32457,7 +32544,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 588
+      "rank": 590
     },
     {
       "company": "Pyka",
@@ -32517,7 +32604,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 589
+      "rank": 591
     },
     {
       "company": "Biochar Market Development Manager",
@@ -32572,7 +32659,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 590
+      "rank": 592
     },
     {
       "company": "Tract",
@@ -32627,7 +32714,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 591
+      "rank": 593
     },
     {
       "company": "Airbus",
@@ -32692,7 +32779,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 592
+      "rank": 594
     },
     {
       "company": "LevelTen Energy",
@@ -32748,7 +32835,7 @@
       "confidence": "high",
       "tier_uncertain": false,
       "verdict": "This is a retention and account management leadership role, not a market-building one: the JD asks the hire to 'Deliver subscription retention and Net Revenue Retention targets' and 'Lead approximately eight North American Account Management team members, including managers and directors,' which is running an established engine, so SA lands at 3 and SPM at 3. The JD names a domain requirement Paul does not meet, 'Deep understanding of renewable energy markets, procurement processes, and commercial structures like PPAs,' a soft gap capping RF at 5 and IL at 4; RF sits at 4 on merits since the responsibilities are the wrong shape for a market builder. Paul does match the 'MBA or advanced degree' and buy-side/sell-side nice-to-haves, but those cannot lift IL past the cap. Compensation is genuinely strong at $250,000 to $280,000 OTE with equity. Net: LevelTen keeps posting roles adjacent to Paul but this one, like the July Account Director, is an established-motion job in a domain he has not sold into.",
-      "rank": 593
+      "rank": 595
     },
     {
       "company": "OroraTech",
@@ -32798,7 +32885,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 594
+      "rank": 596
     },
     {
       "company": "Account Executive",
@@ -32853,7 +32940,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 595
+      "rank": 597
     },
     {
       "company": "Core Group Resources",
@@ -32913,10 +33000,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 596
+      "rank": 598
     },
     {
-      "rank": 597,
+      "rank": 599,
       "company": "MineSense Technologies",
       "role": "Key Accounts Director, North America",
       "score": 42.0,
@@ -32945,7 +33032,7 @@
       "blockers": []
     },
     {
-      "rank": 598,
+      "rank": 600,
       "company": "Via (Citymapper Ads)",
       "role": "Head of Sales, Citymapper Ads",
       "score": 42.0,
@@ -33025,7 +33112,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 599
+      "rank": 601
     },
     {
       "company": "Airbus",
@@ -33085,7 +33172,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 600
+      "rank": 602
     },
     {
       "company": "Airbus",
@@ -33145,7 +33232,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 601
+      "rank": 603
     },
     {
       "company": "Airbus",
@@ -33205,7 +33292,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 602
+      "rank": 604
     },
     {
       "company": "Zipline | Techstars Job Board",
@@ -33260,7 +33347,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 603
+      "rank": 605
     },
     {
       "company": "Nimble Gravity",
@@ -33320,7 +33407,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 604
+      "rank": 606
     },
     {
       "company": "Planet",
@@ -33380,7 +33467,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 605
+      "rank": 607
     },
     {
       "company": "Satelytics (en-US)",
@@ -33435,7 +33522,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 606
+      "rank": 608
     },
     {
       "company": "Liveeo Gmbh",
@@ -33495,7 +33582,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 607
+      "rank": 609
     },
     {
       "company": "Novata",
@@ -33543,7 +33630,7 @@
         "CO": 5,
         "GC": 8
       },
-      "rank": 608
+      "rank": 610
     },
     {
       "company": "Terradot",
@@ -33603,7 +33690,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 609
+      "rank": 611
     },
     {
       "company": "The Aerospace Corporation",
@@ -33658,7 +33745,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 610
+      "rank": 612
     },
     {
       "company": "Aquent",
@@ -33718,7 +33805,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 611
+      "rank": 613
     },
     {
       "company": "Coltala Aerospace",
@@ -33778,7 +33865,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 612
+      "rank": 614
     },
     {
       "company": "Prophecy",
@@ -33833,7 +33920,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 613
+      "rank": 615
     },
     {
       "company": "Unseenlabs",
@@ -33898,7 +33985,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 614
+      "rank": 616
     },
     {
       "company": "Ulteig",
@@ -33953,7 +34040,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 615
+      "rank": 617
     },
     {
       "company": "South Pole",
@@ -34008,7 +34095,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 616
+      "rank": 618
     },
     {
       "company": "HawkEye 360",
@@ -34068,7 +34155,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 617
+      "rank": 619
     },
     {
       "company": "NV5",
@@ -34123,7 +34210,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 618
+      "rank": 620
     },
     {
       "company": "Sphera",
@@ -34178,7 +34265,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 619
+      "rank": 621
     },
     {
       "company": "GridUnity",
@@ -34233,7 +34320,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 620
+      "rank": 622
     },
     {
       "company": "Confidential",
@@ -34288,7 +34375,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 621
+      "rank": 623
     },
     {
       "company": "Armada",
@@ -34343,7 +34430,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 622
+      "rank": 624
     },
     {
       "company": "Databricks",
@@ -34398,7 +34485,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 623
+      "rank": 625
     },
     {
       "company": "Flex",
@@ -34458,7 +34545,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 624
+      "rank": 626
     },
     {
       "company": "Nabla",
@@ -34508,7 +34595,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 625
+      "rank": 627
     },
     {
       "company": "The Aerospace Corporation",
@@ -34573,7 +34660,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 626
+      "rank": 628
     },
     {
       "company": "Armada",
@@ -34628,7 +34715,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 627
+      "rank": 629
     },
     {
       "company": "Moog Inc.",
@@ -34688,7 +34775,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 628
+      "rank": 630
     },
     {
       "company": "Fabric",
@@ -34748,7 +34835,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 629
+      "rank": 631
     },
     {
       "company": "Outpostspace",
@@ -34808,7 +34895,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 630
+      "rank": 632
     },
     {
       "company": "BayWa r.e. Americas",
@@ -34863,7 +34950,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 631
+      "rank": 633
     },
     {
       "company": "Orbital Boost Aerospace",
@@ -34918,7 +35005,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 632
+      "rank": 634
     },
     {
       "company": "External_Career_Site",
@@ -34973,7 +35060,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 633
+      "rank": 635
     },
     {
       "company": "4.1. Vice President of Projects",
@@ -35033,7 +35120,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 634
+      "rank": 636
     },
     {
       "company": "The Nuclear Company",
@@ -35093,7 +35180,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 635
+      "rank": 637
     },
     {
       "company": "ASI Flow",
@@ -35148,7 +35235,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 636
+      "rank": 638
     },
     {
       "company": "Virtelligence",
@@ -35203,7 +35290,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 637
+      "rank": 639
     },
     {
       "company": "The Aerospace Corporation",
@@ -35263,7 +35350,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 638
+      "rank": 640
     },
     {
       "company": "Buzz Solutions",
@@ -35323,7 +35410,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 639
+      "rank": 641
     },
     {
       "company": "Peraton",
@@ -35383,7 +35470,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 640
+      "rank": 642
     },
     {
       "company": "Airbus",
@@ -35443,7 +35530,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 641
+      "rank": 643
     },
     {
       "company": "GenMat LLC",
@@ -35498,7 +35585,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 642
+      "rank": 644
     },
     {
       "company": "SENIOR DIRECTOR, ENTERPRISE SALES",
@@ -35553,7 +35640,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 643
+      "rank": 645
     },
     {
       "company": "KoBold Metals",
@@ -35618,7 +35705,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 644
+      "rank": 646
     },
     {
       "company": "Oscilar",
@@ -35673,10 +35760,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 645
+      "rank": 647
     },
     {
-      "rank": 646,
+      "rank": 648,
       "company": "Via",
       "role": "Director of Expansion",
       "score": 42.0,
@@ -35719,7 +35806,7 @@
       }
     },
     {
-      "rank": 647,
+      "rank": 649,
       "company": "Trees for the Future",
       "role": "Director of Market Integration",
       "score": 42.0,
@@ -35817,10 +35904,10 @@
         "CO": 4,
         "GC": 2
       },
-      "rank": 648
+      "rank": 650
     },
     {
-      "rank": 649,
+      "rank": 651,
       "company": "C40 Cities",
       "role": "Director for Political Strategy Operations, Campaigns and Partnerships",
       "score": 41.5,
@@ -35900,7 +35987,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 650
+      "rank": 652
     },
     {
       "company": "Archipelago | Schmidt Marine Job Board",
@@ -35953,7 +36040,7 @@
         "CO": 4,
         "GC": 3
       },
-      "rank": 651
+      "rank": 653
     },
     {
       "company": "Overstory",
@@ -36008,7 +36095,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 652
+      "rank": 654
     },
     {
       "company": "Acre",
@@ -36068,7 +36155,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 653
+      "rank": 655
     },
     {
       "company": "Confidential",
@@ -36123,7 +36210,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 654
+      "rank": 656
     },
     {
       "company": "Amentum",
@@ -36183,7 +36270,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 655
+      "rank": 657
     },
     {
       "company": "Koch",
@@ -36238,7 +36325,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 656
+      "rank": 658
     },
     {
       "company": "L3Harris Technologies",
@@ -36293,7 +36380,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 657
+      "rank": 659
     },
     {
       "company": "Biorce",
@@ -36348,7 +36435,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 658
+      "rank": 660
     },
     {
       "company": "Employ",
@@ -36403,7 +36490,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 659
+      "rank": 661
     },
     {
       "company": "South Pole",
@@ -36463,7 +36550,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 660
+      "rank": 662
     },
     {
       "company": "RxPx",
@@ -36523,7 +36610,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 661
+      "rank": 663
     },
     {
       "company": "Onterris",
@@ -36578,7 +36665,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 662
+      "rank": 664
     },
     {
       "company": "Windbornesystems",
@@ -36628,7 +36715,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 663
+      "rank": 665
     },
     {
       "company": "West at Job Board",
@@ -36683,7 +36770,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 664
+      "rank": 666
     },
     {
       "company": "General Dynamics Information Technology",
@@ -36743,7 +36830,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 665
+      "rank": 667
     },
     {
       "company": "Solutions Engineer",
@@ -36798,7 +36885,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 666
+      "rank": 668
     },
     {
       "company": "Collins Aerospace",
@@ -36863,7 +36950,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 667
+      "rank": 669
     },
     {
       "company": "Ladders",
@@ -36918,7 +37005,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 668
+      "rank": 670
     },
     {
       "company": "CLIMA Fund",
@@ -36973,7 +37060,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 669
+      "rank": 671
     },
     {
       "company": "Vice President, Sales",
@@ -37033,7 +37120,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 670
+      "rank": 672
     },
     {
       "company": "SES Space & Defense",
@@ -37093,7 +37180,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 671
+      "rank": 673
     },
     {
       "company": "Sphinx Defense",
@@ -37148,7 +37235,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 672
+      "rank": 674
     },
     {
       "company": "Motive",
@@ -37218,7 +37305,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 673
+      "rank": 675
     },
     {
       "company": "Qualcomm",
@@ -37278,7 +37365,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 674
+      "rank": 676
     },
     {
       "company": "Saildrone",
@@ -37344,7 +37431,7 @@
       "confidence": "high",
       "tier_uncertain": false,
       "verdict": "This is a run-the-engine federal account management seat, not a market-building one: the core work is to 'Serve as primary contact for U.S. government mapping clients, including NOAA and Navy' and 'Lead account expansion and capture efforts on recompetes and follow-on contracts', scaling an established USG revenue line (SA 3). RF is capped at 5 because the JD requires 'Understanding of USG mapping operations and hydrography market needs' and 'Knowledge of marine survey technologies like multibeam echosounders (MBES)', neither of which Paul has, though his KSAT maritime decade and GFW ocean data work make the gap soft adjacency. IL is capped at 4: he clears '10+ years in account management, technical sales, business development, or program management in government contracting, marine survey, or geospatial sectors' but misses the required 'Active professional network within NAVO, NOAA, or USG oceanographic community'. SPM is 4 because federal recompete capture with a single government buyer is a conventional motion. CO is 3: the posted $113,878 to $133,974 base is roughly half of Paul's comp expectations and Account Manager is a clear title step down.",
-      "rank": 675
+      "rank": 677
     },
     {
       "company": "Y Combinator",
@@ -37399,10 +37486,10 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 676
+      "rank": 678
     },
     {
-      "rank": 677,
+      "rank": 679,
       "company": "Clean Air Task Force",
       "role": "Manager, Coal Mine Methane",
       "date": "2026-04-17",
@@ -37452,7 +37539,7 @@
       }
     },
     {
-      "rank": 678,
+      "rank": 680,
       "company": "Patch",
       "role": "Go-to-Market Engineer",
       "date": "2026-04-17",
@@ -37542,7 +37629,7 @@
         "CO": 5,
         "GC": 3
       },
-      "rank": 679
+      "rank": 681
     },
     {
       "company": "gable",
@@ -37590,7 +37677,7 @@
         "CO": 4,
         "GC": 6
       },
-      "rank": 680
+      "rank": 682
     },
     {
       "company": "Rasa | Techstars Job Board",
@@ -37638,7 +37725,7 @@
         "CO": 6,
         "GC": 8
       },
-      "rank": 681
+      "rank": 683
     },
     {
       "company": "Arvist | Techstars Job Board",
@@ -37686,7 +37773,7 @@
         "CO": 4,
         "GC": 8
       },
-      "rank": 682
+      "rank": 684
     },
     {
       "company": "SynMax",
@@ -37741,7 +37828,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 683
+      "rank": 685
     },
     {
       "company": "Carbonfuture",
@@ -37806,7 +37893,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 684
+      "rank": 686
     },
     {
       "company": "Astranis",
@@ -37866,7 +37953,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 685
+      "rank": 687
     },
     {
       "company": "OneInbox.ai | Techstars Job Board",
@@ -37931,7 +38018,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 686
+      "rank": 688
     },
     {
       "company": "Watershed Careers",
@@ -37991,7 +38078,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 687
+      "rank": 689
     },
     {
       "company": "Planet",
@@ -38056,7 +38143,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 688
+      "rank": 690
     },
     {
       "company": "Orca AI",
@@ -38116,7 +38203,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 689
+      "rank": 691
     },
     {
       "company": "HTS Magnet Engineering",
@@ -38176,7 +38263,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 690
+      "rank": 692
     },
     {
       "company": "Katalyst Space Technologies",
@@ -38231,7 +38318,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 691
+      "rank": 693
     },
     {
       "company": "Rubicon Carbon",
@@ -38291,7 +38378,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 692
+      "rank": 694
     },
     {
       "company": "Kinara Group",
@@ -38351,7 +38438,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 693
+      "rank": 695
     },
     {
       "company": "Hexagon US Federal",
@@ -38411,7 +38498,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 694
+      "rank": 696
     },
     {
       "company": "The Nuclear Company",
@@ -38471,7 +38558,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 695
+      "rank": 697
     },
     {
       "company": "L3Harris Technologies",
@@ -38531,7 +38618,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 696
+      "rank": 698
     },
     {
       "company": "L3Harris Technologies",
@@ -38591,7 +38678,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 697
+      "rank": 699
     },
     {
       "company": "Zenix Aerospace SoCal",
@@ -38646,7 +38733,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 698
+      "rank": 700
     },
     {
       "company": "Airbus",
@@ -38716,7 +38803,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 699
+      "rank": 701
     },
     {
       "company": "NFWF | Schmidt Marine Job Board",
@@ -38771,7 +38858,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 700
+      "rank": 702
     },
     {
       "company": "Cohesive Robotics | Techstars Job Board",
@@ -38831,7 +38918,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 701
+      "rank": 703
     },
     {
       "company": "Deloitte",
@@ -38891,7 +38978,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 702
+      "rank": 704
     },
     {
       "company": "Relay",
@@ -38951,7 +39038,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 703
+      "rank": 705
     },
     {
       "company": "Acre",
@@ -39011,7 +39098,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 704
+      "rank": 706
     },
     {
       "company": "Koch",
@@ -39066,7 +39153,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 705
+      "rank": 707
     },
     {
       "company": "Vantor",
@@ -39121,7 +39208,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 706
+      "rank": 708
     },
     {
       "company": "Onterris",
@@ -39176,7 +39263,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 707
+      "rank": 709
     },
     {
       "company": "Optiml",
@@ -39236,10 +39323,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 708
+      "rank": 710
     },
     {
-      "rank": 709,
+      "rank": 711,
       "company": "Los Angeles Cleantech Incubator (LACI)",
       "role": "SVP Growth & Development",
       "score": 41.0,
@@ -39352,7 +39439,7 @@
         "CO": 7,
         "GC": 3
       },
-      "rank": 710
+      "rank": 712
     },
     {
       "company": "Coastal Quest | Schmidt Marine Job Board",
@@ -39410,7 +39497,7 @@
         "CO": 6,
         "GC": 4
       },
-      "rank": 711
+      "rank": 713
     },
     {
       "company": "Biomesense",
@@ -39465,7 +39552,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 712
+      "rank": 714
     },
     {
       "company": "Vantor",
@@ -39530,7 +39617,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 713
+      "rank": 715
     },
     {
       "company": "Ocean Conservancy | Schmidt Marine Job Board",
@@ -39590,7 +39677,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 714
+      "rank": 716
     },
     {
       "company": "Ørsted",
@@ -39645,7 +39732,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 715
+      "rank": 717
     },
     {
       "company": "Airbus",
@@ -39710,7 +39797,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 716
+      "rank": 718
     },
     {
       "company": "Planet",
@@ -39775,7 +39862,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 717
+      "rank": 719
     },
     {
       "company": "Planet",
@@ -39840,7 +39927,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 718
+      "rank": 720
     },
     {
       "company": "Seamachines",
@@ -39895,7 +39982,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 719
+      "rank": 721
     },
     {
       "company": "Amentum",
@@ -39955,7 +40042,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 720
+      "rank": 722
     },
     {
       "company": "Moog Inc.",
@@ -40020,7 +40107,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 721
+      "rank": 723
     },
     {
       "company": "Pentair",
@@ -40080,7 +40167,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 722
+      "rank": 724
     },
     {
       "company": "Airbus",
@@ -40140,7 +40227,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 723
+      "rank": 725
     },
     {
       "company": "Airbus",
@@ -40205,7 +40292,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 724
+      "rank": 726
     },
     {
       "company": "Red 6",
@@ -40265,7 +40352,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 725
+      "rank": 727
     },
     {
       "company": "Octave",
@@ -40320,7 +40407,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 726
+      "rank": 728
     },
     {
       "company": "Harbinger Motors Inc.",
@@ -40375,7 +40462,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 727
+      "rank": 729
     },
     {
       "company": "Monta",
@@ -40435,7 +40522,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 728
+      "rank": 730
     },
     {
       "company": "Instagrid",
@@ -40495,7 +40582,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 729
+      "rank": 731
     },
     {
       "company": "DataRobot | Techstars Job Board",
@@ -40550,7 +40637,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 730
+      "rank": 732
     },
     {
       "company": "Ecovyst, Inc.",
@@ -40610,7 +40697,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 731
+      "rank": 733
     },
     {
       "company": "Slingshot Aerospace",
@@ -40665,7 +40752,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 732
+      "rank": 734
     },
     {
       "company": "Ladders",
@@ -40725,7 +40812,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 733
+      "rank": 735
     },
     {
       "company": "Samsara",
@@ -40785,7 +40872,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 734
+      "rank": 736
     },
     {
       "company": "Aeva",
@@ -40845,7 +40932,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 735
+      "rank": 737
     },
     {
       "company": "SAIC",
@@ -40910,7 +40997,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 736
+      "rank": 738
     },
     {
       "company": "Rippling Recruiting",
@@ -40965,7 +41052,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 737
+      "rank": 739
     },
     {
       "company": "Ensemble",
@@ -41020,7 +41107,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 738
+      "rank": 740
     },
     {
       "company": "Booz Allen Hamilton",
@@ -41080,7 +41167,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 739
+      "rank": 741
     },
     {
       "company": "Navon Group",
@@ -41135,7 +41222,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 740
+      "rank": 742
     },
     {
       "company": "RethinkFirst",
@@ -41190,7 +41277,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 741
+      "rank": 743
     },
     {
       "company": "HawkEye 360",
@@ -41245,7 +41332,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 742
+      "rank": 744
     },
     {
       "company": "Rippling Recruiting",
@@ -41300,7 +41387,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 743
+      "rank": 745
     },
     {
       "company": "Rippling Recruiting",
@@ -41355,7 +41442,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 744
+      "rank": 746
     },
     {
       "company": "Moog Inc.",
@@ -41415,7 +41502,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 745
+      "rank": 747
     },
     {
       "company": "Watershed Careers",
@@ -41470,7 +41557,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 746
+      "rank": 748
     },
     {
       "company": "Spatial Front, Inc",
@@ -41530,7 +41617,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 747
+      "rank": 749
     },
     {
       "company": "<a href=\"https://www.linkedin.com/comm/jobs/search-results/?keywords=partnerships+maritime+climate&distance=50%2E0&f_TPR=r1296000&f_SAL=f_SA_id_225001%3A272001%24f_SA_id_228001%3A276004&geoId=1049014",
@@ -41585,7 +41672,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 748
+      "rank": 750
     },
     {
       "company": "Airbus",
@@ -41645,7 +41732,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 749
+      "rank": 751
     },
     {
       "company": "Airbus",
@@ -41715,7 +41802,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 750
+      "rank": 752
     },
     {
       "company": "Hydrosat | Techstars Job Board",
@@ -41775,7 +41862,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 751
+      "rank": 753
     },
     {
       "company": "Vantor",
@@ -41840,7 +41927,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 752
+      "rank": 754
     },
     {
       "company": "Acre",
@@ -41900,7 +41987,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 753
+      "rank": 755
     },
     {
       "company": "Loft Orbital Solutions",
@@ -41960,7 +42047,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 754
+      "rank": 756
     },
     {
       "company": "Quilt",
@@ -42020,7 +42107,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 755
+      "rank": 757
     },
     {
       "company": "Quilt",
@@ -42080,7 +42167,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 756
+      "rank": 758
     },
     {
       "company": "Isar Aerospace SE",
@@ -42145,7 +42232,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 757
+      "rank": 759
     },
     {
       "company": "Watershed Careers",
@@ -42200,7 +42287,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 758
+      "rank": 760
     },
     {
       "company": "External_Career_Site",
@@ -42255,7 +42342,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 759
+      "rank": 761
     },
     {
       "company": "CSA Ocean Sciences Inc.",
@@ -42315,7 +42402,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 760
+      "rank": 762
     },
     {
       "company": "reesmarx",
@@ -42375,7 +42462,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 761
+      "rank": 763
     },
     {
       "company": "Confidential",
@@ -42435,7 +42522,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 762
+      "rank": 764
     },
     {
       "company": "Exponent",
@@ -42495,7 +42582,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 763
+      "rank": 765
     },
     {
       "company": "South Pole",
@@ -42550,7 +42637,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 764
+      "rank": 766
     },
     {
       "company": "Outpost",
@@ -42610,7 +42697,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 765
+      "rank": 767
     },
     {
       "company": "Watershed Careers",
@@ -42665,7 +42752,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 766
+      "rank": 768
     },
     {
       "company": "Planet",
@@ -42725,7 +42812,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 767
+      "rank": 769
     },
     {
       "company": "DAWSON",
@@ -42785,7 +42872,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 768
+      "rank": 770
     },
     {
       "company": "General Dynamics Mission Systems",
@@ -42840,7 +42927,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 769
+      "rank": 771
     },
     {
       "company": "ZeroNorth",
@@ -42900,7 +42987,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 770
+      "rank": 772
     },
     {
       "company": "Arcadia",
@@ -42955,7 +43042,7 @@
       ],
       "confidence": "low",
       "tier_uncertain": false,
-      "rank": 771
+      "rank": 773
     },
     {
       "company": "Bosque Systems, LLC",
@@ -43010,7 +43097,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 772
+      "rank": 774
     },
     {
       "company": "Sanctiva Technology Corporation",
@@ -43065,7 +43152,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 773
+      "rank": 775
     },
     {
       "company": "Space Intelligence",
@@ -43125,7 +43212,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 774
+      "rank": 776
     },
     {
       "company": "Planet",
@@ -43180,7 +43267,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 775
+      "rank": 777
     },
     {
       "company": "SRC",
@@ -43240,7 +43327,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 776
+      "rank": 778
     },
     {
       "company": "Armada",
@@ -43300,7 +43387,7 @@
       ],
       "confidence": "medium",
       "tier_uncertain": true,
-      "rank": 777
+      "rank": 779
     },
     {
       "company": "Quilt",
@@ -43360,7 +43447,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 778
+      "rank": 780
     },
     {
       "company": "Virtualitics",
@@ -43415,7 +43502,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 779
+      "rank": 781
     },
     {
       "company": "Neros Technologies",
@@ -43475,7 +43562,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": true,
-      "rank": 780
+      "rank": 782
     },
     {
       "company": "Sateliot",
@@ -43540,10 +43627,10 @@
       ],
       "confidence": "medium",
       "tier_uncertain": false,
-      "rank": 781
+      "rank": 783
     },
     {
-      "rank": 782,
+      "rank": 784,
       "company": "CropX",
       "role": "Territory Sales Manager, US & Canada",
       "date": "2026-04-17",
@@ -43588,7 +43675,7 @@
       }
     },
     {
-      "rank": 783,
+      "rank": 785,
       "company": "Nimble Gravity",
       "role": "Director of Delivery",
       "date": "2026-04-17",
@@ -43638,7 +43725,7 @@
       }
     },
     {
-      "rank": 784,
+      "rank": 786,
       "company": "Fugro",
       "role": "Commercial Manager",
       "score": 33.0,
@@ -157241,6 +157328,20 @@
     "yaml_reprobe_after": "2026-09-19"
   },
   "action_todos": [
+    {
+      "company": "Stoke Space",
+      "text": "Send LinkedIn invite + note to Devon Papandrew, VP Business Development (2nd degree, 14 mutuals; the right door, not CEO Lapsa). Cold outreach, no posting; deep dive 60.5 proxy on the board. On accept: follow-up from the doc. No accept by 2026-09-23: record unanswered; re-engage on Nova first-flight news.",
+      "doc_path": "~/Desktop/Jobs/Stoke Space/Devon_Papandrew_Note_StokeSpace_2026-09.docx",
+      "url": "https://www.linkedin.com/in/devon-papandrew-33a96622/",
+      "done": false
+    },
+    {
+      "company": "LatConnect 60",
+      "text": "Send LinkedIn invite + note to Venkat Pillay, founder/CEO (2nd degree, 37 mutuals). Cold outreach, no posting; deep dive 68.0 proxy on the board. On accept: follow-up from the doc. No accept by 2026-09-23: record unanswered in cold_outreach.",
+      "doc_path": "~/Desktop/Jobs/LatConnect 60/Venkat_Pillay_Note_LatConnect60_2026-09.docx",
+      "url": "https://www.linkedin.com/in/venkat-pillay-5a18811b/",
+      "done": false
+    },
     {
       "company": "NorthStar Earth & Space",
       "text": "Send LinkedIn invite + note to Stewart Bain, co-founder/CEO (2nd degree, 37 mutuals). Cold outreach, no posting; deep dive 75.5 proxy on the board. On accept: follow-up message from the doc. If no accept by 2026-09-23, record as unanswered in cold_outreach; board watch catches any posting. Never mention Spire or the SPAC.",
