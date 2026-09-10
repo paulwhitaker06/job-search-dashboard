@@ -63,15 +63,16 @@
     }
   },
   "stats": {
-    "applications_sent": 34,
-    "awaiting_response": 17,
+    "applications_sent": 45,
+    "awaiting_response": 22,
     "active_interviews": 0,
-    "active_pipeline": 828,
-    "deep_dives_done": 28,
-    "resumes_built": 6,
-    "rejected_closed": 11,
+    "active_pipeline": 842,
+    "deep_dives_done": 26,
+    "resumes_built": 4,
+    "rejected_closed": 22,
     "last_updated": "2026-09-10",
-    "last_processed_digest_date": "2026-09-10"
+    "last_processed_digest_date": "2026-09-10",
+    "retired": 8
   },
   "ranked_opportunities": [
     {
@@ -208,49 +209,59 @@
     {
       "company": "Hydrosat",
       "role": "Director of International Business Development & Sales",
-      "score": 68.0,
+      "score": 70.0,
       "proxy_score": null,
-      "effective_score": 68.0,
+      "effective_score": 70.0,
       "fit": 7,
-      "has_deep_dive": false,
+      "has_deep_dive": true,
       "date": "2026-09-10",
-      "scqa": "",
-      "verdict": "No Hard Requirement Cap fires: the only must-haves are 'At least eight years of experience in international business development, partnerships, channel management, market strategy, or capture' and 'Excellent written and spoken English', both of which Paul clears. The preferred background list reads like Paul's KSAT and Global Fishing Watch record, which lifts Candidacy Fit. What holds the score short of Tier 1 is that a large share of the job is reseller channel operations, partner tiers, performance reviews and CRM hygiene, which is an indirect-distribution motion rather than the direct demand-creation Paul has run.",
-      "recommendation": "apply",
+      "scqa": "The procurement before the procurement",
+      "verdict": "Deep dive raises the morning brief's 68.0 to 70.0. Two of the three responsibility blocks are Paul's career and one is not: the capture block asks the hire to \"Position Hydrosat before formal procurements launch\", which is the ENI and NOPSEMA play in the company's own words, and the market development block is the country-mapping work he did at KSAT, but the first-listed block is a tiered global reseller network with partner performance reviews, which is indirect distribution against a record of direct demand creation. Hydrosat raised a 60 million dollar Series B in January 2026 to deepen its presence in Central Asia, MENA, India and Latin America and eight months later has one signed sovereign programme (Kazakhstan, June 2026) across all of it, so the international structure is the unbuilt edge this seat owns. Pursue with caveats, and raise the channel gap before they do.",
+      "recommendation": "pursue_with_caveats",
       "status": "not_applied",
       "overdue": null,
       "job_urls": [
         "https://careers.hydrosat.com/o/director-of-international-business-development-sales"
       ],
       "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/Hydrosat_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed",
       "added": "2026-09-10",
       "is_new": true,
       "tier": null,
       "stretch": false,
-      "domain": "",
+      "domain": "Thermal infrared Earth observation / water and agriculture intelligence",
       "location": "Remote, based in Luxembourg, Luxembourg",
-      "hook": "",
+      "hook": "Thermal infrared water intelligence at a company whose Series B named four expansion regions and which has one sovereign programme to show for them. The capture half of the JD is the AMSA and NOPSEMA play verbatim; the channel half is not Paul's motion.",
       "blockers": [
         {
           "type": "relocation",
           "severity": "soft",
-          "detail": "Posting is listed as 'Remote / Luxembourg, Luxembourg'; informational only, Paul relocates anywhere."
+          "detail": "Posted as \"Remote; based in Luxembourg, Luxembourg\". Informational only, Paul relocates anywhere."
         },
         {
           "type": "work_authorization",
           "severity": "soft",
-          "detail": "Application asks about EU work permit but offers 'No, and I would require visa/work permit sponsorship', so sponsorship is not ruled out; pursue if the employer sponsors."
+          "detail": "Application asks \"Are you an EU citizen, or do you hold a valid EU work permit?\" but offers \"No, and I would require visa/work permit sponsorship\" as an answer, so sponsorship is not ruled out. Pursue if Hydrosat sponsors."
+        },
+        {
+          "type": "language",
+          "severity": "soft",
+          "detail": "JD lists \"French, Spanish, Portugeuse, or another European language is a strong plus\" under preferred, not required. Paul is English-only; the required line is \"Excellent written and spoken English\", which he clears."
+        },
+        {
+          "type": "narrow_experience",
+          "severity": "soft",
+          "detail": "First responsibility block is reseller channel operations, including \"Structure global reseller network through tiering and performance reviews\". Paul has built multi-provider data partnerships but never a tiered reseller channel."
         }
       ],
       "dimension_scores": {
         "RF": 7,
-        "SA": 7,
+        "SA": 6,
         "IL": 7,
-        "SPM": 7,
+        "SPM": 9,
         "CO": 6,
-        "GC": 6
+        "GC": 7
       },
       "score_range": [
         62.5,
