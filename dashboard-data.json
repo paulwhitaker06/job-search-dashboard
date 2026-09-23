@@ -52659,13 +52659,6 @@
   ],
   "watch_list": [
     {
-      "company": "Sirona Technologies",
-      "category": "Direct Air Capture",
-      "why": "DAC machines with basalt mineralization partnerships. Verifiable, permanent CO2 removal. Scalable hardware play, not just software MRV.",
-      "roast": "Direct air capture startup that pulls CO2 out of the atmosphere with chemical filters and then injects it into basalt rock formations where it mineralizes into solid stone forever. Which is legitimately cool science and also the kind of thing that costs a fortune per tonne and only sells if someone is either legally required to buy it or has more money than patience. You sold satellite monitoring services to oil majors who were one regulatory change away from needing it, and you waited two and a half years for Shell to sign because you knew the regulatory pressure was coming. Sirona is betting that voluntary buyers or compliance markets will pay for permanent CDR at a price that makes the unit economics work, and right now that market barely exists. The hardware is real, the mineralization is real, the science is not the problem. The problem is finding the buyers who will pay four hundred dollars a tonne today instead of waiting until it costs sixty dollars a tonne in 2035. If they have early customers and the pitch is build relationships now while the market is being created, that is the same long game you played at KSAT when you were selling to energy companies before the regulations required it. But you are not a hardware guy, you are a commercial ecosystems and licensing guy. Unless they need someone to build partnerships with carbon credit registries, corporate offtake buyers, or satellite MRV verification providers to create the commercial infrastructure around the hardware, it is probably not the right seat. If they do, it might be interesting.",
-      "careers_url": "https://www.sironatechnologies.com/careers"
-    },
-    {
       "company": "Iceye",
       "category": "SAR Earth Observation",
       "why": "Just closed $1.2B Series F, largest EO megadeal in Q2 2026. SAR imaging for flood/disaster monitoring, defense ISR demand driving expansion. Paul's Planet/Airbus/MDA multi-provider ecosystem experience is exact fit.",
@@ -52816,7 +52809,7 @@
       "company": "Hydrosat",
       "category": "Thermal EO / Agriculture & Water",
       "why": "Thermal imagery for precision agriculture and water management. Sits at EO + climate adaptation, strong commercial use case.",
-      "roast": "Another thermal infrared play but aimed at farmers and water managers instead of carbon accountants, which arguably makes more sense because irrigation decisions happen every week and carbon credits settle never. Hydrosat is selling the ability to see which field is stressed before the plant shows it, which is a genuine value prop if you can get agriculture buyers to pay SaaS rates instead of one time consultant fees. You have spent two decades turning Earth observation into commercial relationships, but never in the agriculture vertical, which means you would actually learn something new instead of running the same ENI regulatory precedent play for the nine hundredth time. The team has government and commercial heritage, they have raised real money, and the use case does not depend on a voluntary market holding together or a regulation that might get rescinded in January 2029. The downside is that precision ag has been the next big thing in EO for fifteen years and you would be the person tasked with figuring out why this time is different. If the answer involves soil moisture models and California groundwater law you might actually enjoy it. If it involves chasing small holders in Sub Saharan Africa with freemium pilots, run.",
+      "roast": "Hydrosat, Constellr and SatVu are now openly slugging it out over who owns thermal EO, and the trade press finally noticed, which means the window where you could quietly build a commercial function before the market crowds in is closing fast. Hydrosat's whole thesis is that soil and canopy temperature is the under-monetized layer of the stack, an argument Paul has made about every EO dataset he has ever sold, from oil spill NRT to FAD detection with ASN. The problem is the same one it always is at this stage, the sensor works, the data is genuinely differentiated, and nobody has built the unglamorous plumbing that turns a hyperspectral thermal pixel into a signed insurance or ag contract. NOAA just opened a 2.35 billion dollar decade long commercial weather procurement, which is exactly the kind of government anchor customer Paul spent years chasing at KSAT with EMSA and AMSA. Someone at Hydrosat needs to go build that pipeline before Constellr eats the vertical, and it should probably not be another engineer.",
       "careers_url": "https://www.hydrosat.com/careers"
     },
     {
@@ -52902,6 +52895,13 @@
       "why": "Seawater electrolysis CDR with a Boeing demonstration MOU, a novel dual-product model that needs a commercial builder, not just chemists.",
       "roast": "Equatic pulls carbon out of seawater and spits out green hydrogen as a side hustle, which is either the cleverest business model in climate tech or a science project wearing a business suit. They signed an MOU with Boeing, which tells you someone senior believes the chemistry, but MOUs are what Shell signed with KSAT for eighteen months before anyone wired money for an oil spill contract. The Series A was modest by DAC standards, this is not Climeworks money, it is scrappy money, which usually means the next hire needs to be someone who can build pipeline out of nothing rather than manage an existing book. Paul has done that exact job twice, once from a single oil spill contract and once from a free data platform nobody thought should charge for anything. Ocean CDR is still the runt of the carbon removal litter but somebody selling hydrogen and permanence in the same pitch deck needs a person who has sold two things at once before and lived.",
       "careers_url": "https://www.equatic.tech/careers"
+    },
+    {
+      "company": "Vaulted Deep",
+      "category": "Carbon Removal / Bio-oil Injection",
+      "why": "Waste-to-injection carbon removal with real delivered tonnes is the kind of unglamorous infrastructure story that needs a commercial builder, not a hype man.",
+      "roast": "Vaulted Deep takes waste slurry nobody wants and injects it a mile underground, which is the least sexy pitch in climate tech and also possibly the most honest one, because they are actually delivering tonnes while half the DAC crowd is still doing pilot theater. This is not a company that needs someone to make carbon removal sound exciting, it needs someone who has negotiated with people who control physical assets and permitting timelines, which is basically the entire ASN subsea and ENI Australia playbook. The market has finally started rewarding delivery over decks, Series A closed on real traction, and the obvious risk is regulatory, since injection wells draw the kind of scrutiny KSAT never had to deal with selling pixels to oil majors. If Paul wants to see what carbon removal looks like once it stops apologizing for being industrial, this is the one to call.",
+      "careers_url": "https://www.vaulteddeep.com/careers"
     }
   ],
   "morning_briefs": [
@@ -167332,14 +167332,6 @@
     }
   ],
   "haiku": [
-    "Aspens hold their green\na few gold coins spent early\nWheeler counts the days",
-    "Abbey's desert creed\nno machine deserves your grief\nwalk out, watch the light",
-    "Frijoles smolders\nsixty two percent held line\nrain would finish it",
-    "Green chile roasts early\ntwo weeks ahead of the frost\nthe monsoon keeps score",
-    "A redhead texts back\nthree words, no punctuation\nhope refuses math",
-    "Ski patrol hires June\nfor snow that has not fallen yet\nfaith runs the payroll",
-    "Kachina at dawn\nno one has cut the first line\nthe mountain keeps still",
-    "Wire says nothing new\nthe cursor blinks like weather\nwaiting to happen",
     "Divorce papers filed\nthe gorge does not take a side\nit just holds the light",
     "Oskar walks the stage\nOslo spring, cap thrown skyward\nfjord wind takes the sound",
     "Telemark turn missed\nthe knee remembers Norway\nthe hill forgives slow",
@@ -167391,16 +167383,26 @@
     "ATS says 'reviewing'\nsix weeks running now, still green\nHope is a status",
     "Norwegian midnight sun\nnever taught me patience, just\nhow to wait in light",
     "Kachina lift line\nnot open till Thanksgiving\nI check anyway",
-    "Aspen gold moves down\nfrom Wheeler to the valley floor\nmy severance too"
+    "Aspen gold moves down\nfrom Wheeler to the valley floor\nmy severance too",
+    "Chad Tracy debuts\nGuardians walk it off anyway\nOctober forgives",
+    "Wild Card locked up tight\nten losses in twelve don't matter\nfaith is a small thing",
+    "Flash flood watch tonight\narroyos remember August\nmud season starts twice",
+    "Enchanted Forest\nforty years, then one bad winter\nthe trails go quiet now",
+    "Kachina hires June\nfor snow that hasn't fallen yet\nthe payroll believes",
+    "Thermal EO war\nHydrosat, SatVu, Constellr\nthree pixels, one soul",
+    "NOAA writes a check\ntwo point three five billion wide\nsomeone still must sell it",
+    "Questa tailings sit\nthe EPA schedules coffee\nthe mountain keeps waiting",
+    "Property tax climbs\nthe county sends love in bold print\nadobe just sighs",
+    "Green chile smoke drifts\ntwo weeks early, like always\nthe monsoon keeps score"
   ],
   "intros": [
-    "Sox clinched the Wild Card again. Shutdown pushed to December 11. Haiku holds the line.",
+    "Sox clinched the Wild Card under a brand new manager. Queue's still clean. Haiku holds.",
     "Stopgap signed through December 11, past the midterms on purpose. Queue's still empty.",
     "Pixxel raised $100M for hyperspectral. El Nino building through fall.",
     "Nothing in the pipe. Monsoon season, model season. Haiku till something breaks.",
     "Green chile roasting started early again. Two weeks ahead, every year now.",
     "The pipeline will refill. Until then:",
-    "Sox clinging to the Wild Card at 82-69. Ten games left. Queue clean, nerves aren't.",
+    "Enchanted Forest closed for good after the worst winter in 40 years. Ski patrol still hiring elsewhere.",
     "Clean queue. The wire holds. Haiku until something moves.",
     "All quiet on the pipeline front. Haiku dispatch:",
     "Tier 1: empty. Tier 2: empty. Tier haiku: full.",
