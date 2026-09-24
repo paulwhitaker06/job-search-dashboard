@@ -67,7 +67,7 @@
     "awaiting_response": 23,
     "active_interviews": 1,
     "active_pipeline": 909,
-    "deep_dives_done": 36,
+    "deep_dives_done": 37,
     "resumes_built": 4,
     "rejected_closed": 22,
     "last_updated": "2026-09-24",
@@ -167,56 +167,6 @@
       }
     },
     {
-      "company": "New Energy Nexus",
-      "role": "Director of Commercialization & Corporate Partnerships - New Energy Nexus",
-      "score": 75.5,
-      "proxy_score": null,
-      "effective_score": 75.5,
-      "fit": 8,
-      "has_deep_dive": false,
-      "date": "2026-09-24",
-      "scqa": "",
-      "verdict": "This role is a strong match for Paul's market-builder profile: \"lead the development of a new program offering\" that connects startups with \"next-level partners\" (utilities, corporate off-takers, manufacturers, developers, procurement agencies) via \"structured outreach,\" curated matchmaking, and driving \"pilots, joint development agreements, and commercial transactions\", this is Paul's exact multi-stakeholder deal architecture and pilot-to-precedent pattern applied to clean energy hardware startups. The JD explicitly says candidates need not meet every qualification and wants \"the overall combination and relevance of a candidate's experience,\" which fits Paul's 15 years building commercial functions across energy-adjacent regulated sectors (KSAT oil & gas monitoring, GFW licensing) even though his sector is EO/maritime rather than pure clean energy, a soft, stretchable gap. Compensation ($165-185K) is solid for a Director-level build role, and the hybrid Berkeley requirement is a relocation flag Paul can weigh, not a disqualifier.",
-      "recommendation": "pursue",
-      "status": "not_applied",
-      "overdue": null,
-      "job_urls": [
-        "https://www.linkedin.com/jobs/view/4468170877/"
-      ],
-      "resume_path": null,
-      "doc_path": null,
-      "doc_note": null,
-      "added": "2026-09-24",
-      "is_new": true,
-      "tier": null,
-      "stretch": false,
-      "domain": "",
-      "location": "",
-      "hook": "",
-      "blockers": [
-        {
-          "type": "relocation",
-          "detail": "Hybrid role requires Berkeley office 2 days/week; relocation assistance not available. Paul is in Taos, NM and would need to self-fund relocation to Bay Area.",
-          "severity": "soft"
-        }
-      ],
-      "dimension_scores": {
-        "RF": 8,
-        "SA": 8,
-        "IL": 8,
-        "SPM": 7,
-        "CO": 7,
-        "GC": 6
-      },
-      "score_range": [
-        59.0,
-        78.5
-      ],
-      "confidence": "low",
-      "tier_uncertain": true,
-      "rank": 3
-    },
-    {
       "company": "Blue Origin",
       "role": "Director, Government & Remote Connectivity Sales - TeraWave - Blue Origin",
       "score": 72.5,
@@ -269,7 +219,7 @@
       ],
       "confidence": "high",
       "tier_uncertain": false,
-      "rank": 4
+      "rank": 3
     },
     {
       "company": "Nebius",
@@ -324,10 +274,10 @@
       ],
       "confidence": "low",
       "tier_uncertain": true,
-      "rank": 5
+      "rank": 4
     },
     {
-      "rank": 6,
+      "rank": 5,
       "company": "AnySignal",
       "role": "Director of Business Development - Commercial",
       "score": 71.0,
@@ -360,6 +310,61 @@
           "severity": "soft"
         }
       ]
+    },
+    {
+      "company": "New Energy Nexus",
+      "role": "Director of Commercialization & Corporate Partnerships - New Energy Nexus",
+      "score": 70.5,
+      "proxy_score": null,
+      "effective_score": 70.5,
+      "fit": 7,
+      "has_deep_dive": true,
+      "date": "2026-09-24",
+      "scqa": "Supply built, demand unbuilt",
+      "verdict": "New Energy Nexus administers California's public clean energy startup pipeline for the Energy Commission (CalSEED, CalTestBed, a partner role in the $67M PowerForward program), and this is a new seat building the buyer-side program it has never had. The hiring trigger is in the public record: on 2025-08-07 Derrick Tang, the Head of Programs this role reports to, filed NEX's EPIC 5 concept proposal (CEC docket 25-EPIC-01) proposing three supply-side programs while volunteering buyer-side metrics including \"Time to pilot, demonstration, or commercial contract\" and \"Utility and investor trust in third-party data.\" Nothing in the filing produces those outcomes, which is what this Director is for and why it is funded only to June 2028. The commercial half of the job is Paul's work almost verbatim (market mapping, structured outreach to utilities and off-takers, structuring pilots and JDAs), and his ENI/NOPSEMA and Planet Labs three-party deals are direct analogues. The other half is not: grant-program administration, CEC compliance and reporting, budget ownership, and recruiting and supervising staff, none of which he has done. Scored 70.5 rather than the 75.5 screening estimate after research showed the program-management and people-management load, the absence of any clean energy or accelerator record, and a competitive set drawn from Greentown Labs, LACI and Elemental Impact. No Hard Requirement Cap: every experience requirement is written as a disjunction with an escape clause, and Paul meets the \"8+ years\" bar through the \"enterprise sales in energy/industrial sectors\" branch.",
+      "recommendation": "pursue_with_caveats",
+      "status": "not_applied",
+      "overdue": null,
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4468170877/"
+      ],
+      "resume_path": null,
+      "doc_path": "~/Desktop/Claude Deep Dives/New_Energy_Nexus_Deep_Dive_Analysis.docx",
+      "doc_note": "Full deep dive completed",
+      "added": "2026-09-24",
+      "is_new": true,
+      "tier": null,
+      "stretch": false,
+      "domain": "Climate tech / clean energy commercialization (nonprofit program operator)",
+      "location": "Berkeley, California (hybrid, Tue/Thu in office)",
+      "hook": "New seat closing the gap NEX's own EPIC 5 filing created: it promised the CEC commercial-contract metrics while proposing only supply-side programs.",
+      "blockers": [
+        {
+          "type": "relocation",
+          "detail": "Hybrid role requires the Berkeley office Tuesdays and Thursdays plus in-person partner meetings and travel; posting states relocation assistance is not available. Self-funded move from Taos against a $185K ceiling.",
+          "severity": "soft"
+        },
+        {
+          "type": "narrow_experience",
+          "detail": "Posting asks for \"Experience working within or alongside accelerator/incubator ecosystems, venture capital platforms, or comparable innovation environments\" and \"Experience in climate, clean energy, entrepreneurship, emerging technology scale-up.\" Paul has climate and emerging-tech depth but no accelerator operating background and no clean energy sector record. Soft: the posting states candidates need not meet every qualification.",
+          "severity": "soft"
+        }
+      ],
+      "dimension_scores": {
+        "RF": 7,
+        "SA": 8,
+        "IL": 6,
+        "SPM": 8,
+        "CO": 6,
+        "GC": 7
+      },
+      "score_range": [
+        67.0,
+        74.0
+      ],
+      "confidence": "high",
+      "tier_uncertain": false,
+      "rank": 6
     },
     {
       "company": "Esri",
