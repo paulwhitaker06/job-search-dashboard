@@ -5,7 +5,8 @@ Called by: morning deep dive scheduled task, /job-evaluate skill, or manually.
 Usage: python3 build-dashboard.py [path-to-json] [path-to-output-html]
 Defaults: ./dashboard-data.json -> ./job-search-command-center.html
 """
-import json, sys, os, subprocess, shutil
+import json, sys, os, subprocess, shutil, re
+from urllib.parse import urlsplit, parse_qsl
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
@@ -124,6 +125,120 @@ def score_color(score):
 def pill(text, cls):
     return f'<span class="pill pill-{cls}">{text}</span>'
 
+# Query params that never identify a posting: language switches and
+# campaign/referral tracking. Anything else (jobId, gh_jid, job, id) is
+# part of the posting's identity and stays in the comparison key.
+_JOB_URL_NOISE_PARAMS = {
+    "language", "lang", "locale", "hl",
+    "ref", "src", "source", "gh_src", "lever-source", "lever-origin",
+    "trk", "trackingid", "refid", "mc_cid", "mc_eid",
+    "trid", "linksource", "feedid",
+}
+
+# Host suffix -> site label for multi-link cards.
+_JOB_SITE_LABELS = (
+    ("linkedin.com", "LinkedIn"),
+    ("myworkdayjobs.com", "Workday"),
+    ("myworkdaysite.com", "Workday"),
+    ("greenhouse.io", "Greenhouse"),
+    ("lever.co", "Lever"),
+    ("ashbyhq.com", "Ashby"),
+    ("personio.de", "Personio"),
+    ("personio.com", "Personio"),
+)
+
+def _safe_split(url):
+    """urlsplit that never raises; a malformed URL must not abort the build."""
+    try:
+        return urlsplit((url or "").strip())
+    except ValueError:
+        return None
+
+def _job_url_host(url):
+    p = _safe_split(url)
+    if p is None:
+        return ""
+    host = p.netloc.lower().split("@")[-1].split(":")[0]
+    return host[4:] if host.startswith("www.") else host
+
+def _is_noise_param(key):
+    # Lever emits its tracking key as lever-source[] (lever-source%5B%5D).
+    k = key.lower()
+    if k.endswith("[]"):
+        k = k[:-2]
+    return k.startswith("utm_") or k in _JOB_URL_NOISE_PARAMS
+
+def _job_posting_key(url):
+    """Same posting = same host + same path (trailing slash and a trailing
+    /apply dropped) + same identifying query params."""
+    p = _safe_split(url)
+    if p is None:
+        return ((url or "").strip().lower(), "", ())
+    path = p.path.rstrip("/")
+    if path.lower().endswith("/apply"):
+        path = path[: -len("/apply")].rstrip("/")
+    qs = tuple(sorted((k.lower(), v) for k, v in parse_qsl(p.query, keep_blank_values=True)
+                      if not _is_noise_param(k)))
+    return (_job_url_host(url), path, qs)
+
+def _job_url_plainness(url):
+    """Lower is plainer: no /apply suffix, then fewest noise params, then shortest."""
+    p = _safe_split(url)
+    if p is None:
+        return (False, 0, True, len(url))
+    is_apply = p.path.rstrip("/").lower().endswith("/apply")
+    noise = sum(1 for k, _ in parse_qsl(p.query, keep_blank_values=True) if _is_noise_param(k))
+    return (is_apply, noise, p.scheme.lower() != "https", len(url))
+
+def dedupe_job_urls(urls):
+    """Collapse URL variants of one posting into its plainest existing URL.
+    Order of first appearance is kept. Render-only: the stored job_urls list
+    stays as is because the pipeline's URL dedup matches on every variant."""
+    groups, order = {}, []
+    for u in urls or []:
+        if not isinstance(u, str) or not u.strip():
+            continue
+        u = u.strip()
+        k = _job_posting_key(u)
+        if k not in groups:
+            groups[k] = u
+            order.append(k)
+        elif _job_url_plainness(u) < _job_url_plainness(groups[k]):
+            groups[k] = u
+    return [groups[k] for k in order]
+
+def job_site_label(url, company=""):
+    host = _job_url_host(url)
+    for suffix, label in _JOB_SITE_LABELS:
+        if host == suffix or host.endswith("." + suffix):
+            return label
+    # Company fields can carry a board or recruiter tail ("X | Techstars Job
+    # Board", "X (via Acre)"); only the leading name identifies the employer.
+    company = re.split(r"[|(]", company or "")[0]
+    name = re.sub(r"[^a-z0-9]", "", company.lower())
+    first = re.sub(r"[^a-z0-9]", "", (company.lower().split() or [""])[0])
+    labels = host.split(".")
+    domain = labels[-2].replace("-", "") if len(labels) >= 2 else host
+    if len(domain) >= 4 and (domain in name or (len(first) >= 4 and first in domain)):
+        return "Careers site"
+    return host or "Posting"
+
+def job_links(urls, company=""):
+    """[(url, label)] for a card: a single link says 'Job Posting'; several are
+    labeled by site, numbered only when two share a label."""
+    uniq = dedupe_job_urls(urls)
+    if len(uniq) == 1:
+        return [(uniq[0], "Job Posting")]
+    labels = [job_site_label(u, company) for u in uniq]
+    seen, out = {}, []
+    for u, lbl in zip(uniq, labels):
+        if labels.count(lbl) > 1:
+            seen[lbl] = seen.get(lbl, 0) + 1
+            lbl = f"{lbl} {seen[lbl]}"
+        out.append((u, lbl))
+    return out
+
+
 def fit_bar(fit):
     pct = fit * 10
     color = "var(--green)" if fit >= 8 else "var(--amber)" if fit >= 6 else "var(--red)"
@@ -175,9 +290,9 @@ def build_ranked_cards(opportunities):
             blockers_html = ""
 
         links_html = ""
-        if d.get("job_urls"):
-            for j, url in enumerate(d.get("job_urls", [])):
-                label = "Job Posting" if len(d.get("job_urls", [])) == 1 else f"Job {j+1}"
+        job_links_list = job_links(d.get("job_urls"), d.get("company", ""))
+        if job_links_list:
+            for url, label in job_links_list:
                 links_html += f'<a href="{url}" target="_blank" rel="noopener">{label}</a> '
         else:
             links_html += '<span class="doc-missing">No posting link yet</span> '
@@ -348,7 +463,7 @@ def build_pipeline_rows(items):
         score_color_cls = "green" if score and score >= 75 else "amber" if score and score >= 60 else "muted"
         score_col = f'<td data-sort="{score or 0}">{pill(str(score), score_color_cls)}</td>' if score else f'<td data-sort="0">{pill("—", "muted")}</td>'
         verdict_short = (p.get("hook") or p.get("verdict") or "")[:80]
-        job_urls = p.get("job_urls") or []
+        job_urls = dedupe_job_urls(p.get("job_urls"))
         job_url = job_urls[0] if job_urls else None
         link_col = f'<a href="{job_url}" target="_blank" style="color:var(--cyan);text-decoration:none">Apply</a>' if job_url else "—"
         added = p.get("added") or p.get("date") or ""
