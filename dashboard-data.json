@@ -63,8 +63,8 @@
     }
   },
   "stats": {
-    "applications_sent": 51,
-    "awaiting_response": 27,
+    "applications_sent": 52,
+    "awaiting_response": 28,
     "active_interviews": 1,
     "active_pipeline": 921,
     "deep_dives_done": 38,
@@ -640,20 +640,21 @@
       "scqa": "",
       "verdict": "This is a genuine 0-to-1 commercial-build role (\"you'll help build the commercial motion from the ground up, not inherit an established playbook\") structuring first-of-a-kind agreements, a strong shape-match to Paul's market-builder pattern, and the multi-party deal structure (joint development agreements, strategic investments, partner ecosystems) echoes his Planet Labs-style deal architecture work. However, the JD's core sector ask is semiconductor/electronics domain fluency (\"ideally within the semiconductor or electronics industry,\" \"maintain deep, up-to-date knowledge of the semiconductor and electronics landscape\") which Paul does not have, this is a soft sector-adjacency gap given his transferable 15-year market-building track record, capping RF at 5 and IL at 4. Compensation is solid and title is appropriately senior (Director), but the total package sits below Tier 1 due to the sector-fit gap.",
       "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
+      "status": "applied",
       "overdue": null,
       "job_urls": [
-        "https://www.linkedin.com/jobs/view/4456330142/"
+        "https://www.linkedin.com/jobs/view/4456330142/",
+        "https://jobs.ashbyhq.com/Fuse/fc523892-91a3-4d88-a9c1-26fb533e09e0"
       ],
-      "resume_path": null,
+      "resume_path": "~/Desktop/Jobs/Fuse/Paul Whitaker Resume - Fuse.docx",
       "doc_path": null,
       "doc_note": null,
       "added": "2026-09-25",
       "is_new": false,
       "tier": null,
       "stretch": false,
-      "domain": "",
-      "location": "",
+      "domain": "Fusion energy / pulsed power / radiation hardening and testing for semiconductors",
+      "location": "San Leandro, CA (on-site, relocation assistance offered)",
       "hook": "",
       "blockers": [
         {
@@ -54463,6 +54464,41 @@
       "cover_letter_path": "~/Desktop/Jobs/Foss Maritime/Paul Whitaker Cover Letter - Foss.docx",
       "doc_path": "~/Desktop/Claude Deep Dives/Foss_Maritime_Deep_Dive_2026-09.docx",
       "doc_note": "Deep dive cover letter draft superseded by the standalone letter (retired pattern sentence removed, \"incumbent monopoly\" corrected to \"incumbent provider\", Kara Sea subcontract and ENI bid history added). Built with paul-job-search source v0.3.9 references.",
+      "last_updated": "2026-09-29"
+    },
+    {
+      "company": "Fuse",
+      "role": "Director of Commercial Partnerships",
+      "applied": "2026-09-29",
+      "score": 61.0,
+      "applied_score": 61.0,
+      "domain": "Fusion energy / pulsed power / radiation hardening and testing for semiconductors",
+      "location": "San Leandro, CA (on-site, relocation assistance offered)",
+      "comp": "$150K to $225K",
+      "status": "awaiting",
+      "urgent": false,
+      "next_action": "APPLIED 2026-09-29. Fuse did not ask for a cover letter, so the tailored resume went alone (~/Desktop/Jobs/Fuse/). The role builds Fuse's first commercial partnerships with semiconductor and chip manufacturers for radiation hardening and testing, including joint development agreements and strategic investments. The resume claims no semiconductor or investment experience; its closest analog is the Alcatel Submarine Networks joint R&D program that converted into a license, so have the sector-gap answer ready for any first call.",
+      "job_url": "https://jobs.ashbyhq.com/Fuse/fc523892-91a3-4d88-a9c1-26fb533e09e0",
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4456330142/",
+        "https://jobs.ashbyhq.com/Fuse/fc523892-91a3-4d88-a9c1-26fb533e09e0"
+      ],
+      "blockers": [
+        {
+          "type": "sector_experience",
+          "detail": "8+ years in commercial negotiations/BD/investment 'ideally within the semiconductor or electronics industry' - Paul has zero semiconductor/electronics sector experience; his 15 years are in maritime/EO/satellite services",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Not remote, requires relocation to San Leandro, CA if not already local",
+          "severity": "soft"
+        }
+      ],
+      "resume_path": "~/Desktop/Jobs/Fuse/Paul Whitaker Resume - Fuse.docx",
+      "cover_letter_path": null,
+      "doc_path": null,
+      "doc_note": "Resume only; no cover letter requested and no deep dive run. Built with paul-job-search source v0.3.9 references (installed plugin was 0.3.8).",
       "last_updated": "2026-09-29"
     }
   ],
