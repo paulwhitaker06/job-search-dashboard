@@ -63,8 +63,8 @@
     }
   },
   "stats": {
-    "applications_sent": 52,
-    "awaiting_response": 28,
+    "applications_sent": 53,
+    "awaiting_response": 29,
     "active_interviews": 1,
     "active_pipeline": 921,
     "deep_dives_done": 38,
@@ -475,7 +475,7 @@
       "scqa": "The subsidy money is moving now",
       "verdict": "Deep dive rescores this from 72.5 to 61.5, same tier. The role's shape is excellent, a founding commercial seat for TeraWave's government and remote segment with no team, no pipeline and a segment list the company has not validated, naming coast guards, border security and national emergency services as buyers. The Hard Requirement Cap fires on two named qualifications Paul does not meet, \"Proven track record selling connectivity, telecommunications, or infrastructure solutions to government or public sector customers\" and \"terrestrial last-mile technologies including LTE/5G, VSAT, and microwave backhaul\", both soft severity, which caps RF at 5 and IL at 4. The timing argument is the whole pitch, since BEAD, universal service money and the DISA proliferated LEO vehicle are being committed now while TeraWave's first satellites launch in Q4 2027 at the earliest, so the job is getting the technology written into eligibility rules years before it flies, which is the AMSA and NOPSEMA play. Caveat on candidacy: Blue Origin hired at least 47 Amazon Leo alumni in the past year and TeraWave is run by Lindo St. Angel from Amazon's devices group, so Paul competes against people who have sold exactly this.",
       "recommendation": "pursue_with_caveats",
-      "status": "not_applied",
+      "status": "applied",
       "overdue": null,
       "job_urls": [
         "https://www.linkedin.com/jobs/view/4449564350/",
@@ -54500,6 +54500,41 @@
       "cover_letter_path": null,
       "doc_path": null,
       "doc_note": "Resume only; no cover letter requested and no deep dive run. Built with paul-job-search source v0.3.9 references (installed plugin was 0.3.8).",
+      "last_updated": "2026-09-29"
+    },
+    {
+      "company": "Blue Origin",
+      "role": "Director, Government & Remote Connectivity Sales - TeraWave",
+      "applied": "2026-09-29",
+      "score": 61.5,
+      "applied_score": 61.5,
+      "domain": "Satellite connectivity, government and remote broadband",
+      "location": "Greater Seattle Area (up to 75% travel)",
+      "comp": "$169,624 to $237,473 base (WA) plus stock options; Paul entered $220,000 to $237,000 base",
+      "status": "awaiting",
+      "urgent": false,
+      "next_action": "APPLIED 2026-09-29 via Workday (R69823), cover letter and resume in ~/Desktop/Jobs/Blue Origin/. The letter leads on BEAD and Universal Service Fund money being committed before TeraWave's Q4 2027 first launch, with ENI/NOPSEMA and AMSA as proof, and names the gap directly (no bandwidth, cellular, VSAT terminal or microwave backhaul sales). For any first call, have the very small aperture terminal vs Vulnerability Self-Assessment Tool distinction ready, and decide how far to push the segment-fit question the letter's close offers.",
+      "job_url": "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Director--Government---Remote-Connectivity-Sales---TeraWave_R69823",
+      "job_urls": [
+        "https://www.linkedin.com/jobs/view/4449564350/",
+        "https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Director--Government---Remote-Connectivity-Sales---TeraWave_R69823"
+      ],
+      "blockers": [
+        {
+          "type": "narrow_experience",
+          "detail": "JD requires \"Proven track record selling connectivity, telecommunications, or infrastructure solutions to government or public sector customers\" and \"Solid working knowledge of satellite architectures (LEO, MEO, GEO), RF fundamentals, and terrestrial last-mile technologies including LTE/5G, VSAT, and microwave backhaul.\" Paul sold satellite delivered monitoring services and infrastructure risk tools to public sector buyers, never bandwidth, and has no cellular, VSAT terminal or microwave backhaul background. Caps RF at 5 and IL at 4.",
+          "severity": "soft"
+        },
+        {
+          "type": "relocation",
+          "detail": "Greater Seattle Area with travel up to 75 percent including international. Location is informational only per the geography rule; the travel load is the real question.",
+          "severity": "soft"
+        }
+      ],
+      "resume_path": "~/Desktop/Jobs/Blue Origin/Paul Whitaker Resume - Blue Origin.docx",
+      "cover_letter_path": "~/Desktop/Jobs/Blue Origin/Paul Whitaker Cover Letter - Blue Origin.docx",
+      "doc_path": "~/Desktop/Claude Deep Dives/Blue_Origin_TeraWave_Deep_Dive_2026-09.docx",
+      "doc_note": "Deep dive, tailored resume and standalone cover letter; letter and resume fact-checked against KSAT/GFW primary sources 2026-09-29.",
       "last_updated": "2026-09-29"
     }
   ],
