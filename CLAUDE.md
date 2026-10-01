@@ -121,6 +121,8 @@ These live in `paul-job-search` plugin's `references/scoring-rubric.md`. Quick-r
 
 Read this before doing anything that touches the dashboard, the morning brief, the haiku/sports/personal-feed refreshes, or the bootstrap directories. Today (2026-04-27) Paul and I lost an afternoon rediscovering most of it.
 
+Correction 2026-10-01: the haiku and Company of the Day roast features are retired and removed from the page; mentions of them below are history, not live behavior.
+
 ### Two repos, distinct ownership
 
 - **paulwhitaker06/job-search-dashboard** — the public-facing dashboard. Owns `dashboard-data.json`, `index.html`, `job-search-command-center.html`, the various `*-feed.json` files, plus all the `phaseN-bootstrap/` staging directories and the bootstrap-style READMEs. Local clone at `~/Documents/Claude/Projects/Improving the dashboard`. Live at https://paulwhitaker06.github.io/job-search-dashboard/.
@@ -144,6 +146,7 @@ Each `phaseN-bootstrap/` mirrors the target structure: `pipeline/` for Python mo
 - `cron-daily-morning-brief.yml` — daily 12:30 UTC (6:30am MDT) [moved from 13:00 on 2026-05-02]
 - `cron-daily-sports.yml` — daily 14:00 UTC (8am MDT)
 - `cron-tridaily-haiku.yml` — daily 18:00 UTC (note: name says "tridaily" but cron fires daily at `0 18 * * *`)
+  - RETIRED 2026-10-01 at Paul's request (he never used the haiku or the roast). The haiku slot and the Company of the Day panel are gone from `build-dashboard.py`, which no longer reads `haiku`, `intros` or `watch_list[].roast`; those keys were removed from `dashboard-data.json`. `watch_list` itself stays (company, category, why, careers_url) because the morning brief flags postings from watched companies. Do not re-enable this workflow: `refresh_haiku.py` would re-seed the dead keys and spend API money on content nothing renders.
 - `cron-triweekly-personal-feeds.yml` — every 21 days at 19:00 UTC (1pm MDT)
 - `cron-weekly-cost-rollup.yml` — Sunday 23:00 UTC
 - `manual-job-evaluate.yml`, `manual-resume-build.yml` — workflow_dispatch only

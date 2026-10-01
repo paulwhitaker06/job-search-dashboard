@@ -20,7 +20,6 @@ def _next_cron_fire(now: datetime, day_pattern, hour: int, minute: int = 0) -> d
     Doesn't try to be a full cron parser. Handles the patterns we actually use:
       - daily (day_pattern=None) for sports/morning brief
       - day_pattern=[1, 22] for `*/21 * *` (personal feeds, ~3-week cadence)
-      - day_pattern=list(range(1,32,3)) for `*/3 * *` (haiku, every 3 days)
     """
     candidates = []
     for offset in range(0, 90):
@@ -50,10 +49,8 @@ def compute_next_refresh_strings(now=None) -> dict:
     """
     if now is None:
         now = datetime.now(timezone.utc)
-    haiku = _next_cron_fire(now, list(range(1, 32, 3)), hour=18, minute=0)
     personal = _next_cron_fire(now, [1, 22], hour=19, minute=0)
     return {
-        "haiku":    _format_next_fire(haiku),
         "industry": _format_next_fire(personal),
         "outdoor":  _format_next_fire(personal),
         "recipe":   _format_next_fire(personal),
@@ -905,7 +902,7 @@ def build_personal_section(data):
     ind_tile  = tile_with_tag("ne-industry", "ne-industry", "&#128752; Industry", "Loading industry feed...", next_refresh["industry"])
     out_tile  = tile_with_tag("ne-outdoor", "ne-outdoor", "&#127956; Outdoors", "Loading outdoor feed...", next_refresh["outdoor"])
 
-    # Recipe tile is different: it has a scroll button (like the haiku) so Paul
+    # Recipe tile is different: it has a scroll button so Paul
     # can cycle through candidate recipes rather than autorotate. Shell it explicitly.
     rec_tile = (
         '<div class="ne-team ne-recipe" id="ne-recipe" data-fallback="Loading recipes...">'
@@ -1085,9 +1082,7 @@ def build_html(data):
     for b in sorted_briefs:
         brief_rows += f'    <tr><td>{b["date"]}</td><td>{b["jobs_processed"]}</td><td>{b["high_scores"]}</td><td>{b["deep_dives"]}</td><td>{b["result"]}</td></tr>\n'
 
-    # Watch list as JSON for Company of the Day JS rotation
     import json as _json
-    watch_list_json = _json.dumps(data.get("watch_list", []))
 
     # Cold outreach rows
     cold_outreach_rows = ""
@@ -1193,26 +1188,9 @@ def build_html(data):
     sports_feed_json = _json.dumps(_initial_feed)
 
     # Pre-computed "next refresh" date strings, injected into JS for the
-    # haiku exhausted message and the personal-feed footer tags.
+    # personal-feed footer tags.
     _next_refresh = compute_next_refresh_strings()
-    haiku_next_refresh_js = _json.dumps(_next_refresh["haiku"])
     personal_next_refresh_js = _json.dumps(_next_refresh["industry"])  # industry/outdoor/recipe share the cron
-
-    # Phase 11f: read haiku and intros from dashboard-data.json so cron writes
-    # actually reach the rendered UI. Falls back to a tiny embedded set if the
-    # data file is empty or missing the keys (panel never crashes).
-    HAIKU_FALLBACK = [
-        "Dashboard quiet now,\nthe data file ran empty,\nfallback haiku stands.",
-        "Pipeline holds the line,\nthe cron will write more later,\nthis haiku waits here.",
-        "Cron skipped a beat,\nthree haiku in the fallback,\nrefresh will arrive.",
-    ]
-    INTROS_FALLBACK = [
-        "Pipeline quiet. A haiku for the wait.",
-        "Empty top tiers. Haiku takes the shift.",
-        "The fallback tile reads.",
-    ]
-    haiku_pool_js = _json.dumps((data.get("haiku") or HAIKU_FALLBACK))
-    intros_pool_js = _json.dumps((data.get("intros") or INTROS_FALLBACK))
 
     # Speculative outreach section (hidden when empty)
     cold_outreach_list = data.get("cold_outreach", [])
@@ -1231,8 +1209,8 @@ def build_html(data):
         speculative_outreach_html = ""
 
     # Proactive targets (2026-07-07): the target list lives on the dashboard,
-    # not in a document. Rendered as its own filterable section; the watch
-    # list keeps feeding Company of the Day separately.
+    # not in a document. Rendered as its own filterable section. (The watch
+    # list stays in the data for the morning brief; it has no panel on the page.)
     pt = data.get("proactive_targets", [])
     ot_status = {
         "identified": ("Identified", "cyan"),
@@ -1427,23 +1405,6 @@ def build_html(data):
   .dd-card .links a {{ padding:3px 8px; border-radius:6px; background:rgba(99,102,241,0.12); }}
   .new-badge {{ position:absolute; bottom:14px; right:14px; background:var(--cyan); color:#000; font-size:10px; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:1px; animation:pulse 1.5s ease-in-out infinite; }}
   @keyframes pulse {{ 0%,100% {{ opacity:1; }} 50% {{ opacity:0.7; }} }}
-  .cotd-card {{ background:var(--card); border:1px solid var(--border); border-radius:10px; padding:20px 24px; margin-bottom:24px; position:relative; overflow:hidden; }}
-  .cotd-card::before {{ content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--cyan), var(--accent-light), var(--purple)); }}
-  .cotd-company {{ font-size:20px; font-weight:700; margin-bottom:2px; }}
-  .cotd-company a {{ color:var(--text); }}
-  .cotd-company a:hover {{ color:var(--cyan); }}
-  .cotd-category {{ font-size:12px; color:var(--cyan); font-weight:500; margin-bottom:10px; }}
-  .cotd-why {{ font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:14px; }}
-  .cotd-actions {{ display:flex; gap:10px; align-items:center; }}
-  .cotd-actions a {{ display:inline-block; padding:6px 14px; border-radius:6px; font-size:12px; font-weight:600; }}
-  .cotd-actions .btn-primary {{ background:var(--accent); color:white; }}
-  .cotd-actions .btn-primary:hover {{ background:var(--accent-light); text-decoration:none; }}
-  .cotd-actions .btn-secondary {{ background:rgba(99,102,241,0.12); color:var(--accent-light); }}
-  .cotd-actions .btn-secondary:hover {{ text-decoration:none; background:rgba(99,102,241,0.2); }}
-  .cotd-counter {{ position:absolute; top:16px; right:20px; font-size:11px; color:var(--text-muted); }}
-  .cotd-nav {{ display:flex; gap:6px; align-items:center; }}
-  .cotd-nav button {{ background:rgba(99,102,241,0.12); border:1px solid var(--border); color:var(--text-muted); width:28px; height:28px; border-radius:6px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; }}
-  .cotd-nav button:hover {{ background:var(--accent); color:white; border-color:var(--accent); }}
   .footer {{ text-align:center; color:var(--text-muted); font-size:12px; padding:24px 0; border-top:1px solid var(--border); margin-top:24px; }}
   .next-action {{ font-size:12px; color:var(--accent-light); font-style:italic; }}
   .notes {{ font-size:12px; color:var(--text-muted); max-width:220px; }}
@@ -1635,15 +1596,6 @@ def build_html(data):
 
 <details open class="collapsible-section">
 <summary class="section-header">Ranked Opportunities <span class="badge pill-purple">{len(ranked_t12)} Tier 1 &amp; 2</span></summary>
-<div id="haiku-slot" style="display:none;text-align:center;padding:24px 16px;margin-bottom:16px;">
-  <div id="haiku-text" style="font-style:italic;color:var(--text-muted);font-size:14px;line-height:1.8;white-space:pre-line;min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;"></div>
-  <div id="haiku-source" style="margin-top:8px;font-size:10px;opacity:0.45;min-height:14px;"></div>
-  <div style="margin-top:14px;">
-    <button id="haiku-refresh" style="background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:12px;padding:6px 14px;border-radius:6px;cursor:pointer;font-family:inherit;font-weight:600;">&#x21bb; new haiku</button>
-    <span id="haiku-counter" style="margin-left:12px;color:var(--text-muted);font-size:10px;opacity:0.7;"></span>
-  </div>
-  <div style="margin-top:8px;color:var(--text-muted);font-size:9px;opacity:0.4;">v4 &middot; 62-haiku no-repeat cycle &middot; some riff on a source</div>
-</div>
 <div class="dd-grid">
 {build_ranked_cards(ranked_t12)}
 </div>
@@ -1727,13 +1679,6 @@ def build_html(data):
 </div>
 </details>
 
-<details open class="collapsible-section">
-<summary class="section-header">Company of the Day <span class="badge pill-cyan">from {len(data.get("watch_list",[]))} watched</span></summary>
-<div id="cotd-spotlight" class="cotd-card">
-  <div class="cotd-loading" style="color:var(--text-muted);font-size:13px;padding:20px;">Loading...</div>
-</div>
-</details>
-
 {proactive_targets_html}{payload_intel_html}
 
 <details class="archive-section">
@@ -1783,41 +1728,6 @@ def build_html(data):
 </div>
 
 <script>
-// --- Company of the Day ---
-(function() {{
-  const watchList = {watch_list_json};
-  const spot = document.getElementById('cotd-spotlight');
-  if (!spot || watchList.length === 0) return;
-
-  // Day-based index so it rotates daily
-  const now = new Date();
-  const dayOfYear = Math.floor((now - new Date(now.getFullYear(),0,0)) / 86400000);
-  let idx = dayOfYear % watchList.length;
-
-  function render(i) {{
-    const w = watchList[i];
-    const careersLink = w.careers_url ? `<a href="${{w.careers_url}}" target="_blank" class="btn-primary">View Careers Page</a>` : '';
-    const researchLink = `<a href="https://www.google.com/search?q=${{encodeURIComponent(w.company + ' jobs careers')}}" target="_blank" class="btn-secondary">Research</a>`;
-    spot.innerHTML = `
-      <div class="cotd-counter">${{i+1}} of ${{watchList.length}}</div>
-      <div class="cotd-company">${{w.company}}</div>
-      <div class="cotd-category">${{w.category}}</div>
-      <div class="cotd-why">${{w.roast || w.why}}</div>
-      <div class="cotd-actions">
-        ${{careersLink}}
-        ${{researchLink}}
-        <div class="cotd-nav" style="margin-left:auto;">
-          <button onclick="window._cotdPrev()" title="Previous">&#9664;</button>
-          <button onclick="window._cotdNext()" title="Next">&#9654;</button>
-        </div>
-      </div>`;
-  }}
-
-  window._cotdPrev = function() {{ idx = (idx - 1 + watchList.length) % watchList.length; render(idx); }};
-  window._cotdNext = function() {{ idx = (idx + 1) % watchList.length; render(idx); }};
-  render(idx);
-}})();
-
 // --- Status changes ---
 function changeStatus(select, company) {{
   const newStatus = select.value;
@@ -2082,145 +1992,6 @@ updateStaleness();
   function tick() {{ els.forEach(tickOne); }}
   tick();
   setInterval(tick, 1000);
-}})();
-
-// --- Haiku when Tier 1 & 2 are empty ---
-(function() {{
-  const HAIKU_NEXT_REFRESH = {haiku_next_refresh_js};
-  const haiku = {haiku_pool_js};
-
-  const intros = {intros_pool_js};
-
-  const grid = document.querySelector('.dd-grid');
-  const slot = document.getElementById('haiku-slot');
-  const text = document.getElementById('haiku-text');
-  const sourceEl = document.getElementById('haiku-source');
-  const counter = document.getElementById('haiku-counter');
-  const refreshBtn = document.getElementById('haiku-refresh');
-
-  // Helpers: haiku entries are either plain strings or {{t, u, s}} objects with optional source link
-  function haikuText(item) {{ return (typeof item === 'string') ? item : item.t; }}
-  function haikuUrl(item)  {{ return (typeof item === 'string') ? null : (item.u || null); }}
-  function haikuSrc(item)  {{ return (typeof item === 'string') ? null : (item.s || null); }}
-
-  // No-repeat cycle: pick from unseen pool tracked in localStorage.
-  // v6 (2026-04-27): tracks seen by content hash, not array index. Index-based
-  // tracking broke whenever the daily refresh added/removed haikus, because the
-  // same index pointed to different content the next day. Hash tracking survives
-  // pool churn: a haiku you've seen stays "seen" even after it shifts position
-  // or disappears and reappears.
-  const POOL_KEY = 'dashHaikuSeen_v6';
-  const INTRO_KEY = 'dashIntroSeen_v6';
-  const POOL_SIG_KEY = 'dashHaikuSig_v6';
-  const INTRO_SIG_KEY = 'dashIntroSig_v6';
-  const HAIKU_POOL_VERSION = 'v6-hash';
-  const INTRO_POOL_VERSION = 'v6-hash';
-  const poolSig = HAIKU_POOL_VERSION;
-  const introSig = INTRO_POOL_VERSION;
-
-  // In-memory backup (across clicks within one page session) in case localStorage fails
-  let memSeenHaiku = null;
-  let memSeenIntro = null;
-
-  // djb2 hash, deterministic, base36 short string. Used as the seen-set key for each item.
-  function poolItemKey(item) {{
-    const s = (typeof item === 'string') ? item : (item.t || JSON.stringify(item));
-    let h = 5381;
-    for (let i = 0; i < s.length; i++) {{ h = ((h << 5) + h + s.charCodeAt(i)) | 0; }}
-    return (h >>> 0).toString(36);
-  }}
-
-  function pickUnseen(pool, seenKey, sigKey, currentSig, memRef) {{
-    let seen = [];
-    let lsWorked = false;
-    try {{
-      if (localStorage.getItem(sigKey) !== currentSig) {{
-        localStorage.setItem(sigKey, currentSig);
-        localStorage.removeItem(seenKey);
-      }}
-      const raw = localStorage.getItem(seenKey);
-      seen = raw ? JSON.parse(raw) : [];
-      // Defense: if old index-based entries leaked in, drop them.
-      seen = seen.filter(x => typeof x === 'string');
-      lsWorked = true;
-    }} catch(e) {{ lsWorked = false; }}
-    if (!lsWorked) seen = memRef.value || [];
-
-    const seenSet = new Set(seen);
-    let unseenIdx = [];
-    for (let i = 0; i < pool.length; i++) {{
-      if (!seenSet.has(poolItemKey(pool[i]))) unseenIdx.push(i);
-    }}
-
-    // Pool exhausted: every current haiku has been seen. Don't reset (Paul's rule:
-    // never see the same one twice). Show a random one without adding it to seen,
-    // and flag the state so the caller can render an "all caught up" hint.
-    // Counter reports seen-of-CURRENT-pool, not lifetime seen: the seen list
-    // tracks every haiku ever read (by hash, surviving pool churn), so its
-    // length can exceed today's pool size (the 103/65 bug, 2026-07-09).
-    const seenInPool = pool.length - unseenIdx.length;
-    if (unseenIdx.length === 0) {{
-      const idx = Math.floor(Math.random() * pool.length);
-      memRef.value = seen;
-      return {{ item: pool[idx], seenCount: pool.length, total: pool.length, exhausted: true }};
-    }}
-
-    const idx = unseenIdx[Math.floor(Math.random() * unseenIdx.length)];
-    seen.push(poolItemKey(pool[idx]));
-    if (lsWorked) {{
-      try {{ localStorage.setItem(seenKey, JSON.stringify(seen)); }} catch(e) {{}}
-    }}
-    memRef.value = seen;
-    return {{ item: pool[idx], seenCount: seenInPool + 1, total: pool.length, exhausted: false }};
-  }}
-
-  function renderHaiku() {{
-    const hMem = {{ value: memSeenHaiku }};
-    const iMem = {{ value: memSeenIntro }};
-    const h = pickUnseen(haiku, POOL_KEY, POOL_SIG_KEY, poolSig, hMem);
-    const i = pickUnseen(intros, INTRO_KEY, INTRO_SIG_KEY, introSig, iMem);
-    memSeenHaiku = hMem.value;
-    memSeenIntro = iMem.value;
-
-    // Pool exhausted: do NOT render an old haiku. Paul's rule is no repeats.
-    // Show a quiet "all caught up" message instead. The refresh button is
-    // disabled until the next pipeline run adds new haiku.
-    if (h.exhausted) {{
-      text.innerHTML = '<div style="color:var(--text-muted);font-size:13px;font-style:normal;opacity:0.7;">all ' + h.total + ' seen \u00b7 next batch arrives ' + HAIKU_NEXT_REFRESH + '</div>';
-      if (sourceEl) {{ sourceEl.innerHTML = ''; sourceEl.style.display = 'none'; }}
-      if (counter) {{ counter.textContent = ''; }}
-      if (refreshBtn) {{ refreshBtn.disabled = true; refreshBtn.style.opacity = '0.4'; refreshBtn.style.cursor = 'not-allowed'; }}
-      return;
-    }}
-
-    if (refreshBtn) {{ refreshBtn.disabled = false; refreshBtn.style.opacity = ''; refreshBtn.style.cursor = ''; }}
-    const introText = haikuText(i.item);
-    const bodyText = haikuText(h.item);
-    const url = haikuUrl(h.item);
-    const srcName = haikuSrc(h.item) || 'source';
-    text.innerHTML = '<div style="color:var(--cyan);font-size:12px;margin-bottom:10px;font-style:normal;">' + introText + '</div>' + bodyText;
-    if (sourceEl) {{
-      if (url) {{
-        sourceEl.innerHTML = '<a href="' + url + '" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted);text-decoration:none;border-bottom:1px dotted var(--border);">\u2192 ' + srcName + '</a>';
-        sourceEl.style.display = 'block';
-      }} else {{
-        sourceEl.innerHTML = '';
-        sourceEl.style.display = 'none';
-      }}
-    }}
-    if (counter) {{
-      counter.textContent = h.seenCount + '/' + h.total + ' this cycle';
-    }}
-  }}
-
-  if (slot && text && grid) {{
-    const cards = grid.querySelectorAll('.dd-card');
-    if (cards.length === 0) {{
-      renderHaiku();
-      slot.style.display = 'block';
-      if (refreshBtn) refreshBtn.addEventListener('click', renderHaiku);
-    }}
-  }}
 }})();
 </script>
 
@@ -2655,13 +2426,13 @@ updateStaleness();
     if ($industry) renderFeedCard($industry, 'industry', indItems, 'Industry', personalFeedFooter);
     if ($outdoor)  renderFeedCard($outdoor,  'outdoor',  outItems, 'Outdoors', personalFeedFooter);
 
-    // Recipe tile: haiku-style manual scroll, NOT auto-rotating
+    // Recipe tile: manual scroll, NOT auto-rotating
     const $recipe = document.getElementById('ne-recipe');
     const recItems = (FEED.recipe && FEED.recipe.items) || [];
     if ($recipe) renderScrollTile($recipe, recItems, 'recipe', 'Recipe');
   }}
 
-  // Generic scroll tile: haiku-style cycle through a cached array with prev/next buttons.
+  // Generic scroll tile: cycle through a cached array with prev/next buttons.
   // Used by the Recipe tile.
   // feedKey is 'recipe'; idLabel matches the button IDs (ne-<feedKey>-prev, -next, -counter).
   const _scrollIdx = {{}};
