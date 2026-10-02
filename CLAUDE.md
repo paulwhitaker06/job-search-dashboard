@@ -257,6 +257,8 @@ For stat-card math, the buckets partition cleanly:
 
 Retired applications still get their own collapsible section in the UI for visual organization, but for stat-card counting they roll up into Rejected / Closed. Same for Speculative rolling up into Awaiting.
 
+When Paul sends a note to someone inside the company about an `awaiting` application (LinkedIn note, invite with a note, email), set `followed_up` to the send date in the same push that logs it. The What To Do Next follow-up cards read only that field: without it a 60+ application shows SEND NOTE from the day he applied through day 13 and DECIDE from day 14 to 35, even though the note already went out (Privateer, 2026-10-02). Writing the send into `next_action` alone does not clear the card. Side effect to expect: 14 days after `followed_up` the application row's day counter turns red with a 'retire?' tooltip.
+
 ## Today's history (2026-05-01 / 2026-05-02)
 
 Phases shipped, in order:

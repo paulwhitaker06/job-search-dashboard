@@ -1023,10 +1023,20 @@ def build_html(data):
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-purple" style="font-size:10px;">PREP INTERVIEW</span> — interview {ivd}. {a.get('next_action','')[:140]}{link}{iv_brief}</div>
   </div>\n"""))
 
-    # Follow-up aging: an application awaiting response for 14+ days with no
-    # follow-up gets a nudge (Paul, 2026-07-20: 11 days is too soon; his own
-    # cadence is ~2 weeks). Window capped at 35 days; older silence is answer
-    # enough and belongs to the retirement rules instead.
+    # Follow-up cards: an application still awaiting with no follow-up logged
+    # gets a card telling Paul to reach a person. Two cases, same priority:
+    # - Days 0 to 13, score 60+: SEND NOTE, from the day he applies (Paul,
+    #   2026-10-02). Since July none of his cold applications got a human
+    #   reply while his LinkedIn notes to insiders did (AnySignal, EnduroSat,
+    #   Muon), and two cold applications at 68 to 70 were declined by form
+    #   email within three days. No score on the application means no card.
+    # - Days 14 to 35, any score: DECIDE, the follow-up aging nudge (Paul,
+    #   2026-07-20: 11 days is too soon; his own cadence is ~2 weeks). Window
+    #   capped at 35 days; older silence is answer enough and belongs to the
+    #   retirement rules instead.
+    # Setting followed_up clears both cards while the status stays awaiting.
+    # Whoever logs a sent note sets it to the send date in the same push, or
+    # Paul keeps being told to send a note he already sent.
     for a in data.get("applications", []):
         if a.get("status") != "awaiting" or a.get("followed_up"):
             continue
@@ -1034,9 +1044,18 @@ def build_html(data):
             age = (datetime.now() - datetime.strptime(a.get("applied", ""), "%Y-%m-%d")).days
         except Exception:
             continue
+        link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
+        if 0 <= age <= 13:
+            score = a.get("score") or a.get("applied_score")
+            if a.get("follow_up_sent") or not isinstance(score, (int, float)) or score < 60:
+                continue
+            wtdn_items.append((2, a.get('company',''), f"""  <div class="action-item" data-company="{a.get('company','')}">
+    <div class="priority" style="background:var(--amber);color:#141414;">?</div>
+    <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">SEND NOTE</span> applied {a.get('applied','')} ({score:g}/100). Send a short note to the commercial leader or hiring manager; /coldlinkedin {a.get('company','')} finds the person and drafts it.{link}</div>
+  </div>\n"""))
+            continue
         if not (14 <= age <= 35):
             continue
-        link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
         wtdn_items.append((2, a.get('company',''), f"""  <div class="action-item" data-company="{a.get('company','')}">
     <div class="priority" style="background:var(--amber);color:#141414;">?</div>
     <div><strong>{a.get('company','')}</strong> <span class="pill pill-amber" style="font-size:10px;">DECIDE</span> — applied {a.get('applied','')}, {age} days silent. Find a person to write, or let it ride.{link}</div>
