@@ -97,21 +97,95 @@ def is_stale(d):
     except Exception:
         return False
 
+# Dates on which Paul sent something on an application. The clock for the
+# sent-but-silent rule restarts at the latest of them (2026-10-03). A reply
+# from a human (last_responded) or an interview (interview_date) is not in
+# the list on purpose: those take the application out of the silent rule
+# altogether (see is_stale_application), they do not just restart its
+# clock. last_updated is also deliberately NOT in the list: it is stamped
+# when a session edits the record (next_action rewrites, audit corrections),
+# which says nothing about the company.
+APPLICATION_ACTIVITY_FIELDS = ("applied", "date", "followed_up", "follow_up_sent",
+                               "last_responded", "interview_date")
+
+def last_application_activity(a):
+    """Latest parseable YYYY-MM-DD across APPLICATION_ACTIVITY_FIELDS, or None."""
+    latest = None
+    for k in APPLICATION_ACTIVITY_FIELDS:
+        v = a.get(k)
+        if not v:
+            continue
+        try:
+            dt = datetime.strptime(str(v)[:10], "%Y-%m-%d")
+        except Exception:
+            continue
+        if latest is None or dt > latest:
+            latest = dt
+    return latest
+
+def is_pursue_like(d):
+    """Recommendation gate for the APPLY card and the Worth Applying stat
+    (DASH-9, 2026-10-03). The scorer mostly writes the enum (pass, pursue,
+    pursue_with_caveats, track) but 19 entries hold a free-form sentence and
+    12 are empty, and '== pursue' checks missed all of them. Anything that
+    is empty or does not start with 'pass' or 'track' counts as pursue-like;
+    'track' is an explicit do-not-invest instruction and stays out. Used
+    only where the page gates an action on recommendation."""
+    rec = (d.get("recommendation") or "").strip().lower()
+    return not (rec.startswith("pass") or rec.startswith("track"))
+
 def is_stale_application(a):
     """Sent-but-silent applications age out the same way (Paul, 2026-07-07):
-    an application still in awaiting/speculative/cold_outreach whose applied
-    date is more than STALE_DAYS old auto-retires at render time. The data
-    keeps its real status; any status change brings it back to the active
-    Applications view on the next build."""
+    an application still in awaiting/speculative/cold_outreach with nothing
+    happening for more than STALE_DAYS auto-retires at render time. Silence
+    is measured from the latest activity on the record, whoever moved last:
+    the applied date, a note Paul sent (followed_up, follow_up_sent), a
+    human reply (last_responded) or an interview (interview_date), see
+    APPLICATION_ACTIVITY_FIELDS. A reply or interview restarts the clock
+    (Muon Space, 2026-08-27) but does not stop it: a thread that went quiet
+    after a reply five months ago is retired like any other (Seabound,
+    2026-04-24). The data keeps its real status; any status change or new
+    activity date brings it back to the active Applications view on the
+    next build. DASH-1, 2026-10-03."""
     if a.get("status") not in ("awaiting", "speculative", "cold_outreach"):
         return False
-    applied = a.get("applied") or a.get("date")
-    if not applied:
+    last = last_application_activity(a)
+    if last is None:
         return False
-    try:
-        return (datetime.now() - datetime.strptime(applied, "%Y-%m-%d")).days > STALE_DAYS
-    except Exception:
-        return False
+    return (datetime.now() - last).days > STALE_DAYS
+
+# Application buckets (DASH-2, 2026-10-03). One partition feeds every count
+# and every table on the page, so the stat cards, the section headers and
+# the rows under them cannot disagree. Sent = interview + awaiting + retired
+# + closed; the Rejected / Closed stat card is retired + closed. Auto-retired
+# (stale) rows share the 'retired' bucket with status retired, which is the
+# Retired section where they already render; 'closed' is the Rejected /
+# Closed table. Status vocabulary per CLAUDE.md; 'closed' is Paul's own
+# value on OceanSight (2026-08-27) and maps to the closed bucket as is.
+AWAITING_STATUSES = ("awaiting", "applied", "speculative", "cold_outreach")
+CLOSED_STATUSES = ("rejected", "filled", "closed", "pass")
+
+def app_bucket(a):
+    """Return 'interview', 'awaiting', 'retired' or 'closed' for an application.
+    INTERVIEW_STATUSES is defined further down; it is resolved at call time."""
+    st = a.get("status")
+    if st in INTERVIEW_STATUSES or st == "offer":
+        return "interview"
+    if st in AWAITING_STATUSES:
+        return "retired" if is_stale_application(a) else "awaiting"
+    if st == "retired":
+        return "retired"
+    if st in CLOSED_STATUSES:
+        return "closed"
+    print(f"WARNING: unmapped application status {st!r} on {a.get('company')}; counted as awaiting")
+    return "awaiting"
+
+def bucket_applications(apps):
+    """{'interview': [...], 'awaiting': [...], 'retired': [...], 'closed': [...]} in data order."""
+    buckets = {"interview": [], "awaiting": [], "retired": [], "closed": []}
+    for a in apps:
+        buckets[app_bucket(a)].append(a)
+    return buckets
 
 def score_color(score):
     if score is None: return "var(--text-muted)"
@@ -352,15 +426,13 @@ def build_ranked_cards(opportunities):
     return "\n".join(cards)
 
 def build_app_rows(apps, include=None):
-    """Render application rows. include=None shows all; 'active' excludes rejected/filled/retired;
-    'closed' shows only rejected/filled; 'retired' shows only retired."""
+    """Render application rows. include=None shows all; 'active' shows the
+    interview + awaiting buckets; 'closed' and 'retired' show that bucket.
+    Buckets come from app_bucket(), the same partition the counts use."""
     if include == 'active':
-        apps = [a for a in apps if a.get('status') not in ('rejected', 'filled', 'retired')
-                and not is_stale_application(a)]
-    elif include == 'closed':
-        apps = [a for a in apps if a.get('status') in ('rejected', 'filled')]
-    elif include == 'retired':
-        apps = [a for a in apps if a.get('status') == 'retired' or is_stale_application(a)]
+        apps = [a for a in apps if app_bucket(a) in ('interview', 'awaiting')]
+    elif include in ('closed', 'retired'):
+        apps = [a for a in apps if app_bucket(a) == include]
     status_order = {
         "offer": 0,
         "final_round_held": 1,
@@ -381,6 +453,7 @@ def build_app_rows(apps, include=None):
         "rejected": 11,
         "filled": 12,
         "retired": 12,
+        "closed": 12,
         "pass": 13,
     }
     if include == 'closed':
@@ -391,7 +464,7 @@ def build_app_rows(apps, include=None):
         apps = sorted(apps, key=lambda a: (status_order.get(a.get("status", ""), 99), -(a.get("score") or 0)))
     rows = []
     for a in apps:
-        opacity = ' style="opacity:0.5"' if a["status"] in ("rejected","filled") else ""
+        opacity = ' style="opacity:0.5"' if a["status"] in ("rejected","filled","closed") else ""
         status_map = {
             "offer": ("Offer", "green"),
             "final_round_held": ("Final Round Held", "green"),
@@ -409,6 +482,7 @@ def build_app_rows(apps, include=None):
             "rejected": ("Rejected", "muted"),
             "filled": ("Filled", "muted"),
             "retired": ("Retired", "muted"),
+            "closed": ("Closed", "muted"),
             "pass": ("Pass", "muted"),
             "speculative": ("Speculative", "blue"),
             "cold_outreach": ("Speculative", "blue"),
@@ -446,19 +520,48 @@ def build_app_rows(apps, include=None):
     </tr>''')
     return "\n".join(rows)
 
-def build_pipeline_rows(items):
+def score_range_of(p):
+    """(low, high) from the scorer's ensemble score_range, or None when the
+    field is missing or malformed."""
+    sr = p.get("score_range")
+    try:
+        lo, hi = float(sr[0]), float(sr[1])
+    except Exception:
+        return None
+    return (lo, hi)
+
+def score_upper_bound(p):
+    """Top of the ensemble range, falling back to the score itself. Tier 3
+    sorts on this so roles that could be Tier 2 come first (DASH-5)."""
+    score = p.get("effective_score") or p.get("score") or 0
+    sr = score_range_of(p)
+    return max(sr[1], score) if sr else score
+
+def build_pipeline_rows(items, show_range=False):
     """Build pipeline table rows from ranked_opportunity entries.
 
     Rows carry data-sort attributes so the client-side table-sort JS can
     sort by the raw value (number, ISO date string, lowercased text) rather
     than by the rendered cell contents (which include HTML for fit bars,
     score pills, etc).
+
+    show_range (Tier 3, DASH-5 2026-10-03): the scorer stores an ensemble
+    score_range next to the point score. When it exists and differs from
+    the score it renders after the pill as "[lo-hi]" (hyphen), and a
+    tier_uncertain row whose upper bound reaches 60 gets a muted "Tier 2?"
+    marker in the same cell. Honest ranges over clean point values (Paul).
     """
     rows = []
     for i, p in enumerate(items):
         score = p.get("effective_score") or p.get("score")
         score_color_cls = "green" if score and score >= 75 else "amber" if score and score >= 60 else "muted"
-        score_col = f'<td data-sort="{score or 0}">{pill(str(score), score_color_cls)}</td>' if score else f'<td data-sort="0">{pill("—", "muted")}</td>'
+        score_html = pill(str(score), score_color_cls) if score else pill("&mdash;", "muted")
+        sr = score_range_of(p) if show_range and score else None
+        if sr and not (sr[0] == sr[1] == score):
+            score_html += f' <span style="font-size:10px;color:var(--text-muted);white-space:nowrap">[{sr[0]:g}-{sr[1]:g}]</span>'
+            if p.get("tier_uncertain") and sr[1] >= 60:
+                score_html += ' <span class="pill pill-muted" style="font-size:10px;" title="Ensemble range reaches 60: this role could be Tier 2">Tier 2?</span>'
+        score_col = f'<td data-sort="{score or 0}">{score_html}</td>'
         verdict_short = (p.get("hook") or p.get("verdict") or "")[:80]
         job_urls = dedupe_job_urls(p.get("job_urls"))
         job_url = job_urls[0] if job_urls else None
@@ -478,15 +581,16 @@ def compute_stat_cards(data):
     ranked = data.get("ranked_opportunities", [])
 
     # Worth Applying: ranked entries with pursue/pursue_with_caveats, not yet applied, Tier 1 & 2 only (score 60+)
-    waiting_app = [d for d in ranked if not is_stale(d) and d.get("recommendation") in ("pursue", "pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
-    # Sent: applications with any status (total sent)
-    sent = [a for a in apps if a.get("applied")]
-    # Active Interviews
-    active_interviews = [a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "4th_interview_scheduled", "4th_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")]
-    # Awaiting Response, includes speculative until it goes stale and gets retired
-    awaiting = [a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach") and not is_stale_application(a)]
-    # Rejected / Closed, includes retired (separate visual section, same bucket for math)
-    rejected = [a for a in apps if a.get("status") in ("rejected", "filled", "retired")]
+    waiting_app = [d for d in ranked if not is_stale(d) and is_pursue_like(d) and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
+    # Sent = Active Interviews + Awaiting Response + Rejected / Closed, all
+    # read from the one partition in bucket_applications() (DASH-2).
+    b = bucket_applications(apps)
+    sent = apps
+    active_interviews = b["interview"]
+    awaiting = b["awaiting"]
+    # Rejected / Closed includes the Retired section (status retired plus
+    # auto-retired): separate visual section, same bucket for math.
+    rejected = b["retired"] + b["closed"]
 
     def names(items, key="company"):
         return [item.get(key, "?") for item in items]
@@ -619,13 +723,17 @@ def compute_stats(data):
     archived = data.get("archived_deep_dives", [])
 
     applications_sent = len(apps)
-    # Bucket math: Active Interviews + Awaiting Response + Rejected / Closed = Sent.
-    # Speculative rolls up into Awaiting until it goes stale and gets retired.
-    # Retired rolls up into Rejected / Closed for the stat-card count.
-    awaiting_response = len([a for a in apps if a.get("status") in ("awaiting", "speculative", "cold_outreach") and not is_stale_application(a)])
-    active_interviews = len([a for a in apps if a.get("status") in ("1st_interview_scheduled", "1st_interview_held", "2nd_interview_scheduled", "2nd_interview_held", "3rd_interview_scheduled", "3rd_interview_held", "4th_interview_scheduled", "4th_interview_held", "final_round_scheduled", "final_round_held", "1st_interview", "2nd_interview")])
-    rejected_closed = len([a for a in apps if a.get("status") in ("rejected", "filled", "retired") or is_stale_application(a)])
-    retired = len([a for a in apps if a.get("status") == "retired" or is_stale_application(a)])
+    # Bucket math: Active Interviews + Awaiting Response + Rejected / Closed = Sent,
+    # all from bucket_applications() (DASH-2). Speculative rolls up into
+    # Awaiting until it goes stale and gets retired. Retired (status retired
+    # plus auto-retired) rolls up into Rejected / Closed for the stat-card
+    # count; 'closed' alone is the Rejected / Closed table's row count.
+    b = bucket_applications(apps)
+    awaiting_response = len(b["awaiting"])
+    active_interviews = len(b["interview"])
+    retired = len(b["retired"])
+    closed = len(b["closed"])
+    rejected_closed = retired + closed
     active_pipeline = len(ranked)
     deep_dives_done = len([r for r in ranked if r.get("doc_path")]) + len([a for a in archived if a.get("doc_path")])
     resumes_built = len(set(r.get("company") for r in ranked if r.get("resume_path")))
@@ -636,6 +744,7 @@ def compute_stats(data):
         "active_interviews": active_interviews,
         "rejected_closed": rejected_closed,
         "retired": retired,
+        "closed": closed,
         "active_pipeline": active_pipeline,
         "deep_dives_done": deep_dives_done,
         "resumes_built": resumes_built,
@@ -962,6 +1071,9 @@ def build_html(data):
     tier1 = [d for d in active_ranked if (d.get("effective_score") or 0) >= 75]
     tier2 = [d for d in active_ranked if 60 <= (d.get("effective_score") or 0) < 75]
     tier3 = [d for d in active_ranked if (d.get("effective_score") or 0) < 60]
+    # Tier 3 order: range upper bound first, then score, so roles whose
+    # ensemble range crosses 60 sit at the top of the collapsed table (DASH-5).
+    tier3 = sorted(tier3, key=lambda d: (-score_upper_bound(d), -(d.get("effective_score") or 0)))
     # "What To Do Next" is a to-do list, not an archive (Paul, 2026-07-09):
     # only postings added in the last ACTION_FRESH_DAYS belong in it. Older
     # not-applied roles keep their place in the tier tables until the 60-day
@@ -974,7 +1086,7 @@ def build_html(data):
             return (datetime.now() - datetime.strptime(a, "%Y-%m-%d")).days <= ACTION_FRESH_DAYS
         except Exception:
             return True
-    actionable = [d for d in ranked_live if _action_fresh(d) and d.get("recommendation") in ("pursue","pursue_with_caveats") and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
+    actionable = [d for d in ranked_live if _action_fresh(d) and is_pursue_like(d) and d.get("status") == "not_applied" and (d.get("effective_score") or 0) >= 60]
     # Pinned to-dos (2026-07-09): manual tasks Paul wants in What To Do Next,
     # each with copy-path links to the files needed. Data: action_todos
     # [{text, doc_path, url, hold_until, done}]. Mark done:true to clear.
@@ -1065,7 +1177,9 @@ def build_html(data):
         new_badge = f' {pill("New", "cyan")}' if (d.get("is_new") or is_new(d.get("added"))) else ""
         eff = d.get("effective_score", 0)
         score_str = f' <span style="color:{score_color(eff)};font-weight:600">{eff:.0f}/100</span>' if eff else ""
-        hook = d.get("hook", d.get("verdict", "")[:120])
+        # Empty hook falls back to the verdict too, not only a missing key
+        # (Northwood Space and AnySignal rendered nothing after the score, 2026-10-03).
+        hook = (d.get("hook") or (d.get("verdict") or "")[:120])
         wtdn_items.append((3, d["company"], f'''  <div class="action-item" data-company="{d["company"]}">
     <div class="priority">{i+1}</div>
     <div><strong>{d["company"]}</strong> <span class="pill pill-cyan" style="font-size:10px;">APPLY</span>{score_str} — {hook}{new_badge}</div>
@@ -1107,8 +1221,8 @@ def build_html(data):
     cold_outreach_rows = ""
     for c in sorted(data.get("cold_outreach", []), key=lambda x: x.get("date", ""), reverse=True):
         status = c.get("status", "sent")
-        status_cls = {"sent": "pill-blue", "replied": "pill-green", "meeting": "pill-purple", "no_reply": "pill-muted", "declined": "pill-red"}.get(status, "pill-muted")
-        status_label = {"sent": "Sent", "replied": "Replied", "meeting": "Meeting", "no_reply": "No Reply", "declined": "Declined"}.get(status, status.title())
+        status_cls = {"sent": "pill-blue", "followup_sent": "pill-amber", "accepted": "pill-cyan", "replied": "pill-green", "meeting": "pill-purple", "no_reply": "pill-muted", "declined": "pill-red"}.get(status, "pill-muted")
+        status_label = {"sent": "Sent", "followup_sent": "Follow-up Sent", "accepted": "Accepted", "replied": "Replied", "meeting": "Meeting", "no_reply": "No Reply", "declined": "Declined"}.get(status, status.title())
         fu = c.get("followup_message", "")
         fu_html = (f'<details style="margin-top:4px"><summary style="cursor:pointer;color:var(--cyan);font-size:10.5px;">Prepared follow-up (send on accept)</summary>'
                    f'<div style="white-space:pre-wrap;font-size:11px;color:var(--text);padding:6px 8px;background:var(--card);border-radius:6px;margin-top:4px;">{fu}</div></details>') if fu else ""
@@ -1235,6 +1349,11 @@ def build_html(data):
         "identified": ("Identified", "cyan"),
         "drafted": ("Drafted", "amber"),
         "sent": ("Sent", "purple"),
+        # Ledger statuses in use since 2026-09 (invite = LinkedIn connection
+        # request; engaged = accepted / in conversation).
+        "invite_sent": ("Invite Sent", "purple"),
+        "outreach_sent": ("Outreach Sent", "purple"),
+        "engaged": ("Engaged", "blue"),
         "replied": ("Replied", "green"),
         "parked": ("Parked", "muted"),
         "dead": ("Dead", "red"),
@@ -1677,7 +1796,7 @@ def build_html(data):
 <table class="pipeline-table">
   <thead><tr><th data-type="num">#</th><th data-type="text">Company</th><th data-type="text">Role</th><th data-type="num">Fit</th><th data-type="num">Score</th><th data-type="date">Added</th><th data-type="text">Domain</th><th data-type="text">Location</th><th>Link</th><th>Why</th></tr></thead>
   <tbody>
-{build_pipeline_rows(tier3)}
+{build_pipeline_rows(tier3, show_range=True)}
   </tbody>
 </table>
 </div>
@@ -1702,7 +1821,7 @@ def build_html(data):
 
 <details class="archive-section">
 <summary class="section-header">Retired <span class="badge pill-muted" style="font-size:10px;">{s["retired"]} retired</span></summary>
-<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Applications where the proactive process has run its course, follow-ups sent, no response. Applications awaiting a response for 60+ days auto-age here as well; any status change returns them to the active view. Kept here for record so the same role does not get re-prioritized.</p>
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Applications where the proactive process has run its course, follow-ups sent, no response. Applications with no reply or interview on record and no activity (sent note) for 60+ days auto-age here as well; any status change or new activity date returns them to the active view. Kept here for record so the same role does not get re-prioritized.</p>
 <input class="table-filter" type="search" placeholder="Filter retired..." aria-label="Filter retired" />
 <div class="table-wrapper" style="margin-top:12px">
 <table class="applications-table">
@@ -1715,7 +1834,7 @@ def build_html(data):
 </details>
 
 <details class="archive-section">
-<summary class="section-header">Rejected / Closed <span class="badge pill-muted" style="font-size:10px;">{s["rejected_closed"]} closed</span></summary>
+<summary class="section-header">Rejected / Closed <span class="badge pill-muted" style="font-size:10px;">{s["closed"]} closed</span> <span class="badge pill-muted" style="font-size:10px;">+{s["retired"]} retired, listed above</span></summary>
 <input class="table-filter" type="search" placeholder="Filter rejected/closed..." aria-label="Filter rejected" />
 <div class="table-wrapper" style="margin-top:12px">
 <table class="applications-table">
