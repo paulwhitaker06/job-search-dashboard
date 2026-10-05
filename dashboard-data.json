@@ -909,7 +909,7 @@
       "proxy_score": null,
       "effective_score": 61.0,
       "fit": 5,
-      "has_deep_dive": false,
+      "has_deep_dive": true,
       "date": "2026-10-05",
       "scqa": "",
       "verdict": "This is a zero-to-one commercial deal-architecture role (originate, structure, close novel partnerships, turn blank sheet into signed agreement) that matches Paul's market-builder pattern closely, SPM and SA score high. But the sector is sidewalk robotics/last-mile delivery, squarely outside Paul's fields (EO, maritime, space, climate data), so per the soft-gap rule RF is capped at 5 and IL at 4 despite the strong structural fit. Quote triggering cap: \"Preferred Experience ... Start-up, logistics, last-mile delivery, marketplace, mobility, or robotics experience\" and \"8+ years of relevant management consulting, business development, strategic partnerships, corporate development, new-venture... experience.\" SA/SPM justified by: \"turn a blank sheet of paper into a credible proposition, drive complex opportunities from thesis through signed agreement\" and \"Design and own end to end deal structures from first principles. Align incentives, allocate risk, and secure credible funding, resource, and scaling commitments from counterparties\", classic multi-party deal architecture (P2) and new-market-building (SA anchor 2).",
@@ -921,7 +921,7 @@
       ],
       "resume_path": null,
       "doc_path": null,
-      "doc_note": null,
+      "doc_note": "Deep dive attached to the 2026-10-05 morning brief email",
       "added": "2026-10-05",
       "is_new": true,
       "tier": null,
@@ -203602,11 +203602,11 @@
         }
       ],
       "failed_em_dash_gate": [],
-      "notes": "106 entries. One Tier 2: Serve Robotics. T2 1 / T3 28. 12 dedup \u00b7 1 flagged \u00b7 19 unscored.",
+      "notes": "106 entries. One Tier 2: Serve Robotics. T2 1 / T3 28. 12 dedup \u00b7 1 flagged \u00b7 19 unscored. API cost: this run $5.26, today $5.26 of $15.00 cap, month $31.03 of $150.00 cap.",
       "jobs_processed": 106,
       "high_scores": 1,
-      "deep_dives": 0,
-      "result": "106 entries. One Tier 2: Serve Robotics. T2 1 / T3 28. 12 dedup \u00b7 1 flagged \u00b7 19 unscored. 66 skipped by prefilter (off-domain / wrong-function).",
+      "deep_dives": 1,
+      "result": "106 entries. One Tier 2: Serve Robotics. T2 1 / T3 28. 12 dedup \u00b7 1 flagged \u00b7 19 unscored. 66 skipped by prefilter (off-domain / wrong-function). 1 deep dives generated.",
       "prefilter_skipped": [
         {
           "title": "Director of Partnerships and Technology Alliances",
@@ -204070,7 +204070,8 @@
           "reason": "AvidXchange is B2B accounts-payable/fintech SaaS, off-domain from Paul's climate/EO/maritime market despite the senior title.",
           "confidence": "high"
         }
-      ]
+      ],
+      "api_cost_line": "API cost: this run $5.26, today $5.26 of $15.00 cap, month $31.03 of $150.00 cap."
     }
   ],
   "cold_outreach": [
