@@ -65,6 +65,19 @@ def resolve_path(p):
     expanded = p.replace("~/", home + "/") if p.startswith("~/") else p
     return "file://" + expanded
 
+def is_web_link(p):
+    """True for a document link that is a web address. The morning brief's deep dives
+    are kept on GitHub since 2026-10-10 so they open from any device; a link like that
+    opens in a new tab instead of copying a Mac file path."""
+    return isinstance(p, str) and p.strip().lower().startswith(("https://", "http://"))
+
+
+def web_link(p, label, attrs=""):
+    import html as _html
+    href = _html.escape(p.strip(), quote=True)
+    return f'<a href="{href}" target="_blank" rel="noopener" {attrs}>{label}</a>'.replace(" >", ">")
+
+
 def load_data(json_path):
     with open(json_path) as f:
         return json.load(f)
@@ -367,16 +380,24 @@ def build_ranked_cards(opportunities):
                 links_html += f'<a href="{url}" target="_blank" rel="noopener">{label}</a> '
         else:
             links_html += '<span class="doc-missing">No posting link yet</span> '
-        if d.get("resume_path"):
+        if is_web_link(d.get("resume_path")):
+            links_html += web_link(d["resume_path"], "Resume", 'class="copy-path-link"') + ' '
+        elif d.get("resume_path"):
             rpath = d["resume_path"].replace("~", "/Users/paulwhitaker")
             links_html += f'<a href="#" class="copy-path-link" onclick="copyFilePath(this, \'{rpath.replace(chr(39), chr(92)+chr(39))}\'); return false;">Resume</a> '
-        if d.get("cover_letter_path"):
+        if is_web_link(d.get("cover_letter_path")):
+            links_html += web_link(d["cover_letter_path"], "Cover Letter", 'class="copy-path-link"') + ' '
+        elif d.get("cover_letter_path"):
             cpath = d["cover_letter_path"].replace("~", "/Users/paulwhitaker")
             links_html += f'<a href="#" class="copy-path-link" onclick="copyFilePath(this, \'{cpath.replace(chr(39), chr(92)+chr(39))}\'); return false;">Cover Letter</a> '
-        if d.get("essay_path"):
+        if is_web_link(d.get("essay_path")):
+            links_html += web_link(d["essay_path"], "Essay", 'class="copy-path-link"') + ' '
+        elif d.get("essay_path"):
             epath = d["essay_path"].replace("~", "/Users/paulwhitaker")
             links_html += f'<a href="#" class="copy-path-link" onclick="copyFilePath(this, \'{epath.replace(chr(39), chr(92)+chr(39))}\'); return false;">Essay</a> '
-        if d.get("doc_path"):
+        if is_web_link(d.get("doc_path")):
+            links_html += web_link(d["doc_path"], "Deep Dive Doc", 'class="copy-path-link"') + ' '
+        elif d.get("doc_path"):
             dpath = d["doc_path"].replace("~", "/Users/paulwhitaker")
             links_html += f'<a href="#" class="copy-path-link" onclick="copyFilePath(this, \'{dpath.replace(chr(39), chr(92)+chr(39))}\'); return false;">Deep Dive Doc</a> '
 
@@ -510,7 +531,9 @@ def build_app_rows(apps, include=None):
         # Link column: real URL from job_url field (only real verified URLs)
         job_url = a.get("job_url")
         link_col = f'<a href="{job_url}" target="_blank" style="color:var(--cyan);text-decoration:none">View</a>' if job_url else "—"
-        if a.get('doc_path'):
+        if is_web_link(a.get('doc_path')):
+            link_col += ' · ' + web_link(a['doc_path'], "Brief", 'style="color:var(--purple);text-decoration:none"')
+        elif a.get('doc_path'):
             _dp = a['doc_path'].replace("'", "\\'")
             link_col += f' · <a href="#" style="color:var(--purple);text-decoration:none" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief</a>'
         rows.append(f'''    <tr{opacity}>
@@ -877,7 +900,9 @@ def build_next_interview_banner(interviews):
         elif s.startswith('1st'): stage = '1st Round'
         else: stage = 'Interview'
         brief_link = ''
-        if iv.get('doc_path'):
+        if is_web_link(iv.get('doc_path')):
+            brief_link = ' ' + web_link(iv['doc_path'], "Brief &rarr;", 'class="iv-link"')
+        elif iv.get('doc_path'):
             _dp = iv['doc_path'].replace("'", "\\'")
             brief_link = f' <a href="#" class="iv-link" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief &rarr;</a>'
         label = 'NEXT INTERVIEW' if idx == 0 else stage.upper() + ' SCHEDULED'
@@ -1099,7 +1124,9 @@ def build_html(data):
     wtdn_items = []
     for t in todos:
         links = ""
-        if t.get("doc_path"):
+        if is_web_link(t.get("doc_path")):
+            links += ' ' + web_link(t["doc_path"], "Draft", 'class="copy-path-link" style="font-size:11px;"')
+        elif t.get("doc_path"):
             _p = t["doc_path"].replace("'", "\\'")
             links += f' <a href="#" class="copy-path-link" onclick="copyFilePath(this, \'{_p}\'); return false;" style="font-size:11px;">Draft</a>'
         if t.get("url"):
@@ -1126,7 +1153,9 @@ def build_html(data):
             continue
         ivd = a.get("interview_date") or "date TBC"
         iv_brief = ''
-        if a.get('doc_path'):
+        if is_web_link(a.get('doc_path')):
+            iv_brief = ' ' + web_link(a['doc_path'], "Brief", 'style="font-size:11px;"')
+        elif a.get('doc_path'):
             _dp = a['doc_path'].replace("'", "\\'")
             iv_brief = f' <a href="#" style="font-size:11px;" onclick="copyFilePath(this, \'{_dp}\'); return false;">Brief</a>'
         link = f' <a href="{a["job_url"]}" target="_blank" rel="noopener" style="font-size:11px;">Posting</a>' if a.get("job_url") else ""
